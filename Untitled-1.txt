@@ -1,0 +1,14 @@
+// config/playwright.config.js
+import { defineConfig } from '@playwright/test';
+
+export default defineConfig({
+  timeout: 30000,
+  use: {
+    headless: false,          // Show browser while running
+    viewport: { width: 1280, height: 720 },
+    screenshot: 'on',
+    video: 'on-first-retry'
+  },
+  reporter: [['html', { outputFolder: 'reports' }]]
+});
+  
