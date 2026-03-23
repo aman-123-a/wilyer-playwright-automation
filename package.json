@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",
+    "codegen": "playwright codegen https://cms.pocsample.in/"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^6.2.1",
+    "@graphql-codegen/client-preset": "^5.2.4",
     "@playwright/test": "^1.57.0",
     "@types/node": "^25.0.3"
   }
