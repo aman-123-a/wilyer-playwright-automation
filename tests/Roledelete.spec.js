@@ -1,59 +1,67 @@
 import { test, expect } from '@playwright/test';
 
 test('Delete 100 Roles via Loop', async ({ page }) => {
-  // Increase timeout to 15 minutes to allow for 100 deletions
+  // Increase timeout to 15 minutes for 100 deletions
   test.setTimeout(900000);
 
   // --- 1. LOGIN ---
-  await page.goto('https://cms.pocsample.in/');
+  console.log('🔐 Logging in...');
+  await page.goto('https://cms.pocsample.in/', { waitUntil: 'domcontentloaded' });
   
-  // Using your recorded selectors for the login form
-  await page.getByRole('textbox', { name: 'Enter your email or phone' }).fill('dev@wilyer.com');
-  await page.getByRole('textbox', { name: 'Enter your password' }).fill('testdev');
-  await page.getByRole('button', { name: 'Log In' }).click();
+  await page.getByPlaceholder(/email/i).fill('dev@wilyer.com');
+  await page.getByPlaceholder(/password/i).fill('testdev');
+  await page.getByRole('button', { name: /Log In/i }).click();
+
+  // Wait for the URL to change to indicate successful login
+  await page.waitForURL('**/dashboard**', { timeout: 30000 });
 
   // --- 2. NAVIGATION ---
-  // Wait for the Team link to be available and click
-  await page.getByRole('link', { name: ' Team' }).click();
-  await page.getByRole('link', { name: 'Roles' }).click();
+  console.log('📂 Navigating to Roles...');
+  await page.getByRole('link', { name: /Team/i }).first().click();
+  await page.getByRole('link', { name: /Roles/i }).first().click();
 
-  // Ensure the page is ready
+  // Ensure the table is loaded
   await page.waitForLoadState('networkidle');
-  console.log('🗑️ Starting automated deletion of 100 roles...');
 
-  // --- 3. THE LOOP ---
+  // --- 3. DELETION LOOP ---
+  console.log('🗑️     Starting automated deletion of up to 100 roles...');
+
   for (let i = 1; i <= 100; i++) {
-    // Always target the FIRST visible delete button on the page
-    const deleteBtn = page.getByRole('button', { name: ' Delete' }).first();
+    // 1. Locate the first delete button
+    const deleteBtn = page.getByRole('button', { name: /Delete/i }).first();
 
-    // If the button isn't visible, we've run out of roles to delete
+    // Check if it exists; if not, the list is empty
     if (!(await deleteBtn.isVisible())) {
       console.log('🏁 No more roles found. Ending loop.');
       break;
     }
 
-    // Step A: Click the Delete button in the row
+    // 2. Click the Delete button in the table row
     await deleteBtn.click();
 
-    // Step B: Click the "Delete Role" button in the confirmation modal
-    const confirmBtn = page.getByRole('button', { name: ' Delete Role' });
+    // 3. Handle the Confirmation Modal
+    // We use a specific locator for the button INSIDE the modal to avoid clicking the background
+    const confirmDeleteBtn = page.getByRole('button', { name: 'Delete Role' });
     
-    // Wait for the modal button to be ready before clicking
-    await confirmBtn.waitFor({ state: 'visible', timeout: 5000 });
-    await confirmBtn.click();
+    await confirmDeleteBtn.waitFor({ state: 'visible', timeout: 5000 });
+    await confirmDeleteBtn.click();
 
-    // Step C: IMPORTANT - Wait for the modal to disappear before starting next loop
-    // This prevents the script from clicking the next row too early
-    await expect(confirmBtn).toBeHidden({ timeout: 10000 });
+    // 4. WAIT: Ensure the modal disappears before the next loop iteration
+    // This is the most important step for stability
+    await expect(confirmDeleteBtn).toBeHidden({ timeout: 10000 });
+    
+    // Optional: Wait for any success toast to clear if it overlaps buttons
+    // await page.locator('.toast-success').waitFor({ state: 'hidden' }).catch(() => {});
 
     console.log(`✅ Deleted Role #${i}`);
 
-    // Optional: Refresh the page every 20 deletions to keep the site snappy
+    // 5. Periodic Refresh (Every 20 deletions) to keep the DOM clean
     if (i % 20 === 0) {
       await page.reload();
       await page.waitForLoadState('networkidle');
+      console.log(`♻️ Page reloaded at ${i} deletions for stability.`);
     }
   }
 
-  console.log('🎉 Done! All requested roles have been processed.');
+  console.log('🎉 Mission accomplished: 100 roles processed.');
 });
