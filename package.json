@@ -1,15 +1,14 @@
 {
-  "name": "wilyer-automation",
+  "name": "playwright-project",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "test": "playwright test",
-    "codegen": "playwright codegen https://cms.pocsample.in/"
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "^6.2.1",
-    "@graphql-codegen/client-preset": "^5.2.4",
-    "@playwright/test": "^1.57.0",
-    "@types/node": "^25.0.3"
+    "@playwright/test": "^1.42.0"
   }
 }
