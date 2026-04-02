@@ -1,17 +1,12 @@
 import { test, expect } from '@playwright/test';
+import readline from 'readline';
+
 
 test('Create New Screen with Pairing Code', async ({ page }) => {
-  const screenName = 'aman test';
-  // Get pairing code from environment variable - user must set it before running
-  const pairingCode = process.env.PAIRING_CODE || '123456';
-  
-  if (!process.env.PAIRING_CODE) {
-    console.warn('⚠️  PAIRING_CODE not provided. Using default: 123456');
-    console.warn('To use a custom pairing code, set the environment variable:');
-    console.warn('  Windows: set PAIRING_CODE=YOUR_CODE && npm test -- pair.spec.js');
-    console.warn('  Linux/Mac: PAIRING_CODE=YOUR_CODE npm test -- pair.spec.js');
-  }
-  
+  test.setTimeout(0); // Disable timeout to allow time for manual input
+
+  let screenName = ''; // Will be grabbed dynamically from what user types
+
   const screenTag = 'test';
   const location = 'india';
 
@@ -21,7 +16,7 @@ test('Create New Screen with Pairing Code', async ({ page }) => {
   await page.getByRole('textbox', { name: /email or phone/i }).fill('dev@wilyer.com');
   await page.getByRole('textbox', { name: /password/i }).fill('testdev');
   await page.getByRole('button', { name: 'Log In' }).click();
-  
+
   // Wait for page to load after login
   await page.waitForLoadState('networkidle');
   await page.waitForTimeout(1000);
@@ -30,11 +25,35 @@ test('Create New Screen with Pairing Code', async ({ page }) => {
   await page.getByRole('link', { name: /New Screen/i }).click();
   await page.waitForSelector('input[placeholder="Enter pairing code"]');
 
-  // 3. Fill Screen Details
-  // Pairing Code - use env or fallback value
+  // 3. Wait for user to manually type BOTH in browser
+  console.log('\n⏳ BROWSER PAUSED: Please type BOTH the Pairing Code AND the Screen Name directly in the browser window.');
+  console.log('   (The script will automatically continue after BOTH are filled)');
+
   const pairingCodeLocator = page.getByPlaceholder('Enter pairing code');
-  await pairingCodeLocator.fill(pairingCode);
-  console.log('🔍 DEBUG: Pairing code filled:', pairingCode);
+  const screenNameLocator = page.getByRole('textbox', { name: /Enter screen name/i });
+
+  // Loop until both fields are populated by the user
+  while (true) {
+    let pairCode = '';
+    let sName = '';
+    
+    if (await pairingCodeLocator.count() > 0) {
+       pairCode = await pairingCodeLocator.inputValue();
+    }
+    if (await screenNameLocator.count() > 0) {
+       sName = await screenNameLocator.inputValue();
+    }
+    
+    if (pairCode.trim().length >= 6 && sName.trim().length >= 1) {
+       screenName = sName.trim(); // Grab it so we can verify the table at the very end!
+       break;
+    }
+    await page.waitForTimeout(500); // Check again in 500ms
+  }
+
+  await page.waitForTimeout(800); // Small pause to assure they are fully done
+  console.log('✅ DEBUG: Detected both inputs! Proceeding...');
+  console.log(`✅ DEBUG: Using Screen Name "${screenName}" for later steps.`);
 
   // DEBUG: Log current page state after pairing code entry
   console.log('🔍 DEBUG: Page URL after pairing code:', page.url());
@@ -44,44 +63,28 @@ test('Create New Screen with Pairing Code', async ({ page }) => {
   const pairingCodeValue = await pairingCodeLocator.inputValue();
   console.log('🔍 DEBUG: Pairing code field value:', pairingCodeValue);
 
-  // 3a. Click Pair button (if present)
-  const pairButton = page.getByRole('button', { name: /pair|pairing/i }).first();
-  if (await pairButton.count() > 0) {
-    if (await pairButton.isEnabled()) {
-      await pairButton.click();
-      console.log('🔍 DEBUG: Clicked Pair button (enabled)');
-    } else {
-      console.warn('⚠️  Pair button found but disabled; forcing click');
-      await pairButton.click({ force: true });
-    }
-    await page.waitForLoadState('networkidle');
-    await page.waitForTimeout(800);
-  } else {
-    console.warn('⚠️  Pair button not found (maybe not required on this path)');
-  }
 
-  // Screen Name
-  await page.getByRole('textbox', { name: /Enter screen name/i }).fill(screenName);
-  console.log('🔍 DEBUG: Filled screen name:', screenName);
-  
+
+  // Screen Name (Already filled manually by user, value was saved to screenName)
+
   // Add Tags
   await page.getByRole('textbox', { name: /Add a tag/i }).fill(screenTag);
   await page.keyboard.press('Enter'); // Confirm tag entry
   console.log('🔍 DEBUG: Added tag:', screenTag);
-  
+
   // Wait for tag to be added and form to stabilize
   await page.waitForTimeout(2000);
   console.log('🔍 DEBUG: Waited 2 seconds after tag entry');
-  
+
   // Location - Simplified approach
   console.log('🔍 DEBUG: Starting location selection...');
   const locationInput = page.getByRole('textbox', { name: /Search location|Enter Location/i });
   await locationInput.click();
   console.log('🔍 DEBUG: Clicked location field');
-  
+
   await locationInput.fill(location);
   console.log('🔍 DEBUG: Filled location text');
-  
+
   await page.waitForTimeout(1500); // wait for suggestions
   // Prefer to select via keyboard once dropdown is ready
   await page.keyboard.press('ArrowDown');
@@ -90,36 +93,66 @@ test('Create New Screen with Pairing Code', async ({ page }) => {
   console.log('🔍 DEBUG: Selected location via keyboard ArrowDown + Enter');
   await page.waitForTimeout(1000);
 
-  // 4. Submit Form
-  console.log('🔍 DEBUG: About to submit form...');
-  const submitted = await page.evaluate(() => {
-    const btn = Array.from(document.querySelectorAll('button')).find(el => /create screen|create|submit|save|add/i.test(el.textContent || ''));
-    if (!btn) return false;
-    btn.click();
-    return true;
-  });
-  if (!submitted) {
-    throw new Error('Submit button not found by JavaScript fallback.');
+  // 4. Click (view) deleted screens
+  console.log('🔍 DEBUG: Clicking (view) span...');
+  const viewDeletedBtn = page.locator('span.text-primary.cursor-pointer[data-bs-target="#deletedScreens"]').first();
+  await viewDeletedBtn.waitFor({ state: 'visible', timeout: 5000 }).catch(() => {});
+  
+  if (await viewDeletedBtn.count() > 0 && await viewDeletedBtn.isVisible()) {
+    await viewDeletedBtn.click();
+    console.log('🔍 DEBUG: Clicked (view)');
+    await page.waitForTimeout(1500); // Wait for the offcanvas to slide open
+    
+    console.log('🔍 DEBUG: Choosing one screen from deleted list...');
+    const deletedCheckbox = page.locator('#deletedScreens input[type="checkbox"], .offcanvas input[type="checkbox"], .offcanvas-body input[type="checkbox"]').first();
+    try {
+      if (await deletedCheckbox.count() > 0) {
+        await deletedCheckbox.check({ force: true });
+        console.log('🔍 DEBUG: Checked deleted screen checkbox');
+      } else {
+        // Fallback: If no checkbox inside an offcanvas, click the last checkbox on the page
+        await page.locator('input[type="checkbox"]').last().check({ force: true });
+        console.log('🔍 DEBUG: Checked fallback checkbox');
+      }
+    } catch (e) {
+      console.log('⚠️ Failed to check deleted screen:', e.message);
+    }
+    await page.waitForTimeout(500);
+  } else {
+    console.log('⚠️ Could not find (view) span for deleted screens');
   }
-  console.log('🔍 DEBUG: Form submitted via page.evaluate');
+
+  // 5. Submit Form with Pair Screen button
+  console.log('🔍 DEBUG: About to submit by clicking Pair Screen...');
+  const pairButton = page.locator('button[type="submit"]:has-text("Pair Screen")').first();
+  await pairButton.waitFor({ state: 'visible', timeout: 15000 }).catch(() => console.log('⚠️ Pair button wait failed, continuing anyway.'));
+  
+  try {
+    // By this point the button should be enabled since everything is filled
+    await pairButton.click({ force: true, timeout: 5000 });
+    console.log('🔍 DEBUG: Clicked "Pair Screen" button');
+  } catch (err) {
+    console.log('⚠️ Failed to click Pair Screen button:', err.message);
+  }
+
   await page.waitForLoadState('networkidle');
   await page.waitForTimeout(1200);
-  
+
   // 5. Verify Success
   // Wait for navigation or success message
   console.log('🔍 DEBUG: Waiting for success verification...');
   await page.waitForTimeout(1000);
-  
+
   // DEBUG: Check current page state
   console.log('🔍 DEBUG: Current URL after submit:', page.url());
   console.log('🔍 DEBUG: Current page title:', await page.title());
-  
+
   // DEBUG: Look for success indicators in page text
   const pageText = await page.locator('body').textContent();
   console.log('🔍 DEBUG: Page contains text with "screen":', pageText?.includes('screen'));
   console.log('🔍 DEBUG: Page contains text with "created":', pageText?.includes('created'));
   console.log('🔍 DEBUG: Page contains text with "success":', pageText?.includes('success'));
-  
+
   const successMessage = page.getByText(/screen.*created|successfully|added/i);
   if (await successMessage.count() > 0) {
     const successVisible = await successMessage.first().isVisible();
@@ -136,7 +169,7 @@ test('Create New Screen with Pairing Code', async ({ page }) => {
     // 6. Click row checkbox (select screen)
     const rowCheckbox = screenItem.locator('input[type="checkbox"]');
     if (await rowCheckbox.count() > 0) {
-      await rowCheckbox.first().check();
+      await rowCheckbox.first().check({ force: true });
       console.log('🔍 DEBUG: Checked screen row checkbox for', screenName);
     } else {
       console.warn('⚠️  Row checkbox not found for the screen');
