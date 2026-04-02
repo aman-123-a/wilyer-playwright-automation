@@ -3,9 +3,16 @@ import readline from 'readline';
 
 
 test('Create New Screen with Pairing Code', async ({ page }) => {
-  test.setTimeout(0); // Disable timeout to allow time for manual input
-
-  let screenName = ''; // Will be grabbed dynamically from what user types
+  const screenName = 'aman test';
+  // Get pairing code from environment variable - user must set it before running
+  const pairingCode = process.env.PAIRING_CODE || '123456';
+  
+  if (!process.env.PAIRING_CODE) {
+    console.warn('⚠️  PAIRING_CODE not provided. Using default: 123456');
+    console.warn('To use a custom pairing code, set the environment variable:');
+    console.warn('  Windows: set PAIRING_CODE=YOUR_CODE && npm test -- pair.spec.js');
+    console.warn('  Linux/Mac: PAIRING_CODE=YOUR_CODE npm test -- pair.spec.js');
+  }
 
   const screenTag = 'test';
   const location = 'india';

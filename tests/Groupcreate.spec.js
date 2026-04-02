@@ -1,43 +1,68 @@
 import { test, expect } from '@playwright/test';
+import { read, utils } from 'xlsx';
 
-test('Create Group and Subgroups Flow', async ({ page }) => {
-  const groupName = 'QA aman';
+// ─── Google Sheets Config ─────────────────────────────────────────────────────
+const SHEET_ID = '1cRdbdVS79_9gtT-A5QcddU-ZrURSt8wwz5j_5UIcIcI';
+const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=0`;
 
-  // 1. Login
+// ─── Login Credentials ────────────────────────────────────────────────────────
+const LOGIN_EMAIL = 'dev@wilyer.com';
+const LOGIN_PASSWORD = 'testdev';
+
+// ─── Single Test: Fetch Sheet → Login Once → Create All Groups ────────────────
+test('Fetch Google Sheet and create all groups with single login', async ({ page }) => {
+  test.setTimeout(300_000); // 5 min for large datasets
+
+  // 1. Fetch group data from Google Sheets (CSV export)
+  console.log(`\n📊 Fetching group data from Google Sheets...`);
+  const response = await fetch(SHEET_URL);
+  if (!response.ok) throw new Error(`Failed to fetch sheet: ${response.statusText}`);
+
+  const csvBuffer = Buffer.from(await response.arrayBuffer());
+  const workbook = read(csvBuffer, { type: 'buffer' });
+  const sheet = workbook.Sheets[workbook.SheetNames[0]];
+  const rows = utils.sheet_to_json(sheet); // uses first row as headers
+
+  console.log(`✅ Loaded ${rows.length} group(s) from Google Sheets:`);
+  rows.forEach((r, i) => console.log(`   ${i + 1}. ${r['Group Name']}`));
+
+  // 2. Login ONCE
+  console.log(`\n🔐 Logging in as: ${LOGIN_EMAIL}`);
   await page.goto('https://cms.pocsample.in/');
-  await page.getByRole('textbox', { name: /email or phone/i }).fill('dev@wilyer.com');
-  await page.getByRole('textbox', { name: /password/i }).fill('testdev');
-  await page.getByRole('button', { name: 'Log In' }).click();
+  await page.getByPlaceholder(/email/i).fill(LOGIN_EMAIL);
+  await page.getByPlaceholder(/password/i).fill(LOGIN_PASSWORD);
+  await page.getByRole('button', { name: /Log In/i }).click();
+  await page.waitForLoadState('networkidle');
+  console.log(`✅ Login successful\n`);
 
-  // 2. Navigate to Groups and Create New
-  // Using regex to ignore the icon character
-  await page.getByRole('link', { name: /Groups/ }).click();
-  await page.getByRole('button', { name: /New Group/ }).click();
-  
-  await page.locator('input[name="name"]').fill(groupName);
-  await page.locator('textarea[name="description"]').fill('playwright automation');
-  await page.getByRole('button', { name: 'Create Group' }).click();
+  // 3. Loop through all rows and create each group
+  for (const row of rows) {
+    const groupName = row['Group Name'];
+    if (!groupName) continue; // skip empty rows
 
-  // 3. Add Subgroups
-  // Tip: Instead of .first(), try to target the specific group row if possible
-  await page.getByRole('link', { name: /Settings/ }).first().click();
-  
-  // Create 'resturant' subgroup
-  await page.getByRole('button', { name: /Add Subgroup/ }).click();
-  await page.getByRole('textbox', { name: 'Name' }).fill('resturant');
-  await page.getByRole('button', { name: /Create/ }).click();
+    console.log(`🚀 Creating group: "${groupName}"`);
 
-  // Create 'delhi' subgroup under 'resturant'
-  // Using a more specific locator than nth(1) is safer
-  await page.getByText('resturant').last().click(); 
-  await page.getByRole('button', { name: /Add Subgroup/ }).click();
-  await page.getByRole('textbox', { name: 'Name' }).fill('delhi');
-  await page.getByRole('button', { name: /Create/ }).click();
+    // Navigate to Groups page
+    await page.getByRole('link', { name: /Groups/i }).click();
+    await page.waitForLoadState('networkidle');
 
-  // 4. Screens and Cleanup
-  await page.getByRole('button', { name: /Screens/ }).click();
-  await page.locator('#closemanageScreens').getByText('×').click();
-  
-  // Basic assertion to ensure we are where we expect
-  await expect(page.getByText('delhi')).toBeVisible();
+    // Open New Group modal
+    await page.getByRole('button', { name: /New Group/i }).click();
+
+    // Fill group name from sheet
+    await page.locator('input[name="name"]').fill(groupName);
+
+    // Submit
+    await page.getByRole('button', { name: /Create Group/i }).click();
+    await page.waitForLoadState('networkidle');
+
+    // Verify group is visible
+    await expect(
+      page.getByText(groupName, { exact: false })
+    ).toBeVisible({ timeout: 15_000 });
+
+    console.log(`✅ Group "${groupName}" created!\n`);
+  }
+
+  console.log(`🎉 All ${rows.length} groups created successfully!`);
 });
