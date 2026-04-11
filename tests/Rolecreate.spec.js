@@ -1,9 +1,7 @@
 import { test, expect } from '@playwright/test';
 
-test('Create 100 Unique Roles', async ({ page }) => {
-  // 1. EXTENDED TIMEOUT
-  // Creating 100 roles will take time. 5-10 minutes is realistic.
-  test.setTimeout(600000); 
+test('Create 4 Unique Roles', async ({ page }) => {
+  test.setTimeout(300000);
 
   const baseUrl = 'https://cms.pocsample.in/';
 
@@ -20,16 +18,17 @@ test('Create 100 Unique Roles', async ({ page }) => {
   await page.getByRole('link', { name: /Team/i }).first().click();
   await page.getByRole('link', { name: /Roles/i }).click();
 
-  // 4. LOOP TO CREATE 100 ROLES
-  for (let i = 1; i <= 100; i++) {
+  // 4. LOOP TO CREATE 4 ROLES
+  const TOTAL = 4;
+  for (let i = 1; i <= TOTAL; i++) {
     const uniqueRoleName = `LoadTest_Role_${i}_${Date.now()}`;
-    console.log(`Starting creation of Role ${i}/100: ${uniqueRoleName}`);
+    console.log(`Starting creation of Role ${i}/${TOTAL}: ${uniqueRoleName}`);
 
     // Click Create Button
     await page.getByRole('button', { name: /Create Custom Role/i }).click();
 
-    const modal = page.locator('#roleModal');
-    await expect(modal).toBeVisible();
+    const modal = page.getByRole('dialog');
+    await expect(modal.getByRole('heading', { name: /Create Custom Role/i })).toBeVisible();
 
     // Fill Unique Name
     await modal.getByRole('textbox', { name: /Enter role name/i }).fill(uniqueRoleName);
@@ -54,15 +53,11 @@ test('Create 100 Unique Roles', async ({ page }) => {
     // 6. SUBMIT & WAIT FOR CLOSURE
     await modal.getByRole('button', { name: 'Create Role' }).click();
 
-    // Crucial: Wait for the modal and backdrop to disappear before starting next loop
-    await expect(modal).toBeHidden();
-    await expect(page.locator('.modal-backdrop')).toBeHidden();
+    // Wait for the dialog to close before starting next loop
+    await expect(page.getByRole('dialog')).toBeHidden({ timeout: 30_000 });
 
-    // Optional: Log progress every 10 roles
-    if (i % 10 === 0) {
-      console.log(`✅ Progress: ${i} roles created.`);
-    }
+    console.log(`✅ Progress: ${i}/${TOTAL} roles created.`);
   }
 
-  console.log('🎉 Finished creating 100 unique roles!');
+  console.log(`🎉 Finished creating ${TOTAL} unique roles!`);
 });

@@ -1,0 +1,38 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - heading "Welcome Back!" [level=2] [ref=e11]
+        - paragraph [ref=e12]: Please login to your account.
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: Email or Phone *
+          - textbox "Enter your email or phone" [ref=e17]: dev@gmail.com
+        - generic [ref=e18]:
+          - generic [ref=e19]: Password *
+          - generic [ref=e20]:
+            - textbox "Enter your password" [ref=e21]: testdev
+            - generic [ref=e23] [cursor=pointer]: 
+        - button "Log In" [active] [ref=e25] [cursor=pointer]
+      - paragraph [ref=e27]:
+        - link "Forgot Password?" [ref=e28] [cursor=pointer]:
+          - /url: /forget
+        - text: "|Don't have an account?"
+        - link "Sign Up" [ref=e29] [cursor=pointer]:
+          - /url: /signup
+    - iframe [ref=e35]:
+      - generic [ref=f6e5]:
+        - generic [ref=f6e6]:
+          - text: protected by
+          - strong [ref=f6e7]: reCAPTCHA
+        - generic [ref=f6e9]:
+          - text: reCAPTCHA is changing its terms of service.
+          - link "Take action." [ref=f6e10] [cursor=pointer]:
+            - /url: https://google.com/recaptcha/admin/migrate
+  - generic [ref=e37]:
+    - alert [ref=e38]:
+      - img [ref=e40]
+      - generic [ref=e42]: User not found
+    - button "close" [ref=e43] [cursor=pointer]:
+      - img [ref=e44]
+    - progressbar "notification timer" [ref=e48]

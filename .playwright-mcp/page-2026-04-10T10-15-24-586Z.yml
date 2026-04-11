@@ -1,0 +1,1101 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link " Dashboard" [ref=e12] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e13]: 
+              - text: Dashboard
+          - listitem [ref=e14]:
+            - link " Screens" [ref=e15] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e16]: 
+              - text: Screens
+          - listitem [ref=e17]:
+            - link " Groups" [ref=e18] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e19]: 
+              - text: Groups
+          - listitem [ref=e20]:
+            - link " Clusters" [ref=e21] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e22]: 
+              - text: Clusters
+          - listitem [ref=e23]:
+            - link " Library" [ref=e24] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e25]: 
+              - text: Library
+          - listitem [ref=e26]:
+            - link " Playlists" [ref=e27] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e28]: 
+              - text: Playlists
+          - listitem [ref=e29]:
+            - link " Team" [ref=e30] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e31]: 
+              - text: Team
+          - listitem [ref=e32]:
+            - link " Reports" [ref=e33] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e34]: 
+              - text: Reports
+          - separator [ref=e35]
+          - listitem [ref=e36]:
+            - link " Help" [ref=e37] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e38]: 
+              - text: Help
+          - listitem [ref=e39]:
+            - link " Feedback" [ref=e40] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e41]: 
+              - text: Feedback
+          - listitem [ref=e42]:
+            - link " Billing" [ref=e43] [cursor=pointer]:
+              - /url: /billing
+              - generic [ref=e44]: 
+              - text: Billing
+          - listitem [ref=e45]:
+            - link " Account" [ref=e46] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e47]: 
+              - text: Account
+          - listitem [ref=e48]:
+            - link " Logout" [ref=e49] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e50]: 
+              - text: Logout
+      - generic [ref=e52]:
+        - generic "dev" [ref=e54]:
+          - generic [ref=e56]: D
+        - generic [ref=e57]: dev@wilyer.com
+      - generic [ref=e58]: v3.5.20
+    - generic [ref=e290]:
+      - generic [ref=e291]:
+        - list [ref=e294]:
+          - listitem [ref=e295]:
+            - link "Members" [ref=e296] [cursor=pointer]:
+              - /url: /team
+          - listitem [ref=e297]:
+            - link "Roles" [ref=e298] [cursor=pointer]:
+              - /url: /team
+          - listitem [ref=e299]:
+            - link "New Member" [ref=e300] [cursor=pointer]:
+              - /url: /team
+          - listitem [ref=e301]:
+            - link "Logs" [ref=e302] [cursor=pointer]:
+              - /url: /team
+        - generic [ref=e303]:
+          - textbox "Search..." [ref=e304]
+          - button "Read Docs " [ref=e305] [cursor=pointer]:
+            - text: Read Docs
+            - generic [ref=e306]: 
+      - generic [ref=e673]:
+        - generic [ref=e674]:
+          - generic [ref=e675]:
+            - heading "Custom Role Management" [level=4] [ref=e676]
+            - paragraph [ref=e677]: Create and manage custom roles with specific permissions
+          - generic [ref=e678]:
+            - tablist [ref=e681]:
+              - button " Card View" [ref=e682] [cursor=pointer]:
+                - generic [ref=e683]: 
+                - text: Card View
+            - button " Create Custom Role" [ref=e684] [cursor=pointer]:
+              - generic [ref=e685]: 
+              - text: Create Custom Role
+        - generic [ref=e686]:
+          - generic [ref=e689]:
+            - generic [ref=e690]:
+              - heading "Greenwood City" [level=5] [ref=e691]
+              - paragraph
+              - generic [ref=e692]:
+                - generic [ref=e693]: 1 Permissions
+                - generic [ref=e694]: Restricted
+                - generic [ref=e695]: "Reports To: Sector 45"
+            - generic [ref=e696]:
+              - heading "Key Modules:" [level=6] [ref=e697]
+              - generic [ref=e699]: Dashboard Stats
+              - generic [ref=e700]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e701]:
+                  - generic [ref=e702]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e703]: "Created: 4/10/2026"
+            - generic [ref=e705]:
+              - button " View" [ref=e706] [cursor=pointer]:
+                - generic [ref=e707]: 
+                - text: View
+              - button " Edit" [ref=e708] [cursor=pointer]:
+                - generic [ref=e709]: 
+                - text: Edit
+              - button " Delete" [ref=e710] [cursor=pointer]:
+                - generic [ref=e711]: 
+                - text: Delete
+          - generic [ref=e714]:
+            - generic [ref=e715]:
+              - heading "2nd Floor (Reception Area)" [level=5] [ref=e716]
+              - paragraph
+              - generic [ref=e717]:
+                - generic [ref=e718]: 1 Permissions
+                - generic [ref=e719]: Restricted
+                - generic [ref=e720]: "Reports To: Block C"
+            - generic [ref=e721]:
+              - heading "Key Modules:" [level=6] [ref=e722]
+              - generic [ref=e724]: Dashboard Stats
+              - generic [ref=e725]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e726]:
+                  - generic [ref=e727]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e728]: "Created: 4/10/2026"
+            - generic [ref=e730]:
+              - button " View" [ref=e731] [cursor=pointer]:
+                - generic [ref=e732]: 
+                - text: View
+              - button " Edit" [ref=e733] [cursor=pointer]:
+                - generic [ref=e734]: 
+                - text: Edit
+              - button " Delete" [ref=e735] [cursor=pointer]:
+                - generic [ref=e736]: 
+                - text: Delete
+          - generic [ref=e739]:
+            - generic [ref=e740]:
+              - heading "Lg Wenbos Dsiplay 01" [level=5] [ref=e741]
+              - paragraph
+              - generic [ref=e742]:
+                - generic [ref=e743]: 1 Permissions
+                - generic [ref=e744]: Restricted
+                - generic [ref=e745]: "Reports To: 2nd Floor (Reception Area)"
+            - generic [ref=e746]:
+              - heading "Key Modules:" [level=6] [ref=e747]
+              - generic [ref=e749]: Dashboard Stats
+              - generic [ref=e750]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e751]:
+                  - generic [ref=e752]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e753]: "Created: 4/10/2026"
+            - generic [ref=e755]:
+              - button " View" [ref=e756] [cursor=pointer]:
+                - generic [ref=e757]: 
+                - text: View
+              - button " Edit" [ref=e758] [cursor=pointer]:
+                - generic [ref=e759]: 
+                - text: Edit
+              - button " Delete" [ref=e760] [cursor=pointer]:
+                - generic [ref=e761]: 
+                - text: Delete
+          - generic [ref=e764]:
+            - generic [ref=e765]:
+              - heading "Block C" [level=5] [ref=e766]
+              - paragraph
+              - generic [ref=e767]:
+                - generic [ref=e768]: 1 Permissions
+                - generic [ref=e769]: Restricted
+                - generic [ref=e770]: "Reports To: Greenwood City"
+            - generic [ref=e771]:
+              - heading "Key Modules:" [level=6] [ref=e772]
+              - generic [ref=e774]: Dashboard Stats
+              - generic [ref=e775]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e776]:
+                  - generic [ref=e777]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e778]: "Created: 4/10/2026"
+            - generic [ref=e780]:
+              - button " View" [ref=e781] [cursor=pointer]:
+                - generic [ref=e782]: 
+                - text: View
+              - button " Edit" [ref=e783] [cursor=pointer]:
+                - generic [ref=e784]: 
+                - text: Edit
+              - button " Delete" [ref=e785] [cursor=pointer]:
+                - generic [ref=e786]: 
+                - text: Delete
+          - generic [ref=e789]:
+            - generic [ref=e790]:
+              - heading "Sector 45" [level=5] [ref=e791]
+              - paragraph
+              - generic [ref=e792]:
+                - generic [ref=e793]: 10 Permissions
+                - generic [ref=e794]: Restricted
+                - generic [ref=e795]: "Reports To: Gurugram Baddshahpur"
+            - generic [ref=e796]:
+              - heading "Key Modules:" [level=6] [ref=e797]
+              - generic [ref=e798]:
+                - generic [ref=e799]: Dashboard Stats
+                - generic [ref=e800]: Screens
+                - generic [ref=e801]: Screens Actions
+              - generic [ref=e802]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e803]:
+                  - generic [ref=e804]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e805]: "Created: 4/10/2026"
+            - generic [ref=e807]:
+              - button " View" [ref=e808] [cursor=pointer]:
+                - generic [ref=e809]: 
+                - text: View
+              - button " Edit" [ref=e810] [cursor=pointer]:
+                - generic [ref=e811]: 
+                - text: Edit
+              - button " Delete" [ref=e812] [cursor=pointer]:
+                - generic [ref=e813]: 
+                - text: Delete
+          - generic [ref=e816]:
+            - generic [ref=e817]:
+              - heading "Gurugram Baddshahpur" [level=5] [ref=e818]
+              - paragraph
+              - generic [ref=e819]:
+                - generic [ref=e820]: 1 Permissions
+                - generic [ref=e821]: Restricted
+                - generic [ref=e822]: "Reports To: Gurugram"
+            - generic [ref=e823]:
+              - heading "Key Modules:" [level=6] [ref=e824]
+              - generic [ref=e826]: Dashboard Stats
+              - generic [ref=e827]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e828]:
+                  - generic [ref=e829]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e830]: "Created: 4/10/2026"
+            - generic [ref=e832]:
+              - button " View" [ref=e833] [cursor=pointer]:
+                - generic [ref=e834]: 
+                - text: View
+              - button " Edit" [ref=e835] [cursor=pointer]:
+                - generic [ref=e836]: 
+                - text: Edit
+              - button " Delete" [ref=e837] [cursor=pointer]:
+                - generic [ref=e838]: 
+                - text: Delete
+          - generic [ref=e841]:
+            - generic [ref=e842]:
+              - heading "Gurgaon Divison" [level=5] [ref=e843]
+              - paragraph
+              - generic [ref=e844]:
+                - generic [ref=e845]: 1 Permissions
+                - generic [ref=e846]: Restricted
+                - generic [ref=e847]: "Reports To: Haryana"
+            - generic [ref=e848]:
+              - heading "Key Modules:" [level=6] [ref=e849]
+              - generic [ref=e851]: Dashboard Stats
+              - generic [ref=e852]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e853]:
+                  - generic [ref=e854]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e855]: "Created: 4/10/2026"
+            - generic [ref=e857]:
+              - button " View" [ref=e858] [cursor=pointer]:
+                - generic [ref=e859]: 
+                - text: View
+              - button " Edit" [ref=e860] [cursor=pointer]:
+                - generic [ref=e861]: 
+                - text: Edit
+              - button " Delete" [ref=e862] [cursor=pointer]:
+                - generic [ref=e863]: 
+                - text: Delete
+          - generic [ref=e866]:
+            - generic [ref=e867]:
+              - heading "Gurugram" [level=5] [ref=e868]
+              - paragraph
+              - generic [ref=e869]:
+                - generic [ref=e870]: 1 Permissions
+                - generic [ref=e871]: Restricted
+                - generic [ref=e872]: "Reports To: Gurgaon Divison"
+            - generic [ref=e873]:
+              - heading "Key Modules:" [level=6] [ref=e874]
+              - generic [ref=e876]: Dashboard Stats
+              - generic [ref=e877]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e878]:
+                  - generic [ref=e879]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e880]: "Created: 4/10/2026"
+            - generic [ref=e882]:
+              - button " View" [ref=e883] [cursor=pointer]:
+                - generic [ref=e884]: 
+                - text: View
+              - button " Edit" [ref=e885] [cursor=pointer]:
+                - generic [ref=e886]: 
+                - text: Edit
+              - button " Delete" [ref=e887] [cursor=pointer]:
+                - generic [ref=e888]: 
+                - text: Delete
+          - generic [ref=e891]:
+            - generic [ref=e892]:
+              - heading "Haryana" [level=5] [ref=e893]
+              - paragraph
+              - generic [ref=e894]:
+                - generic [ref=e895]: 1 Permissions
+                - generic [ref=e896]: Restricted
+                - generic [ref=e897]: "Reports To: India"
+            - generic [ref=e898]:
+              - heading "Key Modules:" [level=6] [ref=e899]
+              - generic [ref=e901]: Dashboard Stats
+              - generic [ref=e902]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e903]:
+                  - generic [ref=e904]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e905]: "Created: 4/10/2026"
+            - generic [ref=e907]:
+              - button " View" [ref=e908] [cursor=pointer]:
+                - generic [ref=e909]: 
+                - text: View
+              - button " Edit" [ref=e910] [cursor=pointer]:
+                - generic [ref=e911]: 
+                - text: Edit
+              - button " Delete" [ref=e912] [cursor=pointer]:
+                - generic [ref=e913]: 
+                - text: Delete
+          - generic [ref=e916]:
+            - generic [ref=e917]:
+              - heading "India" [level=5] [ref=e918]
+              - paragraph
+              - generic [ref=e919]:
+                - generic [ref=e920]: 1 Permissions
+                - generic [ref=e921]: Restricted
+                - generic [ref=e922]: "Reports To: Owner"
+            - generic [ref=e923]:
+              - heading "Key Modules:" [level=6] [ref=e924]
+              - generic [ref=e926]: Dashboard Stats
+              - generic [ref=e927]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e928]:
+                  - generic [ref=e929]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e930]: "Created: 4/10/2026"
+            - generic [ref=e932]:
+              - button " View" [ref=e933] [cursor=pointer]:
+                - generic [ref=e934]: 
+                - text: View
+              - button " Edit" [ref=e935] [cursor=pointer]:
+                - generic [ref=e936]: 
+                - text: Edit
+              - button " Delete" [ref=e937] [cursor=pointer]:
+                - generic [ref=e938]: 
+                - text: Delete
+          - generic [ref=e941]:
+            - generic [ref=e942]:
+              - heading "aaa" [level=5] [ref=e943]
+              - paragraph
+              - generic [ref=e944]:
+                - generic [ref=e945]: 1 Permissions
+                - generic [ref=e946]: Restricted
+                - generic [ref=e947]: "Reports To: Owner (Super Admin)"
+            - generic [ref=e948]:
+              - heading "Key Modules:" [level=6] [ref=e949]
+              - generic [ref=e951]: Dashboard Stats
+              - generic [ref=e952]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e953]:
+                  - generic [ref=e954]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e955]: "Created: 4/10/2026"
+            - generic [ref=e957]:
+              - button " View" [ref=e958] [cursor=pointer]:
+                - generic [ref=e959]: 
+                - text: View
+              - button " Edit" [ref=e960] [cursor=pointer]:
+                - generic [ref=e961]: 
+                - text: Edit
+              - button " Delete" [ref=e962] [cursor=pointer]:
+                - generic [ref=e963]: 
+                - text: Delete
+          - generic [ref=e966]:
+            - generic [ref=e967]:
+              - heading "ds" [level=5] [ref=e968]
+              - paragraph
+              - generic [ref=e969]:
+                - generic [ref=e970]: 1 Permissions
+                - generic [ref=e971]: "Reports To: Owner"
+            - generic [ref=e972]:
+              - heading "Key Modules:" [level=6] [ref=e973]
+              - generic [ref=e975]: Dashboard Stats
+              - generic [ref=e976]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e977]:
+                  - generic [ref=e978]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e979]: "Created: 4/9/2026"
+            - generic [ref=e981]:
+              - button " View" [ref=e982] [cursor=pointer]:
+                - generic [ref=e983]: 
+                - text: View
+              - button " Edit" [ref=e984] [cursor=pointer]:
+                - generic [ref=e985]: 
+                - text: Edit
+              - button " Delete" [ref=e986] [cursor=pointer]:
+                - generic [ref=e987]: 
+                - text: Delete
+        - navigation "Page navigation" [ref=e988]:
+          - list [ref=e989]:
+            - listitem [ref=e990]:
+              - button "Previous"
+            - listitem [ref=e991]:
+              - button "1" [ref=e992] [cursor=pointer]
+            - listitem [ref=e993]:
+              - button "2" [ref=e994] [cursor=pointer]
+            - listitem [ref=e995]:
+              - button "3" [ref=e996] [cursor=pointer]
+            - listitem [ref=e997]:
+              - button "4" [ref=e998] [cursor=pointer]
+            - listitem [ref=e999]:
+              - button "Next" [ref=e1000] [cursor=pointer]
+      - dialog [active] [ref=e1001]:
+        - generic [ref=e1002]:
+          - generic [ref=e1003]:
+            - heading "Create Custom Role" [level=5] [ref=e1004]
+            - generic "Close" [ref=e1005] [cursor=pointer]: ×
+          - generic [ref=e1007]:
+            - generic [ref=e1008]:
+              - generic [ref=e1011]:
+                - heading "Role Information" [level=6] [ref=e1012]
+                - generic [ref=e1013]:
+                  - generic [ref=e1014]: Role Name *
+                  - textbox "Enter role name" [ref=e1015]
+                - generic [ref=e1016]:
+                  - generic [ref=e1017]: Description
+                  - textbox "Describe this role" [ref=e1018]
+                - generic [ref=e1019]:
+                  - generic [ref=e1020]:
+                    - generic [ref=e1021]: Reports To
+                    - button "Select a role" [ref=e1023] [cursor=pointer]
+                  - generic [ref=e1024]: This role will report to the selected role in the hierarchy
+                - generic [ref=e1025]:
+                  - generic [ref=e1026]:
+                    - checkbox "Restricted Access" [ref=e1027]
+                    - generic [ref=e1028]: Restricted Access
+                  - text: Limit user to specific content
+                - generic [ref=e1029]:
+                  - generic [ref=e1030]: Permission Summary
+                  - generic [ref=e1031]:
+                    - generic [ref=e1032]:
+                      - generic [ref=e1033]: Total Selected
+                      - generic [ref=e1034]: "0"
+                    - generic [ref=e1035]:
+                      - generic [ref=e1036]:
+                        - generic [ref=e1037]: 
+                        - text: Overview & Monitoring
+                      - generic [ref=e1038]: 0/1
+                    - generic [ref=e1039]:
+                      - generic [ref=e1040]:
+                        - generic [ref=e1041]: 
+                        - text: Screens Management
+                      - generic [ref=e1042]: 0/9
+                    - generic [ref=e1043]:
+                      - generic [ref=e1044]:
+                        - generic [ref=e1045]: 
+                        - text: Content Management
+                      - generic [ref=e1046]: 0/24
+                    - generic [ref=e1047]:
+                      - generic [ref=e1048]:
+                        - generic [ref=e1049]: 
+                        - text: Screen Group Management
+                      - generic [ref=e1050]: 0/6
+                    - generic [ref=e1051]:
+                      - generic [ref=e1052]:
+                        - generic [ref=e1053]: 
+                        - text: Team Administration
+                      - generic [ref=e1054]: 0/8
+                    - generic [ref=e1055]:
+                      - generic [ref=e1056]:
+                        - generic [ref=e1057]: 
+                        - text: File Uploading
+                      - generic [ref=e1058]: 0/2
+                    - generic [ref=e1059]:
+                      - generic [ref=e1060]:
+                        - generic [ref=e1061]: 
+                        - text: Maker and Checker
+                      - generic [ref=e1062]: 0/2
+                    - generic [ref=e1063]:
+                      - generic [ref=e1064]:
+                        - generic [ref=e1065]: 
+                        - text: Reports
+                      - generic [ref=e1066]: 0/2
+                    - generic [ref=e1067]:
+                      - generic [ref=e1068]:
+                        - generic [ref=e1069]: 
+                        - text: Cluster Management
+                      - generic [ref=e1070]: 0/4
+                    - generic [ref=e1071]:
+                      - generic [ref=e1072]:
+                        - generic [ref=e1073]: 
+                        - text: Remote Update
+                      - generic [ref=e1074]: 0/2
+              - generic [ref=e1076]:
+                - generic [ref=e1077]:
+                  - heading " Permission Configuration" [level=6] [ref=e1078]:
+                    - generic [ref=e1079]: 
+                    - text: Permission Configuration
+                  - generic [ref=e1080]:
+                    - generic [ref=e1081]: 
+                    - text: As a subuser, you can only assign permissions that your role has
+                - generic [ref=e1082]:
+                  - generic [ref=e1083]:
+                    - generic [ref=e1085]:
+                      - generic [ref=e1086]:
+                        - 'heading " Section: Overview & Monitoring" [level=6] [ref=e1087]':
+                          - generic [ref=e1088]: 
+                          - text: "Section: Overview & Monitoring"
+                        - generic [ref=e1089]: 0/1
+                      - generic [ref=e1090]:
+                        - checkbox " Select All in Overview & Monitoring" [ref=e1091]
+                        - generic [ref=e1092]:
+                          - generic [ref=e1093]: 
+                          - text: Select All in Overview & Monitoring
+                    - table [ref=e1095]:
+                      - rowgroup [ref=e1096]:
+                        - row "Module Permissions" [ref=e1097]:
+                          - columnheader "Module" [ref=e1098]
+                          - columnheader "Permissions" [ref=e1099]
+                      - rowgroup [ref=e1100]:
+                        - row "Dashboard Stats Always scoped by screen access  Select All view" [ref=e1101]:
+                          - cell "Dashboard Stats Always scoped by screen access" [ref=e1102]:
+                            - generic [ref=e1103]:
+                              - generic [ref=e1104]: Dashboard Stats
+                              - generic [ref=e1105]: Always scoped by screen access
+                          - cell " Select All view" [ref=e1106]:
+                            - generic [ref=e1107]:
+                              - generic [ref=e1108]:
+                                - checkbox " Select All" [ref=e1109]
+                                - generic [ref=e1110]:
+                                  - generic [ref=e1111]: 
+                                  - text: Select All
+                              - generic [ref=e1113]:
+                                - checkbox "view" [ref=e1114]
+                                - generic [ref=e1115]: view
+                  - generic [ref=e1116]:
+                    - generic [ref=e1118]:
+                      - generic [ref=e1119]:
+                        - 'heading " Section: Screens Management" [level=6] [ref=e1120]':
+                          - generic [ref=e1121]: 
+                          - text: "Section: Screens Management"
+                        - generic [ref=e1122]: 0/9
+                      - generic [ref=e1123]:
+                        - checkbox " Select All in Screens Management" [ref=e1124]
+                        - generic [ref=e1125]:
+                          - generic [ref=e1126]: 
+                          - text: Select All in Screens Management
+                    - table [ref=e1128]:
+                      - rowgroup [ref=e1129]:
+                        - row "Module Permissions" [ref=e1130]:
+                          - columnheader "Module" [ref=e1131]
+                          - columnheader "Permissions" [ref=e1132]
+                      - rowgroup [ref=e1133]:
+                        - row "Screens Device management and control  Select All view pair update config delete" [ref=e1134]:
+                          - cell "Screens Device management and control" [ref=e1135]:
+                            - generic [ref=e1136]:
+                              - generic [ref=e1137]: Screens
+                              - generic [ref=e1138]: Device management and control
+                          - cell " Select All view pair update config delete" [ref=e1139]:
+                            - generic [ref=e1140]:
+                              - generic [ref=e1141]:
+                                - checkbox " Select All" [ref=e1142]
+                                - generic [ref=e1143]:
+                                  - generic [ref=e1144]: 
+                                  - text: Select All
+                              - generic [ref=e1145]:
+                                - generic [ref=e1146]:
+                                  - checkbox "view" [ref=e1147]
+                                  - generic [ref=e1148]: view
+                                - generic [ref=e1149]:
+                                  - checkbox "pair" [ref=e1150]
+                                  - generic [ref=e1151]: pair
+                                - generic [ref=e1152]:
+                                  - checkbox "update config" [ref=e1153]
+                                  - generic [ref=e1154]: update config
+                                - generic [ref=e1155]:
+                                  - checkbox "delete" [ref=e1156]
+                                  - generic [ref=e1157]: delete
+                        - row "Screens Actions Actions that can be performed on screens  Select All restart app restart device clear cache transfer restore" [ref=e1158]:
+                          - cell "Screens Actions Actions that can be performed on screens" [ref=e1159]:
+                            - generic [ref=e1160]:
+                              - generic [ref=e1161]: Screens Actions
+                              - generic [ref=e1162]: Actions that can be performed on screens
+                          - cell " Select All restart app restart device clear cache transfer restore" [ref=e1163]:
+                            - generic [ref=e1164]:
+                              - generic [ref=e1165]:
+                                - checkbox " Select All" [ref=e1166]
+                                - generic [ref=e1167]:
+                                  - generic [ref=e1168]: 
+                                  - text: Select All
+                              - generic [ref=e1169]:
+                                - generic [ref=e1170]:
+                                  - checkbox "restart app" [ref=e1171]
+                                  - generic [ref=e1172]: restart app
+                                - generic [ref=e1173]:
+                                  - checkbox "restart device" [ref=e1174]
+                                  - generic [ref=e1175]: restart device
+                                - generic [ref=e1176]:
+                                  - checkbox "clear cache" [ref=e1177]
+                                  - generic [ref=e1178]: clear cache
+                                - generic [ref=e1179]:
+                                  - checkbox "transfer" [ref=e1180]
+                                  - generic [ref=e1181]: transfer
+                                - generic [ref=e1182]:
+                                  - checkbox "restore" [ref=e1183]
+                                  - generic [ref=e1184]: restore
+                  - generic [ref=e1185]:
+                    - generic [ref=e1187]:
+                      - generic [ref=e1188]:
+                        - 'heading " Section: Content Management" [level=6] [ref=e1189]':
+                          - generic [ref=e1190]: 
+                          - text: "Section: Content Management"
+                        - generic [ref=e1191]: 0/24
+                      - generic [ref=e1192]:
+                        - checkbox " Select All in Content Management" [ref=e1193]
+                        - generic [ref=e1194]:
+                          - generic [ref=e1195]: 
+                          - text: Select All in Content Management
+                    - table [ref=e1197]:
+                      - rowgroup [ref=e1198]:
+                        - row "Module Permissions" [ref=e1199]:
+                          - columnheader "Module" [ref=e1200]
+                          - columnheader "Permissions" [ref=e1201]
+                      - rowgroup [ref=e1202]:
+                        - row "Media (Img/Vid) Inherit from Create/Edit  Select All view upload update delete publish" [ref=e1203]:
+                          - cell "Media (Img/Vid) Inherit from Create/Edit" [ref=e1204]:
+                            - generic [ref=e1205]:
+                              - generic [ref=e1206]: Media (Img/Vid)
+                              - generic [ref=e1207]: Inherit from Create/Edit
+                          - cell " Select All view upload update delete publish" [ref=e1208]:
+                            - generic [ref=e1209]:
+                              - generic [ref=e1210]:
+                                - checkbox " Select All" [ref=e1211]
+                                - generic [ref=e1212]:
+                                  - generic [ref=e1213]: 
+                                  - text: Select All
+                              - generic [ref=e1214]:
+                                - generic [ref=e1215]:
+                                  - checkbox "view" [ref=e1216]
+                                  - generic [ref=e1217]: view
+                                - generic [ref=e1218]:
+                                  - checkbox "upload" [ref=e1219]
+                                  - generic [ref=e1220]: upload
+                                - generic [ref=e1221]:
+                                  - checkbox "update" [ref=e1222]
+                                  - generic [ref=e1223]: update
+                                - generic [ref=e1224]:
+                                  - checkbox "delete" [ref=e1225]
+                                  - generic [ref=e1226]: delete
+                                - generic [ref=e1227]:
+                                  - checkbox "publish" [ref=e1228]
+                                  - generic [ref=e1229]: publish
+                        - row "Widgets Custom widgets integration  Select All view create update delete publish" [ref=e1230]:
+                          - cell "Widgets Custom widgets integration" [ref=e1231]:
+                            - generic [ref=e1232]:
+                              - generic [ref=e1233]: Widgets
+                              - generic [ref=e1234]: Custom widgets integration
+                          - cell " Select All view create update delete publish" [ref=e1235]:
+                            - generic [ref=e1236]:
+                              - generic [ref=e1237]:
+                                - checkbox " Select All" [ref=e1238]
+                                - generic [ref=e1239]:
+                                  - generic [ref=e1240]: 
+                                  - text: Select All
+                              - generic [ref=e1241]:
+                                - generic [ref=e1242]:
+                                  - checkbox "view" [ref=e1243]
+                                  - generic [ref=e1244]: view
+                                - generic [ref=e1245]:
+                                  - checkbox "create" [ref=e1246]
+                                  - generic [ref=e1247]: create
+                                - generic [ref=e1248]:
+                                  - checkbox "update" [ref=e1249]
+                                  - generic [ref=e1250]: update
+                                - generic [ref=e1251]:
+                                  - checkbox "delete" [ref=e1252]
+                                  - generic [ref=e1253]: delete
+                                - generic [ref=e1254]:
+                                  - checkbox "publish" [ref=e1255]
+                                  - generic [ref=e1256]: publish
+                        - row "Media Sets Grouped content collections  Select All view create update delete publish" [ref=e1257]:
+                          - cell "Media Sets Grouped content collections" [ref=e1258]:
+                            - generic [ref=e1259]:
+                              - generic [ref=e1260]: Media Sets
+                              - generic [ref=e1261]: Grouped content collections
+                          - cell " Select All view create update delete publish" [ref=e1262]:
+                            - generic [ref=e1263]:
+                              - generic [ref=e1264]:
+                                - checkbox " Select All" [ref=e1265]
+                                - generic [ref=e1266]:
+                                  - generic [ref=e1267]: 
+                                  - text: Select All
+                              - generic [ref=e1268]:
+                                - generic [ref=e1269]:
+                                  - checkbox "view" [ref=e1270]
+                                  - generic [ref=e1271]: view
+                                - generic [ref=e1272]:
+                                  - checkbox "create" [ref=e1273]
+                                  - generic [ref=e1274]: create
+                                - generic [ref=e1275]:
+                                  - checkbox "update" [ref=e1276]
+                                  - generic [ref=e1277]: update
+                                - generic [ref=e1278]:
+                                  - checkbox "delete" [ref=e1279]
+                                  - generic [ref=e1280]: delete
+                                - generic [ref=e1281]:
+                                  - checkbox "publish" [ref=e1282]
+                                  - generic [ref=e1283]: publish
+                        - row "Playlists Layout sequences  Select All view create update delete publish" [ref=e1284]:
+                          - cell "Playlists Layout sequences" [ref=e1285]:
+                            - generic [ref=e1286]:
+                              - generic [ref=e1287]: Playlists
+                              - generic [ref=e1288]: Layout sequences
+                          - cell " Select All view create update delete publish" [ref=e1289]:
+                            - generic [ref=e1290]:
+                              - generic [ref=e1291]:
+                                - checkbox " Select All" [ref=e1292]
+                                - generic [ref=e1293]:
+                                  - generic [ref=e1294]: 
+                                  - text: Select All
+                              - generic [ref=e1295]:
+                                - generic [ref=e1296]:
+                                  - checkbox "view" [ref=e1297]
+                                  - generic [ref=e1298]: view
+                                - generic [ref=e1299]:
+                                  - checkbox "create" [ref=e1300]
+                                  - generic [ref=e1301]: create
+                                - generic [ref=e1302]:
+                                  - checkbox "update" [ref=e1303]
+                                  - generic [ref=e1304]: update
+                                - generic [ref=e1305]:
+                                  - checkbox "delete" [ref=e1306]
+                                  - generic [ref=e1307]: delete
+                                - generic [ref=e1308]:
+                                  - checkbox "publish" [ref=e1309]
+                                  - generic [ref=e1310]: publish
+                        - row "Sequences Layout sequences  Select All view create update delete" [ref=e1311]:
+                          - cell "Sequences Layout sequences" [ref=e1312]:
+                            - generic [ref=e1313]:
+                              - generic [ref=e1314]: Sequences
+                              - generic [ref=e1315]: Layout sequences
+                          - cell " Select All view create update delete" [ref=e1316]:
+                            - generic [ref=e1317]:
+                              - generic [ref=e1318]:
+                                - checkbox " Select All" [ref=e1319]
+                                - generic [ref=e1320]:
+                                  - generic [ref=e1321]: 
+                                  - text: Select All
+                              - generic [ref=e1322]:
+                                - generic [ref=e1323]:
+                                  - checkbox "view" [ref=e1324]
+                                  - generic [ref=e1325]: view
+                                - generic [ref=e1326]:
+                                  - checkbox "create" [ref=e1327]
+                                  - generic [ref=e1328]: create
+                                - generic [ref=e1329]:
+                                  - checkbox "update" [ref=e1330]
+                                  - generic [ref=e1331]: update
+                                - generic [ref=e1332]:
+                                  - checkbox "delete" [ref=e1333]
+                                  - generic [ref=e1334]: delete
+                  - generic [ref=e1335]:
+                    - generic [ref=e1337]:
+                      - generic [ref=e1338]:
+                        - 'heading " Section: Screen Group Management" [level=6] [ref=e1339]':
+                          - generic [ref=e1340]: 
+                          - text: "Section: Screen Group Management"
+                        - generic [ref=e1341]: 0/6
+                      - generic [ref=e1342]:
+                        - checkbox " Select All in Screen Group Management" [ref=e1343]
+                        - generic [ref=e1344]:
+                          - generic [ref=e1345]: 
+                          - text: Select All in Screen Group Management
+                    - table [ref=e1347]:
+                      - rowgroup [ref=e1348]:
+                        - row "Module Permissions" [ref=e1349]:
+                          - columnheader "Module" [ref=e1350]
+                          - columnheader "Permissions" [ref=e1351]
+                      - rowgroup [ref=e1352]:
+                        - row "Screen Groups Bulk screen organization  Select All view create update delete assign users assign screens" [ref=e1353]:
+                          - cell "Screen Groups Bulk screen organization" [ref=e1354]:
+                            - generic [ref=e1355]:
+                              - generic [ref=e1356]: Screen Groups
+                              - generic [ref=e1357]: Bulk screen organization
+                          - cell " Select All view create update delete assign users assign screens" [ref=e1358]:
+                            - generic [ref=e1359]:
+                              - generic [ref=e1360]:
+                                - checkbox " Select All" [ref=e1361]
+                                - generic [ref=e1362]:
+                                  - generic [ref=e1363]: 
+                                  - text: Select All
+                              - generic [ref=e1364]:
+                                - generic [ref=e1365]:
+                                  - checkbox "view" [ref=e1366]
+                                  - generic [ref=e1367]: view
+                                - generic [ref=e1368]:
+                                  - checkbox "create" [ref=e1369]
+                                  - generic [ref=e1370]: create
+                                - generic [ref=e1371]:
+                                  - checkbox "update" [ref=e1372]
+                                  - generic [ref=e1373]: update
+                                - generic [ref=e1374]:
+                                  - checkbox "delete" [ref=e1375]
+                                  - generic [ref=e1376]: delete
+                                - generic [ref=e1377]:
+                                  - checkbox "assign users" [ref=e1378]
+                                  - generic [ref=e1379]: assign users
+                                - generic [ref=e1380]:
+                                  - checkbox "assign screens" [ref=e1381]
+                                  - generic [ref=e1382]: assign screens
+                  - generic [ref=e1383]:
+                    - generic [ref=e1385]:
+                      - generic [ref=e1386]:
+                        - 'heading " Section: Team Administration" [level=6] [ref=e1387]':
+                          - generic [ref=e1388]: 
+                          - text: "Section: Team Administration"
+                        - generic [ref=e1389]: 0/8
+                      - generic [ref=e1390]:
+                        - checkbox " Select All in Team Administration" [ref=e1391]
+                        - generic [ref=e1392]:
+                          - generic [ref=e1393]: 
+                          - text: Select All in Team Administration
+                    - table [ref=e1395]:
+                      - rowgroup [ref=e1396]:
+                        - row "Module Permissions" [ref=e1397]:
+                          - columnheader "Module" [ref=e1398]
+                          - columnheader "Permissions" [ref=e1399]
+                      - rowgroup [ref=e1400]:
+                        - row "Team Management Role assignment limited to equal or lower permissions  Select All view create update delete" [ref=e1401]:
+                          - cell "Team Management Role assignment limited to equal or lower permissions" [ref=e1402]:
+                            - generic [ref=e1403]:
+                              - generic [ref=e1404]: Team Management
+                              - generic [ref=e1405]: Role assignment limited to equal or lower permissions
+                          - cell " Select All view create update delete" [ref=e1406]:
+                            - generic [ref=e1407]:
+                              - generic [ref=e1408]:
+                                - checkbox " Select All" [ref=e1409]
+                                - generic [ref=e1410]:
+                                  - generic [ref=e1411]: 
+                                  - text: Select All
+                              - generic [ref=e1412]:
+                                - generic [ref=e1413]:
+                                  - checkbox "view" [ref=e1414]
+                                  - generic [ref=e1415]: view
+                                - generic [ref=e1416]:
+                                  - checkbox "create" [ref=e1417]
+                                  - generic [ref=e1418]: create
+                                - generic [ref=e1419]:
+                                  - checkbox "update" [ref=e1420]
+                                  - generic [ref=e1421]: update
+                                - generic [ref=e1422]:
+                                  - checkbox "delete" [ref=e1423]
+                                  - generic [ref=e1424]: delete
+                        - row "Roles Role assignment limited to equal or lower permissions  Select All view create update delete" [ref=e1425]:
+                          - cell "Roles Role assignment limited to equal or lower permissions" [ref=e1426]:
+                            - generic [ref=e1427]:
+                              - generic [ref=e1428]: Roles
+                              - generic [ref=e1429]: Role assignment limited to equal or lower permissions
+                          - cell " Select All view create update delete" [ref=e1430]:
+                            - generic [ref=e1431]:
+                              - generic [ref=e1432]:
+                                - checkbox " Select All" [ref=e1433]
+                                - generic [ref=e1434]:
+                                  - generic [ref=e1435]: 
+                                  - text: Select All
+                              - generic [ref=e1436]:
+                                - generic [ref=e1437]:
+                                  - checkbox "view" [ref=e1438]
+                                  - generic [ref=e1439]: view
+                                - generic [ref=e1440]:
+                                  - checkbox "create" [ref=e1441]
+                                  - generic [ref=e1442]: create
+                                - generic [ref=e1443]:
+                                  - checkbox "update" [ref=e1444]
+                                  - generic [ref=e1445]: update
+                                - generic [ref=e1446]:
+                                  - checkbox "delete" [ref=e1447]
+                                  - generic [ref=e1448]: delete
+                  - generic [ref=e1449]:
+                    - generic [ref=e1452]:
+                      - 'heading " Section: File Uploading" [level=6] [ref=e1453]':
+                        - generic [ref=e1454]: 
+                        - text: "Section: File Uploading"
+                      - generic [ref=e1455]: 0/2
+                    - table [ref=e1457]:
+                      - rowgroup [ref=e1458]:
+                        - row "Module Permissions" [ref=e1459]:
+                          - columnheader "Module" [ref=e1460]
+                          - columnheader "Permissions" [ref=e1461]
+                      - rowgroup [ref=e1462]:
+                        - row "File Approval File approval workflow control yes no" [ref=e1463]:
+                          - cell "File Approval File approval workflow control" [ref=e1464]:
+                            - generic [ref=e1465]:
+                              - generic [ref=e1466]: File Approval
+                              - generic [ref=e1467]: File approval workflow control
+                          - cell "yes no" [ref=e1468]:
+                            - generic [ref=e1470]:
+                              - generic [ref=e1471]:
+                                - checkbox "yes" [ref=e1472]
+                                - text: "yes"
+                              - generic [ref=e1473]:
+                                - checkbox "no" [ref=e1474]
+                                - text: "no"
+                  - generic [ref=e1475]:
+                    - generic [ref=e1478]:
+                      - 'heading " Section: Maker and Checker" [level=6] [ref=e1479]':
+                        - generic [ref=e1480]: 
+                        - text: "Section: Maker and Checker"
+                      - generic [ref=e1481]: 0/2
+                    - table [ref=e1483]:
+                      - rowgroup [ref=e1484]:
+                        - row "Module Permissions" [ref=e1485]:
+                          - columnheader "Module" [ref=e1486]
+                          - columnheader "Permissions" [ref=e1487]
+                      - rowgroup [ref=e1488]:
+                        - row "Maker and Checker Content Publishing Maker Checker workflow yes no" [ref=e1489]:
+                          - cell "Maker and Checker Content Publishing Maker Checker workflow" [ref=e1490]:
+                            - generic [ref=e1491]:
+                              - generic [ref=e1492]: Maker and Checker
+                              - generic [ref=e1493]: Content Publishing Maker Checker workflow
+                          - cell "yes no" [ref=e1494]:
+                            - generic [ref=e1496]:
+                              - generic [ref=e1497]:
+                                - checkbox "yes" [ref=e1498]
+                                - text: "yes"
+                              - generic [ref=e1499]:
+                                - checkbox "no" [ref=e1500]
+                                - text: "no"
+                  - generic [ref=e1501]:
+                    - generic [ref=e1503]:
+                      - generic [ref=e1504]:
+                        - 'heading " Section: Reports" [level=6] [ref=e1505]':
+                          - generic [ref=e1506]: 
+                          - text: "Section: Reports"
+                        - generic [ref=e1507]: 0/2
+                      - generic [ref=e1508]:
+                        - checkbox " Select All in Reports" [ref=e1509]
+                        - generic [ref=e1510]:
+                          - generic [ref=e1511]: 
+                          - text: Select All in Reports
+                    - table [ref=e1513]:
+                      - rowgroup [ref=e1514]:
+                        - row "Module Permissions" [ref=e1515]:
+                          - columnheader "Module" [ref=e1516]
+                          - columnheader "Permissions" [ref=e1517]
+                      - rowgroup [ref=e1518]:
+                        - row "Reports Reports management and control  Select All view" [ref=e1519]:
+                          - cell "Reports Reports management and control" [ref=e1520]:
+                            - generic [ref=e1521]:
+                              - generic [ref=e1522]: Reports
+                              - generic [ref=e1523]: Reports management and control
+                          - cell " Select All view" [ref=e1524]:
+                            - generic [ref=e1525]:
+                              - generic [ref=e1526]:
+                                - checkbox " Select All" [ref=e1527]
+                                - generic [ref=e1528]:
+                                  - generic [ref=e1529]: 
+                                  - text: Select All
+                              - generic [ref=e1531]:
+                                - checkbox "view" [ref=e1532]
+                                - generic [ref=e1533]: view
+                        - row "Logs Logs management and control  Select All view" [ref=e1534]:
+                          - cell "Logs Logs management and control" [ref=e1535]:
+                            - generic [ref=e1536]:
+                              - generic [ref=e1537]: Logs
+                              - generic [ref=e1538]: Logs management and control
+                          - cell " Select All view" [ref=e1539]:
+                            - generic [ref=e1540]:
+                              - generic [ref=e1541]:
+                                - checkbox " Select All" [ref=e1542]
+                                - generic [ref=e1543]:
+                                  - generic [ref=e1544]: 
+                                  - text: Select All
+                              - generic [ref=e1546]:
+                                - checkbox "view" [ref=e1547]
+                                - generic [ref=e1548]: view
+                  - generic [ref=e1549]:
+                    - generic [ref=e1551]:
+                      - generic [ref=e1552]:
+                        - 'heading " Section: Cluster Management" [level=6] [ref=e1553]':
+                          - generic [ref=e1554]: 
+                          - text: "Section: Cluster Management"
+                        - generic [ref=e1555]: 0/4
+                      - generic [ref=e1556]:
+                        - checkbox " Select All in Cluster Management" [ref=e1557]
+                        - generic [ref=e1558]:
+                          - generic [ref=e1559]: 
+                          - text: Select All in Cluster Management
+                    - table [ref=e1561]:
+                      - rowgroup [ref=e1562]:
+                        - row "Module Permissions" [ref=e1563]:
+                          - columnheader "Module" [ref=e1564]
+                          - columnheader "Permissions" [ref=e1565]
+                      - rowgroup [ref=e1566]:
+                        - row "Clusters Cluster management and control  Select All view create update delete" [ref=e1567]:
+                          - cell "Clusters Cluster management and control" [ref=e1568]:
+                            - generic [ref=e1569]:
+                              - generic [ref=e1570]: Clusters
+                              - generic [ref=e1571]: Cluster management and control
+                          - cell " Select All view create update delete" [ref=e1572]:
+                            - generic [ref=e1573]:
+                              - generic [ref=e1574]:
+                                - checkbox " Select All" [ref=e1575]
+                                - generic [ref=e1576]:
+                                  - generic [ref=e1577]: 
+                                  - text: Select All
+                              - generic [ref=e1578]:
+                                - generic [ref=e1579]:
+                                  - checkbox "view" [ref=e1580]
+                                  - generic [ref=e1581]: view
+                                - generic [ref=e1582]:
+                                  - checkbox "create" [ref=e1583]
+                                  - generic [ref=e1584]: create
+                                - generic [ref=e1585]:
+                                  - checkbox "update" [ref=e1586]
+                                  - generic [ref=e1587]: update
+                                - generic [ref=e1588]:
+                                  - checkbox "delete" [ref=e1589]
+                                  - generic [ref=e1590]: delete
+                  - generic [ref=e1591]:
+                    - generic [ref=e1593]:
+                      - generic [ref=e1594]:
+                        - 'heading " Section: Remote Update" [level=6] [ref=e1595]':
+                          - generic [ref=e1596]: 
+                          - text: "Section: Remote Update"
+                        - generic [ref=e1597]: 0/2
+                      - generic [ref=e1598]:
+                        - checkbox " Select All in Remote Update" [ref=e1599]
+                        - generic [ref=e1600]:
+                          - generic [ref=e1601]: 
+                          - text: Select All in Remote Update
+                    - table [ref=e1603]:
+                      - rowgroup [ref=e1604]:
+                        - row "Module Permissions" [ref=e1605]:
+                          - columnheader "Module" [ref=e1606]
+                          - columnheader "Permissions" [ref=e1607]
+                      - rowgroup [ref=e1608]:
+                        - row "Remote Update This allows you to update signage application remotely  Select All view apply" [ref=e1609]:
+                          - cell "Remote Update This allows you to update signage application remotely" [ref=e1610]:
+                            - generic [ref=e1611]:
+                              - generic [ref=e1612]: Remote Update
+                              - generic [ref=e1613]: This allows you to update signage application remotely
+                          - cell " Select All view apply" [ref=e1614]:
+                            - generic [ref=e1615]:
+                              - generic [ref=e1616]:
+                                - checkbox " Select All" [ref=e1617]
+                                - generic [ref=e1618]:
+                                  - generic [ref=e1619]: 
+                                  - text: Select All
+                              - generic [ref=e1620]:
+                                - generic [ref=e1621]:
+                                  - checkbox "view" [ref=e1622]
+                                  - generic [ref=e1623]: view
+                                - generic [ref=e1624]:
+                                  - checkbox "apply" [ref=e1625]
+                                  - generic [ref=e1626]: apply
+            - generic [ref=e1627]:
+              - button "Cancel" [ref=e1628] [cursor=pointer]
+              - button "Create Role" [ref=e1629] [cursor=pointer]
+      - text:     
+  - text: "* *"

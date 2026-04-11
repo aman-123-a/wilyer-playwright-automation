@@ -1,0 +1,195 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Carter",
+      "email": "alice.carter@example.com",
+      "role": "Admin",
+      "reports_to": null,
+      "reportees": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Brian Walker",
+      "email": "brian.walker@example.com",
+      "role": "User",
+      "reports_to": 1,
+      "reportees": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Cynthia Reed",
+      "email": "cynthia.reed@example.com",
+      "role": "User",
+      "reports_to": 1,
+      "reportees": [
+        7,
+        8
+      ]
+    },
+    {
+      "id": 4,
+      "name": "David Morgan",
+      "email": "david.morgan@example.com",
+      "role": "User",
+      "reports_to": 1,
+      "reportees": [
+        9,
+        10
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Ethan Brooks",
+      "email": "ethan.brooks@example.com",
+      "role": "User",
+      "reports_to": 2,
+      "reportees": [
+        11,
+        12
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Fiona Hayes",
+      "email": "fiona.hayes@example.com",
+      "role": "User",
+      "reports_to": 2,
+      "reportees": [
+        13
+      ]
+    },
+    {
+      "id": 7,
+      "name": "George Bennett",
+      "email": "george.bennett@example.com",
+      "role": "User",
+      "reports_to": 3,
+      "reportees": [
+        14,
+        15
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Hannah Price",
+      "email": "hannah.price@example.com",
+      "role": "User",
+      "reports_to": 3,
+      "reportees": [
+        16
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Ian Foster",
+      "email": "ian.foster@example.com",
+      "role": "User",
+      "reports_to": 4,
+      "reportees": [
+        17
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Julia Turner",
+      "email": "julia.turner@example.com",
+      "role": "User",
+      "reports_to": 4,
+      "reportees": [
+        18
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Kevin Hughes",
+      "email": "kevin.hughes@example.com",
+      "role": "User",
+      "reports_to": 5,
+      "reportees": [
+        19
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Laura Simmons",
+      "email": "laura.simmons@example.com",
+      "role": "User",
+      "reports_to": 5,
+      "reportees": [
+        20
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Marcus Flynn",
+      "email": "marcus.flynn@example.com",
+      "role": "User",
+      "reports_to": 6,
+      "reportees": []
+    },
+    {
+      "id": 14,
+      "name": "Nina Powell",
+      "email": "nina.powell@example.com",
+      "role": "User",
+      "reports_to": 7,
+      "reportees": []
+    },
+    {
+      "id": 15,
+      "name": "Oscar Grant",
+      "email": "oscar.grant@example.com",
+      "role": "User",
+      "reports_to": 7,
+      "reportees": []
+    },
+    {
+      "id": 16,
+      "name": "Paula Reyes",
+      "email": "paula.reyes@example.com",
+      "role": "User",
+      "reports_to": 8,
+      "reportees": []
+    },
+    {
+      "id": 17,
+      "name": "Quincy Ward",
+      "email": "quincy.ward@example.com",
+      "role": "User",
+      "reports_to": 9,
+      "reportees": []
+    },
+    {
+      "id": 18,
+      "name": "Rachel Long",
+      "email": "rachel.long@example.com",
+      "role": "User",
+      "reports_to": 10,
+      "reportees": []
+    },
+    {
+      "id": 19,
+      "name": "Samuel Cox",
+      "email": "samuel.cox@example.com",
+      "role": "User",
+      "reports_to": 11,
+      "reportees": []
+    },
+    {
+      "id": 20,
+      "name": "Tina Wells",
+      "email": "tina.wells@example.com",
+      "role": "User",
+      "reports_to": 12,
+      "reportees": []
+    }
+  ]
+}
