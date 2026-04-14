@@ -4,11 +4,17 @@
   "type": "module",
   "scripts": {
     "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:codegen": "playwright codegen",
+    "playwright:install": "playwright install --with-deps",
     "mcp-server": "node mcp-server.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
     "@playwright/mcp": "^0.0.70",
+    "exceljs": "^4.4.0",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {

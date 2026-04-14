@@ -1,0 +1,193 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link " Dashboard" [ref=e12] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e13]: 
+              - text: Dashboard
+          - listitem [ref=e14]:
+            - link " Screens" [active] [ref=e15] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e16]: 
+              - text: Screens
+          - listitem [ref=e17]:
+            - link " Groups" [ref=e18] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e19]: 
+              - text: Groups
+          - listitem [ref=e20]:
+            - link " Clusters" [ref=e21] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e22]: 
+              - text: Clusters
+          - listitem [ref=e23]:
+            - link " Library" [ref=e24] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e25]: 
+              - text: Library
+          - listitem [ref=e26]:
+            - link " Playlists" [ref=e27] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e28]: 
+              - text: Playlists
+          - listitem [ref=e29]:
+            - link " Reports" [ref=e30] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e31]: 
+              - text: Reports
+          - separator [ref=e32]
+          - listitem [ref=e33]:
+            - link " Help" [ref=e34] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e35]: 
+              - text: Help
+          - listitem [ref=e36]:
+            - link " Feedback" [ref=e37] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e38]: 
+              - text: Feedback
+          - listitem [ref=e39]:
+            - link " Account" [ref=e40] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e41]: 
+              - text: Account
+          - listitem [ref=e42]:
+            - link " Logout" [ref=e43] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e44]: 
+              - text: Logout
+      - generic [ref=e46]:
+        - generic "sub user" [ref=e48]:
+          - generic [ref=e50]: SU
+        - generic [ref=e51]: subuser@wilyer.com
+      - generic [ref=e52]: v3.5.20
+    - generic [ref=e54]:
+      - generic [ref=e274]:
+        - generic [ref=e275]:
+          - link " 1 Live Screens" [ref=e277] [cursor=pointer]:
+            - /url: /screens
+            - generic [ref=e281]:
+              - generic [ref=e284]: 
+              - generic [ref=e285]:
+                - heading "1" [level=4] [ref=e286]
+                - heading "Live Screens" [level=6] [ref=e287]
+          - link " 0 Offline Screens" [ref=e289] [cursor=pointer]:
+            - /url: /screens
+            - generic [ref=e293]:
+              - generic [ref=e296]: 
+              - generic [ref=e297]:
+                - heading "0" [level=4] [ref=e298]
+                - heading "Offline Screens" [level=6] [ref=e299]
+          - link " 0 Expiring Screens" [ref=e301] [cursor=pointer]:
+            - /url: /screens
+            - generic [ref=e305]:
+              - generic [ref=e308]: 
+              - generic [ref=e309]:
+                - heading "0" [level=4] [ref=e310]
+                - heading "Expiring Screens" [level=6] [ref=e311]
+          - link " 0 Available Licenses" [ref=e313] [cursor=pointer]:
+            - /url: /screens
+            - generic [ref=e317]:
+              - generic [ref=e320]: 
+              - generic [ref=e321]:
+                - heading "0" [level=4] [ref=e322]
+                - heading "Available Licenses" [level=6] [ref=e323]
+        - generic [ref=e324]:
+          - link "All Screens (1)" [ref=e326] [cursor=pointer]:
+            - /url: /screens
+          - generic [ref=e327]:
+            - button "Read Docs " [ref=e328] [cursor=pointer]:
+              - text: Read Docs
+              - generic [ref=e329]: 
+            - button "+ New Screen" [ref=e330] [cursor=pointer]
+        - generic [ref=e331]:
+          - generic [ref=e333]:
+            - generic [ref=e334]: All Screens (1)
+            - generic [ref=e335]:
+              - combobox [ref=e336]:
+                - option "20 Screens" [selected]
+                - option "50 Screens"
+                - option "100 Screens"
+                - option "200 Screens"
+                - option "500 Screens"
+                - option "1000 Screens"
+              - textbox "Search..." [ref=e337]
+              - generic [ref=e339]:
+                - log [ref=e341]
+                - generic [ref=e342]:
+                  - generic [ref=e343]:
+                    - generic [ref=e344]: Select Tags
+                    - combobox [ref=e346]
+                  - img [ref=e350]
+              - link " Filter" [ref=e352] [cursor=pointer]:
+                - /url: /screens
+                - emphasis [ref=e353]: 
+                - text: Filter
+          - table [ref=e356]:
+            - rowgroup [ref=e357]:
+              - row "# Screen ID Screen Name   Status Playing Orientation Expiry   Last Response   Tags Action" [ref=e358]:
+                - columnheader [ref=e359]:
+                  - checkbox [ref=e360]
+                - columnheader "#" [ref=e361]
+                - columnheader "Screen ID" [ref=e362]
+                - columnheader "Screen Name  " [ref=e363]:
+                  - generic [ref=e364]:
+                    - text: Screen Name
+                    - generic [ref=e365] [cursor=pointer]:
+                      - generic [ref=e366]: 
+                      - generic [ref=e367]: 
+                - columnheader "Status" [ref=e368]
+                - columnheader "Playing" [ref=e369]
+                - columnheader "Orientation" [ref=e370]
+                - columnheader "Expiry  " [ref=e371]:
+                  - generic [ref=e372]:
+                    - text: Expiry
+                    - generic [ref=e373] [cursor=pointer]:
+                      - generic [ref=e374]: 
+                      - generic [ref=e375]: 
+                - columnheader "Last Response  " [ref=e376]:
+                  - generic [ref=e377]:
+                    - text: Last Response
+                    - generic [ref=e378] [cursor=pointer]:
+                      - generic [ref=e379]: 
+                      - generic [ref=e380]: 
+                - columnheader "Tags" [ref=e381]
+                - columnheader "Action" [ref=e382]
+            - rowgroup [ref=e383]:
+              - row "1 2676324043 os AmanQA Online N/A PORTRAIT 01/10/26 4 seconds ago  View Detail" [ref=e384]:
+                - cell [ref=e385]:
+                  - checkbox [ref=e386]
+                - cell "1" [ref=e387]
+                - cell "2676324043" [ref=e388]
+                - cell "os AmanQA" [ref=e389]:
+                  - generic [ref=e390]:
+                    - img "os" [ref=e391]
+                    - text: AmanQA
+                - cell "Online" [ref=e392]:
+                  - generic [ref=e393]: Online
+                - cell "N/A" [ref=e394]:
+                  - generic [ref=e396]: N/A
+                - cell "PORTRAIT" [ref=e397]
+                - cell "01/10/26" [ref=e398]
+                - cell "4 seconds ago" [ref=e399]
+                - cell [ref=e400]
+                - cell " View Detail" [ref=e401]:
+                  - link " View Detail" [ref=e402] [cursor=pointer]:
+                    - /url: /screen-settings/69dc9dab4f2ddedd756e9f96
+                    - generic [ref=e403]: 
+                    - text: View Detail
+        - navigation "Page navigation" [ref=e404]:
+          - list [ref=e405]:
+            - listitem [ref=e406]:
+              - button "Previous"
+            - listitem [ref=e407]:
+              - button "1" [ref=e408] [cursor=pointer]
+            - listitem [ref=e409]:
+              - button "Next"
+      - text: 
+  - text: "* *"

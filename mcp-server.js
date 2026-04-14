@@ -2,6 +2,10 @@ import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import { CallToolRequestSchema, ErrorCode, ListToolsRequestSchema, McpError } from '@modelcontextprotocol/sdk/types.js';
 import { chromium } from 'playwright';
+import { exec } from 'child_process';
+import { promisify } from 'util';
+
+const execPromise = promisify(exec);
 
 class PlaywrightMCPServer {
   constructor() {
@@ -201,6 +205,23 @@ class PlaywrightMCPServer {
               properties: {},
             },
           },
+          {
+            name: 'run_playwright_test',
+            description: 'Run Playwright tests using the project CLI',
+            inputSchema: {
+              type: 'object',
+              properties: {
+                testFile: {
+                  type: 'string',
+                  description: 'Specific test file to run (optional)',
+                },
+                grep: {
+                  type: 'string',
+                  description: 'Filter tests by name (optional)',
+                },
+              },
+            },
+          },
         ],
       };
     });
@@ -223,6 +244,22 @@ class PlaywrightMCPServer {
             return await this.getPageContent();
           case 'take_screenshot':
             return await this.takeScreenshot(args.path);
+          case 'wait_for_selector':
+            return await this.waitForSelector(args.selector, args.timeout);
+          case 'get_text':
+            return await this.getText(args.selector);
+          case 'select_option':
+            return await this.selectOption(args.selector, args.value);
+          case 'get_current_url':
+            return await this.getCurrentUrl();
+          case 'scroll':
+            return await this.scroll(args.direction, args.distance, args.selector);
+          case 'go_back':
+            return await this.goBack();
+          case 'go_forward':
+            return await this.goForward();
+          case 'run_playwright_test':
+            return await this.runPlaywrightTest(args.testFile, args.grep);
           case 'close_browser':
             return await this.closeBrowser();
           default:
@@ -298,6 +335,70 @@ class PlaywrightMCPServer {
       return { content: [{ type: 'text', text: 'Browser closed' }] };
     }
     return { content: [{ type: 'text', text: 'No browser to close' }] };
+  }
+
+  async waitForSelector(selector, timeout = 30000) {
+    if (!this.page) throw new Error('Browser not launched');
+    await this.page.waitForSelector(selector, { timeout });
+    return { content: [{ type: 'text', text: `Element ${selector} appeared` }] };
+  }
+
+  async getText(selector) {
+    if (!this.page) throw new Error('Browser not launched');
+    const text = await this.page.textContent(selector);
+    return { content: [{ type: 'text', text: text || '' }] };
+  }
+
+  async selectOption(selector, value) {
+    if (!this.page) throw new Error('Browser not launched');
+    await this.page.selectOption(selector, value);
+    return { content: [{ type: 'text', text: `Selected ${value} in ${selector}` }] };
+  }
+
+  async getCurrentUrl() {
+    if (!this.page) throw new Error('Browser not launched');
+    const url = this.page.url();
+    return { content: [{ type: 'text', text: url }] };
+  }
+
+  async scroll(direction, distance = 100, selector = null) {
+    if (!this.page) throw new Error('Browser not launched');
+    const scrollCommand = selector 
+      ? `document.querySelector('${selector}').scrollBy(0, ${direction === 'down' ? distance : -distance})`
+      : `window.scrollBy(0, ${direction === 'down' ? distance : -distance})`;
+    
+    await this.page.evaluate(scrollCommand);
+    return { content: [{ type: 'text', text: `Scrolled ${direction} ${distance}px` }] };
+  }
+
+  async goBack() {
+    if (!this.page) throw new Error('Browser not launched');
+    await this.page.goBack();
+    return { content: [{ type: 'text', text: 'Navigated back' }] };
+  }
+
+  async goForward() {
+    if (!this.page) throw new Error('Browser not launched');
+    await this.page.goForward();
+    return { content: [{ type: 'text', text: 'Navigated forward' }] };
+  }
+
+  async runPlaywrightTest(testFile = '', grep = '') {
+    const cmd = `npx playwright test ${testFile} ${grep ? `--grep "${grep}"` : ''}`;
+    try {
+      const { stdout, stderr } = await execPromise(cmd);
+      return { 
+        content: [
+          { type: 'text', text: `Test Output:\n${stdout}` },
+          { type: 'text', text: stderr ? `Errors:\n${stderr}` : '' }
+        ] 
+      };
+    } catch (error) {
+      return { 
+        content: [{ type: 'text', text: `Test Failed:\n${error.stdout || error.message}` }],
+        isError: true 
+      };
+    }
   }
 
   async run() {

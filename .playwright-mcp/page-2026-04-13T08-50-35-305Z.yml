@@ -1,0 +1,104 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link " Dashboard" [ref=e12] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e13]: 
+              - text: Dashboard
+          - listitem [ref=e14]:
+            - link " Screens" [ref=e15] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e16]: 
+              - text: Screens
+          - listitem [ref=e17]:
+            - link " Groups" [ref=e18] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e19]: 
+              - text: Groups
+          - listitem [ref=e20]:
+            - link " Clusters" [active] [ref=e21] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e22]: 
+              - text: Clusters
+          - listitem [ref=e23]:
+            - link " Library" [ref=e24] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e25]: 
+              - text: Library
+          - listitem [ref=e26]:
+            - link " Playlists" [ref=e27] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e28]: 
+              - text: Playlists
+          - listitem [ref=e29]:
+            - link " Reports" [ref=e30] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e31]: 
+              - text: Reports
+          - separator [ref=e32]
+          - listitem [ref=e33]:
+            - link " Help" [ref=e34] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e35]: 
+              - text: Help
+          - listitem [ref=e36]:
+            - link " Feedback" [ref=e37] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e38]: 
+              - text: Feedback
+          - listitem [ref=e39]:
+            - link " Account" [ref=e40] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e41]: 
+              - text: Account
+          - listitem [ref=e42]:
+            - link " Logout" [ref=e43] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e44]: 
+              - text: Logout
+      - generic [ref=e46]:
+        - generic "sub user" [ref=e48]:
+          - generic [ref=e50]: SU
+        - generic [ref=e51]: subuser@wilyer.com
+      - generic [ref=e52]: v3.5.20
+    - generic [ref=e54]:
+      - generic [ref=e450]:
+        - generic [ref=e452]:
+          - generic [ref=e453]:
+            - text: Screen Clusters
+            - generic [ref=e455]: Total Screen Clusters - 1
+          - generic [ref=e456]:
+            - textbox "Search..." [ref=e458]
+            - button " New Cluster" [ref=e460] [cursor=pointer]:
+              - generic [ref=e461]: 
+              - text: New Cluster
+        - table [ref=e464]:
+          - rowgroup [ref=e465]:
+            - row "# Cluster Name Screens Created Action" [ref=e466]:
+              - columnheader "#" [ref=e467]
+              - columnheader "Cluster Name" [ref=e468]
+              - columnheader "Screens" [ref=e469]
+              - columnheader "Created" [ref=e470]
+              - columnheader "Action" [ref=e471]
+          - rowgroup [ref=e472]:
+            - row "1 sub user cluster 0 4/13/2026, 2:05:46 PM   " [ref=e473]:
+              - cell "1" [ref=e474]
+              - cell "sub user cluster" [ref=e475]
+              - cell "0" [ref=e476]
+              - cell "4/13/2026, 2:05:46 PM" [ref=e477]
+              - cell "  " [ref=e478]:
+                - link "" [ref=e479] [cursor=pointer]:
+                  - /url: /clusters
+                  - generic [ref=e480]: 
+                - link "" [ref=e481] [cursor=pointer]:
+                  - /url: /cluster-settings/69dcaae261d5f489d44f5937
+                  - generic [ref=e482]: 
+                - button "" [ref=e483] [cursor=pointer]:
+                  - generic [ref=e484]: 
+      - text: 
+  - text: "* *"
