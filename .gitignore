@@ -6,3 +6,17 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# MCP traces and exploration artifacts
+.playwright-mcp/
+
+# Local Claude settings and runtime files
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+
+# Root-level debug screenshots and page snapshots
+/*.png
+/*.yml
+
+# Run logs
+/reports/*.log
