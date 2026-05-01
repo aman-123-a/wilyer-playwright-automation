@@ -1,0 +1,83 @@
+{
+  "cookies": [
+    {
+      "name": "_GRECAPTCHA",
+      "value": "09AKhCRwgqaysrvBhqstKxtqxfyYE1dP8y_gwazLx5vp86Nylg17616wbaBCP5AwujVcs4c8B7l_4jYwVvY5tk_Ng",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1792946687.740604,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "rzp_unified_session_id",
+      "value": "Siz1JN7VaoFVCK",
+      "domain": "cms3.pocsample.in",
+      "path": "/",
+      "expires": 1777396480,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "footprint",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMjYzYzFlMTRmNWE3MmVlMWJkZjM5NSIsInVzZXJJZCI6IjYyMjYzYzFlMTRmNWE3MmVlMWJkZjM5NSIsImVtYWlsIjoiZGV2QHdpbHllci5jb20iLCJuYW1lIjoiZGV2Iiwicm9sZSI6InVzZXIiLCJwYXJ0bmVyIjoiNjIyZWU2MWJlOGM2ZTE2ZWIwYTgyNDczIiwiaXNEb29oRW5hYmxlZCI6dHJ1ZSwiaXNDbHVzdGVyRW5hYmxlZCI6dHJ1ZSwiaXNIZG1pRW5hYmxlZCI6dHJ1ZSwiaXNGaWxlQXBwcm92ZVBlcm1pc3Npb24iOnRydWUsImlzRmlsZUFwcHJvdmFsUmVxdWlyZWQiOnRydWUsImlzVHdvRkEiOmZhbHNlLCJpc1Jlc3RyaWN0ZWRBY2Nlc3MiOmZhbHNlLCJpc1BsYXlsaXN0Rm9sZGVyRW5hYmxlZCI6dHJ1ZSwiaXNEeW5hbWljQ3JlYXRpdmVBcGlBY2Nlc3NFbmFibGVkIjp0cnVlLCJmaWxlVXBsb2FkU2VydmVyIjoicjIiLCJpc0JpcnRoZGF5V2lkZ2V0RW5hYmxlZCI6dHJ1ZSwiaXNDbHVzdGVyU2NyZWVuc0xpbWl0RW5hYmxlZCI6ZmFsc2UsImNsdXN0ZXJTY3JlZW5zTGltaXQiOjIsImlhdCI6MTc3NzM5NDY4MywiZXhwIjoxNzc3NDgxMDgzfQ.5oQepQJAudyIE5X1yPryaVj4NXPAicO3xIoxrr_nvxc",
+      "domain": "cms3.pocsample.in",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://cms3.pocsample.in",
+      "localStorage": [
+        {
+          "name": "rzp_device_id",
+          "value": "1.46872c064e05a2db799d55d8b649e0de65e973a9.1777394680998.36710229"
+        },
+        {
+          "name": "email",
+          "value": "dev@wilyer.com"
+        },
+        {
+          "name": "sidebar",
+          "value": "visible"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AKhCRwi9R9xTkOD6v4dG6qHiDjeIeaIXEaMuSXvNrEAA_6UvaF-ehHgPFXeNZyxTkUiHiz_qJVlPJixOf6DQBqTU68BfqSRdfyiQ9tqUBYp0XskZeghWMSu6gE24smZy"
+        },
+        {
+          "name": "rzp_checkout_anon_id",
+          "value": "a29898af61b449639ccaebc8bb72f22e"
+        }
+      ]
+    },
+    {
+      "origin": "https://api.razorpay.com",
+      "localStorage": [
+        {
+          "name": "rzp_device_id",
+          "value": "1.ad40dae94e573098a23c1472b2758a89de142ea0.1777394683608.39782875"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "MXRndGEzdjFqZGMzNnM="
+        },
+        {
+          "name": "rc::f",
+          "value": "0aAJhJSMRMSILEuNoBaB6ME-9uv9rcc4vtz456p2Z1i4tZPmk0zruClo6Ck_8q-FG5X-TrqbA"
+        }
+      ]
+    }
+  ]
+}

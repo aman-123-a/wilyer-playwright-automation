@@ -1,0 +1,222 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link " Dashboard" [ref=e12] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e13]: 
+              - text: Dashboard
+          - listitem [ref=e14]:
+            - link " Screens" [ref=e15] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e16]: 
+              - text: Screens
+          - listitem [ref=e17]:
+            - link " Clusters" [ref=e18] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e19]: 
+              - text: Clusters
+          - listitem [ref=e20]:
+            - link " Library" [ref=e21] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e22]: 
+              - text: Library
+          - listitem [ref=e23]:
+            - link " Playlists" [ref=e24] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e25]: 
+              - text: Playlists
+          - listitem [ref=e26]:
+            - link " Team" [ref=e27] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e28]: 
+              - text: Team
+          - listitem [ref=e29]:
+            - link " Reports" [ref=e30] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e31]: 
+              - text: Reports
+          - separator [ref=e32]
+          - listitem [ref=e33]:
+            - link " Help" [ref=e34] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e35]: 
+              - text: Help
+          - listitem [ref=e36]:
+            - link " Feedback" [ref=e37] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e38]: 
+              - text: Feedback
+          - listitem [ref=e39]:
+            - link " Account" [ref=e40] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e41]: 
+              - text: Account
+          - listitem [ref=e42]:
+            - link " Logout" [ref=e43] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e44]: 
+              - text: Logout
+      - generic [ref=e46]:
+        - generic "AMAN" [ref=e48]:
+          - generic [ref=e50]: A
+        - generic [ref=e51]: amankumarbsrbsr@gmail.com
+      - generic [ref=e52]: v3.5.20
+    - generic [ref=e58]:
+      - generic [ref=e59]:
+        - heading "Library" [level=3] [ref=e60]
+        - generic [ref=e61]:
+          - button " Documentation" [ref=e62] [cursor=pointer]:
+            - generic [ref=e63]: 
+            - text: Documentation
+          - button " Upload Files" [ref=e304] [cursor=pointer]:
+            - generic [ref=e305]: 
+            - text: Upload Files
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - generic [ref=e67]:
+            - generic [ref=e68]: 
+            - generic [ref=e69]: Subfolders ( 1 )
+          - generic [ref=e306]:
+            - button " Back" [ref=e307] [cursor=pointer]:
+              - generic [ref=e308]: 
+              - text: Back
+            - button " Create Folder" [ref=e309] [cursor=pointer]:
+              - generic [ref=e310]: 
+              - text: Create Folder
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - generic [ref=e74]: 
+            - textbox "Search folders (including nested)..." [ref=e75]
+          - generic [ref=e311]:
+            - generic [ref=e312]: "Actions:"
+            - button " Rename" [ref=e313] [cursor=pointer]:
+              - generic [ref=e314]: 
+              - text: Rename
+            - button " Delete" [ref=e315] [cursor=pointer]:
+              - generic [ref=e316]: 
+              - text: Delete
+        - generic [ref=e318]:
+          - generic [ref=e319]: "Current location:"
+          - navigation "breadcrumb" [ref=e320]:
+            - list [ref=e321]:
+              - listitem [ref=e322]:
+                - button "All Folders" [ref=e323] [cursor=pointer]
+              - listitem [ref=e324]:
+                - text: /
+                - strong [ref=e325]: sector 14
+        - generic [ref=e330] [cursor=pointer]:
+          - generic [ref=e331]: 
+          - generic "Group linked" [ref=e333]:
+            - generic [ref=e334]: 
+          - generic [ref=e335]: teate
+      - link "Media" [ref=e87] [cursor=pointer]:
+        - /url: /library
+      - link "Widgets" [ref=e88] [cursor=pointer]:
+        - /url: /library
+      - link "Unapproved Files" [ref=e89] [cursor=pointer]:
+        - /url: /library
+      - link " Create Design" [ref=e336] [cursor=pointer]:
+        - /url: /library
+        - generic [ref=e337]: 
+        - text: Create Design
+      - generic [ref=e217]:
+        - generic [ref=e218]:
+          - generic [ref=e338]:
+            - generic [ref=e339]: "Media Files in:"
+            - navigation "breadcrumb" [ref=e340]:
+              - list [ref=e341]:
+                - listitem [ref=e342]:
+                  - generic [ref=e343]:
+                    - generic [ref=e344]: 
+                    - text: Root
+                - listitem [ref=e345]:
+                  - text: /
+                  - generic [ref=e346]:
+                    - generic [ref=e347]: 
+                    - text: sector 14
+          - generic [ref=e221]: Total Files - 2
+        - generic [ref=e222]:
+          - button "All" [ref=e223] [cursor=pointer]
+          - button "Videos" [ref=e224] [cursor=pointer]
+          - button "Photos" [ref=e225] [cursor=pointer]
+        - generic [ref=e226]:
+          - generic [ref=e227]:
+            - generic [ref=e229] [cursor=pointer]: 
+            - generic [ref=e231] [cursor=pointer]: Sort by Uploaded Date
+          - textbox "Search..." [ref=e233]
+          - generic [ref=e234]:
+            - generic [ref=e236] [cursor=pointer]: 
+            - generic [ref=e238] [cursor=pointer]: 
+      - generic [ref=e239]:
+        - generic [ref=e241]:
+          - generic [ref=e244]:
+            - generic [ref=e246] [cursor=pointer]:
+              - generic [ref=e249]: 
+              - generic [ref=e250]:
+                - text: 1024 x 1024
+                - generic [ref=e251]: 
+                - text: 24 bit
+            - generic [ref=e252]:
+              - checkbox [ref=e253]
+              - generic [ref=e254]:
+                - button "" [ref=e255] [cursor=pointer]:
+                  - generic [ref=e256]: 
+                - text: 
+            - generic [ref=e257]:
+              - generic [ref=e258]:
+                - text: Gemini_Generated_Ima...
+                - generic [ref=e259]:
+                  - text: IMAGE
+                  - generic [ref=e260]: 
+                  - generic [ref=e261]: 1.93MB
+                  - generic [ref=e262]: 
+                  - generic [ref=e263] [cursor=pointer]: 0 Screens
+              - generic [ref=e264]:
+                - link "" [ref=e265] [cursor=pointer]:
+                  - /url: /file-details/69e0b7aebd56651570407109
+                  - generic [ref=e266]: 
+                - button "" [ref=e267] [cursor=pointer]:
+                  - generic [ref=e268]: 
+                - button "" [ref=e269] [cursor=pointer]:
+                  - generic [ref=e270]: 
+                - button "Delete" [ref=e271] [cursor=pointer]
+          - generic [ref=e274]:
+            - generic [ref=e276] [cursor=pointer]:
+              - generic [ref=e279]: 
+              - generic [ref=e280]:
+                - text: 1596 x 539
+                - generic [ref=e281]: 
+                - text: 32 bit
+            - generic [ref=e282]:
+              - checkbox [ref=e283]
+              - generic [ref=e284]:
+                - button "" [ref=e285] [cursor=pointer]:
+                  - generic [ref=e286]: 
+                - text: 
+            - generic [ref=e287]:
+              - generic [ref=e288]:
+                - text: image_1776245506459....
+                - generic [ref=e289]:
+                  - text: IMAGE
+                  - generic [ref=e290]: 
+                  - generic [ref=e291]: 0.10MB
+                  - generic [ref=e292]: 
+                  - generic [ref=e293] [cursor=pointer]: 0 Screens
+              - generic [ref=e294]:
+                - link "" [ref=e295] [cursor=pointer]:
+                  - /url: /file-details/69df5b02242cebc6f64dc55d
+                  - generic [ref=e296]: 
+                - button "" [ref=e297] [cursor=pointer]:
+                  - generic [ref=e298]: 
+                - button "" [ref=e299] [cursor=pointer]:
+                  - generic [ref=e300]: 
+                - button "Delete" [ref=e301] [cursor=pointer]
+        - text: 
+      - button "No More Files" [ref=e303] [cursor=pointer]
+      - text:         
+  - text: "* *"

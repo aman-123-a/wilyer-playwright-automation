@@ -1,0 +1,246 @@
+
+Running 20 tests using 1 worker
+
+  ✓   1 [chromium] › tests\maker-checker\01-smoke.spec.js:9:3 › SMOKE: Login + Dashboard reachability › Smoke-01: Maker logs in and lands on dashboard (7.7s)
+  ✓   2 [chromium] › tests\maker-checker\01-smoke.spec.js:18:3 › SMOKE: Login + Dashboard reachability › Smoke-02: Checker logs in and lands on dashboard (7.5s)
+  ✘   3 [chromium] › tests\maker-checker\02-maker-flow.spec.js:18:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-01: Create a playlist with valid data (28.1s)
+  ✘   4 [chromium] › tests\maker-checker\02-maker-flow.spec.js:18:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-01: Create a playlist with valid data (retry #1) (33.3s)
+  ✘   5 [chromium] › tests\maker-checker\02-maker-flow.spec.js:24:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-02: Upload a file to a playlist (file chooser) (30.5s)
+  ✘   6 [chromium] › tests\maker-checker\02-maker-flow.spec.js:24:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-02: Upload a file to a playlist (file chooser) (retry #1) (35.1s)
+  ✘   7 [chromium] › tests\maker-checker\02-maker-flow.spec.js:32:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-03: Edit a playlist name (28.8s)
+  ✘   8 [chromium] › tests\maker-checker\02-maker-flow.spec.js:40:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-04: Delete a playlist (0ms)
+  -   9 [chromium] › tests\maker-checker\02-maker-flow.spec.js:47:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-05: Submit a playlist for approval
+  -  10 [chromium] › tests\maker-checker\02-maker-flow.spec.js:56:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-06: Required-field validation on empty submit
+  -  11 [chromium] › tests\maker-checker\02-maker-flow.spec.js:64:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-07: Invalid input is handled (too-long / special chars)
+  -  12 [chromium] › tests\maker-checker\02-maker-flow.spec.js:74:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-08: Duplicate playlist name is blocked
+  -  13 [chromium] › tests\maker-checker\02-maker-flow.spec.js:32:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-03: Edit a playlist name (retry #1)
+  ✘  14 [chromium] › tests\maker-checker\02-maker-flow.spec.js:40:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-04: Delete a playlist (retry #1) (0ms)
+  -  15 [chromium] › tests\maker-checker\02-maker-flow.spec.js:47:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-05: Submit a playlist for approval (retry #1)
+  -  16 [chromium] › tests\maker-checker\02-maker-flow.spec.js:56:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-06: Required-field validation on empty submit (retry #1)
+  -  17 [chromium] › tests\maker-checker\02-maker-flow.spec.js:64:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-07: Invalid input is handled (too-long / special chars) (retry #1)
+  -  18 [chromium] › tests\maker-checker\02-maker-flow.spec.js:74:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-08: Duplicate playlist name is blocked (retry #1)
+  ✘  19 [chromium] › tests\maker-checker\03-checker-flow.spec.js:27:3 › CHECKER FLOW: Approvals queue › Checker-01: Submitted playlist appears in approvals queue (0ms)
+  -  20 [chromium] › tests\maker-checker\03-checker-flow.spec.js:39:3 › CHECKER FLOW: Approvals queue › Checker-02: Approve a submitted request
+  -  21 [chromium] › tests\maker-checker\03-checker-flow.spec.js:51:3 › CHECKER FLOW: Approvals queue › Checker-03: Reject a request with a reason
+  -  22 [chromium] › tests\maker-checker\03-checker-flow.spec.js:63:3 › CHECKER FLOW: Approvals queue › Checker-04: Edit a playlist before approving
+  ✘  23 [chromium] › tests\maker-checker\03-checker-flow.spec.js:27:3 › CHECKER FLOW: Approvals queue › Checker-01: Submitted playlist appears in approvals queue (retry #1) (0ms)
+  -  24 [chromium] › tests\maker-checker\03-checker-flow.spec.js:39:3 › CHECKER FLOW: Approvals queue › Checker-02: Approve a submitted request (retry #1)
+  -  25 [chromium] › tests\maker-checker\03-checker-flow.spec.js:51:3 › CHECKER FLOW: Approvals queue › Checker-03: Reject a request with a reason (retry #1)
+  -  26 [chromium] › tests\maker-checker\03-checker-flow.spec.js:63:3 › CHECKER FLOW: Approvals queue › Checker-04: Edit a playlist before approving (retry #1)
+  ✘  27 [chromium] › tests\maker-checker\04-status-validation.spec.js:10:3 › STATUS VALIDATION: lifecycle transitions › Status-01: Draft → Submitted → Approved (0ms)
+  -  28 [chromium] › tests\maker-checker\04-status-validation.spec.js:55:3 › STATUS VALIDATION: lifecycle transitions › Status-02: Draft → Submitted → Rejected
+  ✘  29 [chromium] › tests\maker-checker\04-status-validation.spec.js:10:3 › STATUS VALIDATION: lifecycle transitions › Status-01: Draft → Submitted → Approved (retry #1) (0ms)
+  -  30 [chromium] › tests\maker-checker\04-status-validation.spec.js:55:3 › STATUS VALIDATION: lifecycle transitions › Status-02: Draft → Submitted → Rejected (retry #1)
+  ✘  31 [chromium] › tests\maker-checker\05-negative.spec.js:10:3 › NEGATIVE CASES › Neg-01: Submitting without an uploaded file is blocked (0ms)
+  -  32 [chromium] › tests\maker-checker\05-negative.spec.js:32:3 › NEGATIVE CASES › Neg-02: Uploading an invalid file type is rejected
+  -  33 [chromium] › tests\maker-checker\05-negative.spec.js:53:3 › NEGATIVE CASES › Neg-03: Maker cannot access the approvals screen (RBAC)
+  -  34 [chromium] › tests\maker-checker\05-negative.spec.js:63:3 › NEGATIVE CASES › Neg-04: Double submission is prevented
+  ✘  35 [chromium] › tests\maker-checker\05-negative.spec.js:10:3 › NEGATIVE CASES › Neg-01: Submitting without an uploaded file is blocked (retry #1) (0ms)
+  -  36 [chromium] › tests\maker-checker\05-negative.spec.js:32:3 › NEGATIVE CASES › Neg-02: Uploading an invalid file type is rejected (retry #1)
+  -  37 [chromium] › tests\maker-checker\05-negative.spec.js:53:3 › NEGATIVE CASES › Neg-03: Maker cannot access the approvals screen (RBAC) (retry #1)
+  -  38 [chromium] › tests\maker-checker\05-negative.spec.js:63:3 › NEGATIVE CASES › Neg-04: Double submission is prevented (retry #1)
+
+
+  1) [chromium] › tests\maker-checker\02-maker-flow.spec.js:18:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-01: Create a playlist with valid data 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for getByRole('button', { name: /^save$|create$/i }).first()[22m
+
+
+       at ..\..\pages\maker-checker\PlaylistPage.js:39
+
+      37 |       await this.descriptionInput.fill(description);
+      38 |     }
+    > 39 |     await this.saveButton.first().click();
+         |                                   ^
+      40 |     // Wait for either a success confirmation or validation to settle
+      41 |     await this.page.waitForTimeout(1500);
+      42 |   }
+        at PlaylistPage.createPlaylist (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\PlaylistPage.js:39:35)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\02-maker-flow.spec.js:20:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\02-maker-flow-MAKER-FLOW-P-c6e61--a-playlist-with-valid-data-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\02-maker-flow-MAKER-FLOW-P-c6e61--a-playlist-with-valid-data-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\02-maker-flow-MAKER-FLOW-P-c6e61--a-playlist-with-valid-data-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for getByRole('button', { name: /^save$|create$/i }).first()[22m
+
+
+       at ..\..\pages\maker-checker\PlaylistPage.js:39
+
+      37 |       await this.descriptionInput.fill(description);
+      38 |     }
+    > 39 |     await this.saveButton.first().click();
+         |                                   ^
+      40 |     // Wait for either a success confirmation or validation to settle
+      41 |     await this.page.waitForTimeout(1500);
+      42 |   }
+        at PlaylistPage.createPlaylist (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\PlaylistPage.js:39:35)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\02-maker-flow.spec.js:20:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\02-maker-flow-MAKER-FLOW-P-c6e61--a-playlist-with-valid-data-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\02-maker-flow-MAKER-FLOW-P-c6e61--a-playlist-with-valid-data-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\02-maker-flow-MAKER-FLOW-P-c6e61--a-playlist-with-valid-data-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\02-maker-flow-MAKER-FLOW-P-c6e61--a-playlist-with-valid-data-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\02-maker-flow-MAKER-FLOW-P-c6e61--a-playlist-with-valid-data-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests\maker-checker\02-maker-flow.spec.js:24:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-02: Upload a file to a playlist (file chooser) 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for getByRole('button', { name: /^save$|create$/i }).first()[22m
+
+
+       at ..\..\pages\maker-checker\PlaylistPage.js:39
+
+      37 |       await this.descriptionInput.fill(description);
+      38 |     }
+    > 39 |     await this.saveButton.first().click();
+         |                                   ^
+      40 |     // Wait for either a success confirmation or validation to settle
+      41 |     await this.page.waitForTimeout(1500);
+      42 |   }
+        at PlaylistPage.createPlaylist (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\PlaylistPage.js:39:35)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\02-maker-flow.spec.js:26:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\02-maker-flow-MAKER-FLOW-P-3c18a-to-a-playlist-file-chooser--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\02-maker-flow-MAKER-FLOW-P-3c18a-to-a-playlist-file-chooser--chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\02-maker-flow-MAKER-FLOW-P-3c18a-to-a-playlist-file-chooser--chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for getByRole('button', { name: /^save$|create$/i }).first()[22m
+
+
+       at ..\..\pages\maker-checker\PlaylistPage.js:39
+
+      37 |       await this.descriptionInput.fill(description);
+      38 |     }
+    > 39 |     await this.saveButton.first().click();
+         |                                   ^
+      40 |     // Wait for either a success confirmation or validation to settle
+      41 |     await this.page.waitForTimeout(1500);
+      42 |   }
+        at PlaylistPage.createPlaylist (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\PlaylistPage.js:39:35)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\02-maker-flow.spec.js:26:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\02-maker-flow-MAKER-FLOW-P-3c18a-to-a-playlist-file-chooser--chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\02-maker-flow-MAKER-FLOW-P-3c18a-to-a-playlist-file-chooser--chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\02-maker-flow-MAKER-FLOW-P-3c18a-to-a-playlist-file-chooser--chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\02-maker-flow-MAKER-FLOW-P-3c18a-to-a-playlist-file-chooser--chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\02-maker-flow-MAKER-FLOW-P-3c18a-to-a-playlist-file-chooser--chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › tests\maker-checker\02-maker-flow.spec.js:32:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-03: Edit a playlist name 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for getByRole('button', { name: /^save$|create$/i }).first()[22m
+
+
+       at ..\..\pages\maker-checker\PlaylistPage.js:39
+
+      37 |       await this.descriptionInput.fill(description);
+      38 |     }
+    > 39 |     await this.saveButton.first().click();
+         |                                   ^
+      40 |     // Wait for either a success confirmation or validation to settle
+      41 |     await this.page.waitForTimeout(1500);
+      42 |   }
+        at PlaylistPage.createPlaylist (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\PlaylistPage.js:39:35)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\02-maker-flow.spec.js:35:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\02-maker-flow-MAKER-FLOW-P-b820f-ker-03-Edit-a-playlist-name-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\02-maker-flow-MAKER-FLOW-P-b820f-ker-03-Edit-a-playlist-name-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\02-maker-flow-MAKER-FLOW-P-b820f-ker-03-Edit-a-playlist-name-chromium\error-context.md
+
+  4) [chromium] › tests\maker-checker\02-maker-flow.spec.js:40:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-04: Delete a playlist 
+
+    Error: worker process exited unexpectedly (code=3221225794, signal=null)
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: worker process exited unexpectedly (code=3221225794, signal=null)
+
+  5) [chromium] › tests\maker-checker\03-checker-flow.spec.js:27:3 › CHECKER FLOW: Approvals queue › Checker-01: Submitted playlist appears in approvals queue 
+
+    Error: worker process exited unexpectedly (code=3221225794, signal=null)
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: worker process exited unexpectedly (code=3221225794, signal=null)
+
+  6) [chromium] › tests\maker-checker\04-status-validation.spec.js:10:3 › STATUS VALIDATION: lifecycle transitions › Status-01: Draft → Submitted → Approved 
+
+    Error: worker process exited unexpectedly (code=3221225794, signal=null)
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: worker process exited unexpectedly (code=3221225794, signal=null)
+
+  7) [chromium] › tests\maker-checker\05-negative.spec.js:10:3 › NEGATIVE CASES › Neg-01: Submitting without an uploaded file is blocked 
+
+    Error: worker process exited unexpectedly (code=3221225794, signal=null)
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: worker process exited unexpectedly (code=3221225794, signal=null)
+
+  7 failed
+    [chromium] › tests\maker-checker\02-maker-flow.spec.js:18:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-01: Create a playlist with valid data 
+    [chromium] › tests\maker-checker\02-maker-flow.spec.js:24:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-02: Upload a file to a playlist (file chooser) 
+    [chromium] › tests\maker-checker\02-maker-flow.spec.js:32:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-03: Edit a playlist name 
+    [chromium] › tests\maker-checker\02-maker-flow.spec.js:40:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-04: Delete a playlist 
+    [chromium] › tests\maker-checker\03-checker-flow.spec.js:27:3 › CHECKER FLOW: Approvals queue › Checker-01: Submitted playlist appears in approvals queue 
+    [chromium] › tests\maker-checker\04-status-validation.spec.js:10:3 › STATUS VALIDATION: lifecycle transitions › Status-01: Draft → Submitted → Approved 
+    [chromium] › tests\maker-checker\05-negative.spec.js:10:3 › NEGATIVE CASES › Neg-01: Submitting without an uploaded file is blocked 
+  11 did not run
+  2 passed (3.2m)

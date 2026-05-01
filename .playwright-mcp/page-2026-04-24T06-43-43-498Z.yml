@@ -1,0 +1,176 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link " Dashboard" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e16]: 
+              - text: Dashboard
+          - listitem [ref=e17]:
+            - link " Screens" [ref=e18] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e19]: 
+              - text: Screens
+          - listitem [ref=e20]:
+            - link " Groups" [ref=e21] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e22]: 
+              - text: Groups
+          - listitem [ref=e23]:
+            - link " Clusters" [ref=e24] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e25]: 
+              - text: Clusters
+          - listitem [ref=e26]:
+            - link " Library" [ref=e27] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e28]: 
+              - text: Library
+          - listitem [ref=e29]:
+            - link " Playlists" [ref=e30] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e31]: 
+              - text: Playlists
+          - listitem [ref=e32]:
+            - link " Team" [ref=e33] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e34]: 
+              - text: Team
+          - listitem [ref=e35]:
+            - link " Reports" [ref=e36] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e37]: 
+              - text: Reports
+          - separator [ref=e38]
+          - listitem [ref=e39]:
+            - link " Help" [ref=e40] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e41]: 
+              - text: Help
+          - listitem [ref=e42]:
+            - link " Feedback" [ref=e43] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e44]: 
+              - text: Feedback
+          - listitem [ref=e45]:
+            - link " Account" [ref=e46] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e47]: 
+              - text: Account
+          - listitem [ref=e48]:
+            - link " Logout" [ref=e49] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e50]: 
+              - text: Logout
+      - generic [ref=e52]:
+        - generic "AMAN" [ref=e54]:
+          - generic [ref=e56]: A
+        - generic [ref=e57]: amankumarbsrbsr@gmail.com
+      - generic [ref=e58]: v3.5.20
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - link "Unapproved Playlists" [ref=e63] [cursor=pointer]:
+            - /url: /playlists/unapproved
+          - button "Read Docs " [ref=e64] [cursor=pointer]:
+            - text: Read Docs
+            - generic [ref=e65]: 
+          - generic [ref=e66]:
+            - generic [ref=e68] [cursor=pointer]: 
+            - generic [ref=e70] [cursor=pointer]: Sort by Created
+          - textbox "Search.." [ref=e72]
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - generic [ref=e76]:
+              - generic [ref=e77]: 
+              - heading "Subfolders ( 0 )" [level=5] [ref=e105]
+            - generic [ref=e79]:
+              - button " Back" [ref=e106] [cursor=pointer]:
+                - generic [ref=e107]: 
+                - text: Back
+              - generic [ref=e80]:
+                - button "+ New Playlist" [ref=e81] [cursor=pointer]
+                - button "+ New Folder" [ref=e108] [cursor=pointer]
+          - generic [ref=e83]:
+            - generic [ref=e84]:
+              - generic [ref=e86]: 
+              - textbox "Search playlist folders (including nested)..." [ref=e87]
+            - generic [ref=e109]:
+              - button " Edit" [ref=e110] [cursor=pointer]:
+                - generic [ref=e111]: 
+                - generic [ref=e112]: Edit
+              - button " Delete" [ref=e113] [cursor=pointer]:
+                - generic [ref=e114]: 
+                - generic [ref=e115]: Delete
+          - generic [ref=e116]: No folders yet. Create one to organize playlists.
+          - generic [ref=e118]:
+            - generic [ref=e119]: "Current location:"
+            - navigation "breadcrumb" [ref=e120]:
+              - list [ref=e121]:
+                - listitem [ref=e122]:
+                  - button "All Folders" [ref=e123] [cursor=pointer]
+                - listitem [ref=e124]:
+                  - text: /
+                  - strong [ref=e125]: test2
+          - generic [ref=e127]:
+            - generic [ref=e128]: 
+            - paragraph [ref=e129]: No Playlists folders found
+        - generic [ref=e130]:
+          - generic [ref=e133]:
+            - checkbox [ref=e136]
+            - generic [ref=e138]:
+              - button "" [ref=e139] [cursor=pointer]:
+                - generic [ref=e140]: 
+              - text:   
+            - img "..." [ref=e146]
+            - generic [ref=e149]:
+              - button "Publish" [ref=e151] [cursor=pointer]
+              - generic [ref=e152]:
+                - link "Edit" [ref=e153] [cursor=pointer]:
+                  - /url: /playlist-settings/69e9db6da9e59b2a83272039
+                - button "" [ref=e154] [cursor=pointer]:
+                  - generic [ref=e155]: 
+            - generic [ref=e157]:
+              - generic [ref=e158]: S3
+              - paragraph [ref=e159]: "--"
+            - generic [ref=e160]:
+              - generic [ref=e161]:
+                - generic [ref=e162]: 
+                - text: 1 Layouts
+              - link " 0 Screen" [ref=e163] [cursor=pointer]:
+                - /url: /playlist-report/69e9db6da9e59b2a83272039
+                - generic [ref=e164]: 
+                - text: 0 Screen
+              - generic [ref=e165]: Apr 23 2026
+          - generic [ref=e168]:
+            - checkbox [ref=e171]
+            - generic [ref=e173]:
+              - button "" [ref=e174] [cursor=pointer]:
+                - generic [ref=e175]: 
+              - text:   
+            - img "..." [ref=e181]
+            - generic [ref=e184]:
+              - button "Publish" [ref=e186] [cursor=pointer]
+              - generic [ref=e187]:
+                - link "Edit" [ref=e188] [cursor=pointer]:
+                  - /url: /playlist-settings/69e8c54d37f4d294118f94d4
+                - button "" [ref=e189] [cursor=pointer]:
+                  - generic [ref=e190]: 
+            - generic [ref=e192]:
+              - generic [ref=e193]: s2
+              - paragraph [ref=e194]: "--"
+            - generic [ref=e195]:
+              - generic [ref=e196]:
+                - generic [ref=e197]: 
+                - text: 1 Layouts
+              - link " 0 Screen" [ref=e198] [cursor=pointer]:
+                - /url: /playlist-report/69e8c54d37f4d294118f94d4
+                - generic [ref=e199]: 
+                - text: 0 Screen
+              - generic [ref=e200]: Apr 22 2026
+      - text: /
+  - text: "* *"

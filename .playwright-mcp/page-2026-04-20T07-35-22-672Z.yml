@@ -1,0 +1,361 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link " Dashboard" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e16]: 
+              - text: Dashboard
+          - listitem [ref=e17]:
+            - link " Screens" [ref=e18] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e19]: 
+              - text: Screens
+          - listitem [ref=e20]:
+            - link " Groups" [ref=e21] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e22]: 
+              - text: Groups
+          - listitem [ref=e23]:
+            - link " Clusters" [ref=e24] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e25]: 
+              - text: Clusters
+          - listitem [ref=e26]:
+            - link " Library" [ref=e27] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e28]: 
+              - text: Library
+          - listitem [ref=e29]:
+            - link " Playlists" [ref=e30] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e31]: 
+              - text: Playlists
+          - listitem [ref=e32]:
+            - link " Team" [ref=e33] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e34]: 
+              - text: Team
+          - listitem [ref=e35]:
+            - link " Reports" [ref=e36] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e37]: 
+              - text: Reports
+          - separator [ref=e38]
+          - listitem [ref=e39]:
+            - link " Help" [ref=e40] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e41]: 
+              - text: Help
+          - listitem [ref=e42]:
+            - link " Feedback" [ref=e43] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e44]: 
+              - text: Feedback
+          - listitem [ref=e45]:
+            - link " Billing" [ref=e46] [cursor=pointer]:
+              - /url: /billing
+              - generic [ref=e47]: 
+              - text: Billing
+          - listitem [ref=e48]:
+            - link " Account" [ref=e49] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e50]: 
+              - text: Account
+          - listitem [ref=e51]:
+            - link " Logout" [ref=e52] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e53]: 
+              - text: Logout
+      - generic [ref=e55]:
+        - generic "dev" [ref=e57]:
+          - generic [ref=e59]: D
+        - generic [ref=e60]: dev@wilyer.com
+      - generic [ref=e61]: v3.5.20
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - link "Members" [ref=e70] [cursor=pointer]:
+              - /url: /team
+          - listitem [ref=e71]:
+            - link "Roles" [ref=e72] [cursor=pointer]:
+              - /url: /team
+          - listitem [ref=e73]:
+            - link "New Member" [ref=e74] [cursor=pointer]:
+              - /url: /team
+          - listitem [ref=e75]:
+            - link "Logs" [ref=e76] [cursor=pointer]:
+              - /url: /team
+        - generic [ref=e77]:
+          - textbox "Search..." [ref=e148]
+          - button "Read Docs " [ref=e78] [cursor=pointer]:
+            - text: Read Docs
+            - generic [ref=e79]: 
+      - generic [ref=e149]:
+        - table [ref=e674]:
+          - rowgroup [ref=e675]:
+            - row "# Member Name Member Email Role Created Status Action" [ref=e676]:
+              - columnheader "#" [ref=e677]
+              - columnheader "Member Name" [ref=e678]
+              - columnheader "Member Email" [ref=e679]
+              - columnheader "Role" [ref=e680]
+              - columnheader "Created" [ref=e681]
+              - columnheader "Status" [ref=e682]
+              - columnheader "Action" [ref=e683]
+          - rowgroup [ref=e684]:
+            - row "1 Test QA User EDITED qatest-norolenew@wilyer.com CHILD (REQUIRED) 4/20/2026, 12:57:43 PM   " [ref=e685]:
+              - cell "1" [ref=e686]
+              - cell "Test QA User EDITED" [ref=e687]
+              - cell "qatest-norolenew@wilyer.com" [ref=e688]
+              - cell "CHILD (REQUIRED)" [ref=e689]
+              - cell "4/20/2026, 12:57:43 PM" [ref=e690]
+              - cell [ref=e691]:
+                - checkbox [checked] [ref=e693]
+              - cell "  " [ref=e694]:
+                - generic [ref=e695]:
+                  - link "" [ref=e696] [cursor=pointer]:
+                    - /url: /team/69e5d56fd7d7b1719dbea421
+                    - generic [ref=e697]: 
+                  - button "" [ref=e698] [cursor=pointer]:
+                    - generic [ref=e699]: 
+                  - button "" [ref=e700] [cursor=pointer]:
+                    - generic [ref=e701]: 
+            - row "2 State Head nandavansh786@wilyer.com STATE HEAD DND CHECKER 1 4/17/2026, 5:15:31 PM   " [ref=e702]:
+              - cell "2" [ref=e703]
+              - cell "State Head" [ref=e704]
+              - cell "nandavansh786@wilyer.com" [ref=e705]
+              - cell "STATE HEAD DND CHECKER 1" [ref=e706]
+              - cell "4/17/2026, 5:15:31 PM" [ref=e707]
+              - cell [ref=e708]:
+                - checkbox [checked] [ref=e710]
+              - cell "  " [ref=e711]:
+                - generic [ref=e712]:
+                  - link "" [ref=e713] [cursor=pointer]:
+                    - /url: /team/69e21d5b1251c1046ddb1a25
+                    - generic [ref=e714]: 
+                  - button "" [ref=e715] [cursor=pointer]:
+                    - generic [ref=e716]: 
+                  - button "" [ref=e717] [cursor=pointer]:
+                    - generic [ref=e718]: 
+            - row "3 Branch Head 1 vansh@wilyer.com BRANCH HEAD DND MAKER 1 4/17/2026, 5:14:19 PM   " [ref=e719]:
+              - cell "3" [ref=e720]
+              - cell "Branch Head 1" [ref=e721]
+              - cell "vansh@wilyer.com" [ref=e722]
+              - cell "BRANCH HEAD DND MAKER 1" [ref=e723]
+              - cell "4/17/2026, 5:14:19 PM" [ref=e724]
+              - cell [ref=e725]:
+                - checkbox [checked] [ref=e727]
+              - cell "  " [ref=e728]:
+                - generic [ref=e729]:
+                  - link "" [ref=e730] [cursor=pointer]:
+                    - /url: /team/69e21d131251c1046ddb16d4
+                    - generic [ref=e731]: 
+                  - button "" [ref=e732] [cursor=pointer]:
+                    - generic [ref=e733]: 
+                  - button "" [ref=e734] [cursor=pointer]:
+                    - generic [ref=e735]: 
+            - row "4 vansh vansh1@wilyer.com VANSH AS 4/17/2026, 10:41:49 AM   " [ref=e736]:
+              - cell "4" [ref=e737]
+              - cell "vansh" [ref=e738]
+              - cell "vansh1@wilyer.com" [ref=e739]
+              - cell "VANSH AS" [ref=e740]
+              - cell "4/17/2026, 10:41:49 AM" [ref=e741]
+              - cell [ref=e742]:
+                - checkbox [checked] [ref=e744]
+              - cell "  " [ref=e745]:
+                - generic [ref=e746]:
+                  - link "" [ref=e747] [cursor=pointer]:
+                    - /url: /team/69e1c115b6a3a5cbafe2a79a
+                    - generic [ref=e748]: 
+                  - button "" [ref=e749] [cursor=pointer]:
+                    - generic [ref=e750]: 
+                  - button "" [ref=e751] [cursor=pointer]:
+                    - generic [ref=e752]: 
+            - row "5 City Head 1 vanshnanda0001@gmail.com CITY HEAD DND CHECKER 1 4/17/2026, 5:18:03 PM   " [ref=e753]:
+              - cell "5" [ref=e754]
+              - cell "City Head 1" [ref=e755]
+              - cell "vanshnanda0001@gmail.com" [ref=e756]
+              - cell "CITY HEAD DND CHECKER 1" [ref=e757]
+              - cell "4/17/2026, 5:18:03 PM" [ref=e758]
+              - cell [ref=e759]:
+                - checkbox [checked] [ref=e761]
+              - cell "  " [ref=e762]:
+                - generic [ref=e763]:
+                  - link "" [ref=e764] [cursor=pointer]:
+                    - /url: /team/69e21df31251c1046ddb1d18
+                    - generic [ref=e765]: 
+                  - button "" [ref=e766] [cursor=pointer]:
+                    - generic [ref=e767]: 
+                  - button "" [ref=e768] [cursor=pointer]:
+                    - generic [ref=e769]: 
+            - row "6 India DND 1 india1@wilyer.com COUNTRY DND (DO NOT DELETE) CHECKER 1 4/17/2026, 5:05:41 PM   " [ref=e770]:
+              - cell "6" [ref=e771]
+              - cell "India DND 1" [ref=e772]
+              - cell "india1@wilyer.com" [ref=e773]
+              - cell "COUNTRY DND (DO NOT DELETE) CHECKER 1" [ref=e774]
+              - cell "4/17/2026, 5:05:41 PM" [ref=e775]
+              - cell [ref=e776]:
+                - checkbox [checked] [ref=e778]
+              - cell "  " [ref=e779]:
+                - generic [ref=e780]:
+                  - link "" [ref=e781] [cursor=pointer]:
+                    - /url: /team/69e21b0d1251c1046ddb0dc9
+                    - generic [ref=e782]: 
+                  - button "" [ref=e783] [cursor=pointer]:
+                    - generic [ref=e784]: 
+                  - button "" [ref=e785] [cursor=pointer]:
+                    - generic [ref=e786]: 
+            - row "7 AMAN amankumarbsrbsr@gmail.com CHILD (REQUIRED) 4/16/2026, 4:26:55 PM   " [ref=e787]:
+              - cell "7" [ref=e788]
+              - cell "AMAN" [ref=e789]
+              - cell "amankumarbsrbsr@gmail.com" [ref=e790]
+              - cell "CHILD (REQUIRED)" [ref=e791]
+              - cell "4/16/2026, 4:26:55 PM" [ref=e792]
+              - cell [ref=e793]:
+                - checkbox [checked] [ref=e795]
+              - cell "  " [ref=e796]:
+                - generic [ref=e797]:
+                  - link "" [ref=e798] [cursor=pointer]:
+                    - /url: /team/69e0c077b6a3a5cbafe2894b
+                    - generic [ref=e799]: 
+                  - button "" [ref=e800] [cursor=pointer]:
+                    - generic [ref=e801]: 
+                  - button "" [ref=e802] [cursor=pointer]:
+                    - generic [ref=e803]: 
+            - row "8 manager manager578@yopmail.com MANGER - FA APPROVE 4/17/2026, 10:41:08 AM   " [ref=e804]:
+              - cell "8" [ref=e805]
+              - cell "manager" [ref=e806]
+              - cell "manager578@yopmail.com" [ref=e807]
+              - cell "MANGER - FA APPROVE" [ref=e808]
+              - cell "4/17/2026, 10:41:08 AM" [ref=e809]
+              - cell [ref=e810]:
+                - checkbox [checked] [ref=e812]
+              - cell "  " [ref=e813]:
+                - generic [ref=e814]:
+                  - link "" [ref=e815] [cursor=pointer]:
+                    - /url: /team/69e1c0ecb6a3a5cbafe2a746
+                    - generic [ref=e816]: 
+                  - button "" [ref=e817] [cursor=pointer]:
+                    - generic [ref=e818]: 
+                  - button "" [ref=e819] [cursor=pointer]:
+                    - generic [ref=e820]: 
+            - row "9 QA aman@wilyer.com QA TEST (APPROVE) 3/30/2026, 2:15:11 PM   " [ref=e821]:
+              - cell "9" [ref=e822]
+              - cell "QA" [ref=e823]
+              - cell "aman@wilyer.com" [ref=e824]
+              - cell "QA TEST (APPROVE)" [ref=e825]
+              - cell "3/30/2026, 2:15:11 PM" [ref=e826]
+              - cell [ref=e827]:
+                - checkbox [checked] [ref=e829]
+              - cell "  " [ref=e830]:
+                - generic [ref=e831]:
+                  - link "" [ref=e832] [cursor=pointer]:
+                    - /url: /team/69ca38174c56e3a64ea5d335
+                    - generic [ref=e833]: 
+                  - button "" [ref=e834] [cursor=pointer]:
+                    - generic [ref=e835]: 
+                  - button "" [ref=e836] [cursor=pointer]:
+                    - generic [ref=e837]: 
+            - row "10 rest un restun@wilyer.com REST UNRESTRICTED 4/14/2026, 10:47:43 AM   " [ref=e838]:
+              - cell "10" [ref=e839]
+              - cell "rest un" [ref=e840]
+              - cell "restun@wilyer.com" [ref=e841]
+              - cell "REST UNRESTRICTED" [ref=e842]
+              - cell "4/14/2026, 10:47:43 AM" [ref=e843]
+              - cell [ref=e844]:
+                - checkbox [checked] [ref=e846]
+              - cell "  " [ref=e847]:
+                - generic [ref=e848]:
+                  - link "" [ref=e849] [cursor=pointer]:
+                    - /url: /team/69ddcdf761d5f489d44fb127
+                    - generic [ref=e850]: 
+                  - button "" [ref=e851] [cursor=pointer]:
+                    - generic [ref=e852]: 
+                  - button "" [ref=e853] [cursor=pointer]:
+                    - generic [ref=e854]: 
+            - row "11 Maker Sameer (DONT DELETE) sameer@maker.com DEFAULT MAKER 4/9/2026, 11:19:18 AM   " [ref=e855]:
+              - cell "11" [ref=e856]
+              - cell "Maker Sameer (DONT DELETE)" [ref=e857]
+              - cell "sameer@maker.com" [ref=e858]
+              - cell "DEFAULT MAKER" [ref=e859]
+              - cell "4/9/2026, 11:19:18 AM" [ref=e860]
+              - cell [ref=e861]:
+                - checkbox [checked] [ref=e863]
+              - cell "  " [ref=e864]:
+                - generic [ref=e865]:
+                  - link "" [ref=e866] [cursor=pointer]:
+                    - /url: /team/69d73ddea0687c4689e83fae
+                    - generic [ref=e867]: 
+                  - button "" [ref=e868] [cursor=pointer]:
+                    - generic [ref=e869]: 
+                  - button "" [ref=e870] [cursor=pointer]:
+                    - generic [ref=e871]: 
+            - row "12 Checker Sameer (DONT DELETE) sameer@checker.com DEFAULT CHECKER 4/9/2026, 11:19:45 AM   " [ref=e872]:
+              - cell "12" [ref=e873]
+              - cell "Checker Sameer (DONT DELETE)" [ref=e874]
+              - cell "sameer@checker.com" [ref=e875]
+              - cell "DEFAULT CHECKER" [ref=e876]
+              - cell "4/9/2026, 11:19:45 AM" [ref=e877]
+              - cell [ref=e878]:
+                - checkbox [checked] [ref=e880]
+              - cell "  " [ref=e881]:
+                - generic [ref=e882]:
+                  - link "" [ref=e883] [cursor=pointer]:
+                    - /url: /team/69d73df920048686922efbff
+                    - generic [ref=e884]: 
+                  - button "" [ref=e885] [cursor=pointer]:
+                    - generic [ref=e886]: 
+                  - button "" [ref=e887] [cursor=pointer]:
+                    - generic [ref=e888]: 
+            - row "13 Sameer Makerss sameerm@wilyer.com DEFAULT MAKER 3/31/2026, 12:08:37 PM   " [ref=e889]:
+              - cell "13" [ref=e890]
+              - cell "Sameer Makerss" [ref=e891]
+              - cell "sameerm@wilyer.com" [ref=e892]
+              - cell "DEFAULT MAKER" [ref=e893]
+              - cell "3/31/2026, 12:08:37 PM" [ref=e894]
+              - cell [ref=e895]:
+                - checkbox [checked] [ref=e897]
+              - cell "  " [ref=e898]:
+                - generic [ref=e899]:
+                  - link "" [ref=e900] [cursor=pointer]:
+                    - /url: /team/69cb6bedcb427e0ee6b529af
+                    - generic [ref=e901]: 
+                  - button "" [ref=e902] [cursor=pointer]:
+                    - generic [ref=e903]: 
+                  - button "" [ref=e904] [cursor=pointer]:
+                    - generic [ref=e905]: 
+        - text:  
+        - dialog [ref=e919]:
+          - generic [ref=e920]:
+            - generic [ref=e921]:
+              - heading "Remove Member" [level=5] [ref=e922]
+              - generic "Close" [ref=e923] [cursor=pointer]: ×
+            - generic [ref=e924]:
+              - generic [ref=e926]: 
+              - heading "Are you sure you want to remove qatest-norolenew@wilyer.com member?" [level=4] [ref=e927]
+              - generic [ref=e928]:
+                - heading " Member Details:" [level=6] [ref=e929]:
+                  - generic [ref=e930]: 
+                  - text: "Member Details:"
+                - paragraph [ref=e931]:
+                  - strong [ref=e932]: "Name:"
+                  - text: Test QA User EDITED
+                - paragraph [ref=e933]:
+                  - strong [ref=e934]: "Email:"
+                  - text: qatest-norolenew@wilyer.com
+                - paragraph [ref=e935]:
+                  - strong [ref=e936]: "Role:"
+                  - text: CHILD (REQUIRED)
+              - generic [ref=e937]:
+                - button " Go back" [ref=e938] [cursor=pointer]:
+                  - generic [ref=e939]: 
+                  - text: Go back
+                - button " Remove Member" [ref=e940] [cursor=pointer]:
+                  - generic [ref=e941]: 
+                  - text: Remove Member
+  - text: "* *"

@@ -1,0 +1,33 @@
+- generic [ref=e4]:
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - heading "Welcome Back!" [level=2] [ref=e11]
+      - paragraph [ref=e12]: Please login to your account.
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]: Email or Phone *
+        - textbox "Enter your email or phone" [ref=e17]: dev@wilyer.com
+      - generic [ref=e18]:
+        - generic [ref=e19]: Password *
+        - generic [ref=e20]:
+          - textbox "Enter your password" [ref=e21]: testdev
+          - generic [ref=e23] [cursor=pointer]: 
+      - button "Log In" [active] [ref=e25] [cursor=pointer]:
+        - generic [ref=e33]:
+          - text: Log In
+          - status [ref=e34]
+    - paragraph [ref=e27]:
+      - link "Forgot Password?" [ref=e28] [cursor=pointer]:
+        - /url: /forget
+      - text: "|Don't have an account?"
+      - link "Sign Up" [ref=e29] [cursor=pointer]:
+        - /url: /signup
+  - iframe [ref=e38]:
+    - generic [ref=f19e5]:
+      - generic [ref=f19e6]:
+        - text: protected by
+        - strong [ref=f19e7]: reCAPTCHA
+      - generic [ref=f19e9]:
+        - text: reCAPTCHA is changing its terms of service.
+        - link "Take action." [ref=f19e10] [cursor=pointer]:
+          - /url: https://google.com/recaptcha/admin/migrate

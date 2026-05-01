@@ -1,0 +1,166 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link " Dashboard" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e16]: 
+              - text: Dashboard
+          - listitem [ref=e17]:
+            - link " Screens" [ref=e18] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e19]: 
+              - text: Screens
+          - listitem [ref=e20]:
+            - link " Groups" [ref=e21] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e22]: 
+              - text: Groups
+          - listitem [ref=e23]:
+            - link " Clusters" [ref=e24] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e25]: 
+              - text: Clusters
+          - listitem [ref=e26]:
+            - link " Library" [ref=e27] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e28]: 
+              - text: Library
+          - listitem [ref=e29]:
+            - link " Playlists" [ref=e30] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e31]: 
+              - text: Playlists
+          - listitem [ref=e32]:
+            - link " Team" [ref=e33] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e34]: 
+              - text: Team
+          - listitem [ref=e35]:
+            - link " Reports" [ref=e36] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e37]: 
+              - text: Reports
+          - separator [ref=e38]
+          - listitem [ref=e39]:
+            - link " Help" [ref=e40] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e41]: 
+              - text: Help
+          - listitem [ref=e42]:
+            - link " Feedback" [ref=e43] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e44]: 
+              - text: Feedback
+          - listitem [ref=e45]:
+            - link " Account" [ref=e46] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e47]: 
+              - text: Account
+          - listitem [ref=e48]:
+            - link " Logout" [ref=e49] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e50]: 
+              - text: Logout
+      - generic [ref=e52]:
+        - generic "QA" [ref=e54]:
+          - generic [ref=e56]: Q
+        - generic [ref=e57]: aman@wilyer.com
+      - generic [ref=e58]: v3.5.20
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - heading "Library" [level=3] [ref=e63]
+        - generic [ref=e64]:
+          - button " Documentation" [ref=e65] [cursor=pointer]:
+            - generic [ref=e66]: 
+            - text: Documentation
+          - button " Upload Files" [ref=e136] [cursor=pointer]:
+            - generic [ref=e137]: 
+            - text: Upload Files
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - generic [ref=e70]:
+            - generic [ref=e71]: 
+            - generic [ref=e72]: Subfolders ( 1 )
+          - generic [ref=e138]:
+            - button " Back" [ref=e139] [cursor=pointer]:
+              - generic [ref=e140]: 
+              - text: Back
+            - button " Create Folder" [ref=e141] [cursor=pointer]:
+              - generic [ref=e142]: 
+              - text: Create Folder
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - generic [ref=e77]: 
+            - textbox "Search folders (including nested)..." [ref=e78]
+          - generic [ref=e143]:
+            - generic [ref=e144]: "Actions:"
+            - button " Rename" [ref=e145] [cursor=pointer]:
+              - generic [ref=e146]: 
+              - text: Rename
+            - button " Delete" [ref=e147] [cursor=pointer]:
+              - generic [ref=e148]: 
+              - text: Delete
+        - generic [ref=e150]:
+          - generic [ref=e151]: "Current location:"
+          - navigation "breadcrumb" [ref=e152]:
+            - list [ref=e153]:
+              - listitem [ref=e154]:
+                - button "All Folders" [ref=e155] [cursor=pointer]
+              - listitem [ref=e156]:
+                - text: /
+                - strong [ref=e157]: noida
+        - generic [ref=e162] [cursor=pointer]:
+          - generic [ref=e163]: 
+          - generic "Group linked" [ref=e165]:
+            - generic [ref=e166]: 
+          - generic [ref=e167]: sector 14
+      - link "Media" [ref=e100] [cursor=pointer]:
+        - /url: /library
+      - link "Widgets" [ref=e101] [cursor=pointer]:
+        - /url: /library
+      - link "Unapproved Files" [ref=e102] [cursor=pointer]:
+        - /url: /library
+      - link " Create Design" [ref=e168] [cursor=pointer]:
+        - /url: /library
+        - generic [ref=e169]: 
+        - text: Create Design
+      - generic [ref=e106]:
+        - generic [ref=e107]:
+          - generic [ref=e170]:
+            - generic [ref=e171]: "Media Files in:"
+            - navigation "breadcrumb" [ref=e172]:
+              - list [ref=e173]:
+                - listitem [ref=e174]:
+                  - generic [ref=e175]:
+                    - generic [ref=e176]: 
+                    - text: Root
+                - listitem [ref=e177]:
+                  - text: /
+                  - generic [ref=e178]:
+                    - generic [ref=e179]: 
+                    - text: noida
+          - generic [ref=e110]: Total Files - 0
+        - generic [ref=e111]:
+          - button "All" [ref=e112] [cursor=pointer]
+          - button "Videos" [ref=e113] [cursor=pointer]
+          - button "Photos" [ref=e114] [cursor=pointer]
+        - generic [ref=e115]:
+          - generic [ref=e116]:
+            - generic [ref=e118] [cursor=pointer]: 
+            - generic [ref=e120] [cursor=pointer]: Sort by Uploaded Date
+          - textbox "Search..." [ref=e122]
+          - generic [ref=e123]:
+            - generic [ref=e125] [cursor=pointer]: 
+            - generic [ref=e127] [cursor=pointer]: 
+      - generic [ref=e130]:
+        - generic [ref=e131]: 
+        - heading "No Files Found" [level=5] [ref=e132]
+        - paragraph [ref=e133]: No media files found in "noida" folder
+      - button "No More Files" [ref=e135] [cursor=pointer]
+      - text:         
+  - text: "* *"

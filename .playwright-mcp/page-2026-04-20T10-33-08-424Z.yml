@@ -1,0 +1,664 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link " Dashboard" [ref=e12] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e13]: 
+              - text: Dashboard
+          - listitem [ref=e14]:
+            - link " Screens" [active] [ref=e15] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e16]: 
+              - text: Screens
+          - listitem [ref=e17]:
+            - link " Groups" [ref=e18] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e19]: 
+              - text: Groups
+          - listitem [ref=e20]:
+            - link " Clusters" [ref=e21] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e22]: 
+              - text: Clusters
+          - listitem [ref=e23]:
+            - link " Library" [ref=e24] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e25]: 
+              - text: Library
+          - listitem [ref=e26]:
+            - link " Playlists" [ref=e27] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e28]: 
+              - text: Playlists
+          - listitem [ref=e29]:
+            - link " Team" [ref=e30] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e31]: 
+              - text: Team
+          - listitem [ref=e32]:
+            - link " Reports" [ref=e33] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e34]: 
+              - text: Reports
+          - separator [ref=e35]
+          - listitem [ref=e36]:
+            - link " Help" [ref=e37] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e38]: 
+              - text: Help
+          - listitem [ref=e39]:
+            - link " Feedback" [ref=e40] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e41]: 
+              - text: Feedback
+          - listitem [ref=e42]:
+            - link " Billing" [ref=e43] [cursor=pointer]:
+              - /url: /billing
+              - generic [ref=e44]: 
+              - text: Billing
+          - listitem [ref=e45]:
+            - link " Account" [ref=e46] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e47]: 
+              - text: Account
+          - listitem [ref=e48]:
+            - link " Logout" [ref=e49] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e50]: 
+              - text: Logout
+      - generic [ref=e52]:
+        - generic "dev" [ref=e54]:
+          - generic [ref=e56]: D
+        - generic [ref=e57]: dev@wilyer.com
+      - generic [ref=e58]: v3.5.20
+    - generic [ref=e377]:
+      - generic [ref=e378]:
+        - generic [ref=e380] [cursor=pointer]:
+          - generic [ref=e381]:
+            - generic [ref=e382]: 
+            - text: 4227 screens have expired.
+          - button "Renew now" [ref=e383]
+        - generic [ref=e384] [cursor=pointer]:
+          - generic [ref=e386]:
+            - generic [ref=e387]: 
+            - text: 3 screens will expire within 30 days.
+          - button "Renew now" [ref=e388]
+          - generic [ref=e390]: 
+      - generic [ref=e391]:
+        - link " 2 Live Screens" [ref=e393] [cursor=pointer]:
+          - /url: /screens
+          - generic [ref=e397]:
+            - generic [ref=e400]: 
+            - generic [ref=e401]:
+              - heading "2" [level=4] [ref=e402]
+              - heading "Live Screens" [level=6] [ref=e403]
+        - link " 4366 Offline Screens" [ref=e405] [cursor=pointer]:
+          - /url: /screens
+          - generic [ref=e409]:
+            - generic [ref=e412]: 
+            - generic [ref=e413]:
+              - heading "4366" [level=4] [ref=e414]
+              - heading "Offline Screens" [level=6] [ref=e415]
+        - link " 3 Expiring Screens" [ref=e417] [cursor=pointer]:
+          - /url: /screens
+          - generic [ref=e421]:
+            - generic [ref=e424]: 
+            - generic [ref=e425]:
+              - heading "3" [level=4] [ref=e426]
+              - heading "Expiring Screens" [level=6] [ref=e427]
+        - link " 0 Available Licenses" [ref=e429] [cursor=pointer]:
+          - /url: /screens
+          - generic [ref=e433]:
+            - generic [ref=e436]: 
+            - generic [ref=e437]:
+              - heading "0" [level=4] [ref=e438]
+              - heading "Available Licenses" [level=6] [ref=e439]
+      - generic [ref=e440]:
+        - generic [ref=e441]:
+          - link "All Screens (4368)" [ref=e442] [cursor=pointer]:
+            - /url: /screens
+          - link "Deleted Screens (43)" [ref=e443] [cursor=pointer]:
+            - /url: /screens
+          - link "Expired Screens (4227)" [ref=e444] [cursor=pointer]:
+            - /url: /screens
+        - generic [ref=e445]:
+          - button "Read Docs " [ref=e446] [cursor=pointer]:
+            - text: Read Docs
+            - generic [ref=e447]: 
+          - button "+ New Screen" [ref=e448] [cursor=pointer]
+      - generic [ref=e449]:
+        - generic [ref=e451]:
+          - generic [ref=e452]: All Screens (4368)
+          - generic [ref=e453]:
+            - combobox [ref=e454]:
+              - option "20 Screens" [selected]
+              - option "50 Screens"
+              - option "100 Screens"
+              - option "200 Screens"
+              - option "500 Screens"
+              - option "1000 Screens"
+            - textbox "Search..." [ref=e455]
+            - generic [ref=e457]:
+              - log [ref=e459]
+              - generic [ref=e460]:
+                - generic [ref=e461]:
+                  - generic [ref=e462]: Select Tags
+                  - combobox [ref=e464]
+                - img [ref=e468]
+            - link " Filter" [ref=e470] [cursor=pointer]:
+              - /url: /screens
+              - emphasis [ref=e471]: 
+              - text: Filter
+        - table [ref=e474]:
+          - rowgroup [ref=e475]:
+            - row "# Screen ID Screen Name   Status Playing Orientation Expiry   Last Response   Tags Action" [ref=e476]:
+              - columnheader [ref=e477]:
+                - checkbox [ref=e478]
+              - columnheader "#" [ref=e479]
+              - columnheader "Screen ID" [ref=e480]
+              - columnheader "Screen Name  " [ref=e481]:
+                - generic [ref=e482]:
+                  - text: Screen Name
+                  - generic [ref=e483] [cursor=pointer]:
+                    - generic [ref=e484]: 
+                    - generic [ref=e485]: 
+              - columnheader "Status" [ref=e486]
+              - columnheader "Playing" [ref=e487]
+              - columnheader "Orientation" [ref=e488]
+              - columnheader "Expiry  " [ref=e489]:
+                - generic [ref=e490]:
+                  - text: Expiry
+                  - generic [ref=e491] [cursor=pointer]:
+                    - generic [ref=e492]: 
+                    - generic [ref=e493]: 
+              - columnheader "Last Response  " [ref=e494]:
+                - generic [ref=e495]:
+                  - text: Last Response
+                  - generic [ref=e496] [cursor=pointer]:
+                    - generic [ref=e497]: 
+                    - generic [ref=e498]: 
+              - columnheader "Tags" [ref=e499]
+              - columnheader "Action" [ref=e500]
+          - rowgroup [ref=e501]:
+            - row "1 6242479398 os yt-test1 Offline maker 2 LANDSCAPE 06/10/26 2 days ago  View Detail" [ref=e502]:
+              - cell [ref=e503]:
+                - checkbox [ref=e504]
+              - cell "1" [ref=e505]
+              - cell "6242479398" [ref=e506]
+              - cell "os yt-test1" [ref=e507]:
+                - generic [ref=e508]:
+                  - img "os" [ref=e509]
+                  - text: yt-test1
+              - cell "Offline" [ref=e510]:
+                - generic [ref=e511]: Offline
+              - cell "maker 2" [ref=e512]:
+                - generic [ref=e514]: maker 2
+              - cell "LANDSCAPE" [ref=e515]
+              - cell "06/10/26" [ref=e516]
+              - cell "2 days ago" [ref=e517]
+              - cell [ref=e518]
+              - cell " View Detail" [ref=e519]:
+                - link " View Detail" [ref=e520] [cursor=pointer]:
+                  - /url: /screen-settings/69e23623fee8ab01b194ef5f
+                  - generic [ref=e521]: 
+                  - text: View Detail
+            - row "2 6373335675 os QM43B Online maker 1 LANDSCAPE 03/10/26 11 seconds ago  View Detail" [ref=e522]:
+              - cell [ref=e523]:
+                - checkbox [ref=e524]
+              - cell "2" [ref=e525]
+              - cell "6373335675" [ref=e526]
+              - cell "os QM43B" [ref=e527]:
+                - generic [ref=e528]:
+                  - img "os" [ref=e529]
+                  - text: QM43B
+              - cell "Online" [ref=e530]:
+                - generic [ref=e531]: Online
+              - cell "maker 1" [ref=e532]:
+                - generic [ref=e534]: maker 1
+              - cell "LANDSCAPE" [ref=e535]
+              - cell "03/10/26" [ref=e536]
+              - cell "11 seconds ago" [ref=e537]
+              - cell [ref=e538]
+              - cell " View Detail" [ref=e539]:
+                - link " View Detail" [ref=e540] [cursor=pointer]:
+                  - /url: /screen-settings/69e1f52d06f975c88b290571
+                  - generic [ref=e541]: 
+                  - text: View Detail
+            - row "3 8276226405 os amanqa11 Offline KSA Promo + 1 file PORTRAIT 03/10/26 3 days ago  View Detail" [ref=e542]:
+              - cell [ref=e543]:
+                - checkbox [ref=e544]
+              - cell "3" [ref=e545]
+              - cell "8276226405" [ref=e546]
+              - cell "os amanqa11" [ref=e547]:
+                - generic [ref=e548]:
+                  - img "os" [ref=e549]
+                  - text: amanqa11
+              - cell "Offline" [ref=e550]:
+                - generic [ref=e551]: Offline
+              - cell "KSA Promo + 1 file" [ref=e552]:
+                - generic [ref=e553]:
+                  - generic [ref=e554]: KSA Promo
+                  - generic [ref=e555] [cursor=pointer]: + 1 file
+              - cell "PORTRAIT" [ref=e556]
+              - cell "03/10/26" [ref=e557]
+              - cell "3 days ago" [ref=e558]
+              - cell [ref=e559]
+              - cell " View Detail" [ref=e560]:
+                - link " View Detail" [ref=e561] [cursor=pointer]:
+                  - /url: /screen-settings/69df7afd00f79cb24a75bcd4
+                  - generic [ref=e562]: 
+                  - text: View Detail
+            - row "4 6583144337 os webhook_test Offline webhook_test PORTRAIT 01/10/26 3 days ago  View Detail" [ref=e563]:
+              - cell [ref=e564]:
+                - checkbox [ref=e565]
+              - cell "4" [ref=e566]
+              - cell "6583144337" [ref=e567]
+              - cell "os webhook_test" [ref=e568]:
+                - generic [ref=e569]:
+                  - img "os" [ref=e570]
+                  - text: webhook_test
+              - cell "Offline" [ref=e571]:
+                - generic [ref=e572]: Offline
+              - cell "webhook_test" [ref=e573]:
+                - generic [ref=e575]: webhook_test
+              - cell "PORTRAIT" [ref=e576]
+              - cell "01/10/26" [ref=e577]
+              - cell "3 days ago" [ref=e578]
+              - cell [ref=e579]
+              - cell " View Detail" [ref=e580]:
+                - link " View Detail" [ref=e581] [cursor=pointer]:
+                  - /url: /screen-settings/69df43a8bd2b23c31fb5d032
+                  - generic [ref=e582]: 
+                  - text: View Detail
+            - row "5 3495993869 os vansh nanda widget Online maker 2 shori market + 1 file LANDSCAPE 01/10/26 9 seconds ago  View Detail" [ref=e583]:
+              - cell [ref=e584]:
+                - checkbox [ref=e585]
+              - cell "5" [ref=e586]
+              - cell "3495993869" [ref=e587]
+              - cell "os vansh nanda widget" [ref=e588]:
+                - generic [ref=e589]:
+                  - img "os" [ref=e590]
+                  - text: vansh nanda widget
+              - cell "Online" [ref=e591]:
+                - generic [ref=e592]: Online
+              - cell "maker 2 shori market + 1 file" [ref=e593]:
+                - generic [ref=e594]:
+                  - generic [ref=e595]: maker 2 shori market
+                  - generic [ref=e596] [cursor=pointer]: + 1 file
+              - cell "LANDSCAPE" [ref=e597]
+              - cell "01/10/26" [ref=e598]
+              - cell "9 seconds ago" [ref=e599]
+              - cell [ref=e600]
+              - cell " View Detail" [ref=e601]:
+                - link " View Detail" [ref=e602] [cursor=pointer]:
+                  - /url: /screen-settings/69de26c0f2e6c9772e2de4e8
+                  - generic [ref=e603]: 
+                  - text: View Detail
+            - row "6 0110384441 os bhavy 2 Offline N/A LANDSCAPE 07/10/26 6 days ago  View Detail" [ref=e604]:
+              - cell [ref=e605]:
+                - checkbox [ref=e606]
+              - cell "6" [ref=e607]
+              - cell "0110384441" [ref=e608]
+              - cell "os bhavy 2" [ref=e609]:
+                - generic [ref=e610]:
+                  - img "os" [ref=e611]
+                  - text: bhavy 2
+              - cell "Offline" [ref=e612]:
+                - generic [ref=e613]: Offline
+              - cell "N/A" [ref=e614]:
+                - generic [ref=e616]: N/A
+              - cell "LANDSCAPE" [ref=e617]
+              - cell "07/10/26" [ref=e618]
+              - cell "6 days ago" [ref=e619]
+              - cell [ref=e620]
+              - cell " View Detail" [ref=e621]:
+                - link " View Detail" [ref=e622] [cursor=pointer]:
+                  - /url: /screen-settings/69d896b237f07660a96827d3
+                  - generic [ref=e623]: 
+                  - text: View Detail
+            - row "7 0633424260 os try web Offline N/A + 1 file LANDSCAPE 03/10/26 10 days ago  View Detail" [ref=e624]:
+              - cell [ref=e625]:
+                - checkbox [ref=e626]
+              - cell "7" [ref=e627]
+              - cell "0633424260" [ref=e628]
+              - cell "os try web" [ref=e629]:
+                - generic [ref=e630]:
+                  - img "os" [ref=e631]
+                  - text: try web
+              - cell "Offline" [ref=e632]:
+                - generic [ref=e633]: Offline
+              - cell "N/A + 1 file" [ref=e634]:
+                - generic [ref=e635]:
+                  - generic [ref=e636]: N/A
+                  - generic [ref=e637] [cursor=pointer]: + 1 file
+              - cell "LANDSCAPE" [ref=e638]
+              - cell "03/10/26" [ref=e639]
+              - cell "10 days ago" [ref=e640]
+              - cell [ref=e641]
+              - cell " View Detail" [ref=e642]:
+                - link " View Detail" [ref=e643] [cursor=pointer]:
+                  - /url: /screen-settings/69d791d627a75174b97d8de0
+                  - generic [ref=e644]: 
+                  - text: View Detail
+            - row "8 0350203461 os and 14 Offline webhook_test PORTRAIT 07/10/26 2 days ago  View Detail" [ref=e645]:
+              - cell [ref=e646]:
+                - checkbox [ref=e647]
+              - cell "8" [ref=e648]
+              - cell "0350203461" [ref=e649]
+              - cell "os and 14" [ref=e650]:
+                - generic [ref=e651]:
+                  - img "os" [ref=e652]
+                  - text: and 14
+              - cell "Offline" [ref=e653]:
+                - generic [ref=e654]: Offline
+              - cell "webhook_test" [ref=e655]:
+                - generic [ref=e657]: webhook_test
+              - cell "PORTRAIT" [ref=e658]
+              - cell "07/10/26" [ref=e659]
+              - cell "2 days ago" [ref=e660]
+              - cell [ref=e661]
+              - cell " View Detail" [ref=e662]:
+                - link " View Detail" [ref=e663] [cursor=pointer]:
+                  - /url: /screen-settings/69d6230068c49920d8b42599
+                  - generic [ref=e664]: 
+                  - text: View Detail
+            - row "9 1890616120 os wqa Offline mkaer 2 wonderland LANDSCAPE 01/10/26 13 days ago  View Detail" [ref=e665]:
+              - cell [ref=e666]:
+                - checkbox [ref=e667]
+              - cell "9" [ref=e668]
+              - cell "1890616120" [ref=e669]
+              - cell "os wqa" [ref=e670]:
+                - generic [ref=e671]:
+                  - img "os" [ref=e672]
+                  - text: wqa
+              - cell "Offline" [ref=e673]:
+                - generic [ref=e674]: Offline
+              - cell "mkaer 2 wonderland" [ref=e675]:
+                - generic [ref=e677]: mkaer 2 wonderland
+              - cell "LANDSCAPE" [ref=e678]
+              - cell "01/10/26" [ref=e679]
+              - cell "13 days ago" [ref=e680]
+              - cell [ref=e681]
+              - cell " View Detail" [ref=e682]:
+                - link " View Detail" [ref=e683] [cursor=pointer]:
+                  - /url: /screen-settings/69d395c1a8c11d2855821607
+                  - generic [ref=e684]: 
+                  - text: View Detail
+            - row "10 8645749175 os touch try_tab Offline windows aman1 Clone_1 LANDSCAPE 07/10/26 2 hours ago  View Detail" [ref=e685]:
+              - cell [ref=e686]:
+                - checkbox [ref=e687]
+              - cell "10" [ref=e688]
+              - cell "8645749175" [ref=e689]
+              - cell "os touch try_tab" [ref=e690]:
+                - generic [ref=e691]:
+                  - img "os" [ref=e692]
+                  - text: touch try_tab
+              - cell "Offline" [ref=e693]:
+                - generic [ref=e694]: Offline
+              - cell "windows aman1 Clone_1" [ref=e695]:
+                - generic [ref=e697]: windows aman1 Clone_1
+              - cell "LANDSCAPE" [ref=e698]
+              - cell "07/10/26" [ref=e699]
+              - cell "2 hours ago" [ref=e700]
+              - cell [ref=e701]
+              - cell " View Detail" [ref=e702]:
+                - link " View Detail" [ref=e703] [cursor=pointer]:
+                  - /url: /screen-settings/69ccfe3b68c49920d8b32e53
+                  - generic [ref=e704]: 
+                  - text: View Detail
+            - row "11 8034260789 os try touch Offline N1 LANDSCAPE 01/10/26 3 days ago  View Detail" [ref=e705]:
+              - cell [ref=e706]:
+                - checkbox [ref=e707]
+              - cell "11" [ref=e708]
+              - cell "8034260789" [ref=e709]
+              - cell "os try touch" [ref=e710]:
+                - generic [ref=e711]:
+                  - img "os" [ref=e712]
+                  - text: try touch
+              - cell "Offline" [ref=e713]:
+                - generic [ref=e714]: Offline
+              - cell "N1" [ref=e715]:
+                - generic [ref=e717]: N1
+              - cell "LANDSCAPE" [ref=e718]
+              - cell "01/10/26" [ref=e719]
+              - cell "3 days ago" [ref=e720]
+              - cell [ref=e721]
+              - cell " View Detail" [ref=e722]:
+                - link " View Detail" [ref=e723] [cursor=pointer]:
+                  - /url: /screen-settings/69c67c990b24aa1d46363cdd
+                  - generic [ref=e724]: 
+                  - text: View Detail
+            - row "12 0383218491 os S24 Offline N/A + 3 files PORTRAIT 03/10/26 1 month ago  View Detail" [ref=e725]:
+              - cell [ref=e726]:
+                - checkbox [ref=e727]
+              - cell "12" [ref=e728]
+              - cell "0383218491" [ref=e729]
+              - cell "os S24" [ref=e730]:
+                - generic [ref=e731]:
+                  - img "os" [ref=e732]
+                  - text: S24
+              - cell "Offline" [ref=e733]:
+                - generic [ref=e734]: Offline
+              - cell "N/A + 3 files" [ref=e735]:
+                - generic [ref=e736]:
+                  - generic [ref=e737]: N/A
+                  - generic [ref=e738] [cursor=pointer]: + 3 files
+              - cell "PORTRAIT" [ref=e739]
+              - cell "03/10/26" [ref=e740]
+              - cell "1 month ago" [ref=e741]
+              - cell [ref=e742]
+              - cell " View Detail" [ref=e743]:
+                - link " View Detail" [ref=e744] [cursor=pointer]:
+                  - /url: /screen-settings/69afc87cd8b411952ce1442b
+                  - generic [ref=e745]: 
+                  - text: View Detail
+            - row "13 8710383920 os Browser Offline d + 8 files PORTRAIT 18/09/26 1 month ago  View Detail" [ref=e746]:
+              - cell [ref=e747]:
+                - checkbox [ref=e748]
+              - cell "13" [ref=e749]
+              - cell "8710383920" [ref=e750]
+              - cell "os Browser" [ref=e751]:
+                - generic [ref=e752]:
+                  - img "os" [ref=e753]
+                  - text: Browser
+              - cell "Offline" [ref=e754]:
+                - generic [ref=e755]: Offline
+              - cell "d + 8 files" [ref=e756]:
+                - generic [ref=e757]:
+                  - generic [ref=e758]: d
+                  - generic [ref=e759] [cursor=pointer]: + 8 files
+              - cell "PORTRAIT" [ref=e760]
+              - cell "18/09/26" [ref=e761]
+              - cell "1 month ago" [ref=e762]
+              - cell [ref=e763]
+              - cell " View Detail" [ref=e764]:
+                - link " View Detail" [ref=e765] [cursor=pointer]:
+                  - /url: /screen-settings/69aaa1a815d45cdba0ae4da4
+                  - generic [ref=e766]: 
+                  - text: View Detail
+            - row "14 2046538733 os anurag sesions test Offline d + 6 files LANDSCAPE 07/10/26 1 month ago  View Detail" [ref=e767]:
+              - cell [ref=e768]:
+                - checkbox [ref=e769]
+              - cell "14" [ref=e770]
+              - cell "2046538733" [ref=e771]
+              - cell "os anurag sesions test" [ref=e772]:
+                - generic [ref=e773]:
+                  - img "os" [ref=e774]
+                  - text: anurag sesions test
+              - cell "Offline" [ref=e775]:
+                - generic [ref=e776]: Offline
+              - cell "d + 6 files" [ref=e777]:
+                - generic [ref=e778]:
+                  - generic [ref=e779]: d
+                  - generic [ref=e780] [cursor=pointer]: + 6 files
+              - cell "LANDSCAPE" [ref=e781]
+              - cell "07/10/26" [ref=e782]
+              - cell "1 month ago" [ref=e783]
+              - cell [ref=e784]
+              - cell " View Detail" [ref=e785]:
+                - link " View Detail" [ref=e786] [cursor=pointer]:
+                  - /url: /screen-settings/69a93a882e301c3e98f18c91
+                  - generic [ref=e787]: 
+                  - text: View Detail
+            - row "15 0067053734 os LG Webos Offline webhook_test LANDSCAPE 06/10/26 2 days ago  View Detail" [ref=e788]:
+              - cell [ref=e789]:
+                - checkbox [ref=e790]
+              - cell "15" [ref=e791]
+              - cell "0067053734" [ref=e792]
+              - cell "os LG Webos" [ref=e793]:
+                - generic [ref=e794]:
+                  - img "os" [ref=e795]
+                  - text: LG Webos
+              - cell "Offline" [ref=e796]:
+                - generic [ref=e797]: Offline
+              - cell "webhook_test" [ref=e798]:
+                - generic [ref=e800]: webhook_test
+              - cell "LANDSCAPE" [ref=e801]
+              - cell "06/10/26" [ref=e802]
+              - cell "2 days ago" [ref=e803]
+              - cell [ref=e804]
+              - cell " View Detail" [ref=e805]:
+                - link " View Detail" [ref=e806] [cursor=pointer]:
+                  - /url: /screen-settings/69a9252728b477e884f7ed7c
+                  - generic [ref=e807]: 
+                  - text: View Detail
+            - row "16 8493016420 os benqq Offline N/A LANDSCAPE 03/10/26 27 days ago  View Detail" [ref=e808]:
+              - cell [ref=e809]:
+                - checkbox [ref=e810]
+              - cell "16" [ref=e811]
+              - cell "8493016420" [ref=e812]
+              - cell "os benqq" [ref=e813]:
+                - generic [ref=e814]:
+                  - img "os" [ref=e815]
+                  - text: benqq
+              - cell "Offline" [ref=e816]:
+                - generic [ref=e817]: Offline
+              - cell "N/A" [ref=e818]:
+                - generic [ref=e820]: N/A
+              - cell "LANDSCAPE" [ref=e821]
+              - cell "03/10/26" [ref=e822]
+              - cell "27 days ago" [ref=e823]
+              - cell [ref=e824]
+              - cell " View Detail" [ref=e825]:
+                - link " View Detail" [ref=e826] [cursor=pointer]:
+                  - /url: /screen-settings/69a911ba4849cfa79db06823
+                  - generic [ref=e827]: 
+                  - text: View Detail
+            - row "17 0004165673 os Testing-1 Offline d + 2 files LANDSCAPE 01/10/26 1 month ago  View Detail" [ref=e828]:
+              - cell [ref=e829]:
+                - checkbox [ref=e830]
+              - cell "17" [ref=e831]
+              - cell "0004165673" [ref=e832]
+              - cell "os Testing-1" [ref=e833]:
+                - generic [ref=e834]:
+                  - img "os" [ref=e835]
+                  - text: Testing-1
+              - cell "Offline" [ref=e836]:
+                - generic [ref=e837]: Offline
+              - cell "d + 2 files" [ref=e838]:
+                - generic [ref=e839]:
+                  - generic [ref=e840]: d
+                  - generic [ref=e841] [cursor=pointer]: + 2 files
+              - cell "LANDSCAPE" [ref=e842]
+              - cell "01/10/26" [ref=e843]
+              - cell "1 month ago" [ref=e844]
+              - cell [ref=e845]
+              - cell " View Detail" [ref=e846]:
+                - link " View Detail" [ref=e847] [cursor=pointer]:
+                  - /url: /screen-settings/69a6f3f1b0fcc9c53d5614f1
+                  - generic [ref=e848]: 
+                  - text: View Detail
+            - row "18 3693336411 os Sameer MSI Offline Test Playlist- Admin + 1 file LANDSCAPE 03/10/26 3 days ago  View Detail" [ref=e849]:
+              - cell [ref=e850]:
+                - checkbox [ref=e851]
+              - cell "18" [ref=e852]
+              - cell "3693336411" [ref=e853]
+              - cell "os Sameer MSI" [ref=e854]:
+                - generic [ref=e855]:
+                  - img "os" [ref=e856]
+                  - text: Sameer MSI
+              - cell "Offline" [ref=e857]:
+                - generic [ref=e858]: Offline
+              - cell "Test Playlist- Admin + 1 file" [ref=e859]:
+                - generic [ref=e860]:
+                  - generic [ref=e861]: Test Playlist- Admin
+                  - generic [ref=e862] [cursor=pointer]: + 1 file
+              - cell "LANDSCAPE" [ref=e863]
+              - cell "03/10/26" [ref=e864]
+              - cell "3 days ago" [ref=e865]
+              - cell [ref=e866]
+              - cell " View Detail" [ref=e867]:
+                - link " View Detail" [ref=e868] [cursor=pointer]:
+                  - /url: /screen-settings/69a6c981364bdf2a580c6c8c
+                  - generic [ref=e869]: 
+                  - text: View Detail
+            - row "19 9284641728 os Lenovo Tab Android Trigger Offline d + 1 file PORTRAIT 07/10/26 2 days ago  View Detail" [ref=e870]:
+              - cell [ref=e871]:
+                - checkbox [ref=e872]
+              - cell "19" [ref=e873]
+              - cell "9284641728" [ref=e874]
+              - cell "os Lenovo Tab Android Trigger" [ref=e875]:
+                - generic [ref=e876]:
+                  - img "os" [ref=e877]
+                  - text: Lenovo Tab Android Trigger
+              - cell "Offline" [ref=e878]:
+                - generic [ref=e879]: Offline
+              - cell "d + 1 file" [ref=e880]:
+                - generic [ref=e881]:
+                  - generic [ref=e882]: d
+                  - generic [ref=e883] [cursor=pointer]: + 1 file
+              - cell "PORTRAIT" [ref=e884]
+              - cell "07/10/26" [ref=e885]
+              - cell "2 days ago" [ref=e886]
+              - cell [ref=e887]
+              - cell " View Detail" [ref=e888]:
+                - link " View Detail" [ref=e889] [cursor=pointer]:
+                  - /url: /screen-settings/699dd571d218d12b2827e672
+                  - generic [ref=e890]: 
+                  - text: View Detail
+            - row "20 2493232587 os Triggggg Offline v + 2 files PORTRAIT 16/09/26 1 month ago  View Detail" [ref=e891]:
+              - cell [ref=e892]:
+                - checkbox [ref=e893]
+              - cell "20" [ref=e894]
+              - cell "2493232587" [ref=e895]
+              - cell "os Triggggg" [ref=e896]:
+                - generic [ref=e897]:
+                  - img "os" [ref=e898]
+                  - text: Triggggg
+              - cell "Offline" [ref=e899]:
+                - generic [ref=e900]: Offline
+              - cell "v + 2 files" [ref=e901]:
+                - generic [ref=e902]:
+                  - generic [ref=e903]: v
+                  - generic [ref=e904] [cursor=pointer]: + 2 files
+              - cell "PORTRAIT" [ref=e905]
+              - cell "16/09/26" [ref=e906]
+              - cell "1 month ago" [ref=e907]
+              - cell [ref=e908]
+              - cell " View Detail" [ref=e909]:
+                - link " View Detail" [ref=e910] [cursor=pointer]:
+                  - /url: /screen-settings/699d718a30ebbc4b47702f09
+                  - generic [ref=e911]: 
+                  - text: View Detail
+      - navigation "Page navigation" [ref=e912]:
+        - list [ref=e913]:
+          - listitem [ref=e914]:
+            - button "Previous"
+          - listitem [ref=e915]:
+            - button "1" [ref=e916] [cursor=pointer]
+          - listitem [ref=e917]:
+            - button "2" [ref=e918] [cursor=pointer]
+          - listitem [ref=e919]:
+            - button "3" [ref=e920] [cursor=pointer]
+          - listitem [ref=e921]:
+            - generic: ...
+          - listitem [ref=e922]:
+            - button "219" [ref=e923] [cursor=pointer]
+          - listitem [ref=e924]:
+            - button "Next" [ref=e925] [cursor=pointer]
+  - text: "* *"

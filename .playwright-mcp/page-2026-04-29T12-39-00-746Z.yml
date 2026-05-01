@@ -1,0 +1,145 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link " Dashboard" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e16]: 
+              - text: Dashboard
+          - listitem [ref=e17]:
+            - link " Screens" [ref=e18] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e19]: 
+              - text: Screens
+          - listitem [ref=e20]:
+            - link " Groups" [ref=e21] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e22]: 
+              - text: Groups
+          - listitem [ref=e23]:
+            - link " Clusters" [ref=e24] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e25]: 
+              - text: Clusters
+          - listitem [ref=e26]:
+            - link " Library" [ref=e27] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e28]: 
+              - text: Library
+          - listitem [ref=e29]:
+            - link " Playlists" [ref=e30] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e31]: 
+              - text: Playlists
+          - listitem [ref=e32]:
+            - link " Team" [ref=e33] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e34]: 
+              - text: Team
+          - listitem [ref=e35]:
+            - link " Reports" [ref=e36] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e37]: 
+              - text: Reports
+          - separator [ref=e38]
+          - listitem [ref=e39]:
+            - link " Help" [ref=e40] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e41]: 
+              - text: Help
+          - listitem [ref=e42]:
+            - link " Feedback" [ref=e43] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e44]: 
+              - text: Feedback
+          - listitem [ref=e45]:
+            - link " Account" [ref=e46] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e47]: 
+              - text: Account
+          - listitem [ref=e48]:
+            - link " Logout" [ref=e49] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e50]: 
+              - text: Logout
+      - generic [ref=e52]:
+        - generic "AMAN" [ref=e54]:
+          - generic [ref=e56]: A
+        - generic [ref=e57]: amankumarbsrbsr@gmail.com
+      - generic [ref=e58]: v3.5.20
+    - generic [ref=e60]:
+      - generic [ref=e608]:
+        - generic [ref=e610]:
+          - generic [ref=e611]:
+            - generic [ref=e612]:
+              - generic [ref=e614]:
+                - checkbox "Live Data View" [ref=e615]
+                - generic [ref=e616]: Live Data View
+              - generic [ref=e618]:
+                - generic [ref=e620]: No playlist published
+                - generic [ref=e622]: Connecting
+            - generic [ref=e623]:
+              - generic [ref=e624]:
+                - heading "benQ Online" [level=5] [ref=e625]:
+                  - text: benQ
+                  - generic [ref=e626]: Online
+                - button "Read Docs " [ref=e627] [cursor=pointer]:
+                  - text: Read Docs
+                  - generic [ref=e628]: 
+              - generic [ref=e630]: Last Response on Wed Apr 29 2026 6:08:41 PM
+              - paragraph [ref=e631]:
+                - generic [ref=e632]: "Network SSID: <unknown ssid>"
+              - paragraph [ref=e633]:
+                - generic [ref=e634]: "App Version: v108"
+              - generic [ref=e635]:
+                - generic [ref=e638]:
+                  - generic [ref=e639]: Live Playlist
+                  - text: No Playlist
+                - generic [ref=e642]:
+                  - generic [ref=e643]: Operating System
+                  - text: ANDROID
+                - generic [ref=e646]:
+                  - generic [ref=e647]: Orientation
+                  - text: LANDSCAPE
+                - generic [ref=e650]:
+                  - generic [ref=e651]: Resolution(W x H)
+                  - text: 1920 x 1080
+                - generic [ref=e654]:
+                  - generic [ref=e655]: RAM (In Use / Total)
+                  - text: 2.65 / 2.09 GB
+                - generic [ref=e658]:
+                  - generic [ref=e659]: Storage(In Use / Total)
+                  - text: 4.14 / 12 GB
+          - generic [ref=e660]:
+            - link "Media" [ref=e661] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Schedule" [ref=e662] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Configurations" [ref=e663] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Downloaded Files" [ref=e664] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Network Uptime" [ref=e665] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Additional Info" [ref=e666] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Custom Params" [ref=e667] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Settings" [ref=e668] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Logs" [ref=e669] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+        - generic [ref=e670]:
+          - tablist [ref=e673]:
+            - button "Assign Playlist" [ref=e674] [cursor=pointer]
+            - button "Active Media (0)" [ref=e675] [cursor=pointer]
+          - textbox "Search playlists..." [ref=e677]
+        - status [ref=e681]
+        - heading "No playlist found." [level=4] [ref=e685]
+        - status [ref=e687]
+      - text: 
+  - text: "* *"

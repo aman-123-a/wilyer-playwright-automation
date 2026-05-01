@@ -1,0 +1,305 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link " Dashboard" [ref=e12] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e13]: 
+              - text: Dashboard
+          - listitem [ref=e14]:
+            - link " Screens" [ref=e15] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e16]: 
+              - text: Screens
+          - listitem [ref=e17]:
+            - link " Groups" [ref=e18] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e19]: 
+              - text: Groups
+          - listitem [ref=e20]:
+            - link " Clusters" [ref=e21] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e22]: 
+              - text: Clusters
+          - listitem [ref=e23]:
+            - link " Library" [ref=e24] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e25]: 
+              - text: Library
+          - listitem [ref=e26]:
+            - link " Playlists" [ref=e27] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e28]: 
+              - text: Playlists
+          - listitem [ref=e29]:
+            - link " Team" [ref=e30] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e31]: 
+              - text: Team
+          - listitem [ref=e32]:
+            - link " Reports" [ref=e33] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e34]: 
+              - text: Reports
+          - separator [ref=e35]
+          - listitem [ref=e36]:
+            - link " Help" [ref=e37] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e38]: 
+              - text: Help
+          - listitem [ref=e39]:
+            - link " Feedback" [ref=e40] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e41]: 
+              - text: Feedback
+          - listitem [ref=e42]:
+            - link " Billing" [ref=e43] [cursor=pointer]:
+              - /url: /billing
+              - generic [ref=e44]: 
+              - text: Billing
+          - listitem [ref=e45]:
+            - link " Account" [ref=e46] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e47]: 
+              - text: Account
+          - listitem [ref=e48]:
+            - link " Logout" [ref=e49] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e50]: 
+              - text: Logout
+      - generic [ref=e52]:
+        - generic "dev" [ref=e54]:
+          - generic [ref=e56]: D
+        - generic [ref=e57]: dev@wilyer.com
+      - generic [ref=e58]: v3.5.20
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e64] [cursor=pointer]:
+          - generic [ref=e65]:
+            - generic [ref=e66]: 
+            - text: 4227 screens have expired.
+          - button "Renew now" [ref=e67]
+        - generic [ref=e68] [cursor=pointer]:
+          - generic [ref=e70]:
+            - generic [ref=e71]: 
+            - text: 6 screens will expire within 30 days.
+          - button "Renew now" [ref=e72]
+          - generic [ref=e74]: 
+      - generic [ref=e76]:
+        - generic [ref=e79]:
+          - link "Home" [ref=e80] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e81]: 
+          - strong [ref=e82]: Dashboard
+        - generic [ref=e84]:
+          - link " New Screen" [ref=e86] [cursor=pointer]:
+            - /url: /screens?action=addScreen
+            - generic [ref=e87]:
+              - generic [ref=e88]: 
+              - text: New Screen
+          - link " Add Media" [ref=e90] [cursor=pointer]:
+            - /url: /library?action=uploadContent
+            - generic [ref=e91]:
+              - generic [ref=e92]: 
+              - text: Add Media
+          - link " New Playlist" [ref=e94] [cursor=pointer]:
+            - /url: /playlists?action=createPlaylist
+            - generic [ref=e95]:
+              - generic [ref=e96]: 
+              - text: New Playlist
+          - link " New Group" [ref=e98] [cursor=pointer]:
+            - /url: /groups?action=newGroup
+            - generic [ref=e99]:
+              - generic [ref=e100]: 
+              - text: New Group
+      - generic [ref=e101]:
+        - link " 3 Online Screens" [ref=e103] [cursor=pointer]:
+          - /url: /screens?action=online
+          - generic [ref=e107]:
+            - generic [ref=e110]: 
+            - generic [ref=e111]:
+              - heading "3" [level=3] [ref=e112]:
+                - strong [ref=e113]: "3"
+              - heading "Online Screens" [level=6] [ref=e114]
+        - link " 4365 Offline Screens" [ref=e116] [cursor=pointer]:
+          - /url: /screens?action=offline
+          - generic [ref=e120]:
+            - generic [ref=e123]: 
+            - generic [ref=e124]:
+              - heading "4365" [level=3] [ref=e125]:
+                - strong [ref=e126]: "4365"
+              - heading "Offline Screens" [level=6] [ref=e127]
+        - link " 4368 Total Screens" [ref=e129] [cursor=pointer]:
+          - /url: /screens
+          - generic [ref=e133]:
+            - generic [ref=e136]: 
+            - generic [ref=e137]:
+              - heading "4368" [level=3] [ref=e138]:
+                - strong [ref=e139]: "4368"
+              - heading "Total Screens" [level=6] [ref=e140]
+        - link " 800 Total Media Files" [ref=e142] [cursor=pointer]:
+          - /url: /library
+          - generic [ref=e146]:
+            - generic [ref=e149]: 
+            - generic [ref=e150]:
+              - heading "800" [level=3] [ref=e151]:
+                - strong [ref=e152]: "800"
+              - heading "Total Media Files" [level=6] [ref=e153]
+        - link " 15.03 GB Storage Used" [ref=e155] [cursor=pointer]:
+          - /url: /library
+          - generic [ref=e159]:
+            - generic [ref=e162]: 
+            - generic [ref=e163]:
+              - heading "15.03 GB" [level=3] [ref=e164]:
+                - strong [ref=e165]: 15.03 GB
+              - heading "Storage Used" [level=6] [ref=e166]
+        - link " 0 Available Licences" [ref=e168] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e172]:
+            - generic [ref=e175]: 
+            - generic [ref=e176]:
+              - heading "0" [level=3] [ref=e177]:
+                - strong [ref=e178]: "0"
+              - heading "Available Licences" [level=6] [ref=e179]
+        - link " 6 Licenses Expiring Soon" [ref=e181] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e185]:
+            - generic [ref=e188]: 
+            - generic [ref=e189]:
+              - heading "6" [level=3] [ref=e190]:
+                - strong [ref=e191]: "6"
+              - heading "Licenses Expiring Soon" [level=6] [ref=e192]
+      - generic [ref=e193]:
+        - generic [ref=e195]:
+          - generic [ref=e196]:
+            - generic [ref=e197]:
+              - generic [ref=e198]: Screen / Players
+              - link "View More " [ref=e200] [cursor=pointer]:
+                - /url: /screens
+                - text: View More
+                - generic [ref=e201]: 
+            - generic [ref=e202]:
+              - text: Total Screens - 4368
+              - generic [ref=e203]: 
+              - text: Last 5 Screens
+          - table [ref=e206]:
+            - rowgroup [ref=e207]:
+              - row "# Name Orientation Last Response Action" [ref=e208]:
+                - columnheader "#" [ref=e209]
+                - columnheader "Name" [ref=e210]
+                - columnheader "Orientation" [ref=e211]
+                - columnheader "Last Response" [ref=e212]
+                - columnheader "Action" [ref=e213]
+            - rowgroup [ref=e214]:
+              - row "1 anurag windows test landscape 5 days ago View " [ref=e215]:
+                - cell "1" [ref=e216]
+                - cell "anurag windows test" [ref=e217]:
+                  - generic [ref=e218]: anurag windows test
+                - cell "landscape" [ref=e220]
+                - cell "5 days ago" [ref=e221]:
+                  - generic [ref=e222]: 5 days ago
+                - cell "View " [ref=e223]:
+                  - link "View " [ref=e224] [cursor=pointer]:
+                    - /url: /screen-settings/69e8a8d6117020894f64ca8c
+                    - text: View
+                    - generic [ref=e225]: 
+              - row "2 test samsung landscape 23 hours ago View " [ref=e226]:
+                - cell "2" [ref=e227]
+                - cell "test samsung" [ref=e228]:
+                  - generic [ref=e229]: test samsung
+                - cell "landscape" [ref=e231]
+                - cell "23 hours ago" [ref=e232]:
+                  - generic [ref=e233]: 23 hours ago
+                - cell "View " [ref=e234]:
+                  - link "View " [ref=e235] [cursor=pointer]:
+                    - /url: /screen-settings/69e89ce7117020894f643a50
+                    - text: View
+                    - generic [ref=e236]: 
+              - row "3 yt-test1 landscape 10 days ago View " [ref=e237]:
+                - cell "3" [ref=e238]
+                - cell "yt-test1" [ref=e239]:
+                  - generic [ref=e240]: yt-test1
+                - cell "landscape" [ref=e242]
+                - cell "10 days ago" [ref=e243]:
+                  - generic [ref=e244]: 10 days ago
+                - cell "View " [ref=e245]:
+                  - link "View " [ref=e246] [cursor=pointer]:
+                    - /url: /screen-settings/69e23623fee8ab01b194ef5f
+                    - text: View
+                    - generic [ref=e247]: 
+              - row "4 amanqa11 portrait 13 seconds ago View " [ref=e248]:
+                - cell "4" [ref=e249]
+                - cell "amanqa11" [ref=e250]:
+                  - generic [ref=e251]: amanqa11
+                - cell "portrait" [ref=e253]
+                - cell "13 seconds ago" [ref=e254]:
+                  - generic [ref=e255]: 13 seconds ago
+                - cell "View " [ref=e256]:
+                  - link "View " [ref=e257] [cursor=pointer]:
+                    - /url: /screen-settings/69df7afd00f79cb24a75bcd4
+                    - text: View
+                    - generic [ref=e258]: 
+              - row "5 webhook_test portrait 12 days ago View " [ref=e259]:
+                - cell "5" [ref=e260]
+                - cell "webhook_test" [ref=e261]:
+                  - generic [ref=e262]: webhook_test
+                - cell "portrait" [ref=e264]
+                - cell "12 days ago" [ref=e265]:
+                  - generic [ref=e266]: 12 days ago
+                - cell "View " [ref=e267]:
+                  - link "View " [ref=e268] [cursor=pointer]:
+                    - /url: /screen-settings/69df43a8bd2b23c31fb5d032
+                    - text: View
+                    - generic [ref=e269]: 
+        - generic [ref=e271]:
+          - generic [ref=e273]:
+            - generic [ref=e274]: Screens Location
+            - button "Read Docs " [ref=e276] [cursor=pointer]:
+              - text: Read Docs
+              - generic [ref=e277]: 
+          - generic [ref=e280]:
+            - generic:
+              - button "Keyboard shortcuts"
+            - region "Map" [ref=e281]
+            - generic [ref=e282]:
+              - generic [ref=e310]:
+                - generic:
+                  - generic:
+                    - generic [ref=e313] [cursor=pointer]: "185"
+                    - generic [ref=e315] [cursor=pointer]: "1291"
+                    - generic [ref=e317] [cursor=pointer]: "202"
+                    - generic [ref=e319] [cursor=pointer]: "9"
+                    - generic [ref=e321] [cursor=pointer]: "4"
+                    - generic [ref=e323] [cursor=pointer]: "99"
+                    - generic [ref=e325] [cursor=pointer]: "38"
+                    - generic [ref=e327] [cursor=pointer]: "8"
+                    - generic [ref=e329] [cursor=pointer]: "25"
+                    - generic [ref=e331] [cursor=pointer]: "17"
+                    - generic [ref=e333] [cursor=pointer]: "3"
+                    - generic [ref=e335] [cursor=pointer]: "41"
+                    - generic [ref=e337] [cursor=pointer]: "69"
+                    - generic [ref=e339] [cursor=pointer]: "7"
+                    - generic [ref=e341] [cursor=pointer]: "3"
+                    - generic [ref=e343] [cursor=pointer]: "10"
+                    - generic [ref=e345] [cursor=pointer]: "4"
+                    - generic [ref=e347] [cursor=pointer]: "3"
+                    - generic [ref=e349] [cursor=pointer]: "4"
+                    - generic [ref=e351] [cursor=pointer]: "12"
+                    - button [ref=e352] [cursor=pointer]
+              - iframe [ref=e353]:
+                
+              - button "Map camera controls" [ref=e355] [cursor=pointer]
+              - link "Open this area in Google Maps (opens a new window)" [ref=e357] [cursor=pointer]:
+                - /url: https://maps.google.com/maps?ll=28.459497,77.026634&z=5&t=m&hl=en-US&gl=IN&mapclient=apiv3
+                - img "Google" [ref=e359]
+              - generic [ref=e360]:
+                - button "Keyboard shortcuts" [ref=e366] [cursor=pointer]
+                - generic [ref=e371]: Map data ©2026 Google
+                - link "Terms (opens in new tab)" [ref=e376] [cursor=pointer]:
+                  - /url: https://www.google.com/intl/en-US_IN/help/terms_maps.html
+                  - text: Terms
+  - text: "* *"

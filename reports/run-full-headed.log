@@ -1,0 +1,729 @@
+
+Running 20 tests using 1 worker
+
+  ✓   1 [chromium] › tests\maker-checker\01-smoke.spec.js:9:3 › SMOKE: Login + Dashboard reachability › Smoke-01: Maker logs in and lands on dashboard (9.0s)
+  ✓   2 [chromium] › tests\maker-checker\01-smoke.spec.js:18:3 › SMOKE: Login + Dashboard reachability › Smoke-02: Checker logs in and lands on dashboard (8.7s)
+  ✓   3 [chromium] › tests\maker-checker\02-maker-flow.spec.js:16:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-01: Create a playlist with valid data inside folder (15.8s)
+  ✓   4 [chromium] › tests\maker-checker\02-maker-flow.spec.js:22:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-02: Upload a file to a playlist (file chooser) (13.6s)
+  ✓   5 [chromium] › tests\maker-checker\02-maker-flow.spec.js:29:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-03: Edit a playlist name (20.4s)
+  ✓   6 [chromium] › tests\maker-checker\02-maker-flow.spec.js:37:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-04: Delete a playlist (29.1s)
+  ✓   7 [chromium] › tests\maker-checker\02-maker-flow.spec.js:44:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-05: Submit a playlist for approval (20.3s)
+  ✓   8 [chromium] › tests\maker-checker\02-maker-flow.spec.js:52:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-06: Required-field validation on empty submit (12.5s)
+  ✓   9 [chromium] › tests\maker-checker\02-maker-flow.spec.js:61:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-07: Invalid input handled (too-long / special chars) (12.2s)
+  ✓  10 [chromium] › tests\maker-checker\02-maker-flow.spec.js:74:3 › MAKER FLOW: Playlist CRUD + Upload + Submit for Approval › Maker-08: Duplicate playlist name is blocked (34.5s)
+  ✘  11 [chromium] › tests\maker-checker\03-checker-flow.spec.js:24:3 › CHECKER FLOW: Approvals queue › Checker-01: Submitted playlist appears in approvals queue (50.3s)
+  ✘  12 [chromium] › tests\maker-checker\03-checker-flow.spec.js:24:3 › CHECKER FLOW: Approvals queue › Checker-01: Submitted playlist appears in approvals queue (retry #1) (55.0s)
+  ✘  13 [chromium] › tests\maker-checker\03-checker-flow.spec.js:34:3 › CHECKER FLOW: Approvals queue › Checker-02: Approve a submitted request (51.5s)
+  ✘  14 [chromium] › tests\maker-checker\03-checker-flow.spec.js:34:3 › CHECKER FLOW: Approvals queue › Checker-02: Approve a submitted request (retry #1) (52.7s)
+  ✘  15 [chromium] › tests\maker-checker\03-checker-flow.spec.js:44:3 › CHECKER FLOW: Approvals queue › Checker-03: Reject a request with a reason (52.8s)
+  ✘  16 [chromium] › tests\maker-checker\03-checker-flow.spec.js:44:3 › CHECKER FLOW: Approvals queue › Checker-03: Reject a request with a reason (retry #1) (52.9s)
+  ✘  17 [chromium] › tests\maker-checker\03-checker-flow.spec.js:54:3 › CHECKER FLOW: Approvals queue › Checker-04: Edit a playlist before approving (57.9s)
+  ✘  18 [chromium] › tests\maker-checker\03-checker-flow.spec.js:54:3 › CHECKER FLOW: Approvals queue › Checker-04: Edit a playlist before approving (retry #1) (21.0s)
+  ✘  19 [chromium] › tests\maker-checker\04-status-validation.spec.js:9:3 › STATUS VALIDATION: lifecycle transitions › Status-01: Draft → Submitted → Approved (1.3m)
+  ✘  20 [chromium] › tests\maker-checker\04-status-validation.spec.js:9:3 › STATUS VALIDATION: lifecycle transitions › Status-01: Draft → Submitted → Approved (retry #1) (51.7s)
+  ✘  21 [chromium] › tests\maker-checker\04-status-validation.spec.js:47:3 › STATUS VALIDATION: lifecycle transitions › Status-02: Draft → Submitted → Rejected (47.6s)
+  ✘  22 [chromium] › tests\maker-checker\04-status-validation.spec.js:47:3 › STATUS VALIDATION: lifecycle transitions › Status-02: Draft → Submitted → Rejected (retry #1) (51.4s)
+  ✓  23 [chromium] › tests\maker-checker\05-negative.spec.js:9:3 › NEGATIVE CASES › Neg-01: Submitting without an uploaded file is blocked (14.4s)
+  ✘  24 [chromium] › tests\maker-checker\05-negative.spec.js:32:3 › NEGATIVE CASES › Neg-02: Uploading an invalid file type is rejected (1.3m)
+  ✘  25 [chromium] › tests\maker-checker\05-negative.spec.js:32:3 › NEGATIVE CASES › Neg-02: Uploading an invalid file type is rejected (retry #1) (1.3m)
+  ✘  26 [chromium] › tests\maker-checker\05-negative.spec.js:47:3 › NEGATIVE CASES › Neg-03: Maker cannot approve (no Approve button on queue) (8.6s)
+  ✘  27 [chromium] › tests\maker-checker\05-negative.spec.js:47:3 › NEGATIVE CASES › Neg-03: Maker cannot approve (no Approve button on queue) (retry #1) (11.5s)
+  ✘  28 [chromium] › tests\maker-checker\05-negative.spec.js:56:3 › NEGATIVE CASES › Neg-04: Double submission is prevented (22.1s)
+  ✘  29 [chromium] › tests\maker-checker\05-negative.spec.js:56:3 › NEGATIVE CASES › Neg-04: Double submission is prevented (retry #1) (23.6s)
+
+
+  1) [chromium] › tests\maker-checker\03-checker-flow.spec.js:24:3 › CHECKER FLOW: Approvals queue › Checker-01: Submitted playlist appears in approvals queue 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('tbody tr').filter({ has: getByRole('cell', { name: 'CheckerVi_sn1s_313', exact: true }) }).first()
+    Expected: visible
+    Timeout: 20000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 20000ms[22m
+    [2m  - waiting for locator('tbody tr').filter({ has: getByRole('cell', { name: 'CheckerVi_sn1s_313', exact: true }) }).first()[22m
+
+
+       at ..\..\pages\maker-checker\ApprovalPage.js:43
+
+      41 |
+      42 |   async assertVisible(name) {
+    > 43 |     await expect(this.rowFor(name)).toBeVisible({ timeout: 20_000 });
+         |                                     ^
+      44 |   }
+      45 |
+      46 |   async approve(name) {
+        at ApprovalPage.assertVisible (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\ApprovalPage.js:43:37)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\03-checker-flow.spec.js:31:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-eac0d--appears-in-approvals-queue-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-eac0d--appears-in-approvals-queue-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-eac0d--appears-in-approvals-queue-chromium\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\03-checker-flow-CHECKER-FL-eac0d--appears-in-approvals-queue-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('tbody tr').filter({ has: getByRole('cell', { name: 'CheckerVi_tre1_392', exact: true }) }).first()
+    Expected: visible
+    Timeout: 20000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 20000ms[22m
+    [2m  - waiting for locator('tbody tr').filter({ has: getByRole('cell', { name: 'CheckerVi_tre1_392', exact: true }) }).first()[22m
+
+
+       at ..\..\pages\maker-checker\ApprovalPage.js:43
+
+      41 |
+      42 |   async assertVisible(name) {
+    > 43 |     await expect(this.rowFor(name)).toBeVisible({ timeout: 20_000 });
+         |                                     ^
+      44 |   }
+      45 |
+      46 |   async approve(name) {
+        at ApprovalPage.assertVisible (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\ApprovalPage.js:43:37)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\03-checker-flow.spec.js:31:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-eac0d--appears-in-approvals-queue-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-eac0d--appears-in-approvals-queue-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-eac0d--appears-in-approvals-queue-chromium-retry1\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\03-checker-flow-CHECKER-FL-eac0d--appears-in-approvals-queue-chromium-retry1\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-eac0d--appears-in-approvals-queue-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\03-checker-flow-CHECKER-FL-eac0d--appears-in-approvals-queue-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests\maker-checker\03-checker-flow.spec.js:34:3 › CHECKER FLOW: Approvals queue › Checker-02: Approve a submitted request 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('tbody tr').filter({ has: getByRole('cell', { name: 'CheckerAp_v1ej_232', exact: true }) }).first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for locator('tbody tr').filter({ has: getByRole('cell', { name: 'CheckerAp_v1ej_232', exact: true }) }).first()[22m
+
+
+       at ..\..\pages\maker-checker\ApprovalPage.js:49
+
+      47 |     await this.openPending();
+      48 |     const row = this.rowFor(name);
+    > 49 |     await expect(row).toBeVisible({ timeout: 15_000 });
+         |                       ^
+      50 |     // Approve = green check button (btn-success)
+      51 |     await row.locator('button.btn-success').click();
+      52 |     // Confirmation dialog, if any
+        at ApprovalPage.approve (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\ApprovalPage.js:49:23)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\03-checker-flow.spec.js:41:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-e98c7-Approve-a-submitted-request-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-e98c7-Approve-a-submitted-request-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-e98c7-Approve-a-submitted-request-chromium\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\03-checker-flow-CHECKER-FL-e98c7-Approve-a-submitted-request-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('tbody tr').filter({ has: getByRole('cell', { name: 'CheckerAp_w6fa_483', exact: true }) }).first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for locator('tbody tr').filter({ has: getByRole('cell', { name: 'CheckerAp_w6fa_483', exact: true }) }).first()[22m
+
+
+       at ..\..\pages\maker-checker\ApprovalPage.js:49
+
+      47 |     await this.openPending();
+      48 |     const row = this.rowFor(name);
+    > 49 |     await expect(row).toBeVisible({ timeout: 15_000 });
+         |                       ^
+      50 |     // Approve = green check button (btn-success)
+      51 |     await row.locator('button.btn-success').click();
+      52 |     // Confirmation dialog, if any
+        at ApprovalPage.approve (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\ApprovalPage.js:49:23)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\03-checker-flow.spec.js:41:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-e98c7-Approve-a-submitted-request-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-e98c7-Approve-a-submitted-request-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-e98c7-Approve-a-submitted-request-chromium-retry1\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\03-checker-flow-CHECKER-FL-e98c7-Approve-a-submitted-request-chromium-retry1\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-e98c7-Approve-a-submitted-request-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\03-checker-flow-CHECKER-FL-e98c7-Approve-a-submitted-request-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › tests\maker-checker\03-checker-flow.spec.js:44:3 › CHECKER FLOW: Approvals queue › Checker-03: Reject a request with a reason 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('tbody tr').filter({ has: getByRole('cell', { name: 'CheckerRe_xeka_735', exact: true }) }).first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for locator('tbody tr').filter({ has: getByRole('cell', { name: 'CheckerRe_xeka_735', exact: true }) }).first()[22m
+
+
+       at ..\..\pages\maker-checker\ApprovalPage.js:62
+
+      60 |     await this.openPending();
+      61 |     const row = this.rowFor(name);
+    > 62 |     await expect(row).toBeVisible({ timeout: 15_000 });
+         |                       ^
+      63 |     // Reject = gray X button (btn-secondary)
+      64 |     await row.locator('button.btn-secondary').click();
+      65 |     if (await this.reasonInput.count()) {
+        at ApprovalPage.reject (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\ApprovalPage.js:62:23)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\03-checker-flow.spec.js:51:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-0bd06-ect-a-request-with-a-reason-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-0bd06-ect-a-request-with-a-reason-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-0bd06-ect-a-request-with-a-reason-chromium\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\03-checker-flow-CHECKER-FL-0bd06-ect-a-request-with-a-reason-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('tbody tr').filter({ has: getByRole('cell', { name: 'CheckerRe_ykm1_800', exact: true }) }).first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for locator('tbody tr').filter({ has: getByRole('cell', { name: 'CheckerRe_ykm1_800', exact: true }) }).first()[22m
+
+
+       at ..\..\pages\maker-checker\ApprovalPage.js:62
+
+      60 |     await this.openPending();
+      61 |     const row = this.rowFor(name);
+    > 62 |     await expect(row).toBeVisible({ timeout: 15_000 });
+         |                       ^
+      63 |     // Reject = gray X button (btn-secondary)
+      64 |     await row.locator('button.btn-secondary').click();
+      65 |     if (await this.reasonInput.count()) {
+        at ApprovalPage.reject (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\ApprovalPage.js:62:23)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\03-checker-flow.spec.js:51:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-0bd06-ect-a-request-with-a-reason-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-0bd06-ect-a-request-with-a-reason-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-0bd06-ect-a-request-with-a-reason-chromium-retry1\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\03-checker-flow-CHECKER-FL-0bd06-ect-a-request-with-a-reason-chromium-retry1\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-0bd06-ect-a-request-with-a-reason-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\03-checker-flow-CHECKER-FL-0bd06-ect-a-request-with-a-reason-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [chromium] › tests\maker-checker\03-checker-flow.spec.js:54:3 › CHECKER FLOW: Approvals queue › Checker-04: Edit a playlist before approving 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('tbody tr').filter({ has: getByRole('cell', { name: 'CheckerEd_zu87_102', exact: true }) }).first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for locator('tbody tr').filter({ has: getByRole('cell', { name: 'CheckerEd_zu87_102', exact: true }) }).first()[22m
+
+
+       at ..\..\pages\maker-checker\ApprovalPage.js:75
+
+      73 |     await this.openPending();
+      74 |     const row = this.rowFor(name);
+    > 75 |     await expect(row).toBeVisible({ timeout: 15_000 });
+         |                       ^
+      76 |     // Edit = yellow pencil link (a.btn-warning) → /playlist-settings/{id}
+      77 |     await row.locator('a.btn-warning').click();
+      78 |     // On the playlist-settings page, rename via the page heading's edit
+        at ApprovalPage.editBeforeApproval (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\ApprovalPage.js:75:23)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\03-checker-flow.spec.js:62:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-00f47-a-playlist-before-approving-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-00f47-a-playlist-before-approving-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-00f47-a-playlist-before-approving-chromium\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\03-checker-flow-CHECKER-FL-00f47-a-playlist-before-approving-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('textbox', { name: /email|phone/i })
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for getByRole('textbox', { name: /email|phone/i })[22m
+
+
+       at ..\..\pages\maker-checker\LoginPage.js:16
+
+      14 |   async open(baseUrl) {
+      15 |     await this.goto(baseUrl);
+    > 16 |     await expect(this.emailInput).toBeVisible({ timeout: 15_000 });
+         |                                   ^
+      17 |   }
+      18 |
+      19 |   async login(email, password) {
+        at LoginPage.open (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\LoginPage.js:16:35)
+        at login (C:\Users\User\Downloads\wilyer-playwright\utils\maker-checker\helpers.js:13:3)
+        at seedSubmittedPlaylist (C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\03-checker-flow.spec.js:13:5)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\03-checker-flow.spec.js:57:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-00f47-a-playlist-before-approving-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-00f47-a-playlist-before-approving-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-00f47-a-playlist-before-approving-chromium-retry1\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\03-checker-flow-CHECKER-FL-00f47-a-playlist-before-approving-chromium-retry1\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\03-checker-flow-CHECKER-FL-00f47-a-playlist-before-approving-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\03-checker-flow-CHECKER-FL-00f47-a-playlist-before-approving-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [chromium] › tests\maker-checker\04-status-validation.spec.js:9:3 › STATUS VALIDATION: lifecycle transitions › Status-01: Draft → Submitted → Approved 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('tbody tr').filter({ has: getByRole('cell', { name: 'StatusApp_1lzr_107', exact: true }) }).first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for locator('tbody tr').filter({ has: getByRole('cell', { name: 'StatusApp_1lzr_107', exact: true }) }).first()[22m
+
+
+       at ..\..\pages\maker-checker\ApprovalPage.js:49
+
+      47 |     await this.openPending();
+      48 |     const row = this.rowFor(name);
+    > 49 |     await expect(row).toBeVisible({ timeout: 15_000 });
+         |                       ^
+      50 |     // Approve = green check button (btn-success)
+      51 |     await row.locator('button.btn-success').click();
+      52 |     // Confirmation dialog, if any
+        at ApprovalPage.approve (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\ApprovalPage.js:49:23)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\04-status-validation.spec.js:31:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\04-status-validation-STATU-2e8d0-raft-→-Submitted-→-Approved-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\04-status-validation-STATU-2e8d0-raft-→-Submitted-→-Approved-chromium\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\04-status-validation-STATU-2e8d0-raft-→-Submitted-→-Approved-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('tbody tr').filter({ has: getByRole('cell', { name: 'StatusApp_3d97_356', exact: true }) }).first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for locator('tbody tr').filter({ has: getByRole('cell', { name: 'StatusApp_3d97_356', exact: true }) }).first()[22m
+
+
+       at ..\..\pages\maker-checker\ApprovalPage.js:49
+
+      47 |     await this.openPending();
+      48 |     const row = this.rowFor(name);
+    > 49 |     await expect(row).toBeVisible({ timeout: 15_000 });
+         |                       ^
+      50 |     // Approve = green check button (btn-success)
+      51 |     await row.locator('button.btn-success').click();
+      52 |     // Confirmation dialog, if any
+        at ApprovalPage.approve (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\ApprovalPage.js:49:23)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\04-status-validation.spec.js:31:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\04-status-validation-STATU-2e8d0-raft-→-Submitted-→-Approved-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\04-status-validation-STATU-2e8d0-raft-→-Submitted-→-Approved-chromium-retry1\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\04-status-validation-STATU-2e8d0-raft-→-Submitted-→-Approved-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\04-status-validation-STATU-2e8d0-raft-→-Submitted-→-Approved-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\04-status-validation-STATU-2e8d0-raft-→-Submitted-→-Approved-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [chromium] › tests\maker-checker\04-status-validation.spec.js:47:3 › STATUS VALIDATION: lifecycle transitions › Status-02: Draft → Submitted → Rejected 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('tbody tr').filter({ has: getByRole('cell', { name: 'StatusRej_4khe_556', exact: true }) }).first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for locator('tbody tr').filter({ has: getByRole('cell', { name: 'StatusRej_4khe_556', exact: true }) }).first()[22m
+
+
+       at ..\..\pages\maker-checker\ApprovalPage.js:62
+
+      60 |     await this.openPending();
+      61 |     const row = this.rowFor(name);
+    > 62 |     await expect(row).toBeVisible({ timeout: 15_000 });
+         |                       ^
+      63 |     // Reject = gray X button (btn-secondary)
+      64 |     await row.locator('button.btn-secondary').click();
+      65 |     if (await this.reasonInput.count()) {
+        at ApprovalPage.reject (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\ApprovalPage.js:62:23)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\04-status-validation.spec.js:65:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\04-status-validation-STATU-0d593-raft-→-Submitted-→-Rejected-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\04-status-validation-STATU-0d593-raft-→-Submitted-→-Rejected-chromium\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\04-status-validation-STATU-0d593-raft-→-Submitted-→-Rejected-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('tbody tr').filter({ has: getByRole('cell', { name: 'StatusRej_5ms1_749', exact: true }) }).first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for locator('tbody tr').filter({ has: getByRole('cell', { name: 'StatusRej_5ms1_749', exact: true }) }).first()[22m
+
+
+       at ..\..\pages\maker-checker\ApprovalPage.js:62
+
+      60 |     await this.openPending();
+      61 |     const row = this.rowFor(name);
+    > 62 |     await expect(row).toBeVisible({ timeout: 15_000 });
+         |                       ^
+      63 |     // Reject = gray X button (btn-secondary)
+      64 |     await row.locator('button.btn-secondary').click();
+      65 |     if (await this.reasonInput.count()) {
+        at ApprovalPage.reject (C:\Users\User\Downloads\wilyer-playwright\pages\maker-checker\ApprovalPage.js:62:23)
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\04-status-validation.spec.js:65:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\04-status-validation-STATU-0d593-raft-→-Submitted-→-Rejected-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\04-status-validation-STATU-0d593-raft-→-Submitted-→-Rejected-chromium-retry1\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\04-status-validation-STATU-0d593-raft-→-Submitted-→-Rejected-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\04-status-validation-STATU-0d593-raft-→-Submitted-→-Rejected-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\04-status-validation-STATU-0d593-raft-→-Submitted-→-Rejected-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [chromium] › tests\maker-checker\05-negative.spec.js:32:3 › NEGATIVE CASES › Neg-02: Uploading an invalid file type is rejected 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+    Received: [31mfalse[39m
+
+      42 |     const errorVisible = await playlist.errorText.first().isVisible({ timeout: 8000 }).catch(() => false);
+      43 |     const toastVisible = await playlist.toast.first().isVisible({ timeout: 8000 }).catch(() => false);
+    > 44 |     expect(errorVisible || toastVisible).toBeTruthy();
+         |                                          ^
+      45 |   });
+      46 |
+      47 |   test('Neg-03: Maker cannot approve (no Approve button on queue)', async ({ page }) => {
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\05-negative.spec.js:44:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\05-negative-NEGATIVE-CASES-2e702-valid-file-type-is-rejected-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\05-negative-NEGATIVE-CASES-2e702-valid-file-type-is-rejected-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\05-negative-NEGATIVE-CASES-2e702-valid-file-type-is-rejected-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+    Received: [31mfalse[39m
+
+      42 |     const errorVisible = await playlist.errorText.first().isVisible({ timeout: 8000 }).catch(() => false);
+      43 |     const toastVisible = await playlist.toast.first().isVisible({ timeout: 8000 }).catch(() => false);
+    > 44 |     expect(errorVisible || toastVisible).toBeTruthy();
+         |                                          ^
+      45 |   });
+      46 |
+      47 |   test('Neg-03: Maker cannot approve (no Approve button on queue)', async ({ page }) => {
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\05-negative.spec.js:44:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\05-negative-NEGATIVE-CASES-2e702-valid-file-type-is-rejected-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\05-negative-NEGATIVE-CASES-2e702-valid-file-type-is-rejected-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\05-negative-NEGATIVE-CASES-2e702-valid-file-type-is-rejected-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\05-negative-NEGATIVE-CASES-2e702-valid-file-type-is-rejected-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\05-negative-NEGATIVE-CASES-2e702-valid-file-type-is-rejected-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [chromium] › tests\maker-checker\05-negative.spec.js:47:3 › NEGATIVE CASES › Neg-03: Maker cannot approve (no Approve button on queue) 
+
+    TypeError: Cannot read properties of undefined (reading 'first')
+
+      50 |     await approval.openUnapprovedPlaylists();
+      51 |     // Maker may be redirected away or simply never see an Approve button
+    > 52 |     const approveVisible = await approval.approveBtn.first().isVisible({ timeout: 5000 }).catch(() => false);
+         |                                                      ^
+      53 |     expect(approveVisible).toBeFalsy();
+      54 |   });
+      55 |
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\05-negative.spec.js:52:54
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\05-negative-NEGATIVE-CASES-382f4-no-Approve-button-on-queue--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\05-negative-NEGATIVE-CASES-382f4-no-Approve-button-on-queue--chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\05-negative-NEGATIVE-CASES-382f4-no-Approve-button-on-queue--chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TypeError: Cannot read properties of undefined (reading 'first')
+
+      50 |     await approval.openUnapprovedPlaylists();
+      51 |     // Maker may be redirected away or simply never see an Approve button
+    > 52 |     const approveVisible = await approval.approveBtn.first().isVisible({ timeout: 5000 }).catch(() => false);
+         |                                                      ^
+      53 |     expect(approveVisible).toBeFalsy();
+      54 |   });
+      55 |
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\05-negative.spec.js:52:54
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\05-negative-NEGATIVE-CASES-382f4-no-Approve-button-on-queue--chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\05-negative-NEGATIVE-CASES-382f4-no-Approve-button-on-queue--chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\05-negative-NEGATIVE-CASES-382f4-no-Approve-button-on-queue--chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\05-negative-NEGATIVE-CASES-382f4-no-Approve-button-on-queue--chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\05-negative-NEGATIVE-CASES-382f4-no-Approve-button-on-queue--chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [chromium] › tests\maker-checker\05-negative.spec.js:56:3 › NEGATIVE CASES › Neg-04: Double submission is prevented 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+    Received: [31mfalse[39m
+
+      71 |       (await publishBtn.isDisabled().catch(() => true)) ||
+      72 |       !(await publishBtn.isVisible().catch(() => false));
+    > 73 |     expect(disabledOrHidden).toBeTruthy();
+         |                              ^
+      74 |   });
+      75 | });
+      76 |
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\05-negative.spec.js:73:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\05-negative-NEGATIVE-CASES-11c01-ble-submission-is-prevented-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\05-negative-NEGATIVE-CASES-11c01-ble-submission-is-prevented-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\05-negative-NEGATIVE-CASES-11c01-ble-submission-is-prevented-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+    Received: [31mfalse[39m
+
+      71 |       (await publishBtn.isDisabled().catch(() => true)) ||
+      72 |       !(await publishBtn.isVisible().catch(() => false));
+    > 73 |     expect(disabledOrHidden).toBeTruthy();
+         |                              ^
+      74 |   });
+      75 | });
+      76 |
+        at C:\Users\User\Downloads\wilyer-playwright\tests\maker-checker\05-negative.spec.js:73:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\05-negative-NEGATIVE-CASES-11c01-ble-submission-is-prevented-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\05-negative-NEGATIVE-CASES-11c01-ble-submission-is-prevented-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\05-negative-NEGATIVE-CASES-11c01-ble-submission-is-prevented-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\05-negative-NEGATIVE-CASES-11c01-ble-submission-is-prevented-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\05-negative-NEGATIVE-CASES-11c01-ble-submission-is-prevented-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9 failed
+    [chromium] › tests\maker-checker\03-checker-flow.spec.js:24:3 › CHECKER FLOW: Approvals queue › Checker-01: Submitted playlist appears in approvals queue 
+    [chromium] › tests\maker-checker\03-checker-flow.spec.js:34:3 › CHECKER FLOW: Approvals queue › Checker-02: Approve a submitted request 
+    [chromium] › tests\maker-checker\03-checker-flow.spec.js:44:3 › CHECKER FLOW: Approvals queue › Checker-03: Reject a request with a reason 
+    [chromium] › tests\maker-checker\03-checker-flow.spec.js:54:3 › CHECKER FLOW: Approvals queue › Checker-04: Edit a playlist before approving 
+    [chromium] › tests\maker-checker\04-status-validation.spec.js:9:3 › STATUS VALIDATION: lifecycle transitions › Status-01: Draft → Submitted → Approved 
+    [chromium] › tests\maker-checker\04-status-validation.spec.js:47:3 › STATUS VALIDATION: lifecycle transitions › Status-02: Draft → Submitted → Rejected 
+    [chromium] › tests\maker-checker\05-negative.spec.js:32:3 › NEGATIVE CASES › Neg-02: Uploading an invalid file type is rejected 
+    [chromium] › tests\maker-checker\05-negative.spec.js:47:3 › NEGATIVE CASES › Neg-03: Maker cannot approve (no Approve button on queue) 
+    [chromium] › tests\maker-checker\05-negative.spec.js:56:3 › NEGATIVE CASES › Neg-04: Double submission is prevented 
+  11 passed (18.2m)

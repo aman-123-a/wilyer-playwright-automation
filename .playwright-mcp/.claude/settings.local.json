@@ -1,0 +1,49 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_type",
+      "mcp__playwright__browser_fill_form",
+      "mcp__playwright__browser_select_option",
+      "mcp__playwright__browser_hover",
+      "mcp__playwright__browser_press_key",
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_run_code",
+      "mcp__playwright__browser_evaluate",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_close",
+      "mcp__wilyer-playwright-local__launch_browser",
+      "mcp__wilyer-playwright-local__navigate",
+      "mcp__wilyer-playwright-local__click",
+      "mcp__wilyer-playwright-local__type_text",
+      "mcp__wilyer-playwright-local__get_page_content",
+      "mcp__wilyer-playwright-local__take_screenshot",
+      "mcp__wilyer-playwright-local__wait_for_selector",
+      "mcp__wilyer-playwright-local__get_text",
+      "mcp__wilyer-playwright-local__select_option",
+      "mcp__wilyer-playwright-local__get_current_url",
+      "mcp__wilyer-playwright-local__scroll",
+      "mcp__wilyer-playwright-local__go_back",
+      "mcp__wilyer-playwright-local__go_forward",
+      "mcp__playwright-test__browser_console_messages",
+      "mcp__playwright-test__browser_evaluate",
+      "mcp__playwright-test__browser_generate_locator",
+      "mcp__playwright-test__browser_network_requests",
+      "mcp__playwright-test__browser_snapshot",
+      "mcp__playwright-test__test_debug",
+      "mcp__playwright-test__test_list",
+      "mcp__playwright-test__test_run",
+      "Bash(npx playwright *)",
+      "mcp__playwright__browser_network_requests",
+      "Bash(grep -E \"specs\\\\\\\\\\\\\\\\|passed|failed|skipped|did not run|flaky|Run tag\" \"C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-User-Downloads-wilyer-playwright\\\\67b23a54-69d6-49bc-8683-83b652a60148\\\\tasks\\\\bv3prmlyu.output\")",
+      "mcp__playwright__browser_console_messages"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "playwright",
+    "playwright-test",
+    "wilyer-playwright-local"
+  ]
+}

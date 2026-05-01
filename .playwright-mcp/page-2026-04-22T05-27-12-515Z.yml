@@ -1,0 +1,30 @@
+- generic [ref=e4]:
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - heading "Welcome Back!" [level=2] [ref=e11]
+      - paragraph [ref=e12]: Please login to your account.
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]: Email or Phone *
+        - textbox "Enter your email or phone" [active] [ref=e17]
+      - generic [ref=e18]:
+        - generic [ref=e19]: Password *
+        - generic [ref=e20]:
+          - textbox "Enter your password" [ref=e21]
+          - generic [ref=e23] [cursor=pointer]: 
+      - button "Log In" [ref=e25] [cursor=pointer]
+    - paragraph [ref=e27]:
+      - link "Forgot Password?" [ref=e28] [cursor=pointer]:
+        - /url: /forget
+      - text: "|Don't have an account?"
+      - link "Sign Up" [ref=e29] [cursor=pointer]:
+        - /url: /signup
+  - iframe [ref=e32]:
+    - generic [ref=f2e5]:
+      - generic [ref=f2e6]:
+        - text: protected by
+        - strong [ref=f2e7]: reCAPTCHA
+      - generic [ref=f2e9]:
+        - text: reCAPTCHA is changing its terms of service.
+        - link "Take action." [ref=f2e10] [cursor=pointer]:
+          - /url: https://google.com/recaptcha/admin/migrate

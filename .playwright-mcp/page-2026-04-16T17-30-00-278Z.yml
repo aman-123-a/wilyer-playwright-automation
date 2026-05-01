@@ -1,0 +1,347 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link " Dashboard" [ref=e12] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e13]: 
+              - text: Dashboard
+          - listitem [ref=e14]:
+            - link " Screens" [ref=e15] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e16]: 
+              - text: Screens
+          - listitem [ref=e17]:
+            - link " Clusters" [ref=e18] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e19]: 
+              - text: Clusters
+          - listitem [ref=e20]:
+            - link " Library" [ref=e21] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e22]: 
+              - text: Library
+          - listitem [ref=e23]:
+            - link " Playlists" [ref=e24] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e25]: 
+              - text: Playlists
+          - listitem [ref=e26]:
+            - link " Team" [ref=e27] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e28]: 
+              - text: Team
+          - listitem [ref=e29]:
+            - link " Reports" [ref=e30] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e31]: 
+              - text: Reports
+          - separator [ref=e32]
+          - listitem [ref=e33]:
+            - link " Help" [ref=e34] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e35]: 
+              - text: Help
+          - listitem [ref=e36]:
+            - link " Feedback" [ref=e37] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e38]: 
+              - text: Feedback
+          - listitem [ref=e39]:
+            - link " Account" [ref=e40] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e41]: 
+              - text: Account
+          - listitem [ref=e42]:
+            - link " Logout" [ref=e43] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e44]: 
+              - text: Logout
+      - generic [ref=e46]:
+        - generic "AMAN" [ref=e48]:
+          - generic [ref=e50]: A
+        - generic [ref=e51]: amankumarbsrbsr@gmail.com
+      - generic [ref=e52]: v3.5.20
+    - generic [ref=e55]:
+      - generic [ref=e56]:
+        - heading "Library" [level=3] [ref=e57]
+        - generic [ref=e58]:
+          - button " Documentation" [ref=e59] [cursor=pointer]:
+            - generic [ref=e60]: 
+            - text: Documentation
+          - button " Upload Files" [ref=e328] [cursor=pointer]:
+            - generic [ref=e329]: 
+            - text: Upload Files
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - generic [ref=e65]: 
+            - generic [ref=e66]: Subfolders ( 1 )
+          - generic [ref=e330]:
+            - button " Back" [ref=e331] [cursor=pointer]:
+              - generic [ref=e332]: 
+              - text: Back
+            - button " Create Folder" [ref=e333] [cursor=pointer]:
+              - generic [ref=e334]: 
+              - text: Create Folder
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - generic [ref=e71]: 
+            - textbox "Search folders (including nested)..." [ref=e72]
+          - generic [ref=e335]:
+            - generic [ref=e336]: "Actions:"
+            - button " Rename" [ref=e337] [cursor=pointer]:
+              - generic [ref=e338]: 
+              - text: Rename
+            - button " Delete" [ref=e339] [cursor=pointer]:
+              - generic [ref=e340]: 
+              - text: Delete
+        - generic [ref=e342]:
+          - generic [ref=e343]: "Current location:"
+          - navigation "breadcrumb" [ref=e344]:
+            - list [ref=e345]:
+              - listitem [ref=e346]:
+                - button "All Folders" [ref=e347] [cursor=pointer]
+              - listitem [ref=e348]:
+                - text: /
+                - strong [ref=e349]: sector 14
+        - generic [ref=e354] [cursor=pointer]:
+          - generic [ref=e355]: 
+          - generic "Group linked" [ref=e357]:
+            - generic [ref=e358]: 
+          - generic [ref=e359]: teate
+      - link "Media" [ref=e84] [cursor=pointer]:
+        - /url: /library
+      - link "Widgets" [ref=e85] [cursor=pointer]:
+        - /url: /library
+      - link "Unapproved Files" [active] [ref=e86] [cursor=pointer]:
+        - /url: /library
+      - link " Create Design" [ref=e360] [cursor=pointer]:
+        - /url: /library
+        - generic [ref=e361]: 
+        - text: Create Design
+      - generic [ref=e372]:
+        - generic [ref=e373]:
+          - generic [ref=e374]:
+            - heading "FILE APPROVALS" [level=6] [ref=e375]
+            - generic [ref=e376]: 13 files · Pending
+          - generic [ref=e377]:
+            - button "Pending" [ref=e378] [cursor=pointer]
+            - button "Approved" [ref=e379] [cursor=pointer]
+            - button "Rejected" [ref=e380] [cursor=pointer]
+          - textbox "Search..." [ref=e382]
+        - generic [ref=e383]:
+          - generic [ref=e384]:
+            - generic [ref=e388]:
+              - generic "sample_1776358705859.jpg" [ref=e390]
+              - generic [ref=e391]:
+                - generic [ref=e392]: IMAGE
+                - generic [ref=e393]: 
+                - generic [ref=e394]: 0.00MB
+                - generic [ref=e395]: 1 x 1
+                - generic [ref=e396]: 
+                - generic [ref=e397]: 24 bit
+                - generic [ref=e398]: 
+                - generic [ref=e399]: 16 Apr 2026
+                - generic [ref=e400]: 
+                - generic [ref=e401]: AMAN
+            - button "" [ref=e403] [cursor=pointer]:
+              - generic [ref=e404]: 
+          - generic [ref=e405]:
+            - generic [ref=e409]:
+              - generic "sample_1776358530031.jpg" [ref=e411]
+              - generic [ref=e412]:
+                - generic [ref=e413]: IMAGE
+                - generic [ref=e414]: 
+                - generic [ref=e415]: 0.00MB
+                - generic [ref=e416]: 1 x 1
+                - generic [ref=e417]: 
+                - generic [ref=e418]: 24 bit
+                - generic [ref=e419]: 
+                - generic [ref=e420]: 16 Apr 2026
+                - generic [ref=e421]: 
+                - generic [ref=e422]: AMAN
+            - button "" [ref=e424] [cursor=pointer]:
+              - generic [ref=e425]: 
+          - generic [ref=e426]:
+            - generic [ref=e430]:
+              - generic "sample_1776346281349.jpg" [ref=e432]
+              - generic [ref=e433]:
+                - generic [ref=e434]: IMAGE
+                - generic [ref=e435]: 
+                - generic [ref=e436]: 0.00MB
+                - generic [ref=e437]: 1 x 1
+                - generic [ref=e438]: 
+                - generic [ref=e439]: 24 bit
+                - generic [ref=e440]: 
+                - generic [ref=e441]: 16 Apr 2026
+                - generic [ref=e442]: 
+                - generic [ref=e443]: AMAN
+            - button "" [ref=e445] [cursor=pointer]:
+              - generic [ref=e446]: 
+          - generic [ref=e447]:
+            - generic [ref=e451]:
+              - generic "sample_1776346220364.jpg" [ref=e453]
+              - generic [ref=e454]:
+                - generic [ref=e455]: IMAGE
+                - generic [ref=e456]: 
+                - generic [ref=e457]: 0.00MB
+                - generic [ref=e458]: 1 x 1
+                - generic [ref=e459]: 
+                - generic [ref=e460]: 24 bit
+                - generic [ref=e461]: 
+                - generic [ref=e462]: 16 Apr 2026
+                - generic [ref=e463]: 
+                - generic [ref=e464]: AMAN
+            - button "" [ref=e466] [cursor=pointer]:
+              - generic [ref=e467]: 
+          - generic [ref=e468]:
+            - generic [ref=e472]:
+              - generic "sample_1776345710945.jpg" [ref=e474]
+              - generic [ref=e475]:
+                - generic [ref=e476]: IMAGE
+                - generic [ref=e477]: 
+                - generic [ref=e478]: 0.00MB
+                - generic [ref=e479]: 1 x 1
+                - generic [ref=e480]: 
+                - generic [ref=e481]: 24 bit
+                - generic [ref=e482]: 
+                - generic [ref=e483]: 16 Apr 2026
+                - generic [ref=e484]: 
+                - generic [ref=e485]: AMAN
+            - button "" [ref=e487] [cursor=pointer]:
+              - generic [ref=e488]: 
+          - generic [ref=e489]:
+            - generic [ref=e493]:
+              - generic "sample_1776345632121.jpg" [ref=e495]
+              - generic [ref=e496]:
+                - generic [ref=e497]: IMAGE
+                - generic [ref=e498]: 
+                - generic [ref=e499]: 0.00MB
+                - generic [ref=e500]: 1 x 1
+                - generic [ref=e501]: 
+                - generic [ref=e502]: 24 bit
+                - generic [ref=e503]: 
+                - generic [ref=e504]: 16 Apr 2026
+                - generic [ref=e505]: 
+                - generic [ref=e506]: AMAN
+            - button "" [ref=e508] [cursor=pointer]:
+              - generic [ref=e509]: 
+          - generic [ref=e510]:
+            - generic [ref=e514]:
+              - generic "sample_1776345303348.jpg" [ref=e516]
+              - generic [ref=e517]:
+                - generic [ref=e518]: IMAGE
+                - generic [ref=e519]: 
+                - generic [ref=e520]: 0.00MB
+                - generic [ref=e521]: 1 x 1
+                - generic [ref=e522]: 
+                - generic [ref=e523]: 24 bit
+                - generic [ref=e524]: 
+                - generic [ref=e525]: 16 Apr 2026
+                - generic [ref=e526]: 
+                - generic [ref=e527]: AMAN
+            - button "" [ref=e529] [cursor=pointer]:
+              - generic [ref=e530]: 
+          - generic [ref=e531]:
+            - generic [ref=e535]:
+              - generic "sample_1776345278091.jpg" [ref=e537]
+              - generic [ref=e538]:
+                - generic [ref=e539]: IMAGE
+                - generic [ref=e540]: 
+                - generic [ref=e541]: 0.00MB
+                - generic [ref=e542]: 1 x 1
+                - generic [ref=e543]: 
+                - generic [ref=e544]: 24 bit
+                - generic [ref=e545]: 
+                - generic [ref=e546]: 16 Apr 2026
+                - generic [ref=e547]: 
+                - generic [ref=e548]: AMAN
+            - button "" [ref=e550] [cursor=pointer]:
+              - generic [ref=e551]: 
+          - generic [ref=e552]:
+            - generic [ref=e556]:
+              - generic "sample_1776345217942.jpg" [ref=e558]
+              - generic [ref=e559]:
+                - generic [ref=e560]: IMAGE
+                - generic [ref=e561]: 
+                - generic [ref=e562]: 0.00MB
+                - generic [ref=e563]: 1 x 1
+                - generic [ref=e564]: 
+                - generic [ref=e565]: 24 bit
+                - generic [ref=e566]: 
+                - generic [ref=e567]: 16 Apr 2026
+                - generic [ref=e568]: 
+                - generic [ref=e569]: AMAN
+            - button "" [ref=e571] [cursor=pointer]:
+              - generic [ref=e572]: 
+          - generic [ref=e573]:
+            - generic [ref=e577]:
+              - generic "sample_1776345105847.jpg" [ref=e579]
+              - generic [ref=e580]:
+                - generic [ref=e581]: IMAGE
+                - generic [ref=e582]: 
+                - generic [ref=e583]: 0.00MB
+                - generic [ref=e584]: 1 x 1
+                - generic [ref=e585]: 
+                - generic [ref=e586]: 24 bit
+                - generic [ref=e587]: 
+                - generic [ref=e588]: 16 Apr 2026
+                - generic [ref=e589]: 
+                - generic [ref=e590]: AMAN
+            - button "" [ref=e592] [cursor=pointer]:
+              - generic [ref=e593]: 
+          - generic [ref=e594]:
+            - generic [ref=e598]:
+              - generic "sample_1776345003000.jpg" [ref=e600]
+              - generic [ref=e601]:
+                - generic [ref=e602]: IMAGE
+                - generic [ref=e603]: 
+                - generic [ref=e604]: 0.00MB
+                - generic [ref=e605]: 1 x 1
+                - generic [ref=e606]: 
+                - generic [ref=e607]: 24 bit
+                - generic [ref=e608]: 
+                - generic [ref=e609]: 16 Apr 2026
+                - generic [ref=e610]: 
+                - generic [ref=e611]: AMAN
+            - button "" [ref=e613] [cursor=pointer]:
+              - generic [ref=e614]: 
+          - generic [ref=e615]:
+            - generic [ref=e619]:
+              - generic "sample_1776344541861.jpg" [ref=e621]
+              - generic [ref=e622]:
+                - generic [ref=e623]: IMAGE
+                - generic [ref=e624]: 
+                - generic [ref=e625]: 0.00MB
+                - generic [ref=e626]: 1 x 1
+                - generic [ref=e627]: 
+                - generic [ref=e628]: 24 bit
+                - generic [ref=e629]: 
+                - generic [ref=e630]: 16 Apr 2026
+                - generic [ref=e631]: 
+                - generic [ref=e632]: AMAN
+            - button "" [ref=e634] [cursor=pointer]:
+              - generic [ref=e635]: 
+          - generic [ref=e636]:
+            - generic [ref=e640]:
+              - generic "sample_1776344435275.jpg" [ref=e642]
+              - generic [ref=e643]:
+                - generic [ref=e644]: IMAGE
+                - generic [ref=e645]: 
+                - generic [ref=e646]: 0.00MB
+                - generic [ref=e647]: 1 x 1
+                - generic [ref=e648]: 
+                - generic [ref=e649]: 24 bit
+                - generic [ref=e650]: 
+                - generic [ref=e651]: 16 Apr 2026
+                - generic [ref=e652]: 
+                - generic [ref=e653]: AMAN
+            - button "" [ref=e655] [cursor=pointer]:
+              - generic [ref=e656]: 
+      - text:         
+  - text: "* *"

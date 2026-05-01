@@ -1,0 +1,155 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link " Dashboard" [ref=e12] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e13]: 
+              - text: Dashboard
+          - listitem [ref=e14]:
+            - link " Screens" [ref=e15] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e16]: 
+              - text: Screens
+          - listitem [ref=e17]:
+            - link " Groups" [ref=e18] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e19]: 
+              - text: Groups
+          - listitem [ref=e20]:
+            - link " Clusters" [ref=e21] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e22]: 
+              - text: Clusters
+          - listitem [ref=e23]:
+            - link " Library" [active] [ref=e24] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e25]: 
+              - text: Library
+          - listitem [ref=e26]:
+            - link " Playlists" [ref=e27] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e28]: 
+              - text: Playlists
+          - listitem [ref=e29]:
+            - link " Team" [ref=e30] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e31]: 
+              - text: Team
+          - listitem [ref=e32]:
+            - link " Reports" [ref=e33] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e34]: 
+              - text: Reports
+          - separator [ref=e35]
+          - listitem [ref=e36]:
+            - link " Help" [ref=e37] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e38]: 
+              - text: Help
+          - listitem [ref=e39]:
+            - link " Feedback" [ref=e40] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e41]: 
+              - text: Feedback
+          - listitem [ref=e42]:
+            - link " Billing" [ref=e43] [cursor=pointer]:
+              - /url: /billing
+              - generic [ref=e44]: 
+              - text: Billing
+          - listitem [ref=e45]:
+            - link " Account" [ref=e46] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e47]: 
+              - text: Account
+          - listitem [ref=e48]:
+            - link " Logout" [ref=e49] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e50]: 
+              - text: Logout
+      - generic [ref=e52]:
+        - generic "dev" [ref=e54]:
+          - generic [ref=e56]: D
+        - generic [ref=e57]: dev@wilyer.com
+      - generic [ref=e58]: v3.5.20
+    - generic [ref=e930]:
+      - generic [ref=e931]:
+        - heading "Library" [level=3] [ref=e932]
+        - generic [ref=e933]:
+          - button " Documentation" [ref=e934] [cursor=pointer]:
+            - generic [ref=e935]: 
+            - text: Documentation
+          - button " Upload Files" [ref=e936] [cursor=pointer]:
+            - generic [ref=e937]: 
+            - text: Upload Files
+      - generic [ref=e939]:
+        - generic [ref=e940]:
+          - generic [ref=e941]:
+            - generic [ref=e942]: 
+            - generic [ref=e943]: Folders ( 4 )
+          - button " Create Folder" [ref=e945] [cursor=pointer]:
+            - generic [ref=e946]: 
+            - text: Create Folder
+        - generic [ref=e949]:
+          - generic [ref=e951]: 
+          - textbox "Search folders (including nested)..." [ref=e952]
+        - generic [ref=e953]:
+          - generic [ref=e958] [cursor=pointer]:
+            - generic [ref=e959]: 
+            - generic "Group linked" [ref=e961]:
+              - generic [ref=e962]: 
+            - generic [ref=e963]: Maker / Checker Flow (Sameer)
+          - generic [ref=e968] [cursor=pointer]:
+            - generic [ref=e969]: 
+            - generic "Group linked" [ref=e971]:
+              - generic [ref=e972]: 
+            - generic [ref=e973]: BenQ
+          - generic [ref=e978] [cursor=pointer]:
+            - generic [ref=e979]: 
+            - generic "Group linked" [ref=e981]:
+              - generic [ref=e982]: 
+            - generic [ref=e983]: India 1 DND
+          - generic [ref=e988] [cursor=pointer]:
+            - generic [ref=e989]: 
+            - generic "Group linked" [ref=e991]:
+              - generic [ref=e992]: 
+            - generic [ref=e993]: Developer Room's Vansh new
+      - link "Media" [ref=e994] [cursor=pointer]:
+        - /url: /library
+      - link "Widgets" [ref=e995] [cursor=pointer]:
+        - /url: /library
+      - link "Unapproved Files" [ref=e996] [cursor=pointer]:
+        - /url: /library
+      - link "Publication Requests" [ref=e997] [cursor=pointer]:
+        - /url: /library
+      - link " Create Design" [ref=e998] [cursor=pointer]:
+        - /url: /library
+        - generic [ref=e999]: 
+        - text: Create Design
+      - generic [ref=e1003]:
+        - generic [ref=e1004]:
+          - generic [ref=e1005]: All Media Files
+          - generic [ref=e1007]: Total Files - 637
+        - generic [ref=e1008]:
+          - button "All" [ref=e1009] [cursor=pointer]
+          - button "Videos" [ref=e1010] [cursor=pointer]
+          - button "Photos" [ref=e1011] [cursor=pointer]
+        - generic [ref=e1012]:
+          - generic [ref=e1013]:
+            - generic [ref=e1015] [cursor=pointer]: 
+            - generic [ref=e1017] [cursor=pointer]: Sort by Uploaded Date
+          - textbox "Search..." [ref=e1019]
+          - generic [ref=e1020]:
+            - generic [ref=e1022] [cursor=pointer]: 
+            - generic [ref=e1024] [cursor=pointer]: 
+      - generic [ref=e1027]:
+        - status [ref=e1028]:
+          - generic [ref=e1029]: Loading...
+        - paragraph [ref=e1030]: Loading media files...
+      - button "Load More" [ref=e1032] [cursor=pointer]
+      - text:                        
+  - text: "* *"

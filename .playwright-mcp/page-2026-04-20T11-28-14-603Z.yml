@@ -1,0 +1,353 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link " Dashboard" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e16]: 
+              - text: Dashboard
+          - listitem [ref=e17]:
+            - link " Screens" [ref=e18] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e19]: 
+              - text: Screens
+          - listitem [ref=e20]:
+            - link " Groups" [ref=e21] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e22]: 
+              - text: Groups
+          - listitem [ref=e23]:
+            - link " Clusters" [ref=e24] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e25]: 
+              - text: Clusters
+          - listitem [ref=e26]:
+            - link " Library" [ref=e27] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e28]: 
+              - text: Library
+          - listitem [ref=e29]:
+            - link " Playlists" [ref=e30] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e31]: 
+              - text: Playlists
+          - listitem [ref=e32]:
+            - link " Team" [ref=e33] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e34]: 
+              - text: Team
+          - listitem [ref=e35]:
+            - link " Reports" [ref=e36] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e37]: 
+              - text: Reports
+          - separator [ref=e38]
+          - listitem [ref=e39]:
+            - link " Help" [ref=e40] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e41]: 
+              - text: Help
+          - listitem [ref=e42]:
+            - link " Feedback" [ref=e43] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e44]: 
+              - text: Feedback
+          - listitem [ref=e45]:
+            - link " Billing" [ref=e46] [cursor=pointer]:
+              - /url: /billing
+              - generic [ref=e47]: 
+              - text: Billing
+          - listitem [ref=e48]:
+            - link " Account" [ref=e49] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e50]: 
+              - text: Account
+          - listitem [ref=e51]:
+            - link " Logout" [ref=e52] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e53]: 
+              - text: Logout
+      - generic [ref=e55]:
+        - generic "dev" [ref=e57]:
+          - generic [ref=e59]: D
+        - generic [ref=e60]: dev@wilyer.com
+      - generic [ref=e61]: v3.5.20
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - heading "Library" [level=3] [ref=e66]
+        - generic [ref=e67]:
+          - button " Documentation" [ref=e68] [cursor=pointer]:
+            - generic [ref=e69]: 
+            - text: Documentation
+          - button " Upload Files" [ref=e70] [cursor=pointer]:
+            - generic [ref=e71]: 
+            - text: Upload Files
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - generic [ref=e76]: 
+            - generic [ref=e77]: Folders ( 4 )
+          - button " Create Folder" [ref=e79] [cursor=pointer]:
+            - generic [ref=e80]: 
+            - text: Create Folder
+        - generic [ref=e83]:
+          - generic [ref=e85]: 
+          - textbox "Search folders (including nested)..." [ref=e86]
+        - generic [ref=e87]:
+          - generic [ref=e92] [cursor=pointer]:
+            - generic [ref=e93]: 
+            - generic "Group linked" [ref=e95]:
+              - generic [ref=e96]: 
+            - generic [ref=e97]: Maker / Checker Flow (Sameer)
+          - generic [ref=e102] [cursor=pointer]:
+            - generic [ref=e103]: 
+            - generic "Group linked" [ref=e105]:
+              - generic [ref=e106]: 
+            - generic [ref=e107]: BenQ
+          - generic [ref=e112] [cursor=pointer]:
+            - generic [ref=e113]: 
+            - generic "Group linked" [ref=e115]:
+              - generic [ref=e116]: 
+            - generic [ref=e117]: India 1 DND
+          - generic [ref=e122] [cursor=pointer]:
+            - generic [ref=e123]: 
+            - generic "Group linked" [ref=e125]:
+              - generic [ref=e126]: 
+            - generic [ref=e127]: Developer Room's Vansh new
+      - link "Media" [ref=e128] [cursor=pointer]:
+        - /url: /library
+      - link "Widgets" [ref=e129] [cursor=pointer]:
+        - /url: /library
+      - link "Unapproved Files" [ref=e130] [cursor=pointer]:
+        - /url: /library
+      - link "Publication Requests" [ref=e131] [cursor=pointer]:
+        - /url: /library
+      - link " Create Design" [ref=e132] [cursor=pointer]:
+        - /url: /library
+        - generic [ref=e133]: 
+        - text: Create Design
+      - generic [ref=e1625]:
+        - generic [ref=e1627]:
+          - generic [ref=e1628]:
+            - generic [ref=e1629]: All Widgets
+            - textbox "Search..." [ref=e1633]
+          - generic [ref=e1747]:
+            - button " Go Back" [ref=e1748] [cursor=pointer]:
+              - generic [ref=e1749]: 
+              - text: Go Back
+            - button " Add New" [ref=e1750] [cursor=pointer]:
+              - generic [ref=e1751]: 
+              - text: Add New
+        - generic [ref=e1634]:
+          - generic [ref=e2247]: "Total Widgets: 19"
+          - generic [ref=e2248]:
+            - generic [ref=e2250]:
+              - generic [ref=e2252]:
+                - text: 69e60bf912032c2414079e27
+                - paragraph [ref=e2253]: test way
+                - generic [ref=e2254]:
+                  - button "" [ref=e2255] [cursor=pointer]:
+                    - generic [ref=e2256]: 
+                  - button "" [ref=e2257] [cursor=pointer]:
+                    - generic [ref=e2258]: 
+              - checkbox [ref=e2260]
+            - generic [ref=e2262]:
+              - generic [ref=e2264]:
+                - text: 69e5fa8992c27c48971f8998
+                - paragraph [ref=e2265]: "4"
+                - generic [ref=e2266]:
+                  - button "" [ref=e2267] [cursor=pointer]:
+                    - generic [ref=e2268]: 
+                  - button "" [ref=e2269] [cursor=pointer]:
+                    - generic [ref=e2270]: 
+              - checkbox [ref=e2272]
+            - generic [ref=e2274]:
+              - generic [ref=e2276]:
+                - text: 69e5f82c06f975c88b2a5c3a
+                - paragraph [ref=e2277]: BenQw
+                - generic [ref=e2278]:
+                  - button "" [ref=e2279] [cursor=pointer]:
+                    - generic [ref=e2280]: 
+                  - button "" [ref=e2281] [cursor=pointer]:
+                    - generic [ref=e2282]: 
+              - checkbox [ref=e2284]
+            - generic [ref=e2286]:
+              - generic [ref=e2288]:
+                - text: 69e5f7abd7d7b1719dbeada7
+                - paragraph [ref=e2289]: temp
+                - generic [ref=e2290]:
+                  - button "" [ref=e2291] [cursor=pointer]:
+                    - generic [ref=e2292]: 
+                  - button "" [ref=e2293] [cursor=pointer]:
+                    - generic [ref=e2294]: 
+              - checkbox [ref=e2296]
+            - generic [ref=e2298]:
+              - generic [ref=e2300]:
+                - text: 69e5f4a292c27c48971f8755
+                - paragraph [ref=e2301]: aman.k
+                - generic [ref=e2302]:
+                  - button "" [ref=e2303] [cursor=pointer]:
+                    - generic [ref=e2304]: 
+                  - button "" [ref=e2305] [cursor=pointer]:
+                    - generic [ref=e2306]: 
+              - checkbox [ref=e2308]
+            - generic [ref=e2310]:
+              - generic [ref=e2312]:
+                - text: 69dccad92960b8625aa671d8
+                - paragraph [ref=e2313]: Four cities potrait
+                - generic [ref=e2314]:
+                  - button "" [ref=e2315] [cursor=pointer]:
+                    - generic [ref=e2316]: 
+                  - button "" [ref=e2317] [cursor=pointer]:
+                    - generic [ref=e2318]: 
+              - checkbox [ref=e2320]
+            - generic [ref=e2322]:
+              - generic [ref=e2324]:
+                - text: 69dccab92960b8625aa671a0
+                - paragraph [ref=e2325]: THree cities potrait
+                - generic [ref=e2326]:
+                  - button "" [ref=e2327] [cursor=pointer]:
+                    - generic [ref=e2328]: 
+                  - button "" [ref=e2329] [cursor=pointer]:
+                    - generic [ref=e2330]: 
+              - checkbox [ref=e2332]
+            - generic [ref=e2334]:
+              - generic [ref=e2336]:
+                - text: 69dccaa42960b8625aa67182
+                - paragraph [ref=e2337]: Two cities potrait
+                - generic [ref=e2338]:
+                  - button "" [ref=e2339] [cursor=pointer]:
+                    - generic [ref=e2340]: 
+                  - button "" [ref=e2341] [cursor=pointer]:
+                    - generic [ref=e2342]: 
+              - checkbox [ref=e2344]
+            - generic [ref=e2346]:
+              - generic [ref=e2348]:
+                - text: 69dcc5391ad2d0b9be6df358
+                - paragraph [ref=e2349]: Four Cities Landscape
+                - generic [ref=e2350]:
+                  - button "" [ref=e2351] [cursor=pointer]:
+                    - generic [ref=e2352]: 
+                  - button "" [ref=e2353] [cursor=pointer]:
+                    - generic [ref=e2354]: 
+              - checkbox [ref=e2356]
+            - generic [ref=e2358]:
+              - generic [ref=e2360]:
+                - text: 69dcc51c1ad2d0b9be6df329
+                - paragraph [ref=e2361]: Three Cities Landscape
+                - generic [ref=e2362]:
+                  - button "" [ref=e2363] [cursor=pointer]:
+                    - generic [ref=e2364]: 
+                  - button "" [ref=e2365] [cursor=pointer]:
+                    - generic [ref=e2366]: 
+              - checkbox [ref=e2368]
+            - generic [ref=e2370]:
+              - generic [ref=e2372]:
+                - text: 69dcc5031ad2d0b9be6df312
+                - paragraph [ref=e2373]: Two Cities Landscape
+                - generic [ref=e2374]:
+                  - button "" [ref=e2375] [cursor=pointer]:
+                    - generic [ref=e2376]: 
+                  - button "" [ref=e2377] [cursor=pointer]:
+                    - generic [ref=e2378]: 
+              - checkbox [ref=e2380]
+            - generic [ref=e2382]:
+              - generic [ref=e2384]:
+                - text: 69dcb1731ad2d0b9be6de2f3
+                - paragraph [ref=e2385]: Vansh Nanda Square
+                - generic [ref=e2386]:
+                  - button "" [ref=e2387] [cursor=pointer]:
+                    - generic [ref=e2388]: 
+                  - button "" [ref=e2389] [cursor=pointer]:
+                    - generic [ref=e2390]: 
+              - checkbox [ref=e2392]
+            - generic [ref=e2394]:
+              - generic [ref=e2396]:
+                - text: 69dcb1661ad2d0b9be6de2ec
+                - paragraph [ref=e2397]: Vansh Nanda Potrait
+                - generic [ref=e2398]:
+                  - button "" [ref=e2399] [cursor=pointer]:
+                    - generic [ref=e2400]: 
+                  - button "" [ref=e2401] [cursor=pointer]:
+                    - generic [ref=e2402]: 
+              - checkbox [ref=e2404]
+            - generic [ref=e2406]:
+              - generic [ref=e2408]:
+                - text: 69dcaa541ad2d0b9be6db8ee
+                - paragraph [ref=e2409]: Vansh Nanda Landscape
+                - generic [ref=e2410]:
+                  - button "" [ref=e2411] [cursor=pointer]:
+                    - generic [ref=e2412]: 
+                  - button "" [ref=e2413] [cursor=pointer]:
+                    - generic [ref=e2414]: 
+              - checkbox [ref=e2416]
+            - generic [ref=e2418]:
+              - generic [ref=e2420]:
+                - text: 66a76c1b6fc06c70f73f7289
+                - paragraph [ref=e2421]: we
+                - generic [ref=e2422]:
+                  - button "" [ref=e2423] [cursor=pointer]:
+                    - generic [ref=e2424]: 
+                  - button "" [ref=e2425] [cursor=pointer]:
+                    - generic [ref=e2426]: 
+              - checkbox [ref=e2428]
+            - generic [ref=e2430]:
+              - generic [ref=e2432]:
+                - text: 668fbf8872ae2e550e4b8334
+                - paragraph [ref=e2433]: qwer
+                - generic [ref=e2434]:
+                  - button "" [ref=e2435] [cursor=pointer]:
+                    - generic [ref=e2436]: 
+                  - button "" [ref=e2437] [cursor=pointer]:
+                    - generic [ref=e2438]: 
+              - checkbox [ref=e2440]
+            - generic [ref=e2442]:
+              - generic [ref=e2444]:
+                - text: 663de04ac97ba510dce7cdb4
+                - paragraph [ref=e2445]: new
+                - generic [ref=e2446]:
+                  - button "" [ref=e2447] [cursor=pointer]:
+                    - generic [ref=e2448]: 
+                  - button "" [ref=e2449] [cursor=pointer]:
+                    - generic [ref=e2450]: 
+              - checkbox [ref=e2452]
+            - generic [ref=e2454]:
+              - generic [ref=e2456]:
+                - text: 66364047c2a9e090b94bec49
+                - paragraph [ref=e2457]: NCR 2
+                - generic [ref=e2458]:
+                  - button "" [ref=e2459] [cursor=pointer]:
+                    - generic [ref=e2460]: 
+                  - button "" [ref=e2461] [cursor=pointer]:
+                    - generic [ref=e2462]: 
+              - checkbox [ref=e2464]
+            - generic [ref=e2466]:
+              - generic [ref=e2468]:
+                - text: 65127f1c88ae104c1c6250cd
+                - paragraph [ref=e2469]: NCR
+                - generic [ref=e2470]:
+                  - button "" [ref=e2471] [cursor=pointer]:
+                    - generic [ref=e2472]: 
+                  - button "" [ref=e2473] [cursor=pointer]:
+                    - generic [ref=e2474]: 
+              - checkbox [ref=e2476]
+          - generic [ref=e2477]:
+            - button "No More Data" [disabled]
+        - option "100" [selected]
+        - option "200"
+        - option "500"
+        - option "1000"
+      - text:                                           
+  - text: "* *"
+  - generic [ref=e2479]:
+    - generic [ref=e2491]:
+      - img [ref=e2482]
+      - generic [ref=e2484]: Widget deleted successfully.
+    - button "close" [ref=e2485] [cursor=pointer]:
+      - img [ref=e2486]
+    - generic [ref=e2488]:
+      - progressbar "notification timer"

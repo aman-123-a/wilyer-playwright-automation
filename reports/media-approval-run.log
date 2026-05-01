@@ -1,0 +1,21 @@
+
+Running 11 tests using 1 worker
+
+  ✘   1 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:56:3 › Maker–Checker Media Approval Workflow › TC1: Checker approves submitted media — status becomes Approved (23.6s)
+  ✘   2 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:56:3 › Maker–Checker Media Approval Workflow › TC1: Checker approves submitted media — status becomes Approved (retry #1) (25.1s)
+  ✘   3 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:96:3 › Maker–Checker Media Approval Workflow › TC2: Checker rejects media with comment — Maker sees Rejected (22.9s)
+  ✘   4 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:96:3 › Maker–Checker Media Approval Workflow › TC2: Checker rejects media with comment — Maker sees Rejected (retry #1) (27.1s)
+  ✘   5 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:133:3 › Maker–Checker Media Approval Workflow › TC3: Checker edits media metadata, then approves (24.9s)
+  ✘   6 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:133:3 › Maker–Checker Media Approval Workflow › TC3: Checker edits media metadata, then approves (retry #1) (28.1s)
+  ✘   7 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:187:3 › Maker–Checker Media Approval Workflow › TC4: Maker cannot edit media after submission (read-only or hidden) (26.1s)
+  ✘   8 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:187:3 › Maker–Checker Media Approval Workflow › TC4: Maker cannot edit media after submission (read-only or hidden) (retry #1) (27.7s)
+  ✘   9 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:213:3 › Maker–Checker Media Approval Workflow › TC5: Re-submitting the same media triggers duplicate handling (23.5s)
+  ✘  10 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:213:3 › Maker–Checker Media Approval Workflow › TC5: Re-submitting the same media triggers duplicate handling (retry #1) (25.2s)
+  ✘  11 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:242:3 › Maker–Checker Media Approval Workflow › TC6: Checker tries bulk-approve with no selection — gracefully handled (25.0s)
+  ✘  12 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:242:3 › Maker–Checker Media Approval Workflow › TC6: Checker tries bulk-approve with no selection — gracefully handled (retry #1) (31.4s)
+  ✘  13 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:270:3 › Maker–Checker Media Approval Workflow › TC7: Audit log entries created for submission and approval (24.7s)
+  ✘  14 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:270:3 › Maker–Checker Media Approval Workflow › TC7: Audit log entries created for submission and approval (retry #1) (27.3s)
+  ✘  15 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:302:3 › Maker–Checker Media Approval Workflow › TC8: Scheduled media respects rollout time (skipped if scheduling not exposed) (23.5s)
+  ✘  16 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:302:3 › Maker–Checker Media Approval Workflow › TC8: Scheduled media respects rollout time (skipped if scheduling not exposed) (retry #1) (25.3s)
+  ✘  17 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:337:3 › Maker–Checker Media Approval Workflow › TC9: Editing an already-approved media is restricted or versioned (23.2s)
+  ✘  18 [chromium] › tests\maker-checker\06-media-approval-workflow.spec.js:337:3 › Maker–Checker Media Approval Workflow › TC9: Editing an already-approved media is restricted or versioned (retry #1) (26.0s)

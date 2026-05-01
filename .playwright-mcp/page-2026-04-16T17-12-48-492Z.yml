@@ -1,0 +1,232 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link " Dashboard" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e16]: 
+              - text: Dashboard
+          - listitem [ref=e17]:
+            - link " Screens" [ref=e18] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e19]: 
+              - text: Screens
+          - listitem [ref=e20]:
+            - link " Groups" [ref=e21] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e22]: 
+              - text: Groups
+          - listitem [ref=e23]:
+            - link " Clusters" [ref=e24] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e25]: 
+              - text: Clusters
+          - listitem [ref=e26]:
+            - link " Library" [ref=e27] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e28]: 
+              - text: Library
+          - listitem [ref=e29]:
+            - link " Playlists" [ref=e30] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e31]: 
+              - text: Playlists
+          - listitem [ref=e32]:
+            - link " Team" [ref=e33] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e34]: 
+              - text: Team
+          - listitem [ref=e35]:
+            - link " Reports" [ref=e36] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e37]: 
+              - text: Reports
+          - separator [ref=e38]
+          - listitem [ref=e39]:
+            - link " Help" [ref=e40] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e41]: 
+              - text: Help
+          - listitem [ref=e42]:
+            - link " Feedback" [ref=e43] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e44]: 
+              - text: Feedback
+          - listitem [ref=e45]:
+            - link " Account" [ref=e46] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e47]: 
+              - text: Account
+          - listitem [ref=e48]:
+            - link " Logout" [ref=e49] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e50]: 
+              - text: Logout
+      - generic [ref=e52]:
+        - generic "QA" [ref=e54]:
+          - generic [ref=e56]: Q
+        - generic [ref=e57]: aman@wilyer.com
+      - generic [ref=e58]: v3.5.20
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - heading "Library" [level=3] [ref=e63]
+        - generic [ref=e64]:
+          - button " Documentation" [ref=e65] [cursor=pointer]:
+            - generic [ref=e66]: 
+            - text: Documentation
+          - button " Upload Files" [ref=e137] [cursor=pointer]:
+            - generic [ref=e138]: 
+            - text: Upload Files
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - generic [ref=e70]:
+            - generic [ref=e71]: 
+            - generic [ref=e72]: Subfolders ( 1 )
+          - generic [ref=e139]:
+            - button " Back" [ref=e140] [cursor=pointer]:
+              - generic [ref=e141]: 
+              - text: Back
+            - button " Create Folder" [ref=e142] [cursor=pointer]:
+              - generic [ref=e143]: 
+              - text: Create Folder
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - generic [ref=e77]: 
+            - textbox "Search folders (including nested)..." [ref=e78]
+          - generic [ref=e144]:
+            - generic [ref=e145]: "Actions:"
+            - button " Rename" [ref=e146] [cursor=pointer]:
+              - generic [ref=e147]: 
+              - text: Rename
+            - button " Delete" [ref=e148] [cursor=pointer]:
+              - generic [ref=e149]: 
+              - text: Delete
+        - generic [ref=e151]:
+          - generic [ref=e152]: "Current location:"
+          - navigation "breadcrumb" [ref=e153]:
+            - list [ref=e154]:
+              - listitem [ref=e155]:
+                - button "All Folders" [ref=e156] [cursor=pointer]
+              - listitem [ref=e157]:
+                - text: /
+                - button "noida" [ref=e181] [cursor=pointer]
+              - listitem [ref=e182]:
+                - text: /
+                - strong [ref=e183]: sector 14
+        - generic [ref=e188] [cursor=pointer]:
+          - generic [ref=e189]: 
+          - generic "Group linked" [ref=e191]:
+            - generic [ref=e192]: 
+          - generic [ref=e193]: teate
+      - link "Media" [ref=e100] [cursor=pointer]:
+        - /url: /library
+      - link "Widgets" [ref=e101] [cursor=pointer]:
+        - /url: /library
+      - link "Unapproved Files" [ref=e102] [cursor=pointer]:
+        - /url: /library
+      - link " Create Design" [ref=e169] [cursor=pointer]:
+        - /url: /library
+        - generic [ref=e170]: 
+        - text: Create Design
+      - generic [ref=e194]:
+        - generic [ref=e195]:
+          - generic [ref=e196]:
+            - heading "FILE APPROVALS" [level=6] [ref=e197]
+            - generic [ref=e198]: 5 files · Rejected
+          - generic [ref=e199]:
+            - button "Pending" [ref=e200] [cursor=pointer]
+            - button "Approved" [ref=e201] [cursor=pointer]
+            - button "Rejected" [active] [ref=e202] [cursor=pointer]
+          - textbox "Search..." [ref=e204]
+        - generic [ref=e205]:
+          - generic [ref=e699]:
+            - generic [ref=e703]:
+              - generic [ref=e704]:
+                - generic "sample_1776358442274.jpg" [ref=e705]
+                - generic [ref=e706] [cursor=pointer]: 
+              - generic [ref=e707]:
+                - generic [ref=e708]: IMAGE
+                - generic [ref=e709]: 
+                - generic [ref=e710]: 0.00MB
+                - generic [ref=e711]: 
+                - generic [ref=e712]: 16 Apr 2026
+                - generic [ref=e713]: 
+                - generic [ref=e714]: AMAN
+                - generic [ref=e715]: 
+                - generic [ref=e716]: "Rejected by: QA"
+            - button "" [ref=e718] [cursor=pointer]:
+              - generic [ref=e719]: 
+          - generic [ref=e720]:
+            - generic [ref=e724]:
+              - generic [ref=e725]:
+                - generic "sample_1776346045162.jpg" [ref=e726]
+                - generic [ref=e727] [cursor=pointer]: 
+              - generic [ref=e728]:
+                - generic [ref=e729]: IMAGE
+                - generic [ref=e730]: 
+                - generic [ref=e731]: 0.00MB
+                - generic [ref=e732]: 
+                - generic [ref=e733]: 16 Apr 2026
+                - generic [ref=e734]: 
+                - generic [ref=e735]: AMAN
+                - generic [ref=e736]: 
+                - generic [ref=e737]: "Rejected by: QA"
+            - button "" [ref=e739] [cursor=pointer]:
+              - generic [ref=e740]: 
+          - generic [ref=e741]:
+            - generic [ref=e745]:
+              - generic [ref=e746]:
+                - generic "sample_1776345537787.jpg" [ref=e747]
+                - generic [ref=e748] [cursor=pointer]: 
+              - generic [ref=e749]:
+                - generic [ref=e750]: IMAGE
+                - generic [ref=e751]: 
+                - generic [ref=e752]: 0.00MB
+                - generic [ref=e753]: 
+                - generic [ref=e754]: 16 Apr 2026
+                - generic [ref=e755]: 
+                - generic [ref=e756]: AMAN
+                - generic [ref=e757]: 
+                - generic [ref=e758]: "Rejected by: QA"
+            - button "" [ref=e760] [cursor=pointer]:
+              - generic [ref=e761]: 
+          - generic [ref=e762]:
+            - generic [ref=e766]:
+              - generic [ref=e767]:
+                - generic "sample_1776344110168.jpg" [ref=e768]
+                - generic [ref=e769] [cursor=pointer]: 
+              - generic [ref=e770]:
+                - generic [ref=e771]: IMAGE
+                - generic [ref=e772]: 
+                - generic [ref=e773]: 0.00MB
+                - generic [ref=e774]: 
+                - generic [ref=e775]: 16 Apr 2026
+                - generic [ref=e776]: 
+                - generic [ref=e777]: AMAN
+                - generic [ref=e778]: 
+                - generic [ref=e779]: "Rejected by: QA"
+            - button "" [ref=e781] [cursor=pointer]:
+              - generic [ref=e782]: 
+          - generic [ref=e783]:
+            - generic [ref=e787]:
+              - generic [ref=e788]:
+                - generic "Gemini_Generated_Image_d69pogd69pogd69p_1776149920629_1776256479411.png" [ref=e789]
+                - generic [ref=e790] [cursor=pointer]: 
+              - generic [ref=e791]:
+                - generic [ref=e792]: IMAGE
+                - generic [ref=e793]: 
+                - generic [ref=e794]: 1.93MB
+                - generic [ref=e795]: 
+                - generic [ref=e796]: 15 Apr 2026
+                - generic [ref=e797]: 
+                - generic [ref=e798]: QA
+                - generic [ref=e799]: 
+                - generic [ref=e800]: "Rejected by: dev"
+            - button "" [ref=e802] [cursor=pointer]:
+              - generic [ref=e803]: 
+      - text:         
+  - text: "* *"

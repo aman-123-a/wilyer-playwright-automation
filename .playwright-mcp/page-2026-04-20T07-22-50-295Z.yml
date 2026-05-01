@@ -1,0 +1,120 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link " Dashboard" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e16]: 
+              - text: Dashboard
+          - listitem [ref=e17]:
+            - link " Screens" [ref=e18] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e19]: 
+              - text: Screens
+          - listitem [ref=e20]:
+            - link " Groups" [ref=e21] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e22]: 
+              - text: Groups
+          - listitem [ref=e23]:
+            - link " Clusters" [ref=e24] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e25]: 
+              - text: Clusters
+          - listitem [ref=e26]:
+            - link " Library" [ref=e27] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e28]: 
+              - text: Library
+          - listitem [ref=e29]:
+            - link " Playlists" [ref=e30] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e31]: 
+              - text: Playlists
+          - listitem [ref=e32]:
+            - link " Team" [ref=e33] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e34]: 
+              - text: Team
+          - listitem [ref=e35]:
+            - link " Reports" [ref=e36] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e37]: 
+              - text: Reports
+          - separator [ref=e38]
+          - listitem [ref=e39]:
+            - link " Help" [ref=e40] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e41]: 
+              - text: Help
+          - listitem [ref=e42]:
+            - link " Feedback" [ref=e43] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e44]: 
+              - text: Feedback
+          - listitem [ref=e45]:
+            - link " Billing" [ref=e46] [cursor=pointer]:
+              - /url: /billing
+              - generic [ref=e47]: 
+              - text: Billing
+          - listitem [ref=e48]:
+            - link " Account" [ref=e49] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e50]: 
+              - text: Account
+          - listitem [ref=e51]:
+            - link " Logout" [ref=e52] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e53]: 
+              - text: Logout
+      - generic [ref=e55]:
+        - generic "dev" [ref=e57]:
+          - generic [ref=e59]: D
+        - generic [ref=e60]: dev@wilyer.com
+      - generic [ref=e61]: v3.5.20
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - list [ref=e68]:
+          - listitem [ref=e69]:
+            - link "Members" [ref=e70] [cursor=pointer]:
+              - /url: /team
+          - listitem [ref=e71]:
+            - link "Roles" [ref=e72] [cursor=pointer]:
+              - /url: /team
+          - listitem [ref=e73]:
+            - link "New Member" [active] [ref=e74] [cursor=pointer]:
+              - /url: /team
+          - listitem [ref=e75]:
+            - link "Logs" [ref=e76] [cursor=pointer]:
+              - /url: /team
+        - button "Read Docs " [ref=e79] [cursor=pointer]:
+          - text: Read Docs
+          - generic [ref=e80]: 
+      - generic [ref=e303]:
+        - generic [ref=e304]:
+          - generic [ref=e305]: Member Name *
+          - textbox "Enter full name" [ref=e306]
+        - generic [ref=e307]:
+          - generic [ref=e308]: Member Email *
+          - textbox "Enter email address" [ref=e309]
+        - generic [ref=e310]:
+          - generic [ref=e311]: Password *
+          - generic [ref=e312]:
+            - textbox "Enter password" [ref=e313]
+            - button "" [ref=e314] [cursor=pointer]:
+              - generic [ref=e315]: 
+        - generic [ref=e317]:
+          - heading " Role Assignment" [level=6] [ref=e319]:
+            - generic [ref=e320]: 
+            - text: Role Assignment
+          - generic [ref=e324]:
+            - generic [ref=e325]: Select Role *
+            - button "Select a role" [ref=e327] [cursor=pointer]
+        - generic [ref=e329]:
+          - button "Cancel" [ref=e330] [cursor=pointer]
+          - button "Create Member" [ref=e331] [cursor=pointer]
+  - text: "* *"

@@ -1,0 +1,116 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link " Dashboard" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e16]: 
+              - text: Dashboard
+          - listitem [ref=e17]:
+            - link " Screens" [ref=e18] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e19]: 
+              - text: Screens
+          - listitem [ref=e20]:
+            - link " Groups" [ref=e21] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e22]: 
+              - text: Groups
+          - listitem [ref=e23]:
+            - link " Clusters" [ref=e24] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e25]: 
+              - text: Clusters
+          - listitem [ref=e26]:
+            - link " Library" [ref=e27] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e28]: 
+              - text: Library
+          - listitem [ref=e29]:
+            - link " Playlists" [ref=e30] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e31]: 
+              - text: Playlists
+          - listitem [ref=e32]:
+            - link " Team" [ref=e33] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e34]: 
+              - text: Team
+          - listitem [ref=e35]:
+            - link " Reports" [ref=e36] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e37]: 
+              - text: Reports
+          - separator [ref=e38]
+          - listitem [ref=e39]:
+            - link " Help" [ref=e40] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e41]: 
+              - text: Help
+          - listitem [ref=e42]:
+            - link " Feedback" [ref=e43] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e44]: 
+              - text: Feedback
+          - listitem [ref=e45]:
+            - link " Account" [ref=e46] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e47]: 
+              - text: Account
+          - listitem [ref=e48]:
+            - link " Logout" [ref=e49] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e50]: 
+              - text: Logout
+      - generic [ref=e52]:
+        - generic "QA" [ref=e54]:
+          - generic [ref=e56]: Q
+        - generic [ref=e57]: aman@wilyer.com
+      - generic [ref=e58]: v3.5.20
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - heading "Library" [level=3] [ref=e63]
+        - generic [ref=e64]:
+          - button " Documentation" [ref=e65] [cursor=pointer]:
+            - generic [ref=e66]: 
+            - text: Documentation
+          - button " Upload Files" [active] [ref=e137] [cursor=pointer]:
+            - generic [ref=e138]: 
+            - text: Upload Files
+      - generic [ref=e804]:
+        - generic [ref=e805]:
+          - generic [ref=e806]:
+            - heading "Upload Files" [level=4] [ref=e807]
+            - paragraph [ref=e808]:
+              - text: "Upload files to:"
+              - strong [ref=e809]: sector 14
+            - navigation "breadcrumb" [ref=e810]:
+              - list [ref=e811]:
+                - listitem [ref=e812]:
+                  - generic [ref=e813]: 
+                  - text: Root
+                - listitem [ref=e814]:
+                  - text: /
+                  - generic [ref=e815]: 
+                  - text: noida
+                - listitem [ref=e816]:
+                  - text: /
+                  - generic [ref=e817]: 
+                  - text: sector 14
+          - button " Close" [ref=e818] [cursor=pointer]:
+            - generic [ref=e819]: 
+            - text: Close
+        - generic [ref=e823] [cursor=pointer]:
+          - generic [ref=e825]: 
+          - heading "Drop files here or click to browse" [level=5] [ref=e826]
+          - paragraph [ref=e827]: "Supported formats: .jpg, .jpeg, .png, .mp4"
+          - button " Browse Files" [ref=e828]:
+            - generic [ref=e829]: 
+            - text: Browse Files
+        - text:  
+      - text:         
+  - text: "* *"

@@ -1,0 +1,153 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link " Dashboard" [ref=e12] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e13]: 
+              - text: Dashboard
+          - listitem [ref=e14]:
+            - link " Screens" [ref=e15] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e16]: 
+              - text: Screens
+          - listitem [ref=e17]:
+            - link " Groups" [ref=e18] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e19]: 
+              - text: Groups
+          - listitem [ref=e20]:
+            - link " Clusters" [ref=e21] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e22]: 
+              - text: Clusters
+          - listitem [ref=e23]:
+            - link " Library" [ref=e24] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e25]: 
+              - text: Library
+          - listitem [ref=e26]:
+            - link " Rollouts" [ref=e27] [cursor=pointer]:
+              - /url: /content-rollout
+              - generic [ref=e28]: 
+              - text: Rollouts
+          - listitem [ref=e29]:
+            - link " Playlists" [ref=e30] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e31]: 
+              - text: Playlists
+          - listitem [ref=e32]:
+            - link " Team" [ref=e33] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e34]: 
+              - text: Team
+          - listitem [ref=e35]:
+            - link " Reports" [ref=e36] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e37]: 
+              - text: Reports
+          - separator [ref=e38]
+          - listitem [ref=e39]:
+            - link " What's New" [ref=e40] [cursor=pointer]:
+              - /url: /whats-new
+              - generic [ref=e41]: 
+              - text: What's New
+          - listitem [ref=e42]:
+            - link " Feedback" [ref=e43] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e44]: 
+              - text: Feedback
+          - listitem [ref=e45]:
+            - link " Account" [ref=e46] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e47]: 
+              - text: Account
+          - listitem [ref=e48]:
+            - link " Logout" [ref=e49] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e50]: 
+              - text: Logout
+      - generic [ref=e52]:
+        - generic "dev" [ref=e54]:
+          - generic [ref=e56]: D
+        - generic [ref=e57]: dev@wilyer.com
+      - generic [ref=e58]: v3.5.18.7.1
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e63]:
+          - button "" [ref=e64] [cursor=pointer]:
+            - generic [ref=e65]: 
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - heading "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" [level=5] [ref=e315]
+              - button "" [active] [ref=e69] [cursor=pointer]:
+                - generic [ref=e70]: 
+            - generic "TC-01 automated QA test rollout" [ref=e71]
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]: 
+            - text: India
+            - button "" [ref=e75] [cursor=pointer]:
+              - generic [ref=e76]: 
+          - button " Row" [ref=e77] [cursor=pointer]:
+            - generic [ref=e78]: 
+            - text: Row
+          - button " Content" [ref=e79] [cursor=pointer]:
+            - generic [ref=e80]: 
+            - text: Content
+          - button " Saved" [disabled]:
+            - generic: 
+            - text: Saved
+          - button " Publish" [ref=e81] [cursor=pointer]:
+            - generic [ref=e82]: 
+            - text: Publish
+      - table [ref=e85]:
+        - rowgroup [ref=e86]:
+          - row "Code  Group  15s " [ref=e152]:
+            - columnheader "Code" [ref=e88]
+            - columnheader " Group" [ref=e89]:
+              - generic [ref=e90]: 
+              - text: Group
+            - columnheader " 15s " [ref=e243]:
+              - generic [ref=e244]:
+                - button " 15s" [ref=e245] [cursor=pointer]:
+                  - generic [ref=e246]: 
+                  - generic [ref=e247]: 15s
+                - button "" [ref=e248] [cursor=pointer]:
+                  - generic [ref=e249]: 
+          - row "Screen 2" [ref=e160]:
+            - columnheader "Screen 2" [ref=e250]
+          - row "− 15s +" [ref=e162]:
+            - columnheader "− 15s +" [ref=e251]:
+              - generic [ref=e252]:
+                - button "−" [ref=e253] [cursor=pointer]
+                - generic [ref=e254]: 15s
+                - button "+" [ref=e255] [cursor=pointer]
+        - rowgroup [ref=e106]:
+          - row "D2  NDIS All(0)" [ref=e240]:
+            - cell "D2 " [ref=e108]:
+              - generic [ref=e109]:
+                - generic [ref=e110]: D2
+                - button "" [ref=e111] [cursor=pointer]:
+                  - generic [ref=e112]: 
+            - cell "NDIS" [ref=e113]:
+              - combobox [ref=e114]:
+                - option "+ Assign Subgroup"
+                - option "EDIS"
+                - option "NDIS" [selected]
+                - option "SDIS"
+                - option "WDIS"
+            - cell "All(0)" [ref=e256]:
+              - button "All(0)" [ref=e257] [cursor=pointer]
+  - text: "* *"
+  - generic [ref=e317]:
+    - alert [ref=e318]:
+      - img [ref=e320]
+      - generic [ref=e322]: Rollout updated successfully
+    - button "close" [ref=e323] [cursor=pointer]:
+      - img [ref=e324]
+    - progressbar "notification timer" [ref=e328]

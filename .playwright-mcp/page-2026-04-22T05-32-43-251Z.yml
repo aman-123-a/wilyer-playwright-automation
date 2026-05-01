@@ -1,0 +1,47 @@
+- generic [ref=e2]:
+  - generic [ref=e26]:
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - heading "Reset Password" [level=2] [ref=e33]
+        - paragraph [ref=e34]: Please enter the otp and reset your password.
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - generic [ref=e38]: OTP *
+          - spinbutton [active] [ref=e39]
+        - generic [ref=e40]:
+          - generic [ref=e41]: Password *
+          - textbox "Enter your password" [ref=e42]:
+            - /placeholder: "Enter your password "
+        - generic [ref=e43]:
+          - generic [ref=e44]: Confirm Password *
+          - textbox "Confirm your password" [ref=e45]:
+            - /placeholder: "Confirm your password "
+        - button "Reset Password" [ref=e47] [cursor=pointer]
+      - paragraph [ref=e49]:
+        - text: Remember password?
+        - link "Login" [ref=e50] [cursor=pointer]:
+          - /url: /login
+    - iframe [ref=e53]:
+      - generic [ref=f38e5]:
+        - generic [ref=f38e6]:
+          - text: protected by
+          - strong [ref=f38e7]: reCAPTCHA
+        - generic [ref=f38e9]:
+          - text: reCAPTCHA is changing its terms of service.
+          - link "Take action." [ref=f38e10] [cursor=pointer]:
+            - /url: https://google.com/recaptcha/admin/migrate
+  - generic [ref=e54]:
+    - generic [ref=e55]:
+      - alert [ref=e56]:
+        - img [ref=e58]
+        - generic [ref=e60]: "\"email\" must be a valid email"
+      - button "close" [ref=e61] [cursor=pointer]:
+        - img [ref=e62]
+      - progressbar "notification timer" [ref=e66]
+    - generic [ref=e67]:
+      - alert [ref=e68]:
+        - img [ref=e70]
+        - generic [ref=e72]: "\"email\" must be a valid email"
+      - button "close" [ref=e73] [cursor=pointer]:
+        - img [ref=e74]
+      - progressbar "notification timer" [ref=e78]

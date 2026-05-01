@@ -1,0 +1,184 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link " Dashboard" [ref=e12] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e13]: 
+              - text: Dashboard
+          - listitem [ref=e14]:
+            - link " Screens" [ref=e15] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e16]: 
+              - text: Screens
+          - listitem [ref=e17]:
+            - link " Groups" [ref=e18] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e19]: 
+              - text: Groups
+          - listitem [ref=e20]:
+            - link " Clusters" [ref=e21] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e22]: 
+              - text: Clusters
+          - listitem [ref=e23]:
+            - link " Library" [ref=e24] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e25]: 
+              - text: Library
+          - listitem [ref=e26]:
+            - link " Rollouts" [ref=e27] [cursor=pointer]:
+              - /url: /content-rollout
+              - generic [ref=e28]: 
+              - text: Rollouts
+          - listitem [ref=e29]:
+            - link " Playlists" [ref=e30] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e31]: 
+              - text: Playlists
+          - listitem [ref=e32]:
+            - link " Team" [ref=e33] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e34]: 
+              - text: Team
+          - listitem [ref=e35]:
+            - link " Reports" [ref=e36] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e37]: 
+              - text: Reports
+          - separator [ref=e38]
+          - listitem [ref=e39]:
+            - link " What's New" [ref=e40] [cursor=pointer]:
+              - /url: /whats-new
+              - generic [ref=e41]: 
+              - text: What's New
+          - listitem [ref=e42]:
+            - link " Feedback" [ref=e43] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e44]: 
+              - text: Feedback
+          - listitem [ref=e45]:
+            - link " Account" [ref=e46] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e47]: 
+              - text: Account
+          - listitem [ref=e48]:
+            - link " Logout" [ref=e49] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e50]: 
+              - text: Logout
+      - generic [ref=e52]:
+        - generic "dev" [ref=e54]:
+          - generic [ref=e56]: D
+        - generic [ref=e57]: dev@wilyer.com
+      - generic [ref=e58]: v3.5.18.7.1
+    - generic [ref=e60]:
+      - generic [ref=e1333]:
+        - generic [ref=e1334]:
+          - generic [ref=e1335]:
+            - button "" [ref=e1336] [cursor=pointer]:
+              - generic [ref=e1337]: 
+            - generic [ref=e1338]:
+              - generic [ref=e1339]:
+                - heading "Rollout Test 1" [level=5] [ref=e1340]
+                - button "" [ref=e1341] [cursor=pointer]:
+                  - generic [ref=e1342]: 
+                - generic [ref=e1428]: ● Unsaved
+              - generic "TC-01 automated QA test rollout" [ref=e1343]
+          - generic [ref=e1344]:
+            - generic [ref=e1379]:
+              - generic [ref=e1380]: 
+              - text: India
+              - button "" [ref=e1381] [cursor=pointer]:
+                - generic [ref=e1382]: 
+            - button " Row" [ref=e1383] [cursor=pointer]:
+              - generic [ref=e1384]: 
+              - text: Row
+            - button " Content" [ref=e1385] [cursor=pointer]:
+              - generic [ref=e1386]: 
+              - text: Content
+            - button " Discard" [ref=e1429] [cursor=pointer]:
+              - generic [ref=e1430]: 
+              - text: Discard
+            - button " Save changes" [ref=e1431] [cursor=pointer]:
+              - generic [ref=e1432]: 
+              - text: Save changes
+            - button " Publish" [disabled]:
+              - generic: 
+              - text: Publish
+        - table [ref=e1389]:
+          - rowgroup [ref=e1390]:
+            - row "Code  Group  15s " [ref=e1433]:
+              - columnheader "Code" [ref=e1391]
+              - columnheader " Group" [ref=e1392]:
+                - generic [ref=e1393]: 
+                - text: Group
+              - columnheader " 15s " [ref=e1434]:
+                - generic [ref=e1435]:
+                  - button " 15s" [ref=e1436] [cursor=pointer]:
+                    - generic [ref=e1437]: 
+                    - generic [ref=e1438]: 15s
+                  - button "" [ref=e1439] [cursor=pointer]:
+                    - generic [ref=e1440]: 
+            - row "Screen 1" [ref=e1441]:
+              - columnheader "Screen 1" [ref=e1442]
+            - row "− 15s +" [ref=e1443]:
+              - columnheader "− 15s +" [ref=e1444]:
+                - generic [ref=e1445]:
+                  - button "−" [ref=e1446] [cursor=pointer]
+                  - generic [ref=e1447]: 15s
+                  - button "+" [ref=e1448] [cursor=pointer]
+          - rowgroup [ref=e1395]:
+            - row "D1  EDIS Off" [ref=e1473]:
+              - cell "D1 " [ref=e1464]:
+                - generic [ref=e1465]:
+                  - generic [ref=e1466]: D1
+                  - button "" [ref=e1467] [cursor=pointer]:
+                    - generic [ref=e1468]: 
+              - cell "EDIS" [ref=e1474]:
+                - combobox [ref=e1470]:
+                  - option "+ Assign Subgroup"
+                  - option "EDIS" [selected]
+                  - option "NDIS"
+                  - option "SDIS"
+                  - option "WDIS"
+              - cell "Off" [ref=e1475]:
+                - button "Off" [active] [ref=e1476] [cursor=pointer]
+      - generic [ref=e1477]:
+        - generic [ref=e1478]:
+          - generic [ref=e1479]: Screen 1
+          - button "" [ref=e1480] [cursor=pointer]:
+            - generic [ref=e1481]: 
+        - generic [ref=e1482] [cursor=pointer]:
+          - checkbox "All Groups 2" [ref=e1483]
+          - generic [ref=e1484]: All Groups
+          - generic [ref=e1485]: "2"
+        - generic [ref=e1486] [cursor=pointer]:
+          - checkbox "EBEN (1)" [ref=e1487]
+          - generic [ref=e1488]: EBEN
+          - generic [ref=e1489]: (1)
+        - generic [ref=e1490] [cursor=pointer]:
+          - checkbox "ECAL (1)" [ref=e1491]
+          - generic [ref=e1492]: ECAL
+          - generic [ref=e1493]: (1)
+        - generic [ref=e1494] [cursor=pointer]:
+          - checkbox "EGAU (0)" [ref=e1495]
+          - generic [ref=e1496]: EGAU
+          - generic [ref=e1497]: (0)
+        - generic [ref=e1498] [cursor=pointer]:
+          - checkbox "EJHA (0)" [ref=e1499]
+          - generic [ref=e1500]: EJHA
+          - generic [ref=e1501]: (0)
+        - generic [ref=e1502] [cursor=pointer]:
+          - checkbox "EORI (0)" [ref=e1503]
+          - generic [ref=e1504]: EORI
+          - generic [ref=e1505]: (0)
+        - generic [ref=e1506] [cursor=pointer]:
+          - checkbox "EPAT (0)" [ref=e1507]
+          - generic [ref=e1508]: EPAT
+          - generic [ref=e1509]: (0)
+  - text: "* *"

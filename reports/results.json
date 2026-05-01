@@ -1,0 +1,319 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\User\\Downloads\\wilyer-playwright\\playwright.maker-checker.config.js",
+    "rootDir": "C:/Users/User/Downloads/wilyer-playwright/tests/maker-checker",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/User/Downloads/wilyer-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/User/Downloads/wilyer-playwright/tests/maker-checker",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/html",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "06-media-approval-workflow.spec.js",
+      "file": "06-media-approval-workflow.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Maker–Checker Media Approval Workflow",
+          "file": "06-media-approval-workflow.spec.js",
+          "line": 52,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC1: Checker approves submitted media — status becomes Approved",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "618d93734369046998b0-ac0ffa5c026174f47881",
+              "file": "06-media-approval-workflow.spec.js",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "TC2: Checker rejects media with comment — Maker sees Rejected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "618d93734369046998b0-b3e06a5b23b0df2c7f3a",
+              "file": "06-media-approval-workflow.spec.js",
+              "line": 96,
+              "column": 3
+            },
+            {
+              "title": "TC3: Checker edits media metadata, then approves",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "618d93734369046998b0-95af90a474033f3765d8",
+              "file": "06-media-approval-workflow.spec.js",
+              "line": 133,
+              "column": 3
+            },
+            {
+              "title": "TC4: Maker cannot edit media after submission (read-only or hidden)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "618d93734369046998b0-a590e45a7b2dfc3accae",
+              "file": "06-media-approval-workflow.spec.js",
+              "line": 187,
+              "column": 3
+            },
+            {
+              "title": "TC5: Re-submitting the same media triggers duplicate handling",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "618d93734369046998b0-0fa05716cf15b261be65",
+              "file": "06-media-approval-workflow.spec.js",
+              "line": 213,
+              "column": 3
+            },
+            {
+              "title": "TC6: Checker tries bulk-approve with no selection — gracefully handled",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "618d93734369046998b0-bb63ff876099e3a18656",
+              "file": "06-media-approval-workflow.spec.js",
+              "line": 242,
+              "column": 3
+            },
+            {
+              "title": "TC7: Audit log entries created for submission and approval",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "618d93734369046998b0-3fe08f581678478a9fc0",
+              "file": "06-media-approval-workflow.spec.js",
+              "line": 270,
+              "column": 3
+            },
+            {
+              "title": "TC8: Scheduled media respects rollout time (skipped if scheduling not exposed)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "618d93734369046998b0-6fc186b1122fcef7f517",
+              "file": "06-media-approval-workflow.spec.js",
+              "line": 302,
+              "column": 3
+            },
+            {
+              "title": "TC9: Editing an already-approved media is restricted or versioned",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "618d93734369046998b0-f9b1e648f1fcb8ebe69f",
+              "file": "06-media-approval-workflow.spec.js",
+              "line": 337,
+              "column": 3
+            },
+            {
+              "title": "TC10: Rejection without a comment is blocked (when comment dialog is required)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "618d93734369046998b0-6b772570590becb619b9",
+              "file": "06-media-approval-workflow.spec.js",
+              "line": 379,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Maker–Checker Media Approval — Session Handoff",
+          "file": "06-media-approval-workflow.spec.js",
+          "line": 431,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Maker can log out and Checker can log in on the same browser context",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "618d93734369046998b0-72e24c09484bf904454f",
+              "file": "06-media-approval-workflow.spec.js",
+              "line": 432,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-28T05:36:10.918Z",
+    "duration": 425.59799999999996,
+    "expected": 0,
+    "skipped": 11,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,151 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: /
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link " Dashboard" [ref=e12] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e13]: 
+              - text: Dashboard
+          - listitem [ref=e14]:
+            - link " Screens" [ref=e15] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e16]: 
+              - text: Screens
+          - listitem [ref=e17]:
+            - link " Groups" [ref=e18] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e19]: 
+              - text: Groups
+          - listitem [ref=e20]:
+            - link " Clusters" [ref=e21] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e22]: 
+              - text: Clusters
+          - listitem [ref=e23]:
+            - link " Library" [ref=e24] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e25]: 
+              - text: Library
+          - listitem [ref=e26]:
+            - link " Rollouts" [ref=e27] [cursor=pointer]:
+              - /url: /content-rollout
+              - generic [ref=e28]: 
+              - text: Rollouts
+          - listitem [ref=e29]:
+            - link " Playlists" [ref=e30] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e31]: 
+              - text: Playlists
+          - listitem [ref=e32]:
+            - link " Team" [ref=e33] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e34]: 
+              - text: Team
+          - listitem [ref=e35]:
+            - link " Reports" [ref=e36] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e37]: 
+              - text: Reports
+          - separator [ref=e38]
+          - listitem [ref=e39]:
+            - link " What's New" [ref=e40] [cursor=pointer]:
+              - /url: /whats-new
+              - generic [ref=e41]: 
+              - text: What's New
+          - listitem [ref=e42]:
+            - link " Feedback" [ref=e43] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e44]: 
+              - text: Feedback
+          - listitem [ref=e45]:
+            - link " Account" [ref=e46] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e47]: 
+              - text: Account
+          - listitem [ref=e48]:
+            - link " Logout" [ref=e49] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e50]: 
+              - text: Logout
+      - generic [ref=e52]:
+        - generic "dev" [ref=e54]:
+          - generic [ref=e56]: D
+        - generic [ref=e57]: dev@wilyer.com
+      - generic [ref=e58]: v3.5.18.7.1
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - button "" [ref=e64] [cursor=pointer]:
+              - generic [ref=e65]: 
+            - generic [ref=e66]:
+              - generic [ref=e67]:
+                - heading "Rollout Test 1" [level=5] [ref=e68]
+                - button "" [ref=e69] [cursor=pointer]:
+                  - generic [ref=e70]: 
+                - generic [ref=e128]: ● Unsaved
+              - generic "TC-01 automated QA test rollout" [ref=e71]
+          - generic [ref=e72]:
+            - generic [ref=e73]:
+              - generic [ref=e74]: 
+              - text: India
+              - button "" [ref=e75] [cursor=pointer]:
+                - generic [ref=e76]: 
+            - button " Row" [ref=e77] [cursor=pointer]:
+              - generic [ref=e78]: 
+              - text: Row
+            - button " Content" [active] [ref=e79] [cursor=pointer]:
+              - generic [ref=e80]: 
+              - text: Content
+            - button " Discard" [ref=e129] [cursor=pointer]:
+              - generic [ref=e130]: 
+              - text: Discard
+            - button " Save changes" [ref=e131] [cursor=pointer]:
+              - generic [ref=e132]: 
+              - text: Save changes
+            - button " Publish" [disabled]:
+              - generic: 
+              - text: Publish
+        - table [ref=e85]:
+          - rowgroup [ref=e86]:
+            - row "Code  Group":
+              - columnheader "Code" [ref=e88]
+              - columnheader " Group" [ref=e89]:
+                - generic [ref=e90]: 
+                - text: Group
+            - row
+            - row [ref=e133]
+          - rowgroup [ref=e106]:
+            - row "D2  NDIS" [ref=e134]:
+              - cell "D2 " [ref=e108]:
+                - generic [ref=e109]:
+                  - generic [ref=e110]: D2
+                  - button "" [ref=e111] [cursor=pointer]:
+                    - generic [ref=e112]: 
+              - cell "NDIS" [ref=e113]:
+                - combobox [ref=e114]:
+                  - option "+ Assign Subgroup"
+                  - option "EDIS"
+                  - option "NDIS" [selected]
+                  - option "SDIS"
+                  - option "WDIS"
+      - dialog [ref=e135]:
+        - generic [ref=e136]:
+          - generic [ref=e137]:
+            - heading "Add Content" [level=5] [ref=e138]
+            - generic "Close" [ref=e139] [cursor=pointer]: ×
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - generic [ref=e143]: Content Name *
+              - textbox "e.g. Hero Cut 1" [ref=e144]
+            - generic [ref=e145]:
+              - generic [ref=e146]: Duration (sec)
+              - spinbutton [ref=e147]: "15"
+            - generic [ref=e148]:
+              - button "Cancel" [ref=e149] [cursor=pointer]
+              - button "Add" [ref=e150] [cursor=pointer]
+  - text: "* *"

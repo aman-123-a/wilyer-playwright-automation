@@ -1,0 +1,873 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link " Dashboard" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e16]: 
+              - text: Dashboard
+          - listitem [ref=e17]:
+            - link " Screens" [ref=e18] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e19]: 
+              - text: Screens
+          - listitem [ref=e20]:
+            - link " Groups" [ref=e21] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e22]: 
+              - text: Groups
+          - listitem [ref=e23]:
+            - link " Clusters" [ref=e24] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e25]: 
+              - text: Clusters
+          - listitem [ref=e26]:
+            - link " Library" [ref=e27] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e28]: 
+              - text: Library
+          - listitem [ref=e29]:
+            - link " Playlists" [ref=e30] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e31]: 
+              - text: Playlists
+          - listitem [ref=e32]:
+            - link " Team" [ref=e33] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e34]: 
+              - text: Team
+          - listitem [ref=e35]:
+            - link " Reports" [ref=e36] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e37]: 
+              - text: Reports
+          - separator [ref=e38]
+          - listitem [ref=e39]:
+            - link " Help" [ref=e40] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e41]: 
+              - text: Help
+          - listitem [ref=e42]:
+            - link " Feedback" [ref=e43] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e44]: 
+              - text: Feedback
+          - listitem [ref=e45]:
+            - link " Account" [ref=e46] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e47]: 
+              - text: Account
+          - listitem [ref=e48]:
+            - link " Logout" [ref=e49] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e50]: 
+              - text: Logout
+      - generic [ref=e52]:
+        - generic "AMAN" [ref=e54]:
+          - generic [ref=e56]: A
+        - generic [ref=e57]: amankumarbsrbsr@gmail.com
+      - generic [ref=e58]: v3.5.20
+    - generic [ref=e60]:
+      - generic [ref=e608]:
+        - generic [ref=e610]:
+          - generic [ref=e611]:
+            - generic [ref=e612]:
+              - generic [ref=e614]:
+                - checkbox "Live Data View" [ref=e615]
+                - generic [ref=e616]: Live Data View
+              - generic [ref=e618]:
+                - generic [ref=e620]: No playlist published
+                - link "Get Screenshot" [ref=e690] [cursor=pointer]:
+                  - /url: /screen-settings/69f1f43a457b87a4340a655e
+                  - generic [ref=e691]: Get Screenshot
+            - generic [ref=e623]:
+              - generic [ref=e624]:
+                - heading "benQ Online" [level=5] [ref=e625]:
+                  - text: benQ
+                  - generic [ref=e626]: Online
+                - button "Read Docs " [ref=e627] [cursor=pointer]:
+                  - text: Read Docs
+                  - generic [ref=e628]: 
+              - generic [ref=e630]: Last Response on Wed Apr 29 2026 6:08:41 PM
+              - paragraph [ref=e631]:
+                - generic [ref=e632]: "Network SSID: <unknown ssid>"
+              - paragraph [ref=e633]:
+                - generic [ref=e634]: "App Version: v108"
+              - generic [ref=e635]:
+                - generic [ref=e638]:
+                  - generic [ref=e639]: Live Playlist
+                  - text: No Playlist
+                - generic [ref=e642]:
+                  - generic [ref=e643]: Operating System
+                  - text: ANDROID
+                - generic [ref=e646]:
+                  - generic [ref=e647]: Orientation
+                  - text: LANDSCAPE
+                - generic [ref=e650]:
+                  - generic [ref=e651]: Resolution(W x H)
+                  - text: 1920 x 1080
+                - generic [ref=e654]:
+                  - generic [ref=e655]: RAM (In Use / Total)
+                  - text: 2.65 / 2.09 GB
+                - generic [ref=e658]:
+                  - generic [ref=e659]: Storage(In Use / Total)
+                  - text: 4.14 / 12 GB
+          - generic [ref=e660]:
+            - link "Media" [ref=e661] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Schedule" [ref=e662] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Configurations" [ref=e663] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Downloaded Files" [ref=e664] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Network Uptime" [ref=e665] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Additional Info" [ref=e666] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Custom Params" [ref=e667] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Settings" [ref=e668] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+            - link "Logs" [ref=e669] [cursor=pointer]:
+              - /url: /screen-settings/69f1f43a457b87a4340a655e
+        - generic [ref=e670]:
+          - tablist [ref=e673]:
+            - button "Assign Playlist" [ref=e674] [cursor=pointer]
+            - button "Active Media (2)" [ref=e692] [cursor=pointer]
+          - textbox "Search playlists..." [ref=e677]
+        - generic [ref=e680]:
+          - generic [ref=e695]:
+            - img "..." [ref=e701]
+            - generic [ref=e703]: Aman Kumarre
+            - generic [ref=e704]:
+              - link "Edit" [ref=e705] [cursor=pointer]:
+                - /url: /playlist-settings/69f1f95a19df35c21620cf3d
+              - button "Send for Approval" [ref=e706] [cursor=pointer]
+            - generic [ref=e707]:
+              - generic [ref=e708]:
+                - generic [ref=e709]: 
+                - text: 1 Layouts
+              - generic [ref=e710] [cursor=pointer]:
+                - generic [ref=e711]: 
+                - text: 0 Screen
+              - generic [ref=e712]: Apr 29 2026
+          - generic [ref=e715]:
+            - img "..." [ref=e721]
+            - generic [ref=e723]: 2wws
+            - generic [ref=e724]:
+              - link "Edit" [ref=e725] [cursor=pointer]:
+                - /url: /playlist-settings/69eb40cb9d8e5a51876ca7d3
+              - button "Send for Approval" [ref=e726] [cursor=pointer]
+            - generic [ref=e727]:
+              - generic [ref=e728]:
+                - generic [ref=e729]: 
+                - text: 1 Layouts
+              - generic [ref=e730] [cursor=pointer]:
+                - generic [ref=e731]: 
+                - text: 14 Screens
+              - generic [ref=e732]: Apr 24 2026
+          - generic [ref=e735]:
+            - img "..." [ref=e741]
+            - generic [ref=e743]: New Layout1
+            - generic [ref=e744]:
+              - link "Edit" [ref=e745] [cursor=pointer]:
+                - /url: /playlist-settings/69ea0cf3c0c1bdb217de2b92
+              - button "Send for Approval" [ref=e746] [cursor=pointer]
+            - generic [ref=e747]:
+              - generic [ref=e748]:
+                - generic [ref=e749]: 
+                - text: 1 Layouts
+              - generic [ref=e750] [cursor=pointer]:
+                - generic [ref=e751]: 
+                - text: 0 Screen
+              - generic [ref=e752]: Apr 23 2026
+          - generic [ref=e755]:
+            - generic [ref=e758]:
+              - img "..." [ref=e761]
+              - img "..." [ref=e765]
+              - img "..." [ref=e769]
+            - generic [ref=e771]: S3
+            - generic [ref=e772]:
+              - link "Edit" [ref=e773] [cursor=pointer]:
+                - /url: /playlist-settings/69e9db6da9e59b2a83272039
+              - button "Send for Approval" [ref=e774] [cursor=pointer]
+            - generic [ref=e775]:
+              - generic [ref=e776]:
+                - generic [ref=e777]: 
+                - text: 1 Layouts
+              - generic [ref=e778] [cursor=pointer]:
+                - generic [ref=e779]: 
+                - text: 0 Screen
+              - generic [ref=e780]: Apr 23 2026
+          - generic [ref=e783]:
+            - img "..." [ref=e789]
+            - generic [ref=e791]: BenQed
+            - generic [ref=e792]:
+              - link "Edit" [ref=e793] [cursor=pointer]:
+                - /url: /playlist-settings/69e8ca9a87c2813e48104277
+              - button "Send for Approval" [ref=e794] [cursor=pointer]
+            - generic [ref=e795]:
+              - generic [ref=e796]:
+                - generic [ref=e797]: 
+                - text: 1 Layouts
+              - generic [ref=e798] [cursor=pointer]:
+                - generic [ref=e799]: 
+                - text: 0 Screen
+              - generic [ref=e800]: Apr 22 2026
+          - generic [ref=e803]:
+            - img "..." [ref=e809]
+            - generic [ref=e811]: s2
+            - generic [ref=e812]:
+              - link "Edit" [ref=e813] [cursor=pointer]:
+                - /url: /playlist-settings/69e8c54d37f4d294118f94d4
+              - button "Send for Approval" [ref=e814] [cursor=pointer]
+            - generic [ref=e815]:
+              - generic [ref=e816]:
+                - generic [ref=e817]: 
+                - text: 1 Layouts
+              - generic [ref=e818] [cursor=pointer]:
+                - generic [ref=e819]: 
+                - text: 0 Screen
+              - generic [ref=e820]: Apr 22 2026
+          - generic [ref=e823]:
+            - img "..." [ref=e829]
+            - generic [ref=e831]: jhg
+            - generic [ref=e832]:
+              - link "Edit" [ref=e833] [cursor=pointer]:
+                - /url: /playlist-settings/69e887640e4f11291f730452
+              - button "Send for Approval" [ref=e834] [cursor=pointer]
+            - generic [ref=e835]:
+              - generic [ref=e836]:
+                - generic [ref=e837]: 
+                - text: 1 Layouts
+              - generic [ref=e838] [cursor=pointer]:
+                - generic [ref=e839]: 
+                - text: 0 Screen
+              - generic [ref=e840]: Apr 22 2026
+          - generic [ref=e843]:
+            - img "..." [ref=e849]
+            - generic [ref=e851]: PLAYR
+            - generic [ref=e852]:
+              - link "Edit" [ref=e853] [cursor=pointer]:
+                - /url: /playlist-settings/69e869a85bf947a65f9a07bc
+              - button "Send for Approval" [ref=e854] [cursor=pointer]
+            - generic [ref=e855]:
+              - generic [ref=e856]:
+                - generic [ref=e857]: 
+                - text: 1 Layouts
+              - generic [ref=e858] [cursor=pointer]:
+                - generic [ref=e859]: 
+                - text: 0 Screen
+              - generic [ref=e860]: Apr 22 2026
+          - generic [ref=e863]:
+            - img "..." [ref=e869]
+            - generic [ref=e871]: ghfjd
+            - generic [ref=e872]:
+              - link "Edit" [ref=e873] [cursor=pointer]:
+                - /url: /playlist-settings/69e867916700bbca689d3591
+              - button "Send for Approval" [ref=e874] [cursor=pointer]
+            - generic [ref=e875]:
+              - generic [ref=e876]:
+                - generic [ref=e877]: 
+                - text: 1 Layouts
+              - generic [ref=e878] [cursor=pointer]:
+                - generic [ref=e879]: 
+                - text: 0 Screen
+              - generic [ref=e880]: Apr 22 2026
+          - generic [ref=e883]:
+            - img "..." [ref=e889]
+            - generic [ref=e891]: Shori Market 3
+            - generic [ref=e892]:
+              - link "Edit" [ref=e893] [cursor=pointer]:
+                - /url: /playlist-settings/69e71affe932889b46b300f3
+              - button "Send for Approval" [ref=e894] [cursor=pointer]
+            - generic [ref=e895]:
+              - generic [ref=e896]:
+                - generic [ref=e897]: 
+                - text: 1 Layouts
+              - generic [ref=e898] [cursor=pointer]:
+                - generic [ref=e899]: 
+                - text: 0 Screen
+              - generic [ref=e900]: Apr 21 2026
+          - generic [ref=e903]:
+            - img "..." [ref=e909]
+            - generic [ref=e911]: Wonderland 3
+            - generic [ref=e912]:
+              - link "Edit" [ref=e913] [cursor=pointer]:
+                - /url: /playlist-settings/69e71ae1e932889b46b30021
+              - button "Send for Approval" [ref=e914] [cursor=pointer]
+            - generic [ref=e915]:
+              - generic [ref=e916]:
+                - generic [ref=e917]: 
+                - text: 1 Layouts
+              - generic [ref=e918] [cursor=pointer]:
+                - generic [ref=e919]: 
+                - text: 0 Screen
+              - generic [ref=e920]: Apr 21 2026
+          - generic [ref=e923]:
+            - img "..." [ref=e929]
+            - generic [ref=e931]: Wonderland 1
+            - generic [ref=e932]:
+              - link "Edit" [ref=e933] [cursor=pointer]:
+                - /url: /playlist-settings/69e7165c1f7eccce1a601fbb
+              - button "Send for Approval" [ref=e934] [cursor=pointer]
+            - generic [ref=e935]:
+              - generic [ref=e936]:
+                - generic [ref=e937]: 
+                - text: 1 Layouts
+              - generic [ref=e938] [cursor=pointer]:
+                - generic [ref=e939]: 
+                - text: 0 Screen
+              - generic [ref=e940]: Apr 21 2026
+          - generic [ref=e943]:
+            - img "..." [ref=e949]
+            - generic [ref=e951]: Wonderland 2
+            - generic [ref=e952]:
+              - link "Edit" [ref=e953] [cursor=pointer]:
+                - /url: /playlist-settings/69e716401f7eccce1a601f27
+              - button "Send for Approval" [ref=e954] [cursor=pointer]
+            - generic [ref=e955]:
+              - generic [ref=e956]:
+                - generic [ref=e957]: 
+                - text: 1 Layouts
+              - generic [ref=e958] [cursor=pointer]:
+                - generic [ref=e959]: 
+                - text: 0 Screen
+              - generic [ref=e960]: Apr 21 2026
+          - generic [ref=e963]:
+            - img "..." [ref=e969]
+            - generic [ref=e971]: Shori Market 2
+            - generic [ref=e972]:
+              - link "Edit" [ref=e973] [cursor=pointer]:
+                - /url: /playlist-settings/69e716071f7eccce1a601ec1
+              - button "Send for Approval" [ref=e974] [cursor=pointer]
+            - generic [ref=e975]:
+              - generic [ref=e976]:
+                - generic [ref=e977]: 
+                - text: 1 Layouts
+              - generic [ref=e978] [cursor=pointer]:
+                - generic [ref=e979]: 
+                - text: 0 Screen
+              - generic [ref=e980]: Apr 21 2026
+          - generic [ref=e983]:
+            - generic [ref=e986]:
+              - img "..." [ref=e989]
+              - img "..." [ref=e993]
+              - img "..." [ref=e997]
+              - img "..." [ref=e1001]
+            - generic [ref=e1003]: Shori Market 1
+            - generic [ref=e1004]:
+              - link "Edit" [ref=e1005] [cursor=pointer]:
+                - /url: /playlist-settings/69e715e91f7eccce1a601e4a
+              - button "Send for Approval" [ref=e1006] [cursor=pointer]
+            - generic [ref=e1007]:
+              - generic [ref=e1008]:
+                - generic [ref=e1009]: 
+                - text: 1 Layouts
+              - generic [ref=e1010] [cursor=pointer]:
+                - generic [ref=e1011]: 
+                - text: 0 Screen
+              - generic [ref=e1012]: Apr 21 2026
+          - generic [ref=e1015]:
+            - img "..." [ref=e1021]
+            - generic [ref=e1023]: New Layout2
+            - generic [ref=e1024]:
+              - link "Edit" [ref=e1025] [cursor=pointer]:
+                - /url: /playlist-settings/69e5c8ab12032c2414078b42
+              - button "Send for Approval" [ref=e1026] [cursor=pointer]
+            - generic [ref=e1027]:
+              - generic [ref=e1028]:
+                - generic [ref=e1029]: 
+                - text: 1 Layouts
+              - generic [ref=e1030] [cursor=pointer]:
+                - generic [ref=e1031]: 
+                - text: 0 Screen
+              - generic [ref=e1032]: Apr 20 2026
+          - generic [ref=e1035]:
+            - generic [ref=e1038]:
+              - img "..." [ref=e1041]
+              - img "..." [ref=e1045]
+              - img "..." [ref=e1049]
+            - generic [ref=e1051]: anurag test (dont ch...
+            - generic [ref=e1052]:
+              - link "Edit" [ref=e1053] [cursor=pointer]:
+                - /url: /playlist-settings/69e2108f1468f4eaee23688d
+              - button "Send for Approval" [ref=e1054] [cursor=pointer]
+            - generic [ref=e1055]:
+              - generic [ref=e1056]:
+                - generic [ref=e1057]: 
+                - text: 1 Layouts
+              - generic [ref=e1058] [cursor=pointer]:
+                - generic [ref=e1059]: 
+                - text: 2 Screens
+              - generic [ref=e1060]: Apr 17 2026
+          - generic [ref=e1063]:
+            - generic [ref=e1066]: No Layout Found!
+            - generic [ref=e1067]: vansh playlist 1 Clo...
+            - link "Edit" [ref=e1069] [cursor=pointer]:
+              - /url: /playlist-settings/69e20eaf3062c3c490811db6
+            - generic [ref=e1070]:
+              - generic [ref=e1071]:
+                - generic [ref=e1072]: 
+                - text: 0 Layouts
+              - generic [ref=e1073] [cursor=pointer]:
+                - generic [ref=e1074]: 
+                - text: 0 Screen
+              - generic [ref=e1075]: Apr 17 2026
+          - generic [ref=e1078]:
+            - generic [ref=e1081]: No Layout Found!
+            - generic [ref=e1082]: vansh Clone_3
+            - link "Edit" [ref=e1084] [cursor=pointer]:
+              - /url: /playlist-settings/69e20dfc7cf10f03e3c0c8fd
+            - generic [ref=e1085]:
+              - generic [ref=e1086]:
+                - generic [ref=e1087]: 
+                - text: 0 Layouts
+              - generic [ref=e1088] [cursor=pointer]:
+                - generic [ref=e1089]: 
+                - text: 0 Screen
+              - generic [ref=e1090]: Apr 17 2026
+          - generic [ref=e1093]:
+            - generic [ref=e1096]: No Layout Found!
+            - generic [ref=e1097]: vansh Clone_2
+            - link "Edit" [ref=e1099] [cursor=pointer]:
+              - /url: /playlist-settings/69e20dfc7cf10f03e3c0c8ed
+            - generic [ref=e1100]:
+              - generic [ref=e1101]:
+                - generic [ref=e1102]: 
+                - text: 0 Layouts
+              - generic [ref=e1103] [cursor=pointer]:
+                - generic [ref=e1104]: 
+                - text: 0 Screen
+              - generic [ref=e1105]: Apr 17 2026
+          - generic [ref=e1108]:
+            - generic [ref=e1111]: No Layout Found!
+            - generic [ref=e1112]: vansh Clone_1
+            - link "Edit" [ref=e1114] [cursor=pointer]:
+              - /url: /playlist-settings/69e20dfc7cf10f03e3c0c8de
+            - generic [ref=e1115]:
+              - generic [ref=e1116]:
+                - generic [ref=e1117]: 
+                - text: 0 Layouts
+              - generic [ref=e1118] [cursor=pointer]:
+                - generic [ref=e1119]: 
+                - text: 0 Screen
+              - generic [ref=e1120]: Apr 17 2026
+          - generic [ref=e1123]:
+            - generic [ref=e1126]: No Layout Found!
+            - generic [ref=e1127]: vansh playlist 3 Clo...
+            - link "Edit" [ref=e1129] [cursor=pointer]:
+              - /url: /playlist-settings/69e20d4e17d8a7cecca31e1a
+            - generic [ref=e1130]:
+              - generic [ref=e1131]:
+                - generic [ref=e1132]: 
+                - text: 0 Layouts
+              - generic [ref=e1133] [cursor=pointer]:
+                - generic [ref=e1134]: 
+                - text: 0 Screen
+              - generic [ref=e1135]: Apr 17 2026
+          - generic [ref=e1138]:
+            - generic [ref=e1141]: No Layout Found!
+            - generic [ref=e1142]: Playlist vansh 2 Clo...
+            - link "Edit" [ref=e1144] [cursor=pointer]:
+              - /url: /playlist-settings/69e20d4d17d8a7cecca31e08
+            - generic [ref=e1145]:
+              - generic [ref=e1146]:
+                - generic [ref=e1147]: 
+                - text: 0 Layouts
+              - generic [ref=e1148] [cursor=pointer]:
+                - generic [ref=e1149]: 
+                - text: 0 Screen
+              - generic [ref=e1150]: Apr 17 2026
+          - generic [ref=e1153]:
+            - generic [ref=e1156]: No Layout Found!
+            - generic [ref=e1157]: vansh playlist 1 Clo...
+            - link "Edit" [ref=e1159] [cursor=pointer]:
+              - /url: /playlist-settings/69e20d4d17d8a7cecca31df5
+            - generic [ref=e1160]:
+              - generic [ref=e1161]:
+                - generic [ref=e1162]: 
+                - text: 0 Layouts
+              - generic [ref=e1163] [cursor=pointer]:
+                - generic [ref=e1164]: 
+                - text: 0 Screen
+              - generic [ref=e1165]: Apr 17 2026
+          - generic [ref=e1168]:
+            - generic [ref=e1171]: No Layout Found!
+            - generic [ref=e1172]: vansh playlist 3 Clo...
+            - link "Edit" [ref=e1174] [cursor=pointer]:
+              - /url: /playlist-settings/69e20c422bf5b69ee8a06bc6
+            - generic [ref=e1175]:
+              - generic [ref=e1176]:
+                - generic [ref=e1177]: 
+                - text: 0 Layouts
+              - generic [ref=e1178] [cursor=pointer]:
+                - generic [ref=e1179]: 
+                - text: 0 Screen
+              - generic [ref=e1180]: Apr 17 2026
+          - generic [ref=e1183]:
+            - img "..." [ref=e1189]
+            - generic [ref=e1191]: seuence2a
+            - generic [ref=e1192]:
+              - link "Edit" [ref=e1193] [cursor=pointer]:
+                - /url: /playlist-settings/69e0df05a1e22e420a86d64e
+              - button "Send for Approval" [ref=e1194] [cursor=pointer]
+            - generic [ref=e1195]:
+              - generic [ref=e1196]:
+                - generic [ref=e1197]: 
+                - text: 1 Layouts
+              - generic [ref=e1198] [cursor=pointer]:
+                - generic [ref=e1199]: 
+                - text: 0 Screen
+              - generic [ref=e1200]: Apr 16 2026
+          - generic [ref=e1203]:
+            - img "..." [ref=e1209]
+            - generic [ref=e1211]: webhook_test
+            - generic [ref=e1212]:
+              - link "Edit" [ref=e1213] [cursor=pointer]:
+                - /url: /playlist-settings/69e0bc5bda167f6db377f578
+              - button "Send for Approval" [ref=e1214] [cursor=pointer]
+            - generic [ref=e1215]:
+              - generic [ref=e1216]:
+                - generic [ref=e1217]: 
+                - text: 1 Layouts
+              - generic [ref=e1218] [cursor=pointer]:
+                - generic [ref=e1219]: 
+                - text: 0 Screen
+              - generic [ref=e1220]: Apr 16 2026
+          - generic [ref=e1223]:
+            - img "..." [ref=e1229]
+            - generic [ref=e1231]: szxc Clone_1
+            - generic [ref=e1232]:
+              - link "Edit" [ref=e1233] [cursor=pointer]:
+                - /url: /playlist-settings/69e0b53bb6a3a5cbafe25dcc
+              - button "Send for Approval" [ref=e1234] [cursor=pointer]
+            - generic [ref=e1235]:
+              - generic [ref=e1236]:
+                - generic [ref=e1237]: 
+                - text: 1 Layouts
+              - generic [ref=e1238] [cursor=pointer]:
+                - generic [ref=e1239]: 
+                - text: 0 Screen
+              - generic [ref=e1240]: Apr 16 2026
+          - generic [ref=e1243]:
+            - img "..." [ref=e1249]
+            - generic [ref=e1251]: m1s Clone_1
+            - generic [ref=e1252]:
+              - link "Edit" [ref=e1253] [cursor=pointer]:
+                - /url: /playlist-settings/69e0b53bb6a3a5cbafe25dc2
+              - button "Send for Approval" [ref=e1254] [cursor=pointer]
+            - generic [ref=e1255]:
+              - generic [ref=e1256]:
+                - generic [ref=e1257]: 
+                - text: 1 Layouts
+              - generic [ref=e1258] [cursor=pointer]:
+                - generic [ref=e1259]: 
+                - text: 0 Screen
+              - generic [ref=e1260]: Apr 16 2026
+          - generic [ref=e1263]:
+            - img "..." [ref=e1269]
+            - generic [ref=e1271]: d Clone_1
+            - generic [ref=e1272]:
+              - link "Edit" [ref=e1273] [cursor=pointer]:
+                - /url: /playlist-settings/69e0b53bb6a3a5cbafe25dbd
+              - button "Send for Approval" [ref=e1274] [cursor=pointer]
+            - generic [ref=e1275]:
+              - generic [ref=e1276]:
+                - generic [ref=e1277]: 
+                - text: 1 Layouts
+              - generic [ref=e1278] [cursor=pointer]:
+                - generic [ref=e1279]: 
+                - text: 0 Screen
+              - generic [ref=e1280]: Apr 16 2026
+          - generic [ref=e1283]:
+            - img "..." [ref=e1289]
+            - generic [ref=e1291]: windows aman1 Clone_...
+            - generic [ref=e1292]:
+              - link "Edit" [ref=e1293] [cursor=pointer]:
+                - /url: /playlist-settings/69e0b53bb6a3a5cbafe25db8
+              - button "Send for Approval" [ref=e1294] [cursor=pointer]
+            - generic [ref=e1295]:
+              - generic [ref=e1296]:
+                - generic [ref=e1297]: 
+                - text: 1 Layouts
+              - generic [ref=e1298] [cursor=pointer]:
+                - generic [ref=e1299]: 
+                - text: 0 Screen
+              - generic [ref=e1300]: Apr 16 2026
+          - generic [ref=e1303]:
+            - img "..." [ref=e1309]
+            - generic [ref=e1311]: BenQw Clone_1
+            - generic [ref=e1312]:
+              - link "Edit" [ref=e1313] [cursor=pointer]:
+                - /url: /playlist-settings/69e0b53bb6a3a5cbafe25db3
+              - button "Send for Approval" [ref=e1314] [cursor=pointer]
+            - generic [ref=e1315]:
+              - generic [ref=e1316]:
+                - generic [ref=e1317]: 
+                - text: 1 Layouts
+              - generic [ref=e1318] [cursor=pointer]:
+                - generic [ref=e1319]: 
+                - text: 0 Screen
+              - generic [ref=e1320]: Apr 16 2026
+          - generic [ref=e1323]:
+            - img "..." [ref=e1329]
+            - generic [ref=e1331]: kio Clone_1
+            - generic [ref=e1332]:
+              - link "Edit" [ref=e1333] [cursor=pointer]:
+                - /url: /playlist-settings/69e0b53bb6a3a5cbafe25da9
+              - button "Send for Approval" [ref=e1334] [cursor=pointer]
+            - generic [ref=e1335]:
+              - generic [ref=e1336]:
+                - generic [ref=e1337]: 
+                - text: 1 Layouts
+              - generic [ref=e1338] [cursor=pointer]:
+                - generic [ref=e1339]: 
+                - text: 0 Screen
+              - generic [ref=e1340]: Apr 16 2026
+          - generic [ref=e1343]:
+            - img "..." [ref=e1349]
+            - generic [ref=e1351]: New Layoutsa Clone_1
+            - generic [ref=e1352]:
+              - link "Edit" [ref=e1353] [cursor=pointer]:
+                - /url: /playlist-settings/69e0b53bb6a3a5cbafe25da4
+              - button "Send for Approval" [ref=e1354] [cursor=pointer]
+            - generic [ref=e1355]:
+              - generic [ref=e1356]:
+                - generic [ref=e1357]: 
+                - text: 1 Layouts
+              - generic [ref=e1358] [cursor=pointer]:
+                - generic [ref=e1359]: 
+                - text: 0 Screen
+              - generic [ref=e1360]: Apr 16 2026
+          - generic [ref=e1363]:
+            - img "..." [ref=e1369]
+            - generic [ref=e1371]: webhook2 Clone_1
+            - generic [ref=e1372]:
+              - link "Edit" [ref=e1373] [cursor=pointer]:
+                - /url: /playlist-settings/69e0b53bb6a3a5cbafe25d8f
+              - button "Send for Approval" [ref=e1374] [cursor=pointer]
+            - generic [ref=e1375]:
+              - generic [ref=e1376]:
+                - generic [ref=e1377]: 
+                - text: 1 Layouts
+              - generic [ref=e1378] [cursor=pointer]:
+                - generic [ref=e1379]: 
+                - text: 0 Screen
+              - generic [ref=e1380]: Apr 16 2026
+          - generic [ref=e1383]:
+            - generic [ref=e1386]: 122q
+            - generic [ref=e1387]:
+              - link "Edit" [ref=e1388] [cursor=pointer]:
+                - /url: /playlist-settings/69e08f1b97f0f667625cfb19
+              - button "Send for Approval" [ref=e1389] [cursor=pointer]
+            - generic [ref=e1390]:
+              - generic [ref=e1391]:
+                - generic [ref=e1392]: 
+                - text: 1 Layouts
+              - generic [ref=e1393] [cursor=pointer]:
+                - generic [ref=e1394]: 
+                - text: 0 Screen
+              - generic [ref=e1395]: Apr 16 2026
+          - generic [ref=e1398]:
+            - img "..." [ref=e1404]
+            - generic [ref=e1406]: N1
+            - generic [ref=e1407]:
+              - link "Edit" [ref=e1408] [cursor=pointer]:
+                - /url: /playlist-settings/69e074e59a3c5c0cf2082c7f
+              - button "Send for Approval" [ref=e1409] [cursor=pointer]
+            - generic [ref=e1410]:
+              - generic [ref=e1411]:
+                - generic [ref=e1412]: 
+                - text: 1 Layouts
+              - generic [ref=e1413] [cursor=pointer]:
+                - generic [ref=e1414]: 
+                - text: 0 Screen
+              - generic [ref=e1415]: Apr 16 2026
+          - generic [ref=e1418]:
+            - img "..." [ref=e1424]
+            - generic [ref=e1426]: webhook2
+            - generic [ref=e1427]:
+              - link "Edit" [ref=e1428] [cursor=pointer]:
+                - /url: /playlist-settings/69df47ccc1a21f98175df4dc
+              - button "Send for Approval" [ref=e1429] [cursor=pointer]
+            - generic [ref=e1430]:
+              - generic [ref=e1431]:
+                - generic [ref=e1432]: 
+                - text: 1 Layouts
+              - generic [ref=e1433] [cursor=pointer]:
+                - generic [ref=e1434]: 
+                - text: 0 Screen
+              - generic [ref=e1435]: Apr 15 2026
+          - generic [ref=e1438]:
+            - img "..." [ref=e1444]
+            - generic [ref=e1446]: webhook1
+            - generic [ref=e1447]:
+              - link "Edit" [ref=e1448] [cursor=pointer]:
+                - /url: /playlist-settings/69df470fc1a21f98175df0d5
+              - button "Send for Approval" [ref=e1449] [cursor=pointer]
+            - generic [ref=e1450]:
+              - generic [ref=e1451]:
+                - generic [ref=e1452]: 
+                - text: 1 Layouts
+              - generic [ref=e1453] [cursor=pointer]:
+                - generic [ref=e1454]: 
+                - text: 0 Screen
+              - generic [ref=e1455]: Apr 15 2026
+          - generic [ref=e1458]:
+            - generic [ref=e1461]:
+              - img "..." [ref=e1464]
+              - img "..." [ref=e1468]
+              - img "..." [ref=e1472]
+              - img "..." [ref=e1476]
+              - img "..." [ref=e1480]
+            - generic [ref=e1482]: Test Playlist- Admin
+            - generic [ref=e1483]:
+              - link "Edit" [ref=e1484] [cursor=pointer]:
+                - /url: /playlist-settings/69df3dd747a4533757516fbe
+              - button "Send for Approval" [ref=e1485] [cursor=pointer]
+            - generic [ref=e1486]:
+              - generic [ref=e1487]:
+                - generic [ref=e1488]: 
+                - text: 1 Layouts
+              - generic [ref=e1489] [cursor=pointer]:
+                - generic [ref=e1490]: 
+                - text: 0 Screen
+              - generic [ref=e1491]: Apr 15 2026
+          - generic [ref=e1494]:
+            - img "..." [ref=e1500]
+            - generic [ref=e1502]: Test Playlist
+            - generic [ref=e1503]:
+              - link "Edit" [ref=e1504] [cursor=pointer]:
+                - /url: /playlist-settings/69df3bd2242cebc6f64dbc12
+              - button "Send for Approval" [ref=e1505] [cursor=pointer]
+            - generic [ref=e1506]:
+              - generic [ref=e1507]:
+                - generic [ref=e1508]: 
+                - text: 1 Layouts
+              - generic [ref=e1509] [cursor=pointer]:
+                - generic [ref=e1510]: 
+                - text: 0 Screen
+              - generic [ref=e1511]: Apr 15 2026
+          - generic [ref=e1514]:
+            - img "..." [ref=e1520]
+            - generic [ref=e1522]: szxc
+            - generic [ref=e1523]:
+              - link "Edit" [ref=e1524] [cursor=pointer]:
+                - /url: /playlist-settings/69dddcfc8c407cfc14eaf037
+              - button "Send for Approval" [ref=e1525] [cursor=pointer]
+            - generic [ref=e1526]:
+              - generic [ref=e1527]:
+                - generic [ref=e1528]: 
+                - text: 1 Layouts
+              - generic [ref=e1529] [cursor=pointer]:
+                - generic [ref=e1530]: 
+                - text: 0 Screen
+              - generic [ref=e1531]: Apr 14 2026
+          - generic [ref=e1534]:
+            - img "..." [ref=e1540]
+            - generic [ref=e1542]: Do NOT Change potrai...
+            - generic [ref=e1543]:
+              - link "Edit" [ref=e1544] [cursor=pointer]:
+                - /url: /playlist-settings/69dcdd33625a11b0777b6912
+              - button "Send for Approval" [ref=e1545] [cursor=pointer]
+            - generic [ref=e1546]:
+              - generic [ref=e1547]:
+                - generic [ref=e1548]: 
+                - text: 1 Layouts
+              - generic [ref=e1549] [cursor=pointer]:
+                - generic [ref=e1550]: 
+                - text: 0 Screen
+              - generic [ref=e1551]: Apr 13 2026
+          - generic [ref=e1554]:
+            - generic [ref=e1556]:
+              - generic [ref=e1557]:
+                - img "..." [ref=e1560]
+                - img "..." [ref=e1564]
+                - img "..." [ref=e1568]
+              - img "..." [ref=e1573]
+            - generic [ref=e1575]: Do NOT Change Potrai...
+            - generic [ref=e1576]:
+              - link "Edit" [ref=e1577] [cursor=pointer]:
+                - /url: /playlist-settings/69dcb4441ad2d0b9be6de3b7
+              - button "Send for Approval" [ref=e1578] [cursor=pointer]
+            - generic [ref=e1579]:
+              - generic [ref=e1580]:
+                - generic [ref=e1581]: 
+                - text: 2 Layouts
+              - generic [ref=e1582] [cursor=pointer]:
+                - generic [ref=e1583]: 
+                - text: 0 Screen
+              - generic [ref=e1584]: Apr 13 2026
+          - generic [ref=e1587]:
+            - generic [ref=e1590]:
+              - generic [ref=e1591]:
+                - generic:
+                  - img "..."
+              - img "..." [ref=e1594]
+            - generic [ref=e1596]: Do NOT Change Sqaure
+            - generic [ref=e1597]:
+              - link "Edit" [ref=e1598] [cursor=pointer]:
+                - /url: /playlist-settings/69dcb43c1ad2d0b9be6de38f
+              - button "Send for Approval" [ref=e1599] [cursor=pointer]
+            - generic [ref=e1600]:
+              - generic [ref=e1601]:
+                - generic [ref=e1602]: 
+                - text: 1 Layouts
+              - generic [ref=e1603] [cursor=pointer]:
+                - generic [ref=e1604]: 
+                - text: 0 Screen
+              - generic [ref=e1605]: Apr 13 2026
+          - generic [ref=e1608]:
+            - img "..." [ref=e1614]
+            - generic [ref=e1616]: e3
+            - generic [ref=e1617]:
+              - link "Edit" [ref=e1618] [cursor=pointer]:
+                - /url: /playlist-settings/69dc944d8c407cfc14e9e199
+              - button "Send for Approval" [ref=e1619] [cursor=pointer]
+            - generic [ref=e1620]:
+              - generic [ref=e1621]:
+                - generic [ref=e1622]: 
+                - text: 1 Layouts
+              - generic [ref=e1623] [cursor=pointer]:
+                - generic [ref=e1624]: 
+                - text: 0 Screen
+              - generic [ref=e1625]: Apr 13 2026
+          - generic [ref=e1628]:
+            - generic [ref=e1630]:
+              - img "..." [ref=e1634]
+              - img "..." [ref=e1639]
+            - generic [ref=e1641]: Do NOT Change Landsc...
+            - generic [ref=e1642]:
+              - link "Edit" [ref=e1643] [cursor=pointer]:
+                - /url: /playlist-settings/69dc93825960746ed2fca587
+              - button "Send for Approval" [ref=e1644] [cursor=pointer]
+            - generic [ref=e1645]:
+              - generic [ref=e1646]:
+                - generic [ref=e1647]: 
+                - text: 2 Layouts
+              - generic [ref=e1648] [cursor=pointer]:
+                - generic [ref=e1649]: 
+                - text: 0 Screen
+              - generic [ref=e1650]: Apr 13 2026
+          - generic [ref=e1653]:
+            - generic [ref=e1656]: meal
+            - generic [ref=e1657]:
+              - link "Edit" [ref=e1658] [cursor=pointer]:
+                - /url: /playlist-settings/69d88f0b4f2ddedd756de3ea
+              - button "Send for Approval" [ref=e1659] [cursor=pointer]
+            - generic [ref=e1660]:
+              - generic [ref=e1661]:
+                - generic [ref=e1662]: 
+                - text: 1 Layouts
+              - generic [ref=e1663] [cursor=pointer]:
+                - generic [ref=e1664]: 
+                - text: 0 Screen
+              - generic [ref=e1665]: Apr 10 2026
+      - text: 
+  - text: "* *"

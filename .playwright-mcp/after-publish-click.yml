@@ -1,0 +1,146 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link " Dashboard" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e16]: 
+              - text: Dashboard
+          - listitem [ref=e17]:
+            - link " Screens" [ref=e18] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e19]: 
+              - text: Screens
+          - listitem [ref=e20]:
+            - link " Groups" [ref=e21] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e22]: 
+              - text: Groups
+          - listitem [ref=e23]:
+            - link " Clusters" [ref=e24] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e25]: 
+              - text: Clusters
+          - listitem [ref=e26]:
+            - link " Library" [ref=e27] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e28]: 
+              - text: Library
+          - listitem [ref=e29]:
+            - link " Playlists" [ref=e30] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e31]: 
+              - text: Playlists
+          - listitem [ref=e32]:
+            - link " Team" [ref=e33] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e34]: 
+              - text: Team
+          - listitem [ref=e35]:
+            - link " Reports" [ref=e36] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e37]: 
+              - text: Reports
+          - separator [ref=e38]
+          - listitem [ref=e39]:
+            - link " Help" [ref=e40] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e41]: 
+              - text: Help
+          - listitem [ref=e42]:
+            - link " Feedback" [ref=e43] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e44]: 
+              - text: Feedback
+          - listitem [ref=e45]:
+            - link " Account" [ref=e46] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e47]: 
+              - text: Account
+          - listitem [ref=e48]:
+            - link " Logout" [ref=e49] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e50]: 
+              - text: Logout
+      - generic [ref=e52]:
+        - generic "AMAN" [ref=e54]:
+          - generic [ref=e56]: A
+        - generic [ref=e57]: amankumarbsrbsr@gmail.com
+      - generic [ref=e58]: v3.5.20
+    - generic [ref=e1591]:
+      - generic [ref=e1593]:
+        - generic [ref=e1596]:
+          - link "Home" [ref=e1597] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e1598]: 
+          - strong [ref=e1599]: Publish NegDouble_bu2w_958...
+        - generic [ref=e1600]:
+          - button "Read Docs " [ref=e1601] [cursor=pointer]:
+            - text: Read Docs
+            - generic [ref=e1602]: 
+          - button " Go Back" [ref=e1603] [cursor=pointer]:
+            - generic [ref=e1604]: 
+            - text: Go Back
+          - button " Schedule Approval" [ref=e1605] [cursor=pointer]:
+            - generic [ref=e1606]: 
+            - text: Schedule Approval
+          - button " Save and Send for Approval" [ref=e1607] [cursor=pointer]:
+            - generic [ref=e1608]: 
+            - text: Save and Send for Approval
+      - paragraph [ref=e1610]: Select screens, groups and playlists to publish.
+      - generic [ref=e1611]:
+        - generic [ref=e1612]:
+          - list [ref=e1616]:
+            - listitem [ref=e1617]:
+              - link "Screens" [ref=e1618] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e1619]:
+              - link "Groups" [ref=e1620] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e1621]:
+              - link "Clusters" [ref=e1622] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=e1623]:
+              - link "Schedules" [ref=e1624] [cursor=pointer]:
+                - /url: javascript:void(0)
+          - generic [ref=e1626]:
+            - generic [ref=e1627]:
+              - textbox "Search screens..." [ref=e1630]
+              - generic [ref=e1631]:
+                - combobox [ref=e1632]
+                - combobox [ref=e1633]
+              - generic [ref=e1635]:
+                - log [ref=e1637]
+                - generic [ref=e1638]
+              - generic [ref=e1649]:
+                - checkbox [ref=e1650]
+                - generic [ref=e1651]: Must Include all Tags
+            - table [ref=e1653]:
+              - rowgroup [ref=e1654]:
+                - row "Name Orientation Location (city) Tags Action" [ref=e1655]
+              - rowgroup [ref=e1664]:
+                - row "amanqa11 PORTRAIT -- tag " [ref=e1665]
+                - row "webhook_test PORTRAIT -- -- " [ref=e1678]
+            - navigation "Page navigation" [ref=e1690]:
+              - list [ref=e1691]:
+                - listitem [ref=e1692]
+                - listitem [ref=e1693]
+                - listitem [ref=e1695]
+        - generic [ref=e1697]:
+          - generic [ref=e1700]: Selected Screens (0)
+          - table [ref=e1704]:
+            - rowgroup [ref=e1705]:
+              - row "# Screen Name Group Playing Location(City) Action" [ref=e1706]:
+                - columnheader "#" [ref=e1707]
+                - columnheader "Screen Name" [ref=e1708]
+                - columnheader "Group" [ref=e1709]
+                - columnheader "Playing" [ref=e1710]
+                - columnheader "Location(City)" [ref=e1711]
+                - columnheader "Action" [ref=e1712]
+            - rowgroup
+      - text: 
+  - text: "* *"
