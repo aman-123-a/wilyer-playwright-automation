@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Env / secrets
+.env
+.env.local
+*.local
+
+# Playwright artifacts
+test-results/
+playwright-report/
+blob-report/
+.playwright/
+.auth/
+
+# Allure
+allure-results/
+allure-report/
+
+# Build output
+dist/
+
+# Generated test files (large binaries used for "large file upload" tests)
+test-data/generated/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+*.log

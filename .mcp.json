@@ -21,6 +21,16 @@
       "args": [
         "mcp-server.js"
       ]
+    },
+    "code-review-graph": {
+      "command": "C:\\Users\\User\\AppData\\Roaming\\uv\\tools\\code-review-graph\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "code_review_graph",
+        "serve"
+      ],
+      "cwd": "C:\\Users\\User\\Downloads\\wilyer-playwright",
+      "type": "stdio"
     }
   }
 }

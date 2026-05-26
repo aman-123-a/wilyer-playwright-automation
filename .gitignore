@@ -6,6 +6,11 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+/.auth/
+
+# CMS suite local env + machine reports
+.env.cms
+/reports/cms/
 
 # MCP traces and exploration artifacts
 .playwright-mcp/
@@ -20,3 +25,5 @@ node_modules/
 
 # Run logs
 /reports/*.log
+# Added by code-review-graph
+.code-review-graph/

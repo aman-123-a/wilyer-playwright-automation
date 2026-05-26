@@ -1,0 +1,64 @@
+// =============================================================================
+//  Jenkins declarative pipeline — CMS E2E.
+//  Runs the suite inside the official Playwright Docker image, publishes the
+//  HTML + Allure reports, and archives traces/videos/screenshots on failure.
+//  Configure credentials `cms-admin-email` / `cms-admin-password` in Jenkins.
+// =============================================================================
+pipeline {
+  agent {
+    docker {
+      image 'mcr.microsoft.com/playwright:v1.50.0-jammy'
+      args '-u root:root'
+    }
+  }
+
+  options {
+    timeout(time: 60, unit: 'MINUTES')
+    disableConcurrentBuilds()
+    buildDiscarder(logRotator(numToKeepStr: '20'))
+  }
+
+  parameters {
+    choice(name: 'GREP', choices: ['@regression', '@smoke', '@sanity'], description: 'Tag filter')
+    choice(name: 'PROJECT', choices: ['chromium', 'firefox', 'webkit'], description: 'Browser')
+  }
+
+  environment {
+    CMS_BASE_URL       = 'https://cms.pocsample.in'
+    CMS_ADMIN_EMAIL    = credentials('cms-admin-email')
+    CMS_ADMIN_PASSWORD = credentials('cms-admin-password')
+    CMS_STRICT_MONITORS = 'false'
+    CI = 'true'
+  }
+
+  stages {
+    stage('Install') {
+      steps {
+        dir('cms-e2e') {
+          sh 'npm ci'
+          sh 'npx playwright install --with-deps'
+        }
+      }
+    }
+    stage('Test') {
+      steps {
+        dir('cms-e2e') {
+          sh "npx playwright test --project=${params.PROJECT} --grep '${params.GREP}'"
+        }
+      }
+    }
+  }
+
+  post {
+    always {
+      junit testResults: 'cms-e2e/reports/junit.xml', allowEmptyResults: true
+      publishHTML(target: [
+        reportDir: 'cms-e2e/playwright-report',
+        reportFiles: 'index.html',
+        reportName: 'Playwright HTML Report',
+        keepAll: true, alwaysLinkToLastBuild: true, allowMissing: true
+      ])
+      archiveArtifacts artifacts: 'cms-e2e/test-results/**, cms-e2e/allure-results/**', allowEmptyArchive: true
+    }
+  }
+}

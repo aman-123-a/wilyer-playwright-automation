@@ -1,0 +1,59 @@
+{
+  "name": "wilyer-upload-framework",
+  "version": "1.0.0",
+  "description": "Enterprise-grade Playwright + TypeScript automation framework for the Wilyer CMS File Upload Notification (Maker/Checker) workflow.",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:notification": "playwright test --grep @notification",
+    "test:permission": "playwright test --grep @permission",
+    "test:security": "playwright test --grep @security",
+    "test:edgecase": "playwright test --grep @edgecase",
+    "test:maker": "playwright test tests/maker",
+    "test:checker": "playwright test tests/checker",
+    "test:email": "playwright test tests/email",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:mobile": "playwright test --project='Mobile Chrome' --project='Mobile Safari'",
+    "report": "playwright show-report",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results",
+    "install:browsers": "playwright install --with-deps",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "automation",
+    "e2e",
+    "wilyer",
+    "maker-checker",
+    "allure"
+  ],
+  "author": "Wilyer QA Automation",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/mailparser": "^3.4.6",
+    "@types/node": "^22.10.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "allure-commandline": "^2.32.0",
+    "allure-playwright": "^3.0.0",
+    "eslint": "^9.17.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "imapflow": "^1.0.171",
+    "mailparser": "^3.7.2"
+  }
+}

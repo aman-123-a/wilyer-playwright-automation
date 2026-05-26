@@ -1,0 +1,3 @@
+Wilyer Upload Framework — static sample fixture.
+This file is a checked-in, deterministic upload artifact for tests that prefer
+a stable on-disk file over a runtime-generated one.

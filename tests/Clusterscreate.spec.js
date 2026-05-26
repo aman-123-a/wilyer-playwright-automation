@@ -6,13 +6,14 @@ const SHEET_ID = '1V7TjTHwlkDZf4-eQHer76YYwb_rKEnR11Jd8A3OyLhU';
 const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=0`;
 
 // ─── Login Credentials ────────────────────────────────────────────────────────
+const BASE_URL = 'https://cms.pocsample.in/';
 const LOGIN_EMAIL = 'dev@wilyer.com';
 const LOGIN_PASSWORD = 'testdev';
 
 // ─── Single Test: Fetch Sheet → Login Once → Create All Clusters ──────────────
 
 test('Fetch Google Sheet and create all clusters with single login', async ({ page }) => {
-  test.setTimeout(300_000); // 5 min timeout for large datasets
+  test.setTimeout(600_000); // 10 min timeout for large datasets
 
   // 1. Fetch cluster data from Google Sheets (CSV export)
   console.log(`\n📊 Fetching cluster data from Google Sheets...`);
@@ -29,7 +30,7 @@ test('Fetch Google Sheet and create all clusters with single login', async ({ pa
 
   // 2. Login ONCE
   console.log(`\n🔐 Logging in as: ${LOGIN_EMAIL}`);
-  await page.goto('https://cms.pocsample.in/');
+  await page.goto(BASE_URL);
   await page.getByRole('textbox', { name: 'Enter your email or phone' }).fill(LOGIN_EMAIL);
   await page.getByRole('textbox', { name: 'Enter your password' }).fill(LOGIN_PASSWORD);
   await page.getByRole('button', { name: /Log In/i }).click();
@@ -37,6 +38,8 @@ test('Fetch Google Sheet and create all clusters with single login', async ({ pa
   console.log(`✅ Login successful\n`);
 
   // 3. Loop through all rows and create each cluster
+  const results = { created: [], skipped: [], failed: [] };
+
   for (const row of rows) {
     // ⚠️ Ensure the column header in your Excel file is exactly "Cluster Name" ⚠️
     const clusterName = row['Cluster Name'];
@@ -44,27 +47,50 @@ test('Fetch Google Sheet and create all clusters with single login', async ({ pa
 
     console.log(`🚀 Creating cluster: "${clusterName}"`);
 
-    // Navigate to Clusters page
-    await page.getByRole('link', { name: ' Clusters' }).click();
-    await page.waitForLoadState('networkidle');
+    try {
+      // Navigate to Clusters page (direct URL is more robust than sidebar click)
+      await page.goto(`${BASE_URL}clusters`, { waitUntil: 'networkidle', timeout: 20_000 });
 
-    // Open New Cluster modal
-    await page.getByRole('button', { name: ' New Cluster' }).click();
+      // Skip if a cluster with this name already exists (keeps re-runs idempotent)
+      if (await page.getByText(clusterName, { exact: false }).count() > 0) {
+        console.log(`⚠️  Cluster "${clusterName}" already exists — skipping\n`);
+        results.skipped.push(clusterName);
+        continue;
+      }
 
-    // Fill cluster name from sheet
-    await page.locator('#addCluster #name').fill(clusterName);
+      // Open New Cluster modal
+      await page.getByRole('button', { name: ' New Cluster' }).click();
+      await page.waitForSelector('#addCluster', { state: 'visible', timeout: 10_000 });
 
-    // Submit
-    await page.getByRole('button', { name: 'Create Cluster' }).click();
-    await page.waitForLoadState('networkidle');
+      // Fill cluster name from sheet
+      await page.locator('#addCluster #name').fill(clusterName);
 
-    // Verify cluster is visible
-    await expect(
-      page.getByText(clusterName, { exact: false }).first()
-    ).toBeVisible({ timeout: 15_000 });
+      // Submit
+      await page.getByRole('button', { name: 'Create Cluster' }).click();
 
-    console.log(`✅ Cluster "${clusterName}" created!\n`);
+      // Success = modal closes. Don't rely on a list text match (the list is paginated,
+      // so a newly created cluster may not be on the first page).
+      await page.waitForSelector('#addCluster', { state: 'hidden', timeout: 15_000 });
+
+      console.log(`✅ Cluster "${clusterName}" created!\n`);
+      results.created.push(clusterName);
+
+    } catch (err) {
+      console.error(`❌ Failed to create cluster "${clusterName}": ${err.message}`);
+      // Dismiss any lingering modal so the next iteration starts clean
+      await page.keyboard.press('Escape').catch(() => {});
+      results.failed.push(clusterName);
+    }
   }
 
-  console.log(`🎉 All ${rows.length} clusters created successfully!`);
+  // 4. Summary
+  console.log('\n─────────────────────────────────────────');
+  console.log(`📊 Summary:`);
+  console.log(`   ✅ Created : ${results.created.length} — ${results.created.join(', ') || 'none'}`);
+  console.log(`   ⚠️  Skipped : ${results.skipped.length} — ${results.skipped.join(', ') || 'none'}`);
+  console.log(`   ❌ Failed  : ${results.failed.length} — ${results.failed.join(', ') || 'none'}`);
+  console.log('─────────────────────────────────────────\n');
+
+  // Fail the test only if a creation genuinely failed (skipped duplicates are fine)
+  expect(results.failed, `These clusters failed: ${results.failed.join(', ')}`).toHaveLength(0);
 });

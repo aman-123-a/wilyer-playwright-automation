@@ -9,7 +9,21 @@
     "test:report": "playwright show-report",
     "test:codegen": "playwright codegen",
     "playwright:install": "playwright install --with-deps",
-    "mcp-server": "node mcp-server.js"
+    "mcp-server": "node mcp-server.js",
+    "cms": "playwright test --config=playwright.cms.config.js",
+    "cms:headed": "playwright test --config=playwright.cms.config.js --headed",
+    "cms:ui": "playwright test --config=playwright.cms.config.js --ui",
+    "cms:debug": "playwright test --config=playwright.cms.config.js --debug",
+    "cms:report": "playwright show-report playwright-report/cms",
+    "cms:auth": "playwright test --config=playwright.cms.config.js auth.spec.js",
+    "cms:smoke": "playwright test --config=playwright.cms.config.js --grep \"Positive\"",
+    "cms:library": "playwright test --config=playwright.cms.config.js library-crud.spec.js",
+    "cms:playlist": "playwright test --config=playwright.cms.config.js playlist-crud.spec.js",
+    "cms:spaces": "playwright test --config=playwright.cms.config.js spaces-rooms.spec.js",
+    "cms:bugs": "playwright test --config=playwright.cms.config.js known-bugs-regression.spec.js",
+    "cms:freeze": "playwright test --config=playwright.cms.config.js freeze-investigation.spec.js --headed --workers=1",
+    "cms:compare": "playwright test --config=playwright.cms.config.js comparison.spec.js",
+    "cms:trace": "playwright show-trace"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",

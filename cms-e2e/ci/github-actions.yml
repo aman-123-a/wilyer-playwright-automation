@@ -1,0 +1,70 @@
+# =============================================================================
+#  GitHub Actions — CMS E2E. Copy to .github/workflows/cms-e2e.yml at repo root
+#  (paths below assume the framework lives in cms-e2e/).
+#  Runs cross-browser regression in parallel shards on push/PR + nightly cron.
+# =============================================================================
+name: CMS E2E
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 2 * * *' # nightly 02:00 UTC full regression
+  workflow_dispatch:
+    inputs:
+      grep:
+        description: 'Test tag filter (e.g. @smoke)'
+        default: '@regression'
+
+defaults:
+  run:
+    working-directory: cms-e2e
+
+env:
+  CMS_BASE_URL: https://cms.pocsample.in
+  CMS_ADMIN_EMAIL: ${{ secrets.CMS_ADMIN_EMAIL }}
+  CMS_ADMIN_PASSWORD: ${{ secrets.CMS_ADMIN_PASSWORD }}
+  CMS_STRICT_MONITORS: 'false'
+  CMS_ALLOW_DESTRUCTIVE: 'false'
+
+jobs:
+  test:
+    name: ${{ matrix.project }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [chromium, firefox, webkit]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: cms-e2e/package-lock.json
+
+      - run: npm ci
+      - run: npx playwright install --with-deps ${{ matrix.project == 'webkit' && 'webkit' || matrix.project == 'firefox' && 'firefox' || 'chromium' }}
+
+      - name: Run tests
+        run: npx playwright test --project=${{ matrix.project }} --grep "${{ github.event.inputs.grep || '@regression' }}"
+
+      - name: Upload HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report-${{ matrix.project }}
+          path: cms-e2e/playwright-report
+          retention-days: 14
+
+      - name: Upload Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-${{ matrix.project }}
+          path: cms-e2e/allure-results
+          retention-days: 14

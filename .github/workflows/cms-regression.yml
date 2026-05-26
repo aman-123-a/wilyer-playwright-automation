@@ -1,0 +1,88 @@
+name: CMS Regression Suite
+
+# CI-ready pipeline: runs the enterprise CMS suite on push, PR, nightly cron,
+# and on-demand. Publishes the HTML report + traces/videos as artifacts.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tests/cms-suite/**'
+      - 'pages/cms/**'
+      - 'utils/cms/**'
+      - 'fixtures/**'
+      - 'helpers/**'
+      - 'playwright.cms.config.js'
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 2 * * *' # nightly full regression at 02:00 UTC
+  workflow_dispatch:
+    inputs:
+      grep:
+        description: 'Optional --grep filter (e.g. "Auth" or "Performance")'
+        required: false
+        default: ''
+
+concurrency:
+  group: cms-regression-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  cms-regression:
+    name: CMS Regression (chromium)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      CI: 'true'
+      CMS_BASE_URL: ${{ secrets.CMS_BASE_URL || 'https://cms.pocsample.in' }}
+      CMS_PROD_URL: ${{ secrets.CMS_PROD_URL || 'https://cms.wilyersignage.com' }}
+      CMS_ADMIN_EMAIL: ${{ secrets.CMS_ADMIN_EMAIL }}
+      CMS_ADMIN_PASSWORD: ${{ secrets.CMS_ADMIN_PASSWORD }}
+      CMS_SUBUSER_EMAIL: ${{ secrets.CMS_SUBUSER_EMAIL }}
+      CMS_SUBUSER_PASSWORD: ${{ secrets.CMS_SUBUSER_PASSWORD }}
+      CMS_STRICT_MONITORS: 'false'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run CMS regression suite
+        run: >
+          npx playwright test
+          --config=playwright.cms.config.js
+          ${{ github.event.inputs.grep && format('--grep "{0}"', github.event.inputs.grep) || '' }}
+
+      - name: Upload HTML report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: cms-html-report
+          path: playwright-report/cms
+          retention-days: 14
+
+      - name: Upload traces / videos / screenshots
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cms-failure-artifacts
+          path: test-results/cms
+          retention-days: 14
+
+      - name: Upload JSON / JUnit results
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: cms-machine-reports
+          path: reports/cms
+          retention-days: 14
