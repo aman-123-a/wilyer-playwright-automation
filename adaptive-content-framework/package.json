@@ -1,0 +1,48 @@
+{
+  "name": "adaptive-content-framework",
+  "version": "1.0.0",
+  "description": "Enterprise Playwright + TypeScript framework for the Wilyer CMS Adaptive Content Compression & Screen Delivery module",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:chromium": "playwright test --project=chromium",
+    "smoke": "playwright test --grep @smoke",
+    "regression": "playwright test --grep @regression",
+    "suite1": "playwright test tests/suite1-global-settings",
+    "suite2": "playwright test tests/suite2-auto-transcode",
+    "suite3": "playwright test tests/suite3-threshold-boundary",
+    "suite4": "playwright test tests/suite4-long-video",
+    "suite5": "playwright test tests/suite5-manual-transcode",
+    "suite6": "playwright test tests/suite6-variant-validation",
+    "suite7": "playwright test tests/suite7-screen-config",
+    "suite8": "playwright test tests/suite8-player-sync",
+    "suite9": "playwright test tests/suite9-analytics",
+    "edge": "playwright test tests/edge-cases",
+    "security": "playwright test tests/edge-cases/security.spec.ts",
+    "fixtures:videos": "tsx src/utils/videoFactory.ts --generate-all",
+    "report": "playwright show-report playwright-report",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "trace": "playwright show-trace",
+    "install:browsers": "playwright install --with-deps chromium",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["playwright", "typescript", "qa", "automation", "adaptive-content", "transcoding", "digital-signage"],
+  "author": "QA Automation",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^22.10.0",
+    "allure-commandline": "^2.32.0",
+    "allure-playwright": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "ffmpeg-static": "^5.2.0",
+    "ffprobe-static": "^3.1.0"
+  }
+}

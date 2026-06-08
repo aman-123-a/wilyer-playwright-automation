@@ -27,7 +27,7 @@ export default defineConfig({
     baseURL: process.env.BASE_URL || 'https://cms.pocsample.in',
     headless: true,
     viewport: { width: 1440, height: 900 },
-    screenshot: 'only-on-failure',
+    screenshot: 'only-on-failure
     video: 'retain-on-failure',
     trace: 'on-first-retry',
     actionTimeout: 15_000,

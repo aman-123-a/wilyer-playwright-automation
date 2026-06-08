@@ -59,5 +59,21 @@ async function cacheAdminSession() {
 
 export default async function globalSetup() {
   await assertAppReachable();
+
+  // Manual-auth mode: a session was captured by hand via `npm run cms:login`
+  // (handles OTP/2FA that the automated login can't). Reuse it as-is and skip
+  // the email/password login entirely.
+  if (process.env.CMS_MANUAL_AUTH === 'true') {
+    if (fs.existsSync(ADMIN_STATE)) {
+      console.log(`[global-setup] CMS_MANUAL_AUTH=true — reusing saved session ${ADMIN_STATE}`);
+    } else {
+      console.warn(
+        `[global-setup] CMS_MANUAL_AUTH=true but ${ADMIN_STATE} is missing. ` +
+        `Run \`npm run cms:login\` first. Specs will self-login as a fallback.`
+      );
+    }
+    return;
+  }
+
   await cacheAdminSession();
 }

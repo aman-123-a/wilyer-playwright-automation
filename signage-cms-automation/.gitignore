@@ -1,0 +1,10 @@
+node_modules/
+.auth/
+.env
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+reports/results.json
+reports/junit.xml
+*.log

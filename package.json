@@ -11,6 +11,7 @@
     "playwright:install": "playwright install --with-deps",
     "mcp-server": "node mcp-server.js",
     "cms": "playwright test --config=playwright.cms.config.js",
+    "cms:login": "node scripts/capture-session.cms.js",
     "cms:headed": "playwright test --config=playwright.cms.config.js --headed",
     "cms:ui": "playwright test --config=playwright.cms.config.js --ui",
     "cms:debug": "playwright test --config=playwright.cms.config.js --debug",
