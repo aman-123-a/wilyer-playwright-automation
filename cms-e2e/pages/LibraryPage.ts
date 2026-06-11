@@ -42,8 +42,10 @@ export class LibraryPage extends BasePage {
 
     this.mediaSearch = page.getByPlaceholder(/^search\.{0,3}$/i).first();
 
-    this.mediaTab = page.getByRole('link', { name: /^media$/i });
-    this.widgetsTab = page.getByRole('link', { name: /^widgets$/i });
+    // Tab labels carry a live count suffix, e.g. "Media Files (798)" /
+    // "Widgets (656)" — match the prefix, not an exact word.
+    this.mediaTab = page.getByRole('link', { name: /^media files/i });
+    this.widgetsTab = page.getByRole('link', { name: /^widgets\b/i });
     this.publishHistoryTab = page.getByRole('link', { name: /media publish history/i });
     this.mediaSetsTab = page.getByRole('link', { name: /media sets/i });
 
