@@ -29,8 +29,8 @@ export interface Credentials {
 }
 
 export const ENV = {
-  /** Application under test. */
-  BASE_URL: pick('CMS_BASE_URL', 'https://cms.pocsample.in'),
+  /** Application under test. — TARGET ENV: cms2 (test server). */
+  BASE_URL: pick('CMS_BASE_URL', 'https://cms2.pocsample.in'),
 
   /** Admin / primary account (full access).
    *  Credentials are NEVER hardcoded — supply them via a local, gitignored
