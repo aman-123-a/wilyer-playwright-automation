@@ -32,16 +32,18 @@ export const ENV = {
   /** Application under test. */
   BASE_URL: pick('CMS_BASE_URL', 'https://cms.pocsample.in'),
 
-  /** Admin / primary account (full access). */
+  /** Admin / primary account (full access).
+   *  Credentials are NEVER hardcoded — supply them via a local, gitignored
+   *  .env file (CMS_ADMIN_EMAIL / CMS_ADMIN_PASSWORD). See .env.example. */
   ADMIN: {
-    email: pick('CMS_ADMIN_EMAIL', 'dev@wilyer.com'),
-    password: pick('CMS_ADMIN_PASSWORD', 'testdev'),
+    email: pick('CMS_ADMIN_EMAIL', ''),
+    password: pick('CMS_ADMIN_PASSWORD', ''),
   } as Credentials,
 
-  /** Scoped / restricted sub-user account. */
+  /** Scoped / restricted sub-user account. Supplied via .env (see ADMIN). */
   SUBUSER: {
-    email: pick('CMS_SUBUSER_EMAIL', 'dev@wilyer.com'),
-    password: pick('CMS_SUBUSER_PASSWORD', 'testdev'),
+    email: pick('CMS_SUBUSER_EMAIL', ''),
+    password: pick('CMS_SUBUSER_PASSWORD', ''),
   } as Credentials,
 
   /** Performance budgets (ms). */
