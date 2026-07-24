@@ -50,14 +50,14 @@ export const ENV = {
   BASE_URL: pick('CMS_BASE_URL', 'https://cms.pocsample.in'),
 
   /** Admin / primary account (full access). */
-  ADMIN_EMAIL: pick('CMS_ADMIN_EMAIL', 'dev@wilyer.com'),
-  ADMIN_PASSWORD: pick('CMS_ADMIN_PASSWORD', 'testdev'),
+  ADMIN_EMAIL: pick('CMS_ADMIN_EMAIL', (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '')),
+  ADMIN_PASSWORD: pick('CMS_ADMIN_PASSWORD', (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '')),
 
   /** Restricted / scoped account — used by the security/RBAC tests. */
-  VIEWER_EMAIL: pick('CMS_VIEWER_EMAIL', 'dev@wilyer.com'),
-  VIEWER_PASSWORD: pick('CMS_VIEWER_PASSWORD', 'testdev'),
-  EDITOR_EMAIL: pick('CMS_EDITOR_EMAIL', 'dev@wilyer.com'),
-  EDITOR_PASSWORD: pick('CMS_EDITOR_PASSWORD', 'testdev'),
+  VIEWER_EMAIL: pick('CMS_VIEWER_EMAIL', (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '')),
+  VIEWER_PASSWORD: pick('CMS_VIEWER_PASSWORD', (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '')),
+  EDITOR_EMAIL: pick('CMS_EDITOR_EMAIL', (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '')),
+  EDITOR_PASSWORD: pick('CMS_EDITOR_PASSWORD', (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '')),
 
   /** Performance thresholds (ms) — overridable per environment / CI hardware. */
   PERF_PAGE_LOAD_MS: num('CMS_PERF_PAGE_LOAD_MS', 6000),

@@ -1,7 +1,7 @@
 # Prayer Schedule — API & Console Error Audit
 
 - **Target:** https://cms.pocsample.in/prayer-schedule · build **v3.5.20**
-- **Account:** dev@wilyer.com (admin) · **Date:** 2026-07-16
+- **Account:** <admin — see local .env> (admin) · **Date:** 2026-07-16
 - **Method:** Playwright network + console capture across Today / Schedules / Calendar tabs
 
 ## API call inventory

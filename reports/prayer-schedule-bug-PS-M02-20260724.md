@@ -5,7 +5,7 @@
 | **ID** | PS-M02 |
 | **Title** | The media picker `Search...` box issues **one `file/read` request per character typed** — no debounce — flooding the media service and exposing the grid to out-of-order responses |
 | **Module** | Prayer Schedule → Schedules → per-prayer **FILES** column → **Choose Media** picker, CMS **v3.5.20** |
-| **Environment** | **testdev** · `https://cms.pocsample.in` · Chromium · admin `dev@wilyer.com` |
+| **Environment** | **testdev** · `https://cms.pocsample.in` · Chromium · admin `<admin — see local .env>` |
 | **API** | `GET https://v3-5api.pocsample.in/v3/cms/file/read?limit=50&search=<term>&…&folderId=<id>` |
 | **Date** | 2026-07-24 |
 | **Severity** | **Medium** — performance / scalability defect; also a correctness risk via response races |
@@ -40,7 +40,7 @@ term `wonderland` showed the same 1:1 keystroke-to-request pattern.
 
 ## Steps to reproduce
 
-1. Log in to `https://cms.pocsample.in` as `dev@wilyer.com`.
+1. Log in to `https://cms.pocsample.in` as `<admin — see local .env>`.
 2. **Prayer Schedule → Schedules**, select plan **t1**.
 3. On the **Fajr** row click **`+ Files`** to open **Choose Media**.
 4. Open DevTools → **Network**, filter `file/read`.

@@ -5,7 +5,7 @@
 |---|---|
 | **Application Under Test** | https://cms.pocsample.in/ |
 | **Framework** | `signage-cms-automation` (Playwright + TypeScript, Page Object Model) |
-| **Test Account** | `dev@wilyer.com` (admin) |
+| **Test Account** | `<admin — see local .env>` (admin) |
 | **Suite** | `@smoke` |
 | **Browser / Project** | Chromium (Desktop Chrome, 1440×900) |
 | **Execution Date** | 2026-06-05 |

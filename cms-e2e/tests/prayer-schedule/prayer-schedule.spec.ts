@@ -252,7 +252,7 @@ test.describe('Prayer Schedule', () => {
 
   // ── CRUD (write) — guarded, opt-in ────────────────────────────────────────
   //  Create-then-delete only ever touches the plan THIS test creates, so a run
-  //  is idempotent and never mutates pre-existing testdev data.
+  //  is idempotent and never mutates pre-existing seeded data.
 
   test.describe('CRUD — plan lifecycle @regression', () => {
     test.skip(!ENV.ALLOW_DESTRUCTIVE, 'set CMS_ALLOW_DESTRUCTIVE=true to run write cases');

@@ -106,7 +106,7 @@ tests/pages. Precedence: `process.env` > `.env` file > built-in defaults.
 | Key                          | Default                      |
 | ---------------------------- | ---------------------------- |
 | `CMS_BASE_URL`               | `https://cms.pocsample.in`   |
-| `CMS_ADMIN_EMAIL/PASSWORD`   | `dev@wilyer.com` / `testdev` |
+| `CMS_ADMIN_EMAIL/PASSWORD`   | `<set in local .env>` |
 | `CMS_ALLOW_DESTRUCTIVE`      | `false`                      |
 | `CMS_STRICT_MONITORS`        | `false` (monitors warn only) |
 | `CMS_PERF_*`, `CMS_LH_*`     | perf / lighthouse budgets    |

@@ -5,7 +5,7 @@
 | **ID** | PS-N01 |
 | **Title** | A prayer plan with no resolvable location ("TEST") stays selectable/ACTIVE, shows a persistent "Location is required" toast, and displays stale prayer times from the previously-viewed plan |
 | **Module** | Prayer Schedule (`/prayer-schedule`), CMS v3.5.20 |
-| **Environment** | cms.pocsample.in · Chromium · admin dev@wilyer.com |
+| **Environment** | cms.pocsample.in · Chromium · admin <admin — see local .env> |
 | **Date** | 2026-07-14 |
 | **Severity** | High (a live, ACTIVE prayer-interrupt plan can never fire correctly, yet no blocking state) |
 | **Priority** | High |

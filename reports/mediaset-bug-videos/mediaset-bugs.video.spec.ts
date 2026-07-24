@@ -10,8 +10,8 @@ import { test, expect, Page } from '@playwright/test';
  * title-attribute tooltips do not render in headless recordings).
  */
 
-const EMAIL = process.env.CMS_EMAIL || 'dev@wilyer.com';
-const PASSWORD = process.env.CMS_PASSWORD || 'testdev';
+const EMAIL = process.env.CMS_EMAIL || (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
+const PASSWORD = process.env.CMS_PASSWORD || (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 
 async function caption(page: Page, kind: 'F2' | 'F1' | 'info', title: string, lines: string[] = [], holdMs = 2200) {
   await page.evaluate(({ kind, title, lines }) => {

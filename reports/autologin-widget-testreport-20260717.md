@@ -1,7 +1,7 @@
 # Auto Login Widget — Test Report (AL-001 … AL-010)
 
 **Date:** 2026-07-17
-**Environment:** https://cms3.pocsample.in/  (account: dev@wilyer.com)
+**Environment:** https://cms3.pocsample.in/  (account: <admin — see local .env>)
 **Feature:** Library → Widgets → **Auto Login** widget, create dialog
 **Scope run:** AL-001 … AL-010 (Widget Name / URL validation) — the automatable subset of the 90-case suite.
 **Method:** Playwright, headed, programmatic login (passes invisible reCAPTCHA v3). Spec: `tests/autologin-validation.spec.js`.

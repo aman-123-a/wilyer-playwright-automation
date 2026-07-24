@@ -4,8 +4,8 @@ import path from 'path';
 
 // ─── Config ───────────────────────────────────────────────────────────────────
 const BASE_URL       = 'https://cms.pocsample.in/';
-const LOGIN_EMAIL    = 'dev@wilyer.com';
-const LOGIN_PASSWORD = 'testdev';
+const LOGIN_EMAIL    = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
+const LOGIN_PASSWORD = (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 
 const HUGE_FILE      = path.resolve('data/huge_file.zip');
 const HUGE_NAME      = path.basename(HUGE_FILE);

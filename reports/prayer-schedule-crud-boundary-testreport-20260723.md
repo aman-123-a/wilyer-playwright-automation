@@ -5,7 +5,7 @@
 | **Module** | Prayer Schedule (`/prayer-schedule`), CMS **v3.5.20** |
 | **Environment** | **testdev** · `https://cms.pocsample.in` · Chromium |
 | **API backend** | `https://v3-5api.pocsample.in/v3/cms/prayer-schedule/*` |
-| **Account** | `dev@wilyer.com` (admin, full access) |
+| **Account** | `<admin — see local .env>` (admin, full access) |
 | **Mode** | Destructive **ON** (`CMS_ALLOW_DESTRUCTIVE=true`) — real create/delete |
 | **Date** | 2026-07-23 |
 | **Tester** | Aman Kumar (QA) |

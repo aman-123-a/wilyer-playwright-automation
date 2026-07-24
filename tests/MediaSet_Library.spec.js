@@ -26,8 +26,8 @@ import { test, expect } from '@playwright/test';
 
 // ─── Config ──────────────────────────────────────────────────────────────────
 const BASE_URL       = 'https://cms2.pocsample.in';
-const LOGIN_EMAIL    = 'dev@wilyer.com';
-const LOGIN_PASSWORD = 'testdev';
+const LOGIN_EMAIL    = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
+const LOGIN_PASSWORD = (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 
 // Known seed files (used only where a specific orientation must be forced).
 const PORTRAIT_FILE  = 'corrugation'; // a portrait (2760×3320) image in the library

@@ -10,8 +10,8 @@ import { test, expect, Page } from '@playwright/test';
 const BASE_URL = 'https://cms.pocsample.in';
 const TIMEOUT = 15000;
 // ─── Config ───────────────────────────────────────────────────────────────────
-const LOGIN_EMAIL    = 'dev@wilyer.com';
-const LOGIN_PASSWORD = 'testdev';
+const LOGIN_EMAIL    = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
+const LOGIN_PASSWORD = (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 
 // Helper: wait for page to be stable
 async function waitForLoad(page: Page) {

@@ -1,7 +1,7 @@
 # Wilyer Signage CMS — Test Suite Report
 
 **Target:** `https://cms.wilyersignage.com` (live) · **Browser:** Chromium ·
-**Runner:** Playwright 1.59 / TypeScript · **Account:** `dev@wilyer.com` (admin)
+**Runner:** Playwright 1.59 / TypeScript · **Account:** `<admin — see local .env>` (admin)
 
 ---
 
@@ -59,7 +59,7 @@ These were caught by the suite while bringing it to green; the first three were
 1. **Slow SPA bootstrap (≈3–5 s).** Pages report "blank" if asserted right after
    `domcontentloaded`. Fixed with a content-aware `waitForAppSettled()` instead
    of fixed delays — important for any future tests on this app.
-2. **Single-account rate-limiting (HTTP 429).** Driving `dev@wilyer.com` with 3
+2. **Single-account rate-limiting (HTTP 429).** Driving `<admin — see local .env>` with 3
    parallel workers caused the app shell itself to fail to bootstrap → false
    "white screen". The API-failure suite is now documented to run `--workers=1`.
 3. **`.first()` on selector unions can resolve to a hidden element** (the page

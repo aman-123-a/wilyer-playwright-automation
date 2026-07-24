@@ -7,8 +7,8 @@ const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?for
 
 // ─── Login Credentials ────────────────────────────────────────────────────────
 const BASE_URL = 'https://cms.pocsample.in/';
-const LOGIN_EMAIL = 'dev@wilyer.com';
-const LOGIN_PASSWORD = 'testdev';
+const LOGIN_EMAIL = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
+const LOGIN_PASSWORD = (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 
 // ─── Single Test: Fetch Sheet → Login Once → Create All Clusters ──────────────
 

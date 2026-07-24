@@ -131,7 +131,7 @@ All config is env-driven (`utils/cms/env.js`), resolved as
 |-----|---------|---------|
 | `CMS_BASE_URL` | `https://cms.pocsample.in` | target app (merged/staging) |
 | `CMS_PROD_URL` | `https://cms.wilyersignage.com` | production reference (comparison spec) |
-| `CMS_ADMIN_EMAIL` / `CMS_ADMIN_PASSWORD` | `dev@wilyer.com` / `testdev` | admin account |
+| `CMS_ADMIN_EMAIL` / `CMS_ADMIN_PASSWORD` | `<set in local .env>` | admin account |
 | `CMS_SUBUSER_EMAIL` / `CMS_SUBUSER_PASSWORD` | `subuser@wilyer.com` / `12345` | scoped account |
 | `CMS_PERF_PAGE_LOAD_MS` | `5000` | target page-load budget |
 | `CMS_PERF_RELAXED_LOAD_MS` | `10000` | network-idle load budget |

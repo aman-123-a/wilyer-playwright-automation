@@ -2,7 +2,7 @@
 
 **Module:** Library › Media Sets
 **Environment:** https://cms2.pocsample.in (build v3.5.20) · API `v3-5api2.pocsample.in/v3/cms/`
-**Account:** dev@wilyer.com (test)
+**Account:** <admin — see local .env> (test)
 **Tested:** 2026-07-08 · exploratory CRUD + boundary-value analysis
 **Tester:** Aman Kumar (QA)
 

@@ -5,7 +5,7 @@
 | **ID** | PS-C01 |
 | **Title** | "Banner duration" (and "Pre Announcement Duration") enforce a minimum (`min=1`) but **no maximum** — a value like `99999` minutes is accepted and persisted on an **ACTIVE** plan, making the prayer banner occupy the screen for hours and overlap across prayers |
 | **Module** | Prayer Schedule → Schedules → Configure / Add New Plan, CMS **v3.5.20** |
-| **Environment** | **testdev** · `https://cms.pocsample.in` · Chromium · admin `dev@wilyer.com` |
+| **Environment** | **testdev** · `https://cms.pocsample.in` · Chromium · admin `<admin — see local .env>` |
 | **API** | `POST/PUT https://v3-5api.pocsample.in/v3/cms/prayer-schedule/*` |
 | **Date** | 2026-07-23 |
 | **Severity** | **Critical** — an ACTIVE, publishable prayer-interrupt plan can black out all signage content for hours/all-day; trivially reachable by a single mistyped field |

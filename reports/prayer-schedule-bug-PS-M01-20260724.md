@@ -6,7 +6,7 @@
 | **ID** | PS-M01 |
 | **Title** | Media picker search is **not scoped to the open folder** — searching inside a nested folder returns files that live elsewhere in the library, despite the request correctly sending `folderId` |
 | **Module** | Prayer Schedule → Schedules → per-prayer **FILES** column → **Choose Media** picker, CMS **v3.5.20** |
-| **Environment** | **testdev** · `https://cms.pocsample.in` · Chromium · admin `dev@wilyer.com` |
+| **Environment** | **testdev** · `https://cms.pocsample.in` · Chromium · admin `<admin — see local .env>` |
 | **API** | `GET https://v3-5api.pocsample.in/v3/cms/file/read?limit=50&search=<term>&page=1&type=&sort=createdAt&order=-1&folderId=<id>` |
 | **Date** | 2026-07-24 |
 | **Severity** | **High** — breaks the folder isolation the picker's own UI promises; an operator can assign media to a live prayer-interrupt plan from a folder they never opened |
@@ -69,7 +69,7 @@ in-folder search is returning almost the entire global match set.
 
 ## Steps to reproduce
 
-1. Log in to `https://cms.pocsample.in` as `dev@wilyer.com`.
+1. Log in to `https://cms.pocsample.in` as `<admin — see local .env>`.
 2. Go to **Prayer Schedule → Schedules**; select plan **t1** (or any plan whose prayer
    rows still show a `[+ Files]` button — see *Notes*).
 3. On the **Fajr** row, click **`+ Files`** → the **Choose Media** modal opens.

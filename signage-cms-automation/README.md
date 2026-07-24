@@ -83,7 +83,7 @@ noisy live build that emits benign analytics/4xx console noise.
 | Variable                  | Default                     | Purpose                                  |
 | ------------------------- | --------------------------- | ---------------------------------------- |
 | `CMS_BASE_URL`            | `https://cms.pocsample.in`  | Target application                       |
-| `CMS_ADMIN_EMAIL/PASSWORD`| `dev@wilyer.com` / `testdev`| Admin credentials                        |
+| `CMS_ADMIN_EMAIL/PASSWORD`| `<set in local .env>`| Admin credentials                        |
 | `CMS_ALLOW_DESTRUCTIVE`   | `false`                     | Allow live edit/delete writes            |
 | `CMS_STRICT_MONITORS`     | `false`                     | Console/4xx errors fail the test         |
 | `CMS_FAIL_ON_SERVER_ERROR`| `true`                      | 5xx always fails                         |

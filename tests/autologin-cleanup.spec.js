@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 
 const BASE_URL       = 'https://cms3.pocsample.in/';
-const LOGIN_EMAIL    = 'dev@wilyer.com';
-const LOGIN_PASSWORD = 'testdev';
+const LOGIN_EMAIL    = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
+const LOGIN_PASSWORD = (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 
 // SAFE: match ONLY explicit test-artifact name patterns. NO empty-string match.
 const TEST_PATTERNS = [

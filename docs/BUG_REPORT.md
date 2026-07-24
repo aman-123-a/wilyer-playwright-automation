@@ -2,7 +2,7 @@
 
 **Target (merged/staging):** https://cms.pocsample.in
 **Reference (prod):** https://cms.wilyersignage.com
-**Account:** dev@wilyer.com (admin)
+**Account:** <admin — see local .env> (admin)
 **Date:** 2026-05-21
 **Tooling:** Playwright (`tests/cms-suite/known-bugs-regression.spec.js`), each case tagged `[BUG:n]`.
 

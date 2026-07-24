@@ -2,7 +2,7 @@ g# Prayer Schedule — Retest of "In Development" ClickUp Tickets
 
 - **List:** ClickUp → Prayer Schedule (`901615652519`)
 - **Scope:** the **11 tickets currently in `in development` status**
-- **Target:** https://cms.pocsample.in v3.5.20 · dev@wilyer.com (admin) · **2026-07-16 (PM)**
+- **Target:** https://cms.pocsample.in v3.5.20 · <admin — see local .env> (admin) · **2026-07-16 (PM)**
 - **Note:** a deploy occurred earlier today — several items fixed since the AM retest.
 
 ## Result summary

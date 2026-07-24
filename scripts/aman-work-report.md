@@ -1594,7 +1594,7 @@
 | 52 | Instagram Multi-tenant API Authentication System | Dashboard / Feature Plans | ideation | none | 2025-11-28 | [↗](https://app.clickup.com/t/86d13yn7v) |
 | 53 | Lift and Learn - Webhook based Triggers | Dashboard / Feature Plans | documentation | none | 2025-11-28 | [↗](https://app.clickup.com/t/86d13ykya) |
 | 54 | Enhance and Standardize the Playback Reports Section with... | Dashboard / Feature Plans | released | none | 2025-11-29 | [↗](https://app.clickup.com/t/86d1450xa) |
-| 55 | What happens if the user is dev@wilyer.com is other user ... | Dashboard / Reporting | backlog | none | 2026-01-27 | [↗](https://app.clickup.com/t/86d1qu28t) |
+| 55 | What happens if the user is <admin — see local .env> is other user ... | Dashboard / Reporting | backlog | none | 2026-01-27 | [↗](https://app.clickup.com/t/86d1qu28t) |
 | 56 | Analytics processor move to new server so we do not overu... | Dashboard / Common Features | shipped | urgent | 2026-02-13 | [↗](https://app.clickup.com/t/86d1yw896) |
 | 57 | Chunks based file uploading without any compression. | Dashboard / Common Features | shipped | high | 2026-02-13 | [↗](https://app.clickup.com/t/86d1yw7wr) |
 | 58 | Improved Data | Dashboard / Reporting | backlog | none | 2026-02-13 | [↗](https://app.clickup.com/t/86d1z0e5r) |
@@ -2365,7 +2365,7 @@
 | 537 | Sub-user self access to assets like groups or things... | Dashboard / Reporting | backlog | none | 2026-01-27 | 2026-01-27 |  | [↗](https://app.clickup.com/t/86d1qud24) |
 | 538 | Sub-ser should not be able to give role access to on... | Dashboard / Reporting | backlog | none | 2026-01-27 | 2026-01-27 |  | [↗](https://app.clickup.com/t/86d1qua74) |
 | 539 | Sub-user is able to change their own role - Need Urg... | Dashboard / Reporting | backlog | none | 2026-01-27 | 2026-01-27 |  | [↗](https://app.clickup.com/t/86d1qu8e8) |
-| 540 | What happens if the user is dev@wilyer.com is other ... | Dashboard / Reporting | backlog | none | 2026-01-27 | 2026-01-27 |  | [↗](https://app.clickup.com/t/86d1qu28t) |
+| 540 | What happens if the user is <admin — see local .env> is other ... | Dashboard / Reporting | backlog | none | 2026-01-27 | 2026-01-27 |  | [↗](https://app.clickup.com/t/86d1qu28t) |
 | 541 | Playlist Editor Canvas Restricted sub-user and also ... | 2026 Sprints / RBAC / Group in Group | shipped | none | 2026-01-27 | 2026-04-09 | Harsh Vaidya | [↗](https://app.clickup.com/t/86d1quk5t) |
 | 542 | All roles not loading automatically so user can assi... | QA Bugs List / POCS Sample | shipped | none | 2026-01-27 | 2026-02-12 | Harsh Vaidya | [↗](https://app.clickup.com/t/86d1quwuc) |
 | 543 | Folder nesting duplicacy and DOM not refereshing in ... | QA Bugs List / POCS Sample | shipped | none | 2026-01-27 | 2026-02-25 | Harsh Vaidya | [↗](https://app.clickup.com/t/86d1quv57) |

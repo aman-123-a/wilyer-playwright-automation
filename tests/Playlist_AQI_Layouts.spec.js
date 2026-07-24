@@ -2,8 +2,8 @@ import { test, expect } from '@playwright/test';
 
 // ─── Config ───────────────────────────────────────────────────────────────────
 const BASE_URL       = 'https://cms.pocsample.in/';
-const LOGIN_EMAIL    = 'dev@wilyer.com';
-const LOGIN_PASSWORD = 'testdev';
+const LOGIN_EMAIL    = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
+const LOGIN_PASSWORD = (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 const RUN_ID         = Date.now();
 
 // One playlist will be created for each layout, sized to its baseW × baseH,

@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 import { ScreensPage, LoginPage } from '../pages/ScreensPage';
 
-const EMAIL = process.env.CMS_EMAIL ?? 'dev@wilyer.com';
-const PASSWORD = process.env.CMS_PASSWORD ?? 'testdev';
+const EMAIL = process.env.CMS_EMAIL ?? (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
+const PASSWORD = process.env.CMS_PASSWORD ?? (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 const PAIRING_CODE = process.env.CMS_PAIRING_CODE ?? '000000';
 const TARGET_TRANSFER_EMAIL = process.env.CMS_TRANSFER_EMAIL ?? 'qa+transfer@wilyer.com';
 

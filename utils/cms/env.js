@@ -47,12 +47,12 @@ export const ENV = {
   PROD_URL: pick('CMS_PROD_URL', 'https://cms.pocsample.in'),
 
   // Admin / primary account (full access)
-  ADMIN_EMAIL: pick('CMS_ADMIN_EMAIL', 'dev@wilyer.com'),
-  ADMIN_PASSWORD: pick('CMS_ADMIN_PASSWORD', 'testdev'),
+  ADMIN_EMAIL: pick('CMS_ADMIN_EMAIL', (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '')),
+  ADMIN_PASSWORD: pick('CMS_ADMIN_PASSWORD', (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '')),
 
   // Sub-user account (scoped / restricted access) — used by folder-scoping tests
-  SUBUSER_EMAIL: pick('CMS_SUBUSER_EMAIL', 'dev@wilyer.com'),
-  SUBUSER_PASSWORD: pick('CMS_SUBUSER_PASSWORD', 'testdev'),
+  SUBUSER_EMAIL: pick('CMS_SUBUSER_EMAIL', (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '')),
+  SUBUSER_PASSWORD: pick('CMS_SUBUSER_PASSWORD', (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '')),
 
   // Thresholds (ms) — overridable per environment / CI hardware
   PERF_PAGE_LOAD_MS: Number(pick('CMS_PERF_PAGE_LOAD_MS', 5000)),

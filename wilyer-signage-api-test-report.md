@@ -3,7 +3,7 @@
 **App:** cms.wilyersignage.com (build v3.5.20)
 **API backend:** `https://v3-5api.wilyersignage.com/v3/cms/*`
 **Auth:** `Authorization: Bearer <footprint JWT>` (JWT also stored in the `footprint` cookie, `.wilyersignage.com`, not HttpOnly)
-**Account:** dev@wilyer.com (role `user`, `isRestrictedAccess:false`)
+**Account:** <admin — see local .env> (role `user`, `isRestrictedAccess:false`)
 **Date:** 2026-06-25 · **Tester:** Aman Kumar (QA)
 **Scope:** Read-path + auth + input-validation testing against live. No writes/CRUD executed.
 

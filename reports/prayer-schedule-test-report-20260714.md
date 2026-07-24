@@ -4,7 +4,7 @@
 - **Framework:** `cms-e2e` (TypeScript + Playwright)
 - **Date:** 2026-07-14
 - **Author:** Aman Kumar (QA)
-- **Account:** dev@wilyer.com (admin)
+- **Account:** <admin — see local .env> (admin)
 - **Browser executed:** Chromium (Firefox/WebKit projects available, not run here)
 
 ---

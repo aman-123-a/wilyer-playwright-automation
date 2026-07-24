@@ -33,8 +33,8 @@ export const ENV = {
 
   /** Admin / primary account (full access). */
   ADMIN: {
-    email: pick('CMS_ADMIN_EMAIL', 'dev@wilyer.com'),
-    password: pick('CMS_ADMIN_PASSWORD', 'testdev'),
+    email: pick('CMS_ADMIN_EMAIL', (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '')),
+    password: pick('CMS_ADMIN_PASSWORD', (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '')),
   } as Credentials,
 
   /** Performance budgets (ms). */

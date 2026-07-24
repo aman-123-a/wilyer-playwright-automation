@@ -2,7 +2,7 @@
 
 **Target:** https://cms2.pocsample.in/library/mediaset/create (Media Sets module)
 **Scope:** Noida folder (`India > uttarpradesh > Noida`, folderId `6a4f5e62472a0f8e8390871f`)
-**Account:** dev@wilyer.com · **API:** `https://v3-5api2.pocsample.in/v3/cms`
+**Account:** <admin — see local .env> · **API:** `https://v3-5api2.pocsample.in/v3/cms`
 **Date:** 2026-07-09 · **Tester:** Aman Kumar (Claude Code, Playwright MCP)
 
 ---

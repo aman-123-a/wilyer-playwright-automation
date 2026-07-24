@@ -7,8 +7,8 @@ test('Create 4 Unique Roles', async ({ page }) => {
 
   // 2. LOGIN (Once at the start)
   await page.goto(baseUrl);
-  await page.getByPlaceholder(/email/i).fill('dev@wilyer.com');
-  await page.getByPlaceholder(/password/i).fill('testdev');
+  await page.getByPlaceholder(/email/i).fill((process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || ''));
+  await page.getByPlaceholder(/password/i).fill((process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || ''));
   await page.getByRole('button', { name: /Log In/i }).click();
 
   // Wait for the dashboard to load

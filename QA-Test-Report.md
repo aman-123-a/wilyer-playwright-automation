@@ -4,7 +4,7 @@
 **Build version:** v3.5.20
 **API backend:** `https://v3-5api.wilyersignage.com/v3/cms/*`
 **Environment:** Production / Live
-**Account used:** dev@wilyer.com (role `user`, full access)
+**Account used:** <admin — see local .env> (role `user`, full access)
 **Report date:** 2026-06-25
 **Tester / QA:** Aman Kumar
 **Tooling:** Playwright (TypeScript/JS), manual exploratory smoke, API request-context tests

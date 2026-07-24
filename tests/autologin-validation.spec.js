@@ -13,8 +13,8 @@ import path from 'path';
 // =============================================================================
 
 const BASE_URL       = 'https://cms3.pocsample.in/';
-const LOGIN_EMAIL    = 'dev@wilyer.com';
-const LOGIN_PASSWORD = 'testdev';
+const LOGIN_EMAIL    = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
+const LOGIN_PASSWORD = (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 const STAMP          = Date.now();
 const OUT            = path.resolve(process.cwd(), 'reports/autologin-validation');
 

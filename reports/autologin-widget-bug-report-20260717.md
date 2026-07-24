@@ -3,7 +3,7 @@
 - **Target:** https://cms3.pocsample.in/library → Widgets → **Auto Login** → *Add New*
 - **Feature under test:** Auto Login widget **create form** (fields: `Widget Name*`, `WebPage URL`, `+ Add Custom Params`, one‑login/per‑screen toggle)
 - **Source test cases:** Google Sheet "Auto Login Widget Test Cases" (AL‑001 … AL‑071)
-- **Login:** dev@wilyer.com (admin)
+- **Login:** <admin — see local .env> (admin)
 - **Date:** 2026‑07‑17
 - **Method:** Live exploratory execution via browser automation (data‑driven from the sheet)
 

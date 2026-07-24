@@ -1,7 +1,7 @@
 /**
  * Wilyer CMS — Media Sets UI/UX & Accessibility regression suite
  *
- * Target: https://cms2.pocsample.in  (login dev@wilyer.com / testdev)
+ * Target: https://cms2.pocsample.in  (login via .env credentials)
  *
  * These tests encode the usability/accessibility findings from
  * reports/mediaset-ux-report-20260709.md so regressions are caught
@@ -15,8 +15,8 @@
 import { test, expect } from '@playwright/test';
 
 const BASE_URL = 'https://cms2.pocsample.in';
-const EMAIL    = 'dev@wilyer.com';
-const PASSWORD = 'testdev';
+const EMAIL    = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
+const PASSWORD = (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 
 const uniq = (p = 'UX') => `${p}_${Date.now().toString().slice(-6)}`;
 

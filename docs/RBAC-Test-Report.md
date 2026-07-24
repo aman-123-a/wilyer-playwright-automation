@@ -4,7 +4,7 @@
 **Date:** 2026-05-26
 **Tester:** QA Automation (Playwright + TypeScript)
 **Role under test:** `un` (53 permissions) — assigned to sub-user `ak22@gmail.com`
-**Admin account:** `dev@wilyer.com`
+**Admin account:** `<admin — see local .env>`
 **Spec:** `cms-e2e/tests/permissions/rbac-data-driven.spec.ts`
 
 ---

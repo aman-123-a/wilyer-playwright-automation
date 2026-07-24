@@ -3,8 +3,8 @@ import { read, utils } from 'xlsx';
 
 // ─── Config ───────────────────────────────────────────────────────────────────
 const BASE_URL      = 'https://cms.pocsample.in/';
-const LOGIN_EMAIL   = 'dev@wilyer.com';
-const LOGIN_PASSWORD= 'testdev';
+const LOGIN_EMAIL   = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
+const LOGIN_PASSWORD= (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 const SHEET_ID      = '1V7TjTHwlkDZf4-eQHer76YYwb_rKEnR11Jd8A3OyLhU';
 const SHEET_URL     = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=0`;
 

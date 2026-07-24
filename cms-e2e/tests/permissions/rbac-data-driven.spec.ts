@@ -30,7 +30,7 @@ import { ENV, type Credentials } from '../../config/env';
 // ---------------------------------------------------------------------------
 //  Accounts (override via env in CI; committed values are a local fallback).
 // ---------------------------------------------------------------------------
-const ADMIN: Credentials = ENV.ADMIN; // dev@wilyer.com / testdev
+const ADMIN: Credentials = ENV.ADMIN; // admin credentials supplied via .env
 const SUBUSER: Credentials = {
   email: process.env.CMS_SUBUSER_EMAIL ?? 'ak22@gmail.com',
   password: process.env.CMS_SUBUSER_PASSWORD ?? '12345',

@@ -1,7 +1,7 @@
 # Prayer Schedule — Banner Duration & Lead Time: CRUD + Boundary Testing
 
 - **Target:** https://cms.pocsample.in/prayer-schedule → Schedules → **Configure Schedule Plan** drawer
-- **Build:** v3.5.20 · **Account:** dev@wilyer.com (admin) · **Date:** 2026-07-16
+- **Build:** v3.5.20 · **Account:** <admin — see local .env> (admin) · **Date:** 2026-07-16
 - **Scope:** `Banner duration` and `Pre-announcement → Lead time` fields
 - **Method:** field-level HTML5 checks + real save/update against `v3-5api.pocsample.in`. Test data created on a throwaway plan **`zz-boundary-test`** (Delhi), **deleted afterward** — no residual data.
 

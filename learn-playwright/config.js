@@ -1,7 +1,7 @@
 // Shared constants + credentials. Keeping them in one place so tests read cleanly.
 export const CREDS = {
-  email: process.env.CMS_EMAIL || 'dev@wilyer.com',
-  password: process.env.CMS_PASSWORD || 'testdev',
+  email: process.env.CMS_EMAIL || (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || ''),
+  password: process.env.CMS_PASSWORD || (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || ''),
 };
 
 // Backend API (the SPA talks to this host).

@@ -2,7 +2,7 @@
 
 **Application:** cms.wilyersignage.com  
 **Build version:** v3.5.20  
-**Account tested:** dev@wilyer.com  
+**Account tested:** <admin — see local .env>  
 **Test date:** 2026-06-25  
 **Tester:** Aman Kumar (QA)  
 **Test type:** Functional smoke test (load + search + render). No destructive CRUD executed.

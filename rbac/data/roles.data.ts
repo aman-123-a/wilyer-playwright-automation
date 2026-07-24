@@ -1,7 +1,7 @@
 export const CREDENTIALS = {
   admin: {
-    email: process.env.ADMIN_EMAIL ?? 'dev@wilyer.com',
-    password: process.env.ADMIN_PASSWORD ?? 'testdev',
+    email: process.env.ADMIN_EMAIL ?? (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || ''),
+    password: process.env.ADMIN_PASSWORD ?? (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || ''),
   },
 } as const;
 

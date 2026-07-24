@@ -12,7 +12,7 @@ test.describe('Lesson 1 · basics', () => {
     await expect(page.getByRole('link', { name: /Library/ })).toBeVisible();
 
     // A web-first assertion auto-retries until it passes or times out.
-    await expect(page.getByText('dev@wilyer.com')).toBeVisible();
+    await expect(page.getByText((process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || ''))).toBeVisible();
   });
 
   test('the main nav exposes the expected sections', async ({ page }) => {

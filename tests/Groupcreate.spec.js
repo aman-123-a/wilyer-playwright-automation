@@ -6,8 +6,8 @@ const SHEET_ID = '1fe0hc2JsbpVe5mSu-DTmUfPv-twBMr0BDmkatfIfzDQ';
 const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=0`;
 
 // ─── Login Credentials ────────────────────────────────────────────────────────
-const LOGIN_EMAIL = 'dev@wilyer.com';
-const LOGIN_PASSWORD = 'testdev';
+const LOGIN_EMAIL = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
+const LOGIN_PASSWORD = (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 
 // ─── Single Test: Fetch Sheet → Login Once → Create All Groups ────────────────
 

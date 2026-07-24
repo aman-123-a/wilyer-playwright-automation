@@ -11,8 +11,8 @@ export const ENV = {
   BASE_URL: process.env.CMS_BASE_URL ?? 'https://cms.pocsample.in',
 
   /** Admin account (full access) — used by global-setup to cache a session. */
-  ADMIN_EMAIL: process.env.CMS_ADMIN_EMAIL ?? 'dev@wilyer.com',
-  ADMIN_PASSWORD: process.env.CMS_ADMIN_PASSWORD ?? 'testdev',
+  ADMIN_EMAIL: process.env.CMS_ADMIN_EMAIL ?? (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || ''),
+  ADMIN_PASSWORD: process.env.CMS_ADMIN_PASSWORD ?? (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || ''),
 
   /** Where the cached admin storageState is written (relative to suite root). */
   AUTH_FILE: process.env.SEARCH_AUTH_FILE ?? '.auth/search-admin.json',

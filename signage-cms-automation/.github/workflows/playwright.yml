@@ -25,8 +25,8 @@ jobs:
 
     env:
       CMS_BASE_URL: ${{ secrets.CMS_BASE_URL || 'https://cms.pocsample.in' }}
-      CMS_ADMIN_EMAIL: ${{ secrets.CMS_ADMIN_EMAIL || 'dev@wilyer.com' }}
-      CMS_ADMIN_PASSWORD: ${{ secrets.CMS_ADMIN_PASSWORD || 'testdev' }}
+      CMS_ADMIN_EMAIL: ${{ secrets.CMS_ADMIN_EMAIL }}
+      CMS_ADMIN_PASSWORD: ${{ secrets.CMS_ADMIN_PASSWORD }}
       CMS_STRICT_MONITORS: 'false'
       CMS_FAIL_ON_SERVER_ERROR: 'true'
 

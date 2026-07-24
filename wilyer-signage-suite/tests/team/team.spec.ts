@@ -97,7 +97,7 @@ test.describe('Team · Boundary & validation', () => {
 
   test('duplicate email is rejected', async ({ teamPage, requireDestructive }) => {
     requireDestructive();
-    await teamPage.fillMember({ name: 'Dup', email: 'dev@wilyer.com', password: gen.PASSWORDS.min });
+    await teamPage.fillMember({ name: 'Dup', email: (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || ''), password: gen.PASSWORDS.min });
     await teamPage.submitButton.click();
     const blocked = (await teamPage.memberModalStillOpen()) || (await teamPage.toastVisible(/exist|already|duplicate|taken/i));
     expect(blocked).toBe(true);
@@ -122,23 +122,23 @@ test.describe('Team · Security', () => {
   test('deleting the last admin is prevented', async ({ teamPage, requireDestructive }) => {
     requireDestructive();
     await teamPage.open();
-    await teamPage.search(teamPage.searchBox, 'dev@wilyer.com');
-    const row = teamPage.rowWith('dev@wilyer.com').first();
+    await teamPage.search(teamPage.searchBox, (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || ''));
+    const row = teamPage.rowWith((process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '')).first();
     test.skip(!(await row.isVisible().catch(() => false)), 'Admin row not found');
     const del = row.getByRole('button', { name: /delete|remove/i }).first();
     test.skip(!(await del.isVisible().catch(() => false)), 'No delete control on admin row (already protected)');
     await del.click();
     await teamPage.confirm().catch(() => {});
     const prevented = (await teamPage.toastVisible(/cannot|last admin|at least one|not allowed|denied/i)) ||
-      (await teamPage.rowWith('dev@wilyer.com').first().isVisible().catch(() => false));
+      (await teamPage.rowWith((process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '')).first().isVisible().catch(() => false));
     expect(prevented, 'Last admin must not be deletable').toBe(true);
   });
 
   test('removing own admin role is guarded', async ({ teamPage }) => {
     await teamPage.open();
     // Best-effort: ensure the app exposes a guard; annotate the observed state.
-    await teamPage.search(teamPage.searchBox, 'dev@wilyer.com');
-    const row = teamPage.rowWith('dev@wilyer.com').first();
+    await teamPage.search(teamPage.searchBox, (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || ''));
+    const row = teamPage.rowWith((process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '')).first();
     const editable = await row.getByRole('button', { name: /edit/i }).first().isVisible().catch(() => false);
     test.info().annotations.push({ type: 'self-role', description: `own-account edit control present=${editable}` });
   });

@@ -2,8 +2,8 @@ import { test, expect } from '@playwright/test';
 
 // ─── Config ───────────────────────────────────────────────────────────────────
 const BASE_URL       = 'https://cms.pocsample.in/';
-const VALID_EMAIL    = 'dev@wilyer.com';
-const VALID_PASSWORD = 'testdev';
+const VALID_EMAIL    = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
+const VALID_PASSWORD = (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 
 // Common malicious payloads
 const SQLI_PAYLOAD = `' OR 1=1 --`;

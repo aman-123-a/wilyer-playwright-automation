@@ -47,8 +47,8 @@ export default function () {
 
   // 2. Exercise the auth endpoint under load (adjust path/payload to real API).
   const payload = JSON.stringify({
-    email: __ENV.CMS_ADMIN_EMAIL || 'dev@wilyer.com',
-    password: __ENV.CMS_ADMIN_PASSWORD || 'testdev',
+    email: __ENV.CMS_ADMIN_EMAIL || '',
+    password: __ENV.CMS_ADMIN_PASSWORD || '',
   });
   const res = http.post(`${BASE_URL}/api/login`, payload, {
     headers: { 'Content-Type': 'application/json' },

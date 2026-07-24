@@ -2,7 +2,7 @@
 
 - **Target:** https://cms2.pocsample.in  →  Library ▸ **Media Sets**
 - **Build:** v3.5.20
-- **Login:** dev@wilyer.com
+- **Login:** <admin — see local .env>
 - **Date:** 2026-07-09
 - **Tester:** Aman Kumar (automated via Playwright MCP / Chromium)
 - **Scope:** (1) Media-Sets **list search bar** (`Search…`), (2) Create page **Aspect Ratio filter** + orientation enforcement, and their interaction with the in-create `Search files…` box.

@@ -52,3 +52,8 @@ learn-playwright/regression-shots/
 # Temp scratch documents.
 temp_doc*.docx
 *.tmp
+
+# Auth / session storage-state in ANY sub-suite — contains live login cookies.
+**/.auth/
+# Real env files anywhere (only .env.example templates are tracked).
+**/.env

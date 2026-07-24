@@ -2,7 +2,7 @@
 
 - **API base:** `https://v3-5api.pocsample.in/v3/cms/prayer-schedule`
 - **Auth:** `Authorization: Bearer <JWT>` (extracted from live session; token discarded after test)
-- **Account:** dev@wilyer.com (role `user`, `isPrayerScheduleEnabled:true`, `prayerScheduleScreensLimit:2`) · **Date:** 2026-07-16
+- **Account:** <admin — see local .env> (role `user`, `isPrayerScheduleEnabled:true`, `prayerScheduleScreensLimit:2`) · **Date:** 2026-07-16
 - **Scope:** read + auth + validation + negative/routing cases. **No data mutated** (create calls used invalid bodies → 400).
 
 ## Result matrix
