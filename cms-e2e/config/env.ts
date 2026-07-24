@@ -29,8 +29,8 @@ export interface Credentials {
 }
 
 export const ENV = {
-  /** Application under test. */
-  BASE_URL: pick('CMS_BASE_URL', 'https://cms.pocsample.in'),
+  /** Application under test. — TARGET ENV: LIVE PRODUCTION (read-only). */
+  BASE_URL: pick('CMS_BASE_URL', 'https://cms.wilyersignage.com'),
 
   /** Admin / primary account (full access).
    *  Credentials are NEVER hardcoded — supply them via a local, gitignored
@@ -62,7 +62,10 @@ export const ENV = {
   },
 
   /** Behaviour toggles. */
-  ALLOW_DESTRUCTIVE: bool('CMS_ALLOW_DESTRUCTIVE', false),
+  // LIVE PRODUCTION branch: destructive/write tests are HARD-DISABLED here —
+  // the CMS_ALLOW_DESTRUCTIVE env var is intentionally ignored so no create /
+  // delete / mutation case can ever run against real signage.
+  ALLOW_DESTRUCTIVE: false as boolean,
   /** When true, monitors fail the test; when false they only warn. */
   STRICT_MONITORS: bool('CMS_STRICT_MONITORS', false),
 
