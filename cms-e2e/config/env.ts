@@ -29,7 +29,7 @@ export interface Credentials {
 }
 
 export const ENV = {
-  /** Application under test. */
+  /** Application under test. — TARGET ENV: cms (test server). */
   BASE_URL: pick('CMS_BASE_URL', 'https://cms.pocsample.in'),
 
   /** Admin / primary account (full access).
