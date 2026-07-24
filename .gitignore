@@ -27,3 +27,28 @@ node_modules/
 /reports/*.log
 # Added by code-review-graph
 .code-review-graph/
+
+# Secrets — ClickUp API token lives here; never commit.
+clickup-config.json
+
+# Local Chrome profile used by browser automation (~100MB, machine-specific).
+browser-data/
+
+# Generated HTML/report bundles from the learn-playwright sandbox.
+learn-playwright/playwright-report/
+learn-playwright/test-results/
+learn-playwright/node_modules/
+
+# Generated Playwright output across ALL sub-suites (traces, screenshots,
+# report bundles, run logs). ~1.5GB of artifacts — source is kept, output is not.
+**/test-results/
+**/playwright-report/
+**/allure-results/
+**/allure-report/
+search-suite/report/
+search-suite/*.log
+learn-playwright/regression-shots/
+
+# Temp scratch documents.
+temp_doc*.docx
+*.tmp

@@ -28,7 +28,10 @@ export default defineConfig({
     headless: true,
     viewport: { width: 1440, height: 900 },
     screenshot: 'only-on-failure
-    video: 'retain-on-failure',
+    
+    
+    
+    : 'retain-on-failure',
     trace: 'on-first-retry',
     actionTimeout: 15_000,
     navigationTimeout: 30_000,

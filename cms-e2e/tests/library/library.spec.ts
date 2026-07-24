@@ -116,21 +116,39 @@ test.describe('Library', () => {
   destructive('uploads a valid image and shows a new card @regression', async ({ libraryPage }) => {
     test.skip(!existsSync(MEDIA.validImage), `missing sample file: ${MEDIA.validImage}`);
     const before = await libraryPage.open().then(() => libraryPage.cardCount());
-    await libraryPage.uploadFiles(MEDIA.validImage);
-    await libraryPage.page.waitForTimeout(3_000);
+
+    // uploadFiles awaits the upload response (auto-started by setInputFiles)
+    // instead of a fixed sleep. When an app-origin POST is observed, assert it
+    // succeeded; a null status means the upload went straight to a third-party
+    // store, in which case the grid-count poll below is the source of truth.
+    const status = await libraryPage.uploadFiles(MEDIA.validImage);
+    if (status !== null) expect(status, 'upload request should succeed').toBeLessThan(400);
+
     await libraryPage.closeUploadDialog();
-    expect(await libraryPage.cardCount()).toBeGreaterThanOrEqual(before);
+    await libraryPage.waitForGridSettled();
+    // Strictly greater: a silent no-op upload leaves the count unchanged and
+    // must NOT pass. (If the app dedupes identical uploads this will surface it.)
+    await expect
+      .poll(() => libraryPage.cardCount(), { timeout: 15_000 })
+      .toBeGreaterThan(before);
   });
 
   destructive('rejects an unsupported file format @regression', async ({ libraryPage }) => {
     test.skip(!existsSync(MEDIA.unsupported), `missing sample file: ${MEDIA.unsupported}`);
     await libraryPage.open();
-    await libraryPage.uploadFiles(MEDIA.unsupported);
-    // App should surface a rejection/error rather than create a card.
+    const before = await libraryPage.cardCount();
+    // The app may reject the bad extension client-side (no upload POST), so skip
+    // the network wait and let the assertions below drive the wait.
+    await libraryPage.uploadFiles(MEDIA.unsupported, { waitForUpload: false });
+    // App should surface a rejection message. Scoped terms only — a bare /error/i
+    // would match unrelated page text (footer, aria labels) and false-pass.
     await expect(
-      libraryPage.page.getByText(/not supported|invalid|allowed|format|error/i).first(),
+      libraryPage.page.getByText(/not supported|unsupported|invalid file|not allowed|allowed formats?/i).first(),
     ).toBeVisible({ timeout: 15_000 });
+    // Hard signal: the rejected file must NOT have produced a new card.
     await libraryPage.closeUploadDialog();
+    await libraryPage.waitForGridSettled();
+    expect(await libraryPage.cardCount(), 'rejected upload must not create a card').toBe(before);
   });
 
   test.skip('placeholder: drag-and-drop upload — needs DataTransfer harness', async () => {

@@ -18,7 +18,8 @@ cp .env.cms.example .env.cms      # then edit; or just use the built-in defaults
 # 2. install browsers (first time only)
 npm run playwright:install
 
-# 3. run the whole suite
+# 3. run the 
+
 npm run cms
 
 # 4. open the HTML report (with trace viewer + videos)

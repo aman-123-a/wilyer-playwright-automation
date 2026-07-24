@@ -1,7 +1,8 @@
 // =============================================================================
 //  LibraryPage — media library at /library.
 //  Selectors verified live against cms.pocsample.in:
-//   • Upload trigger: button "Upload Files" → dialog with #uploadFileInput
+//   • Upload trigger: button "Upload Media" (older builds: "Upload Files")
+//     → dialog with #uploadFileInput
 //     (accept .jpg/.jpeg/.png/.mp4, multiple). setInputFiles auto-starts upload;
 //     there is no separate confirm button — closing the dialog == done.
 //   • Type filters: buttons All / Videos / Photos.   Search: placeholder "Search...".
@@ -10,8 +11,9 @@
 //   • Per-card: text IMAGE|VIDEO, a[href^="/file-details/"], a "Delete" button.
 // =============================================================================
 
-import { type Locator, expect } from '@playwright/test';
+import { type Locator, type Response, expect } from '@playwright/test';
 import { BasePage } from './BasePage';
+import { ENV } from '../config/env';
 
 export class LibraryPage extends BasePage {
   readonly heading: Locator;
@@ -33,7 +35,7 @@ export class LibraryPage extends BasePage {
   constructor(page: BasePage['page']) {
     super(page);
     this.heading = page.getByRole('heading', { name: /^library$/i });
-    this.uploadFilesBtn = page.getByRole('button', { name: /upload files/i });
+    this.uploadFilesBtn = page.getByRole('button', { name: /upload (media|files)/i });
     this.createFolderBtn = page.getByRole('button', { name: /create folder/i });
 
     this.filterAll = page.getByRole('button', { name: /^all$/i });
@@ -97,7 +99,7 @@ export class LibraryPage extends BasePage {
   }
 
   /** Wait for the in-grid "Loading media files..." overlay to clear. */
-  private async waitForGridSettled(): Promise<void> {
+  async waitForGridSettled(): Promise<void> {
     await this.page
       .getByText(/loading media files/i)
       .first()
@@ -136,11 +138,40 @@ export class LibraryPage extends BasePage {
    * Upload one or more files via the hidden input (auto-starts). setInputFiles
    * bypasses the OS dialog AND the `accept` filter, so this also drives the
    * unsupported-format rejection path.
+   *
+   * With `waitForUpload` (default) the listener is armed BEFORE the file is
+   * injected — the upload POST auto-starts on setInputFiles — and we await the
+   * server's response instead of a fixed sleep. Returns the upload HTTP status,
+   * or null if no app-origin upload POST was observed within the timeout (e.g.
+   * a client-side rejection, or a presigned-S3 PUT to a third-party origin).
+   * Pass `{ waitForUpload: false }` for flows the app rejects without a round
+   * trip, so the call returns immediately.
    */
-  async uploadFiles(paths: string | string[]): Promise<this> {
+  async uploadFiles(
+    paths: string | string[],
+    opts: { waitForUpload?: boolean } = {},
+  ): Promise<number | null> {
+    const { waitForUpload = true } = opts;
     await this.openUploadDialog();
+
+    const responsePromise = waitForUpload
+      ? this.page
+          .waitForResponse((res) => this.isUploadResponse(res), { timeout: 30_000 })
+          .catch(() => null)
+      : Promise.resolve(null);
+
     await this.fileInput.setInputFiles(paths);
-    return this;
+    const res = await responsePromise;
+    return res ? res.status() : null;
+  }
+
+  /** True for the multipart file-upload POST to the app origin. */
+  private isUploadResponse(res: Response): boolean {
+    const req = res.request();
+    if (req.method() !== 'POST') return false;
+    if (!res.url().startsWith(ENV.BASE_URL)) return false;
+    const contentType = req.headers()['content-type'] ?? '';
+    return /multipart\/form-data/i.test(contentType) || /upload|media|file/i.test(res.url());
   }
 
   async closeUploadDialog(): Promise<this> {

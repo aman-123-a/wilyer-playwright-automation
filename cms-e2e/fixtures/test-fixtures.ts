@@ -12,12 +12,14 @@ import { test as base, expect } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 import { DashboardPage } from '../pages/DashboardPage';
 import { LibraryPage } from '../pages/LibraryPage';
+import { MediaSetsPage } from '../pages/MediaSetsPage';
 import { ScreensPage } from '../pages/ScreensPage';
 import { GroupsPage } from '../pages/GroupsPage';
 import { PlaylistsPage } from '../pages/PlaylistsPage';
 import { ReportsPage } from '../pages/ReportsPage';
 import { BillingPage } from '../pages/BillingPage';
 import { TeamPage } from '../pages/TeamPage';
+import { PrayerSchedulePage } from '../pages/PrayerSchedulePage';
 import { ConsoleMonitor } from '../utils/consoleMonitor';
 import { ApiMonitor } from '../utils/apiMonitor';
 
@@ -25,12 +27,14 @@ interface Pages {
   loginPage: LoginPage;
   dashboardPage: DashboardPage;
   libraryPage: LibraryPage;
+  mediaSetsPage: MediaSetsPage;
   screensPage: ScreensPage;
   groupsPage: GroupsPage;
   playlistsPage: PlaylistsPage;
   reportsPage: ReportsPage;
   billingPage: BillingPage;
   teamPage: TeamPage;
+  prayerSchedulePage: PrayerSchedulePage;
 }
 
 interface Monitors {
@@ -62,6 +66,10 @@ export const test = base.extend<Pages & Monitors>({
     await use(new LibraryPage(page));
   },
 
+  mediaSetsPage: async ({ page }, use) => {
+    await use(new MediaSetsPage(page));
+  },
+
   screensPage: async ({ page }, use) => {
     await use(new ScreensPage(page));
   },
@@ -84,6 +92,10 @@ export const test = base.extend<Pages & Monitors>({
 
   teamPage: async ({ page }, use) => {
     await use(new TeamPage(page));
+  },
+
+  prayerSchedulePage: async ({ page }, use) => {
+    await use(new PrayerSchedulePage(page));
   },
 });
 

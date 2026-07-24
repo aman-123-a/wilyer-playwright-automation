@@ -44,15 +44,15 @@ export const ENV = {
 
   // Production reference build — used by comparison.spec.js to diff the merged
   // staging build against known-good prod behaviour (UI, features, console, perf).
-  PROD_URL: pick('CMS_PROD_URL', 'https://cms.wilyersignage.com'),
+  PROD_URL: pick('CMS_PROD_URL', 'https://cms.pocsample.in'),
 
   // Admin / primary account (full access)
   ADMIN_EMAIL: pick('CMS_ADMIN_EMAIL', 'dev@wilyer.com'),
   ADMIN_PASSWORD: pick('CMS_ADMIN_PASSWORD', 'testdev'),
 
   // Sub-user account (scoped / restricted access) — used by folder-scoping tests
-  SUBUSER_EMAIL: pick('CMS_SUBUSER_EMAIL', 'subuser@wilyer.com'),
-  SUBUSER_PASSWORD: pick('CMS_SUBUSER_PASSWORD', '12345'),
+  SUBUSER_EMAIL: pick('CMS_SUBUSER_EMAIL', 'dev@wilyer.com'),
+  SUBUSER_PASSWORD: pick('CMS_SUBUSER_PASSWORD', 'testdev'),
 
   // Thresholds (ms) — overridable per environment / CI hardware
   PERF_PAGE_LOAD_MS: Number(pick('CMS_PERF_PAGE_LOAD_MS', 5000)),

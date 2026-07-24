@@ -1,0 +1,122 @@
+[
+  {
+    "id": "AL-001",
+    "scenario": "Widget Name blank",
+    "type": "Negative",
+    "expect": "REJECT",
+    "name": "",
+    "url": "https://docs.google.com/spreadsheets/d/1FyGemEABydKj_KmnMEvA6OyqKUTCxAbkSdizGc5AiJY/edit?usp=sharing",
+    "outcome": "REJECTED",
+    "verdict": "FAIL",
+    "detail": "dialog stayed open (save blocked)",
+    "crashed": true
+  },
+  {
+    "id": "AL-002",
+    "scenario": "URL blank",
+    "type": "Negative",
+    "expect": "OBSERVE",
+    "name": "AL_002_1784531041882",
+    "url": "",
+    "outcome": "ACCEPTED",
+    "verdict": "FAIL",
+    "detail": "dialog closed — widget created",
+    "crashed": true
+  },
+  {
+    "id": "AL-003",
+    "scenario": "Invalid URL (abcd)",
+    "type": "Negative",
+    "expect": "REJECT",
+    "name": "AL_003_1784531041882",
+    "url": "abcd",
+    "outcome": "ACCEPTED",
+    "verdict": "FAIL",
+    "detail": "dialog closed — widget created",
+    "crashed": true
+  },
+  {
+    "id": "AL-004",
+    "scenario": "URL without protocol",
+    "type": "Edge",
+    "expect": "OBSERVE",
+    "name": "AL_004_1784531041882",
+    "url": "google.com",
+    "outcome": "ACCEPTED",
+    "verdict": "FAIL",
+    "detail": "dialog closed — widget created",
+    "crashed": true
+  },
+  {
+    "id": "AL-005",
+    "scenario": "HTTP URL",
+    "type": "Edge",
+    "expect": "OBSERVE",
+    "name": "AL_005_1784531041882",
+    "url": "http://test.com",
+    "outcome": "ACCEPTED",
+    "verdict": "FAIL",
+    "detail": "dialog closed — widget created",
+    "crashed": true
+  },
+  {
+    "id": "AL-006",
+    "scenario": "Unsupported protocol (ftp)",
+    "type": "Negative",
+    "expect": "OBSERVE",
+    "name": "AL_006_1784531041882",
+    "url": "ftp://server.com",
+    "outcome": "ACCEPTED",
+    "verdict": "FAIL",
+    "detail": "dialog closed — widget created",
+    "crashed": true
+  },
+  {
+    "id": "AL-007",
+    "scenario": "Name only spaces",
+    "type": "Negative",
+    "expect": "REJECT",
+    "name": "   ",
+    "url": "https://docs.google.com/spreadsheets/d/1FyGemEABydKj_KmnMEvA6OyqKUTCxAbkSdizGc5AiJY/edit?usp=sharing",
+    "outcome": "ACCEPTED",
+    "verdict": "FAIL",
+    "detail": "dialog closed — widget created",
+    "crashed": true
+  },
+  {
+    "id": "AL-008",
+    "scenario": "Name with emoji",
+    "type": "Edge",
+    "expect": "ACCEPT",
+    "name": "AL008_🚀_1784531041882",
+    "url": "https://docs.google.com/spreadsheets/d/1FyGemEABydKj_KmnMEvA6OyqKUTCxAbkSdizGc5AiJY/edit?usp=sharing",
+    "outcome": "ACCEPTED",
+    "verdict": "FAIL",
+    "detail": "dialog closed — widget created",
+    "crashed": true
+  },
+  {
+    "id": "AL-009",
+    "scenario": "Very long name (500 chars)",
+    "type": "Edge",
+    "expect": "OBSERVE",
+    "name": "Lxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx_882",
+    "url": "https://docs.google.com/spreadsheets/d/1FyGemEABydKj_KmnMEvA6OyqKUTCxAbkSdizGc5AiJY/edit?usp=sharing",
+    "outcome": "ACCEPTED",
+    "verdict": "FAIL",
+    "detail": "dialog closed — widget created",
+    "crashed": true
+  },
+  {
+    "id": "AL-010",
+    "scenario": "SQL injection in name",
+    "type": "Security",
+    "expect": "ACCEPT",
+    "name": "' OR 1=1-- 1784531041882",
+    "url": "https://docs.google.com/spreadsheets/d/1FyGemEABydKj_KmnMEvA6OyqKUTCxAbkSdizGc5AiJY/edit?usp=sharing",
+    "outcome": "ACCEPTED",
+    "verdict": "FAIL",
+    "detail": "dialog closed — widget created",
+    "crashed": true
+  }
+]

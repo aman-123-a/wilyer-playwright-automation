@@ -1,0 +1,83 @@
+{
+  "cookies": [
+    {
+      "name": "_GRECAPTCHA",
+      "value": "09AKhCRwgLAJSnem3Kdy5gFGObdDTEohBIhJhYAVOIMux0PnHfvk3RR5qNj7aczdxh__i05jS_Nq2HAc4y_MOGxEo",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1798432215.631561,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "rzp_unified_session_id",
+      "value": "T86gdCQyOkRAdy",
+      "domain": "cms.wilyersignage.com",
+      "path": "/",
+      "expires": 1782881981,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "footprint",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMjYzYzFlMTRmNWE3MmVlMWJkZjM5NSIsInVzZXJJZCI6IjYyMjYzYzFlMTRmNWE3MmVlMWJkZjM5NSIsImVtYWlsIjoiZGV2QHdpbHllci5jb20iLCJuYW1lIjoiRGV2ICIsInJvbGUiOiJ1c2VyIiwicGFydG5lciI6IjYyMmVlNjFiZThjNmUxNmViMGE4MjQ3MyIsImlzRG9vaEVuYWJsZWQiOnRydWUsImlzQWRhcHRpdmVDb250ZW50RW5hYmxlZCI6dHJ1ZSwiaXM0a1ZpZGVvRW5hYmxlZCI6dHJ1ZSwiaXNDbHVzdGVyRW5hYmxlZCI6dHJ1ZSwiaXNIZG1pRW5hYmxlZCI6dHJ1ZSwiaXNUd29GQSI6ZmFsc2UsImlzUGxheWxpc3RGb2xkZXJFbmFibGVkIjp0cnVlLCJhY2Nlc3MiOnt9LCJpc1Jlc3RyaWN0ZWRBY2Nlc3MiOmZhbHNlLCJpc01lZGlhU2V0RW5hYmxlZCI6ZmFsc2UsImlzRHluYW1pY0NyZWF0aXZlQXBpQWNjZXNzRW5hYmxlZCI6ZmFsc2UsImZpbGVVcGxvYWRTZXJ2ZXIiOiJzMyIsImlzQmlydGhkYXlXaWRnZXRFbmFibGVkIjp0cnVlLCJpc0NsdXN0ZXJTY3JlZW5zTGltaXRFbmFibGVkIjpmYWxzZSwiY2x1c3RlclNjcmVlbnNMaW1pdCI6NSwiaXNIb3NwaXRhbGl0eVR2RW5hYmxlZCI6dHJ1ZSwiaXNDb250ZW50Um9sbG91dEVuYWJsZWQiOmZhbHNlLCJpc1RyaWdnZXJFbmFibGVkIjp0cnVlLCJpYXQiOjE3ODI4ODAyMTIsImV4cCI6MTc4Mjk2NjYxMn0.WaFDLZyp8ySBLPVqflK2Rng06fyZ22L4oGJOCYYRWfE",
+      "domain": "cms.wilyersignage.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://cms.wilyersignage.com",
+      "localStorage": [
+        {
+          "name": "rzp_device_id",
+          "value": "1.2128985ef627ea5a6368c8579b3d17a49688e792.1782880181906.66071286"
+        },
+        {
+          "name": "email",
+          "value": "dev@wilyer.com"
+        },
+        {
+          "name": "sidebar",
+          "value": "visible"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AKhCRwh9Ap8fDa2FVJ2Qw8pFm9Zxzg11tyD6c8a5h0jmYX8nCcywLuGtfjnMeZhS0pCcFnkptmtXs1HVlWK8ccHdvYGMmw0Zt4Bu4F1NwvqRrupx3RJi8qP0JYDHOO4t"
+        },
+        {
+          "name": "rzp_checkout_anon_id",
+          "value": "cd37cc175d654768a94948f589f04059"
+        }
+      ]
+    },
+    {
+      "origin": "https://api.razorpay.com",
+      "localStorage": [
+        {
+          "name": "rzp_device_id",
+          "value": "1.2128985ef627ea5a6368c8579b3d17a49688e792.1782880182114.97390349"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "MW15NTR4MTIybjkyZA=="
+        },
+        {
+          "name": "rc::f",
+          "value": "0aAD5oO35H6sXRlyXjLNXDen6QqmuthznItc_eRzBCzosUWuCfOMuEugchmO9WDmUZOyrvHrc"
+        }
+      ]
+    }
+  ]
+}

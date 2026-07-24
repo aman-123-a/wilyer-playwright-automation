@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aman Kumar — ClickUp Work Report 2025–2026</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #fff;
+    padding: 0;
+  }
+
+  /* Cover strip */
+  .cover {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
+    color: white;
+    padding: 36px 48px 28px;
+    margin-bottom: 28px;
+    border-radius: 0 0 12px 12px;
+    page-break-after: avoid;
+  }
+  .cover h1 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 6px;
+    color: #fff;
+    border: none;
+    padding: 0;
+  }
+  .cover .subtitle { font-size: 12px; color: #a8b2d8; margin-bottom: 14px; }
+  .cover .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 16px;
+  }
+  .cover .meta-item { background: rgba(255,255,255,0.08); border-radius: 8px; padding: 10px 12px; }
+  .cover .meta-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: #7b8db0; margin-bottom: 3px; }
+  .cover .meta-value { font-size: 13px; font-weight: 600; color: #e8eaf6; }
+
+  .content { padding: 0 48px 40px; }
+
+  h1 { display: none; } /* covered by .cover */
+  h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f3460;
+    margin: 28px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e8edf5;
+    page-break-after: avoid;
+  }
+  h3 {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 18px 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    page-break-after: avoid;
+  }
+  h3::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 14px;
+    background: linear-gradient(180deg, #e94560, #0f3460);
+    border-radius: 2px;
+  }
+  h4 {
+    font-size: 11px;
+    font-weight: 600;
+    color: #16213e;
+    margin: 14px 0 6px;
+    page-break-after: avoid;
+  }
+
+  p { margin: 6px 0 8px; color: #2d3748; }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 16px;
+    font-size: 10px;
+    page-break-inside: auto;
+  }
+  thead tr {
+    background: linear-gradient(90deg, #0f3460, #16213e);
+    color: white;
+  }
+  th {
+    padding: 7px 10px;
+    font-weight: 600;
+    text-align: left;
+    font-size: 9.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #edf2f7;
+    vertical-align: top;
+  }
+  tbody tr:nth-child(even) { background: #f7fafc; }
+  tbody tr:hover { background: #ebf4ff; }
+
+  /* Status badges */
+  td:nth-child(4), td:nth-child(3) {
+    white-space: nowrap;
+  }
+
+  /* Links */
+  a { color: #0f3460; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* Code */
+  code {
+    font-family: 'JetBrains Mono', monospace;
+    background: #f0f4f8;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 9.5px;
+    color: #e94560;
+  }
+  pre {
+    background: #1a1a2e;
+    color: #a8b2d8;
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9.5px;
+    line-height: 1.7;
+    margin: 10px 0 14px;
+    overflow-x: auto;
+    white-space: pre;
+  }
+  pre code { background: none; color: inherit; padding: 0; }
+
+  /* Lists */
+  ul, ol { padding-left: 18px; margin: 6px 0 10px; }
+  li { margin-bottom: 3px; color: #2d3748; }
+
+  /* Blockquote */
+  blockquote {
+    border-left: 3px solid #e94560;
+    margin: 10px 0;
+    padding: 8px 14px;
+    background: #fff5f5;
+    border-radius: 0 6px 6px 0;
+    color: #555;
+    font-style: italic;
+  }
+
+  hr { border: none; border-top: 1px solid #e8edf5; margin: 20px 0; }
+
+  strong { font-weight: 600; color: #1a1a2e; }
+
+  /* Summary cards for the top stats */
+  .stat-card {
+    display: inline-block;
+    background: linear-gradient(135deg, #f7fafc, #edf2f7);
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin: 4px;
+    text-align: center;
+    min-width: 100px;
+  }
+
+  /* Page breaks */
+  h2 { page-break-before: auto; }
+
+  @page {
+    size: A4;
+    margin: 15mm 15mm 15mm 15mm;
+  }
+
+  @media print {
+    body { background: white; }
+    .cover { border-radius: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>Aman Kumar — ClickUp Work Report</h1>
+  <div class="subtitle">CMS Platform · cms.pocsample.in / Wilyer Signage · Live API Pull</div>
+  <div class="meta-grid">
+    <div class="meta-item">
+      <div class="meta-label">Period</div>
+      <div class="meta-value">Aug 7, 2025 – Jul 23, 2026</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Total Tasks</div>
+      <div class="meta-value">1,723</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Shipped / Done</div>
+      <div class="meta-value">~783 (45%)</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Platforms</div>
+      <div class="meta-value">Android · LG · Samsung · RPi · On-Prem</div>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+<h1>Aman Kumar — ClickUp Work Report</h1>
+<strong>Period:</strong> 7 Aug 2025 – 23 Jul 2026  
+<strong>Space:</strong> CMS · <code>cms.pocsample.in</code> / Wilyer Signage  
+<strong>Generated:</strong> 2026-07-23  
+<strong>Source:</strong> Live ClickUp API pull across all folders & lists
+
+<hr>
+
+<h2>Executive Summary</h2>
+
+<table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td><strong>Total Tasks Tracked</strong></td><td><strong>1,723</strong></td></tr><tr><td><strong>Folders Scanned</strong></td><td>14</td></tr><tr><td><strong>Lists Scanned</strong></td><td>50+</td></tr><tr><td><strong>Period</strong></td><td>7 Aug 2025 → 23 Jul 2026 (~11.5 months)</td></tr><tr><td><strong>Platforms Covered</strong></td><td>Android, WebOS/LG, Samsung/Tizen, Raspberry Pi, On-Premise, CMS, RBAC, Widgets</td></tr></tbody></table>
+<hr>
+
+<h2>Overall Status Breakdown</h2>
+
+<table><thead><tr><th>Status</th><th>Count</th><th>%</th></tr></thead><tbody><tr><td>✅ shipped</td><td>699</td><td>40.6%</td></tr><tr><td>🗂 backlog</td><td>373</td><td>21.6%</td></tr><tr><td>🔵 Open</td><td>99</td><td>5.7%</td></tr><tr><td>💡 conceptual</td><td>97</td><td>5.6%</td></tr><tr><td>🔨 in development</td><td>66</td><td>3.8%</td></tr><tr><td>🔍 scoping</td><td>58</td><td>3.4%</td></tr><tr><td>🚀 ready for deployment</td><td>42</td><td>2.4%</td></tr><tr><td>🧪 testing</td><td>35</td><td>2.0%</td></tr><tr><td>🎉 released</td><td>33</td><td>1.9%</td></tr><tr><td>💭 ideation</td><td>31</td><td>1.8%</td></tr><tr><td>🏗 development</td><td>26</td><td>1.5%</td></tr><tr><td>▶ in progress</td><td>20</td><td>1.2%</td></tr><tr><td>📋 documentation</td><td>12</td><td>0.7%</td></tr><tr><td>👀 in review</td><td>11</td><td>0.6%</td></tr><tr><td>✔ completed / done</td><td>21</td><td>1.2%</td></tr><tr><td>🔖 planning</td><td>11</td><td>0.6%</td></tr><tr><td>🩹 software patch</td><td>11</td><td>0.6%</td></tr><tr><td>❌ cancelled</td><td>5</td><td>0.3%</td></tr><tr><td>⏸ onhold</td><td>2</td><td>0.1%</td></tr><tr><td>_Other statuses_</td><td>~21</td><td>~1.2%</td></tr></tbody></table>
+<blockquote><strong>~783 tasks (45%)</strong> are in a completed/shipped/released/done state — strong delivery rate over the period.</blockquote>
+
+<hr>
+
+<h2>Platform & Module Coverage</h2>
+
+<table><thead><tr><th>Platform / Module</th><th>Tasks</th><th>Key Lists</th></tr></thead><tbody><tr><td>🤖 <strong>Android</strong></td><td>184</td><td>Android App, Android Player, Android Improvements, Ops Android App</td></tr><tr><td>📺 <strong>WebOS / LG</strong></td><td>29</td><td>LG & Samsung bug, Functional & Integration Enhancements</td></tr><tr><td>📡 <strong>Samsung / Tizen</strong></td><td>10</td><td>LG & Samsung bug, Compatibility</td></tr><tr><td>🍓 <strong>Raspberry Pi / On-Premise</strong></td><td>11</td><td>On-premise, Product Enhancements</td></tr><tr><td>🏢 <strong>On Premise (CMS)</strong></td><td>7</td><td>On Primse bug</td></tr><tr><td>🕌 <strong>Prayer Schedule</strong></td><td>38</td><td>Prayer Schedule (2026 Sprints)</td></tr><tr><td>🔐 <strong>RBAC / Group-in-Group / Folder System</strong></td><td>422</td><td>RBAC / Group in Group, Rbac Merge bug</td></tr><tr><td>🧩 <strong>Widgets / Auto Login</strong></td><td>74</td><td>Auto Login Widgets, Media Sets, Sequences</td></tr><tr><td>🌐 <strong>CMS / General</strong></td><td>667</td><td>POCS Sample, CMS Live, CMS Improvements, Bugs (all months)</td></tr><tr><td>📦 <strong>Other</strong></td><td>281</td><td>Feature Plans, Research, Dashboard, etc.</td></tr></tbody></table>
+<hr>
+
+<h2>🤖 Android (184 tasks)</h2>
+
+<strong>Lists:</strong> <code>Player Apps / Android App</code> · <code>QA Bugs List / Android Player</code> · <code>2026 Support Team / Android Improvements</code> · <code>ERP-Squad / Ops Android App</code>
+
+<h3>Key Highlights</h3>
+<ul><li><strong>Ops Android App</strong> (Aug 2025): Full on-boarding workflow — screen profiles, outlet management, QR code SIM scan, installation flows (44 tasks)</li><li><strong>Android Player bugs</strong> (Dec 2025–Jul 2026): Boot delay, cache clearing, PDF issues, HDMI layout bugs, rotation, GeckoView engine</li><li><strong>Android Improvements</strong> (Apr–Jun 2026): Navigation bar, screen rotation, dot indicator, clear cache, custom file downloader, live data sync</li><li><strong>July 2026 batch</strong> (ready for deployment): 36 fixes in one release — PDF ANR, black screen heal, RTMP crashes, GeckoView failures, web auto-login, VLC engine</li></ul>
+
+<h3>Status Split</h3>
+
+<table><thead><tr><th>Status</th><th>Count</th></tr></thead><tbody><tr><td>ready for deployment</td><td>36</td></tr><tr><td>backlog</td><td>48</td></tr><tr><td>shipped</td><td>23</td></tr><tr><td>in development</td><td>13</td></tr><tr><td>testing</td><td>12</td></tr><tr><td>scoping</td><td>7</td></tr><tr><td>other</td><td>45</td></tr></tbody></table>
+<h3>Notable Tasks</h3>
+<table><thead><tr><th>Task</th><th>Status</th><th>Link</th></tr></thead><tbody><tr><td>Fix PDF ANR (900+ pages)</td><td>ready for deployment</td><td><a href="https://app.clickup.com/t/86d3r87kz">↗</a></td></tr><tr><td>Fix GeckoView init failure</td><td>ready for deployment</td><td><a href="https://app.clickup.com/t/86d3r87qj">↗</a></td></tr><tr><td>Fix web auto-login skipped on some sites</td><td>ready for deployment</td><td><a href="https://app.clickup.com/t/86d3r87qx">↗</a></td></tr><tr><td>VLC LIVE engine</td><td>ready for deployment</td><td><a href="https://app.clickup.com/t/86d3r87at">↗</a></td></tr><tr><td>Black Screen Auto-Heal</td><td>ready for deployment</td><td><a href="https://app.clickup.com/t/86d3r8780">↗</a></td></tr><tr><td>Layout Flip Positions Mismatch in Multi-layout</td><td>in review (Urgent)</td><td><a href="https://app.clickup.com/t/86d1m4qn7">↗</a></td></tr><tr><td>HDMI Triggered Layout & Change Playlist</td><td>in review</td><td><a href="https://app.clickup.com/t/86d3bj4kr">↗</a></td></tr><tr><td>Dynamic Custom File Downloader with Remote Screen Config</td><td>ready for deployment</td><td><a href="https://app.clickup.com/t/86d1m4quu">↗</a></td></tr><tr><td>Schedule Brightness not working on APK 115</td><td>testing</td><td><a href="https://app.clickup.com/t/86d318etb">↗</a></td></tr><tr><td>QA Test Execution — v3.11.7</td><td>backlog</td><td><a href="https://app.clickup.com/t/86d35a3j2">↗</a></td></tr></tbody></table>
+<hr>
+
+<h2>📺 WebOS / LG (29 tasks)</h2>
+
+<strong>Lists:</strong> <code>LG & Samsung bug</code> · <code>Functional and Integration Enhancements</code> · <code>Bugs - Feb (2026)</code>
+
+<h3>Key Highlights</h3>
+<ul><li>LG & Samsung consumer TV + hospitality compatibility testing</li><li>YouTube widget volume, screen rotation, storage information bugs</li><li>Online/offline status mismatch (WebOS shows green incorrectly)</li><li>PDF playback support on LG and Tizen platforms</li></ul>
+
+<h3>Notable Tasks</h3>
+<table><thead><tr><th>Task</th><th>Status</th><th>Link</th></tr></thead><tbody><tr><td>WebOS server connection status incorrectly shows green</td><td>backlog (High)</td><td><a href="https://app.clickup.com/t/86d3jrckw">↗</a></td></tr><tr><td>LG TV – YouTube Widget Volume Issue</td><td>backlog</td><td><a href="https://app.clickup.com/t/86d373ufn">↗</a></td></tr><tr><td>LG TV – Screen Rotation Issue</td><td>backlog</td><td><a href="https://app.clickup.com/t/86d373uff">↗</a></td></tr><tr><td>Support PDF playback on LG and Tizen</td><td>backlog</td><td><a href="https://app.clickup.com/t/86d3j46yy">↗</a></td></tr><tr><td>Online/Offline Status Sync (Tizen & LG)</td><td>backlog (Normal)</td><td><a href="https://app.clickup.com/t/86d3jre41">↗</a></td></tr><tr><td>Hospitality TV Development on Samsung + LG</td><td>waiting for resource</td><td><a href="https://app.clickup.com/t/86d2pfxj8">↗</a></td></tr></tbody></table>
+<hr>
+
+<h2>📡 Samsung / Tizen (10 tasks)</h2>
+
+<strong>Lists:</strong> <code>LG & Samsung bug</code> · <code>Compatibility / Imported from Spreadsheet</code>
+
+<h3>Notable Tasks</h3>
+<table><thead><tr><th>Task</th><th>Status</th><th>Link</th></tr></thead><tbody><tr><td>Screen deactivation not reflected on Samsung Tizen</td><td>backlog</td><td><a href="https://app.clickup.com/t/86d1a5n3y">↗</a></td></tr><tr><td>Screen Deactivation on Samsung Tizen Devices</td><td>backlog (Normal)</td><td><a href="https://app.clickup.com/t/86d3jre3r">↗</a></td></tr><tr><td>Samsung & LG New Model Support</td><td>backlog (Normal)</td><td><a href="https://app.clickup.com/t/86d3jre8g">↗</a></td></tr><tr><td>Fix bad storage readings (Total = 0 / N/A)</td><td>scoping (Normal)</td><td><a href="https://app.clickup.com/t/86d3rpdja">↗</a></td></tr><tr><td>Samsung v6/v7 compatibility (×6)</td><td>Open/Closed</td><td>[various]</td></tr></tbody></table>
+<hr>
+
+<h2>🍓 Raspberry Pi / On-Premise (11 tasks)</h2>
+
+<strong>Lists:</strong> <code>On-premise / List</code> · <code>Product Enhancements & Stability Improvement Report</code> · <code>Feature Plans</code>
+
+<h3>Notable Tasks</h3>
+<table><thead><tr><th>Task</th><th>Status</th><th>Link</th></tr></thead><tbody><tr><td>Folder functionality missing under Playlists</td><td>shipped</td><td><a href="https://app.clickup.com/t/86d1muy37">↗</a></td></tr><tr><td>Playlist not published after adding sequences to a zone</td><td>backlog</td><td><a href="https://app.clickup.com/t/86d1xdn5u">↗</a></td></tr><tr><td>Cloud-only features visible in on-prem environments</td><td>backlog</td><td><a href="https://app.clickup.com/t/86d1a5uhd">↗</a></td></tr><tr><td>Amazon SignageStick + Raspberry Pi Development</td><td>yet to start</td><td><a href="https://app.clickup.com/t/86d3bj4r0">↗</a></td></tr><tr><td>On-Prem Demo Environment</td><td>backlog (Normal)</td><td><a href="https://app.clickup.com/t/86d3jre7v">↗</a></td></tr><tr><td>On-Prem Player Build Update</td><td>backlog (Normal)</td><td><a href="https://app.clickup.com/t/86d3jre7r">↗</a></td></tr></tbody></table>
+<hr>
+
+<h2>🏢 On Premise — CMS (7 tasks)</h2>
+
+<strong>List:</strong> <code>2026 Support Team / On Primse bug</code>
+
+<p>All 7 tasks raised <strong>Jul 2026</strong>, currently <strong>backlog</strong>:</p>
+
+<table><thead><tr><th>Task</th><th>Link</th></tr></thead><tbody><tr><td>Dashboard storage accuracy issues</td><td><a href="https://app.clickup.com/t/86d3j4cvt">↗</a></td></tr><tr><td>Remove license expiry dates for perpetual licenses</td><td><a href="https://app.clickup.com/t/86d3j4cuw">↗</a></td></tr><tr><td>MDM should be removed from Admin page</td><td><a href="https://app.clickup.com/t/86d3j4cuc">↗</a></td></tr><tr><td>"Change Email" and "2FA" features non-functional</td><td><a href="https://app.clickup.com/t/86d3j4ctd">↗</a></td></tr><tr><td>Public network uploads prevent file access</td><td><a href="https://app.clickup.com/t/86d3j4cqz">↗</a></td></tr><tr><td>Troubleshooting settings don't match standard CMS options</td><td><a href="https://app.clickup.com/t/86d3j4cq0">↗</a></td></tr><tr><td>General instability: custom file downloader, hardware changes</td><td><a href="https://app.clickup.com/t/86d3j4cfq">↗</a></td></tr></tbody></table>
+<hr>
+
+<h2>🕌 Prayer Schedule (38 tasks)</h2>
+
+<strong>List:</strong> <code>2026 Sprints / Prayer Schedule</code> (Jul 2026 major sprint)
+
+<h3>Status Split</h3>
+
+<table><thead><tr><th>Status</th><th>Count</th></tr></thead><tbody><tr><td>shipped</td><td>22</td></tr><tr><td>backlog</td><td>5</td></tr><tr><td>scoping</td><td>3</td></tr><tr><td>done</td><td>1</td></tr><tr><td>cancelled</td><td>1</td></tr><tr><td>development</td><td>2</td></tr></tbody></table>
+<h3>Key Bugs Fixed (shipped)</h3>
+<table><thead><tr><th>Task</th><th>Priority</th><th>Link</th></tr></thead><tbody><tr><td>Duplicate Prayer Plan Can Be Created</td><td>—</td><td><a href="https://app.clickup.com/t/86d3j5q7x">↗</a></td></tr><tr><td>Mandatory Fields Don't Display Red Asterisk</td><td>—</td><td><a href="https://app.clickup.com/t/86d3mjujk">↗</a></td></tr><tr><td>Unused Duration Field Displayed in Player</td><td>—</td><td><a href="https://app.clickup.com/t/86d3q1cwf">↗</a></td></tr><tr><td>Prayer Schedule allows Active plans without location</td><td>High</td><td><a href="https://app.clickup.com/t/86d3q9z">↗</a></td></tr><tr><td>Calendar sends multiple API requests on refresh</td><td>—</td><td><a href="https://app.clickup.com/t/86d3qbxx1">↗</a></td></tr><tr><td>Today page doesn't show friendly error</td><td>Normal</td><td><a href="https://app.clickup.com/t/86d3q9zmg">↗</a></td></tr><tr><td>Toggle alignment in plan</td><td>High</td><td><a href="https://app.clickup.com/t/86d3qf9x4">↗</a></td></tr><tr><td>Show current date in config</td><td>High</td><td><a href="https://app.clickup.com/t/86d3qf9pm">↗</a></td></tr><tr><td>Advanced location configs fetched from Geo API</td><td>High</td><td><a href="https://app.clickup.com/t/86d3qf9cf">↗</a></td></tr></tbody></table>
+<h3>Open / Pending</h3>
+<table><thead><tr><th>Task</th><th>Priority</th><th>Link</th></tr></thead><tbody><tr><td>Create plan through Calendar</td><td>Urgent</td><td><a href="https://app.clickup.com/t/86d3qf98t">↗</a></td></tr><tr><td>Show screens (similar location) in Publish Page</td><td>High</td><td><a href="https://app.clickup.com/t/86d3qf9gn">↗</a></td></tr><tr><td>Connecting lon/lat of screens and prayer schedules</td><td>High</td><td><a href="https://app.clickup.com/t/86d3qf95u">↗</a></td></tr><tr><td>Media Set in Prayer Schedules (v2)</td><td>Normal</td><td><a href="https://app.clickup.com/t/86d3qf9v3">↗</a></td></tr><tr><td>Concept of Prayer Templates</td><td>Low</td><td><a href="https://app.clickup.com/t/86d3qf9vr">↗</a></td></tr></tbody></table>
+<blockquote>📋 <strong>CRUD Test Report</strong> (2026-07-23): 16/16 automated checks green. 5 UI/UX issues found (PS-UI-01 to PS-UI-05) — all filed in ClickUp today.</blockquote>
+
+<hr>
+
+<h2>🔐 RBAC / Group-in-Group / Folder System (422 tasks)</h2>
+
+<strong>Lists:</strong> <code>2026 Sprints / RBAC / Group in Group</code> (214) · <code>2026 Sprints / Rbac Merge bug</code> (54) · + related lists
+
+<p>This is the <strong>single largest module</strong> in the workspace — 422 tasks (24.5% of total).</p>
+
+<h3>Status Split (estimated from list counts)</h3>
+
+<table><thead><tr><th>List</th><th>Tasks</th><th>Primary Status</th></tr></thead><tbody><tr><td>RBAC / Group in Group</td><td>214</td><td>Mixed (shipped/backlog/scoping)</td></tr><tr><td>Rbac Merge bug</td><td>54</td><td>backlog/in development</td></tr><tr><td>QA Bugs / UI-UX improvements</td><td>31</td><td>backlog/shipped</td></tr><tr><td>QA Bugs / Functional Enhancements</td><td>13</td><td>backlog</td></tr><tr><td>QA Bugs / Windows CMS</td><td>16</td><td>shipped/backlog</td></tr><tr><td>Others (matched keyword)</td><td>94</td><td>various</td></tr></tbody></table>
+<h3>Coverage Areas</h3>
+<ul><li><strong>Role-Based Access Control</strong>: Role creation, permission assignment, role editing/deletion</li><li><strong>Group-in-Group</strong>: Nested group hierarchy, folder organization, drag & drop</li><li><strong>Folder System</strong>: Playlist folders, media folders, screen group folders</li><li><strong>Merge & Conflict bugs</strong>: RBAC merge conflicts, permission inheritance bugs</li><li><strong>UI/UX Improvements</strong>: Role management interface, permission matrix display</li></ul>
+
+<hr>
+
+<h2>🧩 Widgets / Auto Login (74 tasks)</h2>
+
+<strong>Lists:</strong> <code>Auto Login Widgets</code> · <code>Media Sets</code> · <code>Sequences</code> · <code>Webhook & Trigger</code>
+
+<h3>Breakdown by List</h3>
+
+<table><thead><tr><th>List</th><th>Tasks</th></tr></thead><tbody><tr><td>Media Sets</td><td>30</td></tr><tr><td>Sequences</td><td>5</td></tr><tr><td>Auto Login Widgets</td><td>4</td></tr><tr><td>Webhook & Trigger</td><td>1</td></tr><tr><td>Matched from other lists</td><td>34</td></tr></tbody></table>
+<h3>Key Areas</h3>
+<ul><li><strong>Auto Login Widget</strong>: WebPage URL validation gap, form state reset bug, one-login/per-screen toggle</li><li><strong>Media Sets</strong>: CRUD, search, aspect ratio filter, bulk selection</li><li><strong>Sequences</strong>: Display conditions, scheduling bugs</li><li><strong>Webhooks</strong>: Trigger event integration</li></ul>
+
+<h3>Notable Auto Login Bugs (from test report 2026-07-17)</h3>
+<ul><li>No URL field validation (silent failures)</li><li>Form state resets unexpectedly after save</li><li>Widget name required check works ✅</li><li>All URL-related validations fail ❌</li></ul>
+
+<hr>
+
+<h2>🌐 CMS / General (667 tasks)</h2>
+
+<strong>Primary Lists:</strong> <code>QA Bugs / POCS Sample</code> (184) · <code>QA Bugs / CMS Live</code> (103) · <code>2026 Support Team / CMS Improvements</code> (58) · <code>Bugs - June 2026</code> (45) · <code>Bugs - April 2026</code> (32) · <code>Bugs - Oct 2025</code> (19) · <code>Bugs - Feb 2026</code> (18)
+
+<h3>Bug Logs by Month</h3>
+
+<table><thead><tr><th>Period</th><th>List</th><th>Tasks</th></tr></thead><tbody><tr><td>Oct 2025</td><td>Bugs - October (2025)</td><td>19</td></tr><tr><td>Feb 2026</td><td>Bugs - Feb (2026)</td><td>18</td></tr><tr><td>Apr 2026</td><td>Bugs - April (2026)</td><td>32</td></tr><tr><td>Jun 2026</td><td>Bugs - June (2026)</td><td>45</td></tr><tr><td>Ongoing</td><td>CMS Improvements</td><td>58</td></tr><tr><td>Live environment</td><td>CMS Live</td><td>103</td></tr><tr><td>POC Sample</td><td>POCS Sample</td><td>184</td></tr></tbody></table>
+<h3>Key CMS Areas Covered</h3>
+<ul><li>Media library, media sets, playlists, screens, library widgets</li><li>Rollout system (21 tasks), reports (20 tasks), direct file publish (19 tasks)</li><li>Screen session reports (11 tasks)</li><li>Dashboard common bugs, feature plans, research</li><li>Compatibility matrix (103 tasks — Imported from Spreadsheet)</li></ul>
+
+<hr>
+
+<h2>📅 Timeline View</h2>
+
+<p>``<code></p>
+<p>Aug 2025  ████ Ops Android App on-boarding (44 tasks)</p>
+<p>Sep 2025  ██ Android HDMI, DOOH algorithm</p>
+<p>Oct 2025  ████ CMS Bugs Oct, LG/Samsung compat testing</p>
+<p>Nov–Dec 2025  ████████ Android player bugs (boot, cache, YouTube, Tizen)</p>
+<p>Jan 2026  ████████ Android App features, On-premise bugs, RBAC</p>
+<p>Feb 2026  ████ Bugs Feb, On-prem fixes, RBAC merge</p>
+<p>Mar–Apr 2026  ████████ RBAC Group-in-Group sprint, Android improvements</p>
+<p>May 2026  ████████ RBAC bugs, Android PDF/HDMI, CMS features</p>
+<p>Jun 2026  ████████████ Media sets, Bugs June, LG/Samsung, Compatibility</p>
+<p>Jul 2026  ████████████ Prayer Schedule sprint, Android v3.11.7, On-Premise bugs</p>
+<p></code>``</p>
+
+<hr>
+
+<h2>🏆 Top Delivery Highlights (Shipped/Released)</h2>
+
+<ol><li><strong>Android Player July 2026 Release</strong> — 36 fixes ready for deployment (PDF, RTMP, GeckoView, black screen, auto-login)</li><li><strong>Prayer Schedule Sprint</strong> (Jul 2026) — 22 bugs shipped in ~3 weeks</li><li><strong>Android App Features</strong> (Jan 2026) — Logic TV brightness, OTA install, screenshot, power on/off schedule</li><li><strong>On-premise fixes</strong> — Folder functionality in Playlists, create on-prem user access</li><li><strong>Media Sets CRUD</strong> — Full create/read/update/delete with search & aspect ratio filter</li><li><strong>CMS Live bugs</strong> (Dec 2025) — Boot delay, cache, YouTube autoplay, online/offline sync</li></ol>
+
+<hr>
+
+<h2>⚠️ Open / Pending Items (High Priority)</h2>
+
+<table><thead><tr><th>Area</th><th>Task</th><th>Priority</th></tr></thead><tbody><tr><td>Android</td><td>Layout Change Switch Smoothness / Flip Overs</td><td>Urgent</td></tr><tr><td>Android</td><td>Web View older content showing in background</td><td>High</td></tr><tr><td>Android</td><td>Send LAT/LONG in additional info events</td><td>—</td></tr><tr><td>Android</td><td>HDMI Triggered Layout + Change Playlist</td><td>—</td></tr><tr><td>Prayer Schedule</td><td>Create plan through Calendar</td><td>Urgent</td></tr><tr><td>Prayer Schedule</td><td>Connecting screens lon/lat to prayer schedules</td><td>High</td></tr><tr><td>Prayer Schedule</td><td>Show screens (same location) in Publish Page</td><td>High</td></tr><tr><td>WebOS/LG</td><td>WebOS connection status shows green incorrectly</td><td>High</td></tr><tr><td>On Premise</td><td>All 7 On-Prem CMS bugs (filed Jul 2026)</td><td>—</td></tr><tr><td>RBAC</td><td>54 Rbac Merge bugs pending</td><td>—</td></tr></tbody></table>
+<hr>
+
+<h2>📊 Summary Stats</h2>
+
+<table><thead><tr><th>Metric</th><th>Value</th></tr></thead><tbody><tr><td>Total tasks</td><td><strong>1,723</strong></td></tr><tr><td>Completed (shipped + released + done + completed)</td><td><strong>~783</strong> (45%)</td></tr><tr><td>In-flight (in dev + testing + review + deployment)</td><td><strong>~135</strong> (8%)</td></tr><tr><td>Backlog / pending</td><td><strong>~373</strong> (22%)</td></tr><tr><td>Conceptual / ideation / scoping</td><td><strong>~186</strong> (11%)</td></tr><tr><td>Cancelled / not needed</td><td><strong>~9</strong> (0.5%)</td></tr><tr><td>Open (no status)</td><td><strong>~99</strong> (6%)</td></tr></tbody></table>
+<hr>
+
+<p>*Report generated from live ClickUp API · Space: CMS (ID: 90162815762) · Team: 9016764704*</p>
+<p>*Tester / QA: Aman Kumar · Account: dev@wilyer.com*</p>
+
+</div>
+
+</body>
+</html>

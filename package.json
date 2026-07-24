@@ -11,6 +11,13 @@
     "playwright:install": "playwright install --with-deps",
     "mcp-server": "node mcp-server.js",
     "cms": "playwright test --config=playwright.cms.config.js",
+    "ws": "playwright test --config=wilyer-signage-suite/playwright.config.ts",
+    "ws:smoke": "playwright test --config=wilyer-signage-suite/playwright.config.ts --project=smoke",
+    "ws:regression": "playwright test --config=wilyer-signage-suite/playwright.config.ts --project=regression",
+    "ws:edge": "playwright test --config=wilyer-signage-suite/playwright.config.ts --project=edge",
+    "ws:auth": "playwright test --config=wilyer-signage-suite/playwright.config.ts --project=no-auth",
+    "ws:failures": "playwright test --config=wilyer-signage-suite/playwright.config.ts tests/api-failure",
+    "ws:report": "playwright show-report wilyer-signage-suite/playwright-report",
     "cms:login": "node scripts/capture-session.cms.js",
     "cms:headed": "playwright test --config=playwright.cms.config.js --headed",
     "cms:ui": "playwright test --config=playwright.cms.config.js --ui",
@@ -24,7 +31,10 @@
     "cms:bugs": "playwright test --config=playwright.cms.config.js known-bugs-regression.spec.js",
     "cms:freeze": "playwright test --config=playwright.cms.config.js freeze-investigation.spec.js --headed --workers=1",
     "cms:compare": "playwright test --config=playwright.cms.config.js comparison.spec.js",
-    "cms:trace": "playwright show-trace"
+    "cms:trace": "playwright show-trace",
+    "learn": "playwright test --config=learn-playwright/playwright.config.js",
+    "learn:ui": "playwright test --config=learn-playwright/playwright.config.js --ui",
+    "learn:report": "playwright show-report learn-playwright/playwright-report"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",

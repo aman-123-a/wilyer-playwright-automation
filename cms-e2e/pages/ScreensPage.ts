@@ -1,3 +1,4 @@
+
 // =============================================================================
 //  ScreensPage — example FUTURE-MODULE page object demonstrating the framework's
 //  extension pattern. Screens listing at /screens.

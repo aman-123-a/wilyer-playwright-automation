@@ -1,0 +1,18 @@
+Test Case ID,Test Title,Status,Actual Result,Remarks
+TC_MS_01,Mandatory Field Validation,Pass,"Blank name + Create shows toast ""Media set name is required""; no API call, set not saved.",Whitespace-only name also blocked (trimmed).
+TC_MS_02,Optional Description Input,Pass,"Description with special characters saved alongside the name; persisted on reload.",Optional field; empty description allowed.
+TC_MS_03,Cancel & Back Navigation,Pass,"Cancel navigates back to Library (Media Sets tab) without creating a record.",No unsaved-changes warning prompt is shown (minor UX gap); expected allows either behavior.
+TC_MS_04,Default Display Formats,Pass,"Create page loads with two default cards: Landscape - 16:9 (• Active) and Portrait - 9:16.",
+TC_MS_05,Switching Active Format Card,Pass,"Clicking a card moves the • Active indicator and blue highlight to it.",
+TC_MS_06,Change Aspect Ratio,Pass,"Change ratio opens a modal (All/Landscape/Portrait/Square + ratios). Selecting 8:5 updated the card label to ""Landscape - 8:5"" and placeholder to ""8:5 media"".",
+TC_MS_07,Remove Display Format Card,Pass,"X on a card removes it; header count updates (3 -> ""2 formats in this set"").",
+TC_MS_08,Add Display Format,Pass,"+ Add Display Format opens ratio picker; adding 1:1 Square created a new card (""3 formats in this set""); new card becomes Active.",
+TC_MS_09,Clear Formats Action,Pass,"Clear formats removes ALL assigned media (cards return to blank ""click a file"" state). Format cards and their custom ratios are KEPT, not removed. Button is disabled when nothing is assigned.",Behavior = clears media only; does not delete cards or reset ratios to default.
+TC_MS_10,Filter by Media Type,Pass,"Videos chip filtered grid to videos only and count changed ""24 of 835"" -> ""24 of 296"".",
+TC_MS_11,Search Functionality,Pass,"Typing ""image_3"" dynamically filtered grid to matches; count ""2 of 2"".",
+TC_MS_12,Aspect Ratio Auto-Filter Toggle,Pass,"With Landscape/Portrait active + Aspect Ratio toggle on, left panel shows ""Showing only 9:16 media - matching the active zone"" and lists only matching-ratio assets.",
+TC_MS_13,"""Choose Any"" Override Filter",Fail,"With Choose Any mode ON and Landscape active, selecting a portrait asset was BLOCKED with toast ""That's a portrait file - drop it in the Portrait format."" Assignment did NOT occur; no scaling/fit applied.","DISCREPANCY vs expected. Orientation is strictly enforced regardless of Choose Any. ""Choose Any"" only changes which files are SHOWN, not what can be ASSIGNED - misleading UX. Either hide wrong-orientation files or allow assign-with-fit."
+TC_MS_14,Assign Image to Active Card,Pass,"Selecting a matching-orientation image populates the active slot; preview thumbnail + ""In set"" badge appear; a remove (X) icon shows on the preview.",A 16:9 image was accepted into an 8:5 slot (same orientation, different ratio).
+TC_MS_15,Assign Video to Active Card,Pass,"With Portrait 9:16 active, a vertical video (1080x1920, 62.7MB) populated the 9:16 slot with a video preview/play indicator.",
+TC_MS_16,Replace Assigned Media,Pass,"With a file already assigned, clicking another file on the left replaced the existing media in the active card; ""In set"" moved to the new file.",
+TC_MS_17,Unassign / Remove Selected Asset,Pass,"Clicking the clear/remove (X) icon on the card preview removed the media; slot returned to ""click a file on the left"" placeholder.",

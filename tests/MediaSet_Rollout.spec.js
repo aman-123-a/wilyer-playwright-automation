@@ -2,7 +2,7 @@
 /**
  * Wilyer CMS — Content Rollout test suite
  *
- * Target: https://cms3.pocsample.in
+ * Target: https://cms.pocsample.in
  *
  * Coverage groups:
  *   • Authentication & Navigation
@@ -25,7 +25,7 @@
 import { test, expect } from '@playwright/test';
 
 // ─── Config ──────────────────────────────────────────────────────────────────
-const BASE_URL       = 'https://cms3.pocsample.in';
+const BASE_URL       = 'https://cms.pocsample.in';
 const LOGIN_EMAIL    = 'dev@wilyer.com';
 const LOGIN_PASSWORD = 'testdev';
 

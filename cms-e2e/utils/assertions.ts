@@ -33,13 +33,18 @@ export async function expectNoBrokenImages(page: Page, opts: { hard?: boolean } 
   }
 }
 
-/** Assert no loading spinner is still visible (loader-stuck guard). */
+/**
+ * Assert no loading spinner is still visible (loader-stuck guard).
+ * `toBeHidden` already passes when the element is absent/detached, so a missing
+ * loader is fine — we do NOT swallow the rejection, otherwise a genuinely stuck
+ * (still-visible) loader would pass silently.
+ */
 export async function expectNoStuckLoader(page: Page, timeout = 15_000): Promise<void> {
   const loader = page.locator(
     '[class*="spinner" i], [class*="loader" i], [role="progressbar"], [aria-busy="true"]',
   );
-  await expect(loader.first()).toBeHidden({ timeout }).catch(() => {
-    /* no loader present at all is also fine */
+  await expect(loader.first(), 'a loading spinner is still visible after timeout').toBeHidden({
+    timeout,
   });
 }
 

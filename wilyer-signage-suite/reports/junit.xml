@@ -1,0 +1,1230 @@
+<testsuites id="" name="" tests="281" failures="0" skipped="281" errors="0" time="0.844931">
+<testsuite name="global.setup.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="setup" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="authenticate admin" classname="global.setup.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth\auth-screens.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="no-auth" tests="19" failures="0" skipped="19" time="0" errors="0">
+<testcase name="Sign In › valid credentials reach the dashboard @smoke" classname="auth\auth-screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Sign In › blank fields are rejected" classname="auth\auth-screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Sign In › invalid email format is rejected" classname="auth\auth-screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Sign In › wrong password is rejected" classname="auth\auth-screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Sign In › password show/hide toggle reveals and re-masks the value" classname="auth\auth-screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Sign In › &quot;Forgot Password?&quot; link navigates to /forget" classname="auth\auth-screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Sign In › &quot;Sign Up&quot; link navigates to /signup" classname="auth\auth-screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Forgot Password › blank email does not submit" classname="auth\auth-screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Forgot Password › malformed email surfaces a validation error" classname="auth\auth-screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Forgot Password › valid email requests an OTP" classname="auth\auth-screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Sign Up › missing mandatory fields are rejected" classname="auth\auth-screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Sign Up › submission is blocked while Terms is unchecked" classname="auth\auth-screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Sign Up › all fields + accepted Terms creates the account" classname="auth\auth-screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Sign Up › &quot;Log In&quot; link returns to the Sign In screen" classname="auth\auth-screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Known UI defects (Sign Up) › primary submit button should be labelled &quot;Sign Up&quot;, not &quot;Sign In&quot;" classname="auth\auth-screens.spec.ts">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Known UI defects (Sign Up) › Terms of Service link should point to a real policy page" classname="auth\auth-screens.spec.ts">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Known UI defects (Sign Up) › Privacy Policy link should point to a real policy page" classname="auth\auth-screens.spec.ts">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Known UI defects (Sign Up) › Company Name placeholder should be spelt &quot;organization&quot;" classname="auth\auth-screens.spec.ts">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Known UI defects (Sign Up) › default country should match the &quot;+91&quot; dial code" classname="auth\auth-screens.spec.ts">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth\auth.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="no-auth" tests="9" failures="0" skipped="9" time="0" errors="0">
+<testcase name="Authentication › valid login reaches the dashboard @smoke" classname="auth\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › invalid login is rejected" classname="auth\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › empty username is rejected" classname="auth\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › empty password is rejected" classname="auth\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › both fields empty is rejected" classname="auth\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › direct URL access without login redirects to login" classname="auth\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › unauthorized protected page does not leak content" classname="auth\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › logout returns to the login screen" classname="auth\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › session timeout / cleared cookies forces re-login" classname="auth\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="security\security.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="no-auth" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="Security · Authorization (RBAC) › viewer cannot delete" classname="security\security.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Security · Authorization (RBAC) › viewer cannot edit" classname="security\security.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Security · Authorization (RBAC) › editor cannot access billing" classname="security\security.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Security · API token › missing token → app stays usable / re-auths" classname="security\security.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Security · API token › expired/invalid token (401) forces graceful re-auth" classname="security\security.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="account\account.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="smoke" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Account · Notification settings › account page loads @smoke" classname="account\account.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth\auth-screens.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="smoke" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Sign In › valid credentials reach the dashboard @smoke" classname="auth\auth-screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth\auth.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="smoke" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Authentication › valid login reaches the dashboard @smoke" classname="auth\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="clusters\clusters.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="smoke" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Clusters · CRUD › clusters list loads @smoke" classname="clusters\clusters.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="dashboard\dashboard.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="smoke" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Dashboard › all statistic cards load @smoke" classname="dashboard\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="groups\groups.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="smoke" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Groups · CRUD › groups list loads @smoke" classname="groups\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="library\library.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="smoke" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Library · Folders › library loads @smoke" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="playlist\playlist.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="smoke" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Playlist · CRUD › playlist list loads @smoke" classname="playlist\playlist.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="reports\reports.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="smoke" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Reports · Analytics › reports page loads @smoke" classname="reports\reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="rollouts\rollouts.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="smoke" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Rollouts · CRUD › rollouts list loads @smoke" classname="rollouts\rollouts.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="screens\screens-crud.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="smoke" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Screens · CRUD › screens list loads @smoke" classname="screens\screens-crud.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="smoke\post-live-smoke.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="smoke" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="Post-Live Smoke — load + search + render @smoke › Dashboard loads and renders stats" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Screens loads + search" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Library loads + search" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Playlists loads + search" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Groups loads + search" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Clusters loads + search" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Team loads (Members + Roles) + search" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Reports loads and renders" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Account loads and renders" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Screen detail opens from the list" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="smoke\production-smoke.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="smoke" tests="9" failures="0" skipped="9" time="0" errors="0">
+<testcase name="Production Smoke @smoke › 1 · login + dashboard load" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 2 · screens module reachable" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 3 · create screen" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 4 · upload media" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 5 · create playlist" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 6 · publish playlist" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 7 · create group" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 8 · generate report" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 9 · logout" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="team\team.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="smoke" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Team · Members › team page loads @smoke" classname="team\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="account\account.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="8" failures="0" skipped="8" time="0" errors="0">
+<testcase name="Account · Notification settings › account page loads @smoke" classname="account\account.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Account · Notification settings › create notification setting" classname="account\account.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Account · Notification settings › edit notification setting" classname="account\account.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Account · Notification settings › delete notification setting" classname="account\account.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Account · Boundary › interval minimum is accepted" classname="account\account.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Account · Boundary › interval below minimum is bounded" classname="account\account.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Account · Boundary › interval maximum is accepted/bounded" classname="account\account.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Account · Failure › save API failure is handled" classname="account\account.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="api-failure\api-failure-injection.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="64" failures="0" skipped="64" time="0" errors="0">
+<testcase name="API failure · dashboard › http500 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · dashboard › http404 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · dashboard › http401 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · dashboard › timeout → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · dashboard › emptyArray → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · dashboard › nullBody → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · dashboard › malformedJson → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · dashboard › networkError → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · screens › http500 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · screens › http404 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · screens › http401 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · screens › timeout → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · screens › emptyArray → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · screens › nullBody → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · screens › malformedJson → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · screens › networkError → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · groups › http500 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · groups › http404 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · groups › http401 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · groups › timeout → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · groups › emptyArray → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · groups › nullBody → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · groups › malformedJson → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · groups › networkError → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · clusters › http500 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · clusters › http404 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · clusters › http401 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · clusters › timeout → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · clusters › emptyArray → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · clusters › nullBody → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · clusters › malformedJson → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · clusters › networkError → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · library › http500 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · library › http404 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · library › http401 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · library › timeout → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · library › emptyArray → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · library › nullBody → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · library › malformedJson → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · library › networkError → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · playlists › http500 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · playlists › http404 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · playlists › http401 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · playlists › timeout → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · playlists › emptyArray → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · playlists › nullBody → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · playlists › malformedJson → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · playlists › networkError → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · rollouts › http500 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · rollouts › http404 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · rollouts › http401 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · rollouts › timeout → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · rollouts › emptyArray → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · rollouts › nullBody → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · rollouts › malformedJson → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · rollouts › networkError → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · reports › http500 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · reports › http404 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · reports › http401 → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · reports › timeout → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · reports › emptyArray → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · reports › nullBody → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · reports › malformedJson → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="API failure · reports › networkError → graceful (no white screen / no crash)" classname="api-failure\api-failure-injection.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="clusters\clusters.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="Clusters · CRUD › clusters list loads @smoke" classname="clusters\clusters.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Clusters · CRUD › create cluster" classname="clusters\clusters.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Clusters · CRUD › edit cluster" classname="clusters\clusters.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Clusters · CRUD › delete cluster" classname="clusters\clusters.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Clusters · Edge › cluster with 0 screens renders empty state" classname="clusters\clusters.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Clusters · Actions › restart screens action available" classname="clusters\clusters.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Clusters · Actions › sync toggle works" classname="clusters\clusters.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Clusters · Actions › live data toggle works" classname="clusters\clusters.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Clusters · Failure › restart API failure is handled" classname="clusters\clusters.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Clusters · Failure › sync API failure is handled" classname="clusters\clusters.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="dashboard\dashboard.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="8" failures="0" skipped="8" time="0" errors="0">
+<testcase name="Dashboard › all statistic cards load @smoke" classname="dashboard\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › quick action buttons are present" classname="dashboard\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › charts render" classname="dashboard\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › map loads" classname="dashboard\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › license banner state is renderable (expired/expiring)" classname="dashboard\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › API 500 on stats degrades gracefully (no white screen)" classname="dashboard\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › API timeout on stats degrades gracefully" classname="dashboard\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › empty data renders an empty-state, not a crash" classname="dashboard\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="groups\groups.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="Groups · CRUD › groups list loads @smoke" classname="groups\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Groups · CRUD › create group" classname="groups\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Groups · CRUD › update group" classname="groups\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Groups · CRUD › delete group" classname="groups\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Groups · CRUD › duplicate group name is blocked or flagged" classname="groups\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Groups · Boundary › empty group name cannot be saved" classname="groups\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Groups · Boundary › max length group name accepted" classname="groups\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Groups · Boundary › max+1 length is bounded" classname="groups\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Groups · Edge › group with 0 screens renders an empty state" classname="groups\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Groups · Failure › group save API failure is handled" classname="groups\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="library\library.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="16" failures="0" skipped="16" time="0" errors="0">
+<testcase name="Library · Folders › library loads @smoke" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Folders › create folder" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Folders › rename folder" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Folders › delete folder" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Upload (sizes) › small image upload succeeds" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Upload (sizes) › above-limit file is rejected with a message" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Upload (file names) › file name with spaces is handled" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Upload (file names) › file name with special is handled" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Upload (file names) › file name with unicode is handled" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Upload (file names) › file name with long is handled" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Negative uploads › EXE upload is rejected" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Negative uploads › BAT upload is rejected" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Negative uploads › PHP upload is rejected" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Negative uploads › corrupt file upload is handled" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Upload edge &amp; failure › upload API 500 is handled" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Upload edge &amp; failure › upload timeout is handled" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="playlist\playlist.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="Playlist · CRUD › playlist list loads @smoke" classname="playlist\playlist.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist · CRUD › create playlist (requires folder)" classname="playlist\playlist.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist · CRUD › update playlist" classname="playlist\playlist.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist · CRUD › delete playlist (confirm = Continue)" classname="playlist\playlist.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist · CRUD › publish playlist" classname="playlist\playlist.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist · Boundary › empty name cannot be saved" classname="playlist\playlist.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist · Boundary › max length name accepted (no maxlength per memory)" classname="playlist\playlist.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist · Boundary › above-limit name is server-bounded" classname="playlist\playlist.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist · Failure › publish API failure is handled" classname="playlist\playlist.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist · Failure › save API timeout is handled" classname="playlist\playlist.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="reports\reports.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="8" failures="0" skipped="8" time="0" errors="0">
+<testcase name="Reports · Analytics › reports page loads @smoke" classname="reports\reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reports · Analytics › generate report" classname="reports\reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reports · Analytics › generate report with no data shows empty state" classname="reports\reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reports · Exports › export PDF" classname="reports\reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reports · Exports › export CSV" classname="reports\reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reports · Exports › export EXCEL" classname="reports\reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reports · Failure › report API failure is handled" classname="reports\reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reports · Failure › export API failure is handled" classname="reports\reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="rollouts\rollouts.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="9" failures="0" skipped="9" time="0" errors="0">
+<testcase name="Rollouts · CRUD › rollouts list loads @smoke" classname="rollouts\rollouts.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Rollouts · CRUD › create rollout" classname="rollouts\rollouts.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Rollouts · CRUD › edit rollout" classname="rollouts\rollouts.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Rollouts · CRUD › delete rollout" classname="rollouts\rollouts.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Rollouts · Edge › rollout with 0 rows can be created" classname="rollouts\rollouts.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Rollouts · Edge › rollout with 1 row" classname="rollouts\rollouts.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Rollouts · Negative &amp; Failure › publish without content is blocked" classname="rollouts\rollouts.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Rollouts · Negative &amp; Failure › publish API failure is handled" classname="rollouts\rollouts.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Rollouts · Negative &amp; Failure › save API timeout is handled" classname="rollouts\rollouts.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="screen-detail\screen-detail.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="13" failures="0" skipped="13" time="0" errors="0">
+<testcase name="Screen Detail · Configuration › volume = 0 (minimum) is accepted" classname="screen-detail\screen-detail.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Detail · Configuration › volume = 100 (maximum) is accepted" classname="screen-detail\screen-detail.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Detail · Configuration › volume below minimum is clamped/rejected" classname="screen-detail\screen-detail.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Detail · Configuration › volume above maximum is clamped/rejected" classname="screen-detail\screen-detail.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Detail · Configuration › rotation 0° is accepted" classname="screen-detail\screen-detail.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Detail · Configuration › rotation 90° is accepted" classname="screen-detail\screen-detail.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Detail · Configuration › rotation 180° is accepted" classname="screen-detail\screen-detail.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Detail · Configuration › rotation 270° is accepted" classname="screen-detail\screen-detail.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Detail · Configuration › invalid rotation value is rejected" classname="screen-detail\screen-detail.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Detail · Player controls › restart player control is available" classname="screen-detail\screen-detail.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Detail · Player controls › transfer license control is available" classname="screen-detail\screen-detail.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Detail · Failure › configuration save API failure shows an error" classname="screen-detail\screen-detail.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Detail · Failure › restart API failure shows an error" classname="screen-detail\screen-detail.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="screens\screens-boundary.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="6" failures="0" skipped="6" time="0" errors="0">
+<testcase name="Screens · Boundary › empty name is rejected (cannot submit)" classname="screens\screens-boundary.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens · Boundary › minimum length name is accepted" classname="screens\screens-boundary.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens · Boundary › maximum length name is accepted" classname="screens\screens-boundary.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens · Boundary › above-maximum length is truncated or rejected" classname="screens\screens-boundary.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens · Boundary › special characters in name" classname="screens\screens-boundary.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens · Boundary › unicode characters in name" classname="screens\screens-boundary.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="screens\screens-crud.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="Screens · CRUD › screens list loads @smoke" classname="screens\screens-crud.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens · CRUD › create screen" classname="screens\screens-crud.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens · CRUD › view screen detail" classname="screens\screens-crud.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens · CRUD › edit screen" classname="screens\screens-crud.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens · CRUD › delete screen" classname="screens\screens-crud.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="screens\screens-edge.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="3" failures="0" skipped="3" time="0" errors="0">
+<testcase name="Screens · Edge › duplicate screen name is rejected or disambiguated" classname="screens\screens-edge.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens · Edge › duplicate pairing code is rejected" classname="screens\screens-edge.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens · Edge › bulk select operation is available" classname="screens\screens-edge.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="screens\screens-failure.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="Screens · Failure › screen API returns 500 → graceful error" classname="screens\screens-failure.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens · Failure › screen API timeout → no white screen" classname="screens\screens-failure.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens · Failure › null response is handled" classname="screens\screens-failure.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens · Failure › malformed JSON is handled" classname="screens\screens-failure.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="smoke\post-live-smoke.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="Post-Live Smoke — load + search + render @smoke › Dashboard loads and renders stats" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Screens loads + search" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Library loads + search" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Playlists loads + search" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Groups loads + search" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Clusters loads + search" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Team loads (Members + Roles) + search" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Reports loads and renders" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Account loads and renders" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Post-Live Smoke — load + search + render @smoke › Screen detail opens from the list" classname="smoke\post-live-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="smoke\production-smoke.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="9" failures="0" skipped="9" time="0" errors="0">
+<testcase name="Production Smoke @smoke › 1 · login + dashboard load" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 2 · screens module reachable" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 3 · create screen" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 4 · upload media" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 5 · create playlist" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 6 · publish playlist" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 7 · create group" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 8 · generate report" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Production Smoke @smoke › 9 · logout" classname="smoke\production-smoke.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="team\team.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="regression" tests="14" failures="0" skipped="14" time="0" errors="0">
+<testcase name="Team · Members › team page loads @smoke" classname="team\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team · Members › create member" classname="team\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team · Members › edit member" classname="team\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team · Members › delete member" classname="team\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team · Roles › create role" classname="team\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team · Roles › edit role" classname="team\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team · Roles › delete role" classname="team\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team · Boundary &amp; validation › empty name/email cannot be saved (modal stays open — no inline error)" classname="team\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team · Boundary &amp; validation › invalid email is rejected" classname="team\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team · Boundary &amp; validation › duplicate email is rejected" classname="team\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team · Boundary &amp; validation › password below minimum length is rejected" classname="team\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team · Boundary &amp; validation › maximum length password is accepted by the field" classname="team\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team · Security › deleting the last admin is prevented" classname="team\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team · Security › removing own admin role is guarded" classname="team\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="clusters\clusters.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="edge" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Clusters · Edge › mixed online/offline screens render without crash @edge" classname="clusters\clusters.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="groups\groups.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="edge" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Groups · Edge › nested subgroup creation @edge" classname="groups\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="library\library.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="edge" tests="2" failures="0" skipped="2" time="0" errors="0">
+<testcase name="Library · Upload (sizes) › large (near-limit) video upload @edge" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library · Upload edge &amp; failure › duplicate file upload is handled @edge" classname="library\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="reports\reports.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="edge" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Reports · Analytics › large data report renders without crash @edge" classname="reports\reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="rollouts\rollouts.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="edge" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Rollouts · Edge › many rows (100) @edge" classname="rollouts\rollouts.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="screens\screens-crud.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="edge" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Screens · CRUD › restore deleted screen @edge" classname="screens\screens-crud.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="screens\screens-edge.spec.ts" timestamp="2026-07-01T04:24:39.926Z" hostname="edge" tests="2" failures="0" skipped="2" time="0" errors="0">
+<testcase name="Screens · Edge › large tag assignment is handled @edge" classname="screens\screens-edge.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens · Edge › no-license / expired-license assignment surfaces a clear message @edge" classname="screens\screens-edge.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

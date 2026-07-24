@@ -40,8 +40,8 @@ export const ENV = {
 
   /** Scoped / restricted sub-user account. */
   SUBUSER: {
-    email: pick('CMS_SUBUSER_EMAIL', 'subuser@wilyer.com'),
-    password: pick('CMS_SUBUSER_PASSWORD', '12345'),
+    email: pick('CMS_SUBUSER_EMAIL', 'dev@wilyer.com'),
+    password: pick('CMS_SUBUSER_PASSWORD', 'testdev'),
   } as Credentials,
 
   /** Performance budgets (ms). */
