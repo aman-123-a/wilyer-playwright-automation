@@ -1,0 +1,57 @@
+# =============================================================================
+#  Release — the gate before shipping.
+#  Runs the tagged release candidate's full regression, then publishes the
+#  Allure report as the release evidence artifact.
+#
+#  Live verification is smoke-only and read-only. The framework hard-blocks
+#  destructive suites on production, so a release run cannot mutate customer
+#  data even if someone sets the flag.
+# =============================================================================
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Pre-production environment to certify'
+        type: choice
+        options: [cms, cms2, cms3, cms4]
+        default: cms2
+      verify-live:
+        description: 'Also run a read-only smoke check against production'
+        type: boolean
+        default: false
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  certify:
+    name: Certify pre-production
+    uses: ./.github/workflows/_run-suite.yml
+    with:
+      environment: ${{ inputs.environment || 'cms2' }}
+      grep: '@regression'
+      projects: '["chromium","firefox","webkit"]'
+      shard-list: '[1,2,3,4]'
+      shard-total: 4
+      strict-monitors: true
+      publish-report: true
+      timeout-minutes: 90
+    secrets: inherit
+
+  verify-live:
+    name: Verify production (read-only smoke)
+    needs: certify
+    if: ${{ inputs.verify-live || startsWith(github.ref, 'refs/tags/v') }}
+    uses: ./.github/workflows/_run-suite.yml
+    with:
+      environment: live
+      grep: '@smoke'
+      projects: '["chromium"]'
+      allow-destructive: false
+      timeout-minutes: 30
+    secrets: inherit

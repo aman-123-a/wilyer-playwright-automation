@@ -1,0 +1,57 @@
+# =============================================================================
+#  Local and CI container execution.
+#
+#  Credentials come from the host environment or a local .env — never from
+#  this file, and never baked into the image.
+#
+#    docker compose -f docker/docker-compose.yml run --rm smoke
+#    TEST_ENV=cms3 docker compose -f docker/docker-compose.yml run --rm e2e
+# =============================================================================
+
+x-common: &common
+  build:
+    context: ..
+    dockerfile: docker/Dockerfile
+  image: wilyer-qa:latest
+  working_dir: /app
+  # The suite drives an external CMS; Chromium needs more than the 64MB default.
+  shm_size: '1gb'
+  environment:
+    TEST_ENV: ${TEST_ENV:-cms2}
+    CMS_ADMIN_EMAIL: ${CMS_ADMIN_EMAIL:?set CMS_ADMIN_EMAIL in your environment or .env}
+    CMS_ADMIN_PASSWORD: ${CMS_ADMIN_PASSWORD:?set CMS_ADMIN_PASSWORD in your environment or .env}
+    CMS_SUBUSER_EMAIL: ${CMS_SUBUSER_EMAIL:-}
+    CMS_SUBUSER_PASSWORD: ${CMS_SUBUSER_PASSWORD:-}
+    CMS_ALLOW_DESTRUCTIVE: ${CMS_ALLOW_DESTRUCTIVE:-false}
+    CMS_STRICT_MONITORS: ${CMS_STRICT_MONITORS:-false}
+    CI: 'true'
+  volumes:
+    # Reports land on the host so they survive the container.
+    - ../reports:/app/reports
+
+services:
+  # Full regression — the default.
+  e2e:
+    <<: *common
+    command: ['--grep', '@regression']
+
+  smoke:
+    <<: *common
+    command: ['--grep', '@smoke']
+
+  api:
+    <<: *common
+    command: ['--project=api']
+
+  regression-all-browsers:
+    <<: *common
+    command:
+      ['--grep', '@regression', '--project=chromium', '--project=firefox', '--project=webkit']
+
+  # Serves the last HTML report at http://localhost:9323
+  report:
+    <<: *common
+    entrypoint: ['npx', 'playwright', 'show-report']
+    command: ['reports/${TEST_ENV:-cms2}/html', '--host', '0.0.0.0', '--port', '9323']
+    ports:
+      - '9323:9323'

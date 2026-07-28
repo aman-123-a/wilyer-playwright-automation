@@ -1,0 +1,230 @@
+# =============================================================================
+#  Reusable suite runner.
+#
+#  Every pipeline (smoke, regression, api, nightly, release) calls this one
+#  workflow with different inputs, so the execution recipe — checkout, cache,
+#  browsers, sharding, reporting, notification — exists exactly once.
+#
+#  Do not duplicate these steps into another workflow. Add an input instead.
+#
+#  Sharding note: GitHub Actions has no range() function, so the shard matrix
+#  cannot be derived from a count. Callers pass the shard list explicitly
+#  (shard-list) alongside the total (shard-total); both must agree.
+# =============================================================================
+name: Run suite
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        description: 'Target environment: cms | cms2 | cms3 | cms4 | live'
+        type: string
+        required: true
+      grep:
+        description: 'Tag filter, e.g. @smoke or @regression'
+        type: string
+        default: '@regression'
+      projects:
+        description: 'JSON array of Playwright projects, e.g. ["chromium","firefox"]'
+        type: string
+        default: '["chromium"]'
+      shard-list:
+        description: 'JSON array of shard indexes, e.g. [1,2,3,4]. Must match shard-total.'
+        type: string
+        default: '[1]'
+      shard-total:
+        description: 'Total shard count. 1 disables sharding.'
+        type: number
+        default: 1
+      allow-destructive:
+        description: 'Permit suites that create/update/delete data'
+        type: boolean
+        default: false
+      strict-monitors:
+        description: 'Fail tests on console errors / failed API calls'
+        type: boolean
+        default: false
+      publish-report:
+        description: 'Publish the Allure report to GitHub Pages'
+        type: boolean
+        default: false
+      timeout-minutes:
+        type: number
+        default: 45
+    secrets:
+      CMS_ADMIN_EMAIL:
+        required: true
+      CMS_ADMIN_PASSWORD:
+        required: true
+      CMS_SUBUSER_EMAIL:
+        required: false
+      CMS_SUBUSER_PASSWORD:
+        required: false
+      SLACK_WEBHOOK_URL:
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: ${{ inputs.environment }} · ${{ matrix.project }}${{ inputs.shard-total > 1 && format(' · shard {0}', matrix.shard) || '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: ${{ inputs.timeout-minutes }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        project: ${{ fromJSON(inputs.projects) }}
+        shard: ${{ fromJSON(inputs.shard-list) }}
+
+    env:
+      TEST_ENV: ${{ inputs.environment }}
+      CMS_ADMIN_EMAIL: ${{ secrets.CMS_ADMIN_EMAIL }}
+      CMS_ADMIN_PASSWORD: ${{ secrets.CMS_ADMIN_PASSWORD }}
+      CMS_SUBUSER_EMAIL: ${{ secrets.CMS_SUBUSER_EMAIL }}
+      CMS_SUBUSER_PASSWORD: ${{ secrets.CMS_SUBUSER_PASSWORD }}
+      CMS_ALLOW_DESTRUCTIVE: ${{ inputs.allow-destructive }}
+      CMS_STRICT_MONITORS: ${{ inputs.strict-monitors }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Cache Playwright browsers
+        id: browser-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install Playwright browsers
+        if: steps.browser-cache.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps
+
+      - name: Install system dependencies (browsers restored from cache)
+        if: steps.browser-cache.outputs.cache-hit == 'true'
+        run: npx playwright install-deps
+
+      - name: Run tests
+        run: >-
+          npx playwright test
+          --project=${{ matrix.project }}
+          --grep "${{ inputs.grep }}"
+          ${{ inputs.shard-total > 1 && format('--shard={0}/{1}', matrix.shard, inputs.shard-total) || '' }}
+
+      - name: Upload HTML report
+        uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: html-report-${{ inputs.environment }}-${{ matrix.project }}-${{ matrix.shard }}
+          path: reports/${{ inputs.environment }}/html
+          retention-days: 14
+          if-no-files-found: ignore
+
+      - name: Upload Allure results
+        uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: allure-results-${{ inputs.environment }}-${{ matrix.project }}-${{ matrix.shard }}
+          path: reports/${{ inputs.environment }}/allure-results
+          retention-days: 14
+          if-no-files-found: ignore
+
+      - name: Upload JUnit results
+        uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: junit-${{ inputs.environment }}-${{ matrix.project }}-${{ matrix.shard }}
+          path: reports/${{ inputs.environment }}/junit.xml
+          retention-days: 14
+          if-no-files-found: ignore
+
+      - name: Upload failure diagnostics (traces, screenshots, video)
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: diagnostics-${{ inputs.environment }}-${{ matrix.project }}-${{ matrix.shard }}
+          path: reports/${{ inputs.environment }}/test-results
+          retention-days: 7
+          if-no-files-found: ignore
+
+  publish:
+    name: Publish Allure report
+    needs: test
+    if: ${{ !cancelled() && inputs.publish-report }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download every shard's Allure results
+        uses: actions/download-artifact@v4
+        with:
+          pattern: allure-results-${{ inputs.environment }}-*
+          path: allure-input
+          merge-multiple: true
+
+      - name: Check out the published report branch
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Restore history so the trend graph survives across runs
+        run: |
+          if [ -d "gh-pages/${{ inputs.environment }}/history" ]; then
+            cp -r "gh-pages/${{ inputs.environment }}/history" allure-input/history
+          fi
+
+      - name: Generate Allure report
+        uses: simple-elf/allure-report-action@v1.12
+        with:
+          allure_results: allure-input
+          allure_history: allure-history
+          subfolder: ${{ inputs.environment }}
+          keep_reports: 30
+
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-history
+          keep_files: true
+
+  notify:
+    name: Notify on failure
+    needs: test
+    if: ${{ always() && needs.test.result == 'failure' }}
+    runs-on: ubuntu-latest
+    steps:
+      # Guarded inside the script rather than in `if:` — an unset webhook must
+      # skip quietly, not fail the notification job and mask the real failure.
+      - name: Post to Slack
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          if [ -z "$SLACK_WEBHOOK_URL" ]; then
+            echo "SLACK_WEBHOOK_URL not configured — skipping notification."
+            exit 0
+          fi
+          run_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          payload=$(cat <<JSON
+          {
+            "text": ":rotating_light: *${{ github.workflow }}* failed on *${{ inputs.environment }}*\n<${run_url}|View run> · commit \`${{ github.sha }}\`"
+          }
+          JSON
+          )
+          curl -sS -X POST "$SLACK_WEBHOOK_URL" \
+            -H 'Content-Type: application/json' \
+            -d "$payload"

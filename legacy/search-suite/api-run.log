@@ -1,0 +1,220 @@
+[global-setup] admin session cached → C:\Users\User\Downloads\wilyer-playwright\search-suite\.auth\search-admin.json
+
+Running 20 tests using 3 workers
+
+[1A[2K[1/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "401 unauthorized" degrades gracefully (no blank) @api
+[1A[2K[2/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "404 not found" degrades gracefully (no blank) @api
+[1A[2K[3/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "500 server error" degrades gracefully (no blank) @api
+[1A[2K  1) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "500 server error" degrades gracefully (no blank) @api 
+
+    [31mTest timeout of 90000ms exceeded while setting up "context".[39m
+
+    Error: browser.newContext: Test ended.
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-API-860b2-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-860b2-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-API-860b2-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  2) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "401 unauthorized" degrades gracefully (no blank) @api 
+
+    [31mTest timeout of 90000ms exceeded while setting up "context".[39m
+
+    Error: browser.newContext: Test ended.
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-API-cadae-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-cadae-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-API-cadae-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  3) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "404 not found" degrades gracefully (no blank) @api 
+
+    [31mTest timeout of 90000ms exceeded while setting up "context".[39m
+
+    Error: browser.newContext: Test ended.
+    Browser logs:
+
+    <launching> C:\Users\User\AppData\Local\ms-playwright\chromium_headless_shell-1217\chrome-headless-shell-win64\chrome-headless-shell.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\Users\User\AppData\Local\Temp\playwright_chromiumdev_profile-s4tcx7 --remote-debugging-pipe --no-startup-window
+    <launched> pid=11024
+    [pid=11024][err] [0610/124355.485:ERROR:content\browser\network_service_instance_impl.cc:703] Network service crashed or was terminated, restarting service.
+    [pid=11024][err] Received fatal exception 0xe06d7363
+    [pid=11024][err] 	KERNELBASE!RaiseException [0x7ff8469f1b6a+8a]
+    [pid=11024][err] 	(No symbol) [0x7fffbd217c6b]
+    [pid=11024][err] [0610/124402.854:ERROR:content\browser\gpu\gpu_process_host.cc:999] GPU process exited unexpectedly: exit_code=-1073740791
+    [pid=11024][err] [0610/124402.855:WARNING:content\browser\gpu\gpu_process_host.cc:1441] The GPU process has crashed 1 time(s)
+    [pid=11024][err] [0610/124402.939:WARNING:content\browser\gpu\gpu_process_host.cc:1021] Reinitialized the GPU process after a crash. The reported initialization time was 53 ms
+    [pid=11024] <gracefully close start>
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-API-4c894-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-4c894-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-API-4c894-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[4/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "empty array" degrades gracefully (no blank) @api
+[1A[2K[5/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "403 forbidden" degrades gracefully (no blank) @api
+[1A[2K[6/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "malformed JSON" degrades gracefully (no blank) @api
+[1A[2K[7/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "backend unavailable" degrades gracefully (no blank) @api
+[1A[2K[8/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "timeout (no response)" degrades gracefully (no blank) @api
+[1A[2K  4) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "403 forbidden" degrades gracefully (no blank) @api 
+
+    Error: [Groups] search input should be present
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('input[placeholder="Search..."]:visible').first().or(getByPlaceholder(/search/i).first())
+    Expected: visible
+    Timeout: 20000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - [Groups] search input should be present with timeout 20000ms[22m
+    [2m  - waiting for locator('input[placeholder="Search..."]:visible').first().or(getByPlaceholder(/search/i).first())[22m
+
+
+       at ..\pages\searchPage.ts:62
+
+      60 |     await firstLoad;
+      61 |     await expect(this.searchInput, `[${this.module.name}] search input should be present`)
+    > 62 |       .toBeVisible({ timeout: 20_000 });
+         |        ^
+      63 |     return this;
+      64 |   }
+      65 |
+        at SearchPage.open (C:\Users\User\Downloads\wilyer-playwright\search-suite\pages\searchPage.ts:62:8)
+        at open (C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:39:7)
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:155:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-21399-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-API-21399-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-21399-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-API-21399-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[9/20] [chromium] › search-suite\tests\search.spec.ts:174:5 › Search · Groups › API: offline during search keeps the UI stable @api
+[1A[2K[10/20] [chromium] › search-suite\tests\search.spec.ts:184:5 › Search · Groups › API: successful search is fast and debounced (≤ threshold calls) @api
+[1A[2K[chromium] › search-suite\tests\search.spec.ts:184:5 › Search · Groups › API: successful search is fast and debounced (≤ threshold calls) @api
+[Groups] search calls=1 slowest=366ms
+
+[1A[2K[11/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "500 server error" degrades gracefully (no blank) @api
+[1A[2K[12/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "404 not found" degrades gracefully (no blank) @api
+[1A[2K[13/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "401 unauthorized" degrades gracefully (no blank) @api
+[1A[2K[14/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "403 forbidden" degrades gracefully (no blank) @api
+[1A[2K  5) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "malformed JSON" degrades gracefully (no blank) @api 
+
+    [31mTest timeout of 90000ms exceeded.[39m
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "https://cms.pocsample.in/groups", waiting until "domcontentloaded"[22m
+
+
+       at ..\pages\basePage.ts:24
+
+      22 |
+      23 |   async goto(route: string): Promise<void> {
+    > 24 |     await this.page.goto(route, { waitUntil: 'domcontentloaded' });
+         |                     ^
+      25 |   }
+      26 |
+      27 |   /**
+        at SearchPage.goto (C:\Users\User\Downloads\wilyer-playwright\search-suite\pages\basePage.ts:24:21)
+        at SearchPage.open (C:\Users\User\Downloads\wilyer-playwright\search-suite\pages\searchPage.ts:56:16)
+        at SearchHelper.open (C:\Users\User\Downloads\wilyer-playwright\search-suite\utils\searchHelper.ts:22:20)
+        at open (C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:39:20)
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:155:30
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-API-f68a9-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-f68a9-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-API-f68a9-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[15/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "empty array" degrades gracefully (no blank) @api
+[1A[2K[16/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "malformed JSON" degrades gracefully (no blank) @api
+[1A[2K[17/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "backend unavailable" degrades gracefully (no blank) @api
+[1A[2K[18/20] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "timeout (no response)" degrades gracefully (no blank) @api
+[1A[2K[19/20] [chromium] › search-suite\tests\search.spec.ts:174:5 › Search · Team › API: offline during search keeps the UI stable @api
+[1A[2K[20/20] [chromium] › search-suite\tests\search.spec.ts:184:5 › Search · Team › API: successful search is fast and debounced (≤ threshold calls) @api
+[1A[2K[chromium] › search-suite\tests\search.spec.ts:184:5 › Search · Team › API: successful search is fast and debounced (≤ threshold calls) @api
+[Team] search calls=2 slowest=398ms
+
+[1A[2K  6) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "401 unauthorized" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('aside:visible, nav:visible, header:visible, [class*="sidebar" i]:visible').first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('aside:visible, nav:visible, header:visible, [class*="sidebar" i]:visible').first()[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-4-be18b-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Team-API-4-be18b-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-4-be18b-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Team-API-4-be18b-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  6 failed
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "500 server error" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "404 not found" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "401 unauthorized" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "403 forbidden" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "malformed JSON" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "401 unauthorized" degrades gracefully (no blank) @api 
+  14 passed (4.5m)

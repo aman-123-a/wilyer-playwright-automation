@@ -1,0 +1,44 @@
+# =============================================================================
+#  Regression — the full cross-browser suite, sharded.
+#  Runs on pull requests to main and on demand. Read-only by default: opt into
+#  destructive coverage explicitly, and never on the live environment (which
+#  the framework blocks regardless).
+# =============================================================================
+name: Regression
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment'
+        type: choice
+        options: [cms, cms2, cms3, cms4, live]
+        default: cms2
+      grep:
+        description: 'Tag filter'
+        type: string
+        default: '@regression'
+      allow-destructive:
+        description: 'Permit create/update/delete suites'
+        type: boolean
+        default: false
+
+concurrency:
+  group: regression-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  regression:
+    uses: ./.github/workflows/_run-suite.yml
+    with:
+      environment: ${{ inputs.environment || 'cms2' }}
+      grep: ${{ inputs.grep || '@regression' }}
+      projects: '["chromium","firefox","webkit"]'
+      # shard-list and shard-total must agree — see _run-suite.yml.
+      shard-list: '[1,2,3,4]'
+      shard-total: 4
+      allow-destructive: ${{ inputs.allow-destructive || false }}
+      timeout-minutes: 60
+    secrets: inherit

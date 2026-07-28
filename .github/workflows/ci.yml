@@ -1,0 +1,76 @@
+# =============================================================================
+#  CI gate — runs on every push and pull request.
+#  Static checks only; no application traffic, so it needs no credentials and
+#  stays fast enough to block a merge on.
+# =============================================================================
+name: CI
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Lint · Format · Types
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: Type-check
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Format check
+        run: npm run format:check
+
+      # Catches a broken config, a bad import or a duplicate test title before
+      # anyone spends 40 minutes of runner time discovering it.
+      - name: Validate the suite enumerates
+        env:
+          TEST_ENV: cms2
+          # --list does not open the app, but config resolution requires these.
+          CMS_ADMIN_EMAIL: enumeration-only@example.invalid
+          CMS_ADMIN_PASSWORD: enumeration-only
+        run: npx playwright test --list > /dev/null
+
+  secret-scan:
+    name: Credential scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      # This repository has previously shipped real logins as "fallback"
+      # values in committed specs. This check makes that a build failure
+      # rather than something spotted in review months later.
+      - name: Fail on committed credentials
+        run: |
+          set -o pipefail
+          pattern='(password|passwd)[[:space:]]*[:=][[:space:]]*["'"'"'][^"'"'"']{3,}'
+          if grep -rInE "$pattern" \
+               --include='*.ts' --include='*.js' --include='*.json' --include='*.yml' \
+               api components config fixtures helpers pages test-data tests utils scripts \
+               | grep -viE '_(EMAIL|PASSWORD)|wrongPassword|invalid|example\.invalid|whatever|process\.env'; then
+            echo "::error::Hardcoded credential detected. Move it to .env / CI secrets."
+            exit 1
+          fi
+          echo "No hardcoded credentials found."

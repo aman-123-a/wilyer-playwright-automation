@@ -2,23 +2,15 @@
   "servers": {
     "playwright": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@playwright/mcp@latest"
-      ]
+      "args": ["-y", "@playwright/mcp@latest"]
     },
     "playwright-test": {
       "command": "npx",
-      "args": [
-        "playwright",
-        "run-test-mcp-server"
-      ]
+      "args": ["playwright", "run-test-mcp-server"]
     },
     "wilyer-playwright-local": {
       "command": "node",
-      "args": [
-        "${workspaceFolder}/mcp-server.js"
-      ]
+      "args": ["${workspaceFolder}/mcp-server.js"]
     }
   }
 }

@@ -1,59 +1,55 @@
+# =============================================================================
+#  Wilyer QA Automation — ignore rules.
+#  Principle: source and authored documents are tracked; anything a run can
+#  regenerate, and anything holding a credential or a live session, is not.
+# =============================================================================
 
-# Playwright
+# ── Dependencies ─────────────────────────────────────────────────────────────
 node_modules/
+.npm/
+
+# ── Secrets and sessions ─────────────────────────────────────────────────────
+# Real env files anywhere. Only .env.example templates are tracked.
+.env
+.env.*
+!.env.example
+**/.env
+# Cached storage-state (login cookies / JWTs) for every environment.
+storage/
+**/.auth/
+/playwright/.auth/
+# ClickUp API token.
+clickup-config.json
+
+# ── Generated test output ────────────────────────────────────────────────────
+# Anchored to the repository root on purpose: an unanchored `reports/` also
+# matches tests/reports/ (the Reports module's suite) and silently untracks it.
+/reports/
 /test-results/
 /playwright-report/
 /blob-report/
-/playwright/.cache/
-/playwright/.auth/
-/.auth/
-
-# CMS suite local env + machine reports
-.env.cms
-/reports/cms/
-
-# MCP traces and exploration artifacts
-.playwright-mcp/
-
-# Local Claude settings and runtime files
-.claude/settings.local.json
-.claude/scheduled_tasks.lock
-
-# Root-level debug screenshots and page snapshots
-/*.png
-/*.yml
-
-# Run logs
-/reports/*.log
-# Added by code-review-graph
-.code-review-graph/
-
-# Secrets — ClickUp API token lives here; never commit.
-clickup-config.json
-
-# Local Chrome profile used by browser automation (~100MB, machine-specific).
-browser-data/
-
-# Generated HTML/report bundles from the learn-playwright sandbox.
-learn-playwright/playwright-report/
-learn-playwright/test-results/
-learn-playwright/node_modules/
-
-# Generated Playwright output across ALL sub-suites (traces, screenshots,
-# report bundles, run logs). ~1.5GB of artifacts — source is kept, output is not.
+/lighthouse-reports/
 **/test-results/
 **/playwright-report/
 **/allure-results/
 **/allure-report/
-search-suite/report/
-search-suite/*.log
-learn-playwright/regression-shots/
+/playwright/.cache/
+*.log
 
-# Temp scratch documents.
+# ── Archived legacy material ─────────────────────────────────────────────────
+# legacy/ keeps the superseded suites' source, but not their debug artifacts.
+legacy/scratch/
+legacy/**/report/
+
+# ── Tooling and local machine state ──────────────────────────────────────────
+.playwright-mcp/
+.code-review-graph/
+browser-data/
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+
+# ── Scratch ──────────────────────────────────────────────────────────────────
 temp_doc*.docx
 *.tmp
-
-# Auth / session storage-state in ANY sub-suite — contains live login cookies.
-**/.auth/
-# Real env files anywhere (only .env.example templates are tracked).
-**/.env
+.DS_Store
+Thumbs.db
