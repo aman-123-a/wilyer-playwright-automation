@@ -1,17 +1,14 @@
 // =============================================================================
-//  CampaignApi — typed client for the campaign endpoints.
+//  CampaignService — typed client for the campaign endpoints.
 //
 //  Why this exists: every persistence claim in the campaign suite is settled by
 //  an API read-back, never by reading a toast. Toast lifetime (~11 s) exceeds a
 //  create loop, so a stale toast from the previous action reads as success for
 //  the current one — this produced two false findings during manual exploration
-//  (see reports/campaigns-v1-rbac/10-*.md § "Method self-correction").
+//  (see docs/qa-reports/campaigns-v1-rbac/10-*.md § "Method self-correction").
 //
-//  Auth: the CMS stores its JWT in the `footprint` cookie and sends it as
-//  `Authorization: Bearer <jwt>`. There is no token in localStorage.
-//  Verified live against cms2.pocsample.in, 2026-07-28.
-//
-//  Endpoint facts (verified, not assumed):
+//  Endpoint facts (verified live against cms2.pocsample.in, 2026-07-28 — not
+//  assumed):
 //    GET    /campaign/read?limit&page&sort&order&search&folderId  → paginated
 //    GET    /campaign/read/{id}                                   → single doc
 //    POST   /campaign/create
@@ -22,8 +19,9 @@
 //  so LIST_DEFAULTS always supplies them.
 // =============================================================================
 
-import type { APIRequestContext, APIResponse, BrowserContext } from '@playwright/test';
-import { ENV } from '../config/env';
+import type { APIResponse, BrowserContext } from '@playwright/test';
+import { BaseService, MAX_PAGE_LIMIT, type ListQuery, type Paginated } from '../BaseService';
+import type { HttpClient } from '../HttpClient';
 
 /** Media reference as the API returns it (expanded), or as create/update takes it (an id). */
 export interface CampaignFileRef {
@@ -50,15 +48,7 @@ export interface Campaign {
   data: CampaignItem[];
 }
 
-export interface CampaignList {
-  docs: Campaign[];
-  totalDocs: number;
-  limit: number;
-  totalPages: number;
-  page: number;
-  hasNextPage: boolean;
-  hasPrevPage: boolean;
-}
+export type CampaignList = Paginated<Campaign>;
 
 /** Shape the create/update endpoints accept — `file` is a bare media id here. */
 export interface CampaignPayload {
@@ -68,14 +58,7 @@ export interface CampaignPayload {
   folderId?: string | null;
 }
 
-export interface ListQuery {
-  limit?: number | string;
-  page?: number | string;
-  sort?: string;
-  order?: string;
-  search?: string;
-  folderId?: string;
-}
+export type { ListQuery };
 
 const LIST_DEFAULTS: Required<ListQuery> = {
   limit: 50,
@@ -86,48 +69,26 @@ const LIST_DEFAULTS: Required<ListQuery> = {
   folderId: '',
 };
 
-/** Server-enforced page ceiling: `limit` > 100 is a 400. Verified 2026-07-28. */
-const MAX_LIMIT = 100;
-
-export class CampaignApi {
-  private constructor(
-    private readonly request: APIRequestContext,
-    private readonly token: string,
-    private readonly base: string = ENV.API_BASE_URL,
-  ) {}
-
-  /**
-   * Build a client from an authenticated browser context. Reuses the context's
-   * own APIRequestContext so proxy/TLS settings match the browser exactly.
-   */
-  static async fromContext(context: BrowserContext): Promise<CampaignApi> {
-    const cookie = (await context.cookies()).find((c) => c.name === 'footprint');
-    if (!cookie) {
-      throw new Error(
-        'No `footprint` cookie — the browser context is not authenticated. ' +
-          'Check that the `setup` project ran and .auth/admin.json is fresh.',
-      );
-    }
-    return new CampaignApi(context.request, decodeURIComponent(cookie.value));
+export class CampaignService extends BaseService {
+  /** Build a service bound to an authenticated browser session. */
+  static async fromContext(context: BrowserContext): Promise<CampaignService> {
+    return new CampaignService(await BaseService.clientFromContext(context));
   }
 
   /** Same endpoints with a different identity — the RBAC / IDOR probe. */
-  asToken(token: string): CampaignApi {
-    return new CampaignApi(this.request, token, this.base);
+  asToken(token: string): CampaignService {
+    return new CampaignService(this.http.withToken(token));
   }
 
-  private get headers(): Record<string, string> {
-    return { Authorization: `Bearer ${this.token}`, 'Content-Type': 'application/json' };
+  /** Same endpoints with no credentials — the anonymous-access probe. */
+  asAnonymous(): CampaignService {
+    return new CampaignService(this.http.anonymous());
   }
 
   // ── Raw calls — return the response so tests can assert status codes ───────
 
   listRaw(query: ListQuery = {}): Promise<APIResponse> {
-    const q = { ...LIST_DEFAULTS, ...query };
-    const qs = new URLSearchParams(
-      Object.entries(q).map(([k, v]) => [k, String(v)]),
-    ).toString();
-    return this.request.get(`${this.base}/campaign/read?${qs}`, { headers: this.headers });
+    return this.http.rawGet('/campaign/read', { params: { ...LIST_DEFAULTS, ...query } });
   }
 
   /**
@@ -135,55 +96,47 @@ export class CampaignApi {
    * parameters the helper would otherwise supply (e.g. API-006, missing `sort`).
    */
   listRawQuery(queryString: string): Promise<APIResponse> {
-    return this.request.get(`${this.base}/campaign/read?${queryString}`, { headers: this.headers });
+    return this.http.rawGet(`/campaign/read?${queryString}`);
   }
 
   readRaw(id: string): Promise<APIResponse> {
-    return this.request.get(`${this.base}/campaign/read/${id}`, { headers: this.headers });
+    return this.http.rawGet(`/campaign/read/${id}`);
   }
 
   createRaw(payload: Partial<CampaignPayload> | Record<string, unknown>): Promise<APIResponse> {
-    return this.request.post(`${this.base}/campaign/create`, { headers: this.headers, data: payload });
+    return this.http.rawPost('/campaign/create', { data: payload });
   }
 
-  updateRaw(id: string, payload: Partial<CampaignPayload> | Record<string, unknown>): Promise<APIResponse> {
-    return this.request.post(`${this.base}/campaign/update/${id}`, { headers: this.headers, data: payload });
+  updateRaw(
+    id: string,
+    payload: Partial<CampaignPayload> | Record<string, unknown>,
+  ): Promise<APIResponse> {
+    return this.http.rawPost(`/campaign/update/${id}`, { data: payload });
   }
 
   deleteRaw(id: string): Promise<APIResponse> {
-    return this.request.delete(`${this.base}/campaign/delete/${id}`, { headers: this.headers });
+    return this.http.rawDelete(`/campaign/delete/${id}`);
   }
 
   // ── Convenience wrappers — throw on non-2xx, return parsed bodies ──────────
 
-  async list(query: ListQuery = {}): Promise<CampaignList> {
-    const res = await this.listRaw(query);
-    if (!res.ok()) throw new Error(`campaign list failed: ${res.status()} ${await res.text()}`);
-    return res.json() as Promise<CampaignList>;
+  list(query: ListQuery = {}): Promise<CampaignList> {
+    return this.http.get<CampaignList>('/campaign/read', {
+      params: { ...LIST_DEFAULTS, ...query },
+    });
   }
 
-  async read(id: string): Promise<Campaign> {
-    const res = await this.readRaw(id);
-    if (!res.ok()) throw new Error(`campaign read ${id} failed: ${res.status()} ${await res.text()}`);
-    return res.json() as Promise<Campaign>;
+  read(id: string): Promise<Campaign> {
+    return this.http.get<Campaign>(`/campaign/read/${id}`);
   }
 
   async count(): Promise<number> {
     return (await this.list({ limit: 1 })).totalDocs;
   }
 
-  /**
-   * Every campaign, paging through the list. `limit` is capped at 100 server-side,
-   * so a single oversized request is a 400 rather than a full result set — this
-   * keeps name lookups and the teardown sweep correct past 100 campaigns.
-   */
-  async listAll(query: ListQuery = {}): Promise<Campaign[]> {
-    const docs: Campaign[] = [];
-    for (let page = 1; ; page += 1) {
-      const chunk = await this.list({ ...query, limit: MAX_LIMIT, page });
-      docs.push(...chunk.docs);
-      if (!chunk.hasNextPage) return docs;
-    }
+  /** Every campaign, paging through the list. */
+  listAll(query: ListQuery = {}): Promise<Campaign[]> {
+    return this.collect<Campaign>((page, limit) => this.list({ ...query, limit, page }));
   }
 
   /**
@@ -261,4 +214,13 @@ export class CampaignApi {
   }
 }
 
-export default CampaignApi;
+/** The page ceiling is re-exported so boundary suites can assert against it. */
+export { MAX_PAGE_LIMIT };
+
+/** Historical name kept so existing specs and fixtures keep compiling. */
+export { CampaignService as CampaignApi };
+
+export default CampaignService;
+
+/** Explicit re-export of the client type for services composing this one. */
+export type { HttpClient };

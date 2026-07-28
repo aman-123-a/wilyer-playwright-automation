@@ -18,17 +18,21 @@ import { type Credentials } from '../../config/env';
 import { LoginPage } from '../../pages/LoginPage';
 import { DashboardPage } from '../../pages/DashboardPage';
 import { ROUTES } from '../../pages/BasePage';
+import { credentialsFor } from '../../helpers/rbac/roles';
 
 // -----------------------------------------------------------------------------
-//  Role-user credentials.
-//  Prefer env vars in CI; the provided values are a local fallback only.
-//  (Hardcoding secrets in a committed test is discouraged — override via
-//   CMS_ROLE_EMAIL / CMS_ROLE_PASSWORD.)
+//  Role-user credentials — resolved from the environment ONLY.
+//  This suite skips itself when the account is not configured, rather than
+//  falling back to a committed credential. A fallback login in a shared
+//  repository is a credential leak whatever the intent behind it.
+//  Set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD to enable it.
 // -----------------------------------------------------------------------------
-const ROLE_USER: Credentials = {
-  email: process.env.CMS_ROLE_EMAIL ?? 'amankumarbsrbsr@gmail.com',
-  password: process.env.CMS_ROLE_PASSWORD ?? '12345',
-};
+const ROLE_USER: Credentials | undefined = credentialsFor('restricted');
+
+test.skip(
+  ROLE_USER === undefined,
+  'No restricted-role account configured — set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD in your .env.',
+);
 
 // Admin-only routes this restricted user must NOT be able to open directly.
 // (Real routes from the app's ROUTES map, plus a couple of common guesses.)
@@ -56,12 +60,15 @@ test.use({ storageState: { cookies: [], origins: [] } });
 test.beforeEach(async ({ page }) => {
   const login = new LoginPage(page);
   await login.goto();
-  await login.login(ROLE_USER);
+  // Guarded by the file-level test.skip above; narrows the type here.
+  const creds = ROLE_USER as Credentials;
+  await login.login(creds);
 
   const ok = await login.isAuthenticated();
   test.skip(
     !ok,
-    `Role user (${ROLE_USER.email}) could not authenticate — set CMS_ROLE_* to a valid account.`,
+    `Restricted-role user (${creds.email}) could not authenticate — check ` +
+      `CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD.`,
   );
 });
 

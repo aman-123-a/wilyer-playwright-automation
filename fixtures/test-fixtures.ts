@@ -24,7 +24,7 @@ import { PrayerSchedulePage } from '../pages/PrayerSchedulePage';
 import { CampaignPickerPage } from '../pages/CampaignPickerPage';
 import { ConsoleMonitor } from '../utils/consoleMonitor';
 import { ApiMonitor } from '../utils/apiMonitor';
-import { CampaignApi } from '../utils/campaignApi';
+import { CampaignService } from '../api';
 
 interface Pages {
   loginPage: LoginPage;
@@ -49,7 +49,7 @@ interface Monitors {
 
 interface Clients {
   /** Campaign REST client bound to the authenticated browser session. */
-  campaignApi: CampaignApi;
+  campaignApi: CampaignService;
 }
 
 export const test = base.extend<Pages & Monitors & Clients>({
@@ -120,7 +120,7 @@ export const test = base.extend<Pages & Monitors & Clients>({
   // constructible after the storageState is applied — hence a fixture, not a
   // module-level singleton.
   campaignApi: async ({ context }, use) => {
-    await use(await CampaignApi.fromContext(context));
+    await use(await CampaignService.fromContext(context));
   },
 });
 

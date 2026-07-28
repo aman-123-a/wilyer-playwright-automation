@@ -26,15 +26,22 @@
 import { test, expect, type Page, type Locator } from '@playwright/test';
 import { LoginPage } from '../../pages/LoginPage';
 import { ENV, type Credentials } from '../../config/env';
+import { credentialsFor } from '../../helpers/rbac/roles';
 
 // ---------------------------------------------------------------------------
-//  Accounts (override via env in CI; committed values are a local fallback).
+//  Accounts — resolved from the environment ONLY.
+//  This suite needs two real logins (an admin to change the role, and the
+//  sub-user to verify the effect). It skips itself when either is missing
+//  rather than falling back to a committed credential.
 // ---------------------------------------------------------------------------
-const ADMIN: Credentials = ENV.ADMIN; // admin credentials supplied via .env
-const SUBUSER: Credentials = {
-  email: process.env.CMS_SUBUSER_EMAIL ?? 'ak22@gmail.com',
-  password: process.env.CMS_SUBUSER_PASSWORD ?? '12345',
-};
+const ADMIN: Credentials = ENV.ADMIN;
+const SUBUSER: Credentials | undefined = credentialsFor('unrestricted');
+
+test.skip(
+  !ADMIN.email || SUBUSER === undefined,
+  'RBAC suite needs both an admin and a sub-user account — set CMS_ADMIN_* and ' +
+    'CMS_SUBUSER_EMAIL / CMS_SUBUSER_PASSWORD in your .env.',
+);
 /** The exact name of the role assigned to the sub-user (Team → Roles card). */
 const ROLE_NAME = process.env.CMS_RBAC_ROLE ?? 'un';
 
@@ -160,7 +167,7 @@ async function setPermission(page: Page, c: PermissionCase, grant: boolean): Pro
 
 /** Edge case #2 + #4: verify the sub-user's actual access for a permission. */
 async function verifySubUserAccess(page: Page, c: PermissionCase, shouldHaveAccess: boolean): Promise<void> {
-  await freshLogin(page, SUBUSER);
+  await freshLogin(page, SUBUSER as Credentials);
 
   // (a) Sidebar link — hidden when access is revoked, present when granted.
   //     The sidebar is a plain <ul> (NOT a <nav>/<aside> landmark), so we scope
@@ -275,7 +282,7 @@ for (const perm of PERMISSIONS_TO_TEST) {
 // ---------------------------------------------------------------------------
 test.describe('RBAC · disabled-vs-hidden action controls', () => {
   test('admin-only write actions are hidden or disabled for the sub-user', async ({ page }) => {
-    await freshLogin(page, SUBUSER);
+    await freshLogin(page, SUBUSER as Credentials);
     const writeActions: RegExp[] = [/delete/i, /^create/i, /publish/i, /assign/i];
 
     for (const name of writeActions) {
