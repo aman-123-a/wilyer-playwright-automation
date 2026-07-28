@@ -1,0 +1,1121 @@
+[global-setup] admin session cached → C:\Users\User\Downloads\wilyer-playwright\search-suite\.auth\search-admin.json
+
+Running 76 tests using 3 workers
+
+[1A[2K[1/76] [chromium] › search-suite\tests\search.spec.ts:52:5 › Search · Groups › UI: invalid search shows a no-records state, not a blank page @ui
+[1A[2K[2/76] [chromium] › search-suite\tests\search.spec.ts:59:5 › Search · Groups › Functional: exact + partial match return relevant rows @functional
+[1A[2K[3/76] [chromium] › search-suite\tests\search.spec.ts:44:5 › Search · Groups › UI: search input is visible, enabled and has a placeholder @ui
+[1A[2K[4/76] [chromium] › search-suite\tests\search.spec.ts:73:5 › Search · Groups › Functional: search is case-insensitive @functional
+[1A[2K[5/76] [chromium] › search-suite\tests\search.spec.ts:86:5 › Search · Groups › Functional: Enter triggers a search request @functional
+[1A[2K[6/76] [chromium] › search-suite\tests\search.spec.ts:93:5 › Search · Groups › Functional: clearing the search restores the full list @functional
+[1A[2K[7/76] [chromium] › search-suite\tests\search.spec.ts:104:5 › Search · Groups › Functional: search state is sane after a page refresh @functional
+[1A[2K[8/76] [chromium] › search-suite\tests\search.spec.ts:112:5 › Search · Groups › Functional: multiple consecutive searches stay healthy @functional
+[1A[2K[9/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Groups › Edge: "empty" does not crash the UI @edge
+[1A[2K[10/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Groups › Edge: "single character" does not crash the UI @edge
+[1A[2K[11/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Groups › Edge: "only spaces" does not crash the UI @edge
+[1A[2K[12/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Groups › Edge: "leading/trailing spaces" does not crash the UI @edge
+[1A[2K[13/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Groups › Edge: "multiple inner spaces" does not crash the UI @edge
+[1A[2K[14/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Groups › Edge: "very long (1200 chars)" does not crash the UI @edge
+[1A[2K[15/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Groups › Edge: "special characters" does not crash the UI @edge
+[1A[2K[16/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Groups › Edge: "unicode hi/zh/ja" does not crash the UI @edge
+[1A[2K[17/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Groups › Edge: "emoji" does not crash the UI @edge
+[1A[2K[18/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Groups › Edge: "newline and tab" does not crash the UI @edge
+[1A[2K[19/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Groups › Edge: "url-encoded" does not crash the UI @edge
+[1A[2K[20/76] [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Groups › Security: "SQLi ' OR 1=1 --" is inert (no execution) @security
+[1A[2K[21/76] [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Groups › Security: "SQLi admin'--" is inert (no execution) @security
+[1A[2K[22/76] [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Groups › Security: "SQLi DROP TABLE" is inert (no execution) @security
+[1A[2K[23/76] [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Groups › Security: "XSS <script>" is inert (no execution) @security
+[1A[2K[24/76] [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Groups › Security: "XSS img onerror" is inert (no execution) @security
+[1A[2K[25/76] [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Groups › Security: "XSS svg onload" is inert (no execution) @security
+[1A[2K[26/76] [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Groups › Security: "HTML injection" is inert (no execution) @security
+[1A[2K[27/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "500 server error" degrades gracefully (no blank) @api
+[1A[2K[28/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "404 not found" degrades gracefully (no blank) @api
+[1A[2K  1) [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Groups › Security: "SQLi DROP TABLE" is inert (no execution) @security 
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "https://cms.pocsample.in/groups", waiting until "domcontentloaded"[22m
+
+
+       at ..\pages\basePage.ts:18
+
+      16 |
+      17 |   async goto(route: string): Promise<void> {
+    > 18 |     await this.page.goto(route, { waitUntil: 'domcontentloaded' });
+         |                     ^
+      19 |   }
+      20 |
+      21 |   /**
+        at SearchPage.goto (C:\Users\User\Downloads\wilyer-playwright\search-suite\pages\basePage.ts:18:21)
+        at SearchPage.open (C:\Users\User\Downloads\wilyer-playwright\search-suite\pages\searchPage.ts:56:16)
+        at SearchHelper.open (C:\Users\User\Downloads\wilyer-playwright\search-suite\utils\searchHelper.ts:22:20)
+        at open (C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:39:20)
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:138:30
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-Sec-90d2b-inert-no-execution-security-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-Sec-90d2b-inert-no-execution-security-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-Sec-90d2b-inert-no-execution-security-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  2) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "500 server error" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    18 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-860b2-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-API-860b2-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-860b2-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-API-860b2-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[29/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "401 unauthorized" degrades gracefully (no blank) @api
+[1A[2K[30/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "403 forbidden" degrades gracefully (no blank) @api
+[1A[2K  3) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "404 not found" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    18 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-4c894-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-API-4c894-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-4c894-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-API-4c894-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[31/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "empty array" degrades gracefully (no blank) @api
+[1A[2K  4) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "403 forbidden" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    13 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-21399-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-API-21399-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-21399-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-API-21399-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[32/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "malformed JSON" degrades gracefully (no blank) @api
+[1A[2K  5) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "401 unauthorized" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-cadae-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-API-cadae-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-cadae-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-API-cadae-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[33/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "backend unavailable" degrades gracefully (no blank) @api
+[1A[2K  6) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "empty array" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    18 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-c526e-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-API-c526e-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-c526e-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-API-c526e-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  7) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "malformed JSON" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    18 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-f68a9-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-API-f68a9-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-f68a9-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-API-f68a9-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[34/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "timeout (no response)" degrades gracefully (no blank) @api
+[1A[2K[35/76] [chromium] › search-suite\tests\search.spec.ts:174:5 › Search · Groups › API: offline during search keeps the UI stable @api
+[1A[2K  8) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "backend unavailable" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    18 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-7e551-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-API-7e551-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-7e551-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-API-7e551-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[36/76] [chromium] › search-suite\tests\search.spec.ts:184:5 › Search · Groups › API: successful search is fast and debounced (≤ threshold calls) @api
+[1A[2K  9) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "timeout (no response)" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    18 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-9ebe0-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-API-9ebe0-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-9ebe0-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-API-9ebe0-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[37/76] [chromium] › search-suite\tests\search.spec.ts:212:5 › Search · Groups › Combined: search + pagination stays healthy @combined
+[1A[2K  10) [chromium] › search-suite\tests\search.spec.ts:174:5 › Search · Groups › API: offline during search keeps the UI stable @api 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    18 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      178 |       await helper.search('offline_probe').catch(() => {});
+      179 |       await helper.verifyNoWhiteScreen('offline');
+    > 180 |       await expect(helper.sp.shell).toBeVisible();
+          |                                     ^
+      181 |       await context.setOffline(false);
+      182 |     });
+      183 |
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:180:37
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-6271e-rch-keeps-the-UI-stable-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-API-6271e-rch-keeps-the-UI-stable-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-6271e-rch-keeps-the-UI-stable-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-API-6271e-rch-keeps-the-UI-stable-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[38/76] [chromium] › search-suite\tests\search.spec.ts:225:5 › Search · Groups › Combined: search + browser back/forward recovers cleanly @combined
+[1A[2K[39/76] [chromium] › search-suite\tests\search.spec.ts:44:5 › Search · Team › UI: search input is visible, enabled and has a placeholder @ui
+[1A[2K[40/76] [chromium] › search-suite\tests\search.spec.ts:52:5 › Search · Team › UI: invalid search shows a no-records state, not a blank page @ui
+[1A[2K  11) [chromium] › search-suite\tests\search.spec.ts:225:5 › Search · Groups › Combined: search + browser back/forward recovers cleanly @combined 
+
+    Error: blank white screen detected (after-back)
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+    Received: [31mfalse[39m
+
+       at ..\pages\basePage.ts:32
+
+      30 |       text.trim().length > 0 || domLen > 2_000,
+      31 |       `blank white screen detected (${context})`,
+    > 32 |     ).toBeTruthy();
+         |       ^
+      33 |   }
+      34 |
+      35 |   /** App shell rendered and non-blank — the baseline "not crashed" assertion. */
+        at SearchPage.verifyNoWhiteScreen (C:\Users\User\Downloads\wilyer-playwright\search-suite\pages\basePage.ts:32:7)
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:229:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-Com-7fac5-d-recovers-cleanly-combined-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-Com-7fac5-d-recovers-cleanly-combined-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-Com-7fac5-d-recovers-cleanly-combined-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-Com-7fac5-d-recovers-cleanly-combined-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[41/76] [chromium] › search-suite\tests\search.spec.ts:59:5 › Search · Team › Functional: exact + partial match return relevant rows @functional
+[1A[2K[42/76] [chromium] › search-suite\tests\search.spec.ts:73:5 › Search · Team › Functional: search is case-insensitive @functional
+[1A[2K  12) [chromium] › search-suite\tests\search.spec.ts:73:5 › Search · Team › Functional: search is case-insensitive @functional 
+
+    Error: uppercase search should match the same rows as lowercase
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m20[39m
+    Received: [31m1[39m
+
+      81 |       const upper = await helper.sp.rowCount();
+      82 |       // Case must not change the result set size.
+    > 83 |       expect(upper, 'uppercase search should match the same rows as lowercase').toBe(lower);
+         |                                                                                 ^
+      84 |     });
+      85 |
+      86 |     test('Functional: Enter triggers a search request @functional', async ({ makeSearch }) => {
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:83:81
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-Funct-151fc-case-insensitive-functional-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Team-Funct-151fc-case-insensitive-functional-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-Funct-151fc-case-insensitive-functional-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Team-Funct-151fc-case-insensitive-functional-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[43/76] [chromium] › search-suite\tests\search.spec.ts:86:5 › Search · Team › Functional: Enter triggers a search request @functional
+[1A[2K  13) [chromium] › search-suite\tests\search.spec.ts:184:5 › Search · Groups › API: successful search is fast and debounced (≤ threshold calls) @api 
+
+    Error: [Groups] search input should be present
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('input[placeholder="Search..."]:visible').first().or(getByPlaceholder(/search/i).first())
+    Expected: visible
+    Timeout: 20000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - [Groups] search input should be present with timeout 20000ms[22m
+    [2m  - waiting for locator('input[placeholder="Search..."]:visible').first().or(getByPlaceholder(/search/i).first())[22m
+
+
+       at ..\pages\searchPage.ts:62
+
+      60 |     await firstLoad;
+      61 |     await expect(this.searchInput, `[${this.module.name}] search input should be present`)
+    > 62 |       .toBeVisible({ timeout: 20_000 });
+         |        ^
+      63 |     return this;
+      64 |   }
+      65 |
+        at SearchPage.open (C:\Users\User\Downloads\wilyer-playwright\search-suite\pages\searchPage.ts:62:8)
+        at open (C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:39:7)
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:185:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-a3e4d-unced-≤-threshold-calls-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Groups-API-a3e4d-unced-≤-threshold-calls-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Groups-API-a3e4d-unced-≤-threshold-calls-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Groups-API-a3e4d-unced-≤-threshold-calls-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[44/76] [chromium] › search-suite\tests\search.spec.ts:93:5 › Search · Team › Functional: clearing the search restores the full list @functional
+[1A[2K[45/76] [chromium] › search-suite\tests\search.spec.ts:104:5 › Search · Team › Functional: search state is sane after a page refresh @functional
+[1A[2K  14) [chromium] › search-suite\tests\search.spec.ts:52:5 › Search · Team › UI: invalid search shows a no-records state, not a blank page @ui 
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "https://cms.pocsample.in/team", waiting until "domcontentloaded"[22m
+
+
+       at ..\pages\basePage.ts:18
+
+      16 |
+      17 |   async goto(route: string): Promise<void> {
+    > 18 |     await this.page.goto(route, { waitUntil: 'domcontentloaded' });
+         |                     ^
+      19 |   }
+      20 |
+      21 |   /**
+        at SearchPage.goto (C:\Users\User\Downloads\wilyer-playwright\search-suite\pages\basePage.ts:18:21)
+        at SearchPage.open (C:\Users\User\Downloads\wilyer-playwright\search-suite\pages\searchPage.ts:56:16)
+        at SearchHelper.open (C:\Users\User\Downloads\wilyer-playwright\search-suite\utils\searchHelper.ts:22:20)
+        at open (C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:39:20)
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:53:28
+
+    Error Context: search-suite\test-results\search-Search-·-Team-UI-in-4b3b9-s-state-not-a-blank-page-ui-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-UI-in-4b3b9-s-state-not-a-blank-page-ui-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Team-UI-in-4b3b9-s-state-not-a-blank-page-ui-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[46/76] [chromium] › search-suite\tests\search.spec.ts:112:5 › Search · Team › Functional: multiple consecutive searches stay healthy @functional
+[1A[2K[47/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Team › Edge: "empty" does not crash the UI @edge
+[1A[2K[48/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Team › Edge: "single character" does not crash the UI @edge
+[1A[2K[49/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Team › Edge: "only spaces" does not crash the UI @edge
+[1A[2K[50/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Team › Edge: "leading/trailing spaces" does not crash the UI @edge
+[1A[2K[51/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Team › Edge: "multiple inner spaces" does not crash the UI @edge
+[1A[2K[52/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Team › Edge: "very long (1200 chars)" does not crash the UI @edge
+[1A[2K[53/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Team › Edge: "special characters" does not crash the UI @edge
+[1A[2K[54/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Team › Edge: "unicode hi/zh/ja" does not crash the UI @edge
+[1A[2K[55/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Team › Edge: "emoji" does not crash the UI @edge
+[1A[2K[56/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Team › Edge: "newline and tab" does not crash the UI @edge
+[1A[2K[57/76] [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Team › Edge: "url-encoded" does not crash the UI @edge
+[1A[2K[58/76] [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Team › Security: "SQLi ' OR 1=1 --" is inert (no execution) @security
+[1A[2K[59/76] [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Team › Security: "SQLi admin'--" is inert (no execution) @security
+[1A[2K  15) [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Team › Edge: "multiple inner spaces" does not crash the UI @edge 
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "https://cms.pocsample.in/team", waiting until "domcontentloaded"[22m
+
+
+       at ..\pages\basePage.ts:18
+
+      16 |
+      17 |   async goto(route: string): Promise<void> {
+    > 18 |     await this.page.goto(route, { waitUntil: 'domcontentloaded' });
+         |                     ^
+      19 |   }
+      20 |
+      21 |   /**
+        at SearchPage.goto (C:\Users\User\Downloads\wilyer-playwright\search-suite\pages\basePage.ts:18:21)
+        at SearchPage.open (C:\Users\User\Downloads\wilyer-playwright\search-suite\pages\searchPage.ts:56:16)
+        at SearchHelper.open (C:\Users\User\Downloads\wilyer-playwright\search-suite\utils\searchHelper.ts:22:20)
+        at open (C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:39:20)
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:123:30
+
+    Error Context: search-suite\test-results\search-Search-·-Team-Edge--76770--does-not-crash-the-UI-edge-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-Edge--76770--does-not-crash-the-UI-edge-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Team-Edge--76770--does-not-crash-the-UI-edge-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[60/76] [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Team › Security: "XSS <script>" is inert (no execution) @security
+[1A[2K[61/76] [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Team › Security: "SQLi DROP TABLE" is inert (no execution) @security
+[1A[2K[62/76] [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Team › Security: "XSS img onerror" is inert (no execution) @security
+[1A[2K[63/76] [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Team › Security: "XSS svg onload" is inert (no execution) @security
+[1A[2K[chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Team › Security: "XSS img onerror" is inert (no execution) @security
+[monitor] Security: "XSS img onerror" is inert (no execution) @security — 2 non-fatal issue(s):
+console: Failed to load resource: the server responded with a status of 500 ()
+5xx: 500 https://v3-5api.pocsample.in/v3/cms/team/read?search=%3Cimg%20src=x%20onerror=alert(&page=1&limit=20
+
+[1A[2K[64/76] [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Team › Security: "HTML injection" is inert (no execution) @security
+[1A[2K[chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Team › Security: "XSS <script>" is inert (no execution) @security
+[monitor] Security: "XSS <script>" is inert (no execution) @security — 4 non-fatal issue(s):
+console: Failed to load resource: the server responded with a status of 500 ()
+console: Failed to load resource: the server responded with a status of 500 ()
+5xx: 500 https://v3-5api.pocsample.in/v3/cms/team/read?search=%3Cscript%3Ealert(&page=1&limit=20
+5xx: 500 https://v3-5api.pocsample.in/v3/cms/team/read?search=%3Cscript%3Ealert(1&page=1&limit=20
+
+[1A[2K[65/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "500 server error" degrades gracefully (no blank) @api
+[1A[2K[66/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "404 not found" degrades gracefully (no blank) @api
+[1A[2K[chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Team › Security: "XSS svg onload" is inert (no execution) @security
+[monitor] Security: "XSS svg onload" is inert (no execution) @security — 2 non-fatal issue(s):
+console: Failed to load resource: the server responded with a status of 500 ()
+5xx: 500 https://v3-5api.pocsample.in/v3/cms/team/read?search=%3Csvg/onload=alert(&page=1&limit=20
+
+[1A[2K[67/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "401 unauthorized" degrades gracefully (no blank) @api
+[1A[2K  16) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "500 server error" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    18 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-5-f24bf-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Team-API-5-f24bf-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-5-f24bf-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Team-API-5-f24bf-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[68/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "403 forbidden" degrades gracefully (no blank) @api
+[1A[2K  17) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "404 not found" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    18 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-4-ecd4e-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Team-API-4-ecd4e-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-4-ecd4e-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Team-API-4-ecd4e-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[69/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "empty array" degrades gracefully (no blank) @api
+[1A[2K  18) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "401 unauthorized" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-4-be18b-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Team-API-4-be18b-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-4-be18b-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Team-API-4-be18b-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[70/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "malformed JSON" degrades gracefully (no blank) @api
+[1A[2K  19) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "403 forbidden" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    18 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-4-1a6b4-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Team-API-4-1a6b4-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-4-1a6b4-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Team-API-4-1a6b4-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[71/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "backend unavailable" degrades gracefully (no blank) @api
+[1A[2K  20) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "empty array" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    18 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-e-5f66f-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Team-API-e-5f66f-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-e-5f66f-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Team-API-e-5f66f-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[72/76] [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "timeout (no response)" degrades gracefully (no blank) @api
+[1A[2K  21) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "malformed JSON" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    18 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-m-0ee70-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Team-API-m-0ee70-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-m-0ee70-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Team-API-m-0ee70-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[73/76] [chromium] › search-suite\tests\search.spec.ts:174:5 › Search · Team › API: offline during search keeps the UI stable @api
+[1A[2K  22) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "backend unavailable" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    18 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-b-5a3d0-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Team-API-b-5a3d0-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-b-5a3d0-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Team-API-b-5a3d0-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[74/76] [chromium] › search-suite\tests\search.spec.ts:184:5 › Search · Team › API: successful search is fast and debounced (≤ threshold calls) @api
+[1A[2K  23) [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "timeout (no response)" degrades gracefully (no blank) @api 
+
+    Error: sidebar/header must remain visible
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - sidebar/header must remain visible with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    18 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      165 |         // Resilience contract: shell survives, no blank, no uncaught exception.
+      166 |         await helper.verifyNoWhiteScreen(`api:${fail.name}`);
+    > 167 |         await expect(helper.sp.shell, 'sidebar/header must remain visible').toBeVisible();
+          |                                                                             ^
+      168 |         expect(monitor.report().pageErrors, 'no uncaught JS exceptions on API failure').toEqual([]);
+      169 |
+      170 |         await helper.unmock();
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:167:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-t-e1002-des-gracefully-no-blank-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Team-API-t-e1002-des-gracefully-no-blank-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-t-e1002-des-gracefully-no-blank-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Team-API-t-e1002-des-gracefully-no-blank-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[75/76] [chromium] › search-suite\tests\search.spec.ts:212:5 › Search · Team › Combined: search + pagination stays healthy @combined
+[1A[2K[chromium] › search-suite\tests\search.spec.ts:184:5 › Search · Team › API: successful search is fast and debounced (≤ threshold calls) @api
+[Team] search calls=2 slowest=-Infinityms
+
+[1A[2K[76/76] [chromium] › search-suite\tests\search.spec.ts:225:5 › Search · Team › Combined: search + browser back/forward recovers cleanly @combined
+[1A[2K  24) [chromium] › search-suite\tests\search.spec.ts:225:5 › Search · Team › Combined: search + browser back/forward recovers cleanly @combined 
+
+    Error: blank white screen detected (after-back)
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+    Received: [31mfalse[39m
+
+       at ..\pages\basePage.ts:32
+
+      30 |       text.trim().length > 0 || domLen > 2_000,
+      31 |       `blank white screen detected (${context})`,
+    > 32 |     ).toBeTruthy();
+         |       ^
+      33 |   }
+      34 |
+      35 |   /** App shell rendered and non-blank — the baseline "not crashed" assertion. */
+        at SearchPage.verifyNoWhiteScreen (C:\Users\User\Downloads\wilyer-playwright\search-suite\pages\basePage.ts:32:7)
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:229:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-Combi-88f30-d-recovers-cleanly-combined-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Team-Combi-88f30-d-recovers-cleanly-combined-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-Combi-88f30-d-recovers-cleanly-combined-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Team-Combi-88f30-d-recovers-cleanly-combined-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  25) [chromium] › search-suite\tests\search.spec.ts:174:5 › Search · Team › API: offline during search keeps the UI stable @api 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('nav, aside, header, [class*="sidebar" i]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for locator('nav, aside, header, [class*="sidebar" i]').first()[22m
+    [2m    18 × locator resolved to <nav class="navbar bg-white navbar-light sticky-top flex-md-nowrap shadow-sm d-sm-block d-xs-block d-md-none">…</nav>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      178 |       await helper.search('offline_probe').catch(() => {});
+      179 |       await helper.verifyNoWhiteScreen('offline');
+    > 180 |       await expect(helper.sp.shell).toBeVisible();
+          |                                     ^
+      181 |       await context.setOffline(false);
+      182 |     });
+      183 |
+        at C:\Users\User\Downloads\wilyer-playwright\search-suite\tests\search.spec.ts:180:37
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-o-f4ee1-rch-keeps-the-UI-stable-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: search-suite\test-results\search-Search-·-Team-API-o-f4ee1-rch-keeps-the-UI-stable-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    search-suite\test-results\search-Search-·-Team-API-o-f4ee1-rch-keeps-the-UI-stable-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace search-suite\test-results\search-Search-·-Team-API-o-f4ee1-rch-keeps-the-UI-stable-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  25 failed
+    [chromium] › search-suite\tests\search.spec.ts:134:7 › Search · Groups › Security: "SQLi DROP TABLE" is inert (no execution) @security 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "500 server error" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "404 not found" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "401 unauthorized" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "403 forbidden" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "empty array" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "malformed JSON" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "backend unavailable" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Groups › API: "timeout (no response)" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:174:5 › Search · Groups › API: offline during search keeps the UI stable @api 
+    [chromium] › search-suite\tests\search.spec.ts:184:5 › Search · Groups › API: successful search is fast and debounced (≤ threshold calls) @api 
+    [chromium] › search-suite\tests\search.spec.ts:225:5 › Search · Groups › Combined: search + browser back/forward recovers cleanly @combined 
+    [chromium] › search-suite\tests\search.spec.ts:52:5 › Search · Team › UI: invalid search shows a no-records state, not a blank page @ui 
+    [chromium] › search-suite\tests\search.spec.ts:73:5 › Search · Team › Functional: search is case-insensitive @functional 
+    [chromium] › search-suite\tests\search.spec.ts:122:7 › Search · Team › Edge: "multiple inner spaces" does not crash the UI @edge 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "500 server error" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "404 not found" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "401 unauthorized" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "403 forbidden" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "empty array" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "malformed JSON" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "backend unavailable" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:153:7 › Search · Team › API: "timeout (no response)" degrades gracefully (no blank) @api 
+    [chromium] › search-suite\tests\search.spec.ts:174:5 › Search · Team › API: offline during search keeps the UI stable @api 
+    [chromium] › search-suite\tests\search.spec.ts:225:5 › Search · Team › Combined: search + browser back/forward recovers cleanly @combined 
+  51 passed (8.4m)
