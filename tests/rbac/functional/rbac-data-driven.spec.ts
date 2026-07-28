@@ -54,7 +54,8 @@ const SELECTORS = {
   rolesTab: (p: Page) => p.getByRole('link', { name: /^roles$/i }),
   /** The role card whose <h5> heading equals ROLE_NAME. */
   roleCard: (p: Page, name: string) =>
-    p.getByRole('heading', { level: 5, name, exact: true })
+    p
+      .getByRole('heading', { level: 5, name, exact: true })
       .locator('xpath=ancestor::*[.//button[contains(.,"Edit")]][1]'),
   editButton: (card: Locator) => card.getByRole('button', { name: /edit/i }),
   dialog: (p: Page) => p.getByRole('dialog'),
@@ -77,9 +78,9 @@ const SAVE_API = /\/role\/update\//;
 interface PermissionCase {
   name: string;
   kind: 'section' | 'switch';
-  sectionId: string;          // accordion slug (see SELECTORS.section)
-  navLabel: RegExp;           // sidebar link to assert hidden/visible
-  expectedPageUrl: string;    // route to probe directly
+  sectionId: string; // accordion slug (see SELECTORS.section)
+  navLabel: RegExp; // sidebar link to assert hidden/visible
+  expectedPageUrl: string; // route to probe directly
   // The module's data API. Verified live: when the permission is revoked some
   // routes show a full 403 page (Team, Reports) while others render an empty
   // shell whose data API quietly returns 403 (Screens, Library, Playlists,
@@ -93,9 +94,28 @@ interface PermissionCase {
 // (e.g. " Reports"), so navLabel regexes must NOT be anchored with ^…$ — match
 // the word loosely and rely on the sidebar-scoped lookup in verifySubUserAccess.
 const PERMISSIONS_TO_TEST: PermissionCase[] = [
-  { name: 'Reports',            kind: 'section', sectionId: 'reports',            navLabel: /reports/i,   expectedPageUrl: '/reports'  },
-  { name: 'Cluster Management', kind: 'section', sectionId: 'cluster-management', navLabel: /clusters/i,  expectedPageUrl: '/clusters', apiProbe: /\/cluster\/read/ },
-  { name: 'Team Administration',kind: 'section', sectionId: 'team-administration',navLabel: /team/i,      expectedPageUrl: '/team'     },
+  {
+    name: 'Reports',
+    kind: 'section',
+    sectionId: 'reports',
+    navLabel: /reports/i,
+    expectedPageUrl: '/reports',
+  },
+  {
+    name: 'Cluster Management',
+    kind: 'section',
+    sectionId: 'cluster-management',
+    navLabel: /clusters/i,
+    expectedPageUrl: '/clusters',
+    apiProbe: /\/cluster\/read/,
+  },
+  {
+    name: 'Team Administration',
+    kind: 'section',
+    sectionId: 'team-administration',
+    navLabel: /team/i,
+    expectedPageUrl: '/team',
+  },
 ];
 
 // NOTE — why the two Enable-switch toggles are NOT in the route matrix above:
@@ -132,7 +152,9 @@ async function openRoleEditor(page: Page): Promise<void> {
   await SELECTORS.rolesTab(page).click();
   await page.waitForTimeout(1_200); // role cards re-render
   const card = SELECTORS.roleCard(page, ROLE_NAME);
-  await expect(card.first(), `role card "${ROLE_NAME}" should exist`).toBeVisible({ timeout: 15_000 });
+  await expect(card.first(), `role card "${ROLE_NAME}" should exist`).toBeVisible({
+    timeout: 15_000,
+  });
   await SELECTORS.editButton(card.first()).click();
   await expect(SELECTORS.dialog(page)).toBeVisible({ timeout: 10_000 });
 }
@@ -153,20 +175,30 @@ async function setPermission(page: Page, c: PermissionCase, grant: boolean): Pro
   } else {
     // Toggle switch: only click if its checked-state differs from desired.
     const sw = SELECTORS.enableSwitch(section);
-    const isOn = (await sw.getAttribute('aria-checked')) === 'true' || (await sw.isChecked().catch(() => false));
+    const isOn =
+      (await sw.getAttribute('aria-checked')) === 'true' ||
+      (await sw.isChecked().catch(() => false));
     if (isOn !== grant) await sw.click();
   }
 
   const [resp] = await Promise.all([
-    page.waitForResponse((r) => SAVE_API.test(r.url()) && r.request().method() === 'PUT', { timeout: 20_000 }),
+    page.waitForResponse((r) => SAVE_API.test(r.url()) && r.request().method() === 'PUT', {
+      timeout: 20_000,
+    }),
     SELECTORS.updateRole(page).click(),
   ]);
   expect(resp.status(), 'Update Role save must return 2xx before we continue').toBeLessThan(300);
-  await expect(SELECTORS.dialog(page)).toBeHidden({ timeout: 10_000 }).catch(() => {});
+  await expect(SELECTORS.dialog(page))
+    .toBeHidden({ timeout: 10_000 })
+    .catch(() => {});
 }
 
 /** Edge case #2 + #4: verify the sub-user's actual access for a permission. */
-async function verifySubUserAccess(page: Page, c: PermissionCase, shouldHaveAccess: boolean): Promise<void> {
+async function verifySubUserAccess(
+  page: Page,
+  c: PermissionCase,
+  shouldHaveAccess: boolean,
+): Promise<void> {
   await freshLogin(page, SUBUSER as Credentials);
 
   // (a) Sidebar link — hidden when access is revoked, present when granted.
@@ -174,14 +206,19 @@ async function verifySubUserAccess(page: Page, c: PermissionCase, shouldHaveAcce
   //     to "the list that contains the Logout link" — robust and unambiguous,
   //     avoiding body/stat-card links to the same route. navLabel is un-anchored
   //     because sidebar links carry a leading icon glyph (" Reports").
-  const sidebar = page.getByRole('list')
+  const sidebar = page
+    .getByRole('list')
     .filter({ has: page.getByRole('link', { name: /logout/i }) })
     .first();
   const navLink = sidebar.getByRole('link', { name: c.navLabel }).first();
   if (shouldHaveAccess) {
-    await expect(navLink, `nav link for "${c.name}" should be visible`).toBeVisible({ timeout: 10_000 });
+    await expect(navLink, `nav link for "${c.name}" should be visible`).toBeVisible({
+      timeout: 10_000,
+    });
   } else {
-    await expect(navLink, `nav link for "${c.name}" should be hidden`).toHaveCount(0, { timeout: 10_000 });
+    await expect(navLink, `nav link for "${c.name}" should be hidden`).toHaveCount(0, {
+      timeout: 10_000,
+    });
   }
 
   // (b) Direct URL access — the real authorization gate. Edge case #2.
@@ -194,6 +231,11 @@ async function verifySubUserAccess(page: Page, c: PermissionCase, shouldHaveAcce
   page.on('response', onResponse);
   try {
     await page.goto(c.expectedPageUrl, { waitUntil: 'domcontentloaded' });
+    // DEBT: networkidle is a timing proxy, not a real signal. Here it exists so
+    // the response listener above can observe the module's data XHR. The proper
+    // fix is to await that specific response instead. Needs a live run with the
+    // sub-user account to verify, so it is recorded rather than changed blind.
+    // eslint-disable-next-line playwright/no-networkidle
     await page.waitForLoadState('networkidle').catch(() => {});
     // Give late XHRs a beat to resolve so apiProbe can observe their status.
     await page.waitForTimeout(1_500);
@@ -215,7 +257,9 @@ async function verifySubUserAccess(page: Page, c: PermissionCase, shouldHaveAcce
 
   if (shouldHaveAccess) {
     expect(accessError, `granted "${c.name}" must NOT show an access error`).toBeFalsy();
-    expect(url, `granted "${c.name}" should stay on ${c.expectedPageUrl}`).toContain(c.expectedPageUrl);
+    expect(url, `granted "${c.name}" should stay on ${c.expectedPageUrl}`).toContain(
+      c.expectedPageUrl,
+    );
     // The module's data API must NOT be forbidden when the permission is granted.
     expect(apiAllowed, `granted "${c.name}": data API must not return 403`).toBeTruthy();
   } else {

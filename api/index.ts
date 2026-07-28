@@ -5,7 +5,13 @@
 // =============================================================================
 
 export { HttpClient, ApiError, isRedactedHeader } from './HttpClient';
-export type { HttpMethod, QueryParams, RequestOptions, HttpLogEntry, HttpClientOptions } from './HttpClient';
+export type {
+  HttpMethod,
+  QueryParams,
+  RequestOptions,
+  HttpLogEntry,
+  HttpClientOptions,
+} from './HttpClient';
 
 export { BaseService, MAX_PAGE_LIMIT } from './BaseService';
 export type { Paginated, ListQuery } from './BaseService';

@@ -21,7 +21,12 @@ export {
   confirmedCells,
   unconfirmedCells,
 } from './rbac/PermissionMatrix';
-export type { Module, Confirmation, PermissionCell, PermissionMatrix } from './rbac/PermissionMatrix';
+export type {
+  Module,
+  Confirmation,
+  PermissionCell,
+  PermissionMatrix,
+} from './rbac/PermissionMatrix';
 
 export {
   probeRoute,

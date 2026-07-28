@@ -32,35 +32,95 @@ export interface InvalidInputCase {
 
 /** TC_LOC_005 — Latitude must stay within [-90, 90]. */
 export const LATITUDE_BOUNDARY: InvalidInputCase[] = [
-  { tc: 'TC_LOC_005', field: 'latitude', value: '90.0000', reason: 'upper valid edge — should be accepted' },
-  { tc: 'TC_LOC_005', field: 'latitude', value: '-90.0000', reason: 'lower valid edge — should be accepted' },
-  { tc: 'TC_LOC_005', field: 'latitude', value: '90.00000001', reason: 'just above 90 — must be rejected' },
+  {
+    tc: 'TC_LOC_005',
+    field: 'latitude',
+    value: '90.0000',
+    reason: 'upper valid edge — should be accepted',
+  },
+  {
+    tc: 'TC_LOC_005',
+    field: 'latitude',
+    value: '-90.0000',
+    reason: 'lower valid edge — should be accepted',
+  },
+  {
+    tc: 'TC_LOC_005',
+    field: 'latitude',
+    value: '90.00000001',
+    reason: 'just above 90 — must be rejected',
+  },
   { tc: 'TC_LOC_005', field: 'latitude', value: '-91', reason: 'below -90 — must be rejected' },
   { tc: 'TC_LOC_005', field: 'latitude', value: 'abc', reason: 'non-numeric — must be rejected' },
 ];
 
 /** TC_LOC_006 — Longitude must stay within [-180, 180]. */
 export const LONGITUDE_BOUNDARY: InvalidInputCase[] = [
-  { tc: 'TC_LOC_006', field: 'longitude', value: '180.0000', reason: 'upper valid edge — should be accepted' },
-  { tc: 'TC_LOC_006', field: 'longitude', value: '-180.0000', reason: 'lower valid edge — should be accepted' },
-  { tc: 'TC_LOC_006', field: 'longitude', value: '181.0000', reason: 'above 180 — must be rejected' },
+  {
+    tc: 'TC_LOC_006',
+    field: 'longitude',
+    value: '180.0000',
+    reason: 'upper valid edge — should be accepted',
+  },
+  {
+    tc: 'TC_LOC_006',
+    field: 'longitude',
+    value: '-180.0000',
+    reason: 'lower valid edge — should be accepted',
+  },
+  {
+    tc: 'TC_LOC_006',
+    field: 'longitude',
+    value: '181.0000',
+    reason: 'above 180 — must be rejected',
+  },
   { tc: 'TC_LOC_006', field: 'longitude', value: '-181', reason: 'below -180 — must be rejected' },
   { tc: 'TC_LOC_006', field: 'longitude', value: 'xyz', reason: 'non-numeric — must be rejected' },
 ];
 
 /** TC_LOC_007 — Pincode/Area should reject non-standard postal characters. */
 export const PINCODE_INVALID: InvalidInputCase[] = [
-  { tc: 'TC_LOC_007', field: 'area', value: 'ABC@#$xyz', reason: 'letters + symbols in postal code' },
-  { tc: 'TC_LOC_007', field: 'area', value: '12', reason: 'too short for an Indian PIN (6 digits)' },
+  {
+    tc: 'TC_LOC_007',
+    field: 'area',
+    value: 'ABC@#$xyz',
+    reason: 'letters + symbols in postal code',
+  },
+  {
+    tc: 'TC_LOC_007',
+    field: 'area',
+    value: '12',
+    reason: 'too short for an Indian PIN (6 digits)',
+  },
   { tc: 'TC_LOC_007', field: 'area', value: '999999999999', reason: 'too long' },
-  { tc: 'TC_LOC_007', field: 'area', value: '122003 hh', reason: 'trailing letters (mirrors live corrupted data)' },
+  {
+    tc: 'TC_LOC_007',
+    field: 'area',
+    value: '122003 hh',
+    reason: 'trailing letters (mirrors live corrupted data)',
+  },
 ];
 
 /** TC_LOC_009 — Special-character / XSS / SQLi payloads for text fields. */
 export const INJECTION_PAYLOADS: InvalidInputCase[] = [
-  { tc: 'TC_LOC_009', field: 'city', value: `<script>alert('xss-loc')</script>`, reason: 'stored-XSS attempt' },
-  { tc: 'TC_LOC_009', field: 'city', value: `'; DROP TABLE screens;--`, reason: 'SQL injection attempt' },
-  { tc: 'TC_LOC_009', field: 'locality', value: `<img src=x onerror=alert(1)>`, reason: 'HTML-injection attempt' },
+  {
+    tc: 'TC_LOC_009',
+    field: 'city',
+    value: `<script>alert('xss-loc')</script>`,
+    reason: 'stored-XSS attempt',
+  },
+  {
+    tc: 'TC_LOC_009',
+    field: 'city',
+    value: `'; DROP TABLE screens;--`,
+    reason: 'SQL injection attempt',
+  },
+  {
+    tc: 'TC_LOC_009',
+    field: 'locality',
+    value: `<img src=x onerror=alert(1)>`,
+    reason: 'HTML-injection attempt',
+  },
 ];
 
 /** TC_LOC_008 — Fields should cap / validate very long input (>255 chars). */

@@ -4,12 +4,12 @@ The Library upload specs (gated behind `CMS_ALLOW_DESTRUCTIVE=true`) expect
 these files. They are intentionally **not** committed — drop your own small
 samples here, or copy from the repo's existing `data/` folder:
 
-| File            | Purpose                                  |
-| --------------- | ---------------------------------------- |
-| `sample.jpg`    | Valid image upload                       |
-| `sample.mp4`    | Valid video upload                       |
-| `sample.exe`    | Unsupported-format rejection             |
-| `large.bin`     | Large-file / upload-time edge case       |
+| File         | Purpose                            |
+| ------------ | ---------------------------------- |
+| `sample.jpg` | Valid image upload                 |
+| `sample.mp4` | Valid video upload                 |
+| `sample.exe` | Unsupported-format rejection       |
+| `large.bin`  | Large-file / upload-time edge case |
 
 Generate placeholders quickly:
 

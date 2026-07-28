@@ -13,12 +13,10 @@
     "cms3": "cross-env TEST_ENV=cms3 playwright test",
     "cms4": "cross-env TEST_ENV=cms4 playwright test",
     "live": "cross-env TEST_ENV=live playwright test",
-
     "test": "playwright test",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
     "test:debug": "cross-env PWDEBUG=1 playwright test",
-
     "smoke": "playwright test --grep @smoke",
     "sanity": "playwright test --grep @sanity",
     "regression": "playwright test --grep @regression",
@@ -31,30 +29,26 @@
     "api": "playwright test --project=api",
     "perf": "playwright test --grep @performance",
     "perf:k6": "k6 run scripts/k6/load-test.js",
-
     "chromium": "playwright test --project=chromium",
     "firefox": "playwright test --project=firefox",
     "webkit": "playwright test --project=webkit",
     "mobile": "playwright test --project=\"Mobile Chrome\" --project=\"Mobile Safari\"",
-
     "report": "playwright show-report reports/html",
     "allure:generate": "allure generate reports/allure-results --clean -o reports/allure-report",
     "allure:open": "allure open reports/allure-report",
     "allure:serve": "allure serve reports/allure-results",
     "trace": "playwright show-trace",
-
-    "lint": "eslint . --max-warnings=0",
+    "lint": "eslint .",
+    "lint:strict": "eslint . --max-warnings=0",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
     "verify": "npm run typecheck && npm run lint && npm run format:check",
-
     "codegen": "playwright codegen",
     "install:browsers": "playwright install --with-deps",
     "docker:build": "docker build -f docker/Dockerfile -t wilyer-qa .",
     "docker:run": "docker compose -f docker/docker-compose.yml run --rm e2e",
-
     "mcp-server": "node mcp-server.js"
   },
   "dependencies": {

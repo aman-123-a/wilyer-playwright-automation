@@ -8,7 +8,7 @@
 // =============================================================================
 
 import { test, expect } from '../../../fixtures/test-fixtures';
-import { PrayerSchedulePage } from '../../../pages/PrayerSchedulePage';
+import { type PrayerSchedulePage } from '../../../pages/PrayerSchedulePage';
 import { ENV } from '../../../config/env';
 import { name, AUTH_PAYLOADS } from '../../../test-data/test-data';
 import { assertClean, expectNoStuckLoader } from '../../../utils/assertions';
@@ -26,9 +26,7 @@ test.describe('Prayer Schedule', () => {
     await expect(prayerSchedulePage.calendarTab).toBeVisible();
   });
 
-  test('Today tab renders all five prayer cards @regression', async ({
-    prayerSchedulePage,
-  }) => {
+  test('Today tab renders all five prayer cards @regression', async ({ prayerSchedulePage }) => {
     await prayerSchedulePage.open();
     await prayerSchedulePage.openToday();
     await prayerSchedulePage.expectPrayerCardsPresent();
@@ -45,9 +43,7 @@ test.describe('Prayer Schedule', () => {
     await expect(prayerSchedulePage.publishBtn.first()).toBeVisible();
   });
 
-  test('Calendar tab recomputes rows on Apply @regression', async ({
-    prayerSchedulePage,
-  }) => {
+  test('Calendar tab recomputes rows on Apply @regression', async ({ prayerSchedulePage }) => {
     await prayerSchedulePage.open();
     await prayerSchedulePage.openCalendar();
     // Apply is gated on a filter change ("No changes to apply"). The calendar
@@ -102,8 +98,10 @@ test.describe('Prayer Schedule', () => {
       await prayerSchedulePage.saveConfigure();
       // A nameless plan must never save silently: the drawer stays open (a
       // required-field guard) OR the app surfaces a validation error.
-      expect(await prayerSchedulePage.drawerStillOpen(),
-        'save with an empty plan name should be blocked, not accepted').toBeTruthy();
+      expect(
+        await prayerSchedulePage.drawerStillOpen(),
+        'save with an empty plan name should be blocked, not accepted',
+      ).toBeTruthy();
     });
 
     test('banner duration below the minute minimum (0) is rejected or clamped', async ({
@@ -121,8 +119,9 @@ test.describe('Prayer Schedule', () => {
       const blocked = await prayerSchedulePage.drawerStillOpen();
       if (!blocked) {
         const row = await prayerSchedulePage.planRowText(planName);
-        expect(row, `banner duration 0 must not persist — row: "${row}"`)
-          .not.toMatch(/Banner:\s*0m/i);
+        expect(row, `banner duration 0 must not persist — row: "${row}"`).not.toMatch(
+          /Banner:\s*0m/i,
+        );
       }
       await cleanup(prayerSchedulePage, planName);
     });
@@ -197,8 +196,10 @@ test.describe('Prayer Schedule', () => {
       // Location must be constrained to a known set (the coordinate-less-plan bug
       // stems from location being under-validated) — not an open text field.
       expect(options.length, 'City select should expose a bounded option list').toBeGreaterThan(1);
-      expect(options.every((o) => o.trim().length > 0),
-        'no blank City options').toBeTruthy();
+      expect(
+        options.every((o) => o.trim().length > 0),
+        'no blank City options',
+      ).toBeTruthy();
     });
   });
 
@@ -210,8 +211,10 @@ test.describe('Prayer Schedule', () => {
       await prayerSchedulePage.openSchedules();
       await prayerSchedulePage.openAddNewPlan();
       await prayerSchedulePage.bannerDurationInput().fill('1');
-      const value = await prayerSchedulePage.bannerDurationInput().inputValue();
-      expect(value, 'the valid minimum (1) should be accepted verbatim').toBe('1');
+      await expect(
+        prayerSchedulePage.bannerDurationInput(),
+        'the valid minimum (1) should be accepted verbatim',
+      ).toHaveValue('1');
     });
   });
 
@@ -235,9 +238,7 @@ test.describe('Prayer Schedule', () => {
       });
     }
 
-    test('out-of-range years (2023 / 2029) are NOT offered', async ({
-      prayerSchedulePage,
-    }) => {
+    test('out-of-range years (2023 / 2029) are NOT offered', async ({ prayerSchedulePage }) => {
       await prayerSchedulePage.open();
       await prayerSchedulePage.openCalendar();
       const picker = prayerSchedulePage.yearSelect();
@@ -257,10 +258,7 @@ test.describe('Prayer Schedule', () => {
   test.describe('CRUD — plan lifecycle @regression', () => {
     test.skip(!ENV.ALLOW_DESTRUCTIVE, 'set CMS_ALLOW_DESTRUCTIVE=true to run write cases');
 
-    test('create → read-back → cleanup a valid plan', async ({
-      prayerSchedulePage,
-      page,
-    }) => {
+    test('create → read-back → cleanup a valid plan', async ({ prayerSchedulePage, page }) => {
       const planName = name('ps-plan');
 
       // CREATE — a valid plan needs name + a real City + a Start/End period

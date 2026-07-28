@@ -53,7 +53,13 @@ async function hasInlineError(page: Page, key: LocationField): Promise<boolean> 
   // Error text rendered as a sibling within the same field group.
   const group = input.locator('xpath=ancestor::*[self::div][1]');
   const err = group.getByText(/invalid|required|must be|between|valid|error/i);
-  return (await err.count()) > 0 && (await err.first().isVisible().catch(() => false));
+  return (
+    (await err.count()) > 0 &&
+    (await err
+      .first()
+      .isVisible()
+      .catch(() => false))
+  );
 }
 
 test.describe('Screen Configuration → Location Settings (data-driven)', () => {
@@ -62,9 +68,9 @@ test.describe('Screen Configuration → Location Settings (data-driven)', () => 
   test.beforeEach(async ({ page }) => {
     await page.goto(`/screen-settings/${SCREEN_ID}`, { waitUntil: 'domcontentloaded' });
     await page.getByRole('link', { name: 'Configurations' }).first().click();
-    await expect(
-      page.getByRole('heading', { name: /location settings/i }),
-    ).toBeVisible({ timeout: 20_000 });
+    await expect(page.getByRole('heading', { name: /location settings/i })).toBeVisible({
+      timeout: 20_000,
+    });
   });
 
   // ── TC_LOC_001 — Autocomplete & auto-fill ────────────────────────────────
@@ -101,6 +107,7 @@ test.describe('Screen Configuration → Location Settings (data-driven)', () => 
   // ── TC_LOC_005 / 006 — Lat/Long boundary validation ───────────────────────
   for (const c of [...LATITUDE_BOUNDARY, ...LONGITUDE_BOUNDARY]) {
     const outOfRange = /must be rejected|non-numeric/.test(c.reason);
+
     test(`${c.tc} ${c.field}="${c.value}" (${c.reason})`, async ({ page }) => {
       await field(page, c.field).fill(c.value);
       await page.keyboard.press('Tab');
@@ -128,7 +135,9 @@ test.describe('Screen Configuration → Location Settings (data-driven)', () => 
   }
 
   // ── TC_LOC_008 — Max length ────────────────────────────────────────────────
-  test(`${MAX_LENGTH_CASE.tc} caps ${MAX_LENGTH_CASE.field} at ${MAX_LENGTH_CASE.maxExpected} chars`, async ({ page }) => {
+  test(`${MAX_LENGTH_CASE.tc} caps ${MAX_LENGTH_CASE.field} at ${MAX_LENGTH_CASE.maxExpected} chars`, async ({
+    page,
+  }) => {
     await field(page, MAX_LENGTH_CASE.field).fill(MAX_LENGTH_CASE.value);
     const value = await field(page, MAX_LENGTH_CASE.field).inputValue();
     expect(value.length).toBeLessThanOrEqual(MAX_LENGTH_CASE.maxExpected);
@@ -138,7 +147,10 @@ test.describe('Screen Configuration → Location Settings (data-driven)', () => 
   for (const c of INJECTION_PAYLOADS) {
     test(`${c.tc} ${c.field} handles payload safely (${c.reason})`, async ({ page }) => {
       let dialogFired = false;
-      page.on('dialog', async (d) => { dialogFired = true; await d.dismiss(); });
+      page.on('dialog', async (d) => {
+        dialogFired = true;
+        await d.dismiss();
+      });
       await field(page, c.field).fill(c.value);
       await page.keyboard.press('Tab');
       await page.waitForTimeout(500);

@@ -36,8 +36,10 @@ test.describe('Prayer Schedule — coordinate-less plan (negative) @regression',
     await prayerSchedulePage.openPlan(BROKEN_PLAN);
 
     // Symptom 1: the persistent "Location is required" toast is showing.
-    const toastVisible = await prayerSchedulePage.locationRequiredToast()
-      .isVisible({ timeout: 5_000 }).catch(() => false);
+    const toastVisible = await prayerSchedulePage
+      .locationRequiredToast()
+      .isVisible({ timeout: 5_000 })
+      .catch(() => false);
 
     // Symptom 2: every prayer time renders as an unresolved "—".
     await prayerSchedulePage.openToday().catch(() => {});
@@ -55,7 +57,6 @@ test.describe('Prayer Schedule — coordinate-less plan (negative) @regression',
 
     // Give the toast a moment; a well-behaved error toast auto-dismisses.
     await page.waitForTimeout(6_000);
-    await expect(prayerSchedulePage.locationRequiredToast())
-      .toBeHidden({ timeout: 4_000 });
+    await expect(prayerSchedulePage.locationRequiredToast()).toBeHidden({ timeout: 4_000 });
   });
 });

@@ -29,7 +29,7 @@ function banner(): void {
     ...lines.map((l) => `│ ${l.padEnd(width)} │`),
     `└─${'─'.repeat(width)}─┘`,
   ];
-  // eslint-disable-next-line no-console
+
   console.log(`\n${box.join('\n')}\n`);
 }
 
@@ -51,7 +51,6 @@ async function globalSetup(_config: FullConfig): Promise<void> {
   // An inferred API host produces confusing 404s that read like product bugs.
   // Say so once, loudly, rather than letting every API spec fail mysteriously.
   if (ENV.API_CONFIDENCE === 'convention') {
-    // eslint-disable-next-line no-console
     console.warn(
       `⚠ API host for "${ENV.NAME}" is inferred from the cmsN → v3-5apiN naming ` +
         `convention and has NOT been confirmed against the live server. ` +
@@ -68,7 +67,7 @@ async function globalSetup(_config: FullConfig): Promise<void> {
           `Check the target environment / network before running the suite.`,
       );
     }
-    // eslint-disable-next-line no-console
+
     console.log(`✓ CMS reachable at ${ENV.BASE_URL} (HTTP ${res.status()})`);
   } finally {
     await ctx.dispose();

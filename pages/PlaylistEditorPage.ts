@@ -172,7 +172,10 @@ export class PlaylistEditorPage extends BasePage {
    * rollup is only readable after this (or immediately after a fresh reload).
    */
   async openLayoutSettings(): Promise<this> {
-    const thumb = this.page.locator('div.px-2.fs-12').filter({ hasText: /Zones in/i }).first();
+    const thumb = this.page
+      .locator('div.px-2.fs-12')
+      .filter({ hasText: /Zones in/i })
+      .first();
     await thumb.click();
     await expect(this.layoutDurationInput).toBeVisible({ timeout: 10_000 });
     return this;
@@ -198,7 +201,11 @@ export class PlaylistEditorPage extends BasePage {
       const cands = Array.from(composer.querySelectorAll('*')).filter((e) => {
         const r = e.getBoundingClientRect();
         const s = getComputedStyle(e);
-        return r.width > 60 && r.height > 40 && (!!e.querySelector('img') || s.backgroundImage !== 'none');
+        return (
+          r.width > 60 &&
+          r.height > 40 &&
+          (!!e.querySelector('img') || s.backgroundImage !== 'none')
+        );
       });
       if (!cands.length) return null;
       cands.sort((a, b) => {
@@ -240,7 +247,13 @@ export class PlaylistEditorPage extends BasePage {
     const card = this.page
       .locator('.card-body')
       .filter({ has: this.page.locator(`a[href="/playlist-settings/${id}"]`) });
-    if (!(await card.first().isVisible({ timeout: 8_000 }).catch(() => false))) return false;
+    if (
+      !(await card
+        .first()
+        .isVisible({ timeout: 8_000 })
+        .catch(() => false))
+    )
+      return false;
     await card.first().locator('button.btn-danger').first().click();
     const modal = this.page.locator('.modal.show').filter({ hasText: /delete playlist/i });
     await expect(modal).toBeVisible({ timeout: 10_000 });

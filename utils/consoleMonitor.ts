@@ -57,7 +57,9 @@ export class ConsoleMonitor {
   /** Human-readable summary for attaching to a failure. */
   summary(): string {
     if (this.errors.length === 0) return 'No console errors.';
-    return this.errors.map((e, i) => `${i + 1}. [${e.type}] ${e.text} ${e.location ?? ''}`).join('\n');
+    return this.errors
+      .map((e, i) => `${i + 1}. [${e.type}] ${e.text} ${e.location ?? ''}`)
+      .join('\n');
   }
 }
 

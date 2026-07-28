@@ -37,9 +37,7 @@ test.describe('Playlists — missing playlist (negative path) @regression', () =
       await page.waitForTimeout(3_000);
     }
 
-    const uncaught = consoleMonitor
-      .getErrors()
-      .filter((e) => e.type === 'pageerror');
+    const uncaught = consoleMonitor.getErrors().filter((e) => e.type === 'pageerror');
 
     expect(
       uncaught,

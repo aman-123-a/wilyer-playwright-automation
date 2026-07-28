@@ -41,12 +41,5 @@
     "utils/**/*.ts",
     "*.ts"
   ],
-  "exclude": [
-    "node_modules",
-    "legacy",
-    "reports",
-    "storage",
-    "test-results",
-    "playwright-report"
-  ]
+  "exclude": ["node_modules", "legacy", "reports", "storage", "test-results", "playwright-report"]
 }

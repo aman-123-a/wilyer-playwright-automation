@@ -1,0 +1,31 @@
+# =============================================================================
+#  Smoke — the fast confidence check.
+#  Chromium only, no sharding, read-only. Runs on every push to main and on
+#  demand; should finish in minutes so it can gate a deployment.
+# =============================================================================
+name: Smoke
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment'
+        type: choice
+        options: [cms, cms2, cms3, cms4, live]
+        default: cms2
+
+concurrency:
+  group: smoke-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    uses: ./.github/workflows/_run-suite.yml
+    with:
+      environment: ${{ inputs.environment || 'cms2' }}
+      grep: '@smoke'
+      projects: '["chromium"]'
+      timeout-minutes: 20
+    secrets: inherit

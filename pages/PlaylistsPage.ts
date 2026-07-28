@@ -59,8 +59,11 @@ export class PlaylistsPage extends BasePage {
       .then(() => true)
       .catch(() => false);
     if (!loaded) {
-      const empty = await this.page.getByText(/no (playlist|data|result)/i).first()
-        .isVisible().catch(() => false);
+      const empty = await this.page
+        .getByText(/no (playlist|data|result)/i)
+        .first()
+        .isVisible()
+        .catch(() => false);
       expect(empty, 'playlists shows cards or an empty state').toBeTruthy();
     }
     return this;
@@ -68,7 +71,9 @@ export class PlaylistsPage extends BasePage {
 
   async openCreateModal(): Promise<this> {
     await this.newPlaylistBtn.click();
-    await expect(this.page.getByRole('heading', { name: /create new playlist/i })).toBeVisible({ timeout: 10_000 });
+    await expect(this.page.getByRole('heading', { name: /create new playlist/i })).toBeVisible({
+      timeout: 10_000,
+    });
     return this;
   }
 

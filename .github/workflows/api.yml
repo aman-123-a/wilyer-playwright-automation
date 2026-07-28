@@ -1,0 +1,41 @@
+# =============================================================================
+#  API — the REST suites only.
+#  Runs in the headless `api` project (no browser UI), so it is cheap enough
+#  to run on every push that touches the API layer or its services.
+# =============================================================================
+name: API
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'api/**'
+      - 'tests/**/api/**'
+      - 'config/**'
+  pull_request:
+    paths:
+      - 'api/**'
+      - 'tests/**/api/**'
+      - 'config/**'
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment'
+        type: choice
+        options: [cms, cms2, cms3, cms4, live]
+        default: cms2
+
+concurrency:
+  group: api-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  api:
+    uses: ./.github/workflows/_run-suite.yml
+    with:
+      environment: ${{ inputs.environment || 'cms2' }}
+      # The api project already scopes to tests/<module>/api/, so no tag filter.
+      grep: ''
+      projects: '["api"]'
+      timeout-minutes: 25
+    secrets: inherit

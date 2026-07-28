@@ -129,7 +129,9 @@ export class HttpClient {
 
   /** Slowest-first view of recorded calls that breached the latency budget. */
   slowCalls(budgetMs: number = ENV.PERF.apiSlowMs): HttpLogEntry[] {
-    return this.log.filter((e) => e.durationMs > budgetMs).sort((a, b) => b.durationMs - a.durationMs);
+    return this.log
+      .filter((e) => e.durationMs > budgetMs)
+      .sort((a, b) => b.durationMs - a.durationMs);
   }
 
   // ── URL + header construction ──────────────────────────────────────────────
@@ -229,7 +231,9 @@ export class HttpClient {
       requestBody:
         requestBody === undefined
           ? undefined
-          : redactBody(typeof requestBody === 'string' ? requestBody : JSON.stringify(requestBody)).slice(0, 2000),
+          : redactBody(
+              typeof requestBody === 'string' ? requestBody : JSON.stringify(requestBody),
+            ).slice(0, 2000),
       responseBody: redactBody(body).slice(0, 4000),
     });
   }
@@ -265,7 +269,12 @@ export class HttpClient {
   private async json<T>(method: HttpMethod, path: string, opts: RequestOptions): Promise<T> {
     const response = await this.send(method, path, opts);
     if (!response.ok()) {
-      throw new ApiError(method, response.url(), response.status(), await response.text().catch(() => ''));
+      throw new ApiError(
+        method,
+        response.url(),
+        response.status(),
+        await response.text().catch(() => ''),
+      );
     }
     const text = await response.text();
     if (text.length === 0) return undefined as T;

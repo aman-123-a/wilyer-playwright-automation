@@ -105,7 +105,9 @@ test.describe('Playlist — layout time duration @regression', () => {
 
     // Then re-open ZoneSettings and read back the persisted per-slide durations.
     expect(await playlistEditorPage.selectFirstZone(), 'a zone should be selectable').toBe(true);
-    await expect.poll(() => playlistEditorPage.slideDurationValue(0), { timeout: 15_000 }).toBe('25');
+    await expect
+      .poll(() => playlistEditorPage.slideDurationValue(0), { timeout: 15_000 })
+      .toBe('25');
     expect(await playlistEditorPage.slideDurationValue(1)).toBe('35');
     await expect(page.getByText(/something went wrong|error/i).first()).toBeHidden();
   });

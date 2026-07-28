@@ -61,8 +61,11 @@ export class BillingPage extends BasePage {
       .then(() => true)
       .catch(() => false);
     if (!loaded) {
-      const empty = await this.page.getByText(/no (plan|purchase|data)/i).first()
-        .isVisible().catch(() => false);
+      const empty = await this.page
+        .getByText(/no (plan|purchase|data)/i)
+        .first()
+        .isVisible()
+        .catch(() => false);
       expect(empty, 'billing shows plans or an empty state').toBeTruthy();
     }
     return this;

@@ -49,7 +49,10 @@ test.describe('Dashboard', () => {
     page,
   }) => {
     await dashboardPage.open();
-    await dashboardPage.card(/total screens/i).first().click();
+    await dashboardPage
+      .card(/total screens/i)
+      .first()
+      .click();
     await expect(page).toHaveURL(/\/screens/);
   });
 

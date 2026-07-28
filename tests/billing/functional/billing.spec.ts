@@ -26,7 +26,9 @@ test.describe('Billing', () => {
     await billingPage.expectPlansLoaded();
   });
 
-  test('My Plans / Buy Plan / My Purchases tabs are present @regression', async ({ billingPage }) => {
+  test('My Plans / Buy Plan / My Purchases tabs are present @regression', async ({
+    billingPage,
+  }) => {
     await billingPage.open();
     await expect(billingPage.myPlansTab).toBeVisible();
     await expect(billingPage.buyPlanTab).toBeVisible();

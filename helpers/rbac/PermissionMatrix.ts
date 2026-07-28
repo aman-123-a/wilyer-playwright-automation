@@ -72,21 +72,42 @@ export type PermissionMatrix = Partial<
 export const PERMISSION_MATRIX: PermissionMatrix = {
   campaigns: {
     admin: {
-      view: { allowed: true, status: 'confirmed', evidence: 'cms2, admin account, 2026-07-28: campaign list, create, update and delete all succeed via UI and API.' },
-      create: { allowed: true, status: 'confirmed', evidence: 'cms2, admin account, 2026-07-28: POST /campaign/create returns 2xx and the campaign is readable back.' },
-      edit: { allowed: true, status: 'confirmed', evidence: 'cms2, admin account, 2026-07-28: POST /campaign/update/{id} returns 2xx and the change reads back.' },
-      delete: { allowed: true, status: 'confirmed', evidence: 'cms2, admin account, 2026-07-28: DELETE /campaign/delete/{id} hard-deletes; read-back 404s.' },
-      search: { allowed: true, status: 'confirmed', evidence: 'cms2, admin account, 2026-07-28: search parameter filters the listing (see BUG-CMP-02 for its regex handling).' },
+      view: {
+        allowed: true,
+        status: 'confirmed',
+        evidence:
+          'cms2, admin account, 2026-07-28: campaign list, create, update and delete all succeed via UI and API.',
+      },
+      create: {
+        allowed: true,
+        status: 'confirmed',
+        evidence:
+          'cms2, admin account, 2026-07-28: POST /campaign/create returns 2xx and the campaign is readable back.',
+      },
+      edit: {
+        allowed: true,
+        status: 'confirmed',
+        evidence:
+          'cms2, admin account, 2026-07-28: POST /campaign/update/{id} returns 2xx and the change reads back.',
+      },
+      delete: {
+        allowed: true,
+        status: 'confirmed',
+        evidence:
+          'cms2, admin account, 2026-07-28: DELETE /campaign/delete/{id} hard-deletes; read-back 404s.',
+      },
+      search: {
+        allowed: true,
+        status: 'confirmed',
+        evidence:
+          'cms2, admin account, 2026-07-28: search parameter filters the listing (see BUG-CMP-02 for its regex handling).',
+      },
     },
   },
 };
 
 /** Look up a cell, or undefined when the combination has never been recorded. */
-export function cellFor(
-  module: Module,
-  role: Role,
-  action: Action,
-): PermissionCell | undefined {
+export function cellFor(module: Module, role: Role, action: Action): PermissionCell | undefined {
   return PERMISSION_MATRIX[module]?.[role]?.[action];
 }
 

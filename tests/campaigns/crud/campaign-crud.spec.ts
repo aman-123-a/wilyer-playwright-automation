@@ -73,7 +73,9 @@ test.describe('Campaigns · CRUD', () => {
 
     const res = await campaignPicker.create(name, { items: 1, defaultDuration: DEFAULT_DURATION });
 
-    expect(res.status, `create should reach the API — body: ${res.body} toast: ${res.toast}`).toBe(200);
+    expect(res.status, `create should reach the API — body: ${res.body} toast: ${res.toast}`).toBe(
+      200,
+    );
 
     // Identity, not counts: `totalDocs` is account-wide, so asserting a delta
     // races the other workers (and any colleague working on cms2 at the time).
@@ -117,7 +119,9 @@ test.describe('Campaigns · CRUD', () => {
     await campaignPicker.search(original);
     const res = await campaignPicker.update(original, { name: renamed });
 
-    expect(res.status, `update should reach the API — body: ${res.body} toast: ${res.toast}`).toBe(200);
+    expect(res.status, `update should reach the API — body: ${res.body} toast: ${res.toast}`).toBe(
+      200,
+    );
 
     const doc = await campaignApi.read(seeded.id);
     expect(doc.name, 'rename must persist server-side').toBe(renamed);
@@ -135,7 +139,10 @@ test.describe('Campaigns · CRUD', () => {
     await campaignPicker.search(name);
     await campaignPicker.delete(name, true);
 
-    expect(await campaignApi.findByName(name), 'campaign must be gone from the server').toBeUndefined();
+    expect(
+      await campaignApi.findByName(name),
+      'campaign must be gone from the server',
+    ).toBeUndefined();
 
     // Hard delete: the record is unrecoverable, not soft-flagged.
     const readBack = await campaignApi.readRaw(seeded.id);
@@ -233,7 +240,7 @@ test.describe('Campaigns · CRUD', () => {
     await expect(campaignPicker.cards.first()).toBeVisible({ timeout: 15_000 });
 
     expect(dialogFired, 'stored name must never execute').toBe(false);
-    expect(await page.locator('.card-body.p-2 script').count()).toBe(0);
+    await expect(page.locator('.card-body.p-2 script')).toHaveCount(0);
   });
 
   test('CMP-005 · zero media is blocked in the UI before any request fires @ui @regression', async ({
@@ -330,7 +337,10 @@ test.describe('Campaigns · CRUD', () => {
       campaignPicker,
       campaignApi,
     }, testInfo) => {
-      test.fail(true, 'BUG-CMP-04: the per-item input has no min attribute, so typing 0 or -5 sticks');
+      test.fail(
+        true,
+        'BUG-CMP-04: the per-item input has no min attribute, so typing 0 or -5 sticks',
+      );
       const name = uniqueName('MinAttr', testInfo.workerIndex);
       await campaignApi.seed(name, 1);
 
@@ -372,7 +382,6 @@ test.describe('Campaigns · CRUD', () => {
       const padded = await campaignApi.list({ search: `  ${name}  ` });
       expect(padded.totalDocs).toBeGreaterThan(0);
     });
-
   });
 
   // ───────────────────────────────────────────────────────────────────────────

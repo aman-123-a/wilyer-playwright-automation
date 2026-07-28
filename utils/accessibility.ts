@@ -22,12 +22,7 @@ export interface A11yOptions {
 export async function checkA11y(page: Page, opts: A11yOptions = {}): Promise<void> {
   const failOn = opts.failOn ?? ['serious', 'critical'];
 
-  let builder = new AxeBuilder({ page }).withTags([
-    'wcag2a',
-    'wcag2aa',
-    'wcag21a',
-    'wcag21aa',
-  ]);
+  let builder = new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']);
   for (const sel of opts.exclude ?? ['iframe']) {
     builder = builder.exclude(sel);
   }

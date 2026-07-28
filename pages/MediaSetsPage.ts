@@ -150,11 +150,16 @@ export class MediaSetsPage extends BasePage {
   async firstCardName(): Promise<string> {
     const card = this.cards().first();
     await expect(card).toBeVisible({ timeout: 10_000 });
-    const lines = (await card.innerText()).split('\n').map((l) => l.trim()).filter(Boolean);
+    const lines = (await card.innerText())
+      .split('\n')
+      .map((l) => l.trim())
+      .filter(Boolean);
     return (
       lines.find(
         (l) => !/^[A-Za-z]{3,}\s+\d{1,2}[, ]+\d{4}$/.test(l) && !/^\d+\s+files?$/i.test(l),
-      ) ?? lines[0] ?? ''
+      ) ??
+      lines[0] ??
+      ''
     );
   }
 
@@ -181,7 +186,10 @@ export class MediaSetsPage extends BasePage {
 
   /** The list always shows cards OR the empty state — never an indefinite blank. */
   async expectListResolved(): Promise<this> {
-    const hasCards = await this.cards().first().isVisible({ timeout: 10_000 }).catch(() => false);
+    const hasCards = await this.cards()
+      .first()
+      .isVisible({ timeout: 10_000 })
+      .catch(() => false);
     if (!hasCards) {
       await expect(this.emptyState()).toBeVisible({ timeout: 10_000 });
     }

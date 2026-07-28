@@ -52,9 +52,7 @@ export interface Credentials {
  * entirely. A misconfigured CI variable must never be able to delete real
  * customer data, so this is a hard block rather than a default.
  */
-const allowDestructive = ENVIRONMENT.isProduction
-  ? false
-  : bool('CMS_ALLOW_DESTRUCTIVE', false);
+const allowDestructive = ENVIRONMENT.isProduction ? false : bool('CMS_ALLOW_DESTRUCTIVE', false);
 
 export const ENV = {
   /** Active environment name, e.g. 'cms2'. */
@@ -117,8 +115,7 @@ export const ENV = {
  * Storage-state file holding the cached session, namespaced per environment so
  * switching targets can never reuse another server's cookies.
  */
-export const storageStateFor = (role: string): string =>
-  `storage/${ENV.NAME}/${role}.json`;
+export const storageStateFor = (role: string): string => `storage/${ENV.NAME}/${role}.json`;
 
 /** Cached admin session written by the `setup` project. */
 export const ADMIN_STORAGE_STATE = storageStateFor('admin');

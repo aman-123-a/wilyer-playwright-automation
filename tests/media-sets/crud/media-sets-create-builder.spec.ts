@@ -53,9 +53,7 @@ test.describe('Media Sets — Create builder @regression', () => {
     expect(counter!.total, 'library has files').toBeGreaterThan(0);
   });
 
-  test('type filter narrows the file set and the counter tracks it', async ({
-    mediaSetsPage,
-  }) => {
+  test('type filter narrows the file set and the counter tracks it', async ({ mediaSetsPage }) => {
     await mediaSetsPage.filterFiles('all');
     const all = (await mediaSetsPage.fileCounter())!.total;
     expect(all).toBeGreaterThan(0);

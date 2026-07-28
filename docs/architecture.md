@@ -1,115 +1,167 @@
-# cms-e2e — Architecture
+# Architecture
 
-> Standalone TypeScript Playwright framework targeting the Wilyer CMS
-> (`cms.pocsample.in` by default). This is the most modern, cleanly layered suite
-> in the repo. Run it from this directory via its own `playwright.config.ts`.
+One framework, five environments, fourteen modules. This page explains the layering
+and — more usefully — the reasoning behind the decisions that are not obvious.
 
-## Layout
-
-```
-cms-e2e/
-├─ config/env.ts            typed ENV (precedence: process.env > .env > defaults)
-├─ global-setup.ts          authenticates once -> writes .auth/admin.json
-├─ global-teardown.ts
-├─ playwright.config.ts     testDir=./tests, 5 browser projects, globalSetup hook
-├─ fixtures/test-fixtures.ts the wiring hub — every spec imports test/expect here
-├─ pages/                   9 Page Objects + BasePage (~842 lines total)
-├─ utils/                   monitors + capability helpers (a11y, lighthouse, api)
-├─ data/                    test-data.ts + media/ upload fixtures
-├─ perf/                    k6 load test + lighthouse-audit spec
-└─ tests/                   13 specs across 11 feature folders (~78 tests)
-```
-
-## How it wires together (data flow)
+## Layers
 
 ```
-config/env.ts  ──►  playwright.config.ts  ──►  global.setup (project "setup")
-   ENV.BASE_URL          5 projects                  logs in, caches session
-   ENV.ADMIN          (chromium/firefox/webkit       to .auth/admin.json
-                       + Mobile Chrome/Safari)              │
-                              │                             ▼
-                              └── each project loads storageState ──► tests start logged in
-                                                                          │
-fixtures/test-fixtures.ts ◄───────────────────────────────────────────────┘
-   • constructs all 9 page objects per test
-   • auto-attaches ConsoleMonitor + ApiMonitor
-   • afterEach: on failure, attaches console-errors + api-activity
-                              │
-   pages/ (BasePage ◄─ all 9 module pages)
+config/          environment registry + typed ENV       (knows: which server)
+  │
+  ├──► api/      HttpClient → BaseService → services    (knows: endpoints)
+  │
+  ├──► pages/    BasePage → module page objects         (knows: selectors)
+  │      └──► components/  reusable UI wrappers
+  │
+  ├──► helpers/  RBAC, permissions                      (knows: roles, modules)
+  ├──► utils/    monitors, assertions, a11y, perf       (knows: nothing product-specific)
+  └──► test-data/ factories                             (knows: naming rules)
+              │
+              ▼
+        fixtures/  ── the wiring hub ──►  tests/
 ```
 
-### Two things make this framework tick
+Dependencies point one way. `utils/` never imports `pages/`; `api/` never imports a
+page object. A spec imports `test` and `expect` from `fixtures/test-fixtures.ts`,
+never from `@playwright/test` directly, so every test gets the page objects and
+monitors without repeating the wiring.
 
-1. **`fixtures/test-fixtures.ts` is the single entry point.** Specs import
-   `{ test, expect }` from here — never from `@playwright/test`. That injection is
-   what provides `libraryPage`, `apiMonitor`, etc., and gives every test free
-   failure diagnostics (console + API summaries attached on failure).
+## Execution flow
 
-2. **`BasePage` holds the app-shell behaviour** — the `ROUTES` map, sidebar
-   `navTo()`, `expectShellReady()`, and the shared `confirmDestructive()` dialog
-   (`Continue` / `Yes` / `Confirm` / `Delete`). The 9 module pages extend it and
-   stay focused on their own surface.
-   > Note: sidebar selectors are intentionally **not anchored** because nav links
-   > carry a leading icon glyph in their accessible name (e.g. " Logout").
+```
+TEST_ENV=cms2
+   │
+   ▼
+config/environments.ts ──► resolves the target (URLs, confidence, isProduction)
+   │
+   ▼
+config/env.ts ──► layers .env.cms2, then .env, then process.env on top
+   │
+   ▼
+global-setup.ts ──► prints the banner, verifies credentials + reachability,
+   │                creates storage/cms2/ and reports/
+   ▼
+project "setup" ──► logs in once, writes storage/cms2/admin.json
+   │
+   ├──► project "api"       ─┐
+   ├──► project "chromium"   │ all reuse that storage state,
+   ├──► project "firefox"    │ so specs start authenticated
+   ├──► project "webkit"     │
+   └──► project "Mobile *"  ─┘
+              │
+              ▼
+   fixtures/test-fixtures.ts constructs page objects + attaches monitors per test
+              │
+              ▼
+   reports/cms2/{html,allure-results,results.json,junit.xml,test-results}
+```
 
-## Page Objects (9 + base)
+---
 
-| POM            | Lines | POM                       | Lines |
-| -------------- | ----- | ------------------------- | ----- |
-| **LibraryPage** | 173  | TeamPage                  | 82    |
-| ScreensPage    | 84    | PlaylistsPage             | 73    |
-| LoginPage      | 83    | GroupsPage                | 71    |
-| BasePage       | 82    | DashboardPage             | 70    |
-|                |       | BillingPage / ReportsPage | 64/60 |
+## Decisions worth explaining
 
-`LibraryPage` is ~2x any other — the upload flow (Browse Files -> `setFiles`
-auto-start, no confirm button) lives there.
+### URLs are in version control; only secrets are in `.env`
 
-## Specs (~78 tests across 13 files)
+The obvious design puts each environment's URL in its own `.env` file. We do not,
+because a gitignored file is invisible: nobody reviews a change to it, and "which
+server did that run hit?" becomes unanswerable after the fact.
+`config/environments.ts` is checked in, so re-targeting an environment shows up in a
+diff. `.env` carries credentials and nothing else.
 
-| Folder                          | Tests | Folder                            | Tests |
-| ------------------------------- | ----- | --------------------------------- | ----- |
-| auth                            | 12    | permissions/rbac-data-driven      | 6     |
-| dashboard                       | 11    | playlists                         | 5     |
-| library                         | 10    | team                              | 5     |
-| permissions                     | 5     | billing / groups / reports / screens | 4 ea |
-| a11y                            | 2     | playlists/playlist-not-found      | 1     |
+### API-host confidence is a first-class field
 
-- `auth.spec.ts` is the only suite that **clears** the cached session; everything
-  else starts already authenticated.
-- `playlists/playlist-not-found.spec.ts` (1 test) is the deleted-playlist 404
-  crash guard.
+`cms` and `cms2` have API hosts observed against the real servers. `cms3`, `cms4` and
+`live` do not — they follow the `cmsN → v3-5apiN` naming convention. Rather than
+encoding a guess as fact, each environment records `apiConfidence`, and global setup
+warns loudly before running against an inferred host. Otherwise a wrong host produces
+404s that read exactly like product defects.
 
-## utils/ — capability layer (not page logic)
+### Production safety is enforced, not configured
 
-- `consoleMonitor.ts` / `apiMonitor.ts` — auto-attached via fixtures.
-- `assertions.ts` — custom expects.
-- `accessibility.ts` + `lighthouse.ts` + `performance.ts` — back the `a11y/` and
-  `perf/` specs.
+`ENV.ALLOW_DESTRUCTIVE` is computed as `isProduction ? false : flag`. On `live` the
+flag is ignored entirely. A safety property that depends on someone setting a
+variable correctly is not a safety property — it is a convention with good intentions.
 
-## Config notable points
+### Storage state is namespaced per environment
 
-- **Workers capped at 4 (2 in CI)** — deliberate: the live CMS stalls under
-  one-worker-per-core, causing navigation timeouts.
-- `retries`: 2 in CI / 1 local. `trace: on-first-retry`. Video + screenshot on
-  failure.
-- Reporters: list + HTML + JSON + JUnit + **Allure**.
-- 5 browser projects (chromium / firefox / webkit / Mobile Chrome / Mobile Safari),
-  all depending on the `setup` project.
-- `testIdAttribute: 'data-testid'`, `baseURL: ENV.BASE_URL`.
+`storage/<env>/<role>.json`. Sharing one path across environments means switching
+targets can silently reuse the previous server's cookies, producing authentication
+results that belong to a different system.
 
-## Environment (`config/env.ts`)
+### Retries cover 5xx, never 4xx
 
-Import the typed `ENV` object everywhere — never read `process.env` directly from
-tests/pages. Precedence: `process.env` > `.env` file > built-in defaults.
+`HttpClient` retries transport errors and 408/429/5xx. A 400, 403 or 404 is a
+determinate answer from the server. Retrying it would slow every negative-path test
+and — worse — obscure the exact behaviour the validation and RBAC suites exist to
+prove.
 
-| Key                          | Default                      |
-| ---------------------------- | ---------------------------- |
-| `CMS_BASE_URL`               | `https://cms.pocsample.in`   |
-| `CMS_ADMIN_EMAIL/PASSWORD`   | `<set in local .env>` |
-| `CMS_ALLOW_DESTRUCTIVE`      | `false`                      |
-| `CMS_STRICT_MONITORS`        | `false` (monitors warn only) |
-| `CMS_PERF_*`, `CMS_LH_*`     | perf / lighthouse budgets    |
+### Every denial assertion checks the server
 
-`ADMIN_STORAGE_STATE = .auth/admin.json` is written by `global-setup.ts`.
-backlog status an
+`helpers/rbac/permissions.ts` treats a hidden button as a UX affordance, not an
+access control. A suite that only verifies the UI passes happily against a product
+that left the endpoint wide open. `expectDenied` always asserts the API response and
+treats UI fencing as a supporting signal.
+
+### The permission matrix records its own confidence
+
+Each cell in `PermissionMatrix.ts` is `confirmed` (observed, with dated evidence —
+asserted) or `expected` (believed — reported, never asserted). A matrix populated
+from assumption yields a green suite that proves only that the code agrees with an
+invented specification. Today five cells are confirmed; see
+[known-gaps.md](known-gaps.md#2-the-permission-matrix-is-almost-entirely-unpopulated).
+
+### API specs live in `tests/<module>/api/`
+
+The `api` project claims that path; the browser projects exclude it. Running
+browser-free HTTP calls once per browser produced five identical result sets for one
+set of signal — 20 redundant tests in the campaigns suite alone.
+
+### Persistence is verified by read-back, never by toast
+
+Toast lifetime on this CMS (~11 s) exceeds a create loop, so a stale toast from the
+previous action reads as success for the current one. This produced two false
+findings during manual exploration. Every persistence claim goes through an API
+read-back.
+
+### Test artefacts are named by factory
+
+`uniqueName()` combines a timestamp, the worker index and a counter. Timestamps alone
+collide: parallel workers start in the same millisecond, and a fast loop creates
+several records within one. The shared `QA-` prefix lets teardown sweep safely
+without touching real content.
+
+---
+
+## Configuration reference
+
+Import the typed `ENV` object everywhere — never read `process.env` directly from a
+test, page object or helper.
+
+| Variable                     | Default                            | Purpose                        |
+| ---------------------------- | ---------------------------------- | ------------------------------ |
+| `TEST_ENV`                   | `cms`                              | selects the target environment |
+| `CMS_ADMIN_EMAIL/PASSWORD`   | _(none — required)_                | primary account                |
+| `CMS_SUBUSER_EMAIL/PASSWORD` | _(none)_                           | RBAC suites                    |
+| `CMS_<ROLE>_EMAIL/PASSWORD`  | _(none)_                           | per-role accounts              |
+| `CMS_BASE_URL`               | from the environment registry      | override the application URL   |
+| `CMS_API_BASE_URL`           | from the environment registry      | override the API URL           |
+| `CMS_ALLOW_DESTRUCTIVE`      | `false` (forced `false` on `live`) | permit write suites            |
+| `CMS_STRICT_MONITORS`        | `false`                            | monitors fail vs warn          |
+| `CMS_PERF_*`, `CMS_LH_*`     | see `.env.example`                 | performance budgets            |
+
+## Reporting
+
+HTML, JSON, JUnit and Allure are produced on every run, under `reports/<env>/`. On
+failure the framework attaches a screenshot, video, trace (first retry), the captured
+console errors and the full API call log — with credentials redacted — so a CI
+failure can be triaged without reproducing it locally.
+
+The environment, both URLs and the API confidence level are written into the report
+metadata, so an archived report can always be traced back to the server it ran
+against.
+
+## Further reading
+
+- [Setup](setup.md) · [Execution](execution.md) · [CI/CD](ci-cd.md)
+- [Contributing](contributing.md) — conventions for adding coverage
+- [Known gaps](known-gaps.md) — what is not yet verified

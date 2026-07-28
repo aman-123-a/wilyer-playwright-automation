@@ -45,8 +45,11 @@ export class GroupsPage extends BasePage {
       .then(() => true)
       .catch(() => false);
     if (!loaded) {
-      const empty = await this.page.getByText(/no (group|data|result)/i).first()
-        .isVisible().catch(() => false);
+      const empty = await this.page
+        .getByText(/no (group|data|result)/i)
+        .first()
+        .isVisible()
+        .catch(() => false);
       expect(empty, 'groups list shows rows or an empty state').toBeTruthy();
     }
     return this;
@@ -55,7 +58,9 @@ export class GroupsPage extends BasePage {
   /** Open the create-group modal and confirm it rendered. */
   async openCreateModal(): Promise<this> {
     await this.newGroupBtn.click();
-    await expect(this.page.getByRole('button', { name: /create group/i })).toBeVisible({ timeout: 10_000 });
+    await expect(this.page.getByRole('button', { name: /create group/i })).toBeVisible({
+      timeout: 10_000,
+    });
     return this;
   }
 

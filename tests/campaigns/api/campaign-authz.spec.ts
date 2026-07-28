@@ -77,16 +77,25 @@ test.describe('Campaigns · API authorization @api @security', () => {
     });
 
     const res = await request.get(LIST, { headers: { Authorization: `Bearer ${forged}` } });
-    expect(res.status(), 'a self-granted feature flag must not be honoured').toBeGreaterThanOrEqual(401);
+    expect(res.status(), 'a self-granted feature flag must not be honoured').toBeGreaterThanOrEqual(
+      401,
+    );
   });
 
   test('SEC-005 · writes are rejected without credentials @critical', async ({ request }) => {
     const create = await request.post(`${ENV.API_BASE_URL}/campaign/create`, {
       data: { name: uniqueName('Unauth', 'x'), data: [], defaultDuration: 10 },
     });
-    expect(create.status(), 'an anonymous caller must not be able to create').toBeGreaterThanOrEqual(401);
+    expect(
+      create.status(),
+      'an anonymous caller must not be able to create',
+    ).toBeGreaterThanOrEqual(401);
 
-    const del = await request.delete(`${ENV.API_BASE_URL}/campaign/delete/000000000000000000000000`);
-    expect(del.status(), 'an anonymous caller must not be able to delete').toBeGreaterThanOrEqual(401);
+    const del = await request.delete(
+      `${ENV.API_BASE_URL}/campaign/delete/000000000000000000000000`,
+    );
+    expect(del.status(), 'an anonymous caller must not be able to delete').toBeGreaterThanOrEqual(
+      401,
+    );
   });
 });

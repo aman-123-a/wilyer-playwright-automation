@@ -89,10 +89,16 @@ export class LibraryPage extends BasePage {
       .waitFor({ state: 'hidden', timeout: 30_000 })
       .catch(() => {});
 
-    const hasCards = await this.mediaCards().first().isVisible({ timeout: 15_000 }).catch(() => false);
+    const hasCards = await this.mediaCards()
+      .first()
+      .isVisible({ timeout: 15_000 })
+      .catch(() => false);
     if (!hasCards) {
-      const empty = await this.page.getByText(/no (file|media|data|result)|no more files/i).first()
-        .isVisible().catch(() => false);
+      const empty = await this.page
+        .getByText(/no (file|media|data|result)|no more files/i)
+        .first()
+        .isVisible()
+        .catch(() => false);
       expect(hasCards || empty, 'library shows media or an empty state').toBeTruthy();
     }
     return this;

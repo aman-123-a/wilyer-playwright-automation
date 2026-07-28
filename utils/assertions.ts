@@ -13,7 +13,10 @@ import type { ApiMonitor } from './apiMonitor';
  * — broken third-party/CDN assets on a live build shouldn't block the suite —
  * the list is attached for review; set CMS_STRICT_MONITORS=true to hard-fail.
  */
-export async function expectNoBrokenImages(page: Page, opts: { hard?: boolean } = {}): Promise<void> {
+export async function expectNoBrokenImages(
+  page: Page,
+  opts: { hard?: boolean } = {},
+): Promise<void> {
   const hard = opts.hard ?? ENV.STRICT_MONITORS;
   const broken = await page.evaluate(() =>
     Array.from(document.images)
@@ -21,7 +24,9 @@ export async function expectNoBrokenImages(page: Page, opts: { hard?: boolean } 
       .map((img) => img.currentSrc || img.src),
   );
   if (broken.length) {
-    await test.info().attach('broken-images', { body: broken.join('\n'), contentType: 'text/plain' });
+    await test
+      .info()
+      .attach('broken-images', { body: broken.join('\n'), contentType: 'text/plain' });
   }
   if (hard) {
     expect(broken, `broken images:\n${broken.join('\n')}`).toHaveLength(0);
@@ -53,15 +58,14 @@ export async function expectNoStuckLoader(page: Page, timeout = 15_000): Promise
  * the test; otherwise it is attached as a warning annotation so noisy staging
  * builds don't block the suite.
  */
-export async function assertClean(
-  consoleMon: ConsoleMonitor,
-  apiMon: ApiMonitor,
-): Promise<void> {
+export async function assertClean(consoleMon: ConsoleMonitor, apiMon: ApiMonitor): Promise<void> {
   const consoleErrors = consoleMon.getErrors();
   const failedApis = apiMon.getFailed();
 
   if (consoleErrors.length) {
-    await test.info().attach('console-errors', { body: consoleMon.summary(), contentType: 'text/plain' });
+    await test
+      .info()
+      .attach('console-errors', { body: consoleMon.summary(), contentType: 'text/plain' });
   }
   if (failedApis.length) {
     await test.info().attach('failed-apis', { body: apiMon.summary(), contentType: 'text/plain' });

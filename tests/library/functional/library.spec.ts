@@ -132,9 +132,7 @@ test.describe('Library', () => {
     await libraryPage.waitForGridSettled();
     // Strictly greater: a silent no-op upload leaves the count unchanged and
     // must NOT pass. (If the app dedupes identical uploads this will surface it.)
-    await expect
-      .poll(() => libraryPage.cardCount(), { timeout: 15_000 })
-      .toBeGreaterThan(before);
+    await expect.poll(() => libraryPage.cardCount(), { timeout: 15_000 }).toBeGreaterThan(before);
   });
 
   destructive('rejects an unsupported file format @regression', async ({ libraryPage }) => {
@@ -147,7 +145,9 @@ test.describe('Library', () => {
     // App should surface a rejection message. Scoped terms only — a bare /error/i
     // would match unrelated page text (footer, aria labels) and false-pass.
     await expect(
-      libraryPage.page.getByText(/not supported|unsupported|invalid file|not allowed|allowed formats?/i).first(),
+      libraryPage.page
+        .getByText(/not supported|unsupported|invalid file|not allowed|allowed formats?/i)
+        .first(),
     ).toBeVisible({ timeout: 15_000 });
     // Hard signal: the rejected file must NOT have produced a new card.
     await libraryPage.closeUploadDialog();

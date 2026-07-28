@@ -1,0 +1,17 @@
+# Archived suites are frozen — reformatting them would bury their history.
+legacy/
+
+# Generated output and machine state.
+reports/
+storage/
+test-results/
+playwright-report/
+lighthouse-reports/
+allure-results/
+allure-report/
+node_modules/
+browser-data/
+package-lock.json
+
+# Authored QA documents keep their original formatting.
+docs/qa-reports/

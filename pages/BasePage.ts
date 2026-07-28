@@ -48,15 +48,18 @@ export class BasePage {
 
   /** Resolve once the authenticated app shell (sidebar) is present. */
   async expectShellReady(): Promise<this> {
-    await expect(
-      this.page.getByRole('link', { name: /dashboard/i }).first(),
-    ).toBeVisible({ timeout: 20_000 });
+    await expect(this.page.getByRole('link', { name: /dashboard/i }).first()).toBeVisible({
+      timeout: 20_000,
+    });
     return this;
   }
 
   /** Click a sidebar nav item by visible name. */
   async navTo(name: keyof typeof ROUTES): Promise<this> {
-    await this.page.getByRole('link', { name: new RegExp(name, 'i') }).first().click();
+    await this.page
+      .getByRole('link', { name: new RegExp(name, 'i') })
+      .first()
+      .click();
     await this.page.waitForLoadState('domcontentloaded');
     return this;
   }

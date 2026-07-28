@@ -15,7 +15,7 @@ function walk(s, file) {
         mod: m ? m[1] : '?',
         title: t.title.replace(/\s*@.*/, ''),
         st: retried ? 'FLAKY-PASS' : st.toUpperCase(),
-        dur: Math.round((last && last.duration || 0) / 100) / 10,
+        dur: Math.round(((last && last.duration) || 0) / 100) / 10,
       });
     }
   }
@@ -24,8 +24,15 @@ for (const s of r.suites) walk(s, '');
 let i = 1;
 for (const x of rows) {
   console.log(
-    String(i++).padStart(2), '|', x.mod.padEnd(10), '|', x.st.padEnd(10), '|',
-    (x.dur + 's').padStart(6), '|', x.title,
+    String(i++).padStart(2),
+    '|',
+    x.mod.padEnd(10),
+    '|',
+    x.st.padEnd(10),
+    '|',
+    (x.dur + 's').padStart(6),
+    '|',
+    x.title,
   );
 }
 const p = rows.filter((x) => x.st === 'PASSED').length;

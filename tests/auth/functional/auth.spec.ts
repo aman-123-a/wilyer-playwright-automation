@@ -78,7 +78,10 @@ test.describe('Authentication', () => {
     await expect(page.getByRole('link', { name: /dashboard/i }).first()).toBeVisible();
   });
 
-  test('login screen is responsive on a mobile viewport @regression', async ({ loginPage, page }) => {
+  test('login screen is responsive on a mobile viewport @regression', async ({
+    loginPage,
+    page,
+  }) => {
     await page.setViewportSize({ width: 390, height: 844 });
     await loginPage.goto();
     await expect(loginPage.email).toBeVisible();
@@ -116,7 +119,10 @@ test.describe('Authentication', () => {
     page,
   }) => {
     await loginPage.goto();
-    await page.evaluate((email) => navigator.clipboard?.writeText(email).catch(() => {}), ENV.ADMIN.email);
+    await page.evaluate(
+      (email) => navigator.clipboard?.writeText(email).catch(() => {}),
+      ENV.ADMIN.email,
+    );
     await loginPage.fill(ENV.ADMIN.email, ENV.ADMIN.password); // fill == programmatic paste
     await loginPage.submit();
     expect(await loginPage.isAuthenticated()).toBe(true);

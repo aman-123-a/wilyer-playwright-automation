@@ -24,8 +24,10 @@ export class LoginPage {
     this.page = page;
     this.email = page.getByRole('textbox', { name: /email or phone/i });
     this.password = page.getByRole('textbox', { name: /password/i });
-    this.passwordToggle = page.locator('input[type="password"], input[type="text"]')
-      .locator('xpath=following-sibling::*[1]').first();
+    this.passwordToggle = page
+      .locator('input[type="password"], input[type="text"]')
+      .locator('xpath=following-sibling::*[1]')
+      .first();
     this.loginBtn = page.getByRole('button', { name: /^log in$/i });
     this.forgotPasswordLink = page.getByRole('link', { name: /forgot password/i });
     this.errorMessage = page.getByText(

@@ -21,7 +21,8 @@ import { expect, type APIResponse, type Locator, type Page } from '@playwright/t
 const DENIED_STATUSES = new Set([401, 403, 404]);
 
 /** Text the CMS renders on an access-denied screen. */
-const DENIED_TEXT = /access denied|not authorised|not authorized|forbidden|no permission|unauthorized/i;
+const DENIED_TEXT =
+  /access denied|not authorised|not authorized|forbidden|no permission|unauthorized/i;
 
 export interface RouteGuardResult {
   /** Where the browser ended up after attempting the route. */
@@ -100,7 +101,10 @@ export async function expectControlFenced(control: Locator, label: string): Prom
   const count = await control.count();
   if (count === 0) return; // hidden — fenced
 
-  const enabled = await control.first().isEnabled().catch(() => false);
+  const enabled = await control
+    .first()
+    .isEnabled()
+    .catch(() => false);
   expect(enabled, `"${label}" is visible and enabled, so this role can invoke it`).toBe(false);
 }
 

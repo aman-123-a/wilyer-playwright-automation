@@ -21,11 +21,9 @@ export interface PageMetrics {
 export async function collectMetrics(page: Page): Promise<PageMetrics> {
   return page.evaluate(() => {
     const nav = performance.getEntriesByType('navigation')[0] as
-      | PerformanceNavigationTiming
-      | undefined;
+      PerformanceNavigationTiming | undefined;
     const fcp = performance.getEntriesByName('first-contentful-paint')[0] as
-      | PerformanceEntry
-      | undefined;
+      PerformanceEntry | undefined;
     return {
       loadMs: nav ? Math.round(nav.loadEventEnd) : 0,
       domContentLoadedMs: nav ? Math.round(nav.domContentLoadedEventEnd) : 0,
@@ -70,9 +68,10 @@ export async function measure(
   });
 
   if (hard) {
-    expect(elapsed, `${label} should complete under ${budgetMs}ms (took ${elapsed}ms)`).toBeLessThan(
-      budgetMs,
-    );
+    expect(
+      elapsed,
+      `${label} should complete under ${budgetMs}ms (took ${elapsed}ms)`,
+    ).toBeLessThan(budgetMs);
   }
   return elapsed;
 }

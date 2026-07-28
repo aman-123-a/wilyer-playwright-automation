@@ -56,8 +56,7 @@ test.describe('Media Sets — list search @regression', () => {
     await mediaSetsPage.expectTotal(exact);
 
     // P4 — substring (not prefix-only): an interior slice still matches.
-    const sub =
-      nameText.length >= 3 ? nameText.slice(1, Math.min(nameText.length, 4)) : nameText;
+    const sub = nameText.length >= 3 ? nameText.slice(1, Math.min(nameText.length, 4)) : nameText;
     await mediaSetsPage.search(sub);
     await expect
       .poll(async () => mediaSetsPage.total(), { message: `substring "${sub}" matches` })
@@ -84,9 +83,7 @@ test.describe('Media Sets — list search @regression', () => {
     await expect(mediaSetsPage.emptyState()).toContainText(NO_MATCH);
   });
 
-  test('N2 edge: surrounding whitespace is trimmed before matching', async ({
-    mediaSetsPage,
-  }) => {
+  test('N2 edge: surrounding whitespace is trimmed before matching', async ({ mediaSetsPage }) => {
     const baseline = (await mediaSetsPage.total())!;
     const nameText = await mediaSetsPage.firstCardName();
 

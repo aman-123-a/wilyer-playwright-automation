@@ -51,8 +51,11 @@ export class TeamPage extends BasePage {
       .then(() => true)
       .catch(() => false);
     if (!loaded) {
-      const empty = await this.page.getByText(/no (member|data|result)/i).first()
-        .isVisible().catch(() => false);
+      const empty = await this.page
+        .getByText(/no (member|data|result)/i)
+        .first()
+        .isVisible()
+        .catch(() => false);
       expect(empty, 'members table shows rows or an empty state').toBeTruthy();
     }
     return this;

@@ -152,16 +152,20 @@ export class PrayerSchedulePage extends BasePage {
 
   /** A label-anchored control inside the drawer: <label>…</label> → sibling. */
   private byLabelSibling(label: string, tag: 'input' | 'select'): Locator {
-    return this.page.locator(
-      `xpath=//label[starts-with(normalize-space(.),${JSON.stringify(label)})]/following-sibling::${tag}[1]`,
-    ).first();
+    return this.page
+      .locator(
+        `xpath=//label[starts-with(normalize-space(.),${JSON.stringify(label)})]/following-sibling::${tag}[1]`,
+      )
+      .first();
   }
 
   /** A label-anchored control where the control is not an immediate sibling. */
   private byLabelFollowing(label: string, tag: 'input' | 'select'): Locator {
-    return this.page.locator(
-      `xpath=//label[starts-with(normalize-space(.),${JSON.stringify(label)})]/following::${tag}[1]`,
-    ).first();
+    return this.page
+      .locator(
+        `xpath=//label[starts-with(normalize-space(.),${JSON.stringify(label)})]/following::${tag}[1]`,
+      )
+      .first();
   }
 
   /** SCHEDULE PLANS cards — a count hook for the plan list. */
@@ -274,13 +278,18 @@ export class PrayerSchedulePage extends BasePage {
   /** Save the drawer — scoped to the offcanvas so it never hits the page-level
    *  "Save Changes" on the Schedules tab. */
   async saveConfigure(): Promise<this> {
-    await this.drawer().getByRole('button', { name: /^save changes$/i }).first().click();
+    await this.drawer()
+      .getByRole('button', { name: /^save changes$/i })
+      .first()
+      .click();
     return this;
   }
 
   /** True while the drawer is still open (save blocked / validation pending). */
   async drawerStillOpen(): Promise<boolean> {
-    return this.planNameInput().isVisible({ timeout: 3_000 }).catch(() => false);
+    return this.planNameInput()
+      .isVisible({ timeout: 3_000 })
+      .catch(() => false);
   }
 
   /**
@@ -305,7 +314,10 @@ export class PrayerSchedulePage extends BasePage {
 
   /** Distinct plan names currently rendered in the Schedule Plans list. */
   async planListNames(): Promise<string[]> {
-    const strongs = await this.page.locator('strong').allInnerTexts().catch(() => []);
+    const strongs = await this.page
+      .locator('strong')
+      .allInnerTexts()
+      .catch(() => []);
     return strongs.map((t) => t.trim()).filter(Boolean);
   }
 
@@ -387,7 +399,11 @@ export class PrayerSchedulePage extends BasePage {
   /** Open the media picker from a prayer row's FILES column. */
   async openMediaPicker(prayer: Prayer): Promise<this> {
     await this.addFilesButton(prayer).click();
-    await expect(this.mediaPicker().getByText(/choose media/i).first()).toBeVisible({
+    await expect(
+      this.mediaPicker()
+        .getByText(/choose media/i)
+        .first(),
+    ).toBeVisible({
       timeout: 15_000,
     });
     await this.waitForPickerContent();
@@ -413,7 +429,10 @@ export class PrayerSchedulePage extends BasePage {
   }
 
   async closeMediaPicker(): Promise<this> {
-    await this.mediaPicker().getByRole('button', { name: /^\s*×\s*$/ }).first().click()
+    await this.mediaPicker()
+      .getByRole('button', { name: /^\s*×\s*$/ })
+      .first()
+      .click()
       .catch(() => this.page.keyboard.press('Escape'));
     await this.page.waitForTimeout(500);
     return this;
@@ -421,7 +440,9 @@ export class PrayerSchedulePage extends BasePage {
 
   /** The media search box inside the picker. */
   mediaSearch(): Locator {
-    return this.mediaPicker().getByPlaceholder(/search/i).first();
+    return this.mediaPicker()
+      .getByPlaceholder(/search/i)
+      .first();
   }
 
   /** Media tiles — matched by the "Image · 1.2 MB" / "Video · 34 MB" meta line. */
@@ -528,8 +549,10 @@ export class PrayerSchedulePage extends BasePage {
   }
 
   yearSelect(): Locator {
-    return this.page.getByRole('combobox', { name: /year/i })
-      .or(this.page.locator('select').filter({ hasText: /202[4-8]/ })).first();
+    return this.page
+      .getByRole('combobox', { name: /year/i })
+      .or(this.page.locator('select').filter({ hasText: /202[4-8]/ }))
+      .first();
   }
 
   /**
@@ -563,8 +586,11 @@ export class PrayerSchedulePage extends BasePage {
       .then(() => true)
       .catch(() => false);
     if (!loaded) {
-      const empty = await this.page.getByText(/no (data|result|schedule)/i).first()
-        .isVisible().catch(() => false);
+      const empty = await this.page
+        .getByText(/no (data|result|schedule)/i)
+        .first()
+        .isVisible()
+        .catch(() => false);
       expect(empty, 'calendar shows rows or an empty state').toBeTruthy();
     }
     return this;

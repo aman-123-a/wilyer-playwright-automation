@@ -1,4 +1,3 @@
-
 // =============================================================================
 //  ScreensPage — example FUTURE-MODULE page object demonstrating the framework's
 //  extension pattern. Screens listing at /screens.
@@ -65,8 +64,11 @@ export class ScreensPage extends BasePage {
       .catch(() => false);
 
     if (!loaded) {
-      const empty = await this.page.getByText(/no (screen|data|result)/i).first()
-        .isVisible().catch(() => false);
+      const empty = await this.page
+        .getByText(/no (screen|data|result)/i)
+        .first()
+        .isVisible()
+        .catch(() => false);
       expect(empty, 'screens list shows rows or an empty state').toBeTruthy();
     }
     return this;

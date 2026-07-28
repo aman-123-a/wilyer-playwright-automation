@@ -58,14 +58,20 @@ async function intoNestedFolder(psp: any): Promise<void> {
   test.skip(!chips.includes(NESTED.parent), `folder "${NESTED.parent}" not in library`);
   await psp.openFolder(NESTED.parent);
   const sub = await psp.folderChips();
-  test.skip(!sub.includes(NESTED.child), `folder "${NESTED.parent}/${NESTED.child}" not in library`);
+  test.skip(
+    !sub.includes(NESTED.child),
+    `folder "${NESTED.parent}/${NESTED.child}" not in library`,
+  );
   await psp.openFolder(NESTED.child);
 }
 
 test.describe('Prayer Schedule — Choose Media picker', () => {
   // ── Smoke ────────────────────────────────────────────────────────────────
 
-  test('FILES column opens the Choose Media picker @smoke @sanity @regression', async ({ prayerSchedulePage, page }) => {
+  test('FILES column opens the Choose Media picker @smoke @sanity @regression', async ({
+    prayerSchedulePage,
+    page,
+  }) => {
     test.skip(!(await openPicker(prayerSchedulePage, page)), 'no prayer plan with a FILES column');
 
     const picker = prayerSchedulePage.mediaPicker();
@@ -79,17 +85,25 @@ test.describe('Prayer Schedule — Choose Media picker', () => {
     }
   });
 
-  test('picker root lists both folders and media tiles @smoke @regression', async ({ prayerSchedulePage, page }) => {
+  test('picker root lists both folders and media tiles @smoke @regression', async ({
+    prayerSchedulePage,
+    page,
+  }) => {
     test.skip(!(await openPicker(prayerSchedulePage, page)), 'no prayer plan with a FILES column');
 
     expect(await prayerSchedulePage.mediaTiles().count(), 'root shows media').toBeGreaterThan(0);
-    const chips = (await prayerSchedulePage.folderChips()).filter((c: string) => !/^back$/i.test(c));
+    const chips = (await prayerSchedulePage.folderChips()).filter(
+      (c: string) => !/^back$/i.test(c),
+    );
     expect(chips.length, 'root shows at least one folder').toBeGreaterThan(0);
   });
 
   // ── Nested folder navigation ─────────────────────────────────────────────
 
-  test('drills into a nested folder and Back returns to the parent @regression', async ({ prayerSchedulePage, page }) => {
+  test('drills into a nested folder and Back returns to the parent @regression', async ({
+    prayerSchedulePage,
+    page,
+  }) => {
     test.skip(!(await openPicker(prayerSchedulePage, page)), 'no prayer plan with a FILES column');
 
     const rootChips = (await prayerSchedulePage.folderChips()).filter(
@@ -108,7 +122,10 @@ test.describe('Prayer Schedule — Choose Media picker', () => {
     expect(afterChips, 'Back restores the root folder listing').toEqual(rootChips);
   });
 
-  test('a three-level nested path is reachable @regression', async ({ prayerSchedulePage, page }) => {
+  test('a three-level nested path is reachable @regression', async ({
+    prayerSchedulePage,
+    page,
+  }) => {
     test.skip(!(await openPicker(prayerSchedulePage, page)), 'no prayer plan with a FILES column');
 
     await intoNestedFolder(prayerSchedulePage);
@@ -127,7 +144,10 @@ test.describe('Prayer Schedule — Choose Media picker', () => {
     ).toBeTruthy();
   });
 
-  test('an empty nested folder shows an explicit empty state @regression', async ({ prayerSchedulePage, page }) => {
+  test('an empty nested folder shows an explicit empty state @regression', async ({
+    prayerSchedulePage,
+    page,
+  }) => {
     test.skip(!(await openPicker(prayerSchedulePage, page)), 'no prayer plan with a FILES column');
 
     // A truly empty folder: no files AND no subfolders. ("India" is NOT one —
@@ -138,7 +158,7 @@ test.describe('Prayer Schedule — Choose Media picker', () => {
     test.skip(!chips.includes(EMPTY), `fixture folder "${EMPTY}" not in library`);
     await prayerSchedulePage.openFolder(EMPTY);
 
-    expect(await prayerSchedulePage.mediaTiles().count(), 'no media tiles').toBe(0);
+    await expect(prayerSchedulePage.mediaTiles(), 'no media tiles').toHaveCount(0);
     expect(
       (await prayerSchedulePage.folderChips()).filter((c: string) => !/^back$/i.test(c)),
       'no subfolders either',
@@ -151,7 +171,10 @@ test.describe('Prayer Schedule — Choose Media picker', () => {
 
   // ── Search inside a nested folder ────────────────────────────────────────
 
-  test('search inside a nested folder finds a file that lives there @regression', async ({ prayerSchedulePage, page }) => {
+  test('search inside a nested folder finds a file that lives there @regression', async ({
+    prayerSchedulePage,
+    page,
+  }) => {
     test.skip(!(await openPicker(prayerSchedulePage, page)), 'no prayer plan with a FILES column');
     await intoNestedFolder(prayerSchedulePage);
 
@@ -168,7 +191,10 @@ test.describe('Prayer Schedule — Choose Media picker', () => {
     ).toBeTruthy();
   });
 
-  test('search stays scoped to the folder subtree @regression', async ({ prayerSchedulePage, page }) => {
+  test('search stays scoped to the folder subtree @regression', async ({
+    prayerSchedulePage,
+    page,
+  }) => {
     test.skip(!(await openPicker(prayerSchedulePage, page)), 'no prayer plan with a FILES column');
     await intoNestedFolder(prayerSchedulePage);
 
@@ -188,16 +214,22 @@ test.describe('Prayer Schedule — Choose Media picker', () => {
     ).toEqual([OWNED_FILE]);
   });
 
-  test('a no-match search shows an empty state @regression', async ({ prayerSchedulePage, page }) => {
+  test('a no-match search shows an empty state @regression', async ({
+    prayerSchedulePage,
+    page,
+  }) => {
     test.skip(!(await openPicker(prayerSchedulePage, page)), 'no prayer plan with a FILES column');
     await intoNestedFolder(prayerSchedulePage);
 
     await prayerSchedulePage.searchMedia('zzzznomatch');
-    expect(await prayerSchedulePage.mediaTiles().count()).toBe(0);
+    await expect(prayerSchedulePage.mediaTiles()).toHaveCount(0);
     expect(await prayerSchedulePage.pickerIsEmpty(), 'no-match shows an empty state').toBeTruthy();
   });
 
-  test('clearing the search restores the folder contents @regression', async ({ prayerSchedulePage, page }) => {
+  test('clearing the search restores the folder contents @regression', async ({
+    prayerSchedulePage,
+    page,
+  }) => {
     test.skip(!(await openPicker(prayerSchedulePage, page)), 'no prayer plan with a FILES column');
     await intoNestedFolder(prayerSchedulePage);
 
@@ -282,8 +314,14 @@ test.describe('Prayer Schedule — Choose Media picker', () => {
   test.describe('Add media to a prayer @regression', () => {
     test.skip(!ENV.ALLOW_DESTRUCTIVE, 'set CMS_ALLOW_DESTRUCTIVE=true to run write cases');
 
-    test('selecting a file from a nested folder assigns it to the prayer', async ({ prayerSchedulePage, page }) => {
-      test.skip(!(await openPicker(prayerSchedulePage, page)), 'no prayer plan with a FILES column');
+    test('selecting a file from a nested folder assigns it to the prayer', async ({
+      prayerSchedulePage,
+      page,
+    }) => {
+      test.skip(
+        !(await openPicker(prayerSchedulePage, page)),
+        'no prayer plan with a FILES column',
+      );
 
       const before = await prayerSchedulePage.assignedMedia('Fajr');
       await intoNestedFolder(prayerSchedulePage);

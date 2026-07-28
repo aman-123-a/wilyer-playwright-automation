@@ -122,17 +122,19 @@ export class CampaignPickerPage extends BasePage {
 
   /** Type into the picker's search box and wait for the list request to settle. */
   async search(query: string): Promise<this> {
-    const response = this.page.waitForResponse(
-      (r) => /\/campaign\/read\?/.test(r.url()),
-      { timeout: 20_000 },
-    ).catch(() => null);
+    const response = this.page
+      .waitForResponse((r) => /\/campaign\/read\?/.test(r.url()), { timeout: 20_000 })
+      .catch(() => null);
     await this.searchInput.fill(query);
     await response;
     return this;
   }
 
   /** Whether a card action is enabled, disabled, or not rendered — the RBAC probe. */
-  async isActionAvailable(name: string, action: CampaignAction): Promise<'enabled' | 'disabled' | 'absent'> {
+  async isActionAvailable(
+    name: string,
+    action: CampaignAction,
+  ): Promise<'enabled' | 'disabled' | 'absent'> {
     const map: Record<CampaignAction, string> = {
       edit: 'button[data-bs-target="#updateCampaign"]',
       delete: 'button[data-bs-target="#deleteCampaign"]',
@@ -203,7 +205,10 @@ export class CampaignPickerPage extends BasePage {
 
   /** "Active Media (N)" as the modal currently reports it. */
   async activeMediaCount(modal: Locator): Promise<number> {
-    const text = await modal.getByText(/Active Media/i).first().textContent();
+    const text = await modal
+      .getByText(/Active Media/i)
+      .first()
+      .textContent();
     const m = text?.match(/(\d+)/);
     return m ? Number(m[1]) : 0;
   }
@@ -223,7 +228,7 @@ export class CampaignPickerPage extends BasePage {
     await expect(this.updateModal.locator('#name')).toHaveValue(name, { timeout: 15_000 });
     await expect(
       this.updateModal.locator('.card.shadow-sm.m-2').first(),
-      'the campaign\'s existing items must render before the form can be submitted',
+      "the campaign's existing items must render before the form can be submitted",
     ).toBeVisible({ timeout: 15_000 });
     return this;
   }
@@ -270,7 +275,9 @@ export class CampaignPickerPage extends BasePage {
     await expect(this.deleteModal).toHaveClass(/show/, { timeout: 15_000 });
     const button = confirm ? /^continue$/i : /^go back$/i;
     const settled = confirm
-      ? this.page.waitForResponse((r) => /\/campaign\/delete/.test(r.url()), { timeout: 25_000 }).catch(() => null)
+      ? this.page
+          .waitForResponse((r) => /\/campaign\/delete/.test(r.url()), { timeout: 25_000 })
+          .catch(() => null)
       : Promise.resolve(null);
     await this.deleteModal.getByRole('button', { name: button }).first().click();
     await settled;
@@ -306,7 +313,10 @@ export class CampaignPickerPage extends BasePage {
     // that is a genuine client-side block.
     const enabled = await expect(submit)
       .toBeEnabled({ timeout: 5_000 })
-      .then(() => true, () => false);
+      .then(
+        () => true,
+        () => false,
+      );
     if (!enabled) {
       const reason = (await submit.getAttribute('title')) ?? '';
       await this.dismiss(modal);
@@ -339,7 +349,9 @@ export class CampaignPickerPage extends BasePage {
     const body = await response.text().catch(() => '');
     // A successful save closes the modal itself; a rejected one leaves it open.
     if (response.ok()) {
-      await expect(modal).not.toHaveClass(/show/, { timeout: 15_000 }).catch(() => undefined);
+      await expect(modal)
+        .not.toHaveClass(/show/, { timeout: 15_000 })
+        .catch(() => undefined);
     }
     await this.dismiss(modal);
     return { status: response.status(), body, toast: (await nextToast) ?? '', blockedReason: null };
@@ -347,8 +359,17 @@ export class CampaignPickerPage extends BasePage {
 
   /** Let an in-flight toast expire so the next assertion cannot read a stale one. */
   private async waitForToastToClear(): Promise<void> {
-    if (!(await this.toast.first().isVisible().catch(() => false))) return;
-    await this.toast.first().waitFor({ state: 'hidden', timeout: 15_000 }).catch(() => undefined);
+    if (
+      !(await this.toast
+        .first()
+        .isVisible()
+        .catch(() => false))
+    )
+      return;
+    await this.toast
+      .first()
+      .waitFor({ state: 'hidden', timeout: 15_000 })
+      .catch(() => undefined);
   }
 
   /**
@@ -361,13 +382,20 @@ export class CampaignPickerPage extends BasePage {
     const control = modal.locator('[data-bs-dismiss="modal"]').first();
     if (await control.count()) {
       await control.click({ force: true }).catch(() => undefined);
-      await expect(modal).not.toHaveClass(/show/, { timeout: 10_000 }).catch(() => undefined);
+      await expect(modal)
+        .not.toHaveClass(/show/, { timeout: 10_000 })
+        .catch(() => undefined);
     }
   }
 
   /** Text of the toast currently on screen. Message evidence only — never persistence. */
   async toastText(): Promise<string> {
-    return (await this.toast.first().textContent({ timeout: 10_000 }).catch(() => '')) ?? '';
+    return (
+      (await this.toast
+        .first()
+        .textContent({ timeout: 10_000 })
+        .catch(() => '')) ?? ''
+    );
   }
 }
 

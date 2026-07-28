@@ -37,10 +37,10 @@ test.skip(
 // Admin-only routes this restricted user must NOT be able to open directly.
 // (Real routes from the app's ROUTES map, plus a couple of common guesses.)
 const RESTRICTED_ROUTES = [
-  ROUTES.team,     // '/team'    — user/role management
-  ROUTES.billing,  // '/billing' — invoices / plan management
-  '/admin',        // common admin console guess
-  '/management',   // common management guess
+  ROUTES.team, // '/team'    — user/role management
+  ROUTES.billing, // '/billing' — invoices / plan management
+  '/admin', // common admin console guess
+  '/management', // common management guess
 ] as const;
 
 // A small helper: "is this user still authenticated / not bounced to login?"
@@ -81,8 +81,8 @@ test.beforeEach(async ({ page }) => {
 test.describe('Role user — Positive (entitled features)', () => {
   test('dashboard loads and an entitled action is visible & enabled', async ({ page }) => {
     const dash = new DashboardPage(page);
-    await dash.open();          // navigates to '/' and waits for the shell
-    await dash.expectLoaded();  // stat cards painted → genuinely on the dashboard
+    await dash.open(); // navigates to '/' and waits for the shell
+    await dash.expectLoaded(); // stat cards painted → genuinely on the dashboard
 
     // Why: confirm the user can actually *use* what they see, not just that it
     // renders. A visible-but-disabled control would be a permission/UX bug.
@@ -111,15 +111,20 @@ test.describe('Role user — Negative (direct URL access is fenced)', () => {
     test(`navigating to ${route} is blocked or shows an access error`, async ({ page }) => {
       await page.goto(route, { waitUntil: 'domcontentloaded' });
       // Give SPA guards a beat to redirect / render an error boundary.
+      // DEBT: networkidle is a Playwright anti-pattern — it is a timing proxy,
+      // not a signal that the guard has decided. The correct fix is to wait on
+      // the guard's own observable outcome (the redirect, or the denial
+      // element). Doing that safely needs a live run with a restricted-role
+      // account; until one is configured, changing this blind would risk
+      // turning a passing check into a flaky one.
+      // eslint-disable-next-line playwright/no-networkidle
       await page.waitForLoadState('networkidle').catch(() => {});
 
       const url = page.url();
 
       // (a) Redirected away from the restricted path (or bounced to login/root)?
       const redirectedAway =
-        !url.includes(route) ||
-        /login|signin/i.test(url) ||
-        new URL(url).pathname === '/';
+        !url.includes(route) || /login|signin/i.test(url) || new URL(url).pathname === '/';
 
       // (b) Or an explicit forbidden / not-found / access-denied surface?
       const accessError = await page
@@ -182,7 +187,9 @@ test.describe('Role user — Hidden elements (admin actions are not actionable)'
 //     app degrades gracefully.
 // -----------------------------------------------------------------------------
 test.describe('Role user — API 403 handling (graceful, not a crash)', () => {
-  test('a forced 403 on a restricted endpoint shows access-denied, not a crash', async ({ page }) => {
+  test('a forced 403 on a restricted endpoint shows access-denied, not a crash', async ({
+    page,
+  }) => {
     // Intercept any restricted-looking API call and force a 403 Forbidden.
     await page.route(/\/api\/.*(admin|billing|team|role|invoice|setting)/i, async (route) => {
       await route.fulfill({
@@ -195,6 +202,9 @@ test.describe('Role user — API 403 handling (graceful, not a crash)', () => {
     // Visit a surface that fetches one of those endpoints. Billing is a good
     // probe: it's admin-oriented and triggers a data fetch on load.
     await page.goto(ROUTES.billing, { waitUntil: 'domcontentloaded' });
+    // DEBT: see the note on the restricted-route test above — same anti-pattern,
+    // same reason it has not been replaced yet.
+    // eslint-disable-next-line playwright/no-networkidle
     await page.waitForLoadState('networkidle').catch(() => {});
 
     // (a) The app must still be alive — the body renders, no error boundary blew up.
@@ -218,7 +228,9 @@ test.describe('Role user — API 403 handling (graceful, not a crash)', () => {
     if (!deniedShown) {
       // Still authenticated (not logged out) is the minimum acceptable bar.
       expect(await loginButtonGone(page), 'a 403 should not log the user out').toBeTruthy();
-      console.warn('[perm] 403 handled without a crash, but no explicit "Access Denied" notice was shown.');
+      console.warn(
+        '[perm] 403 handled without a crash, but no explicit "Access Denied" notice was shown.',
+      );
     } else {
       await expect(
         page.getByText(/403|forbidden|access denied|unauthori[sz]ed|no permission/i).first(),

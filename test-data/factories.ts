@@ -69,7 +69,7 @@ export const INJECTION_PAYLOADS = {
   xss: [
     '<script>window.__xss=1</script>',
     '"><img src=x onerror="window.__xss=1">',
-    "javascript:window.__xss=1",
+    'javascript:window.__xss=1',
   ],
   sql: ["' OR '1'='1", "'; DROP TABLE campaigns; --", "1' UNION SELECT null--"],
   /** The CMS search parameter is an unescaped regex — see BUG-CMP-02. */

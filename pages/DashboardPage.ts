@@ -43,7 +43,9 @@ export class DashboardPage extends BasePage {
   /** A single stat card by its label text (e.g. "Total Screens"). */
   card(label: string | RegExp): Locator {
     const re = typeof label === 'string' ? new RegExp(label, 'i') : label;
-    return this.page.getByRole('link').filter({ has: this.page.getByRole('heading', { name: re }) });
+    return this.page
+      .getByRole('link')
+      .filter({ has: this.page.getByRole('heading', { name: re }) });
   }
 
   /** The numeric/text value rendered inside a stat card. */
