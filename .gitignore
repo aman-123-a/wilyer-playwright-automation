@@ -22,12 +22,13 @@ storage/
 clickup-config.json
 
 # ── Generated test output ────────────────────────────────────────────────────
-# reports/ holds run artifacts only; authored QA documents live in docs/qa-reports/.
-reports/
-test-results/
-playwright-report/
-blob-report/
-lighthouse-reports/
+# Anchored to the repository root on purpose: an unanchored `reports/` also
+# matches tests/reports/ (the Reports module's suite) and silently untracks it.
+/reports/
+/test-results/
+/playwright-report/
+/blob-report/
+/lighthouse-reports/
 **/test-results/
 **/playwright-report/
 **/allure-results/
