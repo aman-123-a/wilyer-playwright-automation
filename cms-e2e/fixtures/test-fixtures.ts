@@ -16,12 +16,15 @@ import { MediaSetsPage } from '../pages/MediaSetsPage';
 import { ScreensPage } from '../pages/ScreensPage';
 import { GroupsPage } from '../pages/GroupsPage';
 import { PlaylistsPage } from '../pages/PlaylistsPage';
+import { PlaylistEditorPage } from '../pages/PlaylistEditorPage';
 import { ReportsPage } from '../pages/ReportsPage';
 import { BillingPage } from '../pages/BillingPage';
 import { TeamPage } from '../pages/TeamPage';
 import { PrayerSchedulePage } from '../pages/PrayerSchedulePage';
+import { CampaignPickerPage } from '../pages/CampaignPickerPage';
 import { ConsoleMonitor } from '../utils/consoleMonitor';
 import { ApiMonitor } from '../utils/apiMonitor';
+import { CampaignApi } from '../utils/campaignApi';
 
 interface Pages {
   loginPage: LoginPage;
@@ -31,10 +34,12 @@ interface Pages {
   screensPage: ScreensPage;
   groupsPage: GroupsPage;
   playlistsPage: PlaylistsPage;
+  playlistEditorPage: PlaylistEditorPage;
   reportsPage: ReportsPage;
   billingPage: BillingPage;
   teamPage: TeamPage;
   prayerSchedulePage: PrayerSchedulePage;
+  campaignPicker: CampaignPickerPage;
 }
 
 interface Monitors {
@@ -42,7 +47,12 @@ interface Monitors {
   apiMonitor: ApiMonitor;
 }
 
-export const test = base.extend<Pages & Monitors>({
+interface Clients {
+  /** Campaign REST client bound to the authenticated browser session. */
+  campaignApi: CampaignApi;
+}
+
+export const test = base.extend<Pages & Monitors & Clients>({
   // Monitors attach at page creation so they capture the whole test.
   consoleMonitor: async ({ page }, use) => {
     const monitor = new ConsoleMonitor(page);
@@ -82,6 +92,10 @@ export const test = base.extend<Pages & Monitors>({
     await use(new PlaylistsPage(page));
   },
 
+  playlistEditorPage: async ({ page }, use) => {
+    await use(new PlaylistEditorPage(page));
+  },
+
   reportsPage: async ({ page }, use) => {
     await use(new ReportsPage(page));
   },
@@ -96,6 +110,17 @@ export const test = base.extend<Pages & Monitors>({
 
   prayerSchedulePage: async ({ page }, use) => {
     await use(new PrayerSchedulePage(page));
+  },
+
+  campaignPicker: async ({ page }, use) => {
+    await use(new CampaignPickerPage(page));
+  },
+
+  // Reads the session JWT from the context's `footprint` cookie, so it is only
+  // constructible after the storageState is applied — hence a fixture, not a
+  // module-level singleton.
+  campaignApi: async ({ context }, use) => {
+    await use(await CampaignApi.fromContext(context));
   },
 });
 

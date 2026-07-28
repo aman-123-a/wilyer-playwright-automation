@@ -9,6 +9,16 @@ import { assertClean } from '../../utils/assertions';
 import { measure } from '../../utils/performance';
 
 test.describe('Billing', () => {
+  // The Billing module is not deployed on every build: on live the /billing
+  // route falls back to rendering the Dashboard while the URL stays /billing.
+  // Skip the module there rather than reporting four false failures.
+  test.beforeEach(async ({ billingPage }) => {
+    test.skip(
+      !(await billingPage.isAvailable()),
+      'Billing module is not deployed on this build (/billing renders the Dashboard)',
+    );
+  });
+
   test('billing page loads with plans or an empty state @smoke @sanity @regression', async ({
     billingPage,
   }) => {

@@ -82,6 +82,22 @@ export class MediaSetsPage extends BasePage {
     return this;
   }
 
+  /**
+   * True when this build ships the Media Sets module at all.
+   *
+   * The live production build (cms.wilyersignage.com) has no "Media Sets" entry
+   * in the Library nav — it exposes only Media Files / Widgets / Media publish
+   * History / Create Design / Upload Requests / Publish Requests. The module is
+   * ABSENT there, not broken, so specs skip rather than fail. Leaves the browser
+   * on /library; callers that need the panel should still call open().
+   */
+  async isAvailable(): Promise<boolean> {
+    await this.goto('/library');
+    await this.expectShellReady();
+    await expect(this.libraryHeading).toBeVisible({ timeout: 20_000 });
+    return this.mediaSetsTab.isVisible({ timeout: 5_000 }).catch(() => false);
+  }
+
   // ── List search ─────────────────────────────────────────────────────────────
 
   /** One card per media set on the CURRENT page. The list paginates at 20/page,

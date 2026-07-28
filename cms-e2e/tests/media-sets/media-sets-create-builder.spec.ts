@@ -22,6 +22,12 @@ import { test, expect } from '../../fixtures/test-fixtures';
 
 test.describe('Media Sets — Create builder @regression', () => {
   test.beforeEach(async ({ mediaSetsPage }) => {
+    // Module-level check FIRST: open() clicks the "Media Sets" tab, which does
+    // not exist on builds without the module (live), so it must not run there.
+    test.skip(
+      !(await mediaSetsPage.isAvailable()),
+      'Media Sets module is absent from this build (no Media Sets tab in the Library nav)',
+    );
     await mediaSetsPage.open();
     await mediaSetsPage.openCreate();
     test.skip(

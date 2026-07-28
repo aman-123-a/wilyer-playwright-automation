@@ -32,6 +32,10 @@ export const ENV = {
   /** Application under test. — TARGET ENV: cms2 (test server). */
   BASE_URL: pick('CMS_BASE_URL', 'https://cms2.pocsample.in'),
 
+  /** REST API backing the CMS. Host is environment-specific and pinned per
+   *  branch alongside BASE_URL (cms2 → v3-5api2). Verified live 2026-07-28. */
+  API_BASE_URL: pick('CMS_API_BASE_URL', 'https://v3-5api2.pocsample.in/v3/cms'),
+
   /** Admin / primary account (full access).
    *  Credentials are NEVER hardcoded — supply them via a local, gitignored
    *  .env file (CMS_ADMIN_EMAIL / CMS_ADMIN_PASSWORD). See .env.example. */

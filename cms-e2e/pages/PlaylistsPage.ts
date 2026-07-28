@@ -21,7 +21,18 @@ export class PlaylistsPage extends BasePage {
     this.newPlaylistBtn = page.getByRole('button', { name: /new playlist/i });
     this.newFolderBtn = page.getByRole('button', { name: /new folder/i });
     this.foldersHeader = page.getByRole('heading', { name: /folders\s*\(/i });
-    this.search = page.locator('input[placeholder^="Search"]:visible').first();
+    // The playlist search box. Matched case-insensitively because the placeholder
+    // differs per build ("Search.." on cms.pocsample.in, "search playlists ..." on
+    // cms.wilyersignage.com), and the folder/team search inputs are excluded — a
+    // `^="Search"` prefix match silently selected the *folder* search on live, so
+    // queries went to /playlist-folder/read and never filtered the playlist cards.
+    this.search = page
+      .locator(
+        'input[placeholder*="search" i]:visible' +
+          ':not([placeholder*="folder" i])' +
+          ':not([placeholder*="team" i])',
+      )
+      .first();
   }
 
   async open(): Promise<this> {

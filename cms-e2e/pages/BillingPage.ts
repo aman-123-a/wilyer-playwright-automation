@@ -30,6 +30,21 @@ export class BillingPage extends BasePage {
     return this;
   }
 
+  /**
+   * True when this build serves a real Billing module at /billing.
+   *
+   * On the live production build (cms.wilyersignage.com) the route has no
+   * dedicated page — the SPA falls back to rendering the Dashboard (screen
+   * counts, storage used, licences) while the URL stays /billing. Detected via
+   * the "Purchase & Billing" heading so specs skip instead of failing against a
+   * module that is not deployed there.
+   */
+  async isAvailable(): Promise<boolean> {
+    await this.goto('/billing');
+    await this.expectShellReady();
+    return this.heading.isVisible({ timeout: 10_000 }).catch(() => false);
+  }
+
   /** Plan cards — surfaced via their "Available Licenses" sub-heading. */
   planCards(): Locator {
     return this.page.getByText(/available licenses/i);
