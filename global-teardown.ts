@@ -5,10 +5,15 @@
 // =============================================================================
 
 import type { FullConfig } from '@playwright/test';
+import { ENV } from './config/env';
 
 async function globalTeardown(_config: FullConfig): Promise<void> {
+  const reports = `reports/${ENV.NAME}`;
   // eslint-disable-next-line no-console
-  console.log('✓ Suite complete. Reports in playwright-report/ and allure-results/.');
+  console.log(
+    `✓ Suite complete against ${ENV.NAME} (${ENV.LABEL}). ` +
+      `HTML: ${reports}/html — Allure: ${reports}/allure-results`,
+  );
 }
 
 export default globalTeardown;

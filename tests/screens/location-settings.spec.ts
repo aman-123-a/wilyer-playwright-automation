@@ -28,7 +28,7 @@ import {
   MANUAL_COORDS,
   RESPONSIVE_VIEWPORTS,
   type LocationField,
-} from '../../data/location-settings.data';
+} from '../../test-data/location-settings.data';
 
 const SCREEN_ID = process.env.CMS_SCREEN_ID ?? '';
 

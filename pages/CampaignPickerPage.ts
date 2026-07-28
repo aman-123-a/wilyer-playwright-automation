@@ -299,7 +299,15 @@ export class CampaignPickerPage extends BasePage {
   ): Promise<SubmitResult> {
     const submit = modal.getByRole('button', { name: submitLabel }).first();
     await expect(submit).toBeVisible({ timeout: 15_000 });
-    if (!(await submit.isEnabled())) {
+
+    // The button is ALSO disabled transiently while the modal binds its data, so
+    // a bare isEnabled() check here reads a perfectly valid form as blocked.
+    // Give it a bounded window to settle; only a button still disabled after
+    // that is a genuine client-side block.
+    const enabled = await expect(submit)
+      .toBeEnabled({ timeout: 5_000 })
+      .then(() => true, () => false);
+    if (!enabled) {
       const reason = (await submit.getAttribute('title')) ?? '';
       await this.dismiss(modal);
       return { status: null, body: '', toast: '', blockedReason: reason };

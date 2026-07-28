@@ -9,7 +9,7 @@
 import { existsSync } from 'node:fs';
 import { test, expect } from '../../fixtures/test-fixtures';
 import { ENV } from '../../config/env';
-import { MEDIA, name } from '../../data/test-data';
+import { MEDIA, name } from '../../test-data/test-data';
 import { assertClean, expectNoStuckLoader, expectNoBrokenImages } from '../../utils/assertions';
 import { measure } from '../../utils/performance';
 

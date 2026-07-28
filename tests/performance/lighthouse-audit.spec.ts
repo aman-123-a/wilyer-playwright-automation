@@ -10,8 +10,8 @@
 // =============================================================================
 
 import { test } from '@playwright/test';
-import { auditPage } from '../utils/lighthouse';
-import { ENV } from '../config/env';
+import { auditPage } from '../../utils/lighthouse';
+import { ENV } from '../../config/env';
 
 test.describe('Lighthouse', () => {
   // Lighthouse runs are slow; give them room and don't retry.

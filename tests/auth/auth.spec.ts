@@ -10,7 +10,7 @@
 
 import { test, expect } from '../../fixtures/test-fixtures';
 import { ENV } from '../../config/env';
-import { AUTH_PAYLOADS } from '../../data/test-data';
+import { AUTH_PAYLOADS } from '../../test-data/test-data';
 import { assertClean } from '../../utils/assertions';
 
 // Start every auth test from a clean, logged-out browser context.

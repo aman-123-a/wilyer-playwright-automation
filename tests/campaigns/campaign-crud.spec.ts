@@ -25,7 +25,7 @@ import {
   DURATIONS,
   NAMES,
   uniqueName,
-} from '../../data/campaigns.data';
+} from '../../test-data/campaigns.data';
 
 /**
  * Campaigns are only reachable through a playlist editor, so the suite needs a

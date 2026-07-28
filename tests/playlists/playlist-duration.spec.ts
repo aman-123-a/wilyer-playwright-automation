@@ -23,7 +23,7 @@
 
 import { test, expect } from '../../fixtures/test-fixtures';
 import { ENV } from '../../config/env';
-import { name } from '../../data/test-data';
+import { name } from '../../test-data/test-data';
 
 const DEFAULT_SLIDE_SECONDS = 10;
 

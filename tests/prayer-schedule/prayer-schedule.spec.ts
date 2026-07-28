@@ -10,7 +10,7 @@
 import { test, expect } from '../../fixtures/test-fixtures';
 import { PrayerSchedulePage } from '../../pages/PrayerSchedulePage';
 import { ENV } from '../../config/env';
-import { name, AUTH_PAYLOADS } from '../../data/test-data';
+import { name, AUTH_PAYLOADS } from '../../test-data/test-data';
 import { assertClean, expectNoStuckLoader } from '../../utils/assertions';
 import { measure } from '../../utils/performance';
 

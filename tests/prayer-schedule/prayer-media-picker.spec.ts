@@ -26,9 +26,6 @@ const NESTED = { parent: 'BenQ', child: 'Noida', deep: 'Botanical Garden' } as c
 const TERM = 'wonderland';
 const OWNED_FILE = 'wonderland_1782105034092.jpg';
 
-/** The prayer whose picker the current test opened (rows differ per plan). */
-let openedFor: string | null = null;
-
 /**
  * Navigate Schedules → open a media picker. Returns false when no prayer row
  * offers an [+ Files] slot (the CMS caps a prayer at two files, and hides the
@@ -51,7 +48,6 @@ async function openPicker(prayerSchedulePage: any, page: any): Promise<boolean> 
 
   const prayer = await prayerSchedulePage.firstPrayerWithAddSlot();
   if (!prayer) return false;
-  openedFor = prayer;
   await prayerSchedulePage.openMediaPicker(prayer);
   return true;
 }

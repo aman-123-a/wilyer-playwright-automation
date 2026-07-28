@@ -18,7 +18,7 @@
 
 import { test, expect } from '../../fixtures/test-fixtures';
 import { ENV } from '../../config/env';
-import { uniqueName } from '../../data/campaigns.data';
+import { uniqueName } from '../../test-data/campaigns.data';
 
 const LIST = `${ENV.API_BASE_URL}/campaign/read?limit=5&page=1&sort=createdAt&order=-1&search=&folderId=`;
 

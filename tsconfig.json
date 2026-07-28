@@ -5,22 +5,48 @@
     "moduleResolution": "Bundler",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "types": ["node"],
+
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
+
     "baseUrl": ".",
     "paths": {
-      "@pages/*": ["pages/*"],
-      "@utils/*": ["utils/*"],
+      "@api/*": ["api/*"],
+      "@components/*": ["components/*"],
       "@config/*": ["config/*"],
-      "@data/*": ["data/*"],
-      "@fixtures/*": ["fixtures/*"]
+      "@fixtures/*": ["fixtures/*"],
+      "@helpers/*": ["helpers/*"],
+      "@pages/*": ["pages/*"],
+      "@test-data/*": ["test-data/*"],
+      "@utils/*": ["utils/*"]
     }
   },
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules", "playwright-report", "test-results", "allure-results"]
+  "include": [
+    "api/**/*.ts",
+    "components/**/*.ts",
+    "config/**/*.ts",
+    "fixtures/**/*.ts",
+    "helpers/**/*.ts",
+    "pages/**/*.ts",
+    "test-data/**/*.ts",
+    "tests/**/*.ts",
+    "utils/**/*.ts",
+    "*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "legacy",
+    "reports",
+    "storage",
+    "test-results",
+    "playwright-report"
+  ]
 }
