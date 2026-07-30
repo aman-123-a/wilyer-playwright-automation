@@ -31,6 +31,7 @@ export class LibraryPage extends BasePage {
   readonly fileInput: Locator;
   readonly dropzone: Locator;
   readonly uploadDialogClose: Locator;
+  readonly rejectionMessage: Locator;
 
   constructor(page: BasePage['page']) {
     super(page);
@@ -56,6 +57,11 @@ export class LibraryPage extends BasePage {
     this.fileInput = page.locator('#uploadFileInput');
     this.dropzone = page.getByRole('heading', { name: /drop files here|click to browse/i });
     this.uploadDialogClose = page.getByRole('button', { name: /^close$/i });
+    // Upload-rejection notice. Scoped terms only — a bare /error/i would match
+    // unrelated page text (footer, aria labels) and false-pass.
+    this.rejectionMessage = page
+      .getByText(/not supported|unsupported|invalid file|not allowed|allowed formats?/i)
+      .first();
   }
 
   async open(): Promise<this> {

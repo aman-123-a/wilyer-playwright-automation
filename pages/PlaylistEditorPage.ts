@@ -33,6 +33,7 @@ export class PlaylistEditorPage extends BasePage {
   readonly totalDuration: Locator;
   readonly layoutDurationInput: Locator;
   readonly saveBtn: Locator;
+  readonly errorBanner: Locator;
 
   constructor(page: BasePage['page']) {
     super(page);
@@ -54,6 +55,27 @@ export class PlaylistEditorPage extends BasePage {
     // Layout-level rollup (read-only) — shown in Layout Settings.
     this.layoutDurationInput = page.locator('input#duration');
     this.saveBtn = page.locator('button.btn-warning[data-bs-target="#updatePlaylist"]').first();
+    this.errorBanner = page.getByText(/something went wrong|error/i).first();
+  }
+
+  /**
+   * Navigate to a playlist id WITHOUT asserting the editor mounted, then let the
+   * page run for `settleMs`. This is the probe for missing/deleted playlists,
+   * where the expected outcome is a graceful empty state — and the current
+   * (buggy) outcome is an uncaught exception. openById() would mask that by
+   * failing on the missing canvas instead of reporting the crash.
+   */
+  async probeById(id: string, settleMs = 3_000): Promise<this> {
+    await this.goto(`/playlist-settings/${id}`);
+    await this.page.waitForTimeout(settleMs);
+    return this;
+  }
+
+  /** Reload the current editor and settle again — the crash is not 100% per load. */
+  async reloadAndSettle(settleMs = 3_000): Promise<this> {
+    await this.page.reload({ waitUntil: 'domcontentloaded' });
+    await this.page.waitForTimeout(settleMs);
+    return this;
   }
 
   /** Open an existing playlist editor by id and wait for the canvas to mount. */
@@ -262,6 +284,282 @@ export class PlaylistEditorPage extends BasePage {
       timeout: 15_000,
     });
     return true;
+  }
+
+  // ── Scheduling ─────────────────────────────────────────────────────────────
+  //
+  //  Selectors verified live against cms2.pocsample.in, 2026-07-29.
+  //
+  //  A zone item's schedule is edited in the `#arrayItemSchedule` OFFCANVAS
+  //  (not a modal — it is dismissed with data-bs-dismiss="offcanvas"). It is
+  //  opened by a small round badge pinned to the slide thumbnail carrying
+  //  data-bs-target="#arrayItemSchedule".
+  //
+  //  Two facts that shape every locator here:
+  //   • The offcanvas is ONE shared instance, re-bound to whichever slide was
+  //     clicked. Its inputs have no id — they are addressed positionally
+  //     (date[0]=from, date[1]=to, time[0]=from, time[1]=to).
+  //   • The weekday pickers are BUTTONS with title="monday" …, not checkboxes.
+  //     Selected state is the `btn-primary` class; unselected is `btn-outline-*`.
+  //     They all start selected, which is why the summary badge reads
+  //     "Every day" before anything is touched.
+  //
+  //  A CAMPAIGN zone item renders with only Edit Campaign / Change Position /
+  //  Remove — it has NO schedule badge. `itemHasScheduleControl()` exists to
+  //  assert that difference rather than to work around it.
+
+  /** The shared "Set Schedule" offcanvas. */
+  get schedulePanel(): Locator {
+    return this.page.locator('#arrayItemSchedule');
+  }
+
+  /**
+   * FILE slide entries in the Slides strip.
+   *
+   * Named for what it actually matches, which is not what the name once implied:
+   * `.d-flex.align-items-center.h-100.w-100.p-2` is the FILE entry's inner row.
+   * A campaign entry is a different component (`.d-flex.align-items-center.p-2.ps-3`
+   * inside a gradient card) and is NOT matched here — verified live 2026-07-30 on
+   * a zone holding 2 files + 1 campaign, where this returns 2. Use `zoneEntries()`
+   * for every item regardless of kind.
+   */
+  slideEntries(): Locator {
+    return this.page.locator('.d-flex.align-items-center.h-100.w-100.p-2');
+  }
+
+  // ── Campaign items inside a zone ───────────────────────────────────────────
+  //
+  //  Every zone item — file, widget or campaign — is one draggable card in the
+  //  strip carrying its playback index as `data-id`. That attribute is the only
+  //  thing the two kinds of entry have in common, so it is what ordering and
+  //  counting assertions are built on.
+  //
+  //  A campaign entry (mapped live 2026-07-30) renders a "CAMPAIGN" pill, the
+  //  name in a `[title]` attribute, an "N file(s)" summary, and three controls
+  //  keyed by tooltip id: c-edit-<i> → #updateCampaignZone, c-swap-<i> →
+  //  #swapModal, and c-remove-<i>, which removes the item from the zone. There
+  //  is deliberately no schedule control — see BUG-SCHED-01.
+
+  /** Every item in the zone's playback strip, in playback order. */
+  zoneEntries(): Locator {
+    return this.page.locator('div.card[draggable="true"][data-id]');
+  }
+
+  /** Just the campaign items — identified by the CAMPAIGN pill's icon. */
+  campaignEntries(): Locator {
+    return this.zoneEntries().filter({ has: this.page.locator('.bi-collection-play-fill') });
+  }
+
+  /** The zone entry for a named campaign. */
+  campaignEntry(name: string): Locator {
+    return this.campaignEntries().filter({ has: this.page.locator(`[title="${name}"]`) });
+  }
+
+  /** Playback position (0-based) of a named campaign in the zone, or -1. */
+  async campaignPosition(name: string): Promise<number> {
+    const id = await this.campaignEntry(name)
+      .first()
+      .getAttribute('data-id')
+      .catch(() => null);
+    return id === null ? -1 : Number(id);
+  }
+
+  /**
+   * Whether a campaign's in-zone control is usable, absent, or rendered inert.
+   * The RBAC probe: a revoked capability may hide the control or disable it, and
+   * both are acceptable — a live control that acts anyway is the defect.
+   */
+  async campaignZoneControl(
+    name: string,
+    control: 'edit' | 'position' | 'remove',
+  ): Promise<'enabled' | 'disabled' | 'absent'> {
+    const prefix = { edit: 'c-edit-', position: 'c-swap-', remove: 'c-remove-' }[control];
+    const el = this.campaignEntry(name).locator(`[data-tooltip-id^="${prefix}"]`).first();
+    if ((await el.count()) === 0) return 'absent';
+    // These controls are <span> badges, not buttons, so `disabled` is expressed
+    // through pointer-events / opacity rather than the DOM property.
+    const inert = await el.evaluate((e) => {
+      const s = getComputedStyle(e);
+      return s.pointerEvents === 'none' || Number(s.opacity) < 0.5 || e.hasAttribute('disabled');
+    });
+    return inert ? 'disabled' : 'enabled';
+  }
+
+  /**
+   * Add a campaign to the selected zone by dragging its picker card onto the
+   * zone's drop area — the only way the UI offers.
+   *
+   * The search settle is a response wait rather than a sleep: the picker list
+   * re-renders on /campaign/read, and dragging a card that is about to be
+   * replaced drops nothing.
+   */
+  async addCampaignToZone(name: string): Promise<this> {
+    await this.page.getByRole('button', { name: /^campaigns$/i }).first().click();
+    const listed = this.page
+      .waitForResponse((r) => /\/campaign\/read\?/.test(r.url()), { timeout: 20_000 })
+      .catch(() => null);
+    await this.page.locator('input#search').first().fill(name);
+    await listed;
+
+    const card = this.page
+      .locator('.card.bg-default.border.shadow-sm.mb-3')
+      .filter({ has: this.page.getByText(name, { exact: true }) })
+      .first();
+    await expect(card, `the campaign "${name}" must be listed before it can be dragged`).toBeVisible(
+      { timeout: 20_000 },
+    );
+    await card.dragTo(this.slideDropTarget);
+    await expect(
+      this.campaignEntry(name),
+      'the dropped campaign must appear in the zone strip — a drag that lands nowhere is silent',
+    ).toHaveCount(1, { timeout: 15_000 });
+    return this;
+  }
+
+  /**
+   * Remove a campaign from the selected zone via its own Remove control.
+   *
+   * Client-side only: the strip updates immediately and nothing is persisted
+   * until `save()`, so a caller asserting removal must save first and then read
+   * the playlist back.
+   */
+  async removeCampaignFromZone(name: string): Promise<this> {
+    const entry = this.campaignEntry(name);
+    await expect(entry, `"${name}" must be in the zone before it can be removed`).toHaveCount(1, {
+      timeout: 15_000,
+    });
+    await entry.locator('[data-tooltip-id^="c-remove-"]').first().click({ force: true });
+    await expect(entry, 'the entry must leave the strip when Remove is clicked').toHaveCount(0, {
+      timeout: 15_000,
+    });
+    return this;
+  }
+
+  /** The schedule-opening badges. One per FILE item; campaigns have none. */
+  scheduleBadges(): Locator {
+    return this.page.locator('[data-bs-target="#arrayItemSchedule"]');
+  }
+
+  /** Does the nth zone item expose a schedule control at all? */
+  async itemHasScheduleControl(index: number): Promise<boolean> {
+    const entry = this.slideEntries().nth(index);
+    if (!(await entry.count())) return false;
+    return (await entry.locator('[data-bs-target="#arrayItemSchedule"]').count()) > 0;
+  }
+
+  /** Open the Set Schedule offcanvas for the nth item that has one. */
+  async openItemSchedule(index = 0): Promise<this> {
+    await this.scheduleBadges().nth(index).click({ force: true });
+    await expect(this.schedulePanel).toBeVisible({ timeout: 15_000 });
+    await expect(this.schedulePanel.locator('input[type="date"]').first()).toBeVisible({
+      timeout: 10_000,
+    });
+    return this;
+  }
+
+  scheduleDateInputs(): Locator {
+    return this.schedulePanel.locator('input[type="date"]');
+  }
+
+  scheduleTimeInputs(): Locator {
+    return this.schedulePanel.locator('input[type="time"]');
+  }
+
+  dayButton(day: string): Locator {
+    return this.schedulePanel.locator(`button[title="${day}"]`);
+  }
+
+  /** The "Every day" / "Mon, Tue…" summary pill above the date range. */
+  get scheduleSummary(): Locator {
+    return this.schedulePanel.locator('span.badge').first();
+  }
+
+  async setScheduleDates(from: string, to: string): Promise<this> {
+    await this.scheduleDateInputs().nth(0).fill(from);
+    await this.scheduleDateInputs().nth(1).fill(to);
+    return this;
+  }
+
+  async setScheduleTimes(from: string, to: string): Promise<this> {
+    await this.scheduleTimeInputs().nth(0).fill(from);
+    await this.scheduleTimeInputs().nth(1).fill(to);
+    return this;
+  }
+
+  /** Turn "Repeat on selected days" on or off. */
+  async setRoutine(on: boolean): Promise<this> {
+    const toggle = this.schedulePanel.locator('#arrayItemScheduleRoutine');
+    await toggle.setChecked(on, { force: true });
+    await this.page.waitForTimeout(400);
+    return this;
+  }
+
+  /** Is a weekday button currently selected? */
+  async isDaySelected(day: string): Promise<boolean> {
+    const cls = (await this.dayButton(day).getAttribute('class')) ?? '';
+    return /btn-primary/.test(cls);
+  }
+
+  /**
+   * Leave exactly `wanted` selected. Every day starts ON, so this toggles the
+   * unwanted ones off rather than clicking the wanted ones on — clicking an
+   * already-selected day would deselect it.
+   */
+  async selectOnlyDays(wanted: string[]): Promise<this> {
+    const ALL = [
+      'sunday',
+      'monday',
+      'tuesday',
+      'wednesday',
+      'thursday',
+      'friday',
+      'saturday',
+    ];
+    for (const day of ALL) {
+      const shouldBeOn = wanted.includes(day);
+      if ((await this.isDaySelected(day)) !== shouldBeOn) {
+        await this.dayButton(day).click({ force: true });
+        await this.page.waitForTimeout(150);
+      }
+    }
+    return this;
+  }
+
+  /** Commit the offcanvas. This only updates client state — the playlist Save persists it. */
+  async saveSchedule(): Promise<this> {
+    await this.schedulePanel.getByRole('button', { name: /save schedule/i }).click();
+    await expect(this.schedulePanel).toBeHidden({ timeout: 15_000 });
+    return this;
+  }
+
+  /**
+   * Dismiss the offcanvas without committing.
+   *
+   * The close control sits in the offcanvas header, which can render above the
+   * viewport once the day-picker row expands the panel — Playwright then refuses
+   * the click as "outside of the viewport" even with `force`. Dispatching the
+   * click on the element itself is the reliable exit, and leaving the panel open
+   * breaks every later interaction in the editor.
+   */
+  async dismissSchedule(): Promise<this> {
+    await this.page
+      .locator('#closearrayItemSchedule')
+      .evaluate((el) => (el as HTMLElement).click());
+    await expect(this.schedulePanel).toBeHidden({ timeout: 15_000 });
+    return this;
+  }
+
+  /**
+   * The `min`/`max` the app puts on the date inputs. The From field gets
+   * max=To and the To field gets min=From, which is how an inverted range is
+   * meant to be prevented at the client — asserting the attributes is how the
+   * boundary case is checked without fighting a native date picker.
+   */
+  async dateBounds(): Promise<{ fromMax: string | null; toMin: string | null }> {
+    return {
+      fromMax: await this.scheduleDateInputs().nth(0).getAttribute('max'),
+      toMin: await this.scheduleDateInputs().nth(1).getAttribute('min'),
+    };
   }
 }
 

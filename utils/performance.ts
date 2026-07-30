@@ -75,3 +75,71 @@ export async function measure(
   }
   return elapsed;
 }
+
+// ---------------------------------------------------------------------------
+//  Latency sampling — for API performance checks.
+//
+//  A single timing is noise: one GC pause or one cold connection swings it by
+//  hundreds of ms. Everything here works on a SAMPLE, and assertions are made
+//  against p95 rather than max, so one outlier cannot fail a run on its own.
+// ---------------------------------------------------------------------------
+
+export interface LatencyStats {
+  n: number;
+  min: number;
+  p50: number;
+  p95: number;
+  max: number;
+  mean: number;
+}
+
+/** Percentile by nearest-rank over an unsorted sample. */
+export function percentile(samples: number[], p: number): number {
+  if (samples.length === 0) return 0;
+  const sorted = [...samples].sort((a, b) => a - b);
+  const rank = Math.ceil((p / 100) * sorted.length);
+  return sorted[Math.min(Math.max(rank, 1), sorted.length) - 1];
+}
+
+export function latencyStats(samples: number[]): LatencyStats {
+  const n = samples.length;
+  if (n === 0) return { n: 0, min: 0, p50: 0, p95: 0, max: 0, mean: 0 };
+  return {
+    n,
+    min: Math.min(...samples),
+    p50: percentile(samples, 50),
+    p95: percentile(samples, 95),
+    max: Math.max(...samples),
+    mean: Math.round(samples.reduce((a, b) => a + b, 0) / n),
+  };
+}
+
+/**
+ * Time an async action `runs` times and return the sample.
+ *
+ * The first call is discarded as a warm-up: it pays TLS handshake and
+ * connection setup that the rest of the sample does not, and including it
+ * inflates the mean on a small sample.
+ */
+export async function sampleLatency(
+  runs: number,
+  action: (iteration: number) => Promise<unknown>,
+): Promise<number[]> {
+  await action(-1); // warm-up, discarded
+  const samples: number[] = [];
+  for (let i = 0; i < runs; i += 1) {
+    const start = Date.now();
+    await action(i);
+    samples.push(Date.now() - start);
+  }
+  return samples;
+}
+
+/** One-line table row, for perf summaries attached to the test report. */
+export function formatStats(label: string, s: LatencyStats, extra = ''): string {
+  return (
+    `${label.padEnd(38)} n=${String(s.n).padStart(2)}  ` +
+    `min=${String(s.min).padStart(5)}ms  p50=${String(s.p50).padStart(5)}ms  ` +
+    `p95=${String(s.p95).padStart(5)}ms  max=${String(s.max).padStart(5)}ms${extra}`
+  );
+}

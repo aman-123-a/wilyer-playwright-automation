@@ -19,6 +19,19 @@
 //   • #name and #defaultDuration exist in BOTH the create and update modals, so
 //              every field locator is scoped to its modal. Never use a bare #name.
 //
+//  ── The Clone modal is shaped differently from the other three ──────────────
+//  Mapped live 2026-07-30. #copyCampaign is titled "Clone Campaign (<source>)"
+//  and holds ONE field — and that field has no id, only `name="name"`, so the
+//  `#name` convention used by create/update does not reach it.
+//
+//  Two traits that dictate how this object drives it:
+//   • Its submit button carries data-bs-dismiss="modal", so the modal closes on
+//     EVERY click — including a rejected one. There is no "modal stayed open"
+//     signal to read, and the user's typing is discarded either way.
+//   • Blank and duplicate names are rejected CLIENT-side: no request is issued
+//     at all, and the only evidence is the toast. `clone()` therefore returns
+//     status: null for those, exactly as `create()` does for zero media.
+//
 //  Assertion rule (learned the hard way, see report 10 § "Method self-correction"):
 //  a toast is evidence that a message appeared, never evidence that data
 //  persisted. Persistence is asserted through CampaignApi read-back.
@@ -58,7 +71,9 @@ export class CampaignPickerPage extends BasePage {
   readonly createModal: Locator;
   readonly updateModal: Locator;
   readonly deleteModal: Locator;
+  readonly cloneModal: Locator;
   readonly toast: Locator;
+  readonly cardScripts: Locator;
 
   constructor(page: BasePage['page']) {
     super(page);
@@ -69,7 +84,11 @@ export class CampaignPickerPage extends BasePage {
     this.createModal = page.locator('#createCampaign');
     this.updateModal = page.locator('#updateCampaign');
     this.deleteModal = page.locator('#deleteCampaign');
+    this.cloneModal = page.locator('#copyCampaign');
     this.toast = page.locator('.Toastify__toast');
+    // Any <script> injected into a card body — must always be zero. A stored
+    // payload has to render as inert text, never as an executable node.
+    this.cardScripts = page.locator('.card-body.p-2 script');
   }
 
   // ── Navigation ─────────────────────────────────────────────────────────────
@@ -108,6 +127,28 @@ export class CampaignPickerPage extends BasePage {
 
   async count(): Promise<number> {
     return this.cards.count();
+  }
+
+  /**
+   * Wait until the card list has actually rendered.
+   *
+   * Neither `open()` nor `search()` is sufficient on its own: `open()` returns as
+   * soon as the New button appears, and `search()` resolves on the /campaign/read
+   * RESPONSE — in both cases React has yet to paint the cards. Any test that
+   * counts or lists immediately afterwards reads 0 and mis-reports it as "the
+   * account has no campaigns" or "search returned nothing".
+   *
+   * Waits for the first card to be visible, so it is only valid where the list is
+   * expected to be non-empty. For the deliberately-empty case (a query that
+   * matches nothing) assert `toHaveCount(0)` on `cards` instead — that retries on
+   * its own and does not need a positive signal to wait for.
+   */
+  async waitForList(): Promise<this> {
+    await expect(
+      this.cards.first(),
+      'the campaign picker list must render before it can be read',
+    ).toBeVisible({ timeout: 20_000 });
+    return this;
   }
 
   /** The campaign id, read off the card's report link — the only place the UI exposes it. */
@@ -261,6 +302,125 @@ export class CampaignPickerPage extends BasePage {
   /** The `min` attribute on a per-item duration input — null means unbounded. */
   async itemDurationMin(index = 0): Promise<string | null> {
     return this.itemDurationInputs().nth(index).getAttribute('min');
+  }
+
+  // ── Clone ──────────────────────────────────────────────────────────────────
+
+  /** The clone modal's single field. It has no id — only `name="name"`. */
+  get cloneNameInput(): Locator {
+    return this.cloneModal.locator('input[name="name"]');
+  }
+
+  /**
+   * The × glyph in the clone modal's header — the ONLY control that closes it.
+   *
+   * Deliberately the inner `<span aria-hidden="true">×</span>`, not the outer
+   * `#closecopyCampaign` that carries `data-bs-dismiss="modal"`. Verified live
+   * 2026-07-30: clicking the outer span does nothing. It is rendered at `h1` size
+   * with `line-height: 1`, so its box is much taller than the glyph and its
+   * centre point lands on the modal header behind it — the header, not the
+   * dismiss span, receives the click, and Bootstrap never fires. Only a click
+   * that actually hits the glyph dismisses the dialog.
+   */
+  get cloneCloseGlyph(): Locator {
+    return this.cloneModal.locator('#closecopyCampaign span').first();
+  }
+
+  /**
+   * Open the clone dialog for a campaign and wait until it is BOUND to that
+   * campaign.
+   *
+   * #copyCampaign is one shared instance reused for every card, and its only
+   * evidence of which campaign it is about is the source name in its heading —
+   * the name field itself starts empty. Asserting on that heading is what stops
+   * a test from cloning the wrong campaign when the picker list has re-rendered.
+   */
+  /**
+   * Close the clone modal and do not return until it is really gone.
+   *
+   * The generic `dismiss()` is best-effort by design — it swallows failures so a
+   * teardown path cannot fail a test. That is wrong here: #copyCampaign uses a
+   * static backdrop, so while it is open it intercepts every click on the page,
+   * and a dismiss that quietly did not work turns the NEXT action into an
+   * unexplained "element intercepts pointer events" timeout on a completely
+   * different card. Closing it is therefore an assertion, not a courtesy.
+   *
+   * Note what is NOT used: the generic `[data-bs-dismiss="modal"]` lookup. In this
+   * modal that attribute is on TWO elements — the header × and the submit button —
+   * so a `.first()` match is a coin toss between closing the dialog and firing a
+   * clone. See `cloneCloseGlyph` for why the glyph itself is the target.
+   */
+  async closeCloneModal(): Promise<this> {
+    if (!(await this.cloneModal.evaluate((m) => m.classList.contains('show')).catch(() => false))) {
+      return this;
+    }
+    await this.cloneCloseGlyph.click({ force: true });
+
+    // The glyph click is not reliable — see `cloneCloseGlyph`. Rather than let a
+    // flaky product control make every test that merely needs to move on flaky
+    // too, fall back to Bootstrap's own API. That is explicitly NOT a simulation
+    // of a user: it is how this helper guarantees a clean page for the NEXT
+    // action. The user-facing exit paths are asserted on their own terms in
+    // CMP-025m, which is where a broken close control must be reported.
+    const closed = await expect(this.cloneModal)
+      .not.toHaveClass(/show/, { timeout: 5_000 })
+      .then(
+        () => true,
+        () => false,
+      );
+    if (!closed) {
+      await this.page.evaluate(() => {
+        const bs = (window as unknown as { bootstrap?: { Modal?: { getInstance(e: Element): { hide(): void } | null } } })
+          .bootstrap;
+        const el = document.getElementById('copyCampaign');
+        if (bs?.Modal && el) bs.Modal.getInstance(el)?.hide();
+      });
+      await expect(
+        this.cloneModal,
+        'the clone modal must be closable at least programmatically, or no later action can run',
+      ).not.toHaveClass(/show/, { timeout: 10_000 });
+    }
+    // Bootstrap removes the backdrop one frame after the modal loses `show`, and
+    // the backdrop intercepts clicks for exactly as long as it is there.
+    await expect(this.page.locator('.modal-backdrop')).toHaveCount(0, { timeout: 10_000 });
+    return this;
+  }
+
+  async openCloneModal(name: string): Promise<this> {
+    // Any modal still open would eat this click, so clear ours first.
+    await this.closeCloneModal();
+    // Wait for the card itself, not just the button. The picker list re-renders
+    // as /campaign/read settles, and under parallel load the click can otherwise
+    // land in the gap between two renders and burn the action timeout.
+    await expect(this.card(name), `the campaign "${name}" must be listed`).toBeVisible({
+      timeout: 20_000,
+    });
+    await this.card(name).locator('button[data-bs-target="#copyCampaign"]').first().click();
+    await expect(this.cloneModal).toHaveClass(/show/, { timeout: 15_000 });
+    await expect(
+      this.cloneModal.getByRole('heading'),
+      'the shared clone modal must be bound to the campaign under test before anything is typed',
+    ).toContainText(name, { timeout: 15_000 });
+    return this;
+  }
+
+  /**
+   * Clone a campaign under a new name.
+   *
+   * `newName` is filled verbatim, including the empty string — the blank-name
+   * case is a real scenario and must not be silently skipped. A client-side
+   * rejection issues no request, so the result carries `status: null` and the
+   * toast holds the reason.
+   */
+  async clone(name: string, newName: string): Promise<SubmitResult> {
+    await this.openCloneModal(name);
+    await this.cloneNameInput.fill(newName);
+    return this.submitModal(this.cloneModal, /clone campaign/i, /\/campaign\/duplicate/);
+  }
+
+  /** Heading text of the clone modal — proves which campaign it is bound to. */
+  async cloneModalTitle(): Promise<string> {
+    return (await this.cloneModal.getByRole('heading').first().textContent()) ?? '';
   }
 
   // ── Delete ─────────────────────────────────────────────────────────────────

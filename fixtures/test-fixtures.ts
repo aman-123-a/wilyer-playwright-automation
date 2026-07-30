@@ -15,6 +15,8 @@ import { LibraryPage } from '../pages/LibraryPage';
 import { MediaSetsPage } from '../pages/MediaSetsPage';
 import { ScreensPage } from '../pages/ScreensPage';
 import { GroupsPage } from '../pages/GroupsPage';
+import { ClustersPage } from '../pages/ClustersPage';
+import { PlaylistPreviewPage } from '../pages/PlaylistPreviewPage';
 import { PlaylistsPage } from '../pages/PlaylistsPage';
 import { PlaylistEditorPage } from '../pages/PlaylistEditorPage';
 import { ReportsPage } from '../pages/ReportsPage';
@@ -22,9 +24,10 @@ import { BillingPage } from '../pages/BillingPage';
 import { TeamPage } from '../pages/TeamPage';
 import { PrayerSchedulePage } from '../pages/PrayerSchedulePage';
 import { CampaignPickerPage } from '../pages/CampaignPickerPage';
+import { LocationSettingsPage } from '../pages/LocationSettingsPage';
 import { ConsoleMonitor } from '../utils/consoleMonitor';
 import { ApiMonitor } from '../utils/apiMonitor';
-import { CampaignService } from '../api';
+import { CampaignService, PlaylistService } from '../api';
 
 interface Pages {
   loginPage: LoginPage;
@@ -33,6 +36,8 @@ interface Pages {
   mediaSetsPage: MediaSetsPage;
   screensPage: ScreensPage;
   groupsPage: GroupsPage;
+  clustersPage: ClustersPage;
+  playlistPreview: PlaylistPreviewPage;
   playlistsPage: PlaylistsPage;
   playlistEditorPage: PlaylistEditorPage;
   reportsPage: ReportsPage;
@@ -40,6 +45,7 @@ interface Pages {
   teamPage: TeamPage;
   prayerSchedulePage: PrayerSchedulePage;
   campaignPicker: CampaignPickerPage;
+  locationSettingsPage: LocationSettingsPage;
 }
 
 interface Monitors {
@@ -50,6 +56,8 @@ interface Monitors {
 interface Clients {
   /** Campaign REST client bound to the authenticated browser session. */
   campaignApi: CampaignService;
+  /** Playlist REST client — where schedules actually live. */
+  playlistApi: PlaylistService;
 }
 
 export const test = base.extend<Pages & Monitors & Clients>({
@@ -88,6 +96,14 @@ export const test = base.extend<Pages & Monitors & Clients>({
     await use(new GroupsPage(page));
   },
 
+  clustersPage: async ({ page }, use) => {
+    await use(new ClustersPage(page));
+  },
+
+  playlistPreview: async ({ page }, use) => {
+    await use(new PlaylistPreviewPage(page));
+  },
+
   playlistsPage: async ({ page }, use) => {
     await use(new PlaylistsPage(page));
   },
@@ -116,11 +132,19 @@ export const test = base.extend<Pages & Monitors & Clients>({
     await use(new CampaignPickerPage(page));
   },
 
+  locationSettingsPage: async ({ page }, use) => {
+    await use(new LocationSettingsPage(page));
+  },
+
   // Reads the session JWT from the context's `footprint` cookie, so it is only
   // constructible after the storageState is applied — hence a fixture, not a
   // module-level singleton.
   campaignApi: async ({ context }, use) => {
     await use(await CampaignService.fromContext(context));
+  },
+
+  playlistApi: async ({ context }, use) => {
+    await use(await PlaylistService.fromContext(context));
   },
 });
 

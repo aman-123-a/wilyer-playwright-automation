@@ -19,6 +19,7 @@ export class LoginPage {
   readonly loginBtn: Locator;
   readonly forgotPasswordLink: Locator;
   readonly errorMessage: Locator;
+  readonly dashboardLink: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -30,6 +31,7 @@ export class LoginPage {
       .first();
     this.loginBtn = page.getByRole('button', { name: /^log in$/i });
     this.forgotPasswordLink = page.getByRole('link', { name: /forgot password/i });
+    this.dashboardLink = page.getByRole('link', { name: /dashboard/i }).first();
     this.errorMessage = page.getByText(
       /invalid|incorrect|wrong|failed|not found|doesn'?t match|unauthori[sz]ed|required|enter/i,
     );
@@ -79,6 +81,62 @@ export class LoginPage {
   /** The current input `type` of the password field ("password" = masked). */
   async passwordFieldType(): Promise<string | null> {
     return this.password.getAttribute('type');
+  }
+
+  /** Sign out through the sidebar and wait for the login form to come back. */
+  async logout(): Promise<this> {
+    await this.page
+      .getByRole('link', { name: /logout/i })
+      .first()
+      .click();
+    await expect(this.loginBtn).toBeVisible({ timeout: 15_000 });
+    return this;
+  }
+
+  /** Assert the authenticated app shell is rendered. */
+  async expectDashboardShell(): Promise<this> {
+    await expect(this.dashboardLink).toBeVisible({ timeout: 15_000 });
+    return this;
+  }
+
+  /** Navigate to `path` unauthenticated and assert the app bounces to login. */
+  async expectRedirectedToLogin(path: string): Promise<this> {
+    await this.page.goto(path, { waitUntil: 'domcontentloaded' });
+    await expect(this.loginBtn).toBeVisible({ timeout: 15_000 });
+    return this;
+  }
+
+  /** Drop cookies + web storage so no stale session survives into the next login. */
+  async clearSession(): Promise<this> {
+    await this.page.context().clearCookies();
+    await this.page.goto('/', { waitUntil: 'domcontentloaded' });
+    await this.page.evaluate(() => {
+      localStorage.clear();
+      sessionStorage.clear();
+    });
+    return this;
+  }
+
+  /** Clear any prior session, then authenticate as `creds` from a clean slate. */
+  async freshLogin(creds: Credentials): Promise<boolean> {
+    await this.clearSession();
+    await this.goto();
+    await this.login(creds);
+    return this.isAuthenticated();
+  }
+
+  /** Put text on the system clipboard, for the copy-paste equivalence case. */
+  async copyToClipboard(text: string): Promise<this> {
+    await this.page.evaluate(
+      (value) => navigator.clipboard?.writeText(value).catch(() => {}),
+      text,
+    );
+    return this;
+  }
+
+  /** The document title, used to prove an injected payload never executed. */
+  async documentTitle(): Promise<string> {
+    return this.page.evaluate(() => document.title);
   }
 }
 

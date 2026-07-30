@@ -27,3 +27,25 @@ export type {
   CampaignList,
   CampaignPayload,
 } from './services/CampaignService';
+
+export {
+  PlaylistService,
+  schedule,
+  days,
+  ALL_DAYS,
+  NO_DAYS,
+  WEEKDAYS,
+  WEEKENDS,
+} from './services/PlaylistService';
+export type {
+  Playlist,
+  PlaylistList,
+  Layout,
+  Zone,
+  ZoneItem,
+  ZoneFileRef,
+  ZoneCampaignRef,
+  Schedule,
+  ScheduleDays,
+  DayName,
+} from './services/PlaylistService';

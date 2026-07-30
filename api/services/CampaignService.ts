@@ -13,7 +13,14 @@
 //    GET    /campaign/read/{id}                                   → single doc
 //    POST   /campaign/create
 //    POST   /campaign/update/{id}      ← POST, not PUT/PATCH
+//    POST   /campaign/duplicate/{id}   ← clone; body is {name, folderId} ONLY
 //    DELETE /campaign/delete/{id}      ← hard delete
+//
+//  The duplicate endpoint was mapped live on 2026-07-30 by driving the picker's
+//  "Clone Campaign" modal and reading the wire: it takes no item payload at all,
+//  so the copy's contents are composed server-side from the source. It answers
+//  200 {"message":"Campaign copied successfully."} and the id of the copy is not
+//  in the response — a caller that needs it must look the name up afterwards.
 //
 //  `sort` and `order` are NOT optional: omitting them returns 500 (BUG-CMP-03),
 //  so LIST_DEFAULTS always supplies them.
@@ -118,6 +125,31 @@ export class CampaignService extends BaseService {
     return this.http.rawDelete(`/campaign/delete/${id}`);
   }
 
+  /**
+   * Clone a campaign. The body carries the copy's NAME and folder only — never
+   * its items — so this endpoint is the one place where the server, not the
+   * client, decides what the new campaign contains. `folderId` defaults to `''`
+   * because that is literally what the app sends for a root-level clone.
+   */
+  duplicateRaw(id: string, payload: Record<string, unknown>): Promise<APIResponse> {
+    return this.http.rawPost(`/campaign/duplicate/${id}`, { data: payload });
+  }
+
+  /**
+   * Clone `id` under `name` and return the copy as the server now holds it.
+   *
+   * The response carries only a message, so the copy is resolved by a read-back
+   * — which is also the assertion that the clone actually persisted rather than
+   * merely being acknowledged.
+   */
+  async duplicate(id: string, name: string, folderId = ''): Promise<Campaign> {
+    const res = await this.duplicateRaw(id, { name, folderId });
+    if (!res.ok()) throw new Error(`clone to "${name}" failed: ${res.status()} ${await res.text()}`);
+    const copy = await this.findByName(name);
+    if (!copy) throw new Error(`clone to "${name}" reported success but is not in the list`);
+    return copy;
+  }
+
   // ── Convenience wrappers — throw on non-2xx, return parsed bodies ──────────
 
   list(query: ListQuery = {}): Promise<CampaignList> {
@@ -179,12 +211,18 @@ export class CampaignService extends BaseService {
    * reference genuine ids — inventing one yields a campaign the player cannot
    * resolve. Throws a clear message when the account has no usable media.
    */
-  async sampleMediaIds(n = 1): Promise<string[]> {
+  async sampleMediaIds(n = 1, kind?: 'image' | 'video'): Promise<string[]> {
     const docs = await this.listAll();
     const ids: string[] = [];
     for (const doc of docs) {
       for (const item of doc.data ?? []) {
         const id = item?.file?.id;
+        // `kind` exists for playback suites that observe the RENDERED frame. A
+        // <video> element exposes no usable src until it loads, so a video in the
+        // middle of a campaign is invisible to a DOM-based frame reader and looks
+        // like a skipped index — an observation artefact that reads as a product
+        // bug. Ordering tests therefore ask for images only.
+        if (kind && item?.file?.type !== kind) continue;
         if (id && !ids.includes(id)) ids.push(id);
         if (ids.length >= n) return ids;
       }
@@ -198,9 +236,19 @@ export class CampaignService extends BaseService {
     return ids.slice(0, n);
   }
 
-  /** Seed a valid campaign via the API. Fast, isolated, and UI-independent. */
-  async seed(name: string, itemCount = 1, defaultDuration = 10): Promise<Campaign> {
-    const files = await this.sampleMediaIds(itemCount);
+  /**
+   * Seed a valid campaign via the API. Fast, isolated, and UI-independent.
+   *
+   * `kind` restricts the media type — pass 'image' from playback suites that read
+   * the rendered frame, so a video item cannot masquerade as a skipped index.
+   */
+  async seed(
+    name: string,
+    itemCount = 1,
+    defaultDuration = 10,
+    kind?: 'image' | 'video',
+  ): Promise<Campaign> {
+    const files = await this.sampleMediaIds(itemCount, kind);
     const res = await this.createRaw({
       name,
       data: files.map((file) => ({ file, duration: defaultDuration })),

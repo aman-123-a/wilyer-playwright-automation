@@ -69,6 +69,24 @@ export class PlaylistsPage extends BasePage {
     return this;
   }
 
+  /**
+   * The id of any existing playlist, read from the first card's settings link.
+   *
+   * Campaigns are only reachable through a playlist editor, so campaign suites
+   * need a playlist to open. This borrows an existing one READ-ONLY and never
+   * saves it — cms2 is shared and at least one playlist there is explicitly
+   * marked "do not change or delete".
+   */
+  async anyPlaylistId(): Promise<string> {
+    await this.goto('/playlists');
+    const link = this.playlistCards().first();
+    await expect(link, 'the environment must have at least one playlist').toBeVisible({
+      timeout: 30_000,
+    });
+    const href = await link.getAttribute('href');
+    return href!.split('/').pop()!;
+  }
+
   async openCreateModal(): Promise<this> {
     await this.newPlaylistBtn.click();
     await expect(this.page.getByRole('heading', { name: /create new playlist/i })).toBeVisible({

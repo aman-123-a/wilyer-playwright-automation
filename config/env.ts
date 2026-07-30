@@ -87,6 +87,16 @@ export const ENV = {
     password: pick('CMS_SUBUSER_PASSWORD', ''),
   } as Credentials,
 
+  /**
+   * Sub-user with a role but NO folder fence (`isRestrictedAccess: false`), so
+   * its permissions are account-wide. Pairs with SUBUSER to separate the two
+   * independent access controls: what a role may DO, and where it may do it.
+   */
+  UNRESTRICTED: {
+    email: pick('CMS_UNRESTRICTED_EMAIL', ''),
+    password: pick('CMS_UNRESTRICTED_PASSWORD', ''),
+  } as Credentials,
+
   /** Performance budgets (ms). */
   PERF: {
     pageLoadMs: num('CMS_PERF_PAGE_LOAD_MS', 5000),

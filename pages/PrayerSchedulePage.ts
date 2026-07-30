@@ -38,9 +38,11 @@ export class PrayerSchedulePage extends BasePage {
   readonly publishBtn: Locator;
   readonly deletePlanBtn: Locator;
   readonly applyBtn: Locator;
+  readonly dateRangeError: Locator;
 
   constructor(page: BasePage['page']) {
     super(page);
+    this.dateRangeError = page.getByText(/end date must be on or after start date/i).first();
     this.heading = page.getByRole('heading', { name: /prayer schedule/i }).first();
     // Tabs render as buttons whose accessible name carries a LEADING icon glyph
     // (e.g. " Today"), so these matchers are intentionally NOT anchored.
@@ -435,6 +437,29 @@ export class PrayerSchedulePage extends BasePage {
       .click()
       .catch(() => this.page.keyboard.press('Escape'));
     await this.page.waitForTimeout(500);
+    return this;
+  }
+
+  /** Header row of the per-prayer table — the "detail has loaded" signal. */
+  prayerTableHeader(): Locator {
+    return this.page.locator('tr', { hasText: /PRAYER NAME/i }).first();
+  }
+
+  /**
+   * Wait for the per-prayer table to render. Locator.isVisible() does not retry
+   * — it reports the state at the instant it is called — so probing rows before
+   * this resolves reads an empty table and yields a false skip.
+   */
+  async prayerTableReady(timeout = 25_000): Promise<boolean> {
+    return this.prayerTableHeader()
+      .waitFor({ state: 'visible', timeout })
+      .then(() => true)
+      .catch(() => false);
+  }
+
+  /** Type into the picker search key-by-key, so debouncing can be observed. */
+  async typeMediaSearch(term: string, delay = 120): Promise<this> {
+    await this.mediaSearch().pressSequentially(term, { delay });
     return this;
   }
 

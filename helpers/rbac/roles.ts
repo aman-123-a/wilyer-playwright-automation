@@ -56,7 +56,10 @@ const CREDENTIAL_VARS: Record<Role, { email: string; password: string }> = {
   checker: { email: 'CMS_CHECKER_EMAIL', password: 'CMS_CHECKER_PASSWORD' },
   viewer: { email: 'CMS_VIEWER_EMAIL', password: 'CMS_VIEWER_PASSWORD' },
   restricted: { email: 'CMS_RESTRICTED_EMAIL', password: 'CMS_RESTRICTED_PASSWORD' },
-  unrestricted: { email: 'CMS_SUBUSER_EMAIL', password: 'CMS_SUBUSER_PASSWORD' },
+  // `unrestricted` pointed at CMS_SUBUSER_* — the folder-FENCED account — so any
+  // suite asking for an unrestricted identity silently got a restricted one and
+  // could only pass by asserting too little. It now has its own variable pair.
+  unrestricted: { email: 'CMS_UNRESTRICTED_EMAIL', password: 'CMS_UNRESTRICTED_PASSWORD' },
 };
 
 /** Credentials for a role, or undefined when that account is not configured. */
