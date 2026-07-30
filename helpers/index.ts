@@ -4,6 +4,20 @@
 //  know what a role, a permission or a CMS module is.)
 // =============================================================================
 
+export { requireFeature, hasFeature } from './features';
+
+// Android player (device-side testing) — see config/android.ts for setup.
+export {
+  Adb,
+  AppiumDriver,
+  AndroidElement,
+  by,
+  requireDevice,
+  requireDisruptive,
+  canDriveDevice,
+} from './android';
+export type { AdbDevice, AdbResult, Selector, Using } from './android';
+
 export {
   ROLES,
   ACTIONS,
@@ -13,6 +27,9 @@ export {
   storageStateFor,
 } from './rbac/roles';
 export type { Role, Action } from './rbac/roles';
+
+export { can, campaignIdentitySpecs, resolveCampaignIdentity } from './rbac/campaignIdentities';
+export type { CampaignIdentity, CampaignVerb } from './rbac/campaignIdentities';
 
 export {
   MODULES,
