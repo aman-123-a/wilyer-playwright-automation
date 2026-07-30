@@ -1,5 +1,16 @@
 # Campaigns V1 — CRUD Automation, RBAC Blockers & Defect Status
 
+> **⚠ CORRECTION (same day, later session) — see [Doc 14](14-subuser-api-access-20260728.md).**
+> The § RBAC blockers claim below that "campaigns have no role-based access
+> control" is **WRONG**. Campaign permissions exist as
+> `access.campaigns = { view, create, update, delete }` in the sub-user's JWT,
+> and the API enforces them. The error came from reasoning off the **admin's**
+> token (whose `access` is `{}`, because an unrestricted admin needs no map) plus
+> the role editor UI, which does not surface this permission set. Blocker 2 was
+> also a typo in the account name — the correct sub-user is
+> `manager12348@yopmail.com` and it authenticates on cms2. Read Doc 14 for the
+> verified position; the defect table below is unaffected.
+
 **Document ID:** CMP-QA-DOC-12
 **Type:** Executed automation build + verified defect re-status
 **Environment:** `https://cms2.pocsample.in` (branch `cms2`) · API `https://v3-5api2.pocsample.in/v3/cms`

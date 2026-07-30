@@ -63,7 +63,19 @@ team · reports · billing · media-sets
 
 These are declared in `MODULES` but have **no dedicated suite yet**:
 
-- **clusters** — route exists in `pages/BasePage.ts`; no page object, no spec
+- **clusters** — `pages/ClustersPage.ts` + `tests/cms2/campaigns/cluster/` now cover the
+  listing, the content-mode toggle and the batch content surface (2026-07-30). Still
+  uncovered: creating / editing / deleting a cluster, and batch screen management. Two
+  cluster behaviours are **not automatable on this account** — CP-PLC-014 (a campaign edit
+  fanning out to every screen in a cluster) and CP-PLC-016 (a mixed cluster) both require
+  observing playback, and every screen on cms2 reports "Screen Disconnected".
+- **campaign loop playback** — `tests/cms2/campaigns/loop/` now covers CP-LOOP-001…004
+  and 009 in Chrome, via the editor's Preview player (`POST /playlist/createPreview` →
+  `https://preview.pocsample.in/<id>`). No screen, APK or licence needed. **These are
+  not hardware sign-off**: AS-08 / DEP-04 record that loop resolution runs on-device, and
+  the preview player is a different implementation. Still hardware-only and uncovered:
+  CP-LOOP-012 (video to natural length), 018 (player restart), 019/020 (offline and
+  reconnect), 021 (two screens), 022 (100-file campaign).
 - **widgets** — surfaced as a Library tab; no dedicated coverage
 - **notification-settings** — no page object, no spec
 
