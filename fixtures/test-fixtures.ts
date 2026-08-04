@@ -14,6 +14,7 @@ import { DashboardPage } from '../pages/DashboardPage';
 import { LibraryPage } from '../pages/LibraryPage';
 import { MediaSetsPage } from '../pages/MediaSetsPage';
 import { ScreensPage } from '../pages/ScreensPage';
+import { ScreenSettingsPage } from '../pages/ScreenSettingsPage';
 import { GroupsPage } from '../pages/GroupsPage';
 import { ClustersPage } from '../pages/ClustersPage';
 import { PlaylistPreviewPage } from '../pages/PlaylistPreviewPage';
@@ -25,9 +26,11 @@ import { TeamPage } from '../pages/TeamPage';
 import { PrayerSchedulePage } from '../pages/PrayerSchedulePage';
 import { CampaignPickerPage } from '../pages/CampaignPickerPage';
 import { LocationSettingsPage } from '../pages/LocationSettingsPage';
+import { EtaWidgetPage } from '../pages/EtaWidgetPage';
 import { ConsoleMonitor } from '../utils/consoleMonitor';
 import { ApiMonitor } from '../utils/apiMonitor';
 import { CampaignService, PlaylistService } from '../api';
+import { EtaWidgetService } from '../api/services/EtaWidgetService';
 
 interface Pages {
   loginPage: LoginPage;
@@ -35,6 +38,7 @@ interface Pages {
   libraryPage: LibraryPage;
   mediaSetsPage: MediaSetsPage;
   screensPage: ScreensPage;
+  screenSettingsPage: ScreenSettingsPage;
   groupsPage: GroupsPage;
   clustersPage: ClustersPage;
   playlistPreview: PlaylistPreviewPage;
@@ -46,6 +50,7 @@ interface Pages {
   prayerSchedulePage: PrayerSchedulePage;
   campaignPicker: CampaignPickerPage;
   locationSettingsPage: LocationSettingsPage;
+  etaWidgetPage: EtaWidgetPage;
 }
 
 interface Monitors {
@@ -58,6 +63,8 @@ interface Clients {
   campaignApi: CampaignService;
   /** Playlist REST client — where schedules actually live. */
   playlistApi: PlaylistService;
+  /** Live ETA widget REST client — settles every persistence claim. */
+  etaApi: EtaWidgetService;
 }
 
 export const test = base.extend<Pages & Monitors & Clients>({
@@ -90,6 +97,10 @@ export const test = base.extend<Pages & Monitors & Clients>({
 
   screensPage: async ({ page }, use) => {
     await use(new ScreensPage(page));
+  },
+
+  screenSettingsPage: async ({ page }, use) => {
+    await use(new ScreenSettingsPage(page));
   },
 
   groupsPage: async ({ page }, use) => {
@@ -136,6 +147,10 @@ export const test = base.extend<Pages & Monitors & Clients>({
     await use(new LocationSettingsPage(page));
   },
 
+  etaWidgetPage: async ({ page }, use) => {
+    await use(new EtaWidgetPage(page));
+  },
+
   // Reads the session JWT from the context's `footprint` cookie, so it is only
   // constructible after the storageState is applied — hence a fixture, not a
   // module-level singleton.
@@ -145,6 +160,10 @@ export const test = base.extend<Pages & Monitors & Clients>({
 
   playlistApi: async ({ context }, use) => {
     await use(await PlaylistService.fromContext(context));
+  },
+
+  etaApi: async ({ context }, use) => {
+    await use(await EtaWidgetService.fromContext(context));
   },
 });
 

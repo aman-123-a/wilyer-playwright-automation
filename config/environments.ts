@@ -89,8 +89,10 @@ export const ENVIRONMENTS: Readonly<Record<EnvironmentName, EnvironmentConfig>> 
     name: 'live',
     label: 'Production',
     baseUrl: 'https://cms.wilyersignage.com',
-    apiBaseUrl: 'https://api.wilyersignage.com/v3/cms',
-    apiConfidence: 'convention',
+    // Verified live 2026-08-04 by capturing CMS traffic: the production API is
+    // v3-5api.wilyersignage.com, not api.wilyersignage.com (which was a guess).
+    apiBaseUrl: 'https://v3-5api.wilyersignage.com/v3/cms',
+    apiConfidence: 'verified',
     isProduction: true,
   },
 } as const;
