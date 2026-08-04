@@ -11,13 +11,17 @@
 //              when a spec actually asks for it, because a session costs
 //              seconds and most player assertions do not need one.
 //
-//  The UI selectors below are the part that must be confirmed against the real
-//  build. Dump the hierarchy once and correct them:
+//  The UI selectors below were confirmed against com.wilyer.signageplayer 3.12.7
+//  on 2026-08-04 via `npm run player:discovery`. Re-run it on a new build; it
+//  audits every selector here and attaches the result to the report.
 //
 //      adb shell uiautomator dump /sdcard/ui.xml && adb pull /sdcard/ui.xml
 //
-//  If that dump shows nothing but a SurfaceView, that is itself the answer: the
-//  player has no queryable UI and every assertion should go through Adb.
+//  What that dump established, and why the split below exists: the build sets
+//  resource-ids but almost no contentDescription, so accessibility ids do not
+//  work here — an earlier `~name` set resolved 0/8. It also renders content
+//  through a WebView, which native queries cannot see inside, so playback is
+//  still an Adb question and only the chrome around it is an Appium one.
 // =============================================================================
 
 import { expect, type TestInfo } from '@playwright/test';
@@ -26,19 +30,62 @@ import { Adb } from '../../helpers/android/adb';
 import { by, type AppiumDriver, type Selector } from '../../helpers/android/AppiumDriver';
 
 /**
- * Player UI selectors. Accessibility ids first — they survive layout changes
- * and cost one lookup rather than an xpath walk. Text fallbacks are provided
- * where the app is more likely to expose a label than a contentDescription.
+ * Playback-screen selectors, all CONFIRMED present on 3.12.7.
  *
- * UNCONFIRMED against a real build — see the file header.
+ * Resource ids rather than accessibility ids, because this build sets almost no
+ * contentDescription — `by.id` resolves a bare name against ANDROID.PACKAGE.
  */
 export const PLAYER = {
+  /** Outermost app-owned container — the rotation wrapper. */
+  root: by.id('rootRotateLayout'),
+  /** Where content actually renders. Native queries cannot see inside it. */
+  webView: by.id('webview'),
+  /** Full-screen still-image surface, used between video items. */
+  contentImage: by.id('image_view'),
+  /** Navigation drawer host — settings live behind it on this build. */
+  drawer: by.id('my_drawer_layout'),
+  navHost: by.id('nav_host_fragment'),
+
+  /**
+   * Status LEDs along the bottom-left, 15px squares.
+   *
+   * Presence only. All three ship contentDescription="TODO", so which STATE
+   * each is in — online vs offline, connected vs not, downloading vs idle — is
+   * not exposed to accessibility at all. Read state through Adb; these confirm
+   * the status bar rendered, nothing more. Their being useful is a request for
+   * the app team (set a real contentDescription), not something a selector can
+   * work around.
+   */
+  onlineIndicator: by.id('isDeviceOnlineOrOfflineStatusIndicatorImageView'),
+  socketIndicator: by.id('isConnectedToWebSocketServerStatusIndicatorImageView'),
+  downloadIndicator: by.id('isFileDownloadingStatusIndicatorImageView'),
+} as const satisfies Record<string, Selector>;
+
+/**
+ * The content surfaces. The WebView renders video and HTML, the ImageView a
+ * still — and observation across discovery runs shows they are NOT mutually
+ * exclusive: both are frequently attached at once, and the ImageView comes and
+ * goes with what is scheduled at that second.
+ *
+ * So the rule is "at least one", not "exactly one" and not a specific one:
+ * anything stricter makes a suite fail on the playlist rather than the player.
+ */
+export const CONTENT_SURFACES = ['webView', 'contentImage'] as const;
+
+/**
+ * Selectors for screens a healthy paired player is NOT showing — pairing and
+ * settings. Discovery cannot confirm these while the device is playing content,
+ * so they remain assumptions and are kept out of PLAYER so the audit in
+ * player-ui-surface.spec.ts does not report permanent, meaningless misses.
+ *
+ * UNCONFIRMED. Correct them the first time a spec drives an unenrolled box.
+ */
+export const PLAYER_UNCONFIRMED = {
   pairingCode: by.accessibilityId('pairingCode'),
   pairingInput: by.accessibilityId('pairingCodeInput'),
   pairSubmit: by.accessibilityId('pairSubmit'),
   settingsButton: by.accessibilityId('settings'),
   syncButton: by.accessibilityId('syncNow'),
-  nowPlayingLabel: by.accessibilityId('nowPlaying'),
   deviceName: by.accessibilityId('deviceName'),
   errorBanner: by.textContains('error'),
 } as const satisfies Record<string, Selector>;
@@ -178,8 +225,8 @@ export class PlayerPage {
    * that calls it: a restart also proves the app re-syncs on cold start.
    */
   async forceSync(): Promise<'ui' | 'restart'> {
-    if (this.driver && (await this.driver.isElementVisible(PLAYER.syncButton, 3_000))) {
-      await this.driver.tap(PLAYER.syncButton);
+    if (this.driver && (await this.driver.isElementVisible(PLAYER_UNCONFIRMED.syncButton, 3_000))) {
+      await this.driver.tap(PLAYER_UNCONFIRMED.syncButton);
       return 'ui';
     }
     await this.adb.restartApp();
@@ -189,18 +236,18 @@ export class PlayerPage {
 
   /** Pairing code shown on an unenrolled device, for CMS-side enrolment. */
   async readPairingCode(): Promise<string> {
-    return (await this.ui().find(PLAYER.pairingCode)).text();
+    return (await this.ui().find(PLAYER_UNCONFIRMED.pairingCode)).text();
   }
 
   async enterPairingCode(code: string): Promise<void> {
-    const input = await this.ui().find(PLAYER.pairingInput);
+    const input = await this.ui().find(PLAYER_UNCONFIRMED.pairingInput);
     await input.clear();
     await input.type(code);
-    await this.ui().tap(PLAYER.pairSubmit);
+    await this.ui().tap(PLAYER_UNCONFIRMED.pairSubmit);
   }
 
   async openSettings(): Promise<void> {
-    await this.ui().tap(PLAYER.settingsButton);
+    await this.ui().tap(PLAYER_UNCONFIRMED.settingsButton);
   }
 
   // ─── Assertions ───────────────────────────────────────────────────────────
@@ -210,6 +257,53 @@ export class PlayerPage {
     expect(await this.adb.isRunning(), 'player process should be alive').toBe(true);
     expect(await this.adb.isForeground(), 'player should own the foreground').toBe(true);
     expect(await this.adb.crashes(), 'player should not have crashed').toEqual([]);
+  }
+
+  /**
+   * The playback surface actually rendered — the case adb cannot distinguish.
+   *
+   * A player that is alive and foreground can still be showing a blank Activity
+   * with no content view attached, which `expectHealthy` reports as perfectly
+   * fine. This asserts the app's own view tree is up.
+   *
+   * Needs an Appium session, so it is a separate method rather than folded into
+   * expectHealthy — most callers should not pay for a session.
+   */
+  async expectSurfaceRendered(): Promise<void> {
+    const ui = this.ui();
+
+    expect(
+      await ui.isElementVisible(PLAYER.root, ANDROID.ELEMENT_TIMEOUT_MS),
+      'player root layout should be on screen',
+    ).toBe(true);
+
+    // Either or both may be attached: WebView for video/HTML, ImageView for a
+    // still. Requiring a specific one would fail purely on what is scheduled.
+    const [webView, image] = await Promise.all([
+      ui.isElementVisible(PLAYER.webView, 2_000),
+      ui.isElementVisible(PLAYER.contentImage, 2_000),
+    ]);
+    expect(webView || image, 'no content surface (webview or image_view) is rendered').toBe(true);
+  }
+
+  /**
+   * The three status LEDs rendered. Presence only — see the note on PLAYER:
+   * this build gives them contentDescription="TODO", so their state is
+   * unreadable and `health()` remains the source of truth for online/offline.
+   */
+  async expectStatusIndicators(): Promise<void> {
+    const ui = this.ui();
+
+    for (const [name, selector] of [
+      ['online', PLAYER.onlineIndicator],
+      ['websocket', PLAYER.socketIndicator],
+      ['download', PLAYER.downloadIndicator],
+    ] as const) {
+      expect(
+        await ui.isElementVisible(selector, 2_000),
+        `${name} status indicator should be rendered`,
+      ).toBe(true);
+    }
   }
 
   // ─── Evidence ─────────────────────────────────────────────────────────────

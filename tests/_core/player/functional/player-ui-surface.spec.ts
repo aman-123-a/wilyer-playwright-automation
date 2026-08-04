@@ -12,9 +12,14 @@
 
 import { test, expect } from '../../../../fixtures/android-fixtures';
 import { requireDevice, by } from '../../../../helpers/android';
-import { PLAYER } from '../../../../pages/android/PlayerPage';
+import { CONTENT_SURFACES, PLAYER, PLAYER_UNCONFIRMED } from '../../../../pages/android/PlayerPage';
 
 test.describe.configure({ mode: 'serial' });
+
+/** One audited selector as a report line. Module scope so the formatting
+ *  branch is not read as a conditional inside a test. */
+const line = (r: { found: boolean; name: string; label: string }): string =>
+  `${r.found ? 'OK  ' : 'MISS'} ${r.name}  ${r.label}`;
 
 test.describe('Android player — UI surface', () => {
   requireDevice();
@@ -52,28 +57,58 @@ test.describe('Android player — UI surface', () => {
   test('declared selectors resolve against the running build @player @discovery', async ({
     appium,
   }, testInfo) => {
-    // PLAYER selectors ship unconfirmed (see pages/android/PlayerPage.ts). This
-    // test exists to turn that assumption into a written result rather than a
-    // surprise inside an unrelated spec three months from now.
-    const results = await Promise.all(
-      Object.entries(PLAYER).map(async ([name, selector]) => ({
-        name,
-        label: selector.label,
-        found: await appium.isElementVisible(selector, 2_000),
-      })),
-    );
+    // Turns the selector set into a written result rather than a surprise
+    // inside an unrelated spec three months from now.
+    const audit = async (group: Record<string, { label: string }>) =>
+      Promise.all(
+        Object.entries(group).map(async ([name, selector]) => ({
+          name,
+          label: selector.label,
+          found: await appium.isElementVisible(
+            selector as Parameters<typeof appium.isElementVisible>[0],
+            2_000,
+          ),
+        })),
+      );
+
+    const confirmed = await audit(PLAYER);
+    const unconfirmed = await audit(PLAYER_UNCONFIRMED);
 
     await testInfo.attach('selector-audit.txt', {
-      body: results.map((r) => `${r.found ? 'OK  ' : 'MISS'} ${r.name}  ${r.label}`).join('\n'),
+      body: [
+        '# PLAYER — playback screen, expected to resolve',
+        ...confirmed.map(line),
+        '',
+        '# PLAYER_UNCONFIRMED — pairing / settings screens, not currently shown',
+        ...unconfirmed.map(line),
+      ].join('\n'),
       contentType: 'text/plain',
     });
 
-    // Reported, not enforced: most of these belong to screens (pairing,
-    // settings) that a healthy paired player is not currently showing.
     testInfo.annotations.push({
       type: 'selectors-resolved',
-      description: `${results.filter((r) => r.found).length}/${results.length}`,
+      description:
+        `PLAYER ${confirmed.filter((r) => r.found).length}/${confirmed.length}, ` +
+        `unconfirmed ${unconfirmed.filter((r) => r.found).length}/${unconfirmed.length}`,
     });
+
+    // The playback-screen set is enforced: a miss here means the build changed
+    // its view tree, which is exactly what this suite exists to catch. The
+    // unconfirmed set stays reported-only — those screens are not on display.
+    //
+    // The content surfaces are exempt from the all-present rule: which of them
+    // is attached tracks what is scheduled, so at least one is the only claim
+    // that holds run to run (see CONTENT_SURFACES in PlayerPage).
+    const surfaces: readonly string[] = CONTENT_SURFACES;
+    const structural = confirmed.filter((r) => !surfaces.includes(r.name));
+
+    const missing = structural.filter((r) => !r.found).map((r) => `${r.name} (${r.label})`);
+    expect(missing, 'playback-screen selectors should resolve against this build').toEqual([]);
+
+    expect(
+      confirmed.filter((r) => surfaces.includes(r.name) && r.found).length,
+      'no content surface (webview or image_view) is attached',
+    ).toBeGreaterThan(0);
   });
 
   test('player survives being backgrounded and restored @player @regression', async ({

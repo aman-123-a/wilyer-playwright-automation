@@ -36,7 +36,7 @@
 import { test, expect } from '../../../../fixtures/test-fixtures';
 import { ENV } from '../../../../config/env';
 import { PlaylistService, days, ALL_DAYS, schedule } from '../../../../api';
-import type { Playlist, Schedule } from '../../../../api';
+import type { Playlist, Schedule, ZoneItem } from '../../../../api';
 import { uniqueName } from '../../../../test-data/campaigns.data';
 
 /** Everything this suite creates carries this prefix, so teardown can sweep it. */
@@ -265,6 +265,85 @@ test.describe('Content scheduling · Cases A–F', () => {
     });
   });
 
+  // ───────────────────────────────────────────────────────────────────────────
+  //  Case D — two campaigns in one zone, only one of them scheduled
+  // ───────────────────────────────────────────────────────────────────────────
+
+  test('SCH-D1 · two campaigns coexist in a zone and only one carries a schedule @api @critical', async ({
+    playlistApi,
+    campaignApi,
+  }, testInfo) => {
+    test.setTimeout(240_000);
+
+    // Case D needs a SECOND campaign beside the fixture's one. It is added
+    // through the API rather than the editor: the drag-and-drop path is already
+    // covered by SCH-000, and what this case is about is the storage model — can
+    // two campaign references sit in one zone with independent schedules.
+    const second = uniqueName('SchedD', testInfo.workerIndex);
+    const seeded = await campaignApi.seed(second, 1, 10);
+
+    const before = PlaylistService.orderOf(await playlistApi.read(playlistId));
+
+    const add = await playlistApi.mutate(playlistId, (doc: Playlist) => {
+      // `campaign` is an expanded object on read but must be a bare id on write —
+      // the same asymmetry normaliseForWrite handles for existing items.
+      doc.layouts[0].zones[0].array!.data.push({
+        campaign: seeded.id as unknown as ZoneItem['campaign'],
+        duration: 10,
+      });
+    });
+    expect(add.status(), `adding a second campaign — body: ${await add.text()}`).toBe(200);
+
+    try {
+      // Mon–Fri on the SECOND campaign only. Case D's "Campaign B (Mon to Fri)".
+      const weekdays = schedule({ isRoutineEnabled: true, days: days(...(MON_TO_FRI as never[])) });
+      const set = await playlistApi.mutate(playlistId, (doc: Playlist) => {
+        const items = PlaylistService.itemsOf(doc);
+        const last = items.length - 1;
+        items[last].schedule = weekdays;
+      });
+      expect(set.status(), 'scheduling one of the two campaigns must be accepted').toBe(200);
+
+      const items = await zoneItems(playlistApi);
+      const campaigns = items.filter((i) => i.campaign);
+      expect(campaigns, 'the zone must hold two campaign references').toHaveLength(2);
+
+      // The whole point of Case D: the schedules are INDEPENDENT. The unscheduled
+      // campaign must not inherit the other's window — if it did, "only Campaign
+      // A keeps rotating at the weekend" would be false and both would vanish.
+      expect(
+        campaigns[0].schedule ?? null,
+        'the unscheduled campaign must stay unscheduled — a schedule on one must not leak to the other',
+      ).toBeNull();
+      expect(campaigns[1].schedule, 'and the scheduled one must carry its own window').toBeTruthy();
+      expect(
+        MON_TO_FRI.every((d) => campaigns[1].schedule!.days[d as keyof Schedule['days']] === true),
+        'Monday to Friday must all be on',
+      ).toBe(true);
+      expect(
+        campaigns[1].schedule!.days.saturday || campaigns[1].schedule!.days.sunday,
+        'and the weekend must be off — that is what hides Campaign B on a Sunday',
+      ).toBe(false);
+
+      // Order is an invariant of the whole specification: scheduling decides
+      // WHETHER an item shows, never WHERE it sits in the loop.
+      const after = PlaylistService.orderOf(await playlistApi.read(playlistId));
+      expect(after.slice(0, before.length), 'the existing items must keep their order').toEqual(before);
+    } finally {
+      // Put the fixture back to [file, file, campaign] for the serial tests after
+      // this one, then drop the extra campaign.
+      await playlistApi
+        .mutate(playlistId, (doc: Playlist) => {
+          const items = PlaylistService.itemsOf(doc);
+          doc.layouts[0].zones[0].array!.data = items.filter(
+            (i) => i.campaign?.id !== seeded.id,
+          );
+        })
+        .catch(() => undefined);
+      await campaignApi.deleteQuietly(seeded.id);
+    }
+  });
+
   test('SCH-Z1 · a playlist read back verbatim is rejected by its own writer @api @defect', async ({
     playlistApi,
   }) => {
@@ -329,6 +408,53 @@ test.describe('Content scheduling · Cases A–F', () => {
     // item level, so Case C is not expressible anywhere in the product.
     expect(res.status(), 'campaign items reject a schedule field').toBe(400);
     expect(await res.text()).toContain('data[1].schedule');
+  });
+
+  test('SCH-C3 · the campaign UPDATE path rejects a per-file schedule too @api @defect', async ({
+    campaignApi,
+  }, testInfo) => {
+    test.setTimeout(180_000);
+
+    // Create and update are separate schemas on this API, and they have already
+    // been caught disagreeing once (BUG-CMP-17: update coerces a malformed
+    // folderId that create would reject). So "create refuses it" does not settle
+    // Case C — a campaign that already exists might still accept a schedule
+    // bolted on afterwards, which would make the feature half-reachable.
+    const name = uniqueName('SchedC', testInfo.workerIndex);
+    const seeded = await campaignApi.seed(name, 2, 10);
+
+    try {
+      const files = await campaignApi.sampleMediaIds(2);
+      const res = await campaignApi.updateRaw(seeded.id, {
+        name,
+        defaultDuration: 10,
+        folderId: null,
+        data: [
+          { file: files[0], duration: 10 },
+          {
+            file: files[1],
+            duration: 10,
+            schedule: { startDate: DEC.from, endDate: DEC.to, days: { saturday: true } },
+          },
+        ],
+      });
+
+      const body = await res.text();
+      expect(
+        res.status(),
+        `the update path must refuse a per-file schedule exactly as create does — body: ${body}`,
+      ).toBe(400);
+      expect(body, 'and name the offending field').toContain('data[1].schedule');
+
+      // Belt and braces: nothing schedule-shaped may have been written either way.
+      const after = await campaignApi.read(seeded.id);
+      expect(
+        JSON.stringify(after).includes('schedule'),
+        'a refused update must leave no schedule residue on the campaign',
+      ).toBe(false);
+    } finally {
+      await campaignApi.deleteQuietly(seeded.id);
+    }
   });
 
   test('SCH-C2 · the campaign editor exposes no schedule fields at all @ui @defect', async ({

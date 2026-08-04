@@ -8,8 +8,8 @@ This layer covers the device half and joins the two.
 
 ## What it is made of
 
-| Path                              | Purpose                                                     |
-| --------------------------------- | ----------------------------------------------------------- |
+| Path                              | Purpose                                                      |
+| --------------------------------- | ------------------------------------------------------------ |
 | `config/android.ts`               | Typed `ANDROID` config. Nothing reads `process.env` directly |
 | `helpers/android/adb.ts`          | Shell-level device access — playback, storage, logs, memory  |
 | `helpers/android/AppiumDriver.ts` | W3C WebDriver client for screens that have a real UI         |
@@ -48,7 +48,8 @@ adb connect 192.168.1.50:5555   # or a networked box
 # 2. Appium — only for the UI suites
 npm i -g appium
 appium driver install uiautomator2
-appium                          # listens on 127.0.0.1:4723
+appium                          # listens on
+
 
 # 3. point the suite at the device (in your gitignored .env)
 ANDROID_APP_PACKAGE=com.example.player
@@ -107,10 +108,19 @@ and are forced off on the production environment regardless of what is set.
 
 ## Known gaps
 
-- The selectors in `pages/android/PlayerPage.ts` ship **unconfirmed**. Run
-  `npm run player:discovery` against the real build and correct them —
-  `tests/_core/player/functional/player-ui-surface.spec.ts` audits them and
-  attaches the result to the report.
+- The `PLAYER` selectors in `pages/android/PlayerPage.ts` were confirmed against
+  com.wilyer.signageplayer 3.12.7 on 2026-08-04 and are now enforced by
+  `tests/_core/player/functional/player-ui-surface.spec.ts`. `PLAYER_UNCONFIRMED`
+  (pairing, settings) is still assumed — those screens are not displayed by a
+  healthy paired player, so discovery cannot reach them. Correct them the first
+  time a spec drives an unenrolled box.
+- That build exposes **resource-ids but almost no contentDescription**, so
+  accessibility-id selectors do not work on it; the three status indicators ship
+  `contentDescription="TODO"`, which means their state (online, websocket,
+  downloading) is unreadable over Appium. Presence is all that can be asserted —
+  read state through adb. A real contentDescription is a request for the app team.
+- The player renders content in a **WebView**, so native queries cannot see what
+  is playing. This is why playback stays an adb question.
 - Assigning a playlist to a screen is still a manual CMS step for the
   end-to-end suite. Automating it needs the rollout API confirmed first.
 - Playback assertions depend on the app emitting a now-playing log line. If it

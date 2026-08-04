@@ -2,22 +2,23 @@
 
 **Environment:** `https://cms2.pocsample.in` · API `https://v3-5api2.pocsample.in/v3/cms`
 **Accounts:** `dev@wilyer.com` (admin) · `manager12348@yopmail.com` (restricted sub-user) · `ak22@gmail.com` (unrestricted sub-user)
-**Date:** 2026-07-28 · **Last re-verified:** 2026-07-28, automation session
+**Date:** 2026-07-28 · **Last re-verified:** 2026-07-31, campaign folder-move automation
 **Method:** every row below re-executed directly against the API in one pass, with fresh
 names to rule out residue collisions. Persistence confirmed by read-back, never by a toast.
 **Detail:** [Doc 10](10-crud-boundary-search-test-run-20260728.md) · [Doc 12](12-crud-rbac-automation-and-defect-status-20260728.md) · [Doc 13](13-api-performance-20260728.md) · [Doc 14](14-subuser-api-access-20260728.md)
-**Regression suite:** `tests/campaigns/` — open defects are encoded as `test.fail()` against
+**Regression suite:** `tests/cms2/campaigns/` — open defects are encoded as `test.fail()` against
 the *correct* behaviour, so the run turns red the moment one is fixed.
 
 `UI?` = reproducible by a manual tester through the interface alone (no API tooling)
 
 ---
 
-## Summary — 15 open, 3 fixed
+## Summary — 17 open, 3 fixed
 
 | ID | Severity | Title | UI? | Status |
 |----|----------|-------|-----|--------|
 | BUG-PERM-03 | **Critical / S1** | A sub-user can rewrite its **own** role — self-escalation, and it can clear its own folder fence | **Yes** | **OPEN** |
+| BUG-DLV-01 | **High / S1** | The playlist writer accepts a campaign reference from a role holding **no** campaign permission — campaign rights are bypassable through the carrier | No | **OPEN** |
 | BUG-PERM-02 | **High / S1** | `campaigns.update` is not enforced — revoking edit rights does nothing | No | **OPEN** |
 | BUG-PERM-01 | **High / S2** | Revoked permissions stay usable for the life of the existing token (24 h) | No | **OPEN** |
 | BUG-CMP-01 | **High / S1** | Campaign with zero media items accepted by the API | No (UI guards it) | **OPEN** |
@@ -26,6 +27,7 @@ the *correct* behaviour, so the run turns red the moment one is fixed.
 | BUG-CMP-13 | Medium / S2 | Sub-user token carries the **admin's** `userId` — audit attribution risk | No | **OPEN (unconfirmed impact)** |
 | BUG-CMP-15 | Medium / S3 | Campaign permissions are enforced but **not editable** in the role editor | Yes | **OPEN** |
 | BUG-CMP-16 | **High / S2** | Admin's campaign list hides foldered campaigns; sub-user's does not | **Yes** | **OPEN** |
+| BUG-CMP-17 | Medium / S2 | Update accepts a malformed `folderId` and silently **moves** the campaign | No (no folder UI exists) | **OPEN** |
 | BUG-CMP-09 | Low / S3 | Whitespace-only name accepted by the API | No | **OPEN** |
 | BUG-CMP-10 | Low / S3 | Invalid `folderId` silently coerced to null | No | **OPEN** |
 | BUG-CMP-11 | Low / S4 | Search does not trim the query | Yes | **OPEN** |
@@ -266,6 +268,37 @@ restricted user can reach the `null` folder.
 
 ---
 
+### BUG-CMP-17 — Update accepts a malformed `folderId` and moves the campaign · Medium / S2 · NEW
+
+**Steps:** seed a campaign, then `POST /campaign/update/{id}` with `"folderId": "not-an-object-id"`
+**Actual:** `200 {"message":"Campaign updated successfully."}`
+**Expected:** `400` — no such folder
+**Found:** 2026-07-31, while automating campaign folder moves.
+
+**Why this is worse than BUG-CMP-10, not a duplicate of it.** They are the same missing
+validation on two endpoints, but the consequences differ. On *create* the campaign is new and
+lands at the root — annoying, recoverable. On *update* the campaign **was already somewhere**,
+so a typo'd or truncated `folderId` does not fail: it silently *moves* an existing campaign out
+of its folder. Combined with BUG-CMP-16 (the admin list hides foldered campaigns) the move can
+be invisible from both directions.
+
+**Compounding factor — there is no folder UI for campaigns at all.** The only campaign surface
+is picker tab 4 inside the playlist editor, and it renders no folder tree, no folder field in
+the create or edit modal, and no move action on a card. So a campaign moved by this defect
+cannot be found or moved back through the CMS; only an API call can undo it. Recorded as
+`FOLD-001`.
+
+**Note on the sibling case:** a *well-formed but non-existent* id (`000000000000000000000000`)
+IS rejected, and the campaign stays put (`FOLD-007`, passing). The gap is specifically the
+malformed shape — validation checks existence but never format.
+
+**Fix:** validate the `folderId` format and existence on update, and reject rather than coerce.
+Shares a fix with BUG-CMP-10.
+**Automated:** `FOLD-008` in `tests/cms2/campaigns/folder/campaign-folder-move.spec.ts`, marked
+`test.fail()` against the correct behaviour.
+
+---
+
 ### BUG-CMP-11 — Search does not trim the query · Low / S4
 
 **Steps:** search `"  Campaign_Name  "` (leading/trailing spaces)
@@ -295,6 +328,37 @@ have access to this campaign."`
 not" without any access to it. Low severity — 24-character ObjectIds are not practically
 enumerable — but it is a free fix alongside BUG-CMP-12.
 **Fix:** return one status for both cases (`404`), and run the authorization check before the lookup.
+
+---
+
+### BUG-DLV-01 — Campaign permissions are bypassable through the playlist writer · High / S1 · NEW
+
+**Steps:** grant a sub-user `playlists.update`, revoke **every** campaign verb
+(`view`, `create`, `update`, `delete`), re-login so the JWT carries the change, then
+`POST /playlist/update/{id}` with `{campaign: <id>, duration: 10}` in a zone.
+**Actual:** `200 {"message":"Playlist updated"}`, and the reference persists on read-back.
+**Expected:** `403` — the caller may not reference a campaign it has no rights to.
+**Found:** 2026-08-03, while automating the campaign → playlist → screen delivery chain.
+
+**Why it matters.** The campaign module's permissions only govern the campaign *record*. What a
+screen actually plays is decided by the playlist, and the playlist writer never consults the
+campaigns module. So "this role may not touch campaigns" is not expressible: the same person
+puts any campaign onto any screen by editing the carrier instead. It reproduces identically for
+the folder-fenced and the account-wide sub-user, so it is a permission-layer gap, not a fence one.
+
+**Related, not defects — both verified and now under test:**
+- `playlists.publish` is not the last gate. A role marked `maker` under maker/checker receives
+  `200 "Playlist sent for approval."` and the screen keeps playing what it was playing. A publish
+  case that asserted only the status would report this as a success (`DLV-006`).
+- A publish aimed at a screen outside the fence is also accepted and does nothing, silently
+  (`DLV-009`).
+
+**Fix:** authorise campaign references in the playlist write path against `campaigns.view` (at
+minimum) before persisting them.
+**Automated:** `DLV-004` in `tests/cms2/campaigns/rbac/campaign-delivery-permissions.spec.ts`,
+marked `test.fail()` against the correct behaviour (`403`, and nothing written), with the
+observed status recorded as a test annotation. When the writer starts refusing, the case reports
+as "expected to fail but passed" — that is the signal to delete the marker.
 
 ---
 
@@ -337,7 +401,9 @@ three (Doc 07 SEC-035).
 3. **BUG-CMP-04** — duration ≤ 0 (a known bug reintroduced in a new module; UI-reproducible)
 4. **BUG-CMP-15** — expose campaign permissions in the role editor (blocks RBAC testing entirely)
 5. **BUG-CMP-13** — confirm audit attribution before the audit-log cases are written
-6. **BUG-CMP-08 / 09 / 10** — one schema pass over name and `folderId` validation
+6. **BUG-CMP-08 / 09 / 10 / 17** — one schema pass over name and `folderId` validation, on
+   **create and update alike**: 17 is 10 on the update path, where the coercion moves a campaign
+   that was already filed somewhere
 7. **BUG-CMP-11 / 12 / 14** — search trim and delete status codes
 
 Items 1, 2, 5 and 6 remain a **single Joi/schema pass over the campaign endpoints** — one
@@ -355,6 +421,7 @@ ticket, not eight. Items 3 and 4 are separate, and belong to whoever owns the pe
 | 4 (automation) | Playwright suite + direct API sweep | **3 fixed, 7 still open**; 1 false "fixed" reading caught and corrected |
 | 5 (sub-user) | Restricted account, IDOR probes | No authorization defects; 3 new findings raised (13, 14, 15) |
 | 6 (unrestricted sub-user) | `ak22@gmail.com` vs admin, list comparison | Admin/sub-user visibility mismatch found → BUG-CMP-16 |
+| 7 (folder moves, 2026-07-31) | Playwright suite `FOLD-001…008`, admin | 8/8 move behaviours as expected; 1 new finding → BUG-CMP-17. Also recorded: campaigns have **no folder UI** at all |
 
 All test data created during verification was deleted; **zero residue**, confirmed by API
 read-back (campaign count returned to 36).
