@@ -1,0 +1,284 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link " Dashboard" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e16]: 
+              - text: Dashboard
+          - listitem [ref=e17]:
+            - link " Screens" [ref=e18] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e19]: 
+              - text: Screens
+          - listitem [ref=e20]:
+            - link " Groups" [ref=e21] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e22]: 
+              - text: Groups
+          - listitem [ref=e23]:
+            - link " Clusters" [ref=e24] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e25]: 
+              - text: Clusters
+          - listitem [ref=e26]:
+            - link " Library" [ref=e27] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e28]: 
+              - text: Library
+          - listitem [ref=e29]:
+            - link " Rollouts" [ref=e30] [cursor=pointer]:
+              - /url: /content-rollout
+              - generic [ref=e31]: 
+              - text: Rollouts
+          - listitem [ref=e32]:
+            - link " Playlists" [ref=e33] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e34]: 
+              - text: Playlists
+          - listitem [ref=e35]:
+            - link " Team" [ref=e36] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e37]: 
+              - text: Team
+          - listitem [ref=e38]:
+            - link " Reports" [ref=e39] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e40]: 
+              - text: Reports
+          - separator [ref=e41]
+          - listitem [ref=e42]:
+            - link " What's New" [ref=e43] [cursor=pointer]:
+              - /url: /whats-new
+              - generic [ref=e44]: 
+              - text: What's New
+          - listitem [ref=e45]:
+            - link " Help" [ref=e46] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e47]: 
+              - text: Help
+          - listitem [ref=e48]:
+            - link " Feedback" [ref=e49] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e50]: 
+              - text: Feedback
+          - listitem [ref=e51]:
+            - link " Billing" [ref=e52] [cursor=pointer]:
+              - /url: /billing
+              - generic [ref=e53]: 
+              - text: Billing
+          - listitem [ref=e54]:
+            - link " Account" [ref=e55] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e56]: 
+              - text: Account
+          - listitem [ref=e57]:
+            - link " Logout" [ref=e58] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e59]: 
+              - text: Logout
+      - generic [ref=e61]:
+        - generic "dev" [ref=e63]:
+          - generic [ref=e65]: D
+        - generic [ref=e66]: dev@wilyer.com
+      - generic [ref=e67]: v3.5.20
+    - generic [ref=e1972]:
+      - generic [ref=e1973]:
+        - generic [ref=e1974]:
+          - button " Back" [ref=e1975] [cursor=pointer]:
+            - generic [ref=e1976]: 
+            - text: Back
+          - generic [ref=e1977]: Library
+          - generic [ref=e1978]: /
+          - generic [ref=e1979]: Create Media Set
+        - generic [ref=e1980]:
+          - button "Cancel" [ref=e1981] [cursor=pointer]
+          - button "Create" [ref=e1982] [cursor=pointer]
+      - generic [ref=e1983]:
+        - generic [ref=e1984]:
+          - textbox "Media set name" [ref=e1985]
+          - button "Clear formats" [disabled]
+        - textbox "Description (optional)" [ref=e1987]
+        - generic [ref=e1988]:
+          - generic [ref=e1991]:
+            - generic [ref=e1992]:
+              - generic [ref=e1993]: 
+              - textbox "Search files..." [ref=e1994]
+            - generic [ref=e1995]:
+              - group [ref=e1996]:
+                - button "All" [disabled]
+                - button "Images" [ref=e1997] [cursor=pointer]
+                - button "Videos" [ref=e1998] [cursor=pointer]
+                - button "Folders" [ref=e1999] [cursor=pointer]
+              - generic [ref=e2000]: 24 of 835
+            - generic [ref=e2001]:
+              - generic [ref=e2002] [cursor=pointer]: Choose Any
+              - generic "Show files matching 16:9" [ref=e2003] [cursor=pointer]:
+                - img [ref=e2004]
+                - text: Aspect Ratio
+            - generic [ref=e2006]:
+              - generic [ref=e2007]:
+                - generic [ref=e2008] [cursor=pointer]:
+                  - img "image_3__1782275616408.png" [ref=e2009]
+                  - generic:
+                    - generic: image_3__1782275616408.png
+                    - generic: IMAGE · 0.20MB · 1862×990
+                - generic [ref=e2010] [cursor=pointer]:
+                  - img "image_4__1782275613719.png" [ref=e2011]
+                  - generic:
+                    - generic: image_4__1782275613719.png
+                    - generic: IMAGE · 0.15MB · 1693×1071
+                - generic [ref=e2012] [cursor=pointer]:
+                  - img "image_5__1782275611295.png" [ref=e2013]
+                  - generic:
+                    - generic: image_5__1782275611295.png
+                    - generic: IMAGE · 0.08MB · 1208×810
+                - generic [ref=e2014] [cursor=pointer]:
+                  - img "image_6__1782275609231.png" [ref=e2015]
+                  - generic:
+                    - generic: image_6__1782275609231.png
+                    - generic: IMAGE · 0.09MB · 1318×525
+                - generic [ref=e2016] [cursor=pointer]:
+                  - img "image_7__1782275606454.png" [ref=e2017]
+                  - generic:
+                    - generic: image_7__1782275606454.png
+                    - generic: IMAGE · 0.07MB · 1090×693
+                - generic [ref=e2018] [cursor=pointer]:
+                  - img "image_8__1782275603866.png" [ref=e2019]
+                  - generic:
+                    - generic: image_8__1782275603866.png
+                    - generic: IMAGE · 0.07MB · 1200×397
+                - generic [ref=e2020] [cursor=pointer]:
+                  - img "image_9__1782275601152.png" [ref=e2021]
+                  - generic:
+                    - generic: image_9__1782275601152.png
+                    - generic: IMAGE · 0.07MB · 1090×691
+                - generic [ref=e2022] [cursor=pointer]:
+                  - img "image_10__1782275598758.png" [ref=e2023]
+                  - generic:
+                    - generic: image_10__1782275598758.png
+                    - generic: IMAGE · 0.07MB · 1090×691
+                - generic [ref=e2024] [cursor=pointer]:
+                  - img "ChatGPT_Image_Jun_10_2026_10_20_32_AM_1782275596189.png" [ref=e2025]
+                  - generic:
+                    - generic: ChatGPT_Image_Jun_10_2026_10_20_32_AM_1782275596189.png
+                    - generic: IMAGE · 1.15MB · 1536×1024
+                - generic [ref=e2026] [cursor=pointer]:
+                  - img "logo_1__1782275593857.png" [ref=e2027]
+                  - generic:
+                    - generic: logo_1__1782275593857.png
+                    - generic: IMAGE · 0.02MB · 300×122
+                - generic [ref=e2028] [cursor=pointer]:
+                  - img "WhatsApp_Image_2026_06_18_at_11_1782275590926.jpeg" [ref=e2029]
+                  - generic:
+                    - generic: WhatsApp_Image_2026_06_18_at_11_1782275590926.jpeg
+                    - generic: IMAGE · 0.32MB · 1536×1024
+                - generic [ref=e2030] [cursor=pointer]:
+                  - img "corrugation_factory_floorplan_rendered_1782275586574.png" [ref=e2031]
+                  - generic:
+                    - generic: corrugation_factory_floorplan_rendered_1782275586574.png
+                    - generic: IMAGE · 0.93MB · 2760×3320
+                - generic [ref=e2032] [cursor=pointer]:
+                  - img "266987_small_1782191676233.mp4" [ref=e2033]
+                  - generic:
+                    - generic: 266987_small_1782191676233.mp4
+                    - generic: VIDEO · 62.70MB · 1080×1920
+                - generic [ref=e2034] [cursor=pointer]:
+                  - img "Screenshot_2_1782189737593.png" [ref=e2035]
+                  - generic:
+                    - generic: Screenshot_2_1782189737593.png
+                    - generic: IMAGE · 0.13MB · 1369×684
+                - generic [ref=e2036] [cursor=pointer]:
+                  - img "Gemini_Generated_Image_k07zj9k07zj9k07z_1782125597256.png" [ref=e2037]
+                  - generic:
+                    - generic: Gemini_Generated_Image_k07zj9k07zj9k07z_1782125597256.png
+                    - generic: IMAGE · 2.00MB · 1408×768
+                - generic [ref=e2038] [cursor=pointer]:
+                  - img "restaurant_interior_1782125185763.jpg" [ref=e2039]
+                  - generic:
+                    - generic: restaurant_interior_1782125185763.jpg
+                    - generic: IMAGE · 8.26MB · 5000×3333
+                - generic [ref=e2040] [cursor=pointer]:
+                  - img "gsrtgh_1782124853480.jpg" [ref=e2041]
+                  - generic:
+                    - generic: gsrtgh_1782124853480.jpg
+                    - generic: IMAGE · 0.15MB · 1024×1024
+                - generic [ref=e2042] [cursor=pointer]:
+                  - img "1000326971_1782111662075.jpg" [ref=e2043]
+                  - generic:
+                    - generic: 1000326971_1782111662075.jpg
+                    - generic: IMAGE · 3.05MB · 4096×3072
+                - generic [ref=e2044] [cursor=pointer]:
+                  - img "Gemini_Generated_Image_k07zj9k07zj9k07z_1__1782111184714.png" [ref=e2045]
+                  - generic:
+                    - generic: Gemini_Generated_Image_k07zj9k07zj9k07z_1__1782111184714.png
+                    - generic: IMAGE · 2.00MB · 1408×768
+                - generic [ref=e2046] [cursor=pointer]:
+                  - img "Screenshot_1_1782111043107.png" [ref=e2047]
+                  - generic:
+                    - generic: Screenshot_1_1782111043107.png
+                    - generic: IMAGE · 0.35MB · 1361×691
+                - generic [ref=e2048] [cursor=pointer]:
+                  - img "Screenshot_1_1782108918645.png" [ref=e2049]
+                  - generic:
+                    - generic: Screenshot_1_1782108918645.png
+                    - generic: IMAGE · 0.35MB · 1361×691
+                - generic [ref=e2050] [cursor=pointer]:
+                  - img "1000326969_1782108225910.jpg" [ref=e2051]
+                  - generic:
+                    - generic: 1000326969_1782108225910.jpg
+                    - generic: IMAGE · 2.55MB · 4096×3072
+                - generic [ref=e2052] [cursor=pointer]:
+                  - img "Screenshot_1_1782107374930.png" [ref=e2053]
+                  - generic:
+                    - generic: Screenshot_1_1782107374930.png
+                    - generic: IMAGE · 0.35MB · 1361×691
+                - generic [ref=e2054] [cursor=pointer]:
+                  - img "Shori_market_1782107358743.jpg" [ref=e2055]
+                  - generic:
+                    - generic: Shori_market_1782107358743.jpg
+                    - generic: IMAGE · 0.25MB · 360×360
+              - button "Load more" [ref=e2057] [cursor=pointer]
+          - generic [ref=e2060]:
+            - generic [ref=e2061]: Display Formats
+            - generic [ref=e2062]: 2 formats in this set
+            - generic [ref=e2063]: Pick a format, then click a file on the left to assign it. Change a format's aspect ratio anytime.
+            - generic [ref=e2064]:
+              - generic [ref=e2065] [cursor=pointer]:
+                - generic [ref=e2066]:
+                  - generic [ref=e2067]:
+                    - generic [ref=e2068]:
+                      - generic [ref=e2069]: 
+                      - text: Landscape · 16:9
+                    - generic [ref=e2070]:
+                      - generic [ref=e2071]: 
+                      - text: Active
+                  - generic [ref=e2072]:
+                    - button "Change ratio" [ref=e2073]
+                    - button "" [ref=e2074]:
+                      - generic [ref=e2075]: 
+                - generic [ref=e2077]:
+                  - generic [ref=e2078]: 
+                  - generic [ref=e2079]: 16:9 media
+                  - generic [ref=e2080]: click a file on the left
+              - generic [ref=e2081] [cursor=pointer]:
+                - generic [ref=e2082]:
+                  - generic [ref=e2084]:
+                    - generic [ref=e2085]: 
+                    - text: Portrait · 9:16
+                  - generic [ref=e2086]:
+                    - button "Change ratio" [ref=e2087]
+                    - button "" [ref=e2088]:
+                      - generic [ref=e2089]: 
+                - generic [ref=e2091]:
+                  - generic [ref=e2092]: 
+                  - generic [ref=e2093]: 9:16 media
+                  - generic [ref=e2094]: click a file on the left
+              - generic [ref=e2095] [cursor=pointer]:
+                - generic [ref=e2096]: 
+                - generic [ref=e2097]: Add Display Format
+  - text: "* *"

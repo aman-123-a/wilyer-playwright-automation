@@ -29,7 +29,7 @@ export interface Credentials {
 
 export const ENV = {
   /** Application under test. */
-  BASE_URL: pick('CMS_BASE_URL', 'https://cms.pocsample.in'),
+  BASE_URL: pick('CMS_BASE_URL', 'https://cms.wilyersignage.com'),
 
   /** Admin / primary account (full access). */
   ADMIN: {

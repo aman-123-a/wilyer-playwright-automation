@@ -10,7 +10,7 @@ const users = JSON.parse(
   readFileSync(new URL('../data/users.json', import.meta.url), 'utf-8')
 );
 
-const BASE_URL    = 'https://cms.pocsample.in/';
+const BASE_URL    = 'https://cms.wilyersignage.com/';
 const SAMPLE_FILE = path.resolve('data/sample.jpg');
 const SAMPLE_NAME = path.basename(SAMPLE_FILE);
 

@@ -15,8 +15,8 @@ import path from 'path';
 //   • Verdict is outcome-vs-expectation, not "any console error => FAIL".
 // =============================================================================
 
-const BASE_URL       = 'https://cms3.pocsample.in/';
-const APP_HOST       = 'cms3.pocsample.in';
+const BASE_URL       = 'https://cms.wilyersignage.com/';
+const APP_HOST       = 'cms.wilyersignage.com';
 const LOGIN_EMAIL    = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
 const LOGIN_PASSWORD = (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 const STAMP          = Date.now();

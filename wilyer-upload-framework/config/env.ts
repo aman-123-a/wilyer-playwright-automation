@@ -56,8 +56,8 @@ export interface UserCredentials {
 
 export const env = {
   app: {
-    baseURL: optional('BASE_URL', 'https://cms.pocsample.in'),
-    apiBaseURL: optional('API_BASE_URL', 'https://cms.pocsample.in/api'),
+    baseURL: optional('BASE_URL', 'https://cms.wilyersignage.com'),
+    apiBaseURL: optional('API_BASE_URL', 'https://cms.wilyersignage.com/api'),
   },
 
   users: {

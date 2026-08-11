@@ -19,7 +19,7 @@ export default defineConfig({
   ],
   globalSetup: path.resolve(__dirname, 'global-setup.ts'),
   use: {
-    baseURL: 'https://cms.pocsample.in',
+    baseURL: 'https://cms.wilyersignage.com',
     storageState: STORAGE_STATE,
     headless: false,
     viewport: { width: 1440, height: 900 },

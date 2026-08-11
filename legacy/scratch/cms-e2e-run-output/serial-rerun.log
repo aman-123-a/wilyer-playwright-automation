@@ -1,0 +1,403 @@
+✓ CMS reachable at https://cms.pocsample.in (HTTP 200)
+
+Running 20 tests using 1 worker
+
+  ✓   1 [setup] › tests\global.setup.ts:12:1 › authenticate as admin (10.1s)
+  ✘   2 [chromium] › tests\billing\billing.spec.ts:12:3 › Billing › billing page loads with plans or an empty state @smoke @sanity @regression (39.0s)
+  ✘   3 [chromium] › tests\billing\billing.spec.ts:31:3 › Billing › loads within budget, clean console/API @regression (43.4s)
+  ✘   4 [chromium] › tests\dashboard\dashboard.spec.ts:64:3 › Dashboard › no broken images, no stuck loader @regression (24.4s)
+  ✓   5 [chromium] › tests\groups\groups.spec.ts:12:3 › Groups › listing loads with group rows or an empty state @smoke @sanity @regression (6.9s)
+  ✓   6 [chromium] › tests\groups\groups.spec.ts:24:3 › Groups › search narrows the listing or yields an empty state @regression (10.1s)
+  ✓   7 [chromium] › tests\groups\groups.spec.ts:35:3 › Groups › listing loads within budget, clean console/API @regression (4.8s)
+  -   8 [chromium] › tests\library\library.spec.ts:75:3 › Library › opening a media card navigates to its detail page @regression
+  ✘   9 [chromium] › tests\library\library.spec.ts:136:3 › Library › rejects an unsupported file format @regression (26.3s)
+  ✘  10 [chromium] › tests\media-sets\media-sets-create-builder.spec.ts:50:3 › Media Sets — Create builder @regression › type filter narrows the file set and the counter tracks it (15.8s)
+  ✘  11 [chromium] › tests\media-sets\media-sets-create-builder.spec.ts:80:3 › Media Sets — Create builder @regression › F1 — the "N of total" counter stays in sync with the visible files (12.8s)
+  ✘  12 [chromium] › tests\permissions\rbac-data-driven.spec.ts:256:5 › RBAC · Reports › REVOKED → sub-user is fenced out of /reports (26.7s)
+  ✘  13 [chromium] › tests\playlists\playlists.spec.ts:29:3 › Playlists › search narrows the listing or yields an empty state @regression (30.6s)
+  ✓  14 [chromium] › tests\playlists\playlists.spec.ts:40:3 › Playlists › listing loads within budget, clean console/API @regression (9.3s)
+  ✘  15 [chromium] › tests\prayer-schedule\prayer-media-picker.spec.ts:258:3 › Prayer Schedule — Choose Media picker › search input is debounced @api @regression (20.1s)
+  ✓  16 [chromium] › tests\prayer-schedule\prayer-schedule.spec.ts:61:3 › Prayer Schedule › module loads within budget, clean console/API @regression (5.6s)
+  ✓  17 [chromium] › tests\reports\reports.spec.ts:27:3 › Reports › loads within budget, clean console/API @regression (8.0s)
+  ✓  18 [chromium] › tests\screens\screens.spec.ts:28:3 › Screens › search narrows the listing or yields an empty state @regression (12.6s)
+  ✓  19 [chromium] › tests\screens\screens.spec.ts:39:3 › Screens › listing loads within budget, clean console/API @regression (25.6s)
+  ✓  20 [chromium] › tests\team\team.spec.ts:42:3 › Team › loads within budget, clean console/API @regression (6.9s)
+✓ Suite complete. Reports in playwright-report/ and allure-results/.
+
+
+  1) [chromium] › tests\billing\billing.spec.ts:12:3 › Billing › billing page loads with plans or an empty state @smoke @sanity @regression 
+
+    Error: billing shows plans or an empty state
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+    Received: [31mfalse[39m
+
+       at ..\pages\BillingPage.ts:51
+
+      49 |       const empty = await this.page.getByText(/no (plan|purchase|data)/i).first()
+      50 |         .isVisible().catch(() => false);
+    > 51 |       expect(empty, 'billing shows plans or an empty state').toBeTruthy();
+         |                                                              ^
+      52 |     }
+      53 |     return this;
+      54 |   }
+        at BillingPage.expectPlansLoaded (D:\wilyer-playwright\cms-e2e\pages\BillingPage.ts:51:62)
+        at D:\wilyer-playwright\cms-e2e\tests\billing\billing.spec.ts:16:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\billing-billing-Billing-bi-f4567-ate-smoke-sanity-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: console-errors (text/plain) ─────────────────────────────────────────────────────
+    No console errors.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-activity (text/plain) ───────────────────────────────────────────────────────
+    No failed or slow API requests.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\billing-billing-Billing-bi-f4567-ate-smoke-sanity-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\billing-billing-Billing-bi-f4567-ate-smoke-sanity-regression-chromium\error-context.md
+
+  2) [chromium] › tests\billing\billing.spec.ts:31:3 › Billing › loads within budget, clean console/API @regression 
+
+    Error: billing shows plans or an empty state
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+    Received: [31mfalse[39m
+
+       at ..\pages\BillingPage.ts:51
+
+      49 |       const empty = await this.page.getByText(/no (plan|purchase|data)/i).first()
+      50 |         .isVisible().catch(() => false);
+    > 51 |       expect(empty, 'billing shows plans or an empty state').toBeTruthy();
+         |                                                              ^
+      52 |     }
+      53 |     return this;
+      54 |   }
+        at BillingPage.expectPlansLoaded (D:\wilyer-playwright\cms-e2e\pages\BillingPage.ts:51:62)
+        at D:\wilyer-playwright\cms-e2e\tests\billing\billing.spec.ts:38:7
+        at measure (D:\wilyer-playwright\cms-e2e\utils\performance.ts:63:3)
+        at D:\wilyer-playwright\cms-e2e\tests\billing\billing.spec.ts:36:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\billing-billing-Billing-lo-8939f-lean-console-API-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: console-errors (text/plain) ─────────────────────────────────────────────────────
+    No console errors.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-activity (text/plain) ───────────────────────────────────────────────────────
+    No failed or slow API requests.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\billing-billing-Billing-lo-8939f-lean-console-API-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\billing-billing-Billing-lo-8939f-lean-console-API-regression-chromium\error-context.md
+
+  3) [chromium] › tests\dashboard\dashboard.spec.ts:64:3 › Dashboard › no broken images, no stuck loader @regression 
+
+    Error: a loading spinner is still visible after timeout
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeHidden[2m([22m[2m)[22m failed
+
+    Locator:  locator('[class*="spinner" i], [class*="loader" i], [role="progressbar"], [aria-busy="true"]').first()
+    Expected: hidden
+    Received: visible
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - a loading spinner is still visible after timeout with timeout 15000ms[22m
+    [2m  - waiting for locator('[class*="spinner" i], [class*="loader" i], [role="progressbar"], [aria-busy="true"]').first()[22m
+    [2m    33 × locator resolved to <div aria-valuenow="0" aria-valuemin="0" role="progressbar" aria-valuemax="100" class="ant-progress ant-progress-status-normal ant-progress-line ant-progress-line-align-end ant-progress-line-position-outer ant-progress-small css-mncuj7">…</div>[22m
+    [2m       - unexpected value "visible"[22m
+
+
+       at ..\utils\assertions.ts:46
+
+      44 |     '[class*="spinner" i], [class*="loader" i], [role="progressbar"], [aria-busy="true"]',
+      45 |   );
+    > 46 |   await expect(loader.first(), 'a loading spinner is still visible after timeout').toBeHidden({
+         |                                                                                    ^
+      47 |     timeout,
+      48 |   });
+      49 | }
+        at expectNoStuckLoader (D:\wilyer-playwright\cms-e2e\utils\assertions.ts:46:84)
+        at D:\wilyer-playwright\cms-e2e\tests\dashboard\dashboard.spec.ts:67:11
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\dashboard-dashboard-Dashbo-d1d9e--no-stuck-loader-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: console-errors (text/plain) ─────────────────────────────────────────────────────
+    No console errors.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-activity (text/plain) ───────────────────────────────────────────────────────
+    No failed or slow API requests.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\dashboard-dashboard-Dashbo-d1d9e--no-stuck-loader-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\dashboard-dashboard-Dashbo-d1d9e--no-stuck-loader-regression-chromium\error-context.md
+
+  4) [chromium] › tests\library\library.spec.ts:136:3 › Library › rejects an unsupported file format @regression 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByText(/not supported|unsupported|invalid file|not allowed|allowed formats?/i).first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for getByText(/not supported|unsupported|invalid file|not allowed|allowed formats?/i).first()[22m
+
+
+      145 |     await expect(
+      146 |       libraryPage.page.getByText(/not supported|unsupported|invalid file|not allowed|allowed formats?/i).first(),
+    > 147 |     ).toBeVisible({ timeout: 15_000 });
+          |       ^
+      148 |     // Hard signal: the rejected file must NOT have produced a new card.
+      149 |     await libraryPage.closeUploadDialog();
+      150 |     await libraryPage.waitForGridSettled();
+        at D:\wilyer-playwright\cms-e2e\tests\library\library.spec.ts:147:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\library-library-Library-re-14618-rted-file-format-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\library-library-Library-re-14618-rted-file-format-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\library-library-Library-re-14618-rted-file-format-regression-chromium\error-context.md
+
+  5) [chromium] › tests\media-sets\media-sets-create-builder.spec.ts:50:3 › Media Sets — Create builder @regression › type filter narrows the file set and the counter tracks it 
+
+    Error: Images + Videos ≤ All
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBeLessThanOrEqual[2m([22m[32mexpected[39m[2m)[22m
+
+    Expected: <= [32m804[39m
+    Received:    [31m1018[39m
+
+      65 |     expect(images, 'Images ⊂ All').toBeLessThan(all);
+      66 |     expect(videos, 'Videos ⊂ All').toBeLessThan(all);
+    > 67 |     expect(images + videos, 'Images + Videos ≤ All').toBeLessThanOrEqual(all);
+         |                                                      ^
+      68 |   });
+      69 |
+      70 |   test('AR-6 — file filter × file search intersect (AND logic → empty)', async ({
+        at D:\wilyer-playwright\cms-e2e\tests\media-sets\media-sets-create-builder.spec.ts:67:54
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\media-sets-media-sets-crea-3aa98-t-and-the-counter-tracks-it-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: console-errors (text/plain) ─────────────────────────────────────────────────────
+    No console errors.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-activity (text/plain) ───────────────────────────────────────────────────────
+    No failed or slow API requests.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\media-sets-media-sets-crea-3aa98-t-and-the-counter-tracks-it-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\media-sets-media-sets-crea-3aa98-t-and-the-counter-tracks-it-chromium\error-context.md
+
+  6) [chromium] › tests\media-sets\media-sets-create-builder.spec.ts:80:3 › Media Sets — Create builder @regression › F1 — the "N of total" counter stays in sync with the visible files 
+
+    Error: counter shown = visible tiles (after filter)
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m150[39m
+    Received: [31m50[39m
+
+      91 |     await mediaSetsPage.filterFiles('videos');
+      92 |     const after = (await mediaSetsPage.fileCounter())!;
+    > 93 |     expect(after.shown, 'counter shown = visible tiles (after filter)').toBe(
+         |                                                                         ^
+      94 |       await mediaSetsPage.builderFileCount(),
+      95 |     );
+      96 |   });
+        at D:\wilyer-playwright\cms-e2e\tests\media-sets\media-sets-create-builder.spec.ts:93:73
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\media-sets-media-sets-crea-30deb-sync-with-the-visible-files-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: console-errors (text/plain) ─────────────────────────────────────────────────────
+    No console errors.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-activity (text/plain) ───────────────────────────────────────────────────────
+    No failed or slow API requests.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\media-sets-media-sets-crea-30deb-sync-with-the-visible-files-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\media-sets-media-sets-crea-30deb-sync-with-the-visible-files-chromium\error-context.md
+
+  7) [chromium] › tests\permissions\rbac-data-driven.spec.ts:256:5 › RBAC · Reports › REVOKED → sub-user is fenced out of /reports 
+
+    Error: role card "un" should exist
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('heading', { name: 'un', exact: true, level: 5 }).locator('xpath=ancestor::*[.//button[contains(.,"Edit")]][1]').first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - role card "un" should exist with timeout 15000ms[22m
+    [2m  - waiting for getByRole('heading', { name: 'un', exact: true, level: 5 }).locator('xpath=ancestor::*[.//button[contains(.,"Edit")]][1]').first()[22m
+
+
+      126 |   await page.waitForTimeout(1_200); // role cards re-render
+      127 |   const card = SELECTORS.roleCard(page, ROLE_NAME);
+    > 128 |   await expect(card.first(), `role card "${ROLE_NAME}" should exist`).toBeVisible({ timeout: 15_000 });
+          |                                                                       ^
+      129 |   await SELECTORS.editButton(card.first()).click();
+      130 |   await expect(SELECTORS.dialog(page)).toBeVisible({ timeout: 10_000 });
+      131 | }
+        at openRoleEditor (D:\wilyer-playwright\cms-e2e\tests\permissions\rbac-data-driven.spec.ts:128:71)
+        at setPermission (D:\wilyer-playwright\cms-e2e\tests\permissions\rbac-data-driven.spec.ts:140:3)
+        at D:\wilyer-playwright\cms-e2e\tests\permissions\rbac-data-driven.spec.ts:258:7
+
+    Error: role card "un" should exist
+
+    [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('heading', { name: 'un', exact: true, level: 5 }).locator('xpath=ancestor::*[.//button[contains(.,"Edit")]][1]').first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - role card "un" should exist with timeout 15000ms[22m
+    [2m  - waiting for getByRole('heading', { name: 'un', exact: true, level: 5 }).locator('xpath=ancestor::*[.//button[contains(.,"Edit")]][1]').first()[22m
+
+
+      126 |   await page.waitForTimeout(1_200); // role cards re-render
+      127 |   const card = SELECTORS.roleCard(page, ROLE_NAME);
+    > 128 |   await expect(card.first(), `role card "${ROLE_NAME}" should exist`).toBeVisible({ timeout: 15_000 });
+          |                                                                       ^
+      129 |   await SELECTORS.editButton(card.first()).click();
+      130 |   await expect(SELECTORS.dialog(page)).toBeVisible({ timeout: 10_000 });
+      131 | }
+        at openRoleEditor (D:\wilyer-playwright\cms-e2e\tests\permissions\rbac-data-driven.spec.ts:128:71)
+        at setPermission (D:\wilyer-playwright\cms-e2e\tests\permissions\rbac-data-driven.spec.ts:140:3)
+        at D:\wilyer-playwright\cms-e2e\tests\permissions\rbac-data-driven.spec.ts:250:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\permissions-rbac-data-driv-057cd-er-is-fenced-out-of-reports-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\permissions-rbac-data-driv-057cd-er-is-fenced-out-of-reports-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\permissions-rbac-data-driv-057cd-er-is-fenced-out-of-reports-chromium\error-context.md
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\permissions-rbac-data-driv-057cd-er-is-fenced-out-of-reports-chromium\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\permissions-rbac-data-driv-057cd-er-is-fenced-out-of-reports-chromium\error-context.md
+
+  8) [chromium] › tests\playlists\playlists.spec.ts:29:3 › Playlists › search narrows the listing or yields an empty state @regression 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m0[39m
+    Received: [31m50[39m
+
+    Call Log:
+    - Timeout 15000ms exceeded while waiting on the predicate
+
+      34 |     await playlistsPage.expectListLoaded();
+      35 |     await playlistsPage.searchPlaylists(`zz-no-such-playlist-${Date.now()}`);
+    > 36 |     await expect.poll(() => playlistsPage.cardCount(), { timeout: 15_000 }).toBe(0);
+         |                                                                             ^
+      37 |     await expectNoStuckLoader(page);
+      38 |   });
+      39 |
+        at D:\wilyer-playwright\cms-e2e\tests\playlists\playlists.spec.ts:36:77
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\playlists-playlists-Playli-58d77-s-an-empty-state-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: console-errors (text/plain) ─────────────────────────────────────────────────────
+    No console errors.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-activity (text/plain) ───────────────────────────────────────────────────────
+    No failed or slow API requests.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\playlists-playlists-Playli-58d77-s-an-empty-state-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\playlists-playlists-Playli-58d77-s-an-empty-state-regression-chromium\error-context.md
+
+  9) [chromium] › tests\prayer-schedule\prayer-media-picker.spec.ts:258:3 › Prayer Schedule — Choose Media picker › search input is debounced @api @regression 
+
+    Error: typing 5 characters issued 6 file/read requests — search is not debounced
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBeLessThanOrEqual[2m([22m[32mexpected[39m[2m)[22m
+
+    Expected: <= [32m2[39m
+    Received:    [31m6[39m
+
+      279 |       fired,
+      280 |       `typing 5 characters issued ${fired} file/read requests — search is not debounced`,
+    > 281 |     ).toBeLessThanOrEqual(2);
+          |       ^
+      282 |   });
+      283 |
+      284 |   // ── Assigning media (mutates the plan) ───────────────────────────────────
+        at D:\wilyer-playwright\cms-e2e\tests\prayer-schedule\prayer-media-picker.spec.ts:281:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\prayer-schedule-prayer-med-1e347-is-debounced-api-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\prayer-schedule-prayer-med-1e347-is-debounced-api-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\prayer-schedule-prayer-med-1e347-is-debounced-api-regression-chromium\error-context.md
+
+  9 failed
+    [chromium] › tests\billing\billing.spec.ts:12:3 › Billing › billing page loads with plans or an empty state @smoke @sanity @regression 
+    [chromium] › tests\billing\billing.spec.ts:31:3 › Billing › loads within budget, clean console/API @regression 
+    [chromium] › tests\dashboard\dashboard.spec.ts:64:3 › Dashboard › no broken images, no stuck loader @regression 
+    [chromium] › tests\library\library.spec.ts:136:3 › Library › rejects an unsupported file format @regression 
+    [chromium] › tests\media-sets\media-sets-create-builder.spec.ts:50:3 › Media Sets — Create builder @regression › type filter narrows the file set and the counter tracks it 
+    [chromium] › tests\media-sets\media-sets-create-builder.spec.ts:80:3 › Media Sets — Create builder @regression › F1 — the "N of total" counter stays in sync with the visible files 
+    [chromium] › tests\permissions\rbac-data-driven.spec.ts:256:5 › RBAC · Reports › REVOKED → sub-user is fenced out of /reports 
+    [chromium] › tests\playlists\playlists.spec.ts:29:3 › Playlists › search narrows the listing or yields an empty state @regression 
+    [chromium] › tests\prayer-schedule\prayer-media-picker.spec.ts:258:3 › Prayer Schedule — Choose Media picker › search input is debounced @api @regression 
+  1 skipped
+  10 passed (6.5m)

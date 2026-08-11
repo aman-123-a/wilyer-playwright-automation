@@ -13,7 +13,7 @@ import http from 'k6/http';
 import { check, sleep } from 'k6';
 import { Rate, Trend } from 'k6/metrics';
 
-const BASE_URL = __ENV.CMS_BASE_URL || 'https://cms.pocsample.in';
+const BASE_URL = __ENV.CMS_BASE_URL || 'https://cms.wilyersignage.com';
 
 const errorRate = new Rate('errors');
 const loginLatency = new Trend('login_latency_ms', true);

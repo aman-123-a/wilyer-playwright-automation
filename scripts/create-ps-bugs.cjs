@@ -10,7 +10,7 @@ const bugs = [
     name: '[PS-UI-01] Prayer Schedule: Form fields have no label association (Accessibility)',
     description: [
       '**Module:** Prayer Schedule (`/prayer-schedule`), CMS v3.5.20',
-      '**Environment:** testdev - https://cms.pocsample.in - Chromium',
+      '**Environment:** testdev - https://cms.wilyersignage.com - Chromium',
       '**Date Found:** 2026-07-23',
       '**Severity:** Medium - Accessibility',
       '',
@@ -41,7 +41,7 @@ const bugs = [
     name: '[PS-UI-02] Prayer Schedule: No upper bound on Banner / Pre-Announcement duration',
     description: [
       '**Module:** Prayer Schedule (`/prayer-schedule`), CMS v3.5.20',
-      '**Environment:** testdev - https://cms.pocsample.in - Chromium',
+      '**Environment:** testdev - https://cms.wilyersignage.com - Chromium',
       '**Date Found:** 2026-07-23',
       '**Severity:** Medium - Validation Gap',
       '',
@@ -72,7 +72,7 @@ const bugs = [
     name: '[PS-UI-03] Prayer Schedule: Add-New-Plan leaves Start/End dates blank (UX inconsistency)',
     description: [
       '**Module:** Prayer Schedule (`/prayer-schedule`), CMS v3.5.20',
-      '**Environment:** testdev - https://cms.pocsample.in - Chromium',
+      '**Environment:** testdev - https://cms.wilyersignage.com - Chromium',
       '**Date Found:** 2026-07-23',
       '**Severity:** Low-Medium - UX Inconsistency',
       '',
@@ -106,7 +106,7 @@ const bugs = [
     name: '[PS-UI-04] Prayer Schedule: Delete plan unreachable while Configure drawer is open',
     description: [
       '**Module:** Prayer Schedule (`/prayer-schedule`), CMS v3.5.20',
-      '**Environment:** testdev - https://cms.pocsample.in - Chromium',
+      '**Environment:** testdev - https://cms.wilyersignage.com - Chromium',
       '**Date Found:** 2026-07-23',
       '**Severity:** Low - UX / Layering',
       '',
@@ -137,7 +137,7 @@ const bugs = [
     name: '[PS-UI-05] Prayer Schedule: New-plan City select defaults to __custom__ sentinel value',
     description: [
       '**Module:** Prayer Schedule (`/prayer-schedule`), CMS v3.5.20',
-      '**Environment:** testdev - https://cms.pocsample.in - Chromium',
+      '**Environment:** testdev - https://cms.wilyersignage.com - Chromium',
       '**Date Found:** 2026-07-23',
       '**Severity:** Low - Cosmetic / UX',
       '',

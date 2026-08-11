@@ -3,14 +3,14 @@ import path from 'path';
 
 // ═══════════════════════════════════════════════════════════════════════════════
 //  FILE APPROVAL WORKFLOW — POSITIVE & NEGATIVE TEST CASES
-//  CMS: https://cms.pocsample.in
+//  CMS: https://cms.wilyersignage.com
 //  Sub-User (Uploader): amankumarbsrbsr@gmail.com / 12345
 //  Parent User (Approver): aman@wilyer.com / 12345
 //  Supported formats: .jpg, .jpeg, .png, .mp4
 //  Folder hierarchy: Sub-user → "sector 14" | Parent → "noida" → "sector 14"
 // ═══════════════════════════════════════════════════════════════════════════════
 
-const BASE_URL = 'https://cms.pocsample.in';
+const BASE_URL = 'https://cms.wilyersignage.com';
 
 const SUB_USER = { email: 'amankumarbsrbsr@gmail.com', password: '12345' };
 const PARENT_USER = { email: 'aman@wilyer.com', password: '12345' };

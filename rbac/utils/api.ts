@@ -1,6 +1,6 @@
 import { APIRequestContext, expect } from '@playwright/test';
 
-const API_BASE = process.env.API_BASE ?? 'https://v3-5api.pocsample.in';
+const API_BASE = process.env.API_BASE ?? 'https://api.wilyersignage.com';
 
 export interface AuthSession {
   token: string;

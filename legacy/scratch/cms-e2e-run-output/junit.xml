@@ -1,0 +1,42 @@
+<testsuites id="" name="" tests="9" failures="0" skipped="9" errors="0" time="0.353203">
+<testsuite name="global.setup.ts" timestamp="2026-07-27T05:27:21.934Z" hostname="setup" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="authenticate as admin" classname="global.setup.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="playlists\playlist-duration.spec.ts" timestamp="2026-07-27T05:27:21.934Z" hostname="chromium" tests="8" failures="0" skipped="8" time="0" errors="0">
+<testcase name="Playlist — layout time duration @regression › image slides default to 10s and the layout rollup sums the slides" classname="playlists\playlist-duration.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist — layout time duration @regression › stepper adjusts the duration by 1 and floors at 1 (never 0/negative)" classname="playlists\playlist-duration.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist — layout time duration @regression › set a valid duration, save, reload → the duration persists (update)" classname="playlists\playlist-duration.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist — layout time duration @regression › duration 0 must not persist as a zero-length slide" classname="playlists\playlist-duration.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist — layout time duration @regression › a negative duration must not persist" classname="playlists\playlist-duration.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist — layout time duration @regression › an empty duration must not persist as blank/NaN" classname="playlists\playlist-duration.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist — layout time duration @regression › decimals are coerced to a whole number of seconds" classname="playlists\playlist-duration.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist — layout time duration @regression › an absurdly large duration is bounded or, if saved, round-trips exactly" classname="playlists\playlist-duration.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

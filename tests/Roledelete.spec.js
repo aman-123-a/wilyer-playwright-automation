@@ -5,7 +5,7 @@ test('Delete 200 Roles via Loop', async ({ page }) => {
 
   // --- 1. LOGIN ---
   console.log('🔐 Logging in...');
-  await page.goto('https://cms.pocsample.in/', { waitUntil: 'networkidle', timeout: 120000 });
+  await page.goto('https://cms.wilyersignage.com/', { waitUntil: 'networkidle', timeout: 120000 });
   await page.getByPlaceholder(/email/i).fill((process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || ''));
   await page.getByPlaceholder(/password/i).fill((process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || ''));
   await page.getByRole('button', { name: /Log In/i }).click();

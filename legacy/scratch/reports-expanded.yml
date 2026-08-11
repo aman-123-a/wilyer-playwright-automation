@@ -1,0 +1,782 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link " Dashboard" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e16]: 
+              - text: Dashboard
+          - listitem [ref=e17]:
+            - link " Screens" [ref=e18] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e19]: 
+              - text: Screens
+          - listitem [ref=e20]:
+            - link " Groups" [ref=e21] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e22]: 
+              - text: Groups
+          - listitem [ref=e23]:
+            - link " Clusters" [ref=e24] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e25]: 
+              - text: Clusters
+          - listitem [ref=e26]:
+            - link " Library" [ref=e27] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e28]: 
+              - text: Library
+          - listitem [ref=e29]:
+            - link " Rollouts" [ref=e30] [cursor=pointer]:
+              - /url: /content-rollout
+              - generic [ref=e31]: 
+              - text: Rollouts
+          - listitem [ref=e32]:
+            - link " Playlists" [ref=e33] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e34]: 
+              - text: Playlists
+          - listitem [ref=e35]:
+            - link " Team" [ref=e36] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e37]: 
+              - text: Team
+          - listitem [ref=e38]:
+            - link " Reports" [ref=e39] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e40]: 
+              - text: Reports
+          - separator [ref=e41]
+          - listitem [ref=e42]:
+            - link " What's New" [ref=e43] [cursor=pointer]:
+              - /url: /whats-new
+              - generic [ref=e44]: 
+              - text: What's New
+          - listitem [ref=e45]:
+            - link " Help" [ref=e46] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e47]: 
+              - text: Help
+          - listitem [ref=e48]:
+            - link " Feedback" [ref=e49] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e50]: 
+              - text: Feedback
+          - listitem [ref=e51]:
+            - link " Billing" [ref=e52] [cursor=pointer]:
+              - /url: /billing
+              - generic [ref=e53]: 
+              - text: Billing
+          - listitem [ref=e54]:
+            - link " Account" [ref=e55] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e56]: 
+              - text: Account
+          - listitem [ref=e57]:
+            - link " Logout" [ref=e58] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e59]: 
+              - text: Logout
+      - generic [ref=e61]:
+        - generic "dev" [ref=e63]:
+          - generic [ref=e65]: D
+        - generic [ref=e66]: dev@wilyer.com
+      - generic [ref=e67]: v3.5.18.7.1
+    - generic [ref=e70]:
+      - generic [ref=e71]:
+        - list [ref=e74]:
+          - listitem [ref=e75]:
+            - link "Members" [ref=e76] [cursor=pointer]:
+              - /url: /team
+          - listitem [ref=e77]:
+            - link "Roles" [ref=e78] [cursor=pointer]:
+              - /url: /team
+          - listitem [ref=e79]:
+            - link "New Member" [ref=e80] [cursor=pointer]:
+              - /url: /team
+          - listitem [ref=e81]:
+            - link "Logs" [ref=e82] [cursor=pointer]:
+              - /url: /team
+        - generic [ref=e83]:
+          - textbox "Search..." [ref=e84]
+          - button "Read Docs " [ref=e85] [cursor=pointer]:
+            - text: Read Docs
+            - generic [ref=e86]: 
+      - generic [ref=e453]:
+        - generic [ref=e454]:
+          - generic [ref=e455]:
+            - heading "Custom Role Management" [level=4] [ref=e456]
+            - paragraph [ref=e457]: Create and manage custom roles with specific permissions
+          - generic [ref=e458]:
+            - tablist [ref=e461]:
+              - button " Card View" [ref=e462] [cursor=pointer]:
+                - generic [ref=e463]: 
+                - text: Card View
+            - button " Create Custom Role" [ref=e464] [cursor=pointer]:
+              - generic [ref=e465]: 
+              - text: Create Custom Role
+        - generic [ref=e466]:
+          - generic [ref=e469]:
+            - generic [ref=e470]:
+              - heading "QA test (Approve)" [level=5] [ref=e471]
+              - paragraph
+              - generic [ref=e472]:
+                - generic [ref=e473]: 66 Permissions
+                - generic [ref=e474]: Restricted
+                - generic [ref=e475]: Checker
+                - generic [ref=e476]: Approve
+                - generic [ref=e477]: "Reports To: Manger - FA Approve"
+            - generic [ref=e478]:
+              - heading "Key Modules:" [level=6] [ref=e479]
+              - generic [ref=e480]:
+                - generic [ref=e481]: Dashboard Stats
+                - generic [ref=e482]: Media (Img/Vid)
+                - generic [ref=e483]: Widgets
+                - generic [ref=e484]: mediaSets
+                - generic [ref=e485]: +13 more
+              - generic [ref=e486]:
+                - heading " Assigned Subusers (3):" [level=6] [ref=e487]:
+                  - generic [ref=e488]: 
+                  - text: "Assigned Subusers (3):"
+                - generic [ref=e489]:
+                  - generic "QA (aman@wilyer.com)" [ref=e490]: QA
+                  - generic "m (manager12346@yopmail.com)" [ref=e491]: m
+                  - generic "m2 (manager12347@yopmail.com)" [ref=e492]: m2
+            - generic [ref=e493]: "Created: 3/30/2026"
+            - generic [ref=e495]:
+              - button " View" [ref=e496] [cursor=pointer]:
+                - generic [ref=e497]: 
+                - text: View
+              - button " Edit" [ref=e498] [cursor=pointer]:
+                - generic [ref=e499]: 
+                - text: Edit
+              - button " Delete" [ref=e500] [cursor=pointer]:
+                - generic [ref=e501]: 
+                - text: Delete
+          - generic [ref=e504]:
+            - generic [ref=e505]:
+              - heading "child (Required)" [level=5] [ref=e506]
+              - paragraph [ref=e507]: restricted
+              - generic [ref=e508]:
+                - generic [ref=e509]: 55 Permissions
+                - generic [ref=e510]: Restricted
+                - generic [ref=e511]: Maker
+                - generic [ref=e512]: Required
+                - generic [ref=e513]: "Reports To: QA test (Approve)"
+            - generic [ref=e514]:
+              - heading "Key Modules:" [level=6] [ref=e515]
+              - generic [ref=e516]:
+                - generic [ref=e517]: Dashboard Stats
+                - generic [ref=e518]: Media (Img/Vid)
+                - generic [ref=e519]: Widgets
+                - generic [ref=e520]: Playlists
+                - generic [ref=e521]: +12 more
+              - generic [ref=e522]:
+                - heading " Assigned Subusers (1):" [level=6] [ref=e523]:
+                  - generic [ref=e524]: 
+                  - text: "Assigned Subusers (1):"
+                - generic "AMAN (amankumarbsrbsr@gmail.com)" [ref=e526]: AMAN
+            - generic [ref=e527]: "Created: 4/13/2026"
+            - generic [ref=e529]:
+              - button " View" [ref=e530] [cursor=pointer]:
+                - generic [ref=e531]: 
+                - text: View
+              - button " Edit" [ref=e532] [cursor=pointer]:
+                - generic [ref=e533]: 
+                - text: Edit
+              - button " Delete" [ref=e534] [cursor=pointer]:
+                - generic [ref=e535]: 
+                - text: Delete
+          - generic [ref=e538]:
+            - generic [ref=e539]:
+              - heading "un" [level=5] [ref=e540]
+              - paragraph
+              - generic [ref=e541]:
+                - generic [ref=e542]: 53 Permissions
+                - generic [ref=e543]: "Reports To: Owner"
+            - generic [ref=e544]:
+              - heading "Key Modules:" [level=6] [ref=e545]
+              - generic [ref=e546]:
+                - generic [ref=e547]: Dashboard Stats
+                - generic [ref=e548]: Media (Img/Vid)
+                - generic [ref=e549]: Widgets
+                - generic [ref=e550]: Playlists
+                - generic [ref=e551]: +12 more
+              - generic [ref=e552]:
+                - heading " Assigned Subusers (1):" [level=6] [ref=e553]:
+                  - generic [ref=e554]: 
+                  - text: "Assigned Subusers (1):"
+                - generic "ak (ak22@gmail.com)" [ref=e556]: ak
+            - generic [ref=e557]: "Created: 5/25/2026"
+            - generic [ref=e559]:
+              - button " View" [ref=e560] [cursor=pointer]:
+                - generic [ref=e561]: 
+                - text: View
+              - button " Edit" [ref=e562] [cursor=pointer]:
+                - generic [ref=e563]: 
+                - text: Edit
+              - button " Delete" [ref=e564] [cursor=pointer]:
+                - generic [ref=e565]: 
+                - text: Delete
+          - generic [ref=e568]:
+            - generic [ref=e569]:
+              - heading "qw" [level=5] [ref=e570]
+              - paragraph
+              - generic [ref=e571]:
+                - generic [ref=e572]: 44 Permissions
+                - generic [ref=e573]: Restricted
+                - generic [ref=e574]: "Reports To: child (Required)"
+            - generic [ref=e575]:
+              - heading "Key Modules:" [level=6] [ref=e576]
+              - generic [ref=e577]:
+                - generic [ref=e578]: Dashboard Stats
+                - generic [ref=e579]: Media (Img/Vid)
+                - generic [ref=e580]: Widgets
+                - generic [ref=e581]: Playlists
+                - generic [ref=e582]: +10 more
+              - generic [ref=e583]:
+                - heading " Assigned Subusers (1):" [level=6] [ref=e584]:
+                  - generic [ref=e585]: 
+                  - text: "Assigned Subusers (1):"
+                - generic "dd (sa@wilyer.com)" [ref=e587]: dd
+            - generic [ref=e588]: "Created: 5/20/2026"
+            - generic [ref=e590]:
+              - button " View" [ref=e591] [cursor=pointer]:
+                - generic [ref=e592]: 
+                - text: View
+              - button " Edit" [ref=e593] [cursor=pointer]:
+                - generic [ref=e594]: 
+                - text: Edit
+              - button " Delete" [ref=e595] [cursor=pointer]:
+                - generic [ref=e596]: 
+                - text: Delete
+          - generic [ref=e599]:
+            - generic [ref=e600]:
+              - heading "Admin Unrestricted" [level=5] [ref=e601]
+              - paragraph
+              - generic [ref=e602]:
+                - generic [ref=e603]: 58 Permissions
+                - generic [ref=e604]: "Reports To: Owner"
+            - generic [ref=e605]:
+              - heading "Key Modules:" [level=6] [ref=e606]
+              - generic [ref=e607]:
+                - generic [ref=e608]: Dashboard Stats
+                - generic [ref=e609]: Media (Img/Vid)
+                - generic [ref=e610]: Widgets
+                - generic [ref=e611]: mediaSets
+                - generic [ref=e612]: +13 more
+              - generic [ref=e613]:
+                - heading " Assigned Subusers (1):" [level=6] [ref=e614]:
+                  - generic [ref=e615]: 
+                  - text: "Assigned Subusers (1):"
+                - generic "Sameer Vashisth (wikiuser0005@gmail.com)" [ref=e617]: Sameer Vashisth
+            - generic [ref=e618]: "Created: 5/6/2026"
+            - generic [ref=e620]:
+              - button " View" [ref=e621] [cursor=pointer]:
+                - generic [ref=e622]: 
+                - text: View
+              - button " Edit" [ref=e623] [cursor=pointer]:
+                - generic [ref=e624]: 
+                - text: Edit
+              - button " Delete" [ref=e625] [cursor=pointer]:
+                - generic [ref=e626]: 
+                - text: Delete
+          - generic [ref=e629]:
+            - generic [ref=e630]:
+              - heading "ass" [level=5] [ref=e631]
+              - paragraph
+              - generic [ref=e632]:
+                - generic [ref=e633]: 12 Permissions
+                - generic [ref=e634]: Restricted
+                - generic [ref=e635]: "Reports To: Owner"
+            - generic [ref=e636]:
+              - heading "Key Modules:" [level=6] [ref=e637]
+              - generic [ref=e638]:
+                - generic [ref=e639]: Dashboard Stats
+                - generic [ref=e640]: Screens
+                - generic [ref=e641]: Screens Actions
+                - generic [ref=e642]: fileApproval
+                - generic [ref=e643]: +1 more
+              - generic [ref=e644]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e645]:
+                  - generic [ref=e646]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e647]: "Created: 5/5/2026"
+            - generic [ref=e649]:
+              - button " View" [ref=e650] [cursor=pointer]:
+                - generic [ref=e651]: 
+                - text: View
+              - button " Edit" [ref=e652] [cursor=pointer]:
+                - generic [ref=e653]: 
+                - text: Edit
+              - button " Delete" [ref=e654] [cursor=pointer]:
+                - generic [ref=e655]: 
+                - text: Delete
+          - generic [ref=e658]:
+            - generic [ref=e659]:
+              - heading "Manger - FA Approve" [level=5] [ref=e660]
+              - paragraph [ref=e661]: File Approval Approve
+              - generic [ref=e662]:
+                - generic [ref=e663]: 62 Permissions
+                - generic [ref=e664]: Restricted
+                - generic [ref=e665]: Checker
+                - generic [ref=e666]: Approve
+                - generic [ref=e667]: "Reports To: Owner"
+            - generic [ref=e668]:
+              - heading "Key Modules:" [level=6] [ref=e669]
+              - generic [ref=e670]:
+                - generic [ref=e671]: Dashboard Stats
+                - generic [ref=e672]: Media (Img/Vid)
+                - generic [ref=e673]: Widgets
+                - generic [ref=e674]: mediaSets
+                - generic [ref=e675]: +13 more
+              - generic [ref=e676]:
+                - heading " Assigned Subusers (2):" [level=6] [ref=e677]:
+                  - generic [ref=e678]: 
+                  - text: "Assigned Subusers (2):"
+                - generic [ref=e679]:
+                  - generic "manager (manager1234@yopmail.com)" [ref=e680]: manager
+                  - generic "mws (manager12348@yopmail.com)" [ref=e681]: mws
+            - generic [ref=e682]: "Created: 3/27/2026"
+            - generic [ref=e684]:
+              - button " View" [ref=e685] [cursor=pointer]:
+                - generic [ref=e686]: 
+                - text: View
+              - button " Edit" [ref=e687] [cursor=pointer]:
+                - generic [ref=e688]: 
+                - text: Edit
+              - button " Delete" [ref=e689] [cursor=pointer]:
+                - generic [ref=e690]: 
+                - text: Delete
+          - generic [ref=e693]:
+            - generic [ref=e694]:
+              - heading "sws" [level=5] [ref=e695]
+              - paragraph
+              - generic [ref=e696]:
+                - generic [ref=e697]: 4 Permissions
+                - generic [ref=e698]: Required
+                - generic [ref=e699]: "Reports To: Owner"
+            - generic [ref=e700]:
+              - heading "Key Modules:" [level=6] [ref=e701]
+              - generic [ref=e702]:
+                - generic [ref=e703]: fileApproval
+                - generic [ref=e704]: makerAndChecker
+              - generic [ref=e705]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e706]:
+                  - generic [ref=e707]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e708]: "Created: 4/29/2026"
+            - generic [ref=e710]:
+              - button " View" [ref=e711] [cursor=pointer]:
+                - generic [ref=e712]: 
+                - text: View
+              - button " Edit" [ref=e713] [cursor=pointer]:
+                - generic [ref=e714]: 
+                - text: Edit
+              - button " Delete" [ref=e715] [cursor=pointer]:
+                - generic [ref=e716]: 
+                - text: Delete
+          - generic [ref=e719]:
+            - generic [ref=e720]:
+              - heading "Content Maker 2" [level=5] [ref=e721]
+              - paragraph
+              - generic [ref=e722]:
+                - generic [ref=e723]: 40 Permissions
+                - generic [ref=e724]: "Reports To: Owner"
+            - generic [ref=e725]:
+              - heading "Key Modules:" [level=6] [ref=e726]
+              - generic [ref=e727]:
+                - generic [ref=e728]: Dashboard Stats
+                - generic [ref=e729]: Media (Img/Vid)
+                - generic [ref=e730]: Widgets
+                - generic [ref=e731]: Playlists
+                - generic [ref=e732]: +6 more
+              - generic [ref=e733]:
+                - heading " Assigned Subusers (1):" [level=6] [ref=e734]:
+                  - generic [ref=e735]: 
+                  - text: "Assigned Subusers (1):"
+                - generic "dsfgbhbvfds (content1@gmail.com)" [ref=e737]: dsfgbhbvfds
+            - generic [ref=e738]: "Created: 4/29/2026"
+            - generic [ref=e740]:
+              - button " View" [ref=e741] [cursor=pointer]:
+                - generic [ref=e742]: 
+                - text: View
+              - button " Edit" [ref=e743] [cursor=pointer]:
+                - generic [ref=e744]: 
+                - text: Edit
+              - button " Delete" [ref=e745] [cursor=pointer]:
+                - generic [ref=e746]: 
+                - text: Delete
+          - generic [ref=e749]:
+            - generic [ref=e750]:
+              - heading "ssd" [level=5] [ref=e751]
+              - paragraph [ref=e752]: eef
+              - generic [ref=e753]:
+                - generic [ref=e754]: 40 Permissions
+                - generic [ref=e755]: Restricted
+                - generic [ref=e756]: "Reports To: Content Maker 2"
+            - generic [ref=e757]:
+              - heading "Key Modules:" [level=6] [ref=e758]
+              - generic [ref=e759]:
+                - generic [ref=e760]: Dashboard Stats
+                - generic [ref=e761]: Media (Img/Vid)
+                - generic [ref=e762]: Widgets
+                - generic [ref=e763]: Playlists
+                - generic [ref=e764]: +6 more
+              - generic [ref=e765]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e766]:
+                  - generic [ref=e767]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e768]: "Created: 4/29/2026"
+            - generic [ref=e770]:
+              - button " View" [ref=e771] [cursor=pointer]:
+                - generic [ref=e772]: 
+                - text: View
+              - button " Edit" [ref=e773] [cursor=pointer]:
+                - generic [ref=e774]: 
+                - text: Edit
+              - button " Delete" [ref=e775] [cursor=pointer]:
+                - generic [ref=e776]: 
+                - text: Delete
+          - generic [ref=e779]:
+            - generic [ref=e780]:
+              - heading "M1" [level=5] [ref=e781]
+              - paragraph
+              - generic [ref=e782]:
+                - generic [ref=e783]: 53 Permissions
+                - generic [ref=e784]: Maker
+                - generic [ref=e785]: Required
+                - generic [ref=e786]: "Reports To: Manger - FA Approve"
+            - generic [ref=e787]:
+              - heading "Key Modules:" [level=6] [ref=e788]
+              - generic [ref=e789]:
+                - generic [ref=e790]: Dashboard Stats
+                - generic [ref=e791]: Media (Img/Vid)
+                - generic [ref=e792]: Widgets
+                - generic [ref=e793]: Playlists
+                - generic [ref=e794]: +12 more
+              - generic [ref=e795]:
+                - heading " Assigned Subusers (1):" [level=6] [ref=e796]:
+                  - generic [ref=e797]: 
+                  - text: "Assigned Subusers (1):"
+                - generic "M1 (manager12345@yopmail.com)" [ref=e799]: M1
+            - generic [ref=e800]: "Created: 4/27/2026"
+            - generic [ref=e802]:
+              - button " View" [ref=e803] [cursor=pointer]:
+                - generic [ref=e804]: 
+                - text: View
+              - button " Edit" [ref=e805] [cursor=pointer]:
+                - generic [ref=e806]: 
+                - text: Edit
+              - button " Delete" [ref=e807] [cursor=pointer]:
+                - generic [ref=e808]: 
+                - text: Delete
+          - generic [ref=e811]:
+            - generic [ref=e812]:
+              - heading "w" [level=5] [ref=e813]
+              - paragraph
+              - generic [ref=e814]:
+                - generic [ref=e815]: 10 Permissions
+                - generic [ref=e816]: "Reports To: QA test (Approve)"
+            - generic [ref=e817]:
+              - heading "Key Modules:" [level=6] [ref=e818]
+              - generic [ref=e819]:
+                - generic [ref=e820]: Dashboard Stats
+                - generic [ref=e821]: Screens
+                - generic [ref=e822]: Screens Actions
+              - generic [ref=e823]:
+                - heading " Assigned Subusers (0):" [level=6] [ref=e824]:
+                  - generic [ref=e825]: 
+                  - text: "Assigned Subusers (0):"
+                - text: No subusers assigned
+            - generic [ref=e826]: "Created: 4/22/2026"
+            - generic [ref=e828]:
+              - button " View" [ref=e829] [cursor=pointer]:
+                - generic [ref=e830]: 
+                - text: View
+              - button " Edit" [ref=e831] [cursor=pointer]:
+                - generic [ref=e832]: 
+                - text: Edit
+              - button " Delete" [ref=e833] [cursor=pointer]:
+                - generic [ref=e834]: 
+                - text: Delete
+        - navigation "Page navigation" [ref=e835]:
+          - list [ref=e836]:
+            - listitem [ref=e837]:
+              - button "Previous"
+            - listitem [ref=e838]:
+              - button "1" [ref=e839] [cursor=pointer]
+            - listitem [ref=e840]:
+              - button "2" [ref=e841] [cursor=pointer]
+            - listitem [ref=e842]:
+              - button "3" [ref=e843] [cursor=pointer]
+            - listitem [ref=e844]:
+              - button "4" [ref=e845] [cursor=pointer]
+            - listitem [ref=e846]:
+              - button "Next" [ref=e847] [cursor=pointer]
+      - dialog [ref=e848]:
+        - generic [ref=e849]:
+          - generic [ref=e850]:
+            - heading "Edit un" [level=5] [ref=e851]
+            - generic "Close" [ref=e852] [cursor=pointer]: ×
+          - generic [ref=e854]:
+            - generic [ref=e855]:
+              - generic [ref=e858]:
+                - heading "Role Information" [level=6] [ref=e859]
+                - generic [ref=e860]:
+                  - generic [ref=e861]: Role Name *
+                  - textbox "Enter role name" [ref=e862]: un
+                - generic [ref=e863]:
+                  - generic [ref=e864]: Description
+                  - textbox "Describe this role" [ref=e865]
+                - generic [ref=e866]:
+                  - generic [ref=e867]:
+                    - generic [ref=e868]: Reports To
+                    - button "Owner" [ref=e870] [cursor=pointer]
+                  - generic [ref=e871]: This role will report to the selected role in the hierarchy
+                - generic [ref=e872]:
+                  - generic [ref=e873]:
+                    - checkbox "Restricted Access" [ref=e874]
+                    - generic [ref=e875]: Restricted Access
+                  - text: Limit user to specific content
+                - generic [ref=e876]:
+                  - generic [ref=e877]: Start with a Template
+                  - combobox [ref=e878]:
+                    - option "Select a template" [selected]
+                    - option "Admin"
+                    - option "Manager"
+                    - option "Content Maker"
+                    - option "Content Checker"
+                    - option "File Approver"
+                    - option "File Uploader"
+                    - option "Viewer"
+                - generic [ref=e879]:
+                  - generic [ref=e880]: Permission Summary
+                  - generic [ref=e881]:
+                    - generic [ref=e882]:
+                      - generic [ref=e883]: Total Selected
+                      - generic [ref=e884]: "53"
+                    - button " Overview & Monitoring 1/1" [ref=e885] [cursor=pointer]:
+                      - generic [ref=e886]:
+                        - generic [ref=e887]: 
+                        - text: Overview & Monitoring
+                      - generic [ref=e888]: 1/1
+                    - button " Screens Management 11/11" [ref=e889] [cursor=pointer]:
+                      - generic [ref=e890]:
+                        - generic [ref=e891]: 
+                        - text: Screens Management
+                      - generic [ref=e892]: 11/11
+                    - button " Content Management 19/19" [ref=e893] [cursor=pointer]:
+                      - generic [ref=e894]:
+                        - generic [ref=e895]: 
+                        - text: Content Management
+                      - generic [ref=e896]: 19/19
+                    - button " Screen Group Management 6/6" [ref=e897] [cursor=pointer]:
+                      - generic [ref=e898]:
+                        - generic [ref=e899]: 
+                        - text: Screen Group Management
+                      - generic [ref=e900]: 6/6
+                    - button " Team Administration 8/8" [ref=e901] [cursor=pointer]:
+                      - generic [ref=e902]:
+                        - generic [ref=e903]: 
+                        - text: Team Administration
+                      - generic [ref=e904]: 8/8
+                    - button " Reports 2/2" [ref=e905] [cursor=pointer]:
+                      - generic [ref=e906]:
+                        - generic [ref=e907]: 
+                        - text: Reports
+                      - generic [ref=e908]: 2/2
+                    - button " Cluster Management 4/4" [ref=e909] [cursor=pointer]:
+                      - generic [ref=e910]:
+                        - generic [ref=e911]: 
+                        - text: Cluster Management
+                      - generic [ref=e912]: 4/4
+                    - button " Remote Update 2/2" [ref=e913] [cursor=pointer]:
+                      - generic [ref=e914]:
+                        - generic [ref=e915]: 
+                        - text: Remote Update
+                      - generic [ref=e916]: 2/2
+                    - button " File Uploading 0/1" [ref=e917] [cursor=pointer]:
+                      - generic [ref=e918]:
+                        - generic [ref=e919]: 
+                        - text: File Uploading
+                      - generic [ref=e920]: 0/1
+                    - button " Content Publishing 0/1" [ref=e921] [cursor=pointer]:
+                      - generic [ref=e922]:
+                        - generic [ref=e923]: 
+                        - text: Content Publishing
+                      - generic [ref=e924]: 0/1
+              - generic [ref=e925]:
+                - heading " Permission Configuration" [level=6] [ref=e927]:
+                  - generic [ref=e928]: 
+                  - text: Permission Configuration
+                - generic [ref=e929]:
+                  - generic [ref=e930]:
+                    - strong [ref=e931]: "53"
+                    - text: permissions selected across
+                    - strong [ref=e932]: "8"
+                    - text: sections
+                  - generic [ref=e933]:
+                    - generic [ref=e934] [cursor=pointer]:
+                      - checkbox "SHOW SELECTED ONLY" [ref=e935]
+                      - text: SHOW SELECTED ONLY
+                    - button "CLEAR ALL" [ref=e936] [cursor=pointer]
+                - generic [ref=e937]:
+                  - generic [ref=e939] [cursor=pointer]:
+                    - generic [ref=e940]: 
+                    - generic [ref=e941]: 
+                    - generic [ref=e942]: Overview & Monitoring
+                    - generic [ref=e944]: view
+                    - generic [ref=e945]:
+                      - button "NONE" [ref=e946]
+                      - button "READ-ONLY" [ref=e947]
+                      - button "ALL" [ref=e948]
+                      - generic [ref=e949]: 1 / 1
+                  - generic [ref=e951] [cursor=pointer]:
+                    - generic [ref=e952]: 
+                    - generic [ref=e953]: 
+                    - generic [ref=e954]: Screens Management
+                    - generic [ref=e955]:
+                      - generic [ref=e956]: view
+                      - generic [ref=e957]: pair
+                      - generic [ref=e958]: update Config
+                      - generic [ref=e959]: delete
+                      - generic [ref=e960]: restart App
+                      - generic [ref=e961]: restart Device
+                      - generic [ref=e962]: "+5"
+                    - generic [ref=e963]:
+                      - button "NONE" [ref=e964]
+                      - button "READ-ONLY" [ref=e965]
+                      - button "ALL" [ref=e966]
+                      - generic [ref=e967]: 11 / 11
+                  - generic [ref=e969] [cursor=pointer]:
+                    - generic [ref=e970]: 
+                    - generic [ref=e971]: 
+                    - generic [ref=e972]: Content Management
+                    - generic [ref=e973]:
+                      - generic [ref=e974]: view
+                      - generic [ref=e975]: upload
+                      - generic [ref=e976]: update
+                      - generic [ref=e977]: delete
+                      - generic [ref=e978]: publish
+                      - generic [ref=e979]: create
+                    - generic [ref=e980]:
+                      - button "NONE" [ref=e981]
+                      - button "READ-ONLY" [ref=e982]
+                      - button "ALL" [ref=e983]
+                      - generic [ref=e984]: 19 / 19
+                  - generic [ref=e986] [cursor=pointer]:
+                    - generic [ref=e987]: 
+                    - generic [ref=e988]: 
+                    - generic [ref=e989]: Screen Group Management
+                    - generic [ref=e990]:
+                      - generic [ref=e991]: view
+                      - generic [ref=e992]: create
+                      - generic [ref=e993]: update
+                      - generic [ref=e994]: delete
+                      - generic [ref=e995]: assign Users
+                      - generic [ref=e996]: assign Screens
+                    - generic [ref=e997]:
+                      - button "NONE" [ref=e998]
+                      - button "READ-ONLY" [ref=e999]
+                      - button "ALL" [ref=e1000]
+                      - generic [ref=e1001]: 6 / 6
+                  - generic [ref=e1003] [cursor=pointer]:
+                    - generic [ref=e1004]: 
+                    - generic [ref=e1005]: 
+                    - generic [ref=e1006]: Team Administration
+                    - generic [ref=e1007]:
+                      - generic [ref=e1008]: view
+                      - generic [ref=e1009]: create
+                      - generic [ref=e1010]: update
+                      - generic [ref=e1011]: delete
+                    - generic [ref=e1012]:
+                      - button "NONE" [ref=e1013]
+                      - button "READ-ONLY" [ref=e1014]
+                      - button "ALL" [ref=e1015]
+                      - generic [ref=e1016]: 8 / 8
+                  - generic [ref=e1017]:
+                    - generic [ref=e1018] [cursor=pointer]:
+                      - generic [ref=e1019]: 
+                      - generic [ref=e1020]: 
+                      - generic [ref=e1021]: Reports
+                      - generic [ref=e1023]: view
+                      - generic [ref=e1024]:
+                        - button "NONE" [ref=e1025]
+                        - button "READ-ONLY" [ref=e1026]
+                        - button "ALL" [ref=e1027]
+                        - generic [ref=e1028]: 2 / 2
+                    - table [ref=e1082]:
+                      - rowgroup [ref=e1083]:
+                        - row "Module View" [ref=e1084]:
+                          - columnheader "Module" [ref=e1085]
+                          - columnheader "View" [ref=e1086]
+                      - rowgroup [ref=e1087]:
+                        - row "Reports Reports management and control" [ref=e1088]:
+                          - cell "Reports Reports management and control" [ref=e1089]:
+                            - generic [ref=e1092]:
+                              - generic [ref=e1093]: Reports
+                              - generic [ref=e1094]: Reports management and control
+                          - cell [ref=e1095]:
+                            - checkbox [checked] [ref=e1096]
+                        - row "Logs Logs management and control" [ref=e1097]:
+                          - cell "Logs Logs management and control" [ref=e1098]:
+                            - generic [ref=e1101]:
+                              - generic [ref=e1102]: Logs
+                              - generic [ref=e1103]: Logs management and control
+                          - cell [ref=e1104]:
+                            - checkbox [checked] [ref=e1105]
+                  - generic [ref=e1030] [cursor=pointer]:
+                    - generic [ref=e1031]: 
+                    - generic [ref=e1032]: 
+                    - generic [ref=e1033]: Cluster Management
+                    - generic [ref=e1034]:
+                      - generic [ref=e1035]: view
+                      - generic [ref=e1036]: create
+                      - generic [ref=e1037]: update
+                      - generic [ref=e1038]: delete
+                    - generic [ref=e1039]:
+                      - button "NONE" [ref=e1040]
+                      - button "READ-ONLY" [ref=e1041]
+                      - button "ALL" [ref=e1042]
+                      - generic [ref=e1043]: 4 / 4
+                  - generic [ref=e1045] [cursor=pointer]:
+                    - generic [ref=e1046]: 
+                    - generic [ref=e1047]: 
+                    - generic [ref=e1048]: Remote Update
+                    - generic [ref=e1049]:
+                      - generic [ref=e1050]: view
+                      - generic [ref=e1051]: apply
+                    - generic [ref=e1052]:
+                      - button "NONE" [ref=e1053]
+                      - button "READ-ONLY" [ref=e1054]
+                      - button "ALL" [ref=e1055]
+                      - generic [ref=e1056]: 2 / 2
+                  - generic [ref=e1058] [cursor=pointer]:
+                    - generic [ref=e1059]: 
+                    - generic [ref=e1060]: 
+                    - generic [ref=e1061]: File Uploading
+                    - generic [ref=e1062]: Disabled
+                    - generic [ref=e1063]:
+                      - generic [ref=e1064]: Enable
+                      - switch [ref=e1066]
+                  - generic [ref=e1068] [cursor=pointer]:
+                    - generic [ref=e1069]: 
+                    - generic [ref=e1070]: 
+                    - generic [ref=e1071]: Content Publishing
+                    - generic [ref=e1072]: Disabled
+                    - generic [ref=e1073]:
+                      - generic [ref=e1074]: Enable
+                      - switch [ref=e1076]
+            - generic [ref=e1077]:
+              - button "Cancel" [ref=e1078] [cursor=pointer]
+              - button "Update Role" [ref=e1079] [cursor=pointer]
+      - text:     
+  - text: "* *"

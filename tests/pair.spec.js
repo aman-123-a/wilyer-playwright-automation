@@ -18,7 +18,7 @@ test('Create New Screen with Pairing Code', async ({ page }) => {
   const location = 'india';
 
   // 1. Login
-  await page.goto('https://cms.pocsample.in/');
+  await page.goto('https://cms.wilyersignage.com/');
   await page.waitForLoadState('networkidle');
   await page.getByRole('textbox', { name: /email or phone/i }).fill((process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || ''));
   await page.getByRole('textbox', { name: /password/i }).fill((process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || ''));

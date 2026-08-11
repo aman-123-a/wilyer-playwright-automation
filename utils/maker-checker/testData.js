@@ -1,7 +1,7 @@
 // Central test data — keep all environment & credentials in one place
 import path from 'path';
 
-export const BASE_URL = process.env.BASE_URL || 'https://cms.pocsample.in';
+export const BASE_URL = process.env.BASE_URL || 'https://cms.wilyersignage.com';
 
 export const MAKER = {
   email: process.env.MAKER_EMAIL || 'amankumarbsrbsr@gmail.com',

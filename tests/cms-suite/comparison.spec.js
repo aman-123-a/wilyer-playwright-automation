@@ -1,6 +1,6 @@
 // =============================================================================
 //  COMPARISON VALIDATION — merged/staging build vs production reference.
-//    STAGING (under test): https://cms.pocsample.in   (ENV.BASE_URL)
+//    STAGING (under test): https://cms.wilyersignage.com   (ENV.BASE_URL)
 //    PROD   (reference)  : https://cms.wilyersignage.com (ENV.PROD_URL)
 //
 //  Diffs the two environments along the dimensions the requirements call out:

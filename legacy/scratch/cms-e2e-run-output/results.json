@@ -1,0 +1,378 @@
+{
+  "config": {
+    "configFile": "D:\\wilyer-playwright\\cms-e2e\\playwright.config.ts",
+    "rootDir": "D:/wilyer-playwright/cms-e2e/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "D:\\wilyer-playwright\\cms-e2e\\global-setup.ts",
+    "globalTeardown": "D:\\wilyer-playwright\\cms-e2e\\global-teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/wilyer-playwright/cms-e2e/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "setup",
+        "name": "setup",
+        "testDir": "D:/wilyer-playwright/cms-e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/global\\.setup\\.ts/"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/cms-e2e/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/wilyer-playwright/cms-e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/cms-e2e/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/wilyer-playwright/cms-e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/cms-e2e/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/wilyer-playwright/cms-e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/cms-e2e/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "D:/wilyer-playwright/cms-e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/cms-e2e/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "D:/wilyer-playwright/cms-e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "reports/junit.xml"
+        }
+      ],
+      [
+        "D:\\wilyer-playwright\\cms-e2e\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "resultsDir": "allure-results",
+          "detail": true
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "global.setup.ts",
+      "file": "global.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authenticate as admin",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e4eb4d1272d956fb120f-96466eaf1423edb2a5ba",
+          "file": "global.setup.ts",
+          "line": 12,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "playlists\\playlist-duration.spec.ts",
+      "file": "playlists/playlist-duration.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Playlist — layout time duration @regression",
+          "file": "playlists/playlist-duration.spec.ts",
+          "line": 30,
+          "column": 6,
+          "specs": [
+            {
+              "title": "image slides default to 10s and the layout rollup sums the slides",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f3bc9ccf461fb8616997-c105f83d01e52cab1df1",
+              "file": "playlists/playlist-duration.spec.ts",
+              "line": 61,
+              "column": 3
+            },
+            {
+              "title": "stepper adjusts the duration by 1 and floors at 1 (never 0/negative)",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f3bc9ccf461fb8616997-47929cdc5ccc1535291b",
+              "file": "playlists/playlist-duration.spec.ts",
+              "line": 78,
+              "column": 3
+            },
+            {
+              "title": "set a valid duration, save, reload → the duration persists (update)",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f3bc9ccf461fb8616997-4267a4e1e0c0a79be629",
+              "file": "playlists/playlist-duration.spec.ts",
+              "line": 94,
+              "column": 3
+            },
+            {
+              "title": "duration 0 must not persist as a zero-length slide",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f3bc9ccf461fb8616997-0b0cb9f9044b9c0b875b",
+              "file": "playlists/playlist-duration.spec.ts",
+              "line": 117,
+              "column": 3
+            },
+            {
+              "title": "a negative duration must not persist",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f3bc9ccf461fb8616997-2712d82bbd5a92330092",
+              "file": "playlists/playlist-duration.spec.ts",
+              "line": 132,
+              "column": 3
+            },
+            {
+              "title": "an empty duration must not persist as blank/NaN",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f3bc9ccf461fb8616997-693ae23be650ec8f6420",
+              "file": "playlists/playlist-duration.spec.ts",
+              "line": 147,
+              "column": 3
+            },
+            {
+              "title": "decimals are coerced to a whole number of seconds",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f3bc9ccf461fb8616997-a5c1781d350543046ff2",
+              "file": "playlists/playlist-duration.spec.ts",
+              "line": 162,
+              "column": 3
+            },
+            {
+              "title": "an absurdly large duration is bounded or, if saved, round-trips exactly",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f3bc9ccf461fb8616997-d3fecd3f1a1eabf390c8",
+              "file": "playlists/playlist-duration.spec.ts",
+              "line": 171,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-07-27T05:27:21.583Z",
+    "duration": 353.203,
+    "expected": 0,
+    "skipped": 9,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

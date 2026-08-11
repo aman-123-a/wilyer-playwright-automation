@@ -9,7 +9,7 @@ import { logger } from './logger.js';
  *
  * Usage:
  *   const agent = new Agent(page);
- *   await agent.goto('https://cms.pocsample.in/');
+ *   await agent.goto('https://cms.wilyersignage.com/');
  *   await agent.fill({ role: 'textbox', name: /email/i }, (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || ''));
  *   await agent.click({ role: 'button', name: /log in/i });
  *   await agent.expectVisible({ testId: 'dashboard' });

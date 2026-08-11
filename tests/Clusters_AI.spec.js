@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { read, utils } from 'xlsx';
 
 // ─── Config ───────────────────────────────────────────────────────────────────
-const BASE_URL      = 'https://cms.pocsample.in/';
+const BASE_URL      = 'https://cms.wilyersignage.com/';
 const LOGIN_EMAIL   = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
 const LOGIN_PASSWORD= (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 const SHEET_ID      = '1V7TjTHwlkDZf4-eQHer76YYwb_rKEnR11Jd8A3OyLhU';

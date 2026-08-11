@@ -2,7 +2,7 @@ const fs=require('fs');const path=require('path');
 const d=require(path.resolve('reports/api-audit/api-report.json'));
 const norm=u=>{try{return new URL(u).pathname}catch{return u}};
 const s=ms=>(ms/1000).toFixed(1)+' s';
-const calls=d.calls.filter(x=>{try{return new URL(x.url).host.includes('api.pocsample.in')}catch{return false}});
+const calls=d.calls.filter(x=>{try{return new URL(x.url).host.includes('api.wilyersignage.com')}catch{return false}});
 const ok=calls.filter(x=>x.status>0);
 
 // frequency
@@ -24,8 +24,8 @@ let m=`# CMS — Top 20 Most-Used API Endpoints
 
 **Generated:** 2026-06-11
 **Data source:** \`reports/api-audit/api-report.json\` (audit crawl captured 2026-06-10T11:55Z)
-**Base API host:** \`https://v3-5api.pocsample.in\`
-**CMS host:** \`https://cms.pocsample.in\`
+**Base API host:** \`https://api.wilyersignage.com\`
+**CMS host:** \`https://cms.wilyersignage.com\`
 
 > All response times are shown in **seconds (s)**.
 

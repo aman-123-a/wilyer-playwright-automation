@@ -29,7 +29,7 @@ test('Fetch Google Sheet and create all groups with single login', async ({ page
 
   // 2. Login ONCE
   console.log(`\n🔐 Logging in as: ${LOGIN_EMAIL}`);
-  await page.goto('https://cms.pocsample.in/');
+  await page.goto('https://cms.wilyersignage.com/');
   await page.getByPlaceholder(/email/i).fill(LOGIN_EMAIL);
   await page.getByPlaceholder(/password/i).fill(LOGIN_PASSWORD);
   await page.getByRole('button', { name: /Log In/i }).click();

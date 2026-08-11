@@ -1,0 +1,258 @@
+✓ CMS reachable at https://cms.pocsample.in (HTTP 200)
+
+Running 67 tests using 4 workers
+
+  ✓   1 [setup] › tests\global.setup.ts:12:1 › authenticate as admin (7.3s)
+  ✓   2 [chromium] › tests\auth\auth.spec.ts:20:3 › Authentication › valid login reaches the dashboard @smoke @sanity @regression (21.6s)
+  ✓   3 [chromium] › tests\auth\auth.spec.ts:31:3 › Authentication › invalid password does not authenticate @regression (21.9s)
+  ✓   5 [chromium] › tests\a11y\accessibility.spec.ts:11:3 › Accessibility › dashboard has no serious/critical a11y violations @regression (25.2s)
+  ✓   6 [chromium] › tests\auth\auth.spec.ts:41:3 › Authentication › empty credentials are rejected @regression (7.2s)
+  ✓   7 [chromium] › tests\auth\auth.spec.ts:47:3 › Authentication › invalid email format is rejected @regression (7.2s)
+  ✓   4 [chromium] › tests\a11y\accessibility.spec.ts:20:3 › Accessibility › library has no serious/critical a11y violations @regression (29.6s)
+  ✓   8 [chromium] › tests\auth\auth.spec.ts:53:3 › Authentication › password field is masked by default @sanity @regression (5.9s)
+  ✓  12 [chromium] › tests\auth\auth.spec.ts:81:3 › Authentication › login screen is responsive on a mobile viewport @regression (5.0s)
+  ✓   9 [chromium] › tests\auth\auth.spec.ts:59:3 › Authentication › logout returns to the login screen @regression (9.9s)
+  ✓  13 [chromium] › tests\auth\auth.spec.ts:88:3 › Authentication › gracefully handles a login API failure @regression (4.8s)
+  ✓  11 [chromium] › tests\auth\auth.spec.ts:73:3 › Authentication › session persists across a browser refresh @regression (14.1s)
+  ✓  14 [chromium] › tests\auth\auth.spec.ts:105:5 › Authentication › rejects SQL injection without authenticating @regression (5.8s)
+  ✓  15 [chromium] › tests\auth\auth.spec.ts:105:5 › Authentication › rejects XSS payload without authenticating @regression (5.3s)
+  ✓  17 [chromium] › tests\auth\auth.spec.ts:105:5 › Authentication › rejects special characters without authenticating @regression (4.8s)
+  ✓  16 [chromium] › tests\auth\auth.spec.ts:105:5 › Authentication › rejects oversized input without authenticating @regression (9.1s)
+  ✓  18 [chromium] › tests\auth\auth.spec.ts:114:3 › Authentication › copy-pasted credentials authenticate the same as typed @regression (8.9s)
+  ✓  20 [chromium] › tests\billing\billing.spec.ts:19:3 › Billing › My Plans / Buy Plan / My Purchases tabs are present @regression (5.1s)
+  ✓  21 [chromium] › tests\billing\billing.spec.ts:26:3 › Billing › switching to Buy Plan works @regression (4.5s)
+  ✓  19 [chromium] › tests\billing\billing.spec.ts:12:3 › Billing › billing page loads with plans or an empty state @smoke @sanity @regression (11.3s)
+  ✓  22 [chromium] › tests\billing\billing.spec.ts:31:3 › Billing › loads within budget, clean console/API @regression (4.4s)
+  ✓  23 [chromium] › tests\dashboard\dashboard.spec.ts:15:3 › Dashboard › loads with stat cards and quick actions @smoke @sanity @regression (8.4s)
+  ✓  24 [chromium] › tests\dashboard\dashboard.spec.ts:23:3 › Dashboard › stat cards render numeric values @regression (8.2s)
+  ✓  25 [chromium] › tests\dashboard\dashboard.spec.ts:31:3 › Dashboard › recent screens table and map render @regression (10.3s)
+  ✘  10 [chromium] › tests\auth\auth.spec.ts:67:3 › Authentication › unauthorized route access redirects to login @regression (48.6s)
+  ✓  26 [chromium] › tests\dashboard\dashboard.spec.ts:38:3 › Dashboard › quick-action "Add Media" navigates to the library upload flow @regression (15.4s)
+  ✓  28 [chromium] › tests\dashboard\dashboard.spec.ts:57:3 › Dashboard › loads under the page-load budget @regression (24.1s)
+  ✘  27 [chromium] › tests\dashboard\dashboard.spec.ts:47:3 › Dashboard › "Total Screens" card links into the screens list @regression (25.2s)
+  ✓  31 [chromium] › tests\dashboard\dashboard.spec.ts:71:3 › Dashboard › no console errors or failed APIs on load @regression (10.6s)
+  ✓  30 [chromium] › tests\dashboard\dashboard.spec.ts:64:3 › Dashboard › no broken images, no stuck loader @regression (23.9s)
+  ✘  29 [chromium] › tests\auth\auth.spec.ts:67:3 › Authentication › unauthorized route access redirects to login @regression (retry #1) (27.5s)
+  ✓  34 [chromium] › tests\dashboard\dashboard.spec.ts:94:3 › Dashboard › survives a slow analytics API response @regression (11.8s)
+  ✓  33 [chromium] › tests\dashboard\dashboard.spec.ts:81:3 › Dashboard › navigation timing + heap are within sane bounds @regression (17.8s)
+  ✓  32 [chromium] › tests\dashboard\dashboard.spec.ts:47:3 › Dashboard › "Total Screens" card links into the screens list @regression (retry #1) (18.0s)
+  ✓  36 [chromium] › tests\groups\groups.spec.ts:12:3 › Groups › listing loads with group rows or an empty state @smoke @sanity @regression (9.5s)
+  ✓  37 [chromium] › tests\groups\groups.spec.ts:19:3 › Groups › "New Group" opens the create modal @regression (7.6s)
+  ✓  35 [chromium] › tests\dashboard\dashboard.spec.ts:103:3 › Dashboard › remains usable after a viewport resize @regression (14.8s)
+  ✓  39 [chromium] › tests\groups\groups.spec.ts:35:3 › Groups › listing loads within budget, clean console/API @regression (7.3s)
+  ✓  38 [chromium] › tests\groups\groups.spec.ts:24:3 › Groups › search narrows the listing or yields an empty state @regression (11.9s)
+  ✓  40 [chromium] › tests\library\library.spec.ts:19:3 › Library › grid loads with media or an empty state @smoke @sanity @regression (23.8s)
+  ✓  43 [chromium] › tests\library\library.spec.ts:44:3 › Library › search returns a relevant set or an empty state @regression (24.5s)
+  ✘  41 [chromium] › tests\library\library.spec.ts:26:3 › Library › tabs are present (Media / Widgets / Publish History / Media Sets) @regression (27.2s)
+  ✓  42 [chromium] › tests\library\library.spec.ts:35:3 › Library › type filters narrow the grid @regression (32.2s)
+  ✓  44 [chromium] › tests\library\library.spec.ts:50:3 › Library › search for an improbable term yields an empty state @regression (17.4s)
+  -  46 [chromium] › tests\library\library.spec.ts:75:3 › Library › opening a media card navigates to its detail page @regression
+  ✓  45 [chromium] › tests\library\library.spec.ts:63:3 › Library › pagination "Load More" grows the grid when available @regression (23.0s)
+  ✓  48 [chromium] › tests\library\library.spec.ts:86:3 › Library › listing loads under the listing budget @regression (19.9s)
+  -  51 [chromium] › tests\library\library.spec.ts:116:3 › Library › uploads a valid image and shows a new card @regression
+  -  52 [chromium] › tests\library\library.spec.ts:125:3 › Library › rejects an unsupported file format @regression
+  ✓  49 [chromium] › tests\library\library.spec.ts:93:3 › Library › no stuck loader, no broken thumbnails, clean console/API @regression (35.5s)
+  ✓  53 [chromium] › tests\playlists\playlists.spec.ts:11:3 › Playlists › listing loads with playlist cards or an empty state @smoke @sanity @regression (30.7s)
+  ✓  50 [chromium] › tests\library\library.spec.ts:107:3 › Library › rapid filter switching does not break the grid @regression (43.4s)
+  ✓  54 [chromium] › tests\playlists\playlists.spec.ts:18:3 › Playlists › folder panel and toolbar actions are present @regression (10.7s)
+  ✘  47 [chromium] › tests\library\library.spec.ts:26:3 › Library › tabs are present (Media / Widgets / Publish History / Media Sets) @regression (retry #1) (54.7s)
+  ✓  55 [chromium] › tests\playlists\playlists.spec.ts:24:3 › Playlists › "New Playlist" opens the create modal @regression (8.6s)
+  ✓  57 [chromium] › tests\playlists\playlists.spec.ts:40:3 › Playlists › listing loads within budget, clean console/API @regression (7.5s)
+  ✓  58 [chromium] › tests\reports\reports.spec.ts:17:3 › Reports › switching to Previous Reports works @regression (9.1s)
+  ✓  59 [chromium] › tests\reports\reports.spec.ts:22:3 › Reports › export actions (PDF/CSV) are available @regression (8.4s)
+  ✓  56 [chromium] › tests\playlists\playlists.spec.ts:29:3 › Playlists › search narrows the listing or yields an empty state @regression (16.6s)
+  ✓  60 [chromium] › tests\reports\reports.spec.ts:12:3 › Reports › analytics view loads with tabs @smoke @sanity @regression (11.8s)
+  ✓  61 [chromium] › tests\reports\reports.spec.ts:27:3 › Reports › loads within budget, clean console/API @regression (10.4s)
+  ✓  63 [chromium] › tests\screens\screens.spec.ts:21:3 › Screens › All / Deleted / Expired tabs are present @regression (10.1s)
+  ✓  62 [chromium] › tests\screens\screens.spec.ts:14:3 › Screens › listing loads with screen rows or an empty state @smoke @sanity @regression (12.5s)
+  ✓  65 [chromium] › tests\screens\screens.spec.ts:39:3 › Screens › listing loads within budget, clean console/API @regression (28.0s)
+  ✓  66 [chromium] › tests\team\team.spec.ts:12:3 › Team › members table loads with rows or an empty state @smoke @sanity @regression (27.4s)
+  ✓  67 [chromium] › tests\team\team.spec.ts:19:3 › Team › Members / Roles / Logs tabs are present @regression (28.0s)
+  ✓  64 [chromium] › tests\screens\screens.spec.ts:28:3 › Screens › search narrows the listing or yields an empty state @regression (33.3s)
+  ✓  68 [chromium] › tests\team\team.spec.ts:26:3 › Team › switching to Roles works @regression (7.9s)
+  ✓  70 [chromium] › tests\team\team.spec.ts:42:3 › Team › loads within budget, clean console/API @regression (7.5s)
+  ✘  69 [chromium] › tests\team\team.spec.ts:31:3 › Team › search narrows the members table or yields an empty state @regression (40.8s)
+  ✓  71 [chromium] › tests\team\team.spec.ts:31:3 › Team › search narrows the members table or yields an empty state @regression (retry #1) (10.3s)
+✓ Suite complete. Reports in playwright-report/ and allure-results/.
+
+
+  1) [chromium] › tests\auth\auth.spec.ts:67:3 › Authentication › unauthorized route access redirects to login @regression 
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "https://cms.pocsample.in/reports", waiting until "domcontentloaded"[22m
+
+
+      66 |
+      67 |   test('unauthorized route access redirects to login @regression', async ({ page }) => {
+    > 68 |     await page.goto('/reports', { waitUntil: 'domcontentloaded' });
+         |                ^
+      69 |     // No session → the app should bounce to the login form, not render Reports.
+      70 |     await expect(page.getByRole('button', { name: /^log in$/i })).toBeVisible({ timeout: 15_000 });
+      71 |   });
+        at C:\Users\User\Downloads\wilyer-playwright\cms-e2e\tests\auth\auth.spec.ts:68:16
+
+    attachment #1: console-errors (text/plain) ─────────────────────────────────────────────────────
+    No console errors.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: api-activity (text/plain) ───────────────────────────────────────────────────────
+    No failed or slow API requests.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\auth-auth-Authentication-u-c9c48-directs-to-login-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\auth-auth-Authentication-u-c9c48-directs-to-login-regression-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: ENOENT: no such file or directory, unlink 'C:\Users\User\Downloads\wilyer-playwright\cms-e2e\test-results\.playwright-artifacts-5\0b1c0cf92cf7b91057d6ff2efef9ee17.zip'
+
+  2) [chromium] › tests\library\library.spec.ts:26:3 › Library › tabs are present (Media / Widgets / Publish History / Media Sets) @regression 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('link', { name: /^media$/i })
+    Expected: visible
+    Timeout: 12000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 12000ms[22m
+    [2m  - waiting for getByRole('link', { name: /^media$/i })[22m
+
+
+      28 |   }) => {
+      29 |     await libraryPage.open();
+    > 30 |     await expect(libraryPage.mediaTab).toBeVisible();
+         |                                        ^
+      31 |     await expect(libraryPage.widgetsTab).toBeVisible();
+      32 |     await expect(libraryPage.mediaSetsTab).toBeVisible();
+      33 |   });
+        at C:\Users\User\Downloads\wilyer-playwright\cms-e2e\tests\library\library.spec.ts:30:40
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\library-library-Library-ta-bc7ab-story-Media-Sets-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\library-library-Library-ta-bc7ab-story-Media-Sets-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\library-library-Library-ta-bc7ab-story-Media-Sets-regression-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('link', { name: /^media$/i })
+    Expected: visible
+    Timeout: 12000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 12000ms[22m
+    [2m  - waiting for getByRole('link', { name: /^media$/i })[22m
+
+
+      28 |   }) => {
+      29 |     await libraryPage.open();
+    > 30 |     await expect(libraryPage.mediaTab).toBeVisible();
+         |                                        ^
+      31 |     await expect(libraryPage.widgetsTab).toBeVisible();
+      32 |     await expect(libraryPage.mediaSetsTab).toBeVisible();
+      33 |   });
+        at C:\Users\User\Downloads\wilyer-playwright\cms-e2e\tests\library\library.spec.ts:30:40
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\library-library-Library-ta-bc7ab-story-Media-Sets-regression-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: console-errors (text/plain) ─────────────────────────────────────────────────────
+    No console errors.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: api-activity (text/plain) ───────────────────────────────────────────────────────
+    No failed or slow API requests.
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\library-library-Library-ta-bc7ab-story-Media-Sets-regression-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\library-library-Library-ta-bc7ab-story-Media-Sets-regression-chromium-retry1\error-context.md
+
+    attachment #6: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\library-library-Library-ta-bc7ab-story-Media-Sets-regression-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\library-library-Library-ta-bc7ab-story-Media-Sets-regression-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › tests\dashboard\dashboard.spec.ts:47:3 › Dashboard › "Total Screens" card links into the screens list @regression 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+    [2m  - waiting for getByRole('link').filter({ has: getByRole('heading', { name: /total screens/i }) }).first()[22m
+
+
+      50 |   }) => {
+      51 |     await dashboardPage.open();
+    > 52 |     await dashboardPage.card(/total screens/i).first().click();
+         |                                                        ^
+      53 |     await expect(page).toHaveURL(/\/screens/);
+      54 |   });
+      55 |
+        at C:\Users\User\Downloads\wilyer-playwright\cms-e2e\tests\dashboard\dashboard.spec.ts:52:56
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\dashboard-dashboard-Dashbo-9d0fe-the-screens-list-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\dashboard-dashboard-Dashbo-9d0fe-the-screens-list-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\dashboard-dashboard-Dashbo-9d0fe-the-screens-list-regression-chromium\error-context.md
+
+  4) [chromium] › tests\team\team.spec.ts:31:3 › Team › search narrows the members table or yields an empty state @regression 
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "https://cms.pocsample.in/team", waiting until "domcontentloaded"[22m
+
+
+       at ..\pages\BasePage.ts:45
+
+      43 |   /** Navigate to an app path relative to baseURL. */
+      44 |   async goto(path: string): Promise<this> {
+    > 45 |     await this.page.goto(path, { waitUntil: 'domcontentloaded' });
+         |                     ^
+      46 |     return this;
+      47 |   }
+      48 |
+        at TeamPage.goto (C:\Users\User\Downloads\wilyer-playwright\cms-e2e\pages\BasePage.ts:45:21)
+        at TeamPage.open (C:\Users\User\Downloads\wilyer-playwright\cms-e2e\pages\TeamPage.ts:32:16)
+        at C:\Users\User\Downloads\wilyer-playwright\cms-e2e\tests\team\team.spec.ts:35:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\team-team-Team-search-narr-98622-s-an-empty-state-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\team-team-Team-search-narr-98622-s-an-empty-state-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\team-team-Team-search-narr-98622-s-an-empty-state-regression-chromium\error-context.md
+
+  2 failed
+    [chromium] › tests\auth\auth.spec.ts:67:3 › Authentication › unauthorized route access redirects to login @regression 
+    [chromium] › tests\library\library.spec.ts:26:3 › Library › tabs are present (Media / Widgets / Publish History / Media Sets) @regression 
+  2 flaky
+    [chromium] › tests\dashboard\dashboard.spec.ts:47:3 › Dashboard › "Total Screens" card links into the screens list @regression 
+    [chromium] › tests\team\team.spec.ts:31:3 › Team › search narrows the members table or yields an empty state @regression 
+  3 skipped
+  60 passed (5.8m)

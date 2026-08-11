@@ -35,7 +35,7 @@ jobs:
     timeout-minutes: 45
     env:
       CI: 'true'
-      CMS_BASE_URL: ${{ secrets.CMS_BASE_URL || 'https://cms.pocsample.in' }}
+      CMS_BASE_URL: ${{ secrets.CMS_BASE_URL || 'https://cms.wilyersignage.com' }}
       CMS_PROD_URL: ${{ secrets.CMS_PROD_URL || 'https://cms.wilyersignage.com' }}
       CMS_ADMIN_EMAIL: ${{ secrets.CMS_ADMIN_EMAIL }}
       CMS_ADMIN_PASSWORD: ${{ secrets.CMS_ADMIN_PASSWORD }}

@@ -22,7 +22,7 @@ export default defineConfig({
 
   // Settings shared by every test.
   use: {
-    baseURL: 'https://cms2.pocsample.in',
+    baseURL: 'https://cms.wilyersignage.com',
     // Capture a trace on first retry — open it with `npx playwright show-trace`.
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',

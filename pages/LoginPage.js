@@ -5,7 +5,7 @@ export class LoginPage {
     this.password = page.locator('#password');
     this.loginBtn = page.locator('button[type="submit"]');
   }
-  async goto() { await this.page.goto('https://app.wilyer.com/login'); }
+  async goto() { await this.page.goto('https://cms.wilyersignage.com/login'); }
   async login(email, password) {
     await this.email.fill(email);
     await this.password.fill(password);

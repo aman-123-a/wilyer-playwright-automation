@@ -24,7 +24,7 @@
     "allure:open": "allure open allure-report",
     "allure:serve": "allure serve allure-results",
     "trace": "playwright show-trace",
-    "codegen": "playwright codegen https://cms.pocsample.in/",
+    "codegen": "playwright codegen https://cms.wilyersignage.com/",
     "install:browsers": "playwright install --with-deps",
     "typecheck": "tsc --noEmit"
   },

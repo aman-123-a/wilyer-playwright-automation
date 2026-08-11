@@ -21641,7 +21641,7 @@
     "url": "https://app.clickup.com/t/86d3n51bv",
     "list": "2026 Sprints / Media Sets",
     "tags": "bug",
-    "description": "**Module:** Library → Media Sets **Environment:** https://cms2.pocsample.in  ·  API: https://v3-5api2.pocsample.in/v3/cm"
+    "description": "**Module:** Library → Media Sets **Environment:** https://cms.wilyersignage.com  ·  API: https://cms.wilyersignage.com/v3/cm"
   },
   {
     "id": "86d3n3p9j",
@@ -24091,7 +24091,7 @@
     "url": "https://app.clickup.com/t/86d3thr6k",
     "list": "2026 Sprints / Prayer Schedule",
     "tags": "",
-    "description": "Module:** Prayer Schedule (`/prayer-schedule`), CMS v3.5.20 Environment:** testdev - https://cms.pocsample.in - Chromium"
+    "description": "Module:** Prayer Schedule (`/prayer-schedule`), CMS v3.5.20 Environment:** testdev - https://cms.wilyersignage.com - Chromium"
   },
   {
     "id": "86d3thr6h",
@@ -24105,7 +24105,7 @@
     "url": "https://app.clickup.com/t/86d3thr6h",
     "list": "2026 Sprints / Prayer Schedule",
     "tags": "",
-    "description": "Module: Prayer Schedule (`/prayer-schedule`), CMS v3.5.20 Environment: testdev - https://cms.pocsample.in - Chromium Dat"
+    "description": "Module: Prayer Schedule (`/prayer-schedule`), CMS v3.5.20 Environment: testdev - https://cms.wilyersignage.com - Chromium Dat"
   },
   {
     "id": "86d3tfnx0",

@@ -1,0 +1,316 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link " Dashboard" [ref=e15] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e16]: 
+              - text: Dashboard
+          - listitem [ref=e17]:
+            - link " Screens" [ref=e18] [cursor=pointer]:
+              - /url: /screens
+              - generic [ref=e19]: 
+              - text: Screens
+          - listitem [ref=e20]:
+            - link " Groups" [ref=e21] [cursor=pointer]:
+              - /url: /groups
+              - generic [ref=e22]: 
+              - text: Groups
+          - listitem [ref=e23]:
+            - link " Clusters" [ref=e24] [cursor=pointer]:
+              - /url: /clusters
+              - generic [ref=e25]: 
+              - text: Clusters
+          - listitem [ref=e26]:
+            - link " Library" [ref=e27] [cursor=pointer]:
+              - /url: /library
+              - generic [ref=e28]: 
+              - text: Library
+          - listitem [ref=e29]:
+            - link " Rollouts" [ref=e30] [cursor=pointer]:
+              - /url: /content-rollout
+              - generic [ref=e31]: 
+              - text: Rollouts
+          - listitem [ref=e32]:
+            - link " Playlists" [ref=e33] [cursor=pointer]:
+              - /url: /playlists
+              - generic [ref=e34]: 
+              - text: Playlists
+          - listitem [ref=e35]:
+            - link " Team" [ref=e36] [cursor=pointer]:
+              - /url: /team
+              - generic [ref=e37]: 
+              - text: Team
+          - listitem [ref=e38]:
+            - link " Reports" [ref=e39] [cursor=pointer]:
+              - /url: /reports
+              - generic [ref=e40]: 
+              - text: Reports
+          - separator [ref=e41]
+          - listitem [ref=e42]:
+            - link " What's New" [ref=e43] [cursor=pointer]:
+              - /url: /whats-new
+              - generic [ref=e44]: 
+              - text: What's New
+          - listitem [ref=e45]:
+            - link " Help" [ref=e46] [cursor=pointer]:
+              - /url: /help
+              - generic [ref=e47]: 
+              - text: Help
+          - listitem [ref=e48]:
+            - link " Feedback" [ref=e49] [cursor=pointer]:
+              - /url: /feedback
+              - generic [ref=e50]: 
+              - text: Feedback
+          - listitem [ref=e51]:
+            - link " Billing" [ref=e52] [cursor=pointer]:
+              - /url: /billing
+              - generic [ref=e53]: 
+              - text: Billing
+          - listitem [ref=e54]:
+            - link " Account" [ref=e55] [cursor=pointer]:
+              - /url: /account
+              - generic [ref=e56]: 
+              - text: Account
+          - listitem [ref=e57]:
+            - link " Logout" [ref=e58] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e59]: 
+              - text: Logout
+      - generic [ref=e61]:
+        - generic "dev" [ref=e63]:
+          - generic [ref=e65]: D
+        - generic [ref=e66]: dev@wilyer.com
+      - generic [ref=e67]: v3.5.20
+    - generic [ref=e70]:
+      - generic [ref=e71]:
+        - heading "Library" [level=3] [ref=e72]
+        - generic [ref=e73]:
+          - button "What's New " [ref=e74] [cursor=pointer]:
+            - text: What's New
+            - generic [ref=e75]: 
+          - button " Documentation" [ref=e76] [cursor=pointer]:
+            - generic [ref=e77]: 
+            - text: Documentation
+          - button " Upload Media" [ref=e78] [cursor=pointer]:
+            - generic [ref=e79]: 
+            - text: Upload Media
+          - button "+ New Folder" [ref=e80] [cursor=pointer]
+      - generic [ref=e82]:
+        - generic [ref=e84]:
+          - button "" [ref=e85] [cursor=pointer]:
+            - generic [ref=e86]: 
+          - heading "Folders ( 14 )" [level=5] [ref=e87]
+        - generic [ref=e90]:
+          - generic [ref=e92]: 
+          - textbox "Search folders (including nested)..." [ref=e93]
+        - generic [ref=e94]:
+          - generic [ref=e100] [cursor=pointer]:
+            - generic [ref=e101]: 
+            - generic "Group linked" [ref=e103]:
+              - generic [ref=e104]: 
+            - generic [ref=e105]: India
+          - generic [ref=e111] [cursor=pointer]:
+            - generic [ref=e112]: 
+            - generic "Group linked" [ref=e114]:
+              - generic [ref=e115]: 
+            - generic [ref=e116]: "n"
+          - generic [ref=e122] [cursor=pointer]:
+            - generic [ref=e123]: 
+            - generic "Group linked" [ref=e125]:
+              - generic [ref=e126]: 
+            - generic [ref=e127]: lopl
+          - generic [ref=e133] [cursor=pointer]:
+            - generic [ref=e134]: 
+            - generic "Group linked" [ref=e136]:
+              - generic [ref=e137]: 
+            - generic [ref=e138]: vansh 3
+          - generic [ref=e144] [cursor=pointer]:
+            - generic [ref=e145]: 
+            - generic "Group linked" [ref=e147]:
+              - generic [ref=e148]: 
+            - generic [ref=e149]: testway
+          - generic [ref=e155] [cursor=pointer]:
+            - generic [ref=e156]: 
+            - generic "Group linked" [ref=e158]:
+              - generic [ref=e159]: 
+            - generic [ref=e160]: QA_BVA_1
+          - generic [ref=e166] [cursor=pointer]:
+            - generic [ref=e167]: 
+            - generic "Group linked" [ref=e169]:
+              - generic [ref=e170]: 
+            - generic [ref=e171]: Wilyer Clone_1
+          - generic [ref=e177] [cursor=pointer]:
+            - generic [ref=e178]: 
+            - generic "Group linked" [ref=e180]:
+              - generic [ref=e181]: 
+            - generic [ref=e182]: BenQ
+          - generic [ref=e188] [cursor=pointer]:
+            - generic [ref=e189]: 
+            - generic "Group linked" [ref=e191]:
+              - generic [ref=e192]: 
+            - generic [ref=e193]: India 1 DND
+          - generic [ref=e199] [cursor=pointer]:
+            - generic [ref=e200]: 
+            - generic "Group linked" [ref=e202]:
+              - generic [ref=e203]: 
+            - generic [ref=e204]: Maker/Checker Flow
+          - generic [ref=e210] [cursor=pointer]:
+            - generic [ref=e211]: 
+            - generic [ref=e212]: ddd
+          - generic [ref=e218] [cursor=pointer]:
+            - generic [ref=e219]: 
+            - generic [ref=e220]: vansh 2
+          - generic [ref=e226] [cursor=pointer]:
+            - generic [ref=e227]: 
+            - generic [ref=e228]: vansh
+          - generic [ref=e234] [cursor=pointer]:
+            - generic [ref=e235]: 
+            - generic [ref=e236]: kio
+      - generic [ref=e237]:
+        - generic [ref=e238]:
+          - link "Media Files (835)" [ref=e239] [cursor=pointer]:
+            - /url: /library
+          - link "Widgets (697)" [ref=e240] [cursor=pointer]:
+            - /url: /library
+          - link "Media publish History" [ref=e241] [cursor=pointer]:
+            - /url: /library
+          - link "Media Sets" [active] [ref=e242] [cursor=pointer]:
+            - /url: /library
+          - link "+ Create Design" [ref=e243] [cursor=pointer]:
+            - /url: /library
+            - generic [ref=e244]: +
+            - text: Create Design
+        - generic [ref=e245]:
+          - link "Upload Requests (0)" [ref=e246] [cursor=pointer]:
+            - /url: /library
+          - link "Publish Requests (0)" [ref=e247] [cursor=pointer]:
+            - /url: /library
+      - generic [ref=e1828]:
+        - generic [ref=e1831]:
+          - generic [ref=e1832]:
+            - text: All Media Sets
+            - generic [ref=e1834]: Total - 5
+          - generic [ref=e1835]:
+            - textbox "Search..." [ref=e1836]
+            - button " Create Media Set" [ref=e1837] [cursor=pointer]:
+              - generic [ref=e1838]: 
+              - text: Create Media Set
+        - generic [ref=e1839]:
+          - generic [ref=e1842]:
+            - checkbox [ref=e1844]
+            - generic [ref=e1845]:
+              - img "Gemini_Generated_Image_d69pogd69pogd69p_1776149920629_1781842204759.png" [ref=e1846]
+              - img "VR_03_Specials_Salads_1674112714655_1678170180942_1780486722532.mp4" [ref=e1847]
+              - img "gsrtgh_1782124853480.jpg" [ref=e1848]
+              - generic [ref=e1849]: +1 format
+            - generic "QA media" [ref=e1851]
+            - generic [ref=e1852]:
+              - button "" [ref=e1853] [cursor=pointer]:
+                - generic [ref=e1854]: 
+              - button "" [ref=e1855] [cursor=pointer]:
+                - generic [ref=e1856]: 
+              - button "" [ref=e1857] [cursor=pointer]:
+                - generic [ref=e1858]: 
+              - button "Delete" [ref=e1859] [cursor=pointer]
+            - generic [ref=e1860]:
+              - generic [ref=e1861]:
+                - generic [ref=e1862]: 3 files
+                - generic [ref=e1863]: 
+                - generic [ref=e1864]: 29.49MB
+                - generic [ref=e1865]: 
+                - generic [ref=e1866]: 1 Screens
+              - generic [ref=e1867]: Jul 09 2026
+          - generic [ref=e1870]:
+            - checkbox [ref=e1872]
+            - generic [ref=e1873]:
+              - img "image_3__1782275616408.png" [ref=e1874]
+              - img "01_Snacks_short_Bites_1673693287443_1678170168202_1780486720264.mp4" [ref=e1875]
+              - img "Screenshot_1_1782108918645.png" [ref=e1876]
+              - generic [ref=e1877]: +1 format
+            - generic "z" [ref=e1879]
+            - generic [ref=e1880]:
+              - button "" [ref=e1881] [cursor=pointer]:
+                - generic [ref=e1882]: 
+              - button "" [ref=e1883] [cursor=pointer]:
+                - generic [ref=e1884]: 
+              - button "" [ref=e1885] [cursor=pointer]:
+                - generic [ref=e1886]: 
+              - button "Delete" [ref=e1887] [cursor=pointer]
+            - generic [ref=e1888]:
+              - generic [ref=e1889]:
+                - generic [ref=e1890]: 3 files
+                - generic [ref=e1891]: 
+                - generic [ref=e1892]: 22.61MB
+                - generic [ref=e1893]: 
+                - generic [ref=e1894]: 2 Screens
+              - generic [ref=e1895]: Jul 09 2026
+          - generic [ref=e1898]:
+            - checkbox [ref=e1900]
+            - generic [ref=e1902]: No files
+            - generic "f" [ref=e1904]
+            - generic [ref=e1905]:
+              - button "" [ref=e1906] [cursor=pointer]:
+                - generic [ref=e1907]: 
+              - button "" [ref=e1908] [cursor=pointer]:
+                - generic [ref=e1909]: 
+              - button "" [ref=e1910] [cursor=pointer]:
+                - generic [ref=e1911]: 
+              - button "Delete" [ref=e1912] [cursor=pointer]
+            - generic [ref=e1913]:
+              - generic [ref=e1914]:
+                - generic [ref=e1915]: 0 files
+                - generic [ref=e1916]: 
+                - generic [ref=e1917]: 0.00MB
+                - generic [ref=e1918]: 
+                - generic [ref=e1919]: 0 Screens
+              - generic [ref=e1920]: Jul 08 2026
+          - generic [ref=e1923]:
+            - checkbox [ref=e1925]
+            - generic [ref=e1927]: No files
+            - generic "w" [ref=e1929]
+            - generic [ref=e1930]:
+              - button "" [ref=e1931] [cursor=pointer]:
+                - generic [ref=e1932]: 
+              - button "" [ref=e1933] [cursor=pointer]:
+                - generic [ref=e1934]: 
+              - button "" [ref=e1935] [cursor=pointer]:
+                - generic [ref=e1936]: 
+              - button "Delete" [ref=e1937] [cursor=pointer]
+            - generic [ref=e1938]:
+              - generic [ref=e1939]:
+                - generic [ref=e1940]: 0 files
+                - generic [ref=e1941]: 
+                - generic [ref=e1942]: 0.00MB
+                - generic [ref=e1943]: 
+                - generic [ref=e1944]: 0 Screens
+              - generic [ref=e1945]: Jul 08 2026
+          - generic [ref=e1948]:
+            - checkbox [ref=e1950]
+            - generic [ref=e1951]:
+              - img "image_3__1782275616408.png" [ref=e1952]
+              - img "266987_small_1782191676233.mp4" [ref=e1953]
+            - generic "s" [ref=e1955]
+            - generic [ref=e1956]:
+              - button "" [ref=e1957] [cursor=pointer]:
+                - generic [ref=e1958]: 
+              - button "" [ref=e1959] [cursor=pointer]:
+                - generic [ref=e1960]: 
+              - button "" [ref=e1961] [cursor=pointer]:
+                - generic [ref=e1962]: 
+              - button "Delete" [ref=e1963] [cursor=pointer]
+            - generic [ref=e1964]:
+              - generic [ref=e1965]:
+                - generic [ref=e1966]: 2 files
+                - generic [ref=e1967]: 
+                - generic [ref=e1968]: 62.90MB
+                - generic [ref=e1969]: 
+                - generic [ref=e1970]: 2 Screens
+              - generic [ref=e1971]: Jul 08 2026
+        - text:   
+      - text:         
+  - text: "* *"

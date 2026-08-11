@@ -14,7 +14,7 @@ export default defineConfig({
   reporter: [['list'], ['html', { open: 'never' }]],
 
   use: {
-    baseURL: process.env.BASE_URL ?? 'https://cms.pocsample.in',
+    baseURL: process.env.BASE_URL ?? 'https://cms.wilyersignage.com',
     actionTimeout: 10_000,
     navigationTimeout: 30_000,
     trace: 'retain-on-failure',

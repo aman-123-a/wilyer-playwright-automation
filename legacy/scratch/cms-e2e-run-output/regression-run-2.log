@@ -1,0 +1,233 @@
+✓ CMS reachable at https://cms.pocsample.in (HTTP 200)
+
+Running 69 tests using 4 workers
+
+  ✓   1 [setup] › tests\global.setup.ts:12:1 › authenticate as admin (7.7s)
+  ✓   2 [chromium] › tests\auth\auth.spec.ts:20:3 › Authentication › valid login reaches the dashboard @smoke @sanity @regression (24.6s)
+  ✓   3 [chromium] › tests\auth\auth.spec.ts:31:3 › Authentication › invalid password does not authenticate @regression (24.3s)
+  ✓   6 [chromium] › tests\auth\auth.spec.ts:41:3 › Authentication › empty credentials are rejected @regression (12.8s)
+  ✓   7 [chromium] › tests\auth\auth.spec.ts:47:3 › Authentication › invalid email format is rejected @regression (13.1s)
+  ✓   4 [chromium] › tests\a11y\accessibility.spec.ts:11:3 › Accessibility › dashboard has no serious/critical a11y violations @regression (39.0s)
+  ✓   8 [chromium] › tests\auth\auth.spec.ts:53:3 › Authentication › password field is masked by default @sanity @regression (8.7s)
+  ✓   9 [chromium] › tests\auth\auth.spec.ts:59:3 › Authentication › logout returns to the login screen @regression (13.6s)
+  ✓   5 [chromium] › tests\a11y\accessibility.spec.ts:20:3 › Accessibility › library has no serious/critical a11y violations @regression (52.2s)
+  ✓  10 [chromium] › tests\auth\auth.spec.ts:67:3 › Authentication › unauthorized route access redirects to login @regression (17.2s)
+  ✓  12 [chromium] › tests\auth\auth.spec.ts:81:3 › Authentication › login screen is responsive on a mobile viewport @regression (6.7s)
+  ✓  13 [chromium] › tests\auth\auth.spec.ts:88:3 › Authentication › gracefully handles a login API failure @regression (6.1s)
+  ✓  11 [chromium] › tests\auth\auth.spec.ts:73:3 › Authentication › session persists across a browser refresh @regression (13.2s)
+  ✓  14 [chromium] › tests\auth\auth.spec.ts:105:5 › Authentication › rejects SQL injection without authenticating @regression (6.1s)
+  ✓  15 [chromium] › tests\auth\auth.spec.ts:105:5 › Authentication › rejects XSS payload without authenticating @regression (6.6s)
+  ✓  16 [chromium] › tests\auth\auth.spec.ts:105:5 › Authentication › rejects oversized input without authenticating @regression (6.6s)
+  ✓  20 [chromium] › tests\billing\billing.spec.ts:19:3 › Billing › My Plans / Buy Plan / My Purchases tabs are present @regression (5.5s)
+  ✓  21 [chromium] › tests\billing\billing.spec.ts:26:3 › Billing › switching to Buy Plan works @regression (6.5s)
+  ✓  19 [chromium] › tests\billing\billing.spec.ts:12:3 › Billing › billing page loads with plans or an empty state @smoke @sanity @regression (13.6s)
+  ✓  22 [chromium] › tests\billing\billing.spec.ts:31:3 › Billing › loads within budget, clean console/API @regression (7.1s)
+  ✓  23 [chromium] › tests\dashboard\dashboard.spec.ts:15:3 › Dashboard › loads with stat cards and quick actions @smoke @sanity @regression (16.0s)
+  ✘  18 [chromium] › tests\auth\auth.spec.ts:114:3 › Authentication › copy-pasted credentials authenticate the same as typed @regression (31.6s)
+  ✓  24 [chromium] › tests\dashboard\dashboard.spec.ts:23:3 › Dashboard › stat cards render numeric values @regression (20.8s)
+  ✓  25 [chromium] › tests\dashboard\dashboard.spec.ts:31:3 › Dashboard › recent screens table and map render @regression (12.4s)
+  ✓  17 [chromium] › tests\auth\auth.spec.ts:105:5 › Authentication › rejects special characters without authenticating @regression (48.0s)
+  ✓  27 [chromium] › tests\dashboard\dashboard.spec.ts:38:3 › Dashboard › quick-action "Add Media" navigates to the library upload flow @regression (12.6s)
+  ✓  29 [chromium] › tests\dashboard\dashboard.spec.ts:57:3 › Dashboard › loads under the page-load budget @regression (11.8s)
+  ✓  26 [chromium] › tests\auth\auth.spec.ts:114:3 › Authentication › copy-pasted credentials authenticate the same as typed @regression (retry #1) (18.3s)
+  ✓  28 [chromium] › tests\dashboard\dashboard.spec.ts:47:3 › Dashboard › "Total Screens" card links into the screens list @regression (29.1s)
+  ✓  31 [chromium] › tests\dashboard\dashboard.spec.ts:71:3 › Dashboard › no console errors or failed APIs on load @regression (17.3s)
+  ✓  33 [chromium] › tests\dashboard\dashboard.spec.ts:94:3 › Dashboard › survives a slow analytics API response @regression (9.9s)
+  ✓  34 [chromium] › tests\dashboard\dashboard.spec.ts:103:3 › Dashboard › remains usable after a viewport resize @regression (11.2s)
+  ✘  30 [chromium] › tests\dashboard\dashboard.spec.ts:64:3 › Dashboard › no broken images, no stuck loader @regression (33.5s)
+  ✓  35 [chromium] › tests\groups\groups.spec.ts:12:3 › Groups › listing loads with group rows or an empty state @smoke @sanity @regression (6.4s)
+  ✓  36 [chromium] › tests\groups\groups.spec.ts:19:3 › Groups › "New Group" opens the create modal @regression (6.0s)
+  ✓  39 [chromium] › tests\groups\groups.spec.ts:35:3 › Groups › listing loads within budget, clean console/API @regression (7.8s)
+  ✓  37 [chromium] › tests\groups\groups.spec.ts:24:3 › Groups › search narrows the listing or yields an empty state @regression (9.3s)
+  ✘  32 [chromium] › tests\dashboard\dashboard.spec.ts:81:3 › Dashboard › navigation timing + heap are within sane bounds @regression (50.2s)
+  ✓  40 [chromium] › tests\library\library.spec.ts:19:3 › Library › grid loads with media or an empty state @smoke @sanity @regression (18.1s)
+  ✓  41 [chromium] › tests\library\library.spec.ts:26:3 › Library › tabs are present (Media / Widgets / Publish History / Media Sets) @regression (19.2s)
+  ✓  38 [chromium] › tests\dashboard\dashboard.spec.ts:64:3 › Dashboard › no broken images, no stuck loader @regression (retry #1) (27.9s)
+  ✓  43 [chromium] › tests\library\library.spec.ts:44:3 › Library › search returns a relevant set or an empty state @regression (16.3s)
+  ✓  42 [chromium] › tests\library\library.spec.ts:35:3 › Library › type filters narrow the grid @regression (25.9s)
+  ✓  45 [chromium] › tests\library\library.spec.ts:50:3 › Library › search for an improbable term yields an empty state @regression (23.5s)
+  ✓  44 [chromium] › tests\dashboard\dashboard.spec.ts:81:3 › Dashboard › navigation timing + heap are within sane bounds @regression (retry #1) (24.8s)
+  -  47 [chromium] › tests\library\library.spec.ts:75:3 › Library › opening a media card navigates to its detail page @regression
+  ✓  48 [chromium] › tests\library\library.spec.ts:86:3 › Library › listing loads under the listing budget @regression (10.3s)
+  -  51 [chromium] › tests\library\library.spec.ts:116:3 › Library › uploads a valid image and shows a new card @regression
+  -  52 [chromium] › tests\library\library.spec.ts:125:3 › Library › rejects an unsupported file format @regression
+  ✓  49 [chromium] › tests\library\library.spec.ts:93:3 › Library › no stuck loader, no broken thumbnails, clean console/API @regression (11.3s)
+  ✘  53 [chromium] › tests\playlists\playlist-not-found.spec.ts:27:3 › Playlists — missing playlist (negative path) @regression › opening a deleted playlist does not throw an uncaught exception (10.4s)
+  ✓  54 [chromium] › tests\playlists\playlist-not-found.spec.ts:52:3 › Playlists — missing playlist (negative path) @regression › a missing playlist shows a not-found state or redirects away (8.2s)
+  ✓  55 [chromium] › tests\playlists\playlists.spec.ts:18:3 › Playlists › folder panel and toolbar actions are present @regression (7.0s)
+  ✓  56 [chromium] › tests\playlists\playlists.spec.ts:11:3 › Playlists › listing loads with playlist cards or an empty state @smoke @sanity @regression (6.9s)
+  ✓  57 [chromium] › tests\playlists\playlists.spec.ts:24:3 › Playlists › "New Playlist" opens the create modal @regression (6.7s)
+  ✓  46 [chromium] › tests\library\library.spec.ts:63:3 › Library › pagination "Load More" grows the grid when available @regression (51.1s)
+  ✓  58 [chromium] › tests\playlists\playlists.spec.ts:29:3 › Playlists › search narrows the listing or yields an empty state @regression (11.4s)
+  ✓  59 [chromium] › tests\playlists\playlists.spec.ts:40:3 › Playlists › listing loads within budget, clean console/API @regression (6.2s)
+  ✓  60 [chromium] › tests\reports\reports.spec.ts:12:3 › Reports › analytics view loads with tabs @smoke @sanity @regression (6.2s)
+  ✓  61 [chromium] › tests\reports\reports.spec.ts:17:3 › Reports › switching to Previous Reports works @regression (6.9s)
+  ✓  62 [chromium] › tests\reports\reports.spec.ts:22:3 › Reports › export actions (PDF/CSV) are available @regression (6.7s)
+  ✓  63 [chromium] › tests\reports\reports.spec.ts:27:3 › Reports › loads within budget, clean console/API @regression (8.1s)
+  ✓  65 [chromium] › tests\screens\screens.spec.ts:21:3 › Screens › All / Deleted / Expired tabs are present @regression (8.4s)
+  ✓  64 [chromium] › tests\screens\screens.spec.ts:14:3 › Screens › listing loads with screen rows or an empty state @smoke @sanity @regression (9.0s)
+  ✘  50 [chromium] › tests\library\library.spec.ts:107:3 › Library › rapid filter switching does not break the grid @regression (50.3s)
+  ✓  67 [chromium] › tests\screens\screens.spec.ts:39:3 › Screens › listing loads within budget, clean console/API @regression (14.9s)
+  ✓  68 [chromium] › tests\team\team.spec.ts:12:3 › Team › members table loads with rows or an empty state @smoke @sanity @regression (14.9s)
+  ✓  66 [chromium] › tests\screens\screens.spec.ts:28:3 › Screens › search narrows the listing or yields an empty state @regression (19.1s)
+  ✓  70 [chromium] › tests\team\team.spec.ts:26:3 › Team › switching to Roles works @regression (7.5s)
+  ✓  71 [chromium] › tests\team\team.spec.ts:19:3 › Team › Members / Roles / Logs tabs are present @regression (7.8s)
+  ✓  73 [chromium] › tests\team\team.spec.ts:42:3 › Team › loads within budget, clean console/API @regression (7.1s)
+  ✓  72 [chromium] › tests\team\team.spec.ts:31:3 › Team › search narrows the members table or yields an empty state @regression (28.0s)
+  ✓  69 [chromium] › tests\library\library.spec.ts:107:3 › Library › rapid filter switching does not break the grid @regression (retry #1) (40.2s)
+✓ Suite complete. Reports in playwright-report/ and allure-results/.
+
+
+  1) [chromium] › tests\playlists\playlist-not-found.spec.ts:27:3 › Playlists — missing playlist (negative path) @regression › opening a deleted playlist does not throw an uncaught exception 
+
+    Error: uncaught page exception(s) on a missing playlist:
+    Cannot read properties of undefined (reading 'forEach')
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoHaveLength[2m([22m[32mexpected[39m[2m)[22m
+
+    Expected length: [32m0[39m
+    Received length: [31m1[39m
+    Received array:  [31m[{"text": "Cannot read properties of undefined (reading 'forEach')", "type": "pageerror"}][39m
+
+      47 |         .map((e) => e.text)
+      48 |         .join('\n')}`,
+    > 49 |     ).toHaveLength(0);
+         |       ^
+      50 |   });
+      51 |
+      52 |   test('a missing playlist shows a not-found state or redirects away', async ({ page }) => {
+        at C:\Users\User\Downloads\wilyer-playwright\cms-e2e\tests\playlists\playlist-not-found.spec.ts:49:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\playlists-playlist-not-fou-e4f7b-throw-an-uncaught-exception-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\playlists-playlist-not-fou-e4f7b-throw-an-uncaught-exception-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\playlists-playlist-not-fou-e4f7b-throw-an-uncaught-exception-chromium\error-context.md
+
+  2) [chromium] › tests\auth\auth.spec.ts:114:3 › Authentication › copy-pasted credentials authenticate the same as typed @regression 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mtrue[39m
+    Received: [31mfalse[39m
+
+      120 |     await loginPage.fill(ENV.ADMIN.email, ENV.ADMIN.password); // fill == programmatic paste
+      121 |     await loginPage.submit();
+    > 122 |     expect(await loginPage.isAuthenticated()).toBe(true);
+          |                                               ^
+      123 |   });
+      124 | });
+      125 |
+        at C:\Users\User\Downloads\wilyer-playwright\cms-e2e\tests\auth\auth.spec.ts:122:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\auth-auth-Authentication-c-087a4-he-same-as-typed-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\auth-auth-Authentication-c-087a4-he-same-as-typed-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\auth-auth-Authentication-c-087a4-he-same-as-typed-regression-chromium\error-context.md
+
+  3) [chromium] › tests\dashboard\dashboard.spec.ts:64:3 › Dashboard › no broken images, no stuck loader @regression 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('link').filter({ has: getByRole('heading', { name: /total screens/i }) })
+    Expected: visible
+    Timeout: 20000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 20000ms[22m
+    [2m  - waiting for getByRole('link').filter({ has: getByRole('heading', { name: /total screens/i }) })[22m
+
+
+       at ..\pages\DashboardPage.ts:56
+
+      54 |
+      55 |   async expectLoaded(): Promise<this> {
+    > 56 |     await expect(this.card(/total screens/i)).toBeVisible({ timeout: 20_000 });
+         |                                               ^
+      57 |     await expect(this.card(/total media files/i)).toBeVisible();
+      58 |     return this;
+      59 |   }
+        at DashboardPage.expectLoaded (C:\Users\User\Downloads\wilyer-playwright\cms-e2e\pages\DashboardPage.ts:56:47)
+        at C:\Users\User\Downloads\wilyer-playwright\cms-e2e\tests\dashboard\dashboard.spec.ts:66:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\dashboard-dashboard-Dashbo-d1d9e--no-stuck-loader-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\dashboard-dashboard-Dashbo-d1d9e--no-stuck-loader-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\dashboard-dashboard-Dashbo-d1d9e--no-stuck-loader-regression-chromium\error-context.md
+
+  4) [chromium] › tests\dashboard\dashboard.spec.ts:81:3 › Dashboard › navigation timing + heap are within sane bounds @regression 
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "https://cms.pocsample.in/", waiting until "domcontentloaded"[22m
+
+
+       at ..\pages\BasePage.ts:45
+
+      43 |   /** Navigate to an app path relative to baseURL. */
+      44 |   async goto(path: string): Promise<this> {
+    > 45 |     await this.page.goto(path, { waitUntil: 'domcontentloaded' });
+         |                     ^
+      46 |     return this;
+      47 |   }
+      48 |
+        at DashboardPage.goto (C:\Users\User\Downloads\wilyer-playwright\cms-e2e\pages\BasePage.ts:45:21)
+        at DashboardPage.open (C:\Users\User\Downloads\wilyer-playwright\cms-e2e\pages\DashboardPage.ts:38:16)
+        at C:\Users\User\Downloads\wilyer-playwright\cms-e2e\tests\dashboard\dashboard.spec.ts:85:25
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\dashboard-dashboard-Dashbo-8a5b9-thin-sane-bounds-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\dashboard-dashboard-Dashbo-8a5b9-thin-sane-bounds-regression-chromium\error-context.md
+
+  5) [chromium] › tests\library\library.spec.ts:107:3 › Library › rapid filter switching does not break the grid @regression 
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+    [2m  - navigating to "https://cms.pocsample.in/library", waiting until "domcontentloaded"[22m
+
+
+       at ..\pages\BasePage.ts:45
+
+      43 |   /** Navigate to an app path relative to baseURL. */
+      44 |   async goto(path: string): Promise<this> {
+    > 45 |     await this.page.goto(path, { waitUntil: 'domcontentloaded' });
+         |                     ^
+      46 |     return this;
+      47 |   }
+      48 |
+        at LibraryPage.goto (C:\Users\User\Downloads\wilyer-playwright\cms-e2e\pages\BasePage.ts:45:21)
+        at LibraryPage.open (C:\Users\User\Downloads\wilyer-playwright\cms-e2e\pages\LibraryPage.ts:60:16)
+        at C:\Users\User\Downloads\wilyer-playwright\cms-e2e\tests\library\library.spec.ts:108:23
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\library-library-Library-ra-2b5a1-t-break-the-grid-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\library-library-Library-ra-2b5a1-t-break-the-grid-regression-chromium\error-context.md
+
+  1 failed
+    [chromium] › tests\playlists\playlist-not-found.spec.ts:27:3 › Playlists — missing playlist (negative path) @regression › opening a deleted playlist does not throw an uncaught exception 
+  4 flaky
+    [chromium] › tests\auth\auth.spec.ts:114:3 › Authentication › copy-pasted credentials authenticate the same as typed @regression 
+    [chromium] › tests\dashboard\dashboard.spec.ts:64:3 › Dashboard › no broken images, no stuck loader @regression 
+    [chromium] › tests\dashboard\dashboard.spec.ts:81:3 › Dashboard › navigation timing + heap are within sane bounds @regression 
+    [chromium] › tests\library\library.spec.ts:107:3 › Library › rapid filter switching does not break the grid @regression 
+  3 skipped
+  61 passed (5.4m)

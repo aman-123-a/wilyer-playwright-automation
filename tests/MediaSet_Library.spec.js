@@ -1,7 +1,7 @@
 /**
  * Wilyer CMS — Library ▸ Media Sets test suite
  *
- * Target: https://cms2.pocsample.in  (Library ▸ Media Sets)
+ * Target: https://cms.wilyersignage.com  (Library ▸ Media Sets)
  *
  * Maps 1:1 to the manual test sheet TC_MS_01 … TC_MS_17, plus a Regression
  * block guarding two confirmed defects and one expected-behavior discrepancy.
@@ -25,7 +25,7 @@
 import { test, expect } from '@playwright/test';
 
 // ─── Config ──────────────────────────────────────────────────────────────────
-const BASE_URL       = 'https://cms2.pocsample.in';
+const BASE_URL       = 'https://cms.wilyersignage.com';
 const LOGIN_EMAIL    = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
 const LOGIN_PASSWORD = (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 
