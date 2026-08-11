@@ -7,7 +7,7 @@
 //  feature. The default cms.pocsample.in build renders the box but does not
 //  filter, so every test here feature-detects the "Total - N" counter and SKIPS
 //  with guidance when it is absent. Run against cms2 with:
-//      CMS_BASE_URL=https://cms2.pocsample.in npm run test -- tests/media-sets
+//      CMS_BASE_URL=https://cms.wilyersignage.com npm run test -- tests/media-sets
 //
 //  The report's fixed baseline (5 sets) has drifted (157 sets, paginated 20/
 //  page), so cases are DATA-RELATIVE: they read the live "Total - N" count (the
@@ -25,7 +25,7 @@ test.describe('Media Sets — list search @regression', () => {
     await mediaSetsPage.open();
     test.skip(
       !(await mediaSetsPage.hasSearchFeature()),
-      'Media-Sets search is a cms2.pocsample.in feature — run with CMS_BASE_URL=https://cms2.pocsample.in',
+      'Media-Sets search is a cms2.pocsample.in feature — run with CMS_BASE_URL=https://cms.wilyersignage.com',
     );
   });
 

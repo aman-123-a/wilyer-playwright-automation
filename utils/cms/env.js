@@ -40,11 +40,11 @@ const pick = (key, fallback) =>
 
 export const ENV = {
   // Target application (merged / staging build under test)
-  BASE_URL: pick('CMS_BASE_URL', 'https://cms.pocsample.in'),
+  BASE_URL: pick('CMS_BASE_URL', 'https://cms.wilyersignage.com'),
 
   // Production reference build — used by comparison.spec.js to diff the merged
   // staging build against known-good prod behaviour (UI, features, console, perf).
-  PROD_URL: pick('CMS_PROD_URL', 'https://cms.pocsample.in'),
+  PROD_URL: pick('CMS_PROD_URL', 'https://cms.wilyersignage.com'),
 
   // Admin / primary account (full access)
   ADMIN_EMAIL: pick('CMS_ADMIN_EMAIL', (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '')),

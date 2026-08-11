@@ -2,7 +2,7 @@ import { test, expect, chromium } from '@playwright/test';
 import path from 'path';
 
 // ─── Config ───────────────────────────────────────────────────────────────────
-const BASE_URL = 'https://cms.pocsample.in';
+const BASE_URL = 'https://cms.wilyersignage.com';
 
 // Sub-User (Uploader) — uploads files that need approval
 const SUB_USER = {

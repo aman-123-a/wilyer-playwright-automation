@@ -14,7 +14,7 @@ export default defineConfig({
 
   /* Shared settings */
   use: {
-    baseURL: 'https://cms.pocsample.in',
+    baseURL: 'https://cms.wilyersignage.com',
     headless: false,                  // 👈 show browser
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',

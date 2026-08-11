@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
 
-const BASE_URL = 'https://cms2.pocsample.in';
+const BASE_URL = 'https://cms.wilyersignage.com';
 
 test.describe('seed', () => {
   test('open cms2', async ({ page }) => {

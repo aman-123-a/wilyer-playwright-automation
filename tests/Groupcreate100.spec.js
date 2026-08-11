@@ -24,7 +24,7 @@ test('Create 100 groups with single login', async ({ page }) => {
 
   // 2. Login ONCE
   console.log(`\n🔐 Logging in as: ${LOGIN_EMAIL}`);
-  await page.goto('https://cms.pocsample.in/');
+  await page.goto('https://cms.wilyersignage.com/');
   await page.getByPlaceholder(/email/i).fill(LOGIN_EMAIL);
   await page.getByPlaceholder(/password/i).fill(LOGIN_PASSWORD);
   await page.getByRole('button', { name: /Log In/i }).click();
@@ -44,7 +44,7 @@ test('Create 100 groups with single login', async ({ page }) => {
     for (let attempt = 1; attempt <= 3 && !ok; attempt++) {
       try {
         // Navigate to Groups page (fresh modal each attempt)
-        await page.goto('https://cms.pocsample.in/groups?action=newGroup');
+        await page.goto('https://cms.wilyersignage.com/groups?action=newGroup');
         await page.waitForLoadState('networkidle');
 
         // Ensure the New Group modal is open

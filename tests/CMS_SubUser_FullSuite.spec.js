@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import path from 'path';
 
 // ─── Config ───────────────────────────────────────────────────────────────────
-const BASE_URL       = 'https://cms.pocsample.in';
+const BASE_URL       = 'https://cms.wilyersignage.com';
 const LOGIN_EMAIL    = 'subuser@wilyer.com';
 const LOGIN_PASSWORD = '12345';
 const STAMP          = Date.now();

@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test('Create 4 Unique Roles', async ({ page }) => {
   test.setTimeout(300000);
 
-  const baseUrl = 'https://cms.pocsample.in/';
+  const baseUrl = 'https://cms.wilyersignage.com/';
 
   // 2. LOGIN (Once at the start)
   await page.goto(baseUrl);

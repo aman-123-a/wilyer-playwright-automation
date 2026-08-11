@@ -11,7 +11,7 @@ import { chromium } from '@playwright/test';
 import fs from 'fs';
 import path from 'path';
 
-const BASE = process.env.CMS_BASE_URL || 'https://cms.pocsample.in';
+const BASE = process.env.CMS_BASE_URL || 'https://cms.wilyersignage.com';
 const VIDEO_DIR = path.resolve('test-results', 'white-screen');
 const STORAGE = path.resolve('.auth', 'admin.json');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));

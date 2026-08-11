@@ -1,0 +1,810 @@
+<testsuites id="" name="" tests="143" failures="0" skipped="143" errors="0" time="1.8085779999999998">
+<testsuite name="global.setup.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="setup" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="authenticate as admin" classname="global.setup.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\auth\functional\auth.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="15" failures="0" skipped="15" time="0" errors="0">
+<testcase name="Authentication › valid login reaches the dashboard @smoke @sanity @regression" classname="_core\auth\functional\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › invalid password does not authenticate @regression" classname="_core\auth\functional\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › empty credentials are rejected @regression" classname="_core\auth\functional\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › invalid email format is rejected @regression" classname="_core\auth\functional\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › password field is masked by default @sanity @regression" classname="_core\auth\functional\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › logout returns to the login screen @regression" classname="_core\auth\functional\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › unauthorized route access redirects to login @regression" classname="_core\auth\functional\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › session persists across a browser refresh @regression" classname="_core\auth\functional\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › login screen is responsive on a mobile viewport @regression" classname="_core\auth\functional\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › gracefully handles a login API failure @regression" classname="_core\auth\functional\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › rejects SQL injection without authenticating @regression" classname="_core\auth\functional\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › rejects XSS payload without authenticating @regression" classname="_core\auth\functional\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › rejects oversized input without authenticating @regression" classname="_core\auth\functional\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › rejects special characters without authenticating @regression" classname="_core\auth\functional\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication › copy-pasted credentials authenticate the same as typed @regression" classname="_core\auth\functional\auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\billing\functional\billing.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="Billing › billing page loads with plans or an empty state @smoke @sanity @regression" classname="_core\billing\functional\billing.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Billing › My Plans / Buy Plan / My Purchases tabs are present @regression" classname="_core\billing\functional\billing.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Billing › switching to Buy Plan works @regression" classname="_core\billing\functional\billing.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Billing › loads within budget, clean console/API @regression" classname="_core\billing\functional\billing.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\dashboard\functional\dashboard.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="11" failures="0" skipped="11" time="0" errors="0">
+<testcase name="Dashboard › loads with stat cards and quick actions @smoke @sanity @regression" classname="_core\dashboard\functional\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › stat cards render numeric values @regression" classname="_core\dashboard\functional\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › recent screens table and map render @regression" classname="_core\dashboard\functional\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › quick-action &quot;Add Media&quot; navigates to the library upload flow @regression" classname="_core\dashboard\functional\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › &quot;Total Screens&quot; card links into the screens list @regression" classname="_core\dashboard\functional\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › loads under the page-load budget @regression" classname="_core\dashboard\functional\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › no broken images, no stuck loader @regression" classname="_core\dashboard\functional\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › no console errors or failed APIs on load @regression" classname="_core\dashboard\functional\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › navigation timing + heap are within sane bounds @regression" classname="_core\dashboard\functional\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › survives a slow analytics API response @regression" classname="_core\dashboard\functional\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Dashboard › remains usable after a viewport resize @regression" classname="_core\dashboard\functional\dashboard.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\groups\functional\groups.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="Groups › listing loads with group rows or an empty state @smoke @sanity @regression" classname="_core\groups\functional\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Groups › &quot;New Group&quot; opens the create modal @regression" classname="_core\groups\functional\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Groups › search narrows the listing or yields an empty state @regression" classname="_core\groups\functional\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Groups › listing loads within budget, clean console/API @regression" classname="_core\groups\functional\groups.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\library\functional\library.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="13" failures="0" skipped="13" time="0" errors="0">
+<testcase name="Library › grid loads with media or an empty state @smoke @sanity @regression" classname="_core\library\functional\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library › tabs are present (Media / Widgets / Publish History / Media Sets) @regression" classname="_core\library\functional\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library › type filters narrow the grid @regression" classname="_core\library\functional\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library › search returns a relevant set or an empty state @regression" classname="_core\library\functional\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library › search for an improbable term yields an empty state @regression" classname="_core\library\functional\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library › pagination &quot;Load More&quot; grows the grid when available @regression" classname="_core\library\functional\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library › opening a media card navigates to its detail page @regression" classname="_core\library\functional\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library › listing loads under the listing budget @regression" classname="_core\library\functional\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library › no stuck loader, no broken thumbnails, clean console/API @regression" classname="_core\library\functional\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library › rapid filter switching does not break the grid @regression" classname="_core\library\functional\library.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library › uploads a valid image and shows a new card @regression" classname="_core\library\functional\library.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library › rejects an unsupported file format @regression" classname="_core\library\functional\library.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Library › placeholder: drag-and-drop upload — needs DataTransfer harness" classname="_core\library\functional\library.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\platform\a11y\accessibility.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="2" failures="0" skipped="2" time="0" errors="0">
+<testcase name="Accessibility › dashboard has no serious/critical a11y violations @regression" classname="_core\platform\a11y\accessibility.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Accessibility › library has no serious/critical a11y violations @regression" classname="_core\platform\a11y\accessibility.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\platform\performance\lighthouse-audit.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Lighthouse › login page meets Lighthouse thresholds @regression" classname="_core\platform\performance\lighthouse-audit.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\playlists\boundary\playlist-duration.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="8" failures="0" skipped="8" time="0" errors="0">
+<testcase name="Playlist — layout time duration @regression › image slides default to 10s and the layout rollup sums the slides" classname="_core\playlists\boundary\playlist-duration.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to run editor write cases">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist — layout time duration @regression › stepper adjusts the duration by 1 and floors at 1 (never 0/negative)" classname="_core\playlists\boundary\playlist-duration.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to run editor write cases">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist — layout time duration @regression › set a valid duration, save, reload → the duration persists (update)" classname="_core\playlists\boundary\playlist-duration.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to run editor write cases">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist — layout time duration @regression › duration 0 must not persist as a zero-length slide" classname="_core\playlists\boundary\playlist-duration.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to run editor write cases">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist — layout time duration @regression › a negative duration must not persist" classname="_core\playlists\boundary\playlist-duration.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to run editor write cases">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist — layout time duration @regression › an empty duration must not drop the media / persist as blank" classname="_core\playlists\boundary\playlist-duration.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to run editor write cases">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist — layout time duration @regression › decimals are coerced to a whole number of seconds" classname="_core\playlists\boundary\playlist-duration.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to run editor write cases">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlist — layout time duration @regression › an absurdly large duration is bounded or, if saved, round-trips exactly" classname="_core\playlists\boundary\playlist-duration.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to run editor write cases">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\playlists\functional\playlists.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="Playlists › listing loads with playlist cards or an empty state @smoke @sanity @regression" classname="_core\playlists\functional\playlists.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlists › folder panel and toolbar actions are present @regression" classname="_core\playlists\functional\playlists.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlists › &quot;New Playlist&quot; opens the create modal @regression" classname="_core\playlists\functional\playlists.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlists › search narrows the listing or yields an empty state @regression" classname="_core\playlists\functional\playlists.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Playlists › listing loads within budget, clean console/API @regression" classname="_core\playlists\functional\playlists.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\playlists\negative\playlist-not-found.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Playlists — missing playlist (negative path) @regression › opening a deleted playlist does not throw an uncaught exception" classname="_core\playlists\negative\playlist-not-found.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\rbac\functional\permissions.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="Role user — Positive (entitled features) › dashboard loads and an entitled action is visible &amp; enabled" classname="_core\rbac\functional\permissions.spec.ts">
+<properties>
+<property name="skip" value="No restricted-role account configured — set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD in your .env.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Role user — Negative (direct URL access is fenced) › navigating to /team is blocked or shows an access error" classname="_core\rbac\functional\permissions.spec.ts">
+<properties>
+<property name="skip" value="No restricted-role account configured — set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD in your .env.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Role user — Negative (direct URL access is fenced) › navigating to /billing is blocked or shows an access error" classname="_core\rbac\functional\permissions.spec.ts">
+<properties>
+<property name="skip" value="No restricted-role account configured — set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD in your .env.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Role user — Negative (direct URL access is fenced) › navigating to /admin is blocked or shows an access error" classname="_core\rbac\functional\permissions.spec.ts">
+<properties>
+<property name="skip" value="No restricted-role account configured — set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD in your .env.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Role user — Negative (direct URL access is fenced) › navigating to /management is blocked or shows an access error" classname="_core\rbac\functional\permissions.spec.ts">
+<properties>
+<property name="skip" value="No restricted-role account configured — set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD in your .env.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Role user — Hidden elements (admin actions are not actionable) › admin-only action controls are hidden or disabled on the dashboard" classname="_core\rbac\functional\permissions.spec.ts">
+<properties>
+<property name="skip" value="No restricted-role account configured — set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD in your .env.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Role user — API 403 handling (graceful, not a crash) › a forced 403 on a restricted endpoint shows access-denied, not a crash" classname="_core\rbac\functional\permissions.spec.ts">
+<properties>
+<property name="skip" value="No restricted-role account configured — set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD in your .env.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\rbac\functional\rbac-data-driven.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="RBAC · Reports › REVOKED → sub-user is fenced out of /reports" classname="_core\rbac\functional\rbac-data-driven.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="RBAC · Reports › GRANTED → sub-user can reach /reports" classname="_core\rbac\functional\rbac-data-driven.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="RBAC · Cluster Management › REVOKED → sub-user is fenced out of /clusters" classname="_core\rbac\functional\rbac-data-driven.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="RBAC · Cluster Management › GRANTED → sub-user can reach /clusters" classname="_core\rbac\functional\rbac-data-driven.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="RBAC · Team Administration › REVOKED → sub-user is fenced out of /team" classname="_core\rbac\functional\rbac-data-driven.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="RBAC · Team Administration › GRANTED → sub-user can reach /team" classname="_core\rbac\functional\rbac-data-driven.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="RBAC · disabled-vs-hidden action controls › admin-only write actions are hidden or disabled for the sub-user" classname="_core\rbac\functional\rbac-data-driven.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\reports\functional\reports.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="Reports › analytics view loads with tabs @smoke @sanity @regression" classname="_core\reports\functional\reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reports › switching to Previous Reports works @regression" classname="_core\reports\functional\reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reports › export actions (PDF/CSV) are available @regression" classname="_core\reports\functional\reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reports › loads within budget, clean console/API @regression" classname="_core\reports\functional\reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\screens\boundary\location-settings.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="22" failures="0" skipped="22" time="0" errors="0">
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_001 autocomplete fills address fields and re-centres map" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_003 manual coordinates move the map marker" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_005 latitude=&quot;90.0000&quot; (upper valid edge — should be accepted)" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_005 latitude=&quot;-90.0000&quot; (lower valid edge — should be accepted)" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_005 latitude=&quot;90.00000001&quot; (just above 90 — must be rejected)" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_005 latitude=&quot;-91&quot; (below -90 — must be rejected)" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_005 latitude=&quot;abc&quot; (non-numeric — must be rejected)" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_006 longitude=&quot;180.0000&quot; (upper valid edge — should be accepted)" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_006 longitude=&quot;-180.0000&quot; (lower valid edge — should be accepted)" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_006 longitude=&quot;181.0000&quot; (above 180 — must be rejected)" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_006 longitude=&quot;-181&quot; (below -180 — must be rejected)" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_006 longitude=&quot;xyz&quot; (non-numeric — must be rejected)" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_007 pincode rejects &quot;ABC@#$xyz&quot; (letters + symbols in postal code)" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_007 pincode rejects &quot;12&quot; (too short for an Indian PIN (6 digits))" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_007 pincode rejects &quot;999999999999&quot; (too long)" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_007 pincode rejects &quot;122003 hh&quot; (trailing letters (mirrors live corrupted data))" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_008 caps locality at 255 chars" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_009 city handles payload safely (stored-XSS attempt)" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_009 city handles payload safely (SQL injection attempt)" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_009 locality handles payload safely (HTML-injection attempt)" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_016 layout has no horizontal overflow @ tablet-portrait" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screen Configuration → Location Settings (data-driven) › TC_LOC_016 layout has no horizontal overflow @ tablet-landscape" classname="_core\screens\boundary\location-settings.spec.ts">
+<properties>
+<property name="skip" value="Set CMS_SCREEN_ID=&lt;screen id&gt; to run Location Settings tests.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\screens\functional\screens.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="Screens › listing loads with screen rows or an empty state @smoke @sanity @regression" classname="_core\screens\functional\screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens › All / Deleted / Expired tabs are present @regression" classname="_core\screens\functional\screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens › search narrows the listing or yields an empty state @regression" classname="_core\screens\functional\screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Screens › listing loads within budget, clean console/API @regression" classname="_core\screens\functional\screens.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="_core\team\functional\team.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="Team › members table loads with rows or an empty state @smoke @sanity @regression" classname="_core\team\functional\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team › Members / Roles / Logs tabs are present @regression" classname="_core\team\functional\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team › switching to Roles works @regression" classname="_core\team\functional\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team › search narrows the members table or yields an empty state @regression" classname="_core\team\functional\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Team › loads within budget, clean console/API @regression" classname="_core\team\functional\team.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="cms\prayer-schedule\functional\prayer-media-picker.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="13" failures="0" skipped="13" time="0" errors="0">
+<testcase name="Prayer Schedule — Choose Media picker › FILES column opens the Choose Media picker @smoke @sanity @regression" classname="cms\prayer-schedule\functional\prayer-media-picker.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule — Choose Media picker › picker root lists both folders and media tiles @smoke @regression" classname="cms\prayer-schedule\functional\prayer-media-picker.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule — Choose Media picker › drills into a nested folder and Back returns to the parent @regression" classname="cms\prayer-schedule\functional\prayer-media-picker.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule — Choose Media picker › a three-level nested path is reachable @regression" classname="cms\prayer-schedule\functional\prayer-media-picker.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule — Choose Media picker › an empty nested folder shows an explicit empty state @regression" classname="cms\prayer-schedule\functional\prayer-media-picker.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule — Choose Media picker › search inside a nested folder finds a file that lives there @regression" classname="cms\prayer-schedule\functional\prayer-media-picker.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule — Choose Media picker › search stays scoped to the folder subtree @regression" classname="cms\prayer-schedule\functional\prayer-media-picker.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule — Choose Media picker › a no-match search shows an empty state @regression" classname="cms\prayer-schedule\functional\prayer-media-picker.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule — Choose Media picker › clearing the search restores the folder contents @regression" classname="cms\prayer-schedule\functional\prayer-media-picker.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule — Choose Media picker › file/read carries the folderId of the open folder @api @regression" classname="cms\prayer-schedule\functional\prayer-media-picker.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule — Choose Media picker › folder/read is issued with a parentFolder on drill-down @api @regression" classname="cms\prayer-schedule\functional\prayer-media-picker.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule — Choose Media picker › search input is debounced @api @regression" classname="cms\prayer-schedule\functional\prayer-media-picker.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule — Choose Media picker › Add media to a prayer @regression › selecting a file from a nested folder assigns it to the prayer" classname="cms\prayer-schedule\functional\prayer-media-picker.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to run write cases">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="cms\prayer-schedule\functional\prayer-schedule.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="15" failures="0" skipped="15" time="0" errors="0">
+<testcase name="Prayer Schedule › module loads with header + three tabs @smoke @sanity @regression" classname="cms\prayer-schedule\functional\prayer-schedule.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule › Today tab renders all five prayer cards @regression" classname="cms\prayer-schedule\functional\prayer-schedule.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule › Schedules tab exposes plan configuration actions @regression" classname="cms\prayer-schedule\functional\prayer-schedule.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule › Calendar tab recomputes rows on Apply @regression" classname="cms\prayer-schedule\functional\prayer-schedule.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule › module loads within budget, clean console/API @regression" classname="cms\prayer-schedule\functional\prayer-schedule.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule › Negative — Configure validation @regression › empty plan name is rejected on save" classname="cms\prayer-schedule\functional\prayer-schedule.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to run write cases">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule › Negative — Configure validation @regression › banner duration below the minute minimum (0) is rejected or clamped" classname="cms\prayer-schedule\functional\prayer-schedule.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to run write cases">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule › Negative — Configure validation @regression › end date before start date is rejected" classname="cms\prayer-schedule\functional\prayer-schedule.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to run write cases">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule › Negative — Configure validation @regression › XSS in plan name is stored escaped, not executed" classname="cms\prayer-schedule\functional\prayer-schedule.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to run write cases">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule › Boundary — City location domain @regression › City is a bounded select — no free-text lat/lng entry" classname="cms\prayer-schedule\functional\prayer-schedule.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to open the drawer">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule › Boundary — numeric minima (min=1) @regression › banner duration = 1 (valid minimum) is accepted" classname="cms\prayer-schedule\functional\prayer-schedule.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to run write cases">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule › Boundary — Calendar year filter @regression › year 2024 (in-range) is selectable and recomputes" classname="cms\prayer-schedule\functional\prayer-schedule.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule › Boundary — Calendar year filter @regression › year 2028 (in-range) is selectable and recomputes" classname="cms\prayer-schedule\functional\prayer-schedule.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule › Boundary — Calendar year filter @regression › out-of-range years (2023 / 2029) are NOT offered" classname="cms\prayer-schedule\functional\prayer-schedule.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Prayer Schedule › CRUD — plan lifecycle @regression › create → read-back → cleanup a valid plan" classname="cms\prayer-schedule\functional\prayer-schedule.spec.ts">
+<properties>
+<property name="skip" value="set CMS_ALLOW_DESTRUCTIVE=true to run write cases">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="cms\prayer-schedule\negative\prayer-schedule-coordinateless.spec.ts" timestamp="2026-07-28T18:08:05.276Z" hostname="chromium" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Prayer Schedule — coordinate-less plan (negative) @regression › a location-less plan must not stay ACTIVE with a stuck error toast" classname="cms\prayer-schedule\negative\prayer-schedule-coordinateless.spec.ts">
+<properties>
+<property name="skip" value="set CMS_PS_BROKEN_PLAN=&lt;plan name&gt; to run this guard">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

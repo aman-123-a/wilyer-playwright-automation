@@ -33,7 +33,7 @@ export default defineConfig({
   ],
 
   use: {
-    baseURL: process.env.CMS_BASE_URL ?? 'https://cms.pocsample.in',
+    baseURL: process.env.CMS_BASE_URL ?? 'https://cms.wilyersignage.com',
     storageState: '.auth/admin.json',
 
     headless: false, // headed by default for this demo config

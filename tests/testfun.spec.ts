@@ -7,7 +7,7 @@ import { test, expect, Page } from '@playwright/test';
 // ─────────────────────────────────────────────
 // CONFIG
 // ─────────────────────────────────────────────
-const BASE_URL = 'https://cms.pocsample.in';
+const BASE_URL = 'https://cms.wilyersignage.com';
 const TIMEOUT = 15000;
 // ─── Config ───────────────────────────────────────────────────────────────────
 const LOGIN_EMAIL    = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');

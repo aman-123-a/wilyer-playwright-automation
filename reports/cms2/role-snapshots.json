@@ -1,0 +1,248 @@
+[
+  {
+    "subject": "restricted",
+    "role": {
+      "id": "69dcab9e4f2ddedd756ea390",
+      "name": "child (Required)",
+      "description": "restricted",
+      "isRestrictedAccess": true,
+      "reportsTo": "69ca37e14c56e3a64ea5d275",
+      "permissions": {
+        "dashboard": {
+          "view": true
+        },
+        "screens": {
+          "view": true,
+          "pair": true,
+          "updateConfig": true,
+          "delete": true
+        },
+        "screensActions": {
+          "restartApp": true,
+          "restartDevice": true,
+          "clearCache": true,
+          "transfer": true,
+          "restore": true,
+          "screenshot": true,
+          "liveData": true
+        },
+        "media": {
+          "view": true,
+          "upload": true,
+          "update": true,
+          "delete": true,
+          "publish": true
+        },
+        "widgets": {
+          "view": true,
+          "create": true,
+          "update": true,
+          "delete": true,
+          "publish": true
+        },
+        "playlists": {
+          "view": true,
+          "create": true,
+          "update": true,
+          "delete": true,
+          "publish": true
+        },
+        "sequences": {
+          "view": true,
+          "create": true,
+          "update": true,
+          "delete": true
+        },
+        "groups": {
+          "view": true,
+          "create": true,
+          "update": true,
+          "delete": true,
+          "assignUsers": true,
+          "assignScreens": true
+        },
+        "team": {
+          "view": true,
+          "create": true,
+          "update": true,
+          "delete": true
+        },
+        "roles": {
+          "view": true,
+          "create": true,
+          "update": true,
+          "delete": true
+        },
+        "reports": {
+          "view": true
+        },
+        "logs": {
+          "view": true
+        },
+        "clusters": {
+          "view": true,
+          "create": true,
+          "update": true,
+          "delete": true
+        },
+        "remoteUpdate": {
+          "view": true,
+          "apply": true
+        },
+        "fileApproval": {
+          "required": true,
+          "approve": false,
+          "emailPendingRequests": false,
+          "emailApprovalDecisions": true,
+          "emailEscalation": false,
+          "emailMagicLink": false,
+          "escalationTime": 86400000
+        },
+        "makerAndChecker": {
+          "maker": true,
+          "checker": false,
+          "emailPendingRequests": false,
+          "emailApprovalDecisions": true,
+          "emailEscalation": false,
+          "escalationTime": 86400000
+        },
+        "mediaSets": {
+          "view": true,
+          "create": true,
+          "update": true,
+          "delete": true,
+          "publish": true
+        },
+        "campaigns": {
+          "create": true,
+          "view": true,
+          "update": false,
+          "delete": true
+        }
+      }
+    }
+  },
+  {
+    "subject": "unrestricted",
+    "role": {
+      "id": "6a3e1d27e3999acc7be1c312",
+      "name": "unres1",
+      "description": "",
+      "isRestrictedAccess": false,
+      "reportsTo": null,
+      "permissions": {
+        "dashboard": {
+          "view": true
+        },
+        "media": {
+          "view": true,
+          "upload": true,
+          "update": true,
+          "delete": true,
+          "publish": true
+        },
+        "widgets": {
+          "view": true,
+          "create": true,
+          "update": true,
+          "delete": true,
+          "publish": true
+        },
+        "playlists": {
+          "view": true,
+          "create": true,
+          "update": true,
+          "delete": true,
+          "publish": true
+        },
+        "sequences": {
+          "view": true,
+          "create": true,
+          "update": true,
+          "delete": true
+        },
+        "screens": {
+          "view": true,
+          "pair": true,
+          "updateConfig": true,
+          "delete": true
+        },
+        "screensActions": {
+          "restartApp": true,
+          "restartDevice": true,
+          "clearCache": true,
+          "transfer": true,
+          "restore": true,
+          "screenshot": true,
+          "liveData": true
+        },
+        "groups": {
+          "view": true,
+          "create": true,
+          "update": true,
+          "delete": true,
+          "assignUsers": true,
+          "assignScreens": true
+        },
+        "team": {
+          "view": true,
+          "create": true,
+          "update": true,
+          "delete": true
+        },
+        "roles": {
+          "view": true,
+          "create": true,
+          "update": true,
+          "delete": true
+        },
+        "fileApproval": {
+          "required": false,
+          "approve": false,
+          "emailPendingRequests": false,
+          "emailApprovalDecisions": false,
+          "emailEscalation": false,
+          "emailMagicLink": false,
+          "escalationTime": 86400000
+        },
+        "makerAndChecker": {
+          "maker": false,
+          "checker": false,
+          "emailPendingRequests": false,
+          "emailApprovalDecisions": false,
+          "emailEscalation": false,
+          "escalationTime": 86400000
+        },
+        "remoteUpdate": {
+          "view": false,
+          "apply": false
+        },
+        "clusters": {
+          "view": true,
+          "create": true,
+          "update": true,
+          "delete": true
+        },
+        "reports": {
+          "view": true
+        },
+        "logs": {
+          "view": true
+        },
+        "mediaSets": {
+          "view": false,
+          "create": false,
+          "update": false,
+          "delete": false,
+          "publish": false
+        },
+        "campaigns": {
+          "create": true,
+          "view": true,
+          "update": true,
+          "delete": true
+        }
+      }
+    }
+  }
+]

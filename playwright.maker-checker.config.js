@@ -24,7 +24,7 @@ export default defineConfig({
   ],
 
   use: {
-    baseURL: process.env.BASE_URL || 'https://cms.pocsample.in',
+    baseURL: process.env.BASE_URL || 'https://cms.wilyersignage.com',
     headless: true,
     viewport: { width: 1440, height: 900 },
     screenshot: 'only-on-failure

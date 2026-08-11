@@ -12,7 +12,7 @@ import path from 'path';
 //  Anything ACCEPTED is recorded and best-effort deleted in afterAll.
 // =============================================================================
 
-const BASE_URL       = 'https://cms3.pocsample.in/';
+const BASE_URL       = 'https://cms.wilyersignage.com/';
 const LOGIN_EMAIL    = (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
 const LOGIN_PASSWORD = (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 const STAMP          = Date.now();

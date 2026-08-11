@@ -57,3 +57,4 @@ temp_doc*.docx
 **/.auth/
 # Real env files anywhere (only .env.example templates are tracked).
 **/.env
+.legacy-browsers/

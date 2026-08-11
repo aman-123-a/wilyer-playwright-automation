@@ -1,0 +1,83 @@
+{
+  "cookies": [
+    {
+      "name": "_GRECAPTCHA",
+      "value": "09AKhCRwiRa1z6wGmuni8J3psSTtsR6HrHkh4bTJQcUefuXCkknTZphXHZYGSLoyllakibwbBa4JN_bqgrBbNuEkY",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1801976868.218877,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "rzp_unified_session_id",
+      "value": "TOLElclmFMrFIw",
+      "domain": "cms2.pocsample.in",
+      "path": "/",
+      "expires": 1786426665,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "footprint",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMjYzYzFlMTRmNWE3MmVlMWJkZjM5NSIsInVzZXJJZCI6IjYyMjYzYzFlMTRmNWE3MmVlMWJkZjM5NSIsImVtYWlsIjoiZGV2QHdpbHllci5jb20iLCJuYW1lIjoiZGV2Iiwicm9sZSI6InVzZXIiLCJwYXJ0bmVyIjoiNjIyZWU2MWJlOGM2ZTE2ZWIwYTgyNDczIiwiaXNEb29oRW5hYmxlZCI6dHJ1ZSwiaXNBZGFwdGl2ZUNvbnRlbnRFbmFibGVkIjp0cnVlLCJpczRrVmlkZW9FbmFibGVkIjpmYWxzZSwiaXNDbHVzdGVyRW5hYmxlZCI6dHJ1ZSwiaXNIZG1pRW5hYmxlZCI6dHJ1ZSwiaXNUd29GQSI6ZmFsc2UsImlzUGxheWxpc3RGb2xkZXJFbmFibGVkIjp0cnVlLCJhY2Nlc3MiOnt9LCJpc1Jlc3RyaWN0ZWRBY2Nlc3MiOmZhbHNlLCJpc01lZGlhU2V0RW5hYmxlZCI6dHJ1ZSwiaXNEeW5hbWljQ3JlYXRpdmVBcGlBY2Nlc3NFbmFibGVkIjp0cnVlLCJmaWxlVXBsb2FkU2VydmVyIjoicjIiLCJpc0JpcnRoZGF5V2lkZ2V0RW5hYmxlZCI6dHJ1ZSwiaXNDbHVzdGVyU2NyZWVuc0xpbWl0RW5hYmxlZCI6ZmFsc2UsImNsdXN0ZXJTY3JlZW5zTGltaXQiOjIsImlzSG9zcGl0YWxpdHlUdkVuYWJsZWQiOnRydWUsImlzQ29udGVudFJvbGxvdXRFbmFibGVkIjp0cnVlLCJpc1RyaWdnZXJFbmFibGVkIjp0cnVlLCJpc1ByYXllclNjaGVkdWxlRW5hYmxlZCI6dHJ1ZSwiaXNQcmF5ZXJTY2hlZHVsZVNjcmVlbnNMaW1pdEVuYWJsZWQiOmZhbHNlLCJwcmF5ZXJTY2hlZHVsZVNjcmVlbnNMaW1pdCI6MiwiaXNDYW1wYWlnbkVuYWJsZWQiOnRydWUsImlhdCI6MTc4NjQyNDg2NCwiZXhwIjoxNzg2NTExMjY0fQ.mni-aAwaH5tddQf1MokQSVmtAeaGHXif9YEZ9tYD4tI",
+      "domain": "cms2.pocsample.in",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://cms2.pocsample.in",
+      "localStorage": [
+        {
+          "name": "rzp_device_id",
+          "value": "1.ce0ce6de6b376ff0e83a7bd62e2dbfdc32bf71b2.1786424865129.69510068"
+        },
+        {
+          "name": "email",
+          "value": "dev@wilyer.com"
+        },
+        {
+          "name": "sidebar",
+          "value": "visible"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AKhCRwjtMwTh5Sp0OLHpu9qKvlDWyY0DBuUO_X3rpy9H7xBwr0LMK9pzNac6EEVB_W1xP5TgHvSslWmfE8FB7hM1Uvhv28MiIweoNIR3q5uLOHOSUvcEiCmrQgT0KVoI"
+        },
+        {
+          "name": "rzp_checkout_anon_id",
+          "value": "c1b21f8c29f44942b4eef99efd3164d0"
+        }
+      ]
+    },
+    {
+      "origin": "https://api.razorpay.com",
+      "localStorage": [
+        {
+          "name": "rzp_device_id",
+          "value": "1.ce0ce6de6b376ff0e83a7bd62e2dbfdc32bf71b2.1786424865814.99671444"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "YmRka2NoOWJpZDUw"
+        },
+        {
+          "name": "rc::f",
+          "value": "0aAJb57133JpaEfSG7S46nuBiwF0CfWnrPIp-fI2kLM3REowbv2HS7iRRRHTclopLB2exW5nM"
+        }
+      ]
+    }
+  ]
+}

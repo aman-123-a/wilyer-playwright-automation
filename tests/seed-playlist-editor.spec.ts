@@ -6,7 +6,7 @@ test.use({ storageState: '.auth/admin.json' });
 
 test.describe('seed', () => {
   test('open playlist editor', async ({ page }) => {
-    await page.goto('https://cms.pocsample.in/playlist-settings/6a16829f2298182018d2754b');
+    await page.goto('https://cms.wilyersignage.com/playlist-settings/6a16829f2298182018d2754b');
     await page.waitForLoadState('domcontentloaded');
   });
 });

@@ -7,7 +7,7 @@ const users = JSON.parse(
   readFileSync(new URL('../data/users.json', import.meta.url), 'utf-8')
 );
 
-const BASE_URL = 'https://cms.pocsample.in/';
+const BASE_URL = 'https://cms.wilyersignage.com/';
 
 // Selector bank — keep in one place so tests stay readable.
 const SEL = {

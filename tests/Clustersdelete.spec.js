@@ -8,7 +8,7 @@ test.describe('Cluster Deletion Flow', () => {
 
         // Step 1: Open Application
         console.log('Navigating to CMS...');
-        await page.goto('https://cms.pocsample.in/', { waitUntil: 'networkidle' });
+        await page.goto('https://cms.wilyersignage.com/', { waitUntil: 'networkidle' });
 
         // Step 2: Login
         console.log('Logging in...');

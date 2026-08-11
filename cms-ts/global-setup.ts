@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname  = path.dirname(__filename);
 
-const BASE_URL = 'https://cms3.pocsample.in';
+const BASE_URL = 'https://cms.wilyersignage.com';
 const EMAIL    = process.env.CMS_EMAIL    || (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '');
 const PASSWORD = process.env.CMS_PASSWORD || (process.env.CMS_PASSWORD || process.env.CMS_ADMIN_PASSWORD || '');
 const STATE_PATH = path.resolve(__dirname, '.auth/state.json');

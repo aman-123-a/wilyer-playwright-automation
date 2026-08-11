@@ -1,0 +1,1598 @@
+{
+  "config": {
+    "configFile": "D:\\wilyer-playwright\\cms-e2e\\playwright.config.ts",
+    "rootDir": "D:/wilyer-playwright/cms-e2e/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "D:\\wilyer-playwright\\cms-e2e\\global-setup.ts",
+    "globalTeardown": "D:\\wilyer-playwright\\cms-e2e\\global-teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/wilyer-playwright/cms-e2e/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "D:/wilyer-playwright/cms-e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/global\\.setup\\.ts/"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/cms-e2e/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/wilyer-playwright/cms-e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/cms-e2e/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/wilyer-playwright/cms-e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/cms-e2e/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/wilyer-playwright/cms-e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/cms-e2e/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "D:/wilyer-playwright/cms-e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/cms-e2e/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "D:/wilyer-playwright/cms-e2e/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "global.setup.ts",
+      "file": "global.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authenticate as admin",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10075,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-24T10:07:03.660Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e4eb4d1272d956fb120f-96466eaf1423edb2a5ba",
+          "file": "global.setup.ts",
+          "line": 12,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "billing\\billing.spec.ts",
+      "file": "billing/billing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Billing",
+          "file": "billing/billing.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "billing page loads with plans or an empty state @smoke @sanity @regression",
+              "ok": false,
+              "tags": [
+                "smoke",
+                "sanity",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 39040,
+                      "error": {
+                        "message": "Error: billing shows plans or an empty state\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: billing shows plans or an empty state\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at BillingPage.expectPlansLoaded (D:\\wilyer-playwright\\cms-e2e\\pages\\BillingPage.ts:51:62)\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\billing\\billing.spec.ts:16:5",
+                        "location": {
+                          "file": "D:\\wilyer-playwright\\cms-e2e\\pages\\BillingPage.ts",
+                          "column": 62,
+                          "line": 51
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\BillingPage.ts:51\n\n\u001b[0m \u001b[90m 49 |\u001b[39m       \u001b[36mconst\u001b[39m empty \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByText(\u001b[35m/no (plan|purchase|data)/i\u001b[39m)\u001b[33m.\u001b[39mfirst()\n \u001b[90m 50 |\u001b[39m         \u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m       expect(empty\u001b[33m,\u001b[39m \u001b[32m'billing shows plans or an empty state'\u001b[39m)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\wilyer-playwright\\cms-e2e\\pages\\BillingPage.ts",
+                            "column": 62,
+                            "line": 51
+                          },
+                          "message": "Error: billing shows plans or an empty state\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n   at ..\\pages\\BillingPage.ts:51\n\n  49 |       const empty = await this.page.getByText(/no (plan|purchase|data)/i).first()\n  50 |         .isVisible().catch(() => false);\n> 51 |       expect(empty, 'billing shows plans or an empty state').toBeTruthy();\n     |                                                              ^\n  52 |     }\n  53 |     return this;\n  54 |   }\n    at BillingPage.expectPlansLoaded (D:\\wilyer-playwright\\cms-e2e\\pages\\BillingPage.ts:51:62)\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\billing\\billing.spec.ts:16:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:07:14.845Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\billing-billing-Billing-bi-f4567-ate-smoke-sanity-regression-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "console-errors",
+                          "contentType": "text/plain",
+                          "body": "Tm8gY29uc29sZSBlcnJvcnMu"
+                        },
+                        {
+                          "name": "api-activity",
+                          "contentType": "text/plain",
+                          "body": "Tm8gZmFpbGVkIG9yIHNsb3cgQVBJIHJlcXVlc3RzLg=="
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\billing-billing-Billing-bi-f4567-ate-smoke-sanity-regression-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\billing-billing-Billing-bi-f4567-ate-smoke-sanity-regression-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\wilyer-playwright\\cms-e2e\\pages\\BillingPage.ts",
+                        "column": 62,
+                        "line": 51
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e3e33684097b60ce15e7-3769aa09a89e58d1ef29",
+              "file": "billing/billing.spec.ts",
+              "line": 12,
+              "column": 3
+            },
+            {
+              "title": "loads within budget, clean console/API @regression",
+              "ok": false,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 43428,
+                      "error": {
+                        "message": "Error: billing shows plans or an empty state\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: billing shows plans or an empty state\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at BillingPage.expectPlansLoaded (D:\\wilyer-playwright\\cms-e2e\\pages\\BillingPage.ts:51:62)\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\billing\\billing.spec.ts:38:7\n    at measure (D:\\wilyer-playwright\\cms-e2e\\utils\\performance.ts:63:3)\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\billing\\billing.spec.ts:36:5",
+                        "location": {
+                          "file": "D:\\wilyer-playwright\\cms-e2e\\pages\\BillingPage.ts",
+                          "column": 62,
+                          "line": 51
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\BillingPage.ts:51\n\n\u001b[0m \u001b[90m 49 |\u001b[39m       \u001b[36mconst\u001b[39m empty \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByText(\u001b[35m/no (plan|purchase|data)/i\u001b[39m)\u001b[33m.\u001b[39mfirst()\n \u001b[90m 50 |\u001b[39m         \u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 |\u001b[39m       expect(empty\u001b[33m,\u001b[39m \u001b[32m'billing shows plans or an empty state'\u001b[39m)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 52 |\u001b[39m     }\n \u001b[90m 53 |\u001b[39m     \u001b[36mreturn\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 54 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\wilyer-playwright\\cms-e2e\\pages\\BillingPage.ts",
+                            "column": 62,
+                            "line": 51
+                          },
+                          "message": "Error: billing shows plans or an empty state\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n   at ..\\pages\\BillingPage.ts:51\n\n  49 |       const empty = await this.page.getByText(/no (plan|purchase|data)/i).first()\n  50 |         .isVisible().catch(() => false);\n> 51 |       expect(empty, 'billing shows plans or an empty state').toBeTruthy();\n     |                                                              ^\n  52 |     }\n  53 |     return this;\n  54 |   }\n    at BillingPage.expectPlansLoaded (D:\\wilyer-playwright\\cms-e2e\\pages\\BillingPage.ts:51:62)\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\billing\\billing.spec.ts:38:7\n    at measure (D:\\wilyer-playwright\\cms-e2e\\utils\\performance.ts:63:3)\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\billing\\billing.spec.ts:36:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:07:55.125Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\billing-billing-Billing-lo-8939f-lean-console-API-regression-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "console-errors",
+                          "contentType": "text/plain",
+                          "body": "Tm8gY29uc29sZSBlcnJvcnMu"
+                        },
+                        {
+                          "name": "api-activity",
+                          "contentType": "text/plain",
+                          "body": "Tm8gZmFpbGVkIG9yIHNsb3cgQVBJIHJlcXVlc3RzLg=="
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\billing-billing-Billing-lo-8939f-lean-console-API-regression-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\billing-billing-Billing-lo-8939f-lean-console-API-regression-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\wilyer-playwright\\cms-e2e\\pages\\BillingPage.ts",
+                        "column": 62,
+                        "line": 51
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "e3e33684097b60ce15e7-e9ae22173b01c6c8b404",
+              "file": "billing/billing.spec.ts",
+              "line": 31,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dashboard\\dashboard.spec.ts",
+      "file": "dashboard/dashboard.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Dashboard",
+          "file": "dashboard/dashboard.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "no broken images, no stuck loader @regression",
+              "ok": false,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 24367,
+                      "error": {
+                        "message": "Error: a loading spinner is still visible after timeout\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeHidden\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[class*=\"spinner\" i], [class*=\"loader\" i], [role=\"progressbar\"], [aria-busy=\"true\"]').first()\nExpected: hidden\nReceived: visible\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - a loading spinner is still visible after timeout with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('[class*=\"spinner\" i], [class*=\"loader\" i], [role=\"progressbar\"], [aria-busy=\"true\"]').first()\u001b[22m\n\u001b[2m    33 × locator resolved to <div aria-valuenow=\"0\" aria-valuemin=\"0\" role=\"progressbar\" aria-valuemax=\"100\" class=\"ant-progress ant-progress-status-normal ant-progress-line ant-progress-line-align-end ant-progress-line-position-outer ant-progress-small css-mncuj7\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n",
+                        "stack": "Error: a loading spinner is still visible after timeout\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeHidden\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[class*=\"spinner\" i], [class*=\"loader\" i], [role=\"progressbar\"], [aria-busy=\"true\"]').first()\nExpected: hidden\nReceived: visible\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - a loading spinner is still visible after timeout with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('[class*=\"spinner\" i], [class*=\"loader\" i], [role=\"progressbar\"], [aria-busy=\"true\"]').first()\u001b[22m\n\u001b[2m    33 × locator resolved to <div aria-valuenow=\"0\" aria-valuemin=\"0\" role=\"progressbar\" aria-valuemax=\"100\" class=\"ant-progress ant-progress-status-normal ant-progress-line ant-progress-line-align-end ant-progress-line-position-outer ant-progress-small css-mncuj7\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n    at expectNoStuckLoader (D:\\wilyer-playwright\\cms-e2e\\utils\\assertions.ts:46:84)\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\dashboard\\dashboard.spec.ts:67:11",
+                        "location": {
+                          "file": "D:\\wilyer-playwright\\cms-e2e\\utils\\assertions.ts",
+                          "column": 84,
+                          "line": 46
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\utils\\assertions.ts:46\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[32m'[class*=\"spinner\" i], [class*=\"loader\" i], [role=\"progressbar\"], [aria-busy=\"true\"]'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 45 |\u001b[39m   )\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m   \u001b[36mawait\u001b[39m expect(loader\u001b[33m.\u001b[39mfirst()\u001b[33m,\u001b[39m \u001b[32m'a loading spinner is still visible after timeout'\u001b[39m)\u001b[33m.\u001b[39mtoBeHidden({\n \u001b[90m    |\u001b[39m                                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m     timeout\u001b[33m,\u001b[39m\n \u001b[90m 48 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 49 |\u001b[39m }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\wilyer-playwright\\cms-e2e\\utils\\assertions.ts",
+                            "column": 84,
+                            "line": 46
+                          },
+                          "message": "Error: a loading spinner is still visible after timeout\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeHidden\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[class*=\"spinner\" i], [class*=\"loader\" i], [role=\"progressbar\"], [aria-busy=\"true\"]').first()\nExpected: hidden\nReceived: visible\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - a loading spinner is still visible after timeout with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('[class*=\"spinner\" i], [class*=\"loader\" i], [role=\"progressbar\"], [aria-busy=\"true\"]').first()\u001b[22m\n\u001b[2m    33 × locator resolved to <div aria-valuenow=\"0\" aria-valuemin=\"0\" role=\"progressbar\" aria-valuemax=\"100\" class=\"ant-progress ant-progress-status-normal ant-progress-line ant-progress-line-align-end ant-progress-line-position-outer ant-progress-small css-mncuj7\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n\n   at ..\\utils\\assertions.ts:46\n\n  44 |     '[class*=\"spinner\" i], [class*=\"loader\" i], [role=\"progressbar\"], [aria-busy=\"true\"]',\n  45 |   );\n> 46 |   await expect(loader.first(), 'a loading spinner is still visible after timeout').toBeHidden({\n     |                                                                                    ^\n  47 |     timeout,\n  48 |   });\n  49 | }\n    at expectNoStuckLoader (D:\\wilyer-playwright\\cms-e2e\\utils\\assertions.ts:46:84)\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\dashboard\\dashboard.spec.ts:67:11"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:08:39.602Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\dashboard-dashboard-Dashbo-d1d9e--no-stuck-loader-regression-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "console-errors",
+                          "contentType": "text/plain",
+                          "body": "Tm8gY29uc29sZSBlcnJvcnMu"
+                        },
+                        {
+                          "name": "api-activity",
+                          "contentType": "text/plain",
+                          "body": "Tm8gZmFpbGVkIG9yIHNsb3cgQVBJIHJlcXVlc3RzLg=="
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\dashboard-dashboard-Dashbo-d1d9e--no-stuck-loader-regression-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\dashboard-dashboard-Dashbo-d1d9e--no-stuck-loader-regression-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\wilyer-playwright\\cms-e2e\\utils\\assertions.ts",
+                        "column": 84,
+                        "line": 46
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "747340cde928aa6c3216-e455e4644d2043d90a97",
+              "file": "dashboard/dashboard.spec.ts",
+              "line": 64,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "groups\\groups.spec.ts",
+      "file": "groups/groups.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Groups",
+          "file": "groups/groups.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "listing loads with group rows or an empty state @smoke @sanity @regression",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "sanity",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6947,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:09:05.026Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8477fb8e29c9188a47f1-cfdd4fb1c890d762bb24",
+              "file": "groups/groups.spec.ts",
+              "line": 12,
+              "column": 3
+            },
+            {
+              "title": "search narrows the listing or yields an empty state @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10148,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:09:12.127Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8477fb8e29c9188a47f1-17d5978dd3e8961e7d49",
+              "file": "groups/groups.spec.ts",
+              "line": 24,
+              "column": 3
+            },
+            {
+              "title": "listing loads within budget, clean console/API @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "perf-budget-exceeded",
+                      "description": "groups listing: 4068ms (budget 4000ms)"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4759,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:09:22.303Z",
+                      "annotations": [
+                        {
+                          "type": "perf-budget-exceeded",
+                          "description": "groups listing: 4068ms (budget 4000ms)"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8477fb8e29c9188a47f1-7cd88a1eb43370111123",
+              "file": "groups/groups.spec.ts",
+              "line": 35,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "library\\library.spec.ts",
+      "file": "library/library.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Library",
+          "file": "library/library.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "opening a media card navigates to its detail page @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "no media to open",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\library\\library.spec.ts",
+                        "line": 80,
+                        "column": 53
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 6837,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:09:27.125Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "no media to open",
+                          "location": {
+                            "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\library\\library.spec.ts",
+                            "line": 80,
+                            "column": 53
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8f4a6c685175571d916a-dc8e63fb5dda06894802",
+              "file": "library/library.spec.ts",
+              "line": 75,
+              "column": 3
+            },
+            {
+              "title": "rejects an unsupported file format @regression",
+              "ok": false,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 26342,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/not supported|unsupported|invalid file|not allowed|allowed formats?/i).first()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/not supported|unsupported|invalid file|not allowed|allowed formats?/i).first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/not supported|unsupported|invalid file|not allowed|allowed formats?/i).first()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/not supported|unsupported|invalid file|not allowed|allowed formats?/i).first()\u001b[22m\n\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\library\\library.spec.ts:147:7",
+                        "location": {
+                          "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\library\\library.spec.ts",
+                          "column": 7,
+                          "line": 147
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 145 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\n \u001b[90m 146 |\u001b[39m       libraryPage\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByText(\u001b[35m/not supported|unsupported|invalid file|not allowed|allowed formats?/i\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 147 |\u001b[39m     )\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m15\u001b[39m_000 })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 148 |\u001b[39m     \u001b[90m// Hard signal: the rejected file must NOT have produced a new card.\u001b[39m\n \u001b[90m 149 |\u001b[39m     \u001b[36mawait\u001b[39m libraryPage\u001b[33m.\u001b[39mcloseUploadDialog()\u001b[33m;\u001b[39m\n \u001b[90m 150 |\u001b[39m     \u001b[36mawait\u001b[39m libraryPage\u001b[33m.\u001b[39mwaitForGridSettled()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\library\\library.spec.ts",
+                            "column": 7,
+                            "line": 147
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/not supported|unsupported|invalid file|not allowed|allowed formats?/i).first()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/not supported|unsupported|invalid file|not allowed|allowed formats?/i).first()\u001b[22m\n\n\n  145 |     await expect(\n  146 |       libraryPage.page.getByText(/not supported|unsupported|invalid file|not allowed|allowed formats?/i).first(),\n> 147 |     ).toBeVisible({ timeout: 15_000 });\n      |       ^\n  148 |     // Hard signal: the rejected file must NOT have produced a new card.\n  149 |     await libraryPage.closeUploadDialog();\n  150 |     await libraryPage.waitForGridSettled();\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\library\\library.spec.ts:147:7"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:09:33.991Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\library-library-Library-re-14618-rted-file-format-regression-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\library-library-Library-re-14618-rted-file-format-regression-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\library-library-Library-re-14618-rted-file-format-regression-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\library\\library.spec.ts",
+                        "column": 7,
+                        "line": 147
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8f4a6c685175571d916a-1d58e70aacf9d1d5b6ef",
+              "file": "library/library.spec.ts",
+              "line": 136,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "media-sets\\media-sets-create-builder.spec.ts",
+      "file": "media-sets/media-sets-create-builder.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Media Sets — Create builder @regression",
+          "file": "media-sets/media-sets-create-builder.spec.ts",
+          "line": 23,
+          "column": 6,
+          "specs": [
+            {
+              "title": "type filter narrows the file set and the counter tracks it",
+              "ok": false,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 15752,
+                      "error": {
+                        "message": "Error: Images + Videos ≤ All\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m804\u001b[39m\nReceived:    \u001b[31m1018\u001b[39m",
+                        "stack": "Error: Images + Videos ≤ All\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m804\u001b[39m\nReceived:    \u001b[31m1018\u001b[39m\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\media-sets\\media-sets-create-builder.spec.ts:67:54",
+                        "location": {
+                          "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\media-sets\\media-sets-create-builder.spec.ts",
+                          "column": 54,
+                          "line": 67
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 65 |\u001b[39m     expect(images\u001b[33m,\u001b[39m \u001b[32m'Images ⊂ All'\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThan(all)\u001b[33m;\u001b[39m\n \u001b[90m 66 |\u001b[39m     expect(videos\u001b[33m,\u001b[39m \u001b[32m'Videos ⊂ All'\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThan(all)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 67 |\u001b[39m     expect(images \u001b[33m+\u001b[39m videos\u001b[33m,\u001b[39m \u001b[32m'Images + Videos ≤ All'\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(all)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 68 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 69 |\u001b[39m\n \u001b[90m 70 |\u001b[39m   test(\u001b[32m'AR-6 — file filter × file search intersect (AND logic → empty)'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\media-sets\\media-sets-create-builder.spec.ts",
+                            "column": 54,
+                            "line": 67
+                          },
+                          "message": "Error: Images + Videos ≤ All\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m804\u001b[39m\nReceived:    \u001b[31m1018\u001b[39m\n\n  65 |     expect(images, 'Images ⊂ All').toBeLessThan(all);\n  66 |     expect(videos, 'Videos ⊂ All').toBeLessThan(all);\n> 67 |     expect(images + videos, 'Images + Videos ≤ All').toBeLessThanOrEqual(all);\n     |                                                      ^\n  68 |   });\n  69 |\n  70 |   test('AR-6 — file filter × file search intersect (AND logic → empty)', async ({\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\media-sets\\media-sets-create-builder.spec.ts:67:54"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:10:01.245Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\media-sets-media-sets-crea-3aa98-t-and-the-counter-tracks-it-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "console-errors",
+                          "contentType": "text/plain",
+                          "body": "Tm8gY29uc29sZSBlcnJvcnMu"
+                        },
+                        {
+                          "name": "api-activity",
+                          "contentType": "text/plain",
+                          "body": "Tm8gZmFpbGVkIG9yIHNsb3cgQVBJIHJlcXVlc3RzLg=="
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\media-sets-media-sets-crea-3aa98-t-and-the-counter-tracks-it-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\media-sets-media-sets-crea-3aa98-t-and-the-counter-tracks-it-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\media-sets\\media-sets-create-builder.spec.ts",
+                        "column": 54,
+                        "line": 67
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "cc19e1cb5b644ec9d63a-a6ab72d5e267570ad99f",
+              "file": "media-sets/media-sets-create-builder.spec.ts",
+              "line": 50,
+              "column": 3
+            },
+            {
+              "title": "F1 — the \"N of total\" counter stays in sync with the visible files",
+              "ok": false,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 12810,
+                      "error": {
+                        "message": "Error: counter shown = visible tiles (after filter)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m150\u001b[39m\nReceived: \u001b[31m50\u001b[39m",
+                        "stack": "Error: counter shown = visible tiles (after filter)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m150\u001b[39m\nReceived: \u001b[31m50\u001b[39m\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\media-sets\\media-sets-create-builder.spec.ts:93:73",
+                        "location": {
+                          "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\media-sets\\media-sets-create-builder.spec.ts",
+                          "column": 73,
+                          "line": 93
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 91 |\u001b[39m     \u001b[36mawait\u001b[39m mediaSetsPage\u001b[33m.\u001b[39mfilterFiles(\u001b[32m'videos'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 92 |\u001b[39m     \u001b[36mconst\u001b[39m after \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m mediaSetsPage\u001b[33m.\u001b[39mfileCounter())\u001b[33m!\u001b[39m\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 93 |\u001b[39m     expect(after\u001b[33m.\u001b[39mshown\u001b[33m,\u001b[39m \u001b[32m'counter shown = visible tiles (after filter)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\n \u001b[90m    |\u001b[39m                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mawait\u001b[39m mediaSetsPage\u001b[33m.\u001b[39mbuilderFileCount()\u001b[33m,\u001b[39m\n \u001b[90m 95 |\u001b[39m     )\u001b[33m;\u001b[39m\n \u001b[90m 96 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\media-sets\\media-sets-create-builder.spec.ts",
+                            "column": 73,
+                            "line": 93
+                          },
+                          "message": "Error: counter shown = visible tiles (after filter)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m150\u001b[39m\nReceived: \u001b[31m50\u001b[39m\n\n  91 |     await mediaSetsPage.filterFiles('videos');\n  92 |     const after = (await mediaSetsPage.fileCounter())!;\n> 93 |     expect(after.shown, 'counter shown = visible tiles (after filter)').toBe(\n     |                                                                         ^\n  94 |       await mediaSetsPage.builderFileCount(),\n  95 |     );\n  96 |   });\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\media-sets\\media-sets-create-builder.spec.ts:93:73"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:10:18.072Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\media-sets-media-sets-crea-30deb-sync-with-the-visible-files-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "console-errors",
+                          "contentType": "text/plain",
+                          "body": "Tm8gY29uc29sZSBlcnJvcnMu"
+                        },
+                        {
+                          "name": "api-activity",
+                          "contentType": "text/plain",
+                          "body": "Tm8gZmFpbGVkIG9yIHNsb3cgQVBJIHJlcXVlc3RzLg=="
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\media-sets-media-sets-crea-30deb-sync-with-the-visible-files-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\media-sets-media-sets-crea-30deb-sync-with-the-visible-files-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\media-sets\\media-sets-create-builder.spec.ts",
+                        "column": 73,
+                        "line": 93
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "cc19e1cb5b644ec9d63a-8c5a3f98d6c35935290d",
+              "file": "media-sets/media-sets-create-builder.spec.ts",
+              "line": 80,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "permissions\\rbac-data-driven.spec.ts",
+      "file": "permissions/rbac-data-driven.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "RBAC · Reports",
+          "file": "permissions/rbac-data-driven.spec.ts",
+          "line": 244,
+          "column": 8,
+          "specs": [
+            {
+              "title": "REVOKED → sub-user is fenced out of /reports",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 26665,
+                      "error": {
+                        "message": "Error: role card \"un\" should exist\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'un', exact: true, level: 5 }).locator('xpath=ancestor::*[.//button[contains(.,\"Edit\")]][1]').first()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - role card \"un\" should exist with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'un', exact: true, level: 5 }).locator('xpath=ancestor::*[.//button[contains(.,\"Edit\")]][1]').first()\u001b[22m\n",
+                        "stack": "Error: role card \"un\" should exist\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'un', exact: true, level: 5 }).locator('xpath=ancestor::*[.//button[contains(.,\"Edit\")]][1]').first()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - role card \"un\" should exist with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'un', exact: true, level: 5 }).locator('xpath=ancestor::*[.//button[contains(.,\"Edit\")]][1]').first()\u001b[22m\n\n    at openRoleEditor (D:\\wilyer-playwright\\cms-e2e\\tests\\permissions\\rbac-data-driven.spec.ts:128:71)\n    at setPermission (D:\\wilyer-playwright\\cms-e2e\\tests\\permissions\\rbac-data-driven.spec.ts:140:3)\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\permissions\\rbac-data-driven.spec.ts:258:7",
+                        "location": {
+                          "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\permissions\\rbac-data-driven.spec.ts",
+                          "column": 71,
+                          "line": 128
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 126 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1\u001b[39m_200)\u001b[33m;\u001b[39m \u001b[90m// role cards re-render\u001b[39m\n \u001b[90m 127 |\u001b[39m   \u001b[36mconst\u001b[39m card \u001b[33m=\u001b[39m \u001b[33mSELECTORS\u001b[39m\u001b[33m.\u001b[39mroleCard(page\u001b[33m,\u001b[39m \u001b[33mROLE_NAME\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 128 |\u001b[39m   \u001b[36mawait\u001b[39m expect(card\u001b[33m.\u001b[39mfirst()\u001b[33m,\u001b[39m \u001b[32m`role card \"${ROLE_NAME}\" should exist`\u001b[39m)\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m15\u001b[39m_000 })\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 129 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[33mSELECTORS\u001b[39m\u001b[33m.\u001b[39meditButton(card\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 130 |\u001b[39m   \u001b[36mawait\u001b[39m expect(\u001b[33mSELECTORS\u001b[39m\u001b[33m.\u001b[39mdialog(page))\u001b[33m.\u001b[39mtoBeVisible({ timeout\u001b[33m:\u001b[39m \u001b[35m10\u001b[39m_000 })\u001b[33m;\u001b[39m\n \u001b[90m 131 |\u001b[39m }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\permissions\\rbac-data-driven.spec.ts",
+                            "column": 71,
+                            "line": 128
+                          },
+                          "message": "Error: role card \"un\" should exist\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'un', exact: true, level: 5 }).locator('xpath=ancestor::*[.//button[contains(.,\"Edit\")]][1]').first()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - role card \"un\" should exist with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'un', exact: true, level: 5 }).locator('xpath=ancestor::*[.//button[contains(.,\"Edit\")]][1]').first()\u001b[22m\n\n\n  126 |   await page.waitForTimeout(1_200); // role cards re-render\n  127 |   const card = SELECTORS.roleCard(page, ROLE_NAME);\n> 128 |   await expect(card.first(), `role card \"${ROLE_NAME}\" should exist`).toBeVisible({ timeout: 15_000 });\n      |                                                                       ^\n  129 |   await SELECTORS.editButton(card.first()).click();\n  130 |   await expect(SELECTORS.dialog(page)).toBeVisible({ timeout: 10_000 });\n  131 | }\n    at openRoleEditor (D:\\wilyer-playwright\\cms-e2e\\tests\\permissions\\rbac-data-driven.spec.ts:128:71)\n    at setPermission (D:\\wilyer-playwright\\cms-e2e\\tests\\permissions\\rbac-data-driven.spec.ts:140:3)\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\permissions\\rbac-data-driven.spec.ts:258:7"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\permissions\\rbac-data-driven.spec.ts",
+                            "column": 71,
+                            "line": 128
+                          },
+                          "message": "Error: role card \"un\" should exist\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { name: 'un', exact: true, level: 5 }).locator('xpath=ancestor::*[.//button[contains(.,\"Edit\")]][1]').first()\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - role card \"un\" should exist with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'un', exact: true, level: 5 }).locator('xpath=ancestor::*[.//button[contains(.,\"Edit\")]][1]').first()\u001b[22m\n\n\n  126 |   await page.waitForTimeout(1_200); // role cards re-render\n  127 |   const card = SELECTORS.roleCard(page, ROLE_NAME);\n> 128 |   await expect(card.first(), `role card \"${ROLE_NAME}\" should exist`).toBeVisible({ timeout: 15_000 });\n      |                                                                       ^\n  129 |   await SELECTORS.editButton(card.first()).click();\n  130 |   await expect(SELECTORS.dialog(page)).toBeVisible({ timeout: 10_000 });\n  131 | }\n    at openRoleEditor (D:\\wilyer-playwright\\cms-e2e\\tests\\permissions\\rbac-data-driven.spec.ts:128:71)\n    at setPermission (D:\\wilyer-playwright\\cms-e2e\\tests\\permissions\\rbac-data-driven.spec.ts:140:3)\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\permissions\\rbac-data-driven.spec.ts:250:9"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:10:31.883Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\permissions-rbac-data-driv-057cd-er-is-fenced-out-of-reports-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\permissions-rbac-data-driv-057cd-er-is-fenced-out-of-reports-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\permissions-rbac-data-driv-057cd-er-is-fenced-out-of-reports-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\permissions-rbac-data-driv-057cd-er-is-fenced-out-of-reports-chromium\\test-failed-2.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\permissions-rbac-data-driv-057cd-er-is-fenced-out-of-reports-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\permissions\\rbac-data-driven.spec.ts",
+                        "column": 71,
+                        "line": 128
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "be83892eaeaa91f71c17-5e27e6b5118db192b6d2",
+              "file": "permissions/rbac-data-driven.spec.ts",
+              "line": 256,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "playlists\\playlists.spec.ts",
+      "file": "playlists/playlists.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Playlists",
+          "file": "playlists/playlists.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "search narrows the listing or yields an empty state @regression",
+              "ok": false,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 30596,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m50\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m50\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\playlists\\playlists.spec.ts:36:77",
+                        "location": {
+                          "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\playlists\\playlists.spec.ts",
+                          "column": 77,
+                          "line": 36
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m playlistsPage\u001b[33m.\u001b[39mexpectListLoaded()\u001b[33m;\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mawait\u001b[39m playlistsPage\u001b[33m.\u001b[39msearchPlaylists(\u001b[32m`zz-no-such-playlist-${Date.now()}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(() \u001b[33m=>\u001b[39m playlistsPage\u001b[33m.\u001b[39mcardCount()\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m15\u001b[39m_000 })\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m expectNoStuckLoader(page)\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\playlists\\playlists.spec.ts",
+                            "column": 77,
+                            "line": 36
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m50\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n\n  34 |     await playlistsPage.expectListLoaded();\n  35 |     await playlistsPage.searchPlaylists(`zz-no-such-playlist-${Date.now()}`);\n> 36 |     await expect.poll(() => playlistsPage.cardCount(), { timeout: 15_000 }).toBe(0);\n     |                                                                             ^\n  37 |     await expectNoStuckLoader(page);\n  38 |   });\n  39 |\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\playlists\\playlists.spec.ts:36:77"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:11:26.661Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\playlists-playlists-Playli-58d77-s-an-empty-state-regression-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "console-errors",
+                          "contentType": "text/plain",
+                          "body": "Tm8gY29uc29sZSBlcnJvcnMu"
+                        },
+                        {
+                          "name": "api-activity",
+                          "contentType": "text/plain",
+                          "body": "Tm8gZmFpbGVkIG9yIHNsb3cgQVBJIHJlcXVlc3RzLg=="
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\playlists-playlists-Playli-58d77-s-an-empty-state-regression-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\playlists-playlists-Playli-58d77-s-an-empty-state-regression-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\playlists\\playlists.spec.ts",
+                        "column": 77,
+                        "line": 36
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "3619060b6b81a3e9602d-539a62cb5a1512fb5f30",
+              "file": "playlists/playlists.spec.ts",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "listing loads within budget, clean console/API @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "perf-budget-exceeded",
+                      "description": "playlists listing: 8698ms (budget 4000ms)"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9309,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:11:58.294Z",
+                      "annotations": [
+                        {
+                          "type": "perf-budget-exceeded",
+                          "description": "playlists listing: 8698ms (budget 4000ms)"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3619060b6b81a3e9602d-acb16e8faa543e6831de",
+              "file": "playlists/playlists.spec.ts",
+              "line": 40,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "prayer-schedule\\prayer-media-picker.spec.ts",
+      "file": "prayer-schedule/prayer-media-picker.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Prayer Schedule — Choose Media picker",
+          "file": "prayer-schedule/prayer-media-picker.spec.ts",
+          "line": 69,
+          "column": 6,
+          "specs": [
+            {
+              "title": "search input is debounced @api @regression",
+              "ok": false,
+              "tags": [
+                "api",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 20142,
+                      "error": {
+                        "message": "Error: typing 5 characters issued 6 file/read requests — search is not debounced\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m2\u001b[39m\nReceived:    \u001b[31m6\u001b[39m",
+                        "stack": "Error: typing 5 characters issued 6 file/read requests — search is not debounced\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m2\u001b[39m\nReceived:    \u001b[31m6\u001b[39m\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\prayer-schedule\\prayer-media-picker.spec.ts:281:7",
+                        "location": {
+                          "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\prayer-schedule\\prayer-media-picker.spec.ts",
+                          "column": 7,
+                          "line": 281
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 279 |\u001b[39m       fired\u001b[33m,\u001b[39m\n \u001b[90m 280 |\u001b[39m       \u001b[32m`typing 5 characters issued ${fired} file/read requests — search is not debounced`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 281 |\u001b[39m     )\u001b[33m.\u001b[39mtoBeLessThanOrEqual(\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 282 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 283 |\u001b[39m\n \u001b[90m 284 |\u001b[39m   \u001b[90m// ── Assigning media (mutates the plan) ───────────────────────────────────\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\prayer-schedule\\prayer-media-picker.spec.ts",
+                            "column": 7,
+                            "line": 281
+                          },
+                          "message": "Error: typing 5 characters issued 6 file/read requests — search is not debounced\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m2\u001b[39m\nReceived:    \u001b[31m6\u001b[39m\n\n  279 |       fired,\n  280 |       `typing 5 characters issued ${fired} file/read requests — search is not debounced`,\n> 281 |     ).toBeLessThanOrEqual(2);\n      |       ^\n  282 |   });\n  283 |\n  284 |   // ── Assigning media (mutates the plan) ───────────────────────────────────\n    at D:\\wilyer-playwright\\cms-e2e\\tests\\prayer-schedule\\prayer-media-picker.spec.ts:281:7"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:12:07.783Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\prayer-schedule-prayer-med-1e347-is-debounced-api-regression-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\prayer-schedule-prayer-med-1e347-is-debounced-api-regression-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\wilyer-playwright\\cms-e2e\\test-results\\prayer-schedule-prayer-med-1e347-is-debounced-api-regression-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\wilyer-playwright\\cms-e2e\\tests\\prayer-schedule\\prayer-media-picker.spec.ts",
+                        "column": 7,
+                        "line": 281
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5af303fed5e680d0fa3b-1060a5c7e747bc8fbc13",
+              "file": "prayer-schedule/prayer-media-picker.spec.ts",
+              "line": 258,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "prayer-schedule\\prayer-schedule.spec.ts",
+      "file": "prayer-schedule/prayer-schedule.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Prayer Schedule",
+          "file": "prayer-schedule/prayer-schedule.spec.ts",
+          "line": 17,
+          "column": 6,
+          "specs": [
+            {
+              "title": "module loads within budget, clean console/API @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "perf",
+                      "description": "prayer-schedule load: 4908ms (budget 5000ms)"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5599,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:12:29.228Z",
+                      "annotations": [
+                        {
+                          "type": "perf",
+                          "description": "prayer-schedule load: 4908ms (budget 5000ms)"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "999d722f9508976b9d0c-34c60dc9cc9f513f6f2e",
+              "file": "prayer-schedule/prayer-schedule.spec.ts",
+              "line": 61,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "reports\\reports.spec.ts",
+      "file": "reports/reports.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Reports",
+          "file": "reports/reports.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "loads within budget, clean console/API @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "perf-budget-exceeded",
+                      "description": "reports load: 6643ms (budget 5000ms)"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8020,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:12:35.034Z",
+                      "annotations": [
+                        {
+                          "type": "perf-budget-exceeded",
+                          "description": "reports load: 6643ms (budget 5000ms)"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "506f72bfa6249a31c6e6-253ea1595a8fa331c208",
+              "file": "reports/reports.spec.ts",
+              "line": 27,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "screens\\screens.spec.ts",
+      "file": "screens/screens.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Screens",
+          "file": "screens/screens.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "search narrows the listing or yields an empty state @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12604,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:12:43.121Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2416736588d04f1cf3c6-ea6108c8537c2a58b139",
+              "file": "screens/screens.spec.ts",
+              "line": 28,
+              "column": 3
+            },
+            {
+              "title": "listing loads within budget, clean console/API @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "perf-budget-exceeded",
+                      "description": "screens listing: 25067ms (budget 4000ms)"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 25596,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:12:55.752Z",
+                      "annotations": [
+                        {
+                          "type": "perf-budget-exceeded",
+                          "description": "screens listing: 25067ms (budget 4000ms)"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2416736588d04f1cf3c6-41ef186069425b180488",
+              "file": "screens/screens.spec.ts",
+              "line": 39,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "team\\team.spec.ts",
+      "file": "team/team.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Team",
+          "file": "team/team.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "loads within budget, clean console/API @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "perf-budget-exceeded",
+                      "description": "team load: 6420ms (budget 5000ms)"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6922,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-24T10:13:21.406Z",
+                      "annotations": [
+                        {
+                          "type": "perf-budget-exceeded",
+                          "description": "team load: 6420ms (budget 5000ms)"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0104df29c736e609f61-1ae6787bf84b8b9077e7",
+              "file": "team/team.spec.ts",
+              "line": 42,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-07-24T10:07:01.403Z",
+    "duration": 387110.80199999997,
+    "expected": 10,
+    "skipped": 1,
+    "unexpected": 9,
+    "flaky": 0
+  }
+}

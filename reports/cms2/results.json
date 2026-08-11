@@ -1,0 +1,4395 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\wilyer-playwright\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--list",
+      "--project=chromium"
+    ],
+    "configFile": "D:\\wilyer-playwright\\playwright.config.ts",
+    "rootDir": "D:/wilyer-playwright/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "D:\\wilyer-playwright\\global-setup.ts",
+    "globalTeardown": "D:\\wilyer-playwright\\global-teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "environment": "cms2",
+      "label": "Pre-Production 2",
+      "baseURL": "https://cms2.pocsample.in",
+      "apiBaseURL": "https://v3-5api2.pocsample.in/v3/cms",
+      "apiConfidence": "verified",
+      "destructive": true,
+      "testDirs": "_core, cms2, cms3"
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/wilyer-playwright/reports/cms2/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "environment": "cms2",
+          "label": "Pre-Production 2",
+          "baseURL": "https://cms2.pocsample.in",
+          "apiBaseURL": "https://v3-5api2.pocsample.in/v3/cms",
+          "apiConfidence": "verified",
+          "destructive": true,
+          "testDirs": "_core, cms2, cms3"
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "D:/wilyer-playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/global\\.setup\\.ts/"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/reports/cms2/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "environment": "cms2",
+          "label": "Pre-Production 2",
+          "baseURL": "https://cms2.pocsample.in",
+          "apiBaseURL": "https://v3-5api2.pocsample.in/v3/cms",
+          "apiConfidence": "verified",
+          "destructive": true,
+          "testDirs": "_core, cms2, cms3"
+        },
+        "id": "api",
+        "name": "api",
+        "testDir": "D:/wilyer-playwright/tests",
+        "testIgnore": [
+          "/[\\\\/]tests[\\\\/]cms[\\\\/]/",
+          "/[\\\\/]tests[\\\\/]cms4[\\\\/]/",
+          "/[\\\\/]tests[\\\\/]live[\\\\/]/"
+        ],
+        "testMatch": [
+          "/[\\\\/]api[\\\\/].*\\.spec\\.ts$/"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/reports/cms2/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "environment": "cms2",
+          "label": "Pre-Production 2",
+          "baseURL": "https://cms2.pocsample.in",
+          "apiBaseURL": "https://v3-5api2.pocsample.in/v3/cms",
+          "apiConfidence": "verified",
+          "destructive": true,
+          "testDirs": "_core, cms2, cms3"
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/wilyer-playwright/tests",
+        "testIgnore": [
+          "/[\\\\/]api[\\\\/].*\\.spec\\.ts$/",
+          "/[\\\\/]tests[\\\\/]cms[\\\\/]/",
+          "/[\\\\/]tests[\\\\/]cms4[\\\\/]/",
+          "/[\\\\/]tests[\\\\/]live[\\\\/]/"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/reports/cms2/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "environment": "cms2",
+          "label": "Pre-Production 2",
+          "baseURL": "https://cms2.pocsample.in",
+          "apiBaseURL": "https://v3-5api2.pocsample.in/v3/cms",
+          "apiConfidence": "verified",
+          "destructive": true,
+          "testDirs": "_core, cms2, cms3"
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/wilyer-playwright/tests",
+        "testIgnore": [
+          "/[\\\\/]api[\\\\/].*\\.spec\\.ts$/",
+          "/[\\\\/]tests[\\\\/]cms[\\\\/]/",
+          "/[\\\\/]tests[\\\\/]cms4[\\\\/]/",
+          "/[\\\\/]tests[\\\\/]live[\\\\/]/"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/reports/cms2/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "environment": "cms2",
+          "label": "Pre-Production 2",
+          "baseURL": "https://cms2.pocsample.in",
+          "apiBaseURL": "https://v3-5api2.pocsample.in/v3/cms",
+          "apiConfidence": "verified",
+          "destructive": true,
+          "testDirs": "_core, cms2, cms3"
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/wilyer-playwright/tests",
+        "testIgnore": [
+          "/[\\\\/]api[\\\\/].*\\.spec\\.ts$/",
+          "/[\\\\/]tests[\\\\/]cms[\\\\/]/",
+          "/[\\\\/]tests[\\\\/]cms4[\\\\/]/",
+          "/[\\\\/]tests[\\\\/]live[\\\\/]/"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/reports/cms2/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "environment": "cms2",
+          "label": "Pre-Production 2",
+          "baseURL": "https://cms2.pocsample.in",
+          "apiBaseURL": "https://v3-5api2.pocsample.in/v3/cms",
+          "apiConfidence": "verified",
+          "destructive": true,
+          "testDirs": "_core, cms2, cms3"
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "D:/wilyer-playwright/tests",
+        "testIgnore": [
+          "/[\\\\/]api[\\\\/].*\\.spec\\.ts$/",
+          "/[\\\\/]tests[\\\\/]cms[\\\\/]/",
+          "/[\\\\/]tests[\\\\/]cms4[\\\\/]/",
+          "/[\\\\/]tests[\\\\/]live[\\\\/]/"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/wilyer-playwright/reports/cms2/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "environment": "cms2",
+          "label": "Pre-Production 2",
+          "baseURL": "https://cms2.pocsample.in",
+          "apiBaseURL": "https://v3-5api2.pocsample.in/v3/cms",
+          "apiConfidence": "verified",
+          "destructive": true,
+          "testDirs": "_core, cms2, cms3"
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "D:/wilyer-playwright/tests",
+        "testIgnore": [
+          "/[\\\\/]api[\\\\/].*\\.spec\\.ts$/",
+          "/[\\\\/]tests[\\\\/]cms[\\\\/]/",
+          "/[\\\\/]tests[\\\\/]cms4[\\\\/]/",
+          "/[\\\\/]tests[\\\\/]live[\\\\/]/"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/cms2/html",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/cms2/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "reports/cms2/junit.xml"
+        }
+      ],
+      [
+        "D:\\wilyer-playwright\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "resultsDir": "reports/cms2/allure-results",
+          "detail": true
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "global.setup.ts",
+      "file": "global.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authenticate as admin",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "e4eb4d1272d956fb120f-96466eaf1423edb2a5ba",
+          "file": "global.setup.ts",
+          "line": 12,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "_core\\auth\\functional\\auth.spec.ts",
+      "file": "_core/auth/functional/auth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication",
+          "file": "_core/auth/functional/auth.spec.ts",
+          "line": 19,
+          "column": 6,
+          "specs": [
+            {
+              "title": "valid login reaches the dashboard @smoke @sanity @regression",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "sanity",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68b4d5f1b058f272a0d4-9398877b2ea4b8406f1c",
+              "file": "_core/auth/functional/auth.spec.ts",
+              "line": 20,
+              "column": 3
+            },
+            {
+              "title": "invalid password does not authenticate @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68b4d5f1b058f272a0d4-d332910dd6312534b347",
+              "file": "_core/auth/functional/auth.spec.ts",
+              "line": 31,
+              "column": 3
+            },
+            {
+              "title": "empty credentials are rejected @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68b4d5f1b058f272a0d4-473010dfe52064fa7b11",
+              "file": "_core/auth/functional/auth.spec.ts",
+              "line": 41,
+              "column": 3
+            },
+            {
+              "title": "invalid email format is rejected @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68b4d5f1b058f272a0d4-45e90098b07be3cc8507",
+              "file": "_core/auth/functional/auth.spec.ts",
+              "line": 47,
+              "column": 3
+            },
+            {
+              "title": "password field is masked by default @sanity @regression",
+              "ok": true,
+              "tags": [
+                "sanity",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68b4d5f1b058f272a0d4-e63e5a2e5f8d13633fe8",
+              "file": "_core/auth/functional/auth.spec.ts",
+              "line": 53,
+              "column": 3
+            },
+            {
+              "title": "logout returns to the login screen @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68b4d5f1b058f272a0d4-65b691eb11f50e3976fb",
+              "file": "_core/auth/functional/auth.spec.ts",
+              "line": 59,
+              "column": 3
+            },
+            {
+              "title": "unauthorized route access redirects to login @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68b4d5f1b058f272a0d4-1c7ee0efa49db987ca3f",
+              "file": "_core/auth/functional/auth.spec.ts",
+              "line": 66,
+              "column": 3
+            },
+            {
+              "title": "session persists across a browser refresh @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68b4d5f1b058f272a0d4-b7d28ddd66fb5f9da7a5",
+              "file": "_core/auth/functional/auth.spec.ts",
+              "line": 71,
+              "column": 3
+            },
+            {
+              "title": "login screen is responsive on a mobile viewport @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68b4d5f1b058f272a0d4-8224703925d92d681894",
+              "file": "_core/auth/functional/auth.spec.ts",
+              "line": 79,
+              "column": 3
+            },
+            {
+              "title": "gracefully handles a login API failure @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68b4d5f1b058f272a0d4-f7c299420b3e6e97667c",
+              "file": "_core/auth/functional/auth.spec.ts",
+              "line": 89,
+              "column": 3
+            },
+            {
+              "title": "rejects SQL injection without authenticating @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68b4d5f1b058f272a0d4-1c3d65b8dc26c383484c",
+              "file": "_core/auth/functional/auth.spec.ts",
+              "line": 106,
+              "column": 5
+            },
+            {
+              "title": "rejects XSS payload without authenticating @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68b4d5f1b058f272a0d4-80aef60746ef2fb9feb1",
+              "file": "_core/auth/functional/auth.spec.ts",
+              "line": 106,
+              "column": 5
+            },
+            {
+              "title": "rejects oversized input without authenticating @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68b4d5f1b058f272a0d4-5c84a4ac0460ff03a7a5",
+              "file": "_core/auth/functional/auth.spec.ts",
+              "line": 106,
+              "column": 5
+            },
+            {
+              "title": "rejects special characters without authenticating @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68b4d5f1b058f272a0d4-e10c0588d5a958d8a2e9",
+              "file": "_core/auth/functional/auth.spec.ts",
+              "line": 106,
+              "column": 5
+            },
+            {
+              "title": "copy-pasted credentials authenticate the same as typed @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "68b4d5f1b058f272a0d4-7715e8aa5226abbd9576",
+              "file": "_core/auth/functional/auth.spec.ts",
+              "line": 115,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "_core\\billing\\functional\\billing.spec.ts",
+      "file": "_core/billing/functional/billing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Billing",
+          "file": "_core/billing/functional/billing.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "billing page loads with plans or an empty state @smoke @sanity @regression",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "sanity",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "5a5c2bfc2d29b7185a95-a32731415ace7e91b6a2",
+              "file": "_core/billing/functional/billing.spec.ts",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "My Plans / Buy Plan / My Purchases tabs are present @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "5a5c2bfc2d29b7185a95-42f5e2720ba81da97ff3",
+              "file": "_core/billing/functional/billing.spec.ts",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "switching to Buy Plan works @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "5a5c2bfc2d29b7185a95-dd3b2bc6e7074b2e0aff",
+              "file": "_core/billing/functional/billing.spec.ts",
+              "line": 38,
+              "column": 3
+            },
+            {
+              "title": "loads within budget, clean console/API @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "5a5c2bfc2d29b7185a95-825da4a84f9d9aa9b001",
+              "file": "_core/billing/functional/billing.spec.ts",
+              "line": 43,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "_core\\dashboard\\functional\\dashboard.spec.ts",
+      "file": "_core/dashboard/functional/dashboard.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Dashboard",
+          "file": "_core/dashboard/functional/dashboard.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "loads with stat cards and quick actions @smoke @sanity @regression",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "sanity",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "92da1fe839775facc27a-09957e337f692f75af84",
+              "file": "_core/dashboard/functional/dashboard.spec.ts",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "stat cards render numeric values @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "92da1fe839775facc27a-54a62212fd03857a5e92",
+              "file": "_core/dashboard/functional/dashboard.spec.ts",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "recent screens table and map render @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "92da1fe839775facc27a-bd338714b4bce31a4f09",
+              "file": "_core/dashboard/functional/dashboard.spec.ts",
+              "line": 31,
+              "column": 3
+            },
+            {
+              "title": "quick-action \"Add Media\" navigates to the library upload flow @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "92da1fe839775facc27a-41026bcad5dfa5540414",
+              "file": "_core/dashboard/functional/dashboard.spec.ts",
+              "line": 38,
+              "column": 3
+            },
+            {
+              "title": "\"Total Screens\" card links into the screens list @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "92da1fe839775facc27a-f9b9eacdc17171c71987",
+              "file": "_core/dashboard/functional/dashboard.spec.ts",
+              "line": 47,
+              "column": 3
+            },
+            {
+              "title": "loads under the page-load budget @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "92da1fe839775facc27a-c987226e4bdfc3a7fa72",
+              "file": "_core/dashboard/functional/dashboard.spec.ts",
+              "line": 60,
+              "column": 3
+            },
+            {
+              "title": "no broken images, no stuck loader @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "92da1fe839775facc27a-67961d9344756c78ce0d",
+              "file": "_core/dashboard/functional/dashboard.spec.ts",
+              "line": 67,
+              "column": 3
+            },
+            {
+              "title": "no console errors or failed APIs on load @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "92da1fe839775facc27a-e9c4aae1245401112e52",
+              "file": "_core/dashboard/functional/dashboard.spec.ts",
+              "line": 74,
+              "column": 3
+            },
+            {
+              "title": "navigation timing + heap are within sane bounds @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "92da1fe839775facc27a-c93123901fb25e529e33",
+              "file": "_core/dashboard/functional/dashboard.spec.ts",
+              "line": 84,
+              "column": 3
+            },
+            {
+              "title": "survives a slow analytics API response @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "92da1fe839775facc27a-8ce97960c279fa235a05",
+              "file": "_core/dashboard/functional/dashboard.spec.ts",
+              "line": 97,
+              "column": 3
+            },
+            {
+              "title": "remains usable after a viewport resize @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "92da1fe839775facc27a-ce86222e3ff2bf391311",
+              "file": "_core/dashboard/functional/dashboard.spec.ts",
+              "line": 106,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "_core\\groups\\functional\\groups.spec.ts",
+      "file": "_core/groups/functional/groups.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Groups",
+          "file": "_core/groups/functional/groups.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "listing loads with group rows or an empty state @smoke @sanity @regression",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "sanity",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b6466103eac523bf1d12-e9006f431932caf1ba95",
+              "file": "_core/groups/functional/groups.spec.ts",
+              "line": 12,
+              "column": 3
+            },
+            {
+              "title": "\"New Group\" opens the create modal @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b6466103eac523bf1d12-44ac9bfb99498196ac1b",
+              "file": "_core/groups/functional/groups.spec.ts",
+              "line": 19,
+              "column": 3
+            },
+            {
+              "title": "search narrows the listing or yields an empty state @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b6466103eac523bf1d12-b9120dfa923ef37ccaa9",
+              "file": "_core/groups/functional/groups.spec.ts",
+              "line": 24,
+              "column": 3
+            },
+            {
+              "title": "listing loads within budget, clean console/API @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b6466103eac523bf1d12-493f57f631fc790b498e",
+              "file": "_core/groups/functional/groups.spec.ts",
+              "line": 35,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "_core\\library\\functional\\library.spec.ts",
+      "file": "_core/library/functional/library.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Library",
+          "file": "_core/library/functional/library.spec.ts",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "grid loads with media or an empty state @smoke @sanity @regression",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "sanity",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8a11eb3149bb3086b560-c11716c9e665d5672cfb",
+              "file": "_core/library/functional/library.spec.ts",
+              "line": 19,
+              "column": 3
+            },
+            {
+              "title": "tabs are present (Media / Widgets / Publish History / Media Sets) @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8a11eb3149bb3086b560-b2d38fd1e02244f2e7a1",
+              "file": "_core/library/functional/library.spec.ts",
+              "line": 26,
+              "column": 3
+            },
+            {
+              "title": "type filters narrow the grid @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8a11eb3149bb3086b560-0c5be9f82a9215039db0",
+              "file": "_core/library/functional/library.spec.ts",
+              "line": 39,
+              "column": 3
+            },
+            {
+              "title": "search returns a relevant set or an empty state @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8a11eb3149bb3086b560-ddf22245b2f39d2de466",
+              "file": "_core/library/functional/library.spec.ts",
+              "line": 48,
+              "column": 3
+            },
+            {
+              "title": "search for an improbable term yields an empty state @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8a11eb3149bb3086b560-866858ca75d358d0a95c",
+              "file": "_core/library/functional/library.spec.ts",
+              "line": 54,
+              "column": 3
+            },
+            {
+              "title": "pagination \"Load More\" grows the grid when available @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8a11eb3149bb3086b560-46d068993a98b4a05f27",
+              "file": "_core/library/functional/library.spec.ts",
+              "line": 67,
+              "column": 3
+            },
+            {
+              "title": "opening a media card navigates to its detail page @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8a11eb3149bb3086b560-ad1e01c85e5968862d4e",
+              "file": "_core/library/functional/library.spec.ts",
+              "line": 79,
+              "column": 3
+            },
+            {
+              "title": "listing loads under the listing budget @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8a11eb3149bb3086b560-c5e2d80b32573f440f63",
+              "file": "_core/library/functional/library.spec.ts",
+              "line": 90,
+              "column": 3
+            },
+            {
+              "title": "no stuck loader, no broken thumbnails, clean console/API @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8a11eb3149bb3086b560-7cf1698077af2d64ce55",
+              "file": "_core/library/functional/library.spec.ts",
+              "line": 97,
+              "column": 3
+            },
+            {
+              "title": "rapid filter switching does not break the grid @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8a11eb3149bb3086b560-c2ba136dd56cbeaa94af",
+              "file": "_core/library/functional/library.spec.ts",
+              "line": 111,
+              "column": 3
+            },
+            {
+              "title": "uploads a valid image and shows a new card @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8a11eb3149bb3086b560-82d59a94a983aae64804",
+              "file": "_core/library/functional/library.spec.ts",
+              "line": 120,
+              "column": 3
+            },
+            {
+              "title": "rejects an unsupported file format @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8a11eb3149bb3086b560-a96c965dc95dd0a0f4a6",
+              "file": "_core/library/functional/library.spec.ts",
+              "line": 138,
+              "column": 3
+            },
+            {
+              "title": "placeholder: drag-and-drop upload — needs DataTransfer harness",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\library\\functional\\library.spec.ts",
+                        "line": 153,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8a11eb3149bb3086b560-3069d893599d9d3590c4",
+              "file": "_core/library/functional/library.spec.ts",
+              "line": 153,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "_core\\platform\\a11y\\accessibility.spec.ts",
+      "file": "_core/platform/a11y/accessibility.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Accessibility",
+          "file": "_core/platform/a11y/accessibility.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "dashboard has no serious/critical a11y violations @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "440be4ed39ac3279a74c-5534e289b45934e1ce05",
+              "file": "_core/platform/a11y/accessibility.spec.ts",
+              "line": 11,
+              "column": 3
+            },
+            {
+              "title": "library has no serious/critical a11y violations @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "440be4ed39ac3279a74c-3237532b3054855ed272",
+              "file": "_core/platform/a11y/accessibility.spec.ts",
+              "line": 20,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "_core\\platform\\performance\\lighthouse-audit.spec.ts",
+      "file": "_core/platform/performance/lighthouse-audit.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Lighthouse",
+          "file": "_core/platform/performance/lighthouse-audit.spec.ts",
+          "line": 16,
+          "column": 6,
+          "specs": [
+            {
+              "title": "login page meets Lighthouse thresholds @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8d3b81d773c55205a0cb-6da3cfcd61279cd1f4c6",
+              "file": "_core/platform/performance/lighthouse-audit.spec.ts",
+              "line": 20,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "_core\\playlists\\boundary\\playlist-duration.spec.ts",
+      "file": "_core/playlists/boundary/playlist-duration.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Playlist — layout time duration @regression",
+          "file": "_core/playlists/boundary/playlist-duration.spec.ts",
+          "line": 30,
+          "column": 6,
+          "specs": [
+            {
+              "title": "image slides default to 10s and the layout rollup sums the slides",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7b1137eec6f451d3165-f350ae7a5613522e37bd",
+              "file": "_core/playlists/boundary/playlist-duration.spec.ts",
+              "line": 61,
+              "column": 3
+            },
+            {
+              "title": "stepper adjusts the duration by 1 and floors at 1 (never 0/negative)",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7b1137eec6f451d3165-2b5e6c305423e95bea7b",
+              "file": "_core/playlists/boundary/playlist-duration.spec.ts",
+              "line": 75,
+              "column": 3
+            },
+            {
+              "title": "set a valid duration, save, reload → the duration persists (update)",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7b1137eec6f451d3165-8d0da819cff936ddc9ed",
+              "file": "_core/playlists/boundary/playlist-duration.spec.ts",
+              "line": 91,
+              "column": 3
+            },
+            {
+              "title": "duration 0 must not persist as a zero-length slide",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7b1137eec6f451d3165-aaa5c7b4ae590a1d06f6",
+              "file": "_core/playlists/boundary/playlist-duration.spec.ts",
+              "line": 121,
+              "column": 3
+            },
+            {
+              "title": "a negative duration must not persist",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7b1137eec6f451d3165-caae374d4606f32cf3ec",
+              "file": "_core/playlists/boundary/playlist-duration.spec.ts",
+              "line": 139,
+              "column": 3
+            },
+            {
+              "title": "an empty duration must not drop the media / persist as blank",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7b1137eec6f451d3165-d6edc0382b1e3332ffe3",
+              "file": "_core/playlists/boundary/playlist-duration.spec.ts",
+              "line": 158,
+              "column": 3
+            },
+            {
+              "title": "decimals are coerced to a whole number of seconds",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7b1137eec6f451d3165-5066629514b5f16350a8",
+              "file": "_core/playlists/boundary/playlist-duration.spec.ts",
+              "line": 177,
+              "column": 3
+            },
+            {
+              "title": "an absurdly large duration is bounded or, if saved, round-trips exactly",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b7b1137eec6f451d3165-f7184ab104042039195b",
+              "file": "_core/playlists/boundary/playlist-duration.spec.ts",
+              "line": 186,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "_core\\playlists\\functional\\playlists.spec.ts",
+      "file": "_core/playlists/functional/playlists.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Playlists",
+          "file": "_core/playlists/functional/playlists.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "listing loads with playlist cards or an empty state @smoke @sanity @regression",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "sanity",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3fef2fb03f32380ae69d-c86096a8dbba46fe2866",
+              "file": "_core/playlists/functional/playlists.spec.ts",
+              "line": 11,
+              "column": 3
+            },
+            {
+              "title": "folder panel and toolbar actions are present @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3fef2fb03f32380ae69d-03fd4eaf817a35c8ffa9",
+              "file": "_core/playlists/functional/playlists.spec.ts",
+              "line": 18,
+              "column": 3
+            },
+            {
+              "title": "\"New Playlist\" opens the create modal @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3fef2fb03f32380ae69d-c68a9132519c0bae5e96",
+              "file": "_core/playlists/functional/playlists.spec.ts",
+              "line": 24,
+              "column": 3
+            },
+            {
+              "title": "search narrows the listing or yields an empty state @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3fef2fb03f32380ae69d-24a39294b2b481b38d8f",
+              "file": "_core/playlists/functional/playlists.spec.ts",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "listing loads within budget, clean console/API @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3fef2fb03f32380ae69d-6a1b87d2045eea744698",
+              "file": "_core/playlists/functional/playlists.spec.ts",
+              "line": 40,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "_core\\playlists\\negative\\playlist-not-found.spec.ts",
+      "file": "_core/playlists/negative/playlist-not-found.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Playlists — missing playlist (negative path) @regression",
+          "file": "_core/playlists/negative/playlist-not-found.spec.ts",
+          "line": 22,
+          "column": 6,
+          "specs": [
+            {
+              "title": "opening a deleted playlist does not throw an uncaught exception",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ccfbece5658972d642c9-29e8f8ada520bbf80624",
+              "file": "_core/playlists/negative/playlist-not-found.spec.ts",
+              "line": 26,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "_core\\rbac\\functional\\permissions.spec.ts",
+      "file": "_core/rbac/functional/permissions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Role user — Positive (entitled features)",
+          "file": "_core/rbac/functional/permissions.spec.ts",
+          "line": 83,
+          "column": 6,
+          "specs": [
+            {
+              "title": "dashboard loads and an entitled action is visible & enabled",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "No restricted-role account configured — set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD in your .env.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\rbac\\functional\\permissions.spec.ts",
+                        "line": 32,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a53a6bf4548c203988ce-4e3dd3e99a68a8677747",
+              "file": "_core/rbac/functional/permissions.spec.ts",
+              "line": 84,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Role user — Negative (direct URL access is fenced)",
+          "file": "_core/rbac/functional/permissions.spec.ts",
+          "line": 108,
+          "column": 6,
+          "specs": [
+            {
+              "title": "navigating to /team is blocked or shows an access error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "No restricted-role account configured — set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD in your .env.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\rbac\\functional\\permissions.spec.ts",
+                        "line": 32,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a53a6bf4548c203988ce-62e98f022205ec30a41e",
+              "file": "_core/rbac/functional/permissions.spec.ts",
+              "line": 110,
+              "column": 5
+            },
+            {
+              "title": "navigating to /billing is blocked or shows an access error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "No restricted-role account configured — set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD in your .env.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\rbac\\functional\\permissions.spec.ts",
+                        "line": 32,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a53a6bf4548c203988ce-ba839cc8c695a2c8d750",
+              "file": "_core/rbac/functional/permissions.spec.ts",
+              "line": 110,
+              "column": 5
+            },
+            {
+              "title": "navigating to /admin is blocked or shows an access error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "No restricted-role account configured — set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD in your .env.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\rbac\\functional\\permissions.spec.ts",
+                        "line": 32,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a53a6bf4548c203988ce-baf8b396ceafa8ecb88a",
+              "file": "_core/rbac/functional/permissions.spec.ts",
+              "line": 110,
+              "column": 5
+            },
+            {
+              "title": "navigating to /management is blocked or shows an access error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "No restricted-role account configured — set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD in your .env.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\rbac\\functional\\permissions.spec.ts",
+                        "line": 32,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a53a6bf4548c203988ce-6516a0762c2048231a5f",
+              "file": "_core/rbac/functional/permissions.spec.ts",
+              "line": 110,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "Role user — Hidden elements (admin actions are not actionable)",
+          "file": "_core/rbac/functional/permissions.spec.ts",
+          "line": 124,
+          "column": 6,
+          "specs": [
+            {
+              "title": "admin-only action controls are hidden or disabled on the dashboard",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "No restricted-role account configured — set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD in your .env.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\rbac\\functional\\permissions.spec.ts",
+                        "line": 32,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a53a6bf4548c203988ce-3dff017e7b5c0b466faa",
+              "file": "_core/rbac/functional/permissions.spec.ts",
+              "line": 125,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Role user — API 403 handling (graceful, not a crash)",
+          "file": "_core/rbac/functional/permissions.spec.ts",
+          "line": 144,
+          "column": 6,
+          "specs": [
+            {
+              "title": "a forced 403 on a restricted endpoint shows access-denied, not a crash",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "No restricted-role account configured — set CMS_RESTRICTED_EMAIL / CMS_RESTRICTED_PASSWORD in your .env.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\rbac\\functional\\permissions.spec.ts",
+                        "line": 32,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a53a6bf4548c203988ce-f5769197084957f4c741",
+              "file": "_core/rbac/functional/permissions.spec.ts",
+              "line": 145,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "_core\\rbac\\functional\\rbac-data-driven.spec.ts",
+      "file": "_core/rbac/functional/rbac-data-driven.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "RBAC · Reports",
+          "file": "_core/rbac/functional/rbac-data-driven.spec.ts",
+          "line": 205,
+          "column": 8,
+          "specs": [
+            {
+              "title": "REVOKED → sub-user is fenced out of /reports",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "feda434c9a6f60d98701-443ddd9fc08b86346e34",
+              "file": "_core/rbac/functional/rbac-data-driven.spec.ts",
+              "line": 217,
+              "column": 5
+            },
+            {
+              "title": "GRANTED → sub-user can reach /reports",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "feda434c9a6f60d98701-b2c6c5759366447d8ed7",
+              "file": "_core/rbac/functional/rbac-data-driven.spec.ts",
+              "line": 223,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "RBAC · Cluster Management",
+          "file": "_core/rbac/functional/rbac-data-driven.spec.ts",
+          "line": 205,
+          "column": 8,
+          "specs": [
+            {
+              "title": "REVOKED → sub-user is fenced out of /clusters",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "feda434c9a6f60d98701-be93c96d3312a1f7331d",
+              "file": "_core/rbac/functional/rbac-data-driven.spec.ts",
+              "line": 217,
+              "column": 5
+            },
+            {
+              "title": "GRANTED → sub-user can reach /clusters",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "feda434c9a6f60d98701-56f93fa3257d49493b3c",
+              "file": "_core/rbac/functional/rbac-data-driven.spec.ts",
+              "line": 223,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "RBAC · Team Administration",
+          "file": "_core/rbac/functional/rbac-data-driven.spec.ts",
+          "line": 205,
+          "column": 8,
+          "specs": [
+            {
+              "title": "REVOKED → sub-user is fenced out of /team",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "feda434c9a6f60d98701-460440e87117d8857670",
+              "file": "_core/rbac/functional/rbac-data-driven.spec.ts",
+              "line": 217,
+              "column": 5
+            },
+            {
+              "title": "GRANTED → sub-user can reach /team",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "feda434c9a6f60d98701-fb4547a3a4bece11b769",
+              "file": "_core/rbac/functional/rbac-data-driven.spec.ts",
+              "line": 223,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "RBAC · disabled-vs-hidden action controls",
+          "file": "_core/rbac/functional/rbac-data-driven.spec.ts",
+          "line": 237,
+          "column": 6,
+          "specs": [
+            {
+              "title": "admin-only write actions are hidden or disabled for the sub-user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "feda434c9a6f60d98701-5541f52463e8e7bef989",
+              "file": "_core/rbac/functional/rbac-data-driven.spec.ts",
+              "line": 238,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "_core\\reports\\functional\\reports.spec.ts",
+      "file": "_core/reports/functional/reports.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Reports",
+          "file": "_core/reports/functional/reports.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "analytics view loads with tabs @smoke @sanity @regression",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "sanity",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "0f1d91bddc955cc8003d-ebb9d57902985c837f21",
+              "file": "_core/reports/functional/reports.spec.ts",
+              "line": 12,
+              "column": 3
+            },
+            {
+              "title": "switching to Previous Reports works @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "0f1d91bddc955cc8003d-04073144740883758446",
+              "file": "_core/reports/functional/reports.spec.ts",
+              "line": 17,
+              "column": 3
+            },
+            {
+              "title": "export actions (PDF/CSV) are available @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "0f1d91bddc955cc8003d-2b0feff465f6c7fd33b9",
+              "file": "_core/reports/functional/reports.spec.ts",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "loads within budget, clean console/API @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "0f1d91bddc955cc8003d-2a6e7fb1fb5b46783365",
+              "file": "_core/reports/functional/reports.spec.ts",
+              "line": 27,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "_core\\screens\\boundary\\location-settings.spec.ts",
+      "file": "_core/screens/boundary/location-settings.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Screen Configuration → Location Settings (data-driven)",
+          "file": "_core/screens/boundary/location-settings.spec.ts",
+          "line": 36,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC_LOC_001 autocomplete fills address fields and re-centres map",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-4765e8e4f7c2a82729b4",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 44,
+              "column": 3
+            },
+            {
+              "title": "TC_LOC_003 manual coordinates move the map marker",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-d77536bf51cefd61413f",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 59,
+              "column": 3
+            },
+            {
+              "title": "TC_LOC_005 latitude=\"90.0000\" (upper valid edge — should be accepted)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-55d7eca17bd8ef1dd9f5",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 72,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_005 latitude=\"-90.0000\" (lower valid edge — should be accepted)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-e9da0e255e07734c7bcc",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 72,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_005 latitude=\"90.00000001\" (just above 90 — must be rejected)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-3b5b6bf0734a188b8951",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 72,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_005 latitude=\"-91\" (below -90 — must be rejected)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-b711523523d24b569c83",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 72,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_005 latitude=\"abc\" (non-numeric — must be rejected)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-e5906de69d0a271e4866",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 72,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_006 longitude=\"180.0000\" (upper valid edge — should be accepted)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-6f140a450d470f11ba62",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 72,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_006 longitude=\"-180.0000\" (lower valid edge — should be accepted)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-3bf1d6c23d4b459c741b",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 72,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_006 longitude=\"181.0000\" (above 180 — must be rejected)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-4164c465d52ee9a78fc7",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 72,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_006 longitude=\"-181\" (below -180 — must be rejected)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-393589a864c0d9c034f8",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 72,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_006 longitude=\"xyz\" (non-numeric — must be rejected)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-5a8848bb6d4536b6a506",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 72,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_007 pincode rejects \"ABC@#$xyz\" (letters + symbols in postal code)",
+              "ok": true,
+              "tags": [
+                "#$xyz\""
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-3c5d4ec43de45bcac8e1",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 87,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_007 pincode rejects \"12\" (too short for an Indian PIN (6 digits))",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-f253de36cf32d9d3e997",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 87,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_007 pincode rejects \"999999999999\" (too long)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-5ed74225b55ab1139059",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 87,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_007 pincode rejects \"122003 hh\" (trailing letters (mirrors live corrupted data))",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-50ecbaf8df9d38fe5fd2",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 87,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_008 caps locality at 255 chars",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-aeac07bd8ccd945dd24a",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 97,
+              "column": 3
+            },
+            {
+              "title": "TC_LOC_009 city handles payload safely (stored-XSS attempt)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-d955c9d88ff122fb242f",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 107,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_009 city handles payload safely (SQL injection attempt)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-4c269843581e407e36f2",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 107,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_009 locality handles payload safely (HTML-injection attempt)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-7dc5e974aefff2cacdf0",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 107,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_016 layout has no horizontal overflow @ tablet-portrait",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-e319cf00a052bbe648f2",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 117,
+              "column": 5
+            },
+            {
+              "title": "TC_LOC_016 layout has no horizontal overflow @ tablet-landscape",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set CMS_SCREEN_ID=<screen id> to run Location Settings tests.",
+                      "location": {
+                        "file": "D:\\wilyer-playwright\\tests\\_core\\screens\\boundary\\location-settings.spec.ts",
+                        "line": 37,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "871d9e23b1682fa890f2-e19226d2d7b87a0b107c",
+              "file": "_core/screens/boundary/location-settings.spec.ts",
+              "line": 117,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "_core\\screens\\functional\\screens.spec.ts",
+      "file": "_core/screens/functional/screens.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Screens",
+          "file": "_core/screens/functional/screens.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "listing loads with screen rows or an empty state @smoke @sanity @regression",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "sanity",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2a1e818bc27cedc73e3f-b538c3fa1a973464a8e8",
+              "file": "_core/screens/functional/screens.spec.ts",
+              "line": 14,
+              "column": 3
+            },
+            {
+              "title": "All / Deleted / Expired tabs are present @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2a1e818bc27cedc73e3f-1a173d1edc774568e1fb",
+              "file": "_core/screens/functional/screens.spec.ts",
+              "line": 21,
+              "column": 3
+            },
+            {
+              "title": "search narrows the listing or yields an empty state @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2a1e818bc27cedc73e3f-d50e4b5529f75eb03b4f",
+              "file": "_core/screens/functional/screens.spec.ts",
+              "line": 28,
+              "column": 3
+            },
+            {
+              "title": "listing loads within budget, clean console/API @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2a1e818bc27cedc73e3f-81f2703ceaa07b01e901",
+              "file": "_core/screens/functional/screens.spec.ts",
+              "line": 39,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "_core\\team\\functional\\team.spec.ts",
+      "file": "_core/team/functional/team.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Team",
+          "file": "_core/team/functional/team.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "members table loads with rows or an empty state @smoke @sanity @regression",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "sanity",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de1a993d6bb2413bfc66-b5bda64fe354d41122dc",
+              "file": "_core/team/functional/team.spec.ts",
+              "line": 12,
+              "column": 3
+            },
+            {
+              "title": "Members / Roles / Logs tabs are present @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de1a993d6bb2413bfc66-8be1c1d03a9431e17e08",
+              "file": "_core/team/functional/team.spec.ts",
+              "line": 19,
+              "column": 3
+            },
+            {
+              "title": "switching to Roles works @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de1a993d6bb2413bfc66-8e828c9efffb0f7e4097",
+              "file": "_core/team/functional/team.spec.ts",
+              "line": 26,
+              "column": 3
+            },
+            {
+              "title": "search narrows the members table or yields an empty state @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de1a993d6bb2413bfc66-504a8a1fc35b7033fb63",
+              "file": "_core/team/functional/team.spec.ts",
+              "line": 31,
+              "column": 3
+            },
+            {
+              "title": "loads within budget, clean console/API @regression",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de1a993d6bb2413bfc66-5378c6606386caeb1c17",
+              "file": "_core/team/functional/team.spec.ts",
+              "line": 42,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cms2\\campaigns\\crud\\campaign-crud.spec.ts",
+      "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Campaigns · CRUD",
+          "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+          "line": 34,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CMP-001 · create a campaign through the picker @smoke @critical @ui",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "critical",
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "06eb58ce07e5505e7d54-8412e2768071461f1f31",
+              "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+              "line": 54,
+              "column": 3
+            },
+            {
+              "title": "CMP-012 · a seeded campaign is listed and readable @sanity @ui",
+              "ok": true,
+              "tags": [
+                "sanity",
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "06eb58ce07e5505e7d54-1448dbab085a986a98fb",
+              "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+              "line": 76,
+              "column": 3
+            },
+            {
+              "title": "CMP-021 · rename a campaign through the picker @sanity @critical @ui",
+              "ok": true,
+              "tags": [
+                "sanity",
+                "critical",
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "06eb58ce07e5505e7d54-1a75a189bdac0d39ba73",
+              "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+              "line": 97,
+              "column": 3
+            },
+            {
+              "title": "CMP-026 · delete a campaign through the picker @smoke @critical @ui @destructive",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "critical",
+                "ui",
+                "destructive"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "06eb58ce07e5505e7d54-b69276ced96d28a48f49",
+              "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+              "line": 118,
+              "column": 3
+            },
+            {
+              "title": "CMP-027 · cancelling the delete dialog keeps the campaign @sanity @ui",
+              "ok": true,
+              "tags": [
+                "sanity",
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "06eb58ce07e5505e7d54-d0d50fd1f6b8b7de387f",
+              "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+              "line": 140,
+              "column": 3
+            },
+            {
+              "title": "CMP-002 · API create → read → update → delete round trip @api @critical",
+              "ok": true,
+              "tags": [
+                "api",
+                "critical"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "06eb58ce07e5505e7d54-695d328c8fb108504520",
+              "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+              "line": 159,
+              "column": 3
+            },
+            {
+              "title": "CMP-009 · blank name is rejected @api @regression",
+              "ok": true,
+              "tags": [
+                "api",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "06eb58ce07e5505e7d54-b629eac87f16769bd4bc",
+              "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+              "line": 185,
+              "column": 3
+            },
+            {
+              "title": "CMP-015 · an exact duplicate name is rejected @api @regression",
+              "ok": true,
+              "tags": [
+                "api",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "06eb58ce07e5505e7d54-22b7c703ed03c7bbea2b",
+              "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+              "line": 196,
+              "column": 3
+            },
+            {
+              "title": "CMP-018 · a script tag in the name renders as inert text @ui @security",
+              "ok": true,
+              "tags": [
+                "ui",
+                "security"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "06eb58ce07e5505e7d54-a34ad34a99473ab5f5f2",
+              "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+              "line": 212,
+              "column": 3
+            },
+            {
+              "title": "CMP-005 · zero media is blocked in the UI before any request fires @ui @regression",
+              "ok": true,
+              "tags": [
+                "ui",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "06eb58ce07e5505e7d54-82ab1e9f533f43e6959c",
+              "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+              "line": 230,
+              "column": 3
+            },
+            {
+              "title": "CMP-016 · name uniqueness is case-insensitive @api @regression",
+              "ok": true,
+              "tags": [
+                "api",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "06eb58ce07e5505e7d54-34c52b6d4d1a2b207ec4",
+              "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+              "line": 377,
+              "column": 3
+            },
+            {
+              "title": "API-006 · omitting sort/order does not error @api @regression",
+              "ok": true,
+              "tags": [
+                "api",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "06eb58ce07e5505e7d54-52a55cabc9af96e9f0ed",
+              "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+              "line": 393,
+              "column": 3
+            },
+            {
+              "title": "SEC-006 · search metacharacters are treated as literal text @api @security @regression",
+              "ok": true,
+              "tags": [
+                "api",
+                "security",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "06eb58ce07e5505e7d54-7944f89f7b30898550a4",
+              "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+              "line": 399,
+              "column": 3
+            },
+            {
+              "title": "CMP-030 · the duration rollup is the numeric sum of its items @api @regression",
+              "ok": true,
+              "tags": [
+                "api",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "06eb58ce07e5505e7d54-b4c41fd470437e10c16a",
+              "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+              "line": 425,
+              "column": 3
+            }
+          ],
+          "suites": [
+            {
+              "title": "known defects",
+              "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+              "line": 256,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "CMP-003 · BUG-CMP-01 · the API must reject a zero-item campaign @api @p1",
+                  "ok": true,
+                  "tags": [
+                    "api",
+                    "p1"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "06eb58ce07e5505e7d54-60554407b67a355ed53c",
+                  "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+                  "line": 257,
+                  "column": 5
+                },
+                {
+                  "title": "CMP-010 · BUG-CMP-09 · a whitespace-only name must be rejected @api @p2",
+                  "ok": true,
+                  "tags": [
+                    "api",
+                    "p2"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "06eb58ce07e5505e7d54-ec82fae69e4e43326d91",
+                  "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+                  "line": 269,
+                  "column": 5
+                },
+                {
+                  "title": "CMP-008 · BUG-CMP-08 · name must be capped at 255 characters @api @p2",
+                  "ok": true,
+                  "tags": [
+                    "api",
+                    "p2"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "06eb58ce07e5505e7d54-aca3183352753ef080f4",
+                  "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+                  "line": 293,
+                  "column": 5
+                },
+                {
+                  "title": "CMP-034 · BUG-CMP-04 · item duration must be at least 1 second @api @p1",
+                  "ok": true,
+                  "tags": [
+                    "api",
+                    "p1"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "06eb58ce07e5505e7d54-c373595eaee4741be166",
+                  "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+                  "line": 306,
+                  "column": 5
+                },
+                {
+                  "title": "CMP-EDGE-011 · BUG-CMP-04 · the item duration input must carry min=1 @ui @p2",
+                  "ok": true,
+                  "tags": [
+                    "ui",
+                    "p2"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "06eb58ce07e5505e7d54-92e2b345ebf2113fb892",
+                  "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+                  "line": 319,
+                  "column": 5
+                },
+                {
+                  "title": "BUG-CMP-10 · an invalid folderId must be rejected, not coerced to null @api @p3",
+                  "ok": true,
+                  "tags": [
+                    "api",
+                    "p3"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "06eb58ce07e5505e7d54-ad6cbe418a8e75736ab1",
+                  "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+                  "line": 339,
+                  "column": 5
+                },
+                {
+                  "title": "API-023 · BUG-CMP-12 · deleting a missing campaign should be 404 @api @p3",
+                  "ok": true,
+                  "tags": [
+                    "api",
+                    "p3"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "06eb58ce07e5505e7d54-c375313b571ddecf552f",
+                  "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+                  "line": 353,
+                  "column": 5
+                },
+                {
+                  "title": "BUG-CMP-11 · search must trim the query @api @p3",
+                  "ok": true,
+                  "tags": [
+                    "api",
+                    "p3"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "06eb58ce07e5505e7d54-9e6f31bd2c9a2423712c",
+                  "file": "cms2/campaigns/crud/campaign-crud.spec.ts",
+                  "line": 362,
+                  "column": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cms2\\campaigns\\perf\\campaign-performance.spec.ts",
+      "file": "cms2/campaigns/perf/campaign-performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Campaigns · API performance @perf @api",
+          "file": "cms2/campaigns/perf/campaign-performance.spec.ts",
+          "line": 54,
+          "column": 6,
+          "specs": [
+            {
+              "title": "PERF-001 · picker list latency — the tab-open hot path @critical",
+              "ok": true,
+              "tags": [
+                "perf",
+                "api",
+                "critical"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "41362462f7640f7b83c8-64f0d2fa8b9aee95e11c",
+              "file": "cms2/campaigns/perf/campaign-performance.spec.ts",
+              "line": 60,
+              "column": 3
+            },
+            {
+              "title": "PERF-002 · latency and payload scaling with page size",
+              "ok": true,
+              "tags": [
+                "perf",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "41362462f7640f7b83c8-13ebcf67934a4a5a4eec",
+              "file": "cms2/campaigns/perf/campaign-performance.spec.ts",
+              "line": 82,
+              "column": 3
+            },
+            {
+              "title": "PERF-003 · search latency vs an unfiltered list",
+              "ok": true,
+              "tags": [
+                "perf",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "41362462f7640f7b83c8-f2c10281dcaa17b5a5cc",
+              "file": "cms2/campaigns/perf/campaign-performance.spec.ts",
+              "line": 117,
+              "column": 3
+            },
+            {
+              "title": "PERF-004 · deep pagination — first page vs last page",
+              "ok": true,
+              "tags": [
+                "perf",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "41362462f7640f7b83c8-9dd751d7e988e6b76d27",
+              "file": "cms2/campaigns/perf/campaign-performance.spec.ts",
+              "line": 137,
+              "column": 3
+            },
+            {
+              "title": "PERF-005 · read-one latency",
+              "ok": true,
+              "tags": [
+                "perf",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "41362462f7640f7b83c8-42869cadcece78dd4e7a",
+              "file": "cms2/campaigns/perf/campaign-performance.spec.ts",
+              "line": 158,
+              "column": 3
+            },
+            {
+              "title": "PERF-006 · write latency — create, update, delete @destructive",
+              "ok": true,
+              "tags": [
+                "perf",
+                "api",
+                "destructive"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "41362462f7640f7b83c8-32c7117c5dccd3e8d6df",
+              "file": "cms2/campaigns/perf/campaign-performance.spec.ts",
+              "line": 170,
+              "column": 3
+            },
+            {
+              "title": "PERF-007 · a small concurrent burst does not degrade the list",
+              "ok": true,
+              "tags": [
+                "perf",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "41362462f7640f7b83c8-8a43dab10fa42180f4e0",
+              "file": "cms2/campaigns/perf/campaign-performance.spec.ts",
+              "line": 231,
+              "column": 3
+            },
+            {
+              "title": "PERF-008 · end-to-end: opening the Campaigns tab in the playlist editor @ui",
+              "ok": true,
+              "tags": [
+                "perf",
+                "api",
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "41362462f7640f7b83c8-8721184b32f197578afa",
+              "file": "cms2/campaigns/perf/campaign-performance.spec.ts",
+              "line": 263,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cms3\\media-sets\\crud\\media-sets-create-builder.spec.ts",
+      "file": "cms3/media-sets/crud/media-sets-create-builder.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Media Sets — Create builder @regression",
+          "file": "cms3/media-sets/crud/media-sets-create-builder.spec.ts",
+          "line": 23,
+          "column": 6,
+          "specs": [
+            {
+              "title": "builder loads with name field, orientation zones, filters, and counter @smoke",
+              "ok": true,
+              "tags": [
+                "regression",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3f2829691d0b601f8119-47176b5f5fd97cfaab56",
+              "file": "cms3/media-sets/crud/media-sets-create-builder.spec.ts",
+              "line": 43,
+              "column": 3
+            },
+            {
+              "title": "type filter narrows the file set and the counter tracks it",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3f2829691d0b601f8119-52ae4ffca7275e7c1596",
+              "file": "cms3/media-sets/crud/media-sets-create-builder.spec.ts",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "AR-6 — file filter × file search intersect (AND logic → empty)",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3f2829691d0b601f8119-958b9b6efadeeb7abbe6",
+              "file": "cms3/media-sets/crud/media-sets-create-builder.spec.ts",
+              "line": 74,
+              "column": 3
+            },
+            {
+              "title": "F1 — the \"N of total\" counter stays in sync with the visible files",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3f2829691d0b601f8119-e803e0d7d6254e3bfe5c",
+              "file": "cms3/media-sets/crud/media-sets-create-builder.spec.ts",
+              "line": 84,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cms3\\media-sets\\search\\media-sets-search.spec.ts",
+      "file": "cms3/media-sets/search/media-sets-search.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Media Sets — list search @regression",
+          "file": "cms3/media-sets/search/media-sets-search.spec.ts",
+          "line": 23,
+          "column": 6,
+          "specs": [
+            {
+              "title": "P1-P4 positive: exact, case-insensitive, and substring all match @smoke @sanity",
+              "ok": true,
+              "tags": [
+                "regression",
+                "smoke",
+                "sanity"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ca2612d07c155373fc8b-8c413a3896d58f96750b",
+              "file": "cms3/media-sets/search/media-sets-search.spec.ts",
+              "line": 38,
+              "column": 3
+            },
+            {
+              "title": "P5 reset: clearing the query restores the full list",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ca2612d07c155373fc8b-d711a7b4f3eb0d171975",
+              "file": "cms3/media-sets/search/media-sets-search.spec.ts",
+              "line": 66,
+              "column": 3
+            },
+            {
+              "title": "N1 negative: no match shows 0 + an empty state echoing the query",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ca2612d07c155373fc8b-33989e0dd8bcf0b839de",
+              "file": "cms3/media-sets/search/media-sets-search.spec.ts",
+              "line": 76,
+              "column": 3
+            },
+            {
+              "title": "N2 edge: surrounding whitespace is trimmed before matching",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ca2612d07c155373fc8b-31272bdda8dd921ca61f",
+              "file": "cms3/media-sets/search/media-sets-search.spec.ts",
+              "line": 86,
+              "column": 3
+            },
+            {
+              "title": "N3 edge: whitespace-only query is treated as empty (full list)",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ca2612d07c155373fc8b-ed7ce637fd98792028ce",
+              "file": "cms3/media-sets/search/media-sets-search.spec.ts",
+              "line": 101,
+              "column": 3
+            },
+            {
+              "title": "N4 security: HTML/XSS payload is escaped, not executed",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ca2612d07c155373fc8b-686f35c162bb592bc52c",
+              "file": "cms3/media-sets/search/media-sets-search.spec.ts",
+              "line": 109,
+              "column": 3
+            },
+            {
+              "title": "N5 security: SQL-injection string is treated literally, no crash",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ca2612d07c155373fc8b-cd1f89da4e1a2947c827",
+              "file": "cms3/media-sets/search/media-sets-search.spec.ts",
+              "line": 128,
+              "column": 3
+            },
+            {
+              "title": "N6 boundary: a very long query does not crash (F3 — no max-length cap)",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ca2612d07c155373fc8b-b535d6df5ae32ef04378",
+              "file": "cms3/media-sets/search/media-sets-search.spec.ts",
+              "line": 136,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-07-28T18:13:03.060Z",
+    "duration": 2113.637,
+    "expected": 0,
+    "skipped": 156,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -8,7 +8,7 @@ const bool = (v: string | undefined, d: boolean) => (v == null ? d : v === 'true
 
 export const ENV = {
   /** Target application under test. */
-  BASE_URL: process.env.CMS_BASE_URL ?? 'https://cms.pocsample.in',
+  BASE_URL: process.env.CMS_BASE_URL ?? 'https://cms.wilyersignage.com',
 
   /** Admin account (full access) — used by global-setup to cache a session. */
   ADMIN_EMAIL: process.env.CMS_ADMIN_EMAIL ?? (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || ''),

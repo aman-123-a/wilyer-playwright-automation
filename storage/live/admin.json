@@ -1,0 +1,83 @@
+{
+  "cookies": [
+    {
+      "name": "_GRECAPTCHA",
+      "value": "09AKhCRwi2HP1I_F88St3DTgjjjqgmEPo9zFs0_4BpuT0AoAD_I7x9LgNeQa6OD8RZVz0fOd18mnwaawiL7DYSlw4",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1801977576.11453,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "rzp_unified_session_id",
+      "value": "TOLRA1LW1QtlmT",
+      "domain": "cms.wilyersignage.com",
+      "path": "/",
+      "expires": 1786427369,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "footprint",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMjYzYzFlMTRmNWE3MmVlMWJkZjM5NSIsInVzZXJJZCI6IjYyMjYzYzFlMTRmNWE3MmVlMWJkZjM5NSIsImVtYWlsIjoiZGV2QHdpbHllci5jb20iLCJuYW1lIjoiRGV2ICIsInJvbGUiOiJ1c2VyIiwicGFydG5lciI6IjYyMmVlNjFiZThjNmUxNmViMGE4MjQ3MyIsImlzRG9vaEVuYWJsZWQiOnRydWUsImlzQWRhcHRpdmVDb250ZW50RW5hYmxlZCI6dHJ1ZSwiaXM0a1ZpZGVvRW5hYmxlZCI6dHJ1ZSwiaXNDbHVzdGVyRW5hYmxlZCI6dHJ1ZSwiaXNIZG1pRW5hYmxlZCI6dHJ1ZSwiaXNXZWJDYW1FbmFibGVkIjp0cnVlLCJpc1R3b0ZBIjpmYWxzZSwiaXNQbGF5bGlzdEZvbGRlckVuYWJsZWQiOnRydWUsImFjY2VzcyI6e30sImlzUmVzdHJpY3RlZEFjY2VzcyI6ZmFsc2UsImlzTWVkaWFTZXRFbmFibGVkIjpmYWxzZSwiaXNEeW5hbWljQ3JlYXRpdmVBcGlBY2Nlc3NFbmFibGVkIjpmYWxzZSwiZmlsZVVwbG9hZFNlcnZlciI6InMzIiwiaXNCaXJ0aGRheVdpZGdldEVuYWJsZWQiOnRydWUsImlzQ2x1c3RlclNjcmVlbnNMaW1pdEVuYWJsZWQiOmZhbHNlLCJjbHVzdGVyU2NyZWVuc0xpbWl0Ijo1LCJpc0hvc3BpdGFsaXR5VHZFbmFibGVkIjp0cnVlLCJpc0NvbnRlbnRSb2xsb3V0RW5hYmxlZCI6ZmFsc2UsImlzVHJpZ2dlckVuYWJsZWQiOnRydWUsImlzUHJheWVyU2NoZWR1bGVFbmFibGVkIjpmYWxzZSwiaXNQcmF5ZXJTY2hlZHVsZVNjcmVlbnNMaW1pdEVuYWJsZWQiOmZhbHNlLCJwcmF5ZXJTY2hlZHVsZVNjcmVlbnNMaW1pdCI6MCwiaXNDYW1wYWlnbkVuYWJsZWQiOnRydWUsImlzTGl2ZUV0YUVuYWJsZWQiOnRydWUsImlzRmxpZ2h0V2lkZ2V0RW5hYmxlZCI6dHJ1ZSwiaXNTdG9ja3NXaWRnZXRFbmFibGVkIjp0cnVlLCJpYXQiOjE3ODY0MjU1NzIsImV4cCI6MTc4NjUxMTk3Mn0.SykBN871MIuLhfAT9xgEvwStRhNjX2xd5YF-3jeAJcA",
+      "domain": "cms.wilyersignage.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://cms.wilyersignage.com",
+      "localStorage": [
+        {
+          "name": "rzp_device_id",
+          "value": "1.ce0ce6de6b376ff0e83a7bd62e2dbfdc32bf71b2.1786425569109.48934699"
+        },
+        {
+          "name": "email",
+          "value": "dev@wilyer.com"
+        },
+        {
+          "name": "sidebar",
+          "value": "visible"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AKhCRwj545oS_T1AnbMo6dQxCzoBg7dlReJ3wakUnXIMF0-88BEg-Ub5xekgD6jbKZj7On4K7dda2qwBzPtyO-Qfggzcxt1lLfz9jid3sXAqQQWmQwm8S-QGM-FxevuG"
+        },
+        {
+          "name": "rzp_checkout_anon_id",
+          "value": "728ba3ff8c36469490535b4e2773c7ce"
+        }
+      ]
+    },
+    {
+      "origin": "https://api.razorpay.com",
+      "localStorage": [
+        {
+          "name": "rzp_device_id",
+          "value": "1.ce0ce6de6b376ff0e83a7bd62e2dbfdc32bf71b2.1786425569509.18609259"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "MXg4bW5jcjFreW9sNGs="
+        },
+        {
+          "name": "rc::f",
+          "value": "0aAJb5712oQPOMmMg6iBTtKI9eXicy-3sdArdTYMyS4MeKhTwhB5rsuInIgm9eOkkaPbana0o"
+        }
+      ]
+    }
+  ]
+}

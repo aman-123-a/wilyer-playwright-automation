@@ -5,7 +5,7 @@ export const CREDS = {
 };
 
 // Backend API (the SPA talks to this host).
-export const API_BASE = 'https://v3-5api2.pocsample.in/v3/cms';
+export const API_BASE = 'https://cms.wilyersignage.com/v3/cms';
 
 // The folder we test inside:  India > uttarpradesh > Noida
 export const NOIDA_FOLDER_ID = '6a4f5e62472a0f8e8390871f';

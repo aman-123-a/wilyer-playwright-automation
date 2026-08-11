@@ -1,0 +1,78 @@
+<testsuites id="" name="" tests="18" failures="0" skipped="0" errors="0" time="105.59540999999999">
+<testsuite name="smoke\application.smoke.spec.ts" timestamp="2026-06-05T11:56:51.574Z" hostname="chromium" tests="4" failures="0" skipped="0" time="69.476" errors="0">
+<testcase name="@smoke Application Validation › TC_APP_001_Hard_Refresh — app reloads correctly" classname="smoke\application.smoke.spec.ts" time="9.852">
+<properties>
+<property name="warning" value="0 console error(s), 1 failed API(s) — see attachments">
+</property>
+</properties>
+</testcase>
+<testcase name="@smoke Application Validation › TC_APP_002_Cache_Clear — works after clearing caches/storage" classname="smoke\application.smoke.spec.ts" time="18.506">
+</testcase>
+<testcase name="@smoke Application Validation › TC_APP_003_Console_Errors — no console errors / uncaught exceptions" classname="smoke\application.smoke.spec.ts" time="19.806">
+<properties>
+<property name="console-error-count" value="0 app console error(s) across the sweep">
+</property>
+</properties>
+</testcase>
+<testcase name="@smoke Application Validation › TC_APP_004_API_Health_Check — no 5xx / API failures" classname="smoke\application.smoke.spec.ts" time="21.312">
+<properties>
+<property name="api-health" value="0 non-2xx API response(s), 0 server error(s)">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="smoke\authentication.smoke.spec.ts" timestamp="2026-06-05T11:56:51.574Z" hostname="chromium" tests="3" failures="0" skipped="0" time="36.714" errors="0">
+<testcase name="@smoke Authentication › TC_AC_001 fresh login › TC_AC_001_Login — valid credentials reach the dashboard" classname="smoke\authentication.smoke.spec.ts" time="13.005">
+</testcase>
+<testcase name="@smoke Authentication › TC_AC_002 logout › TC_AC_002_Logout — returns to the login page" classname="smoke\authentication.smoke.spec.ts" time="16.687">
+</testcase>
+<testcase name="@smoke Authentication › TC_AC_003_Account_Settings — user information visible" classname="smoke\authentication.smoke.spec.ts" time="7.022">
+</testcase>
+</testsuite>
+<testsuite name="smoke\media.smoke.spec.ts" timestamp="2026-06-05T11:56:51.574Z" hostname="chromium" tests="3" failures="0" skipped="0" time="52.959" errors="0">
+<testcase name="@smoke Media Library › TC_MD_001_Upload_Media — supported files upload successfully" classname="smoke\media.smoke.spec.ts" time="19.564">
+<properties>
+<property name="warning" value="4 console error(s), 0 failed API(s) — see attachments">
+</property>
+</properties>
+</testcase>
+<testcase name="@smoke Media Library › TC_MD_002_Open_File_Info — metadata visible on the detail page" classname="smoke\media.smoke.spec.ts" time="24.47">
+</testcase>
+<testcase name="@smoke Media Library › TC_MD_003_Delete_Media — media removed successfully" classname="smoke\media.smoke.spec.ts" time="8.925">
+<properties>
+<property name="skipped-destructive" value="Delete affordance verified; actual deletion skipped (CMS_ALLOW_DESTRUCTIVE=false).">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="smoke\playlist.smoke.spec.ts" timestamp="2026-06-05T11:56:51.574Z" hostname="chromium" tests="4" failures="0" skipped="0" time="52.36" errors="0">
+<testcase name="@smoke Playlist › TC_PL_001_Create_Playlist — create with name + description" classname="smoke\playlist.smoke.spec.ts" time="11.013">
+</testcase>
+<testcase name="@smoke Playlist › TC_PL_002_Edit_Playlist — settings editor loads (persisted data)" classname="smoke\playlist.smoke.spec.ts" time="13.863">
+</testcase>
+<testcase name="@smoke Playlist › TC_PL_003_Add_Media_To_Playlist — add-media surface available" classname="smoke\playlist.smoke.spec.ts" time="13.795">
+</testcase>
+<testcase name="@smoke Playlist › TC_PL_004_Playlist_UI_Stability — repeated tab navigation, no crash" classname="smoke\playlist.smoke.spec.ts" time="13.689">
+</testcase>
+</testsuite>
+<testsuite name="smoke\screens.smoke.spec.ts" timestamp="2026-06-05T11:56:51.574Z" hostname="chromium" tests="4" failures="0" skipped="0" time="52.598" errors="0">
+<testcase name="@smoke Screens &amp; Settings › TC_SC_001_Open_Screens — screen dashboard loads" classname="smoke\screens.smoke.spec.ts" time="10.145">
+</testcase>
+<testcase name="@smoke Screens &amp; Settings › TC_SC_002_Verify_Screen_Details — core attributes visible" classname="smoke\screens.smoke.spec.ts" time="18.346">
+<properties>
+<property name="screen-detail-attributes" value="found: status, resolution, configuration | missing: name">
+</property>
+</properties>
+</testcase>
+<testcase name="@smoke Screens &amp; Settings › TC_SC_003_Update_Screen_Settings — settings persist after refresh" classname="smoke\screens.smoke.spec.ts" time="9.157">
+<properties>
+<property name="skipped-destructive" value="Save control absent; write skipped (CMS_ALLOW_DESTRUCTIVE=false).">
+</property>
+<property name="warning" value="0 console error(s), 1 failed API(s) — see attachments">
+</property>
+</properties>
+</testcase>
+<testcase name="@smoke Screens &amp; Settings › TC_SC_004_Verify_All_Tabs — all settings tabs load" classname="smoke\screens.smoke.spec.ts" time="14.95">
+</testcase>
+</testsuite>
+</testsuites>

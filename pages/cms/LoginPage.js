@@ -56,7 +56,7 @@ export class LoginPage {
 
   async expectStillOnLogin() {
     await expect(this.loginBtn).toBeVisible({ timeout: 10_000 });
-    expect(this.page.url()).toContain('pocsample.in');
+    expect(this.page.url()).toContain('cms.wilyersignage.com');
   }
 
   async expectError() {

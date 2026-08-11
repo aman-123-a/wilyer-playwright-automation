@@ -47,7 +47,7 @@ const num = (key: string, fallback: number): number =>
 
 export const ENV = {
   /** Target application under test. */
-  BASE_URL: pick('CMS_BASE_URL', 'https://cms.pocsample.in'),
+  BASE_URL: pick('CMS_BASE_URL', 'https://cms.wilyersignage.com'),
 
   /** Admin / primary account (full access). */
   ADMIN_EMAIL: pick('CMS_ADMIN_EMAIL', (process.env.CMS_EMAIL || process.env.CMS_ADMIN_EMAIL || '')),
