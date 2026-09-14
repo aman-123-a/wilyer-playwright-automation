@@ -97,6 +97,22 @@ export const ENV = {
     password: pick('CMS_UNRESTRICTED_PASSWORD', ''),
   } as Credentials,
 
+  /**
+   * Maker-checker pair for the approval-notification suite. The maker raises
+   * upload / publish / playlist requests and receives the decision mails; the
+   * checker receives the request mails and actions them. Both mailboxes are
+   * public yopmail inboxes, which is what lets a test read the mail back.
+   */
+  MAKER: {
+    email: pick('CMS_MAKER_EMAIL', ''),
+    password: pick('CMS_MAKER_PASSWORD', ''),
+  } as Credentials,
+
+  CHECKER: {
+    email: pick('CMS_CHECKER_EMAIL', ''),
+    password: pick('CMS_CHECKER_PASSWORD', ''),
+  } as Credentials,
+
   /** Performance budgets (ms). */
   PERF: {
     pageLoadMs: num('CMS_PERF_PAGE_LOAD_MS', 5000),

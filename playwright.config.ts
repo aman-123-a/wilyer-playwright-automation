@@ -49,6 +49,17 @@ const API_SPECS = /[\\/]api[\\/].*\.spec\.ts$/;
  */
 const PLAYER_SPECS = /[\\/]player[\\/].*\.spec\.ts$/;
 
+
+/**
+ * Mail suites live in tests/<server>/notifications/. They drive ONE shared
+ * maker/checker account and ONE pair of yopmail inboxes, which is why they are
+ * declared serial. Five browser projects would run five copies of that serial
+ * flow at once against the same account: uploads raised by one project land in
+ * the queue another is asserting on, and yopmail trips its bot check under the
+ * load. Chromium claims them — a mail body does not render per browser.
+ */
+const MAIL_SPECS = /[\\/]notifications[\\/].*\.spec\.ts$/;
+
 export default defineConfig({
   testDir: './tests',
 
@@ -152,13 +163,13 @@ export default defineConfig({
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'], storageState: ADMIN_STORAGE_STATE },
-      testIgnore: [API_SPECS, PLAYER_SPECS, ...FOREIGN_SERVER_SPECS],
+      testIgnore: [API_SPECS, PLAYER_SPECS, MAIL_SPECS, ...FOREIGN_SERVER_SPECS],
       dependencies: ['setup'],
     },
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'], storageState: ADMIN_STORAGE_STATE },
-      testIgnore: [API_SPECS, PLAYER_SPECS, ...FOREIGN_SERVER_SPECS],
+      testIgnore: [API_SPECS, PLAYER_SPECS, MAIL_SPECS, ...FOREIGN_SERVER_SPECS],
       dependencies: ['setup'],
     },
 
@@ -190,13 +201,13 @@ export default defineConfig({
     {
       name: 'Mobile Chrome',
       use: { ...devices['Pixel 7'], storageState: ADMIN_STORAGE_STATE },
-      testIgnore: [API_SPECS, PLAYER_SPECS, ...FOREIGN_SERVER_SPECS],
+      testIgnore: [API_SPECS, PLAYER_SPECS, MAIL_SPECS, ...FOREIGN_SERVER_SPECS],
       dependencies: ['setup'],
     },
     {
       name: 'Mobile Safari',
       use: { ...devices['iPhone 14'], storageState: ADMIN_STORAGE_STATE },
-      testIgnore: [API_SPECS, PLAYER_SPECS, ...FOREIGN_SERVER_SPECS],
+      testIgnore: [API_SPECS, PLAYER_SPECS, MAIL_SPECS, ...FOREIGN_SERVER_SPECS],
       dependencies: ['setup'],
     },
   ],
