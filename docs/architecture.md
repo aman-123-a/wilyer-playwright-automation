@@ -70,11 +70,18 @@ diff. `.env` carries credentials and nothing else.
 
 ### API-host confidence is a first-class field
 
-`cms` and `cms2` have API hosts observed against the real servers. `cms3`, `cms4` and
-`live` do not — they follow the `cmsN → v3-5apiN` naming convention. Rather than
+`cms`, `cms2` and `live` have API hosts observed against the real servers. `cms3` and
+`cms4` do not — they follow the `cmsN → v3-5apiN` naming convention. Rather than
 encoding a guess as fact, each environment records `apiConfidence`, and global setup
 warns loudly before running against an inferred host. Otherwise a wrong host produces
 404s that read exactly like product defects.
+
+The field earns its keep precisely because reachability is not identity. Probing cms3
+and cms4 on 2026-09-16 showed both hostnames answer with the real API application's
+JSON errors rather than the SPA shell — yet they share Cloudflare IPs with `v3-5api2`
+and return identical responses, so "the host is up" still does not mean "the host is
+this environment's backend". `apiConfidence` records the distinction that a ping
+cannot.
 
 ### Production safety is enforced, not configured
 

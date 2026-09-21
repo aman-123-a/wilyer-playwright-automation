@@ -10,31 +10,31 @@
 //
 //  Honest about what it is: the stamp is when the event reached this client, so
 //  the number carries socket jitter on top of true player skew. It is an upper
-//  bound — good enough to catch a screen drifting seconds behind its master,
-//  not a frame-accurate NTP measurement.
+//  bound — good enough to catch a screen drifting seconds behind its master, not
+//  a frame-accurate NTP measurement.
 //
-//  Preconditions: both screens online and playing (run cluster-sync.spec.js
+//  Preconditions: both screens online and playing (run the functional suite
 //  first — it fails fast if a screen is offline).
 //
-//  Run:  npx playwright test tests/clusters/cluster-playback-sync.spec.js
-//        CLUSTER_SYNC_WINDOW_MS=180000 CLUSTER_SYNC_TOLERANCE_MS=1500 \
-//          npx playwright test tests/clusters/cluster-playback-sync.spec.js
+//  Run:  CLUSTER_ID=<id> npm run cms2 -- tests/_core/clusters/perf
+//        CLUSTER_SYNC_WINDOW_MS=180000 CLUSTER_SYNC_TOLERANCE_MS=1500 …
 // =============================================================================
 
-import { test, expect } from '@playwright/test';
-import { login } from '../../helpers/loginHelper.js';
-import { ClusterSettingsPage } from '../../pages/cms/ClusterSettingsPage.js';
+/* eslint-disable no-console -- the measured skew, event counts and per-screen
+   medians are the deliverable here: this suite reports a number rather than
+   only passing or failing, and that number has to reach the run log. */
 
-const CLUSTER_ID = process.env.CLUSTER_ID || '6a979dc496d249abd0118b63'; // "try cluster"
+import type { BrowserContext } from '@playwright/test';
+import { test, expect } from '../../../../fixtures/test-fixtures';
+import { requireCluster } from '../../../../helpers/cluster/requireCluster';
+import { ClusterSettingsPage, type ClusterScreen } from '../../../../pages/ClusterSettingsPage';
+import { CLUSTER } from '../../../../config/cluster';
+import { ADMIN_STORAGE_STATE } from '../../../../config/env';
 
-// How long we listen before judging. Long enough to catch several playlist
-// items; the whole suite waits this out, so it is deliberately tunable.
-const WINDOW_MS = Number(process.env.CLUSTER_SYNC_WINDOW_MS || 120_000);
+const WINDOW_MS = CLUSTER.SYNC_WINDOW_MS;
+const TOLERANCE_MS = CLUSTER.SYNC_TOLERANCE_MS;
 
-// Largest master-to-slave gap we accept on a shared item.
-const TOLERANCE_MS = Number(process.env.CLUSTER_SYNC_TOLERANCE_MS || 2_000);
-
-const median = (xs) => {
+const median = (xs: number[]): number => {
   const s = [...xs].sort((a, b) => a - b);
   return s.length % 2 ? s[(s.length - 1) / 2] : (s[s.length / 2 - 1] + s[s.length / 2]) / 2;
 };
@@ -42,49 +42,65 @@ const median = (xs) => {
 test.describe.configure({ mode: 'serial' });
 
 test.describe('Cluster · playback synchronisation', () => {
+  requireCluster();
+
   test.setTimeout(WINDOW_MS + 180_000);
 
-  /** @type {ClusterSettingsPage} */
-  let cluster;
-  let master;      // { id, name }
-  let slaves;      // { id, name }[]
+  // This suite owns its own context: the measurement window spans every test in
+  // the file, so the page and its socket must outlive a single test's fixtures.
+  let context: BrowserContext;
+  let cluster: ClusterSettingsPage;
+  let master: ClusterScreen;
+  let slaves: ClusterScreen[] = [];
 
   test.beforeAll(async ({ browser }) => {
     // Hooks do not inherit the describe-level budget, and this one sits out the
     // whole measurement window.
     test.setTimeout(WINDOW_MS + 180_000);
-    const page = await browser.newPage();
-    await login(page);
-    cluster = new ClusterSettingsPage(page, CLUSTER_ID);
+
+    context = await browser.newContext({ storageState: ADMIN_STORAGE_STATE });
+    const page = await context.newPage();
+    cluster = new ClusterSettingsPage(page, CLUSTER.ID);
     await cluster.open();
 
-    await cluster.live.waitForMaster({ timeoutMs: 60_000 });
+    await cluster.live.waitForMaster({ timeoutMs: CLUSTER.ELECTION_TIMEOUT_MS });
     const screens = await cluster.screens();
     const masterId = cluster.live.masterScreenId;
-    master = screens.find((s) => s.id === masterId);
+    const elected = screens.find((s) => s.id === masterId);
+
+    expect(elected, 'the elected master is not a screen in this cluster').toBeTruthy();
+    master = elected as ClusterScreen;
     slaves = screens.filter((s) => s.id !== masterId);
 
-    expect(master, 'the elected master is not a screen in this cluster').toBeTruthy();
     expect(slaves.length, 'need at least one slave to compare against').toBeGreaterThan(0);
     console.log(`👑 master ${master.name} · slaves ${slaves.map((s) => s.name).join(', ')}`);
 
     // One measurement window feeds every test in this file.
     cluster.live.reset();
+    // eslint-disable-next-line playwright/no-wait-for-timeout -- the fixed window IS the measurement; ending it early on some state would bias the sample
     await page.waitForTimeout(WINDOW_MS);
     console.log(`recorded ${cluster.live.events.length} playback events over ${WINDOW_MS / 1000}s`);
+  });
+
+  test.afterAll(async () => {
+    await context?.close();
   });
 
   test('every screen in the cluster is reporting playback @smoke', async () => {
     for (const s of [master, ...slaves]) {
       const playing = cluster.live.eventsFor(s.id, 'PLAYING');
-      expect(playing.length, `"${s.name}" reported no PLAYING events — it is not playing`)
-        .toBeGreaterThan(0);
+      expect(
+        playing.length,
+        `"${s.name}" reported no PLAYING events — it is not playing`,
+      ).toBeGreaterThan(0);
       console.log(`${s.name}: ${playing.length} PLAYING events`);
     }
   });
 
   test('master and slaves are playing the same playlist and the same loop @smoke', async () => {
-    const fingerprint = (id) => {
+    const fingerprint = (
+      id: string,
+    ): { pid: Set<string | undefined>; lid: Set<string | undefined> } => {
       const es = cluster.live.eventsFor(id);
       return { pid: new Set(es.map((e) => e.pid)), lid: new Set(es.map((e) => e.lid)) };
     };
@@ -96,8 +112,10 @@ test.describe('Cluster · playback synchronisation', () => {
         expect([...m.pid], `"${s.name}" is playing playlist ${pid}, master is not`).toContain(pid);
       }
       for (const lid of f.lid) {
-        expect([...m.lid], `"${s.name}" is in loop ${lid}, master is not — the screens are out of step`)
-          .toContain(lid);
+        expect(
+          [...m.lid],
+          `"${s.name}" is in loop ${lid}, master is not — the screens are out of step`,
+        ).toContain(lid);
       }
     }
   });
@@ -106,24 +124,28 @@ test.describe('Cluster · playback synchronisation', () => {
     for (const s of slaves) {
       const pairs = cluster.live.skewBetween(master.id, s.id);
 
-      expect(pairs.length, `no shared playback slots between "${master.name}" and "${s.name}" — they are not playing the same items`)
-        .toBeGreaterThan(0);
+      expect(
+        pairs.length,
+        `no shared playback slots between "${master.name}" and "${s.name}" — they are not playing the same items`,
+      ).toBeGreaterThan(0);
 
       const skews = pairs.map((p) => p.skewMs);
       const worst = pairs.reduce((a, b) => (b.skewMs > a.skewMs ? b : a));
       console.log(
         `${master.name} ↔ ${s.name}: ${pairs.length} shared slots · ` +
-        `median ${median(skews)}ms · worst ${worst.skewMs}ms on "${worst.fn}"`
+          `median ${median(skews)}ms · worst ${worst.skewMs}ms on "${worst.fn}"`,
       );
 
-      expect(worst.skewMs, `"${s.name}" drifted ${worst.skewMs}ms behind/ahead of "${master.name}" on "${worst.fn}"`)
-        .toBeLessThanOrEqual(TOLERANCE_MS);
+      expect(
+        worst.skewMs,
+        `"${s.name}" drifted ${worst.skewMs}ms behind/ahead of "${master.name}" on "${worst.fn}"`,
+      ).toBeLessThanOrEqual(TOLERANCE_MS);
     }
   });
 
   test('both screens walk the playlist in the same order', async () => {
-    const order = (id) => {
-      const seen = [];
+    const order = (id: string): string[] => {
+      const seen: string[] = [];
       for (const e of cluster.live.eventsFor(id, 'PLAYING')) {
         const key = `${e.lp}:${e.fp}`;
         if (seen[seen.length - 1] !== key) seen.push(key);
@@ -136,16 +158,20 @@ test.describe('Cluster · playback synchronisation', () => {
       const theirs = order(s.id);
       const overlap = Math.min(m.length, theirs.length);
       expect(overlap, `"${s.name}" produced no comparable sequence`).toBeGreaterThan(0);
-      expect(theirs.slice(0, overlap), `"${s.name}" played the loop in a different order than "${master.name}"`)
-        .toEqual(m.slice(0, overlap));
+      expect(
+        theirs.slice(0, overlap),
+        `"${s.name}" played the loop in a different order than "${master.name}"`,
+      ).toEqual(m.slice(0, overlap));
     }
   });
 
   test('no screen stalls: playback advances during the window', async () => {
     for (const s of [master, ...slaves]) {
       const slots = new Set(cluster.live.eventsFor(s.id, 'PLAYING').map((e) => `${e.lp}:${e.fp}`));
-      expect(slots.size, `"${s.name}" never advanced past one item in ${WINDOW_MS / 1000}s — playback is stalled`)
-        .toBeGreaterThan(1);
+      expect(
+        slots.size,
+        `"${s.name}" never advanced past one item in ${WINDOW_MS / 1000}s — playback is stalled`,
+      ).toBeGreaterThan(1);
     }
   });
 });

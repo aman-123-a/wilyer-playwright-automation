@@ -27,6 +27,8 @@ import { PrayerSchedulePage } from '../pages/PrayerSchedulePage';
 import { CampaignPickerPage } from '../pages/CampaignPickerPage';
 import { LocationSettingsPage } from '../pages/LocationSettingsPage';
 import { EtaWidgetPage } from '../pages/EtaWidgetPage';
+import { ClusterSettingsPage } from '../pages/ClusterSettingsPage';
+import { CLUSTER } from '../config/cluster';
 import { ConsoleMonitor } from '../utils/consoleMonitor';
 import { ApiMonitor } from '../utils/apiMonitor';
 import { CampaignService, PlaylistService } from '../api';
@@ -41,6 +43,11 @@ interface Pages {
   screenSettingsPage: ScreenSettingsPage;
   groupsPage: GroupsPage;
   clustersPage: ClustersPage;
+  /**
+   * One cluster's settings surface, bound to CLUSTER_ID. Constructed lazily, so
+   * a run with no cluster configured never attaches the live-channel monitor.
+   */
+  clusterSettings: ClusterSettingsPage;
   playlistPreview: PlaylistPreviewPage;
   playlistsPage: PlaylistsPage;
   playlistEditorPage: PlaylistEditorPage;
@@ -109,6 +116,12 @@ export const test = base.extend<Pages & Monitors & Clients>({
 
   clustersPage: async ({ page }, use) => {
     await use(new ClustersPage(page));
+  },
+
+  // Attaches the socket monitor in its constructor, so it must be built before
+  // the suite navigates — which a fixture guarantees.
+  clusterSettings: async ({ page }, use) => {
+    await use(new ClusterSettingsPage(page, CLUSTER.ID));
   },
 
   playlistPreview: async ({ page }, use) => {

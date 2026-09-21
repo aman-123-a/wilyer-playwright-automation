@@ -49,7 +49,6 @@ const API_SPECS = /[\\/]api[\\/].*\.spec\.ts$/;
  */
 const PLAYER_SPECS = /[\\/]player[\\/].*\.spec\.ts$/;
 
-
 /**
  * Mail suites live in tests/<server>/notifications/. They drive ONE shared
  * maker/checker account and ONE pair of yopmail inboxes, which is why they are
@@ -59,6 +58,18 @@ const PLAYER_SPECS = /[\\/]player[\\/].*\.spec\.ts$/;
  * load. Chromium claims them — a mail body does not render per browser.
  */
 const MAIL_SPECS = /[\\/]notifications[\\/].*\.spec\.ts$/;
+
+/**
+ * Cluster suites live in tests/_core/clusters/. They observe ONE physical
+ * cluster over a live socket, and two of them measure timing over a window of
+ * minutes. Five browser projects would open five sockets onto the same hardware
+ * and report five copies of one measurement, so Chromium claims them — master
+ * election does not render per browser.
+ *
+ * Matches `clusters` (plural) only, leaving tests/cms2/campaigns/cluster/ — a
+ * different, browser-agnostic concern — to run normally.
+ */
+const CLUSTER_SPECS = /[\\/]clusters[\\/].*\.spec\.ts$/;
 
 export default defineConfig({
   testDir: './tests',
@@ -163,13 +174,13 @@ export default defineConfig({
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'], storageState: ADMIN_STORAGE_STATE },
-      testIgnore: [API_SPECS, PLAYER_SPECS, MAIL_SPECS, ...FOREIGN_SERVER_SPECS],
+      testIgnore: [API_SPECS, PLAYER_SPECS, MAIL_SPECS, CLUSTER_SPECS, ...FOREIGN_SERVER_SPECS],
       dependencies: ['setup'],
     },
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'], storageState: ADMIN_STORAGE_STATE },
-      testIgnore: [API_SPECS, PLAYER_SPECS, MAIL_SPECS, ...FOREIGN_SERVER_SPECS],
+      testIgnore: [API_SPECS, PLAYER_SPECS, MAIL_SPECS, CLUSTER_SPECS, ...FOREIGN_SERVER_SPECS],
       dependencies: ['setup'],
     },
 
@@ -201,13 +212,13 @@ export default defineConfig({
     {
       name: 'Mobile Chrome',
       use: { ...devices['Pixel 7'], storageState: ADMIN_STORAGE_STATE },
-      testIgnore: [API_SPECS, PLAYER_SPECS, MAIL_SPECS, ...FOREIGN_SERVER_SPECS],
+      testIgnore: [API_SPECS, PLAYER_SPECS, MAIL_SPECS, CLUSTER_SPECS, ...FOREIGN_SERVER_SPECS],
       dependencies: ['setup'],
     },
     {
       name: 'Mobile Safari',
       use: { ...devices['iPhone 14'], storageState: ADMIN_STORAGE_STATE },
-      testIgnore: [API_SPECS, PLAYER_SPECS, MAIL_SPECS, ...FOREIGN_SERVER_SPECS],
+      testIgnore: [API_SPECS, PLAYER_SPECS, MAIL_SPECS, CLUSTER_SPECS, ...FOREIGN_SERVER_SPECS],
       dependencies: ['setup'],
     },
   ],

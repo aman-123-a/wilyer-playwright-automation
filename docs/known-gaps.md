@@ -4,30 +4,40 @@ A test suite that hides its own weak points is worse than one that names them: a
 green run gets read as proof, and the gaps stay invisible until they matter. This
 page is the honest inventory.
 
-Last reviewed: 2026-07-28.
+Last reviewed: 2026-09-16.
 
 ---
 
-## 1. Unconfirmed API hosts (cms3, cms4, live)
+## 1. Unconfirmed API hosts (cms3, cms4)
 
-**What we know.** The API base URL is verified for two environments only:
+**What we know.** The API base URL is verified for three environments:
 
-| Environment | API host                | Status       | Evidence                                                             |
-| ----------- | ----------------------- | ------------ | -------------------------------------------------------------------- |
-| `cms`       | `v3-5api.pocsample.in`  | **verified** | legacy RBAC + adaptive-content templates, prayer-schedule API audits |
-| `cms2`      | `v3-5api2.pocsample.in` | **verified** | campaigns suite, live against cms2 on 2026-07-28                     |
-| `cms3`      | `v3-5api3.pocsample.in` | _convention_ | inferred from the `cmsN → v3-5apiN` pattern; never observed          |
-| `cms4`      | `v3-5api4.pocsample.in` | _convention_ | inferred; never observed                                             |
-| `live`      | `api.wilyersignage.com` | _convention_ | inferred; never observed                                             |
+| Environment | API host                       | Status       | Evidence                                                              |
+| ----------- | ------------------------------ | ------------ | --------------------------------------------------------------------- |
+| `cms`       | `v3-5api.pocsample.in`         | **verified** | legacy RBAC + adaptive-content templates, prayer-schedule API audits  |
+| `cms2`      | `v3-5api2.pocsample.in`        | **verified** | campaigns suite, live against cms2 on 2026-07-28                      |
+| `live`      | `v3-5api.wilyersignage.com`    | **verified** | CMS traffic captured 2026-08-04 (NOT `api.wilyersignage.com` — that was the old guess and 404s) |
+| `cms3`      | `v3-5api3.pocsample.in`        | _convention_ | reachable and API-shaped (2026-09-16); origin not proven — see below  |
+| `cms4`      | `v3-5api4.pocsample.in`        | _convention_ | reachable and API-shaped (2026-09-16); origin not proven — see below  |
+
+**What the 2026-09-16 probe did and did not settle.** Both hostnames resolve and are
+served by the real API application: `POST /v3/cms/auth/login` answers with the app's
+own JSON errors (Joi `"email" must be a valid email`, then
+`Recaptcha verification failed`), not the SPA's HTML shell. So they are not dead
+names. But `v3-5api2`, `v3-5api3` and `v3-5api4` share the same Cloudflare IPs and
+returned byte-identical responses, so an unauthenticated probe cannot show that each
+hostname reaches its own environment's backend. They stay `convention`.
 
 **Why it is handled this way.** Guessing silently would make API suites fail with
 404s that look like product defects. Instead `config/environments.ts` records the
 confidence level per environment, and global setup prints a loud warning before any
 run against an inferred host.
 
-**To close it.** Confirm the real host, then set `apiConfidence: 'verified'` in
-`config/environments.ts` with a dated note. Until then, override with
-`CMS_API_BASE_URL`.
+**To close it.** Authenticate against cms3/cms4 once and confirm the response carries
+that environment's data, then set `apiConfidence: 'verified'` in
+`config/environments.ts` with a dated note. Note the blocker: `/auth/login` is
+reCAPTCHA-gated, which is why `helpers/rbac/identities.ts` drives login through the
+UI rather than the API. Until then, override with `CMS_API_BASE_URL`.
 
 ---
 

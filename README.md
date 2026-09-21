@@ -51,10 +51,12 @@ npm run cms2 -- tests/campaigns --headed
 - **Sessions are namespaced per environment** (`storage/<env>/`), so switching targets
   can never reuse another server's cookies.
 
-> **API hosts on cms3, cms4 and live are unconfirmed.** Only `cms` and `cms2` have
-> API base URLs verified against the real servers. The others follow the
-> `cmsN → v3-5apiN` naming convention and are flagged at startup. If API suites fail
-> there, confirm the host and set `CMS_API_BASE_URL`. See [docs/known-gaps.md](docs/known-gaps.md).
+> **API hosts on cms3 and cms4 are unconfirmed.** `cms`, `cms2` and `live` have API
+> base URLs verified against the real servers. cms3 and cms4 follow the
+> `cmsN → v3-5apiN` naming convention and are flagged at startup — probing on
+> 2026-09-16 showed both hostnames are live and served by the real API app, but could
+> not prove each reaches its own environment's backend. If API suites fail there,
+> confirm the host and set `CMS_API_BASE_URL`. See [docs/known-gaps.md](docs/known-gaps.md).
 
 ---
 

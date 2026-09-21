@@ -79,9 +79,10 @@ login failures that look like product bugs.
 session is stale or the `setup` project did not run. Delete `storage/<env>/` and
 re-run.
 
-**`⚠ API host for "cms3" is inferred…`** — expected. See
-[known-gaps.md](known-gaps.md#1-unconfirmed-api-hosts-cms3-cms4-live). Set
-`CMS_API_BASE_URL` once you confirm the real host.
+**`⚠ API host for "cms3" is inferred…`** — expected on cms3 and cms4. See
+[known-gaps.md](known-gaps.md#1-unconfirmed-api-hosts-cms3-cms4). Both hostnames are
+live and served by the real API app, but neither has been confirmed to be that
+environment's own backend. Set `CMS_API_BASE_URL` once you confirm the real host.
 
 **`Unknown TEST_ENV "…"`** — a typo. Valid values: `cms`, `cms2`, `cms3`, `cms4`,
 `live`. This fails rather than defaulting, because a silent fallback could point a

@@ -48,9 +48,16 @@ export interface EnvironmentConfig {
  *   cms  → v3-5api.pocsample.in   (legacy/rbac + adaptive-content templates,
  *                                  and the prayer-schedule API audits)
  *   cms2 → v3-5api2.pocsample.in  (verified live 2026-07-28, campaigns suite)
- *   cms3, cms4, live → NOT observed anywhere in this repository. The values
- *   below follow the cmsN → v3-5apiN convention; override them with
- *   CMS_API_BASE_URL until someone confirms them against the real servers.
+ *   live → v3-5api.wilyersignage.com (verified live 2026-08-04 by capturing CMS
+ *                                  traffic — see the note on the entry below)
+ *   cms3, cms4 → follow the cmsN → v3-5apiN convention. Probed 2026-09-16: both
+ *   hostnames resolve and are served by the real API application (they answer
+ *   POST /v3/cms/auth/login with the app's own JSON errors — Joi validation,
+ *   then recaptcha — not the SPA's HTML shell). That is NOT the same as
+ *   confirming each hostname reaches its own environment's backend: all of
+ *   v3-5api2/3/4 sit on the same Cloudflare IPs, and recaptcha blocks the
+ *   login comparison that would tell the origins apart. They stay 'convention'
+ *   until someone authenticates against one; override with CMS_API_BASE_URL.
  */
 export const ENVIRONMENTS: Readonly<Record<EnvironmentName, EnvironmentConfig>> = {
   cms: {

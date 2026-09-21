@@ -18,6 +18,11 @@ export {
 } from './android';
 export type { AdbDevice, AdbResult, Selector, Using } from './android';
 
+// Clusters (synchronised playback across real screens) — see config/cluster.ts.
+export { requireCluster, requireClusterDrill, canDriveCluster } from './cluster/requireCluster';
+export { ClusterMonitor, attachClusterMonitor } from './cluster/clusterMonitor';
+export type { ClusterPlaybackEvent, MasterChange, SkewPair } from './cluster/clusterMonitor';
+
 export {
   ROLES,
   ACTIONS,
