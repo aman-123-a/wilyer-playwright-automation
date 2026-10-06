@@ -1,0 +1,4236 @@
+[
+ {
+  "id": "6ac4ddffee5892e1431ed974",
+  "name": "sample_7680x4320_1791286707454.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_7680x4320_1791286707454.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_7680x4320_1791286707454.mp4",
+  "duration": 10,
+  "size": 29.48,
+  "h": 4320,
+  "w": 7680,
+  "bitRate": 24511,
+  "parent": null,
+  "createdAt": "2026-10-06T11:39:43.722Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 1.88,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_7680x4320_1791286707454__720p.mp4",
+    "fileName": "adp_sample_7680x4320_1791286707454__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 1461
+    },
+    "_id": "6ac4ddffee5892e1431ed975"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4dd9bba566e7c4385c071",
+  "name": "sample_4096x2160_1791286652551.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_4096x2160_1791286652551.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_4096x2160_1791286652551.mp4",
+  "duration": 10,
+  "size": 27.56,
+  "h": 2160,
+  "w": 4096,
+  "bitRate": 22907,
+  "parent": null,
+  "createdAt": "2026-10-06T11:38:03.642Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.48,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_4096x2160_1791286652551__720p.mp4",
+    "fileName": "adp_sample_4096x2160_1791286652551__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 676,
+     "bitrate": 1956
+    },
+    "_id": "6ac4dd9bba566e7c4385c072"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4dd73ee5892e1431ed942",
+  "name": "sample_7680x4320_1791286529962.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_7680x4320_1791286529962.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_7680x4320_1791286529962.mp4",
+  "duration": 10,
+  "size": 30.06,
+  "h": 4320,
+  "w": 7680,
+  "bitRate": 25100,
+  "parent": null,
+  "createdAt": "2026-10-06T11:37:23.770Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.57,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_7680x4320_1791286529962__720p.mp4",
+    "fileName": "adp_sample_7680x4320_1791286529962__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 2039
+    },
+    "_id": "6ac4dd7aee5892e1431ed954"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4dd30a2b0eaf43e4c7fb1",
+  "name": "sample_3840x2160_1__1791286502082.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_1__1791286502082.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_1__1791286502082.mp4",
+  "duration": 28,
+  "size": 126.48,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 37571,
+  "parent": null,
+  "createdAt": "2026-10-06T11:36:16.197Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.28,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1__1791286502082__720p.mp4",
+    "fileName": "adp_sample_3840x2160_1__1791286502082__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3051
+    },
+    "_id": "6ac4dd3da2b0eaf43e4c7fba"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4dce5ba566e7c4385c031",
+  "name": "sample_4096x2160_1791286472730.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_4096x2160_1791286472730.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_4096x2160_1791286472730.mp4",
+  "duration": 10,
+  "size": 12.03,
+  "h": 2160,
+  "w": 4096,
+  "bitRate": 9976,
+  "parent": null,
+  "createdAt": "2026-10-06T11:35:01.654Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.57,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_4096x2160_1791286472730__720p.mp4",
+    "fileName": "adp_sample_4096x2160_1791286472730__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 676,
+     "bitrate": 2034
+    },
+    "_id": "6ac4dceaba566e7c4385c03c"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4dcb84e756e91910495b9",
+  "name": "sample_7680x4320_1791286371134.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_7680x4320_1791286371134.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_7680x4320_1791286371134.mp4",
+  "duration": 10,
+  "size": 57.45,
+  "h": 4320,
+  "w": 7680,
+  "bitRate": 48042,
+  "parent": null,
+  "createdAt": "2026-10-06T11:34:16.265Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_7680x4320_1791286371134__720p.mp4",
+    "fileName": "adp_sample_7680x4320_1791286371134__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 1785
+    },
+    "_id": "6ac4dcb84e756e91910495ba"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4dc4e4e756e919104959c",
+  "name": "sample_7680x4320_1791286247935.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_7680x4320_1791286247935.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_7680x4320_1791286247935.mp4",
+  "duration": 10,
+  "size": 57.45,
+  "h": 4320,
+  "w": 7680,
+  "bitRate": 48042,
+  "parent": null,
+  "createdAt": "2026-10-06T11:32:30.166Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_7680x4320_1791286247935__720p.mp4",
+    "fileName": "adp_sample_7680x4320_1791286247935__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 1785
+    },
+    "_id": "6ac4dc4e4e756e919104959d"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4dbd6ba566e7c4385bfe4",
+  "name": "sample_7680x4320_1791286146691.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_7680x4320_1791286146691.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_7680x4320_1791286146691.mp4",
+  "duration": 10,
+  "size": 57.45,
+  "h": 4320,
+  "w": 7680,
+  "bitRate": 48042,
+  "parent": null,
+  "createdAt": "2026-10-06T11:30:30.074Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_7680x4320_1791286146691__720p.mp4",
+    "fileName": "adp_sample_7680x4320_1791286146691__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 1785
+    },
+    "_id": "6ac4dbd6ba566e7c4385bfe5"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4db71ee5892e1431ed8c4",
+  "name": "sample_7680x4320_1791286027210.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_7680x4320_1791286027210.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_7680x4320_1791286027210.mp4",
+  "duration": 10,
+  "size": 253.99,
+  "h": 4320,
+  "w": 7680,
+  "bitRate": 212989,
+  "parent": null,
+  "createdAt": "2026-10-06T11:28:49.069Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.59,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_7680x4320_1791286027210__720p.mp4",
+    "fileName": "adp_sample_7680x4320_1791286027210__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 2066
+    },
+    "_id": "6ac4db7aee5892e1431ed8d7"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4db024e756e9191049564",
+  "name": "sample_4096x2160_1791285987913.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_4096x2160_1791285987913.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_4096x2160_1791285987913.mp4",
+  "duration": 10,
+  "size": 71.84,
+  "h": 2160,
+  "w": 4096,
+  "bitRate": 60185,
+  "parent": null,
+  "createdAt": "2026-10-06T11:26:58.034Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.51,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_4096x2160_1791285987913__720p.mp4",
+    "fileName": "adp_sample_4096x2160_1791285987913__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 676,
+     "bitrate": 2000
+    },
+    "_id": "6ac4db064e756e919104956b"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4dad9a2b0eaf43e4c7f17",
+  "name": "sample_7680x4320_1791285595145.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_7680x4320_1791285595145.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_7680x4320_1791285595145.mp4",
+  "duration": 10,
+  "size": 253.99,
+  "h": 4320,
+  "w": 7680,
+  "bitRate": 212989,
+  "parent": null,
+  "createdAt": "2026-10-06T11:26:17.920Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.59,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_7680x4320_1791285595145__720p.mp4",
+    "fileName": "adp_sample_7680x4320_1791285595145__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 2066
+    },
+    "_id": "6ac4dae2a2b0eaf43e4c7f29"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4d951a2b0eaf43e4c7f04",
+  "name": "sample_4096x2160_1791285523844.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_4096x2160_1791285523844.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_4096x2160_1791285523844.mp4",
+  "duration": 10,
+  "size": 71.84,
+  "h": 2160,
+  "w": 4096,
+  "bitRate": 60185,
+  "parent": null,
+  "createdAt": "2026-10-06T11:19:45.812Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.51,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_4096x2160_1791285523844__720p.mp4",
+    "fileName": "adp_sample_4096x2160_1791285523844__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 676,
+     "bitrate": 2000
+    },
+    "_id": "6ac4d956a2b0eaf43e4c7f12"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4d90ba2b0eaf43e4c7ef0",
+  "name": "sample_7680x4320_1791285344987.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_7680x4320_1791285344987.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_7680x4320_1791285344987.mp4",
+  "duration": 10,
+  "size": 253.99,
+  "h": 4320,
+  "w": 7680,
+  "bitRate": 212989,
+  "parent": null,
+  "createdAt": "2026-10-06T11:18:35.544Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.63,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_7680x4320_1791285344987__720p.mp4",
+    "fileName": "adp_sample_7680x4320_1791285344987__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 2090
+    },
+    "_id": "6ac4d914a2b0eaf43e4c7f01"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4d851a2b0eaf43e4c7ed7",
+  "name": "sample_4096x2160_1791285269919.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_4096x2160_1791285269919.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_4096x2160_1791285269919.mp4",
+  "duration": 10,
+  "size": 71.84,
+  "h": 2160,
+  "w": 4096,
+  "bitRate": 60185,
+  "parent": null,
+  "createdAt": "2026-10-06T11:15:29.887Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.51,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_4096x2160_1791285269919__720p.mp4",
+    "fileName": "adp_sample_4096x2160_1791285269919__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 676,
+     "bitrate": 1992
+    },
+    "_id": "6ac4d856a2b0eaf43e4c7ee2"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4d80ca2b0eaf43e4c7ec8",
+  "name": "sample_7680x4320_1791285027387.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_7680x4320_1791285027387.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_7680x4320_1791285027387.mp4",
+  "duration": 10,
+  "size": 253.99,
+  "h": 4320,
+  "w": 7680,
+  "bitRate": 212989,
+  "parent": null,
+  "createdAt": "2026-10-06T11:14:20.382Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.63,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_7680x4320_1791285027387__720p.mp4",
+    "fileName": "adp_sample_7680x4320_1791285027387__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 2090
+    },
+    "_id": "6ac4d80ca2b0eaf43e4c7ec9"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4d71cba566e7c4385bf6f",
+  "name": "sample_4096x2160_1791284965642.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_4096x2160_1791284965642.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_4096x2160_1791284965642.mp4",
+  "duration": 10,
+  "size": 71.84,
+  "h": 2160,
+  "w": 4096,
+  "bitRate": 60185,
+  "parent": null,
+  "createdAt": "2026-10-06T11:10:20.077Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.51,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_4096x2160_1791284965642__720p.mp4",
+    "fileName": "adp_sample_4096x2160_1791284965642__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 676,
+     "bitrate": 1992
+    },
+    "_id": "6ac4d71cba566e7c4385bf70"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4d6dd4e756e91910494fc",
+  "name": "sample_7680x4320_1791284760785.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_7680x4320_1791284760785.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_7680x4320_1791284760785.mp4",
+  "duration": 10,
+  "size": 123.25,
+  "h": 4320,
+  "w": 7680,
+  "bitRate": 102844,
+  "parent": null,
+  "createdAt": "2026-10-06T11:09:17.424Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.49,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_7680x4320_1791284760785__720p.mp4",
+    "fileName": "adp_sample_7680x4320_1791284760785__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 1950
+    },
+    "_id": "6ac4d6dd4e756e91910494fd"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4d60ea2b0eaf43e4c7e99",
+  "name": "sample_4096x2160_1791284712810.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_4096x2160_1791284712810.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_4096x2160_1791284712810.mp4",
+  "duration": 10,
+  "size": 35.01,
+  "h": 2160,
+  "w": 4096,
+  "bitRate": 29113,
+  "parent": null,
+  "createdAt": "2026-10-06T11:05:50.821Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.46,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_4096x2160_1791284712810__720p.mp4",
+    "fileName": "adp_sample_4096x2160_1791284712810__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 676,
+     "bitrate": 1923
+    },
+    "_id": "6ac4d60ea2b0eaf43e4c7e9a"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4d5e2ba566e7c4385bf46",
+  "name": "sample_7680x4320_1791284572183.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_7680x4320_1791284572183.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_7680x4320_1791284572183.mp4",
+  "duration": 10,
+  "size": 253.99,
+  "h": 4320,
+  "w": 7680,
+  "bitRate": 212989,
+  "parent": null,
+  "createdAt": "2026-10-06T11:05:06.072Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.59,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_7680x4320_1791284572183__720p.mp4",
+    "fileName": "adp_sample_7680x4320_1791284572183__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 2066
+    },
+    "_id": "6ac4d5eaba566e7c4385bf59"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4d5534e756e91910494d3",
+  "name": "sample_4096x2160_1791284522787.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_4096x2160_1791284522787.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_4096x2160_1791284522787.mp4",
+  "duration": 10,
+  "size": 71.84,
+  "h": 2160,
+  "w": 4096,
+  "bitRate": 60185,
+  "parent": null,
+  "createdAt": "2026-10-06T11:02:43.284Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 2.51,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_4096x2160_1791284522787__720p.mp4",
+    "fileName": "adp_sample_4096x2160_1791284522787__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 676,
+     "bitrate": 2000
+    },
+    "_id": "6ac4d5574e756e91910494db"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4d234a2b0eaf43e4c7e65",
+  "name": "sample_3840x2160_1791283682595.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_1791283682595.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_1791283682595.mp4",
+  "duration": 28,
+  "size": 134.23,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 39876,
+  "parent": null,
+  "createdAt": "2026-10-06T10:49:24.136Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1791283682595__720p.mp4",
+    "fileName": "adp_sample_3840x2160_1791283682595__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3054
+    },
+    "_id": "6ac4d234a2b0eaf43e4c7e66"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4d04bba566e7c4385beea",
+  "name": "sample_3840x2160_2__1791283166931.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_2__1791283166931.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_2__1791283166931.mp4",
+  "duration": 28,
+  "size": 107.16,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 31834,
+  "parent": null,
+  "createdAt": "2026-10-06T10:41:15.480Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.28,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_2__1791283166931__720p.mp4",
+    "fileName": "adp_sample_3840x2160_2__1791283166931__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3051
+    },
+    "_id": "6ac4d04bba566e7c4385beeb"
+   },
+   {
+    "fileSize": 17.18,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_2__1791283166931__1080p.mp4",
+    "fileName": "adp_sample_3840x2160_2__1791283166931__1080p.mp4",
+    "resolution": "1080p",
+    "metadata": {
+     "resolution": "1080p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1920,
+     "height": 1080,
+     "bitrate": 5102
+    },
+    "_id": "6ac4d478ee5892e1431ed833"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cfd1a2b0eaf43e4c7e2e",
+  "name": "sample_960x400_ocean_with_audio_1_1791271175790_1791283146337.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_960x400_ocean_with_audio_1_1791271175790_1791283146337.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_960x400_ocean_with_audio_1_1791271175790_1791283146337.mp4",
+  "duration": 46,
+  "size": 10.34,
+  "h": 400,
+  "w": 960,
+  "bitRate": 1816,
+  "parent": null,
+  "createdAt": "2026-10-06T10:39:13.697Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cee0ee5892e1431ed7d6",
+  "name": "sample_3840x2160_1791282812793.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_1791282812793.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_1791282812793.mp4",
+  "duration": 28,
+  "size": 109.3,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 32471,
+  "parent": null,
+  "createdAt": "2026-10-06T10:35:12.637Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.28,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1791282812793__720p.mp4",
+    "fileName": "adp_sample_3840x2160_1791282812793__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3052
+    },
+    "_id": "6ac4cee0ee5892e1431ed7d7"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4ce74ba566e7c4385beb2",
+  "name": "sample_2560x1440_1791282752196.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1791282752196.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1791282752196.mp4",
+  "duration": 28,
+  "size": 57.39,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 17048,
+  "parent": null,
+  "createdAt": "2026-10-06T10:33:24.784Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.33,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791282752196__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1791282752196__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3065
+    },
+    "_id": "6ac4ce74ba566e7c4385beb3"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4ce39ba566e7c4385bea2",
+  "name": "sample_1920x1080_1791282712857.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1791282712857.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1791282712857.mp4",
+  "duration": 28,
+  "size": 34.38,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 10212,
+  "parent": null,
+  "createdAt": "2026-10-06T10:32:25.104Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.3,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1791282712857__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1791282712857__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3057
+    },
+    "_id": "6ac4ce39ba566e7c4385bea3"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4ce11a2b0eaf43e4c7dc4",
+  "name": "sample_1280x720_1791282684422.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1791282684422.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1791282684422.mp4",
+  "duration": 28,
+  "size": 15.23,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 4524,
+  "parent": null,
+  "createdAt": "2026-10-06T10:31:45.102Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.34,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1791282684422__720p.mp4",
+    "fileName": "adp_sample_1280x720_1791282684422__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3072
+    },
+    "_id": "6ac4ce11a2b0eaf43e4c7dc5"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cdf44e756e9191049427",
+  "name": "sample_640x360_1791282668168.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_640x360_1791282668168.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_640x360_1791282668168.mp4",
+  "duration": 13,
+  "size": 0.97,
+  "h": 360,
+  "w": 640,
+  "bitRate": 609,
+  "parent": null,
+  "createdAt": "2026-10-06T10:31:16.874Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 0.63,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_640x360_1791282668168__720p.mp4",
+    "fileName": "adp_sample_640x360_1791282668168__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 640,
+     "height": 360,
+     "bitrate": 393
+    },
+    "_id": "6ac4cdf44e756e9191049428"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cde4a2b0eaf43e4c7da6",
+  "name": "sample_3840x2160_1791282588764.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_1791282588764.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_1791282588764.mp4",
+  "duration": 28,
+  "size": 94.1,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 27953,
+  "parent": null,
+  "createdAt": "2026-10-06T10:31:00.728Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.27,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1791282588764__720p.mp4",
+    "fileName": "adp_sample_3840x2160_1791282588764__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3050
+    },
+    "_id": "6ac4cdefa2b0eaf43e4c7db6"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cd94a2b0eaf43e4c7d91",
+  "name": "sample_2560x1440_1791282547360.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1791282547360.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1791282547360.mp4",
+  "duration": 28,
+  "size": 41.3,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 12266,
+  "parent": null,
+  "createdAt": "2026-10-06T10:29:40.998Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.09,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791282547360__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1791282547360__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 2996
+    },
+    "_id": "6ac4cd9ca2b0eaf43e4c7da3"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cd6cee5892e1431ed77b",
+  "name": "sample_1920x1080_1791282518103.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1791282518103.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1791282518103.mp4",
+  "duration": 28,
+  "size": 22.72,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 6747,
+  "parent": null,
+  "createdAt": "2026-10-06T10:29:00.101Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 9.3,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1791282518103__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1791282518103__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 2762
+    },
+    "_id": "6ac4cd72ee5892e1431ed784"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cd4fba566e7c4385be62",
+  "name": "sample_1280x720_1791282498178.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1791282498178.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1791282498178.mp4",
+  "duration": 28,
+  "size": 10.02,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 2974,
+  "parent": null,
+  "createdAt": "2026-10-06T10:28:31.333Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 7.42,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1791282498178__720p.mp4",
+    "fileName": "adp_sample_1280x720_1791282498178__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 2203
+    },
+    "_id": "6ac4cd55ba566e7c4385be76"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cd3aee5892e1431ed766",
+  "name": "sample_640x360_1791282484467.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_640x360_1791282484467.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_640x360_1791282484467.mp4",
+  "duration": 13,
+  "size": 0.7,
+  "h": 360,
+  "w": 640,
+  "bitRate": 435,
+  "parent": null,
+  "createdAt": "2026-10-06T10:28:10.603Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cd2dee5892e1431ed750",
+  "name": "sample_3840x2160_1791282375365.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_1791282375365.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_1791282375365.mp4",
+  "duration": 28,
+  "size": 134.23,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 39876,
+  "parent": null,
+  "createdAt": "2026-10-06T10:27:57.153Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1791282375365__720p.mp4",
+    "fileName": "adp_sample_3840x2160_1791282375365__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3054
+    },
+    "_id": "6ac4cd2dee5892e1431ed751"
+   },
+   {
+    "fileSize": 17.2,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1791282375365__1080p.mp4",
+    "fileName": "adp_sample_3840x2160_1791282375365__1080p.mp4",
+    "resolution": "1080p",
+    "metadata": {
+     "resolution": "1080p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1920,
+     "height": 1080,
+     "bitrate": 5108
+    },
+    "_id": "6ac4d43dba566e7c4385bf2d"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4ccbf4e756e91910493a8",
+  "name": "sample_2560x1440_1791282309648.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1791282309648.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1791282309648.mp4",
+  "duration": 28,
+  "size": 71.55,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 21254,
+  "parent": null,
+  "createdAt": "2026-10-06T10:26:07.939Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.32,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791282309648__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1791282309648__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3062
+    },
+    "_id": "6ac4ccbf4e756e91910493a9"
+   },
+   {
+    "fileSize": 17.13,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791282309648__1080p.mp4",
+    "fileName": "adp_sample_2560x1440_1791282309648__1080p.mp4",
+    "resolution": "1080p",
+    "metadata": {
+     "resolution": "1080p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1920,
+     "height": 1080,
+     "bitrate": 5088
+    },
+    "_id": "6ac4d320ee5892e1431ed821"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cc7eba566e7c4385be24",
+  "name": "sample_1920x1080_1791282270546.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1791282270546.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1791282270546.mp4",
+  "duration": 28,
+  "size": 42.75,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 12701,
+  "parent": null,
+  "createdAt": "2026-10-06T10:25:02.456Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.3,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1791282270546__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1791282270546__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3056
+    },
+    "_id": "6ac4cc7eba566e7c4385be25"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cc574e756e9191049381",
+  "name": "sample_1280x720_1791282242634.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1791282242634.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1791282242634.mp4",
+  "duration": 28,
+  "size": 18.8,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 5583,
+  "parent": null,
+  "createdAt": "2026-10-06T10:24:23.068Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.35,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1791282242634__720p.mp4",
+    "fileName": "adp_sample_1280x720_1791282242634__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3075
+    },
+    "_id": "6ac4cc574e756e9191049382"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cc3bba566e7c4385bdef",
+  "name": "sample_640x360_1791282227674.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_640x360_1791282227674.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_640x360_1791282227674.mp4",
+  "duration": 13,
+  "size": 0.76,
+  "h": 360,
+  "w": 640,
+  "bitRate": 474,
+  "parent": null,
+  "createdAt": "2026-10-06T10:23:55.861Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 0.64,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_640x360_1791282227674__720p.mp4",
+    "fileName": "adp_sample_640x360_1791282227674__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 640,
+     "height": 360,
+     "bitrate": 398
+    },
+    "_id": "6ac4cc3bba566e7c4385bdf0"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cc2c4e756e9191049350",
+  "name": "sample_3840x2160_1791282115852.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_1791282115852.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_1791282115852.mp4",
+  "duration": 28,
+  "size": 134.23,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 39876,
+  "parent": null,
+  "createdAt": "2026-10-06T10:23:40.252Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.28,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1791282115852__720p.mp4",
+    "fileName": "adp_sample_3840x2160_1791282115852__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3050
+    },
+    "_id": "6ac4cc2c4e756e9191049351"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cbbcee5892e1431ed6a1",
+  "name": "sample_2560x1440_1791282044924.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1791282044924.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1791282044924.mp4",
+  "duration": 28,
+  "size": 71.55,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 21254,
+  "parent": null,
+  "createdAt": "2026-10-06T10:21:48.304Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.31,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791282044924__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1791282044924__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3062
+    },
+    "_id": "6ac4cbbcee5892e1431ed6a2"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cb744e756e9191049312",
+  "name": "sample_1920x1080_1791282002305.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1791282002305.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1791282002305.mp4",
+  "duration": 28,
+  "size": 42.75,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 12701,
+  "parent": null,
+  "createdAt": "2026-10-06T10:20:36.897Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.26,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1791282002305__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1791282002305__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3044
+    },
+    "_id": "6ac4cb744e756e9191049313"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cb4bba566e7c4385bd9a",
+  "name": "sample_1280x720_1791281974109.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1791281974109.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1791281974109.mp4",
+  "duration": 28,
+  "size": 18.8,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 5583,
+  "parent": null,
+  "createdAt": "2026-10-06T10:19:55.247Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.35,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1791281974109__720p.mp4",
+    "fileName": "adp_sample_1280x720_1791281974109__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3073
+    },
+    "_id": "6ac4cb4bba566e7c4385bd9b"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cb2f4e756e91910492f5",
+  "name": "sample_640x360_1791281958350.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_640x360_1791281958350.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_640x360_1791281958350.mp4",
+  "duration": 13,
+  "size": 0.76,
+  "h": 360,
+  "w": 640,
+  "bitRate": 474,
+  "parent": null,
+  "createdAt": "2026-10-06T10:19:27.482Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 0.64,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_640x360_1791281958350__720p.mp4",
+    "fileName": "adp_sample_640x360_1791281958350__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 640,
+     "height": 360,
+     "bitrate": 398
+    },
+    "_id": "6ac4cb2f4e756e91910492f6"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cb1fba566e7c4385bd79",
+  "name": "sample_3840x2160_1791281850355.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_1791281850355.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_1791281850355.mp4",
+  "duration": 28,
+  "size": 133.53,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 39667,
+  "parent": null,
+  "createdAt": "2026-10-06T10:19:11.073Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.28,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1791281850355__720p.mp4",
+    "fileName": "adp_sample_3840x2160_1791281850355__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3050
+    },
+    "_id": "6ac4cb1fba566e7c4385bd7a"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4cab34e756e91910492d5",
+  "name": "sample_2560x1440_1791281786954.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1791281786954.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1791281786954.mp4",
+  "duration": 28,
+  "size": 71.2,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 21150,
+  "parent": null,
+  "createdAt": "2026-10-06T10:17:23.036Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.34,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791281786954__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1791281786954__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3069
+    },
+    "_id": "6ac4cab34e756e91910492d6"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4ca73ba566e7c4385bd56",
+  "name": "sample_1920x1080_1791281747720.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1791281747720.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1791281747720.mp4",
+  "duration": 28,
+  "size": 42.59,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 12652,
+  "parent": null,
+  "createdAt": "2026-10-06T10:16:19.574Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.3,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1791281747720__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1791281747720__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3057
+    },
+    "_id": "6ac4ca73ba566e7c4385bd57"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4ca4c4e756e91910492ba",
+  "name": "sample_1280x720_1791281719019.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1791281719019.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1791281719019.mp4",
+  "duration": 28,
+  "size": 18.69,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 5550,
+  "parent": null,
+  "createdAt": "2026-10-06T10:15:40.484Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.36,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1791281719019__720p.mp4",
+    "fileName": "adp_sample_1280x720_1791281719019__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3077
+    },
+    "_id": "6ac4ca4c4e756e91910492bb"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4ca2fa2b0eaf43e4c7c97",
+  "name": "sample_640x360_1791281703167.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_640x360_1791281703167.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_640x360_1791281703167.mp4",
+  "duration": 13,
+  "size": 0.87,
+  "h": 360,
+  "w": 640,
+  "bitRate": 546,
+  "parent": null,
+  "createdAt": "2026-10-06T10:15:11.864Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 0.69,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_640x360_1791281703167__720p.mp4",
+    "fileName": "adp_sample_640x360_1791281703167__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 640,
+     "height": 360,
+     "bitrate": 429
+    },
+    "_id": "6ac4ca2fa2b0eaf43e4c7c98"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4ca1fee5892e1431ed5b2",
+  "name": "sample_3840x2160_1791281661622.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_1791281661622.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_1791281661622.mp4",
+  "duration": 28,
+  "size": 126.48,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 37571,
+  "parent": null,
+  "createdAt": "2026-10-06T10:14:55.440Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.27,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1791281661622__720p.mp4",
+    "fileName": "adp_sample_3840x2160_1791281661622__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3049
+    },
+    "_id": "6ac4ca2cee5892e1431ed5c7"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c9f5ba566e7c4385bd14",
+  "name": "sample_2560x1440_1791281613667.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1791281613667.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1791281613667.mp4",
+  "duration": 28,
+  "size": 66.41,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 19726,
+  "parent": null,
+  "createdAt": "2026-10-06T10:14:13.203Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.27,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791281613667__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1791281613667__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3048
+    },
+    "_id": "6ac4c9feba566e7c4385bd20"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c9bcba566e7c4385bcf9",
+  "name": "sample_1920x1080_1791281578550.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1791281578550.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1791281578550.mp4",
+  "duration": 28,
+  "size": 36.48,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 10834,
+  "parent": null,
+  "createdAt": "2026-10-06T10:13:16.480Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.28,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1791281578550__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1791281578550__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3052
+    },
+    "_id": "6ac4c9c3ba566e7c4385bd0e"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c9a3ee5892e1431ed581",
+  "name": "sample_1280x720_1791281559451.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1791281559451.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1791281559451.mp4",
+  "duration": 28,
+  "size": 16.63,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 4937,
+  "parent": null,
+  "createdAt": "2026-10-06T10:12:51.260Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.27,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1791281559451__720p.mp4",
+    "fileName": "adp_sample_1280x720_1791281559451__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3049
+    },
+    "_id": "6ac4c9a9ee5892e1431ed58f"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c990ba566e7c4385bcd4",
+  "name": "sample_640x360_1791281549361.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_640x360_1791281549361.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_640x360_1791281549361.mp4",
+  "duration": 13,
+  "size": 0.55,
+  "h": 360,
+  "w": 640,
+  "bitRate": 341,
+  "parent": null,
+  "createdAt": "2026-10-06T10:12:32.313Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c985ee5892e1431ed55c",
+  "name": "sample_3840x2160_1791281481156.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_1791281481156.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_1791281481156.mp4",
+  "duration": 28,
+  "size": 126.48,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 37571,
+  "parent": null,
+  "createdAt": "2026-10-06T10:12:21.695Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.26,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1791281481156__720p.mp4",
+    "fileName": "adp_sample_3840x2160_1791281481156__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3045
+    },
+    "_id": "6ac4c992ee5892e1431ed577"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c940a2b0eaf43e4c7c44",
+  "name": "sample_2560x1440_1791281447225.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1791281447225.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1791281447225.mp4",
+  "duration": 28,
+  "size": 66.41,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 19726,
+  "parent": null,
+  "createdAt": "2026-10-06T10:11:12.686Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.28,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791281447225__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1791281447225__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3053
+    },
+    "_id": "6ac4c949a2b0eaf43e4c7c57"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c91fee5892e1431ed534",
+  "name": "sample_1920x1080_1791281415899.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1791281415899.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1791281415899.mp4",
+  "duration": 28,
+  "size": 36.48,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 10834,
+  "parent": null,
+  "createdAt": "2026-10-06T10:10:39.160Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1791281415899__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1791281415899__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3056
+    },
+    "_id": "6ac4c925ee5892e1431ed551"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c8ffba566e7c4385bc99",
+  "name": "sample_1280x720_1791281392208.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1791281392208.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1791281392208.mp4",
+  "duration": 28,
+  "size": 16.63,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 4937,
+  "parent": null,
+  "createdAt": "2026-10-06T10:10:07.595Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.27,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1791281392208__720p.mp4",
+    "fileName": "adp_sample_1280x720_1791281392208__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3049
+    },
+    "_id": "6ac4c905ba566e7c4385bca3"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c8e8ee5892e1431ed4ff",
+  "name": "sample_640x360_1791281377743.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_640x360_1791281377743.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_640x360_1791281377743.mp4",
+  "duration": 13,
+  "size": 0.55,
+  "h": 360,
+  "w": 640,
+  "bitRate": 341,
+  "parent": null,
+  "createdAt": "2026-10-06T10:09:44.440Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c8d9ba566e7c4385bc75",
+  "name": "sample_3840x2160_1791281303268.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_1791281303268.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_1791281303268.mp4",
+  "duration": 28,
+  "size": 126.48,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 37573,
+  "parent": null,
+  "createdAt": "2026-10-06T10:09:29.207Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.28,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1791281303268__720p.mp4",
+    "fileName": "adp_sample_3840x2160_1791281303268__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3052
+    },
+    "_id": "6ac4c8e5ba566e7c4385bc8b"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c88ea2b0eaf43e4c7c07",
+  "name": "sample_2560x1440_1791281262209.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1791281262209.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1791281262209.mp4",
+  "duration": 28,
+  "size": 66.41,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 19727,
+  "parent": null,
+  "createdAt": "2026-10-06T10:08:14.363Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.27,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791281262209__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1791281262209__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3049
+    },
+    "_id": "6ac4c896a2b0eaf43e4c7c19"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c8664e756e91910491f7",
+  "name": "sample_1920x1080_1791281230925.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1791281230925.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1791281230925.mp4",
+  "duration": 28,
+  "size": 36.48,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 10834,
+  "parent": null,
+  "createdAt": "2026-10-06T10:07:34.084Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.25,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1791281230925__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1791281230925__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3042
+    },
+    "_id": "6ac4c86d4e756e9191049210"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c846a2b0eaf43e4c7bdf",
+  "name": "sample_1280x720_1791281208951.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1791281208951.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1791281208951.mp4",
+  "duration": 28,
+  "size": 16.63,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 4938,
+  "parent": null,
+  "createdAt": "2026-10-06T10:07:02.716Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.26,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1791281208951__720p.mp4",
+    "fileName": "adp_sample_1280x720_1791281208951__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3046
+    },
+    "_id": "6ac4c84ca2b0eaf43e4c7bee"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c831ee5892e1431ed4cc",
+  "name": "sample_640x360_1791281195316.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_640x360_1791281195316.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_640x360_1791281195316.mp4",
+  "duration": 13,
+  "size": 0.55,
+  "h": 360,
+  "w": 640,
+  "bitRate": 341,
+  "parent": null,
+  "createdAt": "2026-10-06T10:06:41.128Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c819ba566e7c4385bc22",
+  "name": "sample_3840x2160_1791281075571.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_1791281075571.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_1791281075571.mp4",
+  "duration": 28,
+  "size": 107.16,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 31834,
+  "parent": null,
+  "createdAt": "2026-10-06T10:06:17.574Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.25,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1791281075571__720p.mp4",
+    "fileName": "adp_sample_3840x2160_1791281075571__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3042
+    },
+    "_id": "6ac4c819ba566e7c4385bc23"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c7a94e756e91910491b8",
+  "name": "sample_2560x1440_1791281009150.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1791281009150.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1791281009150.mp4",
+  "duration": 28,
+  "size": 56.23,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 16703,
+  "parent": null,
+  "createdAt": "2026-10-06T10:04:25.824Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.31,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791281009150__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1791281009150__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3060
+    },
+    "_id": "6ac4c7a94e756e91910491b9"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c769ee5892e1431ed484",
+  "name": "sample_1920x1080_1791280963598.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1791280963598.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1791280963598.mp4",
+  "duration": 28,
+  "size": 33.93,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 10078,
+  "parent": null,
+  "createdAt": "2026-10-06T10:03:21.702Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.28,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1791280963598__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1791280963598__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3052
+    },
+    "_id": "6ac4c769ee5892e1431ed485"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c73cee5892e1431ed469",
+  "name": "sample_1280x720_1791280930125.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1791280930125.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1791280930125.mp4",
+  "duration": 28,
+  "size": 15.05,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 4470,
+  "parent": null,
+  "createdAt": "2026-10-06T10:02:36.028Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.35,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1791280930125__720p.mp4",
+    "fileName": "adp_sample_1280x720_1791280930125__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3073
+    },
+    "_id": "6ac4c73cee5892e1431ed46a"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c719ba566e7c4385bbe3",
+  "name": "sample_640x360_1791280881979.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_640x360_1791280881979.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_640x360_1791280881979.mp4",
+  "duration": 13,
+  "size": 0.85,
+  "h": 360,
+  "w": 640,
+  "bitRate": 533,
+  "parent": null,
+  "createdAt": "2026-10-06T10:02:01.301Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 0.59,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_640x360_1791280881979__720p.mp4",
+    "fileName": "adp_sample_640x360_1791280881979__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 640,
+     "height": 360,
+     "bitrate": 366
+    },
+    "_id": "6ac4c719ba566e7c4385bbe4"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c6e0ba566e7c4385bbce",
+  "name": "sample_3840x2160_1791280747187.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_1791280747187.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_1791280747187.mp4",
+  "duration": 28,
+  "size": 108.99,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 32376,
+  "parent": null,
+  "createdAt": "2026-10-06T10:01:04.106Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1791280747187__720p.mp4",
+    "fileName": "adp_sample_3840x2160_1791280747187__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3053
+    },
+    "_id": "6ac4c6e0ba566e7c4385bbcf"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c664ee5892e1431ed431",
+  "name": "sample_2560x1440_1791280683597.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1791280683597.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1791280683597.mp4",
+  "duration": 28,
+  "size": 57.2,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 16993,
+  "parent": null,
+  "createdAt": "2026-10-06T09:59:00.237Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791280683597__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1791280683597__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3055
+    },
+    "_id": "6ac4c664ee5892e1431ed432"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c625ba566e7c4385bbad",
+  "name": "sample_1920x1080_1791280629711.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1791280629711.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1791280629711.mp4",
+  "duration": 28,
+  "size": 34.3,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 10188,
+  "parent": null,
+  "createdAt": "2026-10-06T09:57:57.364Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1791280629711__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1791280629711__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3055
+    },
+    "_id": "6ac4c625ba566e7c4385bbae"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c5eeba566e7c4385bb9d",
+  "name": "sample_1280x720_1791280603984.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1791280603984.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1791280603984.mp4",
+  "duration": 28,
+  "size": 15.19,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 4512,
+  "parent": null,
+  "createdAt": "2026-10-06T09:57:02.975Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.35,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1791280603984__720p.mp4",
+    "fileName": "adp_sample_1280x720_1791280603984__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3075
+    },
+    "_id": "6ac4c5eeba566e7c4385bb9e"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c5d4ee5892e1431ed3fa",
+  "name": "sample_640x360_1791280588463.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_640x360_1791280588463.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_640x360_1791280588463.mp4",
+  "duration": 13,
+  "size": 0.95,
+  "h": 360,
+  "w": 640,
+  "bitRate": 596,
+  "parent": null,
+  "createdAt": "2026-10-06T09:56:36.902Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 0.61,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_640x360_1791280588463__720p.mp4",
+    "fileName": "adp_sample_640x360_1791280588463__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 640,
+     "height": 360,
+     "bitrate": 383
+    },
+    "_id": "6ac4c5d4ee5892e1431ed3fb"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c5c54e756e919104910b",
+  "name": "sample_3840x2160_1791280480137.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_1791280480137.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_1791280480137.mp4",
+  "duration": 28,
+  "size": 126.48,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 37571,
+  "parent": null,
+  "createdAt": "2026-10-06T09:56:21.540Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.23,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1791280480137__720p.mp4",
+    "fileName": "adp_sample_3840x2160_1791280480137__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3038
+    },
+    "_id": "6ac4c5d04e756e9191049116"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c557a2b0eaf43e4c7b3c",
+  "name": "sample_2560x1440_1791280411631.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1791280411631.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1791280411631.mp4",
+  "duration": 28,
+  "size": 66.41,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 19726,
+  "parent": null,
+  "createdAt": "2026-10-06T09:54:31.834Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.27,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791280411631__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1791280411631__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3049
+    },
+    "_id": "6ac4c55fa2b0eaf43e4c7b52"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c5124e756e91910490eb",
+  "name": "sample_1920x1080_1791280375432.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1791280375432.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1791280375432.mp4",
+  "duration": 28,
+  "size": 36.48,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 10834,
+  "parent": null,
+  "createdAt": "2026-10-06T09:53:22.460Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.23,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1791280375432__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1791280375432__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3037
+    },
+    "_id": "6ac4c5194e756e91910490fd"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c4f0a2b0eaf43e4c7b1a",
+  "name": "sample_1280x720_1791280355392.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1791280355392.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1791280355392.mp4",
+  "duration": 28,
+  "size": 16.63,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 4937,
+  "parent": null,
+  "createdAt": "2026-10-06T09:52:48.095Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.26,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1791280355392__720p.mp4",
+    "fileName": "adp_sample_1280x720_1791280355392__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3047
+    },
+    "_id": "6ac4c4f6a2b0eaf43e4c7b29"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c4dc4e756e91910490cc",
+  "name": "sample_640x360_1791280342522.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_640x360_1791280342522.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_640x360_1791280342522.mp4",
+  "duration": 13,
+  "size": 0.55,
+  "h": 360,
+  "w": 640,
+  "bitRate": 341,
+  "parent": null,
+  "createdAt": "2026-10-06T09:52:28.741Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4c4bba2b0eaf43e4c7ae5",
+  "name": "sample_640x360_1791280312131.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_640x360_1791280312131.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_640x360_1791280312131.mp4",
+  "duration": 13,
+  "size": 0.55,
+  "h": 360,
+  "w": 640,
+  "bitRate": 341,
+  "parent": null,
+  "createdAt": "2026-10-06T09:51:55.241Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4bedda2b0eaf43e4c7ad4",
+  "name": "sample_960x400_ocean_with_audio_1__1791278799723.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_960x400_ocean_with_audio_1__1791278799723.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_960x400_ocean_with_audio_1__1791278799723.mp4",
+  "duration": 46,
+  "size": 10.34,
+  "h": 400,
+  "w": 960,
+  "bitRate": 1704,
+  "parent": null,
+  "createdAt": "2026-10-06T09:26:53.190Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4bddbba566e7c4385bae7",
+  "name": "sample_1280x720_surfing_with_audio_1__1791278496833.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_surfing_with_audio_1__1791278496833.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_surfing_with_audio_1__1791278496833.mp4",
+  "duration": 183,
+  "size": 40.62,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 1695,
+  "parent": null,
+  "createdAt": "2026-10-06T09:22:35.216Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4bafbba566e7c4385bad2",
+  "name": "sample_960x540_1791277806821.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_960x540_1791277806821.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_960x540_1791277806821.mp4",
+  "duration": 13,
+  "size": 0.9,
+  "h": 540,
+  "w": 960,
+  "bitRate": 561,
+  "parent": "6aa8d1435decd2f7b4864f2b",
+  "createdAt": "2026-10-06T09:10:19.177Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 0.87,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_960x540_1791277806821__720p.mp4",
+    "fileName": "adp_sample_960x540_1791277806821__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 960,
+     "height": 540,
+     "bitrate": 545
+    },
+    "_id": "6ac4bafbba566e7c4385bad3"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4baeda2b0eaf43e4c7a59",
+  "name": "sample_1280x720_1__1791277780820.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1__1791277780820.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1__1791277780820.mp4",
+  "duration": 28,
+  "size": 15.05,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 4470,
+  "parent": "6aa8d1435decd2f7b4864f2b",
+  "createdAt": "2026-10-06T09:10:05.142Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.34,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1__1791277780820__720p.mp4",
+    "fileName": "adp_sample_1280x720_1__1791277780820__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3072
+    },
+    "_id": "6ac4baeda2b0eaf43e4c7a5a"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4bad3ba566e7c4385bab7",
+  "name": "sample_2560x1440_2__1791277725825.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_2__1791277725825.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_2__1791277725825.mp4",
+  "duration": 28,
+  "size": 56.23,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 16703,
+  "parent": "6aa8d1435decd2f7b4864f2b",
+  "createdAt": "2026-10-06T09:09:39.765Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.27,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_2__1791277725825__720p.mp4",
+    "fileName": "adp_sample_2560x1440_2__1791277725825__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3049
+    },
+    "_id": "6ac4bad3ba566e7c4385bab8"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4ba9cba566e7c4385baa5",
+  "name": "sample_1920x1080_1__1791277688820.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1__1791277688820.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1__1791277688820.mp4",
+  "duration": 28,
+  "size": 33.93,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 10078,
+  "parent": "6aa8d1435decd2f7b4864f2b",
+  "createdAt": "2026-10-06T09:08:44.514Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1__1791277688820__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1__1791277688820__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3055
+    },
+    "_id": "6ac4ba9cba566e7c4385baa6"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4ba76a2b0eaf43e4c7a3d",
+  "name": "sample_3840x2160_3__1791277574711.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_3__1791277574711.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_3__1791277574711.mp4",
+  "duration": 28,
+  "size": 107.16,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 31834,
+  "parent": "6aa8d1435decd2f7b4864f2b",
+  "createdAt": "2026-10-06T09:08:06.962Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_3__1791277574711__720p.mp4",
+    "fileName": "adp_sample_3840x2160_3__1791277574711__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3053
+    },
+    "_id": "6ac4ba76a2b0eaf43e4c7a3e"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4b8c3ba566e7c4385ba79",
+  "name": "sample_3840x2160_3__1791277100084.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_3__1791277100084.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_3__1791277100084.mp4",
+  "duration": 28,
+  "size": 107.16,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 31834,
+  "parent": "6aa8d1435decd2f7b4864f2b",
+  "createdAt": "2026-10-06T09:00:51.629Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.28,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_3__1791277100084__720p.mp4",
+    "fileName": "adp_sample_3840x2160_3__1791277100084__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3052
+    },
+    "_id": "6ac4b8c3ba566e7c4385ba7a"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4b82a4e756e9191048fdd",
+  "name": "sample_3840x2160_2__1791276992565.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_2__1791276992565.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_2__1791276992565.mp4",
+  "duration": 28,
+  "size": 107.16,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 31834,
+  "parent": "6aa8d1435decd2f7b4864f2b",
+  "createdAt": "2026-10-06T08:58:18.474Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_2__1791276992565__720p.mp4",
+    "fileName": "adp_sample_3840x2160_2__1791276992565__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3053
+    },
+    "_id": "6ac4b82a4e756e9191048fde"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4b6bbba566e7c4385b772",
+  "name": "sample_3840x2160_3__1791276629303.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_3__1791276629303.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_3__1791276629303.mp4",
+  "duration": 28,
+  "size": 107.16,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 31834,
+  "parent": "6aa8d1435decd2f7b4864f2b",
+  "createdAt": "2026-10-06T08:52:11.312Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_3__1791276629303__720p.mp4",
+    "fileName": "adp_sample_3840x2160_3__1791276629303__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3054
+    },
+    "_id": "6ac4b6bbba566e7c4385b773"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4b654ba566e7c4385b712",
+  "name": "sample_3840x2160_2__1791276520156.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_2__1791276520156.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_2__1791276520156.mp4",
+  "duration": 28,
+  "size": 107.16,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 31834,
+  "parent": "6aa8d1435decd2f7b4864f2b",
+  "createdAt": "2026-10-06T08:50:28.252Z",
+  "screens": [
+   {
+    "_id": "6abe377185f8d06cb030ae19",
+    "name": "aman2",
+    "status": true,
+    "mediaReport": {
+     "fileStorageReport": [
+      {
+       "file_name": "sample_960x400_ocean_with_audio_1__1791271175790.mp4",
+       "file_size": 10845966,
+       "last_used": 1791271223000,
+       "local_path": "/storage/emulated/0/Android/data/com.wilyer.signageplayer/files/media/sample_960x400_ocean_with_audio_1__1791271175790.mp4"
+      },
+      {
+       "file_name": "sample_640x360_1791270380359.mp4",
+       "file_size": 574842,
+       "last_used": 1791270468000,
+       "local_path": "/storage/emulated/0/Android/data/com.wilyer.signageplayer/files/media/sample_640x360_1791270380359.mp4"
+      },
+      {
+       "file_name": "adp_sample_3840x2160_2__1791276520156__720p.mp4",
+       "file_size": 10745077,
+       "last_used": 1791276656000,
+       "local_path": "/storage/emulated/0/Android/data/com.wilyer.signageplayer/files/media/adp_sample_3840x2160_2__1791276520156__720p.mp4"
+      },
+      {
+       "file_name": "Gemini_Generated_Image_b2szkjb2szkjb2sz_1789479197824.png",
+       "file_size": 1934984,
+       "last_used": 1791267501000,
+       "local_path": "/storage/emulated/0/Android/data/com.wilyer.signageplayer/files/media/Gemini_Generated_Image_b2szkjb2szkjb2sz_1789479197824.png"
+      },
+      {
+       "file_name": "Screenshot_1_1782107374930.png",
+       "file_size": 365807,
+       "last_used": 1791267543000,
+       "local_path": "/storage/emulated/0/Android/data/com.wilyer.signageplayer/files/media/Screenshot_1_1782107374930.png"
+      },
+      {
+       "file_name": "image_8__1782275603866.png",
+       "file_size": 76731,
+       "last_used": 1791267655000,
+       "local_path": "/storage/emulated/0/Android/data/com.wilyer.signageplayer/files/media/image_8__1782275603866.png"
+      },
+      {
+       "file_name": "adp_sample_3840x2160_1791203000916__720p.mp4",
+       "file_size": 10782477,
+       "last_used": 1791269872000,
+       "local_path": "/storage/emulated/0/Android/data/com.wilyer.signageplayer/files/media/adp_sample_3840x2160_1791203000916__720p.mp4"
+      },
+      {
+       "file_name": "adp_COMMON_SHOP_DISPLAY_WITH_AUDIO_VA_1749792498341_1751024583873_1759920809871_1791280808804__720p.mp4",
+       "file_size": 9927507,
+       "last_used": 1791282117000,
+       "local_path": "/storage/emulated/0/Android/data/com.wilyer.signageplayer/files/media/adp_COMMON_SHOP_DISPLAY_WITH_AUDIO_VA_1749792498341_1751024583873_1759920809871_1791280808804__720p.mp4"
+      }
+     ]
+    },
+    "settings": {
+     "lastResponse": 1791286813405
+    }
+   }
+  ],
+  "variants": [
+   {
+    "fileSize": 10.25,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_2__1791276520156__720p.mp4",
+    "fileName": "adp_sample_3840x2160_2__1791276520156__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3042
+    },
+    "_id": "6ac4b654ba566e7c4385b713"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4b589ee5892e1431ed29c",
+  "name": "sample_960x400_ocean_with_audio_1_1791271175790_1791276409583.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_960x400_ocean_with_audio_1_1791271175790_1791276409583.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_960x400_ocean_with_audio_1_1791271175790_1791276409583.mp4",
+  "duration": 46,
+  "size": 10.34,
+  "h": 400,
+  "w": 960,
+  "bitRate": 1816,
+  "parent": "6aa8d1435decd2f7b4864f2b",
+  "createdAt": "2026-10-06T08:47:05.936Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4b508a2b0eaf43e4c797d",
+  "name": "sample_2560x1440_1791276244146.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1791276244146.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1791276244146.mp4",
+  "duration": 28,
+  "size": 57.2,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 16993,
+  "parent": null,
+  "createdAt": "2026-10-06T08:44:56.628Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.28,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791276244146__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1791276244146__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3051
+    },
+    "_id": "6ac4b508a2b0eaf43e4c797e"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4b4a0ee5892e1431ed286",
+  "name": "sample_1280x720_1791276172855.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1791276172855.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1791276172855.mp4",
+  "duration": 28,
+  "size": 15.19,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 4512,
+  "parent": null,
+  "createdAt": "2026-10-06T08:43:12.444Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.36,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1791276172855__720p.mp4",
+    "fileName": "adp_sample_1280x720_1791276172855__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3076
+    },
+    "_id": "6ac4b4a0ee5892e1431ed287"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4b48bee5892e1431ed27f",
+  "name": "sample_1920x1080_1__1791276136935.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1__1791276136935.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1__1791276136935.mp4",
+  "duration": 28,
+  "size": 34.3,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 10188,
+  "parent": null,
+  "createdAt": "2026-10-06T08:42:51.722Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.28,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1__1791276136935__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1__1791276136935__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3051
+    },
+    "_id": "6ac4b48bee5892e1431ed280"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4b467ee5892e1431ed278",
+  "name": "sample_2560x1440_1791276087740.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1791276087740.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1791276087740.mp4",
+  "duration": 28,
+  "size": 57.2,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 16993,
+  "parent": null,
+  "createdAt": "2026-10-06T08:42:15.721Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.27,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791276087740__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1791276087740__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3050
+    },
+    "_id": "6ac4b467ee5892e1431ed279"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4b436ee5892e1431ed271",
+  "name": "sample_3840x2160_2__1791275993011.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_2__1791275993011.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_2__1791275993011.mp4",
+  "duration": 28,
+  "size": 108.99,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 32376,
+  "parent": null,
+  "createdAt": "2026-10-06T08:41:26.580Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.25,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_2__1791275993011__720p.mp4",
+    "fileName": "adp_sample_3840x2160_2__1791275993011__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3042
+    },
+    "_id": "6ac4b436ee5892e1431ed272"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4b3d7ba566e7c4385b6dc",
+  "name": "sample_960x400_ocean_with_audio_1_1791271175790_1791275984234.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_960x400_ocean_with_audio_1_1791271175790_1791275984234.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_960x400_ocean_with_audio_1_1791271175790_1791275984234.mp4",
+  "duration": 46,
+  "size": 10.34,
+  "h": 400,
+  "w": 960,
+  "bitRate": 1816,
+  "parent": null,
+  "createdAt": "2026-10-06T08:39:51.702Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4a1174e756e9191048f6f",
+  "name": "sample_960x400_ocean_with_audio_1__1791271175790.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_960x400_ocean_with_audio_1__1791271175790.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_960x400_ocean_with_audio_1__1791271175790.mp4",
+  "duration": 46,
+  "size": 10.34,
+  "h": 400,
+  "w": 960,
+  "bitRate": 1704,
+  "parent": null,
+  "createdAt": "2026-10-06T07:19:51.249Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4a106ee5892e1431ed23b",
+  "name": "sample_640x360_1__1791271165845.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_640x360_1__1791271165845.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_640x360_1__1791271165845.mp4",
+  "duration": 13,
+  "size": 0.95,
+  "h": 360,
+  "w": 640,
+  "bitRate": 596,
+  "parent": null,
+  "createdAt": "2026-10-06T07:19:34.679Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 0.61,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_640x360_1__1791271165845__720p.mp4",
+    "fileName": "adp_sample_640x360_1__1791271165845__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 640,
+     "height": 360,
+     "bitrate": 383
+    },
+    "_id": "6ac4a106ee5892e1431ed23c"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4a0fc4e756e9191048f66",
+  "name": "sample_960x540_1791271154398.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_960x540_1791271154398.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_960x540_1791271154398.mp4",
+  "duration": 13,
+  "size": 0.98,
+  "h": 540,
+  "w": 960,
+  "bitRate": 614,
+  "parent": null,
+  "createdAt": "2026-10-06T07:19:24.708Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 0.93,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_960x540_1791271154398__720p.mp4",
+    "fileName": "adp_sample_960x540_1791271154398__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 960,
+     "height": 540,
+     "bitrate": 579
+    },
+    "_id": "6ac4a0fc4e756e9191048f67"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4a0f1ee5892e1431ed234",
+  "name": "sample_1280x720_1791271133453.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1791271133453.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1791271133453.mp4",
+  "duration": 28,
+  "size": 15.19,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 4512,
+  "parent": null,
+  "createdAt": "2026-10-06T07:19:13.287Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.35,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1791271133453__720p.mp4",
+    "fileName": "adp_sample_1280x720_1791271133453__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3073
+    },
+    "_id": "6ac4a0f1ee5892e1431ed235"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4a0dca2b0eaf43e4c78f3",
+  "name": "sample_1920x1080_1__1791271098230.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1__1791271098230.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1__1791271098230.mp4",
+  "duration": 28,
+  "size": 34.3,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 10188,
+  "parent": null,
+  "createdAt": "2026-10-06T07:18:52.350Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1__1791271098230__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1__1791271098230__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3054
+    },
+    "_id": "6ac4a0dca2b0eaf43e4c78f4"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4a0b9ee5892e1431ed228",
+  "name": "sample_2560x1440_1791271046426.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1791271046426.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1791271046426.mp4",
+  "duration": 28,
+  "size": 57.2,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 16993,
+  "parent": null,
+  "createdAt": "2026-10-06T07:18:17.109Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791271046426__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1791271046426__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3054
+    },
+    "_id": "6ac4a0b9ee5892e1431ed229"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac4a085a2b0eaf43e4c78e9",
+  "name": "sample_3840x2160_2__1791270944564.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_2__1791270944564.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_2__1791270944564.mp4",
+  "duration": 28,
+  "size": 108.99,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 32376,
+  "parent": null,
+  "createdAt": "2026-10-06T07:17:25.109Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_2__1791270944564__720p.mp4",
+    "fileName": "adp_sample_3840x2160_2__1791270944564__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3053
+    },
+    "_id": "6ac4a085a2b0eaf43e4c78ea"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac49fa5ee5892e1431ed213",
+  "name": "sample_640x360_1791270816359.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_640x360_1791270816359.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_640x360_1791270816359.mp4",
+  "duration": 13,
+  "size": 0.55,
+  "h": 360,
+  "w": 640,
+  "bitRate": 341,
+  "parent": null,
+  "createdAt": "2026-10-06T07:13:41.628Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac49f9fee5892e1431ed20d",
+  "name": "sample_1280x720_surfing_with_audio_1__1791270756080.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_surfing_with_audio_1__1791270756080.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_surfing_with_audio_1__1791270756080.mp4",
+  "duration": 183,
+  "size": 68.43,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 3061,
+  "parent": null,
+  "createdAt": "2026-10-06T07:13:35.357Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac49f62ee5892e1431ed206",
+  "name": "sample_960x540_1791270748427.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_960x540_1791270748427.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_960x540_1791270748427.mp4",
+  "duration": 13,
+  "size": 1.26,
+  "h": 540,
+  "w": 960,
+  "bitRate": 788,
+  "parent": null,
+  "createdAt": "2026-10-06T07:12:34.991Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac49f5bee5892e1431ed1f6",
+  "name": "sample_960x400_ocean_with_audio_1791270728899.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_960x400_ocean_with_audio_1791270728899.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_960x400_ocean_with_audio_1791270728899.mp4",
+  "duration": 46,
+  "size": 16.71,
+  "h": 400,
+  "w": 960,
+  "bitRate": 2937,
+  "parent": null,
+  "createdAt": "2026-10-06T07:12:27.339Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac49eb6ee5892e1431ed1da",
+  "name": "sample_960x400_ocean_with_audio_1791270563690.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_960x400_ocean_with_audio_1791270563690.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_960x400_ocean_with_audio_1791270563690.mp4",
+  "duration": 46,
+  "size": 16.71,
+  "h": 400,
+  "w": 960,
+  "bitRate": 2937,
+  "parent": null,
+  "createdAt": "2026-10-06T07:09:42.109Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac49e2d4e756e9191048f25",
+  "name": "sample_960x540_1791270439654.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_960x540_1791270439654.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_960x540_1791270439654.mp4",
+  "duration": 13,
+  "size": 1.26,
+  "h": 540,
+  "w": 960,
+  "bitRate": 788,
+  "parent": null,
+  "createdAt": "2026-10-06T07:07:25.567Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac49df3a2b0eaf43e4c7871",
+  "name": "sample_640x360_1791270380359.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_640x360_1791270380359.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_640x360_1791270380359.mp4",
+  "duration": 13,
+  "size": 0.55,
+  "h": 360,
+  "w": 640,
+  "bitRate": 341,
+  "parent": null,
+  "createdAt": "2026-10-06T07:06:27.796Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac49c50ee5892e1431ed18a",
+  "name": "sample_1920x1080_1788244582353_1791269933629.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1788244582353_1791269933629.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1788244582353_1791269933629.mp4",
+  "duration": 28,
+  "size": 36.48,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 10834,
+  "parent": null,
+  "createdAt": "2026-10-06T06:59:28.812Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.28,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1788244582353_1791269933629__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1788244582353_1791269933629__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3052
+    },
+    "_id": "6ac49c58ee5892e1431ed197"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac39730ba566e7c4385b54b",
+  "name": "sample_3840x2160_1791203000916.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_1791203000916.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_1791203000916.mp4",
+  "duration": 28,
+  "size": 134.23,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 39876,
+  "parent": null,
+  "createdAt": "2026-10-05T12:25:20.519Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.28,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1791203000916__720p.mp4",
+    "fileName": "adp_sample_3840x2160_1791203000916__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3052
+    },
+    "_id": "6ac39730ba566e7c4385b54c"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac39675ee5892e1431ed077",
+  "name": "sample_2560x1440_1__1791202878088.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1__1791202878088.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1__1791202878088.mp4",
+  "duration": 28,
+  "size": 71.55,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 21254,
+  "parent": null,
+  "createdAt": "2026-10-05T12:22:13.852Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.32,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1__1791202878088__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1__1791202878088__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3064
+    },
+    "_id": "6ac39675ee5892e1431ed078"
+   },
+   {
+    "fileSize": 17.13,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1__1791202878088__1080p.mp4",
+    "fileName": "adp_sample_2560x1440_1__1791202878088__1080p.mp4",
+    "resolution": "1080p",
+    "metadata": {
+     "resolution": "1080p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1920,
+     "height": 1080,
+     "bitrate": 5087
+    },
+    "_id": "6ac396a5ba566e7c4385b548"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac396014e756e9191048a9d",
+  "name": "sample_960x540_1791202803003.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_960x540_1791202803003.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_960x540_1791202803003.mp4",
+  "duration": 13,
+  "size": 0.92,
+  "h": 540,
+  "w": 960,
+  "bitRate": 577,
+  "parent": null,
+  "createdAt": "2026-10-05T12:20:17.983Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 0.96,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_960x540_1791202803003__720p.mp4",
+    "fileName": "adp_sample_960x540_1791202803003__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 960,
+     "height": 540,
+     "bitrate": 602
+    },
+    "_id": "6ac396014e756e9191048a9e"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac39587ee5892e1431ed055",
+  "name": "sample_1280x720_1791202672114.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1791202672114.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1791202672114.mp4",
+  "duration": 28,
+  "size": 18.8,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 5583,
+  "parent": null,
+  "createdAt": "2026-10-05T12:18:15.815Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.36,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1791202672114__720p.mp4",
+    "fileName": "adp_sample_1280x720_1791202672114__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3075
+    },
+    "_id": "6ac39587ee5892e1431ed056"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac3952c4e756e9191048a7c",
+  "name": "sample_1920x1080_1791202556113.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1791202556113.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1791202556113.mp4",
+  "duration": 28,
+  "size": 42.75,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 12701,
+  "parent": null,
+  "createdAt": "2026-10-05T12:16:44.808Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.27,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1791202556113__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1791202556113__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3050
+    },
+    "_id": "6ac3952c4e756e9191048a7d"
+   },
+   {
+    "fileSize": 17.3,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1791202556113__1080p.mp4",
+    "fileName": "adp_sample_1920x1080_1791202556113__1080p.mp4",
+    "resolution": "1080p",
+    "metadata": {
+     "resolution": "1080p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1920,
+     "height": 1080,
+     "bitrate": 5137
+    },
+    "_id": "6ac3954aa2b0eaf43e4c7752"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac39352ba566e7c4385b4f7",
+  "name": "sample_2560x1440_1791202084321.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_2560x1440_1791202084321.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_2560x1440_1791202084321.mp4",
+  "duration": 28,
+  "size": 71.55,
+  "h": 1440,
+  "w": 2560,
+  "bitRate": 21254,
+  "parent": null,
+  "createdAt": "2026-10-05T12:08:50.734Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.3,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_2560x1440_1791202084321__720p.mp4",
+    "fileName": "adp_sample_2560x1440_1791202084321__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3056
+    },
+    "_id": "6ac39352ba566e7c4385b4f8"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6ac3930dba566e7c4385b4de",
+  "name": "sample_3840x2160_1791201979371.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_3840x2160_1791201979371.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_3840x2160_1791201979371.mp4",
+  "duration": 28,
+  "size": 134.23,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 39876,
+  "parent": null,
+  "createdAt": "2026-10-05T12:07:41.362Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.24,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_3840x2160_1791201979371__720p.mp4",
+    "fileName": "adp_sample_3840x2160_1791201979371__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3039
+    },
+    "_id": "6ac3930dba566e7c4385b4df"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6aa8eecde7c517660efcfb3d",
+  "name": "sample_1920x1080_1789456070284.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1789456070284.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1789456070284.mp4",
+  "duration": 28,
+  "size": 36.48,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 10834,
+  "parent": "6aa8c5ee2c45e09382d70dcd",
+  "createdAt": "2026-09-15T07:07:57.473Z",
+  "screens": [
+   {
+    "_id": "69a6c981364bdf2a580c6c8c",
+    "name": "Sameer MSI",
+    "status": false,
+    "mediaReport": {
+     "fileStorageReport": []
+    },
+    "settings": {
+     "lastResponse": 1782967962099
+    }
+   }
+  ],
+  "variants": [
+   {
+    "fileSize": 10.28,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1789456070284__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1789456070284__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3052
+    },
+    "_id": "6aa8eed5e7c517660efcfb4b"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6aa8eeb2b5e9cbed8d2f5d12",
+  "name": "sample_whatsapp_1789456032301.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_whatsapp_1789456032301.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_whatsapp_1789456032301.mp4",
+  "duration": 6,
+  "size": 4.35,
+  "h": 1920,
+  "w": 1080,
+  "bitRate": 5183,
+  "parent": "6aa8c5ee2c45e09382d70dcd",
+  "createdAt": "2026-09-15T07:07:30.485Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 0.97,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_whatsapp_1789456032301__720p.mp4",
+    "fileName": "adp_sample_whatsapp_1789456032301__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 720,
+     "height": 1280,
+     "bitrate": 1057
+    },
+    "_id": "6aa8eeb2b5e9cbed8d2f5d13"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6a84211f8c87c19404a79c25",
+  "name": "sample_snacks_1784183573129_1787044112636.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_snacks_1784183573129_1787044112636.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_snacks_1784183573129_1787044112636.mp4",
+  "duration": 17,
+  "size": 21.89,
+  "h": 1920,
+  "w": 1080,
+  "bitRate": 10189,
+  "parent": "6a4f5e6d87fd23e8b532811d",
+  "createdAt": "2026-08-18T09:08:47.540Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6a587b60a8260e0dc1116f3e",
+  "name": "sample_1920x1080_1784183609014.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1920x1080_1784183609014.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1920x1080_1784183609014.mp4",
+  "duration": 28,
+  "size": 34.38,
+  "h": 1080,
+  "w": 1920,
+  "bitRate": 10212,
+  "parent": "6a576df9afd0fa2e18d3b5bc",
+  "createdAt": "2026-07-16T06:34:08.788Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.29,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1784183609014__720p.mp4",
+    "fileName": "adp_sample_1920x1080_1784183609014__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3054
+    },
+    "_id": "6a587b60a8260e0dc1116f3f"
+   },
+   {
+    "fileSize": 17.27,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1920x1080_1784183609014__1080p.mp4",
+    "fileName": "adp_sample_1920x1080_1784183609014__1080p.mp4",
+    "resolution": "1080p",
+    "metadata": {
+     "resolution": "1080p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1920,
+     "height": 1080,
+     "bitrate": 5131
+    },
+    "_id": "6a587b7da8260e0dc1116f6e"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6a587b23a8260e0dc1116f1c",
+  "name": "sample_1280x720_1784183583971.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1784183583971.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1784183583971.mp4",
+  "duration": 28,
+  "size": 16.63,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 4937,
+  "parent": "6a576df9afd0fa2e18d3b5bc",
+  "createdAt": "2026-07-16T06:33:07.852Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.26,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1784183583971__720p.mp4",
+    "fileName": "adp_sample_1280x720_1784183583971__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3045
+    },
+    "_id": "6a587b29a8260e0dc1116f2d"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6a587b1fa8260e0dc1116f0c",
+  "name": "sample_1280x720_1784183579310.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1280x720_1784183579310.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1280x720_1784183579310.mp4",
+  "duration": 28,
+  "size": 16.63,
+  "h": 720,
+  "w": 1280,
+  "bitRate": 4938,
+  "parent": "6a576df9afd0fa2e18d3b5bc",
+  "createdAt": "2026-07-16T06:33:03.559Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 10.26,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_1280x720_1784183579310__720p.mp4",
+    "fileName": "adp_sample_1280x720_1784183579310__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3047
+    },
+    "_id": "6a587b26a8260e0dc1116f2b"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6a587b13a8260e0dc1116ef0",
+  "name": "sample_4k_hevc_1784183558359.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_4k_hevc_1784183558359.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_4k_hevc_1784183558359.mp4",
+  "duration": 23,
+  "size": 106.36,
+  "h": 2160,
+  "w": 3840,
+  "bitRate": 37291,
+  "parent": "6a576df9afd0fa2e18d3b5bc",
+  "createdAt": "2026-07-16T06:32:51.401Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 8.76,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_4k_hevc_1784183558359__720p.mp4",
+    "fileName": "adp_sample_4k_hevc_1784183558359__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1280,
+     "height": 720,
+     "bitrate": 3088
+    },
+    "_id": "6a587b25a8260e0dc1116f28"
+   },
+   {
+    "fileSize": 14.59,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_4k_hevc_1784183558359__1080p.mp4",
+    "fileName": "adp_sample_4k_hevc_1784183558359__1080p.mp4",
+    "resolution": "1080p",
+    "metadata": {
+     "resolution": "1080p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 1920,
+     "height": 1080,
+     "bitrate": 5149
+    },
+    "_id": "6a587b92a8260e0dc1116f85"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6a587af0a8260e0dc1116ec5",
+  "name": "sample_salads_1784183496673.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_salads_1784183496673.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_salads_1784183496673.mp4",
+  "duration": 21,
+  "size": 27.32,
+  "h": 1920,
+  "w": 1080,
+  "bitRate": 10298,
+  "parent": "6a576df9afd0fa2e18d3b5bc",
+  "createdAt": "2026-07-16T06:32:16.555Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 3.53,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_salads_1784183496673__720p.mp4",
+    "fileName": "adp_sample_salads_1784183496673__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 720,
+     "height": 1280,
+     "bitrate": 1357
+    },
+    "_id": "6a587af0a8260e0dc1116ec6"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6a587ab7a8260e0dc1116ea9",
+  "name": "sample_salads_1784183442397.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_salads_1784183442397.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_salads_1784183442397.mp4",
+  "duration": 21,
+  "size": 17.24,
+  "h": 1920,
+  "w": 1080,
+  "bitRate": 6688,
+  "parent": "6a576e18afd0fa2e18d3b5d9",
+  "createdAt": "2026-07-16T06:31:19.375Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 6.33,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_salads_1784183442397__720p.mp4",
+    "fileName": "adp_sample_salads_1784183442397__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 720,
+     "height": 1280,
+     "bitrate": 2446
+    },
+    "_id": "6a587ab7a8260e0dc1116eaa"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "6a587a92a8260e0dc1116e87",
+  "name": "sample_chef_1784183434228.mp4",
+  "type": "video",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_chef_1784183434228.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_chef_1784183434228.mp4",
+  "duration": 23,
+  "size": 22.08,
+  "h": 1920,
+  "w": 1080,
+  "bitRate": 7660,
+  "parent": "6a576e18afd0fa2e18d3b5d9",
+  "createdAt": "2026-07-16T06:30:42.047Z",
+  "screens": [],
+  "variants": [
+   {
+    "fileSize": 3.52,
+    "fileURL": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/adp_sample_chef_1784183434228__720p.mp4",
+    "fileName": "adp_sample_chef_1784183434228__720p.mp4",
+    "resolution": "720p",
+    "metadata": {
+     "resolution": "720p",
+     "type": "video/mp4",
+     "format": "mp4",
+     "width": 720,
+     "height": 1280,
+     "bitrate": 1130
+    },
+    "_id": "6a587a9aa8260e0dc1116ea6"
+   }
+  ],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "69e1149d36aa4a3119def8ef",
+  "name": "sample_1776358557166.jpg",
+  "type": "image",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1776358557166.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1776358557166.jpg",
+  "duration": 0,
+  "size": 0,
+  "h": 1,
+  "w": 1,
+  "bitRate": 24,
+  "parent": null,
+  "createdAt": "2026-04-16T16:55:57.354Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "69e113d1bd56651570408719",
+  "name": "sample_1776358353194.jpg",
+  "type": "image",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1776358353194.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1776358353194.jpg",
+  "duration": 0,
+  "size": 0,
+  "h": 1,
+  "w": 1,
+  "bitRate": 24,
+  "parent": null,
+  "createdAt": "2026-04-16T16:52:33.472Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "69e0e34c36aa4a3119def295",
+  "name": "sample_1776345932046.jpg",
+  "type": "image",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1776345932046.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1776345932046.jpg",
+  "duration": 0,
+  "size": 0,
+  "h": 1,
+  "w": 1,
+  "bitRate": 24,
+  "parent": null,
+  "createdAt": "2026-04-16T13:25:32.223Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "69e0e26fb6a3a5cbafe296fb",
+  "name": "sample_1776345710945.jpg",
+  "type": "image",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1776345710945.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1776345710945.jpg",
+  "duration": 0,
+  "size": 0,
+  "h": 1,
+  "w": 1,
+  "bitRate": 24,
+  "parent": null,
+  "createdAt": "2026-04-16T13:21:51.120Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "69e0e180a1e22e420a86d920",
+  "name": "sample_1776345472575.jpg",
+  "type": "image",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1776345472575.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1776345472575.jpg",
+  "duration": 0,
+  "size": 0,
+  "h": 1,
+  "w": 1,
+  "bitRate": 24,
+  "parent": null,
+  "createdAt": "2026-04-16T13:17:52.781Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "69e0ddde36aa4a3119deed03",
+  "name": "sample_1776344541861.jpg",
+  "type": "image",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1776344541861.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1776344541861.jpg",
+  "duration": 0,
+  "size": 0,
+  "h": 1,
+  "w": 1,
+  "bitRate": 24,
+  "parent": null,
+  "createdAt": "2026-04-16T13:02:22.022Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ },
+ {
+  "id": "69e0dcb5b6a3a5cbafe290cf",
+  "name": "sample_1776344244866.jpg",
+  "type": "image",
+  "thumb": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/thumb-sample_1776344244866.png",
+  "url": "https://d2o2gp3gd28xa2.cloudfront.net/v3/62263c1e14f5a72ee1bdf395/sample_1776344244866.jpg",
+  "duration": 0,
+  "size": 0,
+  "h": 1,
+  "w": 1,
+  "bitRate": 24,
+  "parent": null,
+  "createdAt": "2026-04-16T12:57:25.041Z",
+  "screens": [],
+  "variants": [],
+  "uploadedBy": "dev"
+ }
+]

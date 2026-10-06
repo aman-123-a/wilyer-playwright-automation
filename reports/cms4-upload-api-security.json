@@ -1,0 +1,99 @@
+[
+  {
+    "id": "UPLOAD-SEC-01",
+    "severity": "HIGH",
+    "summary": "sign-part issues a presigned PUT for an arbitrary key/uploadId without validating ownership",
+    "detail": {
+      "status": 200,
+      "requestedKey": "v3/000000000000000000000000/pwn-1791286606864.mp4",
+      "body": "{\"url\":\"https://signage-v3.s3.ap-south-1.amazonaws.com/v3/000000000000000000000000/pwn-1791286606864.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIASEEKXSQQWBUAZ2HU%2F20261006%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20261006T113640Z&X-Amz-Expires="
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-02",
+    "severity": "INFO",
+    "summary": "finalize replay test requires a completed uploadId/key from a real multipart upload; run via cms4-video-matrix.mjs then replay finalize manually",
+    "detail": {}
+  },
+  {
+    "id": "UPLOAD-SEC-03",
+    "severity": "INFO",
+    "summary": "create-multipart-upload correctly rejected unauthenticated request",
+    "detail": {
+      "status": 401,
+      "body": "{\"status\":401,\"message\":\"Unauthorized Request\"}"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-04",
+    "severity": "MEDIUM",
+    "summary": "finalize accepted a nonexistent S3 key with spoofed metadata",
+    "detail": {
+      "status": 200,
+      "body": "{\"message\":\"File uploaded successfully\",\"transcoding\":false,\"fileName\":\"1791286608157.mp4\",\"fileId\":\"6ac4dd4aba566e7c4385c05f\"}"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-05:../../etc/passwd.mp4",
+    "severity": "INFO",
+    "summary": "filename \"../../etc/passwd.mp4\" -> 200",
+    "detail": {
+      "status": 200,
+      "body": "{\"uploadId\":\"nCQ9S3Ov3IqzNIf4sYHNd9icMXewNPpve_cXrtszOFkorZczRlRt2sJnkFW9P7oVjJpOVCM5pETblCMRSRrDsXSdH.rmg_ibnH4qZwkl.9tR6KJDgL_txxVH2dg4W4fG\",\"key\":\"v3/62263c1e14f5a72ee1bdf395/_1791286602405.mp4\"}"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-05:..\\..\\windows\\win.in",
+    "severity": "INFO",
+    "summary": "filename \"..\\..\\windows\\win.ini.mp4\" -> 200",
+    "detail": {
+      "status": 200,
+      "body": "{\"uploadId\":\"06qprxNdQWUJDOBdHrVCNZC5nF2lvcY5h7JOep3taNZLDvJqHFfZqjStW13Trx0AK3GkM8waIGIZyj4qGIjNtBvaYr6BAy8jEpn5JSiK5jXs4ngI.FoIg5vwlNWteYYP\",\"key\":\"v3/62263c1e14f5a72ee1bdf395/_1791286602881.mp4\"}"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-05:<script>alert(1)</sc",
+    "severity": "INFO",
+    "summary": "filename \"<script>alert(1)</script>.mp4\" -> 200",
+    "detail": {
+      "status": 200,
+      "body": "{\"uploadId\":\"_rs0xu_QAyzax.0UBoUsQeObTmu.3skNqUGGNHg6hGxMjUvcqwhSOJp9.N1P4oFYa0cwGUva2sQURJrF3tZErLJwsGjLSPrYL10xVIcWAIKfzrktmVWhR.Z8ekI3U7wh\",\"key\":\"v3/62263c1e14f5a72ee1bdf395/_script_alert_1_script__1791286603349.mp4\"}"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-05:aaaaaaaaaaaaaaaaaaaa",
+    "severity": "INFO",
+    "summary": "filename \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\" -> 200",
+    "detail": {
+      "status": 200,
+      "body": "{\"uploadId\":\"M3rThESLAYqU_w713WzqUbvWpvlkoIvgEZ.eSqyv8HQ9AwwK1MrQQYoPOQps1s_eqcLqUZGn1HY6G1PqBnOYUzuxPu4Ry4BK_JrnNvGlI9foA7AACxPokmc0ZwhqUPNS\",\"key\":\"v3/62263c1e14f5a72ee1bdf395/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-05:con.mp4",
+    "severity": "INFO",
+    "summary": "filename \"con.mp4\" -> 200",
+    "detail": {
+      "status": 200,
+      "body": "{\"uploadId\":\"F9DxnZEEPMP_OJqdtvlek.uZ4sq5hDVbYFiS1ZFhm0x4N8CJoaXnofbsGz_N6Gj5C31yjiODo431.w8r8F5ND.uQYJP7W_XfUV4U0extB1Owz7bRFpyAlwIVFPFApowK\",\"key\":\"v3/62263c1e14f5a72ee1bdf395/con_1791286604299.mp4\"}"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-05:nul.mp4",
+    "severity": "INFO",
+    "summary": "filename \"nul.mp4\" -> 200",
+    "detail": {
+      "status": 200,
+      "body": "{\"uploadId\":\"WITScGEc8u6lA8sCW3jLhjDHQco7FW.uWut6r2rsgyfCFoDMSn.zIOMoJodlDi.W0CULPK812NckNyIO8O08IbRv7aEMUXt0DzhwPXdpZwHC8_myjyXOk6K.X1643GGb\",\"key\":\"v3/62263c1e14f5a72ee1bdf395/nul_1791286604769.mp4\"}"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-06",
+    "severity": "INFO",
+    "summary": "empty filename -> 400",
+    "detail": {
+      "status": 400,
+      "body": "{\"message\":\"filename and type are required\"}"
+    }
+  }
+]

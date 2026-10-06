@@ -1,0 +1,26 @@
+UI-01 PASS Login and dashboard shell loads - console errors so far: 3
+UI-02-aqi PASS AQI widget list opens - 97 <p> elements; read calls: 3
+UI-03-aqi PASS AQI create form opens with expected fields - name,fontFamily,faceId,aqiFor,city1,city1,city1,city1,checkbox
+UI-04-aqi FAIL AQI: Save with EMPTY name is blocked - create calls=1, dialog open=true
+UI-05-aqi PASS AQI: Save with valid name but EMPTY location - create HTTP 400; body {"name":"QA_CMP_UI_aqi_nolocation","type":"aqi","faceId":"1","faceUrl":"/media/widgets/aqi.png","data":{"cities":[],"c
+UI-06-aqi PASS AQI: create with valid location (autocomplete suggestions=5, field="Mumbai") - HTTP 200, 3573 ms to saved; payload: {"name":"QA_CMP_UI_aqi_mumbai","type":"aqi","faceId":"1","faceUrl":"/media/widgets/aqi.png","data":{"ci
+UI-06b-aqi PASS AQI: coordinates saved with the location - {"name":"QA_CMP_UI_aqi_mumbai","type":"aqi","faceId":"1","faceUrl":"/media/widgets/aqi.png","data":{"cities":["Mumbai"],"coordinates":[{"lat
+UI-07-aqi PASS AQI: saved widget appears in list / search - found=true
+UI-08-aqi PASS AQI: reopen shows saved name and location - name="QA_CMP_UI_aqi_mumbai", city1="Mumbai"
+UI-09-aqi PASS AQI: Preview renders for saved location - calls: GET /v3/cms/widget/readPublicWidgetPreview/6abe4efb63da81f6178fb9ae 200 -1ms; 6275 ms to settle
+UI-10-aqi PASS AQI: invalid free-text location (no suggestion, suggestions=0) - HTTP 400; {"name":"QA_CMP_UI_aqi_invalidloc","type":"aqi","faceId":"1","faceUrl":"/media/widgets/aqi.png","data":{"cities":[],"coordinates":
+UI-11-aqi PASS AQI: XSS payload in widget name is not executed - create HTTP 200; script executed=false; page errors=0
+UI-12-aqi PASS (blocked in UI) AQI: 600-character name is limited or handled - no create call
+UI-02-weather PASS Weather widget list opens - 113 <p> elements; read calls: 30
+UI-03-weather PASS Weather create form opens with expected fields - name,city1,city1,city1,city1,fontFamily,checkbox,checkbox,checkbox,checkbox,checkbox
+UI-04-weather FAIL Weather: Save with EMPTY name is blocked - create calls=1, dialog open=true
+UI-05-weather FAIL (candidate bug) Weather: Save with valid name but EMPTY location - create HTTP 200; body {"name":"QA_CMP_UI_weather_nolocation","data":{"city":[],"fontFamily":"Arial","bgImage":false,"fontBold":false,"animat
+UI-06-weather PASS Weather: create with valid location (autocomplete suggestions=5, field="Mumbai") - HTTP 200, 3575 ms to saved; payload: {"name":"QA_CMP_UI_weather_mumbai","data":{"city":["Mumbai"],"fontFamily":"Arial","bgImage":false,"font
+UI-07-weather PASS Weather: saved widget appears in list / search - found=true
+UI-08-weather PASS Weather: reopen shows saved name and location - name="QA_CMP_UI_weather_mumbai", city1="Mumbai"
+UI-09-weather PASS Weather: Preview renders for saved location - calls: GET /v3/cms/widget/readPublic/6abe4f5163da81f6178fba29 200 -1ms | GET /v3/cms/widget/readPublicWidgetPreview/6abe4f5f63da81f6178fba55
+UI-10-weather PASS Weather: invalid free-text location (no suggestion, suggestions=0) - HTTP 200; {"name":"QA_CMP_UI_weather_invalidloc","data":{"city":[],"fontFamily":"Arial","bgImage":false,"fontBold":false,"animation":false,"
+UI-11-weather PASS Weather: XSS payload in widget name is not executed - create HTTP 200; script executed=false; page errors=0
+UI-12-weather REVIEW (accepted 600 chars; no limit) Weather: 600-character name is limited or handled - HTTP 200
+UI-99 REVIEW Console / page errors during CMS widget flows - console errors: 19 ["Failed to load resource: the server responded with a status of 401 ()","requestStorageAccess: Permission denied.","Refu
+cleanup [200,200,200,200,200,200,200]

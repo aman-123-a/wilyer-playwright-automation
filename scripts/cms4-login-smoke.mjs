@@ -1,0 +1,14 @@
+import { chromium } from '@playwright/test';
+const base='https://cms4.pocsample.in';
+const b=await chromium.launch(); const p=await b.newPage({viewport:{width:1440,height:900}});
+const apis=[]; p.on('response',r=>{const u=r.url(); if(!/\.(js|css|png|svg|woff2?|ico|jpg)(\?|$)/.test(u)&&!u.startsWith(base)) apis.push(r.status()+' '+r.request().method()+' '+u.slice(0,110));});
+const t0=Date.now(); const resp=await p.goto(base,{waitUntil:'networkidle'}); console.log('landing',resp.status(),p.url(),Date.now()-t0+'ms','title:',await p.title());
+await p.screenshot({path:'reports/cms4-login-1.png'});
+await p.locator('input[type=email],input[name*=mail i],input[type=text]').first().fill(process.env.U);
+await p.locator('input[type=password]').first().fill(process.env.P);
+await p.locator('button[type=submit],button:has-text("Login"),button:has-text("Sign in")').first().click();
+await p.waitForLoadState('networkidle').catch(()=>{}); await p.waitForTimeout(3000);
+console.log('after login url:',p.url()); console.log('title:',await p.title());
+console.log('body:',(await p.locator('body').innerText()).replace(/\s+/g,' ').slice(0,500));
+await p.screenshot({path:'reports/cms4-login-2.png'});
+console.log(apis.slice(0,25).join('\n')); await b.close();

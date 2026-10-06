@@ -1,0 +1,1674 @@
+{
+ "startedAt": "2026-10-01T11:55:38.270Z",
+ "display": [
+  {
+   "key": "W-DEL",
+   "type": "weather",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/6458ede82a3e6572987ac131",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2513,
+   "firstApi": {
+    "status": 200,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "32°C Delhi CLEAR 3.33 30 1010 06:13 18:07"
+  },
+  {
+   "key": "W-DEL",
+   "type": "weather",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe4630f5746abddbb33d54",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2598,
+   "firstApi": {
+    "status": 200,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "delhi 32 ° C Clear 2.2 48 1011.41 06:14 18:07"
+  },
+  {
+   "key": "W-MUM",
+   "type": "weather",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/64b9243fa0d9d61af1b4418d",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2075,
+   "firstApi": {
+    "status": 200,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "29°C Mumbai CLEAR 4.69 73 1011 06:29 18:27 32°C Delhi CLEAR 3.33 30 1010 06:13 18:07 37°C Dubai CLEAR 5.66 54 1009 07:40 19:36"
+  },
+  {
+   "key": "W-MUM",
+   "type": "weather",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe463163da81f6178fb8b3",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 3008,
+   "firstApi": {
+    "status": 200,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "mumbai Clear 33 ° C 3.9 67 1011.44 06:29 delhi Clear 32 ° C 2.2 48 1011.41 06:14 dubai Clear 37 ° C 5.3 41 1008.79 07:40"
+  },
+  {
+   "key": "W-BLR",
+   "type": "weather",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/69957d78a319087eff36b60b",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 3741,
+   "firstApi": {
+    "status": 200,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "29°C Visakhapatnam CLOUDS 2.63 69 1011 05:47 17:46 32°C Delhi CLEAR 3.33 30 1010 06:13 18:07 28°C Bengaluru CLOUDS 1.69 60 1013 06:08 18:09"
+  },
+  {
+   "key": "W-BLR",
+   "type": "weather",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe463236f9ebeed640c3c1",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2318,
+   "firstApi": {
+    "status": 200,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "visakhapatnam Clouds 30 ° C 3.6 74 1011.58 05:47 delhi Clear 32 ° C 2.2 48 1011.41 06:14 bengaluru Clouds 28 ° C 1.7 55 1012.79 06:08"
+  },
+  {
+   "key": "W-MAA",
+   "type": "weather",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/6a4e27f4ab6cc5e2836a1364",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2421,
+   "firstApi": {
+    "status": 200,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "31°C Chennai Clouds 4.79 05:58 05:58 Thu 31 °C Thu 31 °C Thu 30 °C Fri 28 °C Fri 29 °C Fri 30 °C Fri 34 °C Fri 33 °C Fri 30 °C"
+  },
+  {
+   "key": "W-MAA",
+   "type": "weather",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe4632f5746abddbb33d5e",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2558,
+   "firstApi": {
+    "status": 200,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "Chennai Clouds 31 ° C 3.6 76 1010.96 05:58 17:59 Forecast 00:00 33°C 00:00 32°C 00:00 32°C 00:00 32°C 00:00 32°C 00:00 32°C 00:00 32°C"
+  },
+  {
+   "key": "W-CCU",
+   "type": "weather",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/67e3d95ab1595d3173a6b21c",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2620,
+   "firstApi": {
+    "status": 200,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "30°C Kolkata Rain 3.89 05:27 05:27 Thu 30 °C Thu 29 °C Thu 28 °C Fri 26 °C Fri 27 °C Fri 31 °C Fri 35 °C Fri 35 °C Fri 31 °C 32°C Jaipur Clear 3.36 06:18 06:18 Thu 32 °C Thu 31 °C Thu 28 °C Fri 25 °C Fri 24 °C Fri 27 °C Fri 34 °C Fri 35 °C Fri 33 °C"
+  },
+  {
+   "key": "W-CCU",
+   "type": "weather",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe4632d31a3a150b5fb5bf",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2535,
+   "firstApi": {
+    "status": 200,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "kolkata Clouds 29 ° C 1.7 81 1010.98 05:27 Forecast 00:00 33°C 00:00 33°C 00:00 34°C 00:00 34°C jaipur Clear 33 ° C 1.7 33 1012.42 06:19 Forecast 00:00 34°C 00:00 35°C 00:00 36°C 00:00 36°C"
+  },
+  {
+   "key": "A-DEL",
+   "type": "aqi",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/66364047c2a9e090b94bec49",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2736,
+   "firstApi": {
+    "status": 200,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 5,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "Unhealthy 143 DELHI PM2.5 143 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5 Unhealthy 153 GURUGRAM PM2.5 114 PM10 153 SO2 3.5 O3 13.9 NO2 8.4 CO 3"
+  },
+  {
+   "key": "A-DEL",
+   "type": "aqi",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe4633f5746abddbb33d63",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2427,
+   "firstApi": {
+    "status": 200,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 4,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "DELHI 46.2 Air Quality is Unhealthy PM 2.5 46.2µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83ppb GURUGRAM 51.48 Air Quality is Hazardous PM 2.5 51.48µg/m³ PM 10 283.58µg/m³ SO2 5.76ppb O3 12.02ppb NO2 11.93ppb CO 222.65ppb"
+  },
+  {
+   "key": "A-BLR",
+   "type": "aqi",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/66a76c1b6fc06c70f73f7289",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2112,
+   "firstApi": {
+    "status": 200,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 5,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "Unhealthy 153 GURUGRAM PM2.5 114 PM10 153 SO2 3.5 O3 13.9 NO2 8.4 CO 3 Healthy 117 BENGALURU PM2.5 61 PM10 117 SO2 2.8 O3 17 NO2 7.9 CO 2.8"
+  },
+  {
+   "key": "A-BLR",
+   "type": "aqi",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe463363da81f6178fb8b8",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 3102,
+   "firstApi": {
+    "status": 200,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 4,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "GURUGRAM 51.48 Air Quality is Hazardous PM 2.5 51.48µg/m³ PM 10 283.58µg/m³ SO2 5.76ppb O3 12.02ppb NO2 11.93ppb CO 222.65ppb BENGALURU 50.76 Air Quality is Moderate PM 2.5 50.76µg/m³ PM 10 111.32µg/m³ SO2 3.65ppb O3 10.14ppb NO2 16.96ppb CO 336.49ppb"
+  },
+  {
+   "key": "A-MUM",
+   "type": "aqi",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/65127f1c88ae104c1c6250cd",
+   "dataVisible": false,
+   "timeToDataVisibleMs": null,
+   "firstApi": {
+    "status": 500,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [
+    "error: Failed to load resource: the server responded with a status of 500 ()",
+    "error: Failed to load resource: the server responded with a status of 500 ()"
+   ],
+   "pageErrors": [],
+   "textSample": ""
+  },
+  {
+   "key": "A-MUM",
+   "type": "aqi",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe4634d31a3a150b5fb5c4",
+   "dataVisible": false,
+   "timeToDataVisibleMs": null,
+   "firstApi": {
+    "status": 500,
+    "apiMs": null
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [
+    "error: Failed to load resource: the server responded with a status of 500 ()",
+    "error: Failed to load resource: the server responded with a status of 500 ()"
+   ],
+   "pageErrors": [],
+   "textSample": ""
+  }
+ ],
+ "refresh": [
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "runs": [
+    {
+     "vis": true,
+     "timeToDataMs": 2148,
+     "requests": 2,
+     "status": 200,
+     "apiMs": 527.3
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 162,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 235.7
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 135,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 223.5
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 119,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 255.5
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 122,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 231.7
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 132,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 219.1
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 107,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 231.6
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 132,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 232
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 120,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 250.9
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 117,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 238.5
+    }
+   ],
+   "apiStats": {
+    "n": 10,
+    "min": 219.1,
+    "max": 527.3,
+    "avg": 264.6,
+    "median": 233.8,
+    "p90": 255.5,
+    "p95": 527.3,
+    "p99": 527.3
+   },
+   "dataStats": {
+    "n": 10,
+    "min": 107,
+    "max": 2148,
+    "avg": 329.4,
+    "median": 127,
+    "p90": 162,
+    "p95": 2148,
+    "p99": 2148
+   },
+   "failed": 0,
+   "dupRequests": 1
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "runs": [
+    {
+     "vis": true,
+     "timeToDataMs": 2426,
+     "requests": 2,
+     "status": 200,
+     "apiMs": 726.5
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 116,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 593.1
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 122,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 388
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 123,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 404.1
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 142,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 381.9
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 131,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 382.4
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 131,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 381.4
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 121,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 379.8
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 119,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 400.5
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 121,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 417.6
+    }
+   ],
+   "apiStats": {
+    "n": 10,
+    "min": 379.8,
+    "max": 726.5,
+    "avg": 445.5,
+    "median": 394.3,
+    "p90": 593.1,
+    "p95": 726.5,
+    "p99": 726.5
+   },
+   "dataStats": {
+    "n": 10,
+    "min": 116,
+    "max": 2426,
+    "avg": 355.2,
+    "median": 122.5,
+    "p90": 142,
+    "p95": 2426,
+    "p99": 2426
+   },
+   "failed": 0,
+   "dupRequests": 1
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "runs": [
+    {
+     "vis": true,
+     "timeToDataMs": 2645,
+     "requests": 2,
+     "status": 200,
+     "apiMs": 601.6
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 157,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 407.6
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 126,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 295.5
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 118,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 282.5
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 114,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 299.5
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 108,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 290.8
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 118,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 290.6
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 123,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 290.3
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 119,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 294.7
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 108,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 285
+    }
+   ],
+   "apiStats": {
+    "n": 10,
+    "min": 282.5,
+    "max": 601.6,
+    "avg": 333.8,
+    "median": 292.8,
+    "p90": 407.6,
+    "p95": 601.6,
+    "p99": 601.6
+   },
+   "dataStats": {
+    "n": 10,
+    "min": 108,
+    "max": 2645,
+    "avg": 373.6,
+    "median": 118.5,
+    "p90": 157,
+    "p95": 2645,
+    "p99": 2645
+   },
+   "failed": 0,
+   "dupRequests": 1
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "runs": [
+    {
+     "vis": true,
+     "timeToDataMs": 2481,
+     "requests": 2,
+     "status": 200,
+     "apiMs": 755
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 114,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 546.3
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 123,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 336.1
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 129,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 943
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 110,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 349.3
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 132,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 334.8
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 128,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 335.7
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 128,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 336
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 115,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 333.9
+    },
+    {
+     "vis": true,
+     "timeToDataMs": 124,
+     "requests": 1,
+     "status": 200,
+     "apiMs": 337.9
+    }
+   ],
+   "apiStats": {
+    "n": 10,
+    "min": 333.9,
+    "max": 943,
+    "avg": 460.8,
+    "median": 337,
+    "p90": 755,
+    "p95": 943,
+    "p99": 943
+   },
+   "dataStats": {
+    "n": 10,
+    "min": 110,
+    "max": 2481,
+    "avg": 358.4,
+    "median": 126,
+    "p90": 132,
+    "p95": 2481,
+    "p99": 2481
+   },
+   "failed": 0,
+   "dupRequests": 1
+  }
+ ],
+ "errors": [
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "scenario": "400",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 400 (Bad Request)",
+    "error: Failed to load resource: the server responded with a status of 400 (Bad Request)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-old-400.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "scenario": "401",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-old-401.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "scenario": "403",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 403 (Forbidden)",
+    "error: Failed to load resource: the server responded with a status of 403 (Forbidden)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-old-403.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "scenario": "404",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-old-404.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "scenario": "408",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 408 (Request Timeout)",
+    "error: Failed to load resource: the server responded with a status of 408 (Request Timeout)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-old-408.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "scenario": "429",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 429 (Too Many Requests)",
+    "error: Failed to load resource: the server responded with a status of 429 (Too Many Requests)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-old-429.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "scenario": "500",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "error: Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-old-500.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "scenario": "502",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+    "error: Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-old-502.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "scenario": "503",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "error: Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-old-503.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "scenario": "network-abort",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: net::ERR_FAILED",
+    "error: Failed to load resource: net::ERR_FAILED"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-old-network_abort.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "scenario": "hang-timeout",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-old-hang_timeout.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "scenario": "empty-200",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-old-empty_200.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "scenario": "empty-json",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-old-empty_json.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "scenario": "malformed-json",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-old-malformed_json.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "scenario": "400",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 400 (Bad Request)",
+    "error: Failed to load resource: the server responded with a status of 400 (Bad Request)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-new-400.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "scenario": "401",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-new-401.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "scenario": "403",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 403 (Forbidden)",
+    "error: Failed to load resource: the server responded with a status of 403 (Forbidden)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-new-403.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "scenario": "404",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-new-404.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "scenario": "408",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 408 (Request Timeout)",
+    "error: Failed to load resource: the server responded with a status of 408 (Request Timeout)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-new-408.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "scenario": "429",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 429 (Too Many Requests)",
+    "error: Failed to load resource: the server responded with a status of 429 (Too Many Requests)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-new-429.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "scenario": "500",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "error: Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-new-500.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "scenario": "502",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+    "error: Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-new-502.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "scenario": "503",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "error: Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-new-503.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "scenario": "network-abort",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: net::ERR_FAILED",
+    "error: Failed to load resource: net::ERR_FAILED"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-new-network_abort.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "scenario": "hang-timeout",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-new-hang_timeout.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "scenario": "empty-200",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-new-empty_200.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "scenario": "empty-json",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-new-empty_json.png"
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "scenario": "malformed-json",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-W-DEL-new-malformed_json.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "scenario": "400",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 400 (Bad Request)",
+    "error: Failed to load resource: the server responded with a status of 400 (Bad Request)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-old-400.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "scenario": "401",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-old-401.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "scenario": "403",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 403 (Forbidden)",
+    "error: Failed to load resource: the server responded with a status of 403 (Forbidden)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-old-403.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "scenario": "404",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-old-404.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "scenario": "408",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 408 (Request Timeout)",
+    "error: Failed to load resource: the server responded with a status of 408 (Request Timeout)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-old-408.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "scenario": "429",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 429 (Too Many Requests)",
+    "error: Failed to load resource: the server responded with a status of 429 (Too Many Requests)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-old-429.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "scenario": "500",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "error: Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-old-500.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "scenario": "502",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+    "error: Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-old-502.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "scenario": "503",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "error: Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-old-503.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "scenario": "network-abort",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: net::ERR_FAILED",
+    "error: Failed to load resource: net::ERR_FAILED"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-old-network_abort.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "scenario": "hang-timeout",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-old-hang_timeout.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "scenario": "empty-200",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-old-empty_200.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "scenario": "empty-json",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-old-empty_json.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "scenario": "malformed-json",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-old-malformed_json.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "scenario": "400",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 400 (Bad Request)",
+    "error: Failed to load resource: the server responded with a status of 400 (Bad Request)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-new-400.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "scenario": "401",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "error: Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-new-401.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "scenario": "403",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 403 (Forbidden)",
+    "error: Failed to load resource: the server responded with a status of 403 (Forbidden)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-new-403.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "scenario": "404",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-new-404.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "scenario": "408",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 408 (Request Timeout)",
+    "error: Failed to load resource: the server responded with a status of 408 (Request Timeout)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-new-408.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "scenario": "429",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 429 (Too Many Requests)",
+    "error: Failed to load resource: the server responded with a status of 429 (Too Many Requests)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-new-429.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "scenario": "500",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+    "error: Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-new-500.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "scenario": "502",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 502 (Bad Gateway)",
+    "error: Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-new-502.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "scenario": "503",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "error: Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-new-503.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "scenario": "network-abort",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [
+    "error: Failed to load resource: net::ERR_FAILED",
+    "error: Failed to load resource: net::ERR_FAILED"
+   ],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-new-network_abort.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "scenario": "hang-timeout",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-new-hang_timeout.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "scenario": "empty-200",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-new-empty_200.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "scenario": "empty-json",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-new-empty_json.png"
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "scenario": "malformed-json",
+   "visibleText": "",
+   "blank": true,
+   "spinnerEls": 0,
+   "requests": 2,
+   "pageErrors": [],
+   "consoleErrors": [],
+   "screenshot": "reports/aqi-weather-api-comparison/screenshots/err-A-DEL-new-malformed_json.png"
+  }
+ ],
+ "network": [
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "condition": "normal",
+   "dataVisible": true,
+   "timeMs": 2537,
+   "textSample": "32°C Delhi CLEAR 3.33 30 1010 06:13 18:07",
+   "pageErrors": []
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "condition": "slow",
+   "dataVisible": true,
+   "timeMs": 8552,
+   "textSample": "32°C Delhi CLEAR 3.33 30 1010 06:13 18:07",
+   "pageErrors": []
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "condition": "highLatency",
+   "dataVisible": true,
+   "timeMs": 9363,
+   "textSample": "32°C Delhi CLEAR 3.33 30 1010 06:13 18:07",
+   "pageErrors": []
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "condition": "offlineBeforeLoad",
+   "dataVisible": false,
+   "timeMs": 5033,
+   "textSample": "",
+   "pageErrors": []
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "condition": "offline-after-load, reconnect, reload",
+   "loadedBeforeOffline": true,
+   "stillShownWhileOffline": true,
+   "recovered": true,
+   "recoveryMs": 132,
+   "pageErrors": []
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "condition": "normal",
+   "dataVisible": true,
+   "timeMs": 2750,
+   "textSample": "delhi 32 ° C Clear 2.2 48 1011.41 06:14 18:07",
+   "pageErrors": []
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "condition": "slow",
+   "dataVisible": true,
+   "timeMs": 6950,
+   "textSample": "delhi 32 ° C Clear 2.2 48 1011.41 06:14 18:07",
+   "pageErrors": []
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "condition": "highLatency",
+   "dataVisible": true,
+   "timeMs": 9029,
+   "textSample": "delhi 32 ° C Clear 2.2 48 1011.41 06:14 18:07",
+   "pageErrors": []
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "condition": "offlineBeforeLoad",
+   "dataVisible": false,
+   "timeMs": 5015,
+   "textSample": "",
+   "pageErrors": []
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "condition": "offline-after-load, reconnect, reload",
+   "loadedBeforeOffline": true,
+   "stillShownWhileOffline": false,
+   "recovered": true,
+   "recoveryMs": 684,
+   "pageErrors": []
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "condition": "normal",
+   "dataVisible": true,
+   "timeMs": 2407,
+   "textSample": "Unhealthy 143 DELHI PM2.5 143 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5 Unhealthy 153 GURUGRAM PM2.5 114 PM10 153 SO2 3.5 ",
+   "pageErrors": []
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "condition": "slow",
+   "dataVisible": true,
+   "timeMs": 8568,
+   "textSample": "Unhealthy 143 DELHI PM2.5 143 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5 Unhealthy 153 GURUGRAM PM2.5 114 PM10 153 SO2 3.5 ",
+   "pageErrors": []
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "condition": "highLatency",
+   "dataVisible": true,
+   "timeMs": 9299,
+   "textSample": "Unhealthy 143 DELHI PM2.5 143 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5 Unhealthy 153 GURUGRAM PM2.5 114 PM10 153 SO2 3.5 ",
+   "pageErrors": []
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "condition": "offlineBeforeLoad",
+   "dataVisible": false,
+   "timeMs": 5012,
+   "textSample": "",
+   "pageErrors": []
+  },
+  {
+   "key": "A-DEL",
+   "side": "old",
+   "condition": "offline-after-load, reconnect, reload",
+   "loadedBeforeOffline": true,
+   "stillShownWhileOffline": true,
+   "recovered": true,
+   "recoveryMs": 185,
+   "pageErrors": []
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "condition": "normal",
+   "dataVisible": true,
+   "timeMs": 2391,
+   "textSample": "DELHI 46.2 Air Quality is Unhealthy PM 2.5 46.2µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83ppb",
+   "pageErrors": []
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "condition": "slow",
+   "dataVisible": true,
+   "timeMs": 6914,
+   "textSample": "DELHI 46.2 Air Quality is Unhealthy PM 2.5 46.2µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83ppb",
+   "pageErrors": []
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "condition": "highLatency",
+   "dataVisible": true,
+   "timeMs": 8926,
+   "textSample": "DELHI 46.2 Air Quality is Unhealthy PM 2.5 46.2µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83ppb",
+   "pageErrors": []
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "condition": "offlineBeforeLoad",
+   "dataVisible": false,
+   "timeMs": 5014,
+   "textSample": "",
+   "pageErrors": []
+  },
+  {
+   "key": "A-DEL",
+   "side": "new",
+   "condition": "offline-after-load, reconnect, reload",
+   "loadedBeforeOffline": true,
+   "stillShownWhileOffline": true,
+   "recovered": true,
+   "recoveryMs": 484,
+   "pageErrors": []
+  }
+ ],
+ "finishedAt": "2026-10-01T12:07:55.518Z"
+}

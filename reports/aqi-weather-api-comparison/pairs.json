@@ -1,0 +1,202 @@
+[
+ {
+  "key": "W-DEL",
+  "type": "weather",
+  "label": "Delhi",
+  "oldId": "6458ede82a3e6572987ac131",
+  "name": "QA_CMP_W-DEL",
+  "data": {
+   "city1": "",
+   "fontFamily": "Arial",
+   "city": [
+    "delhi"
+   ],
+   "bgImage": false,
+   "animation": false,
+   "fontBold": false,
+   "isForecast": false
+  },
+  "faceId": 1,
+  "createStatus": 200,
+  "newId": "6abe4630f5746abddbb33d54",
+  "dupCount": 1
+ },
+ {
+  "key": "W-MUM",
+  "type": "weather",
+  "label": "Mumbai (+Delhi,Dubai)",
+  "oldId": "64b9243fa0d9d61af1b4418d",
+  "name": "QA_CMP_W-MUM",
+  "data": {
+   "city1": "Dubai - United Arab Emirates",
+   "fontFamily": "ConcertOne",
+   "city": [
+    "mumbai",
+    "delhi",
+    "dubai"
+   ],
+   "bgImage": false,
+   "animation": true,
+   "fontBold": true,
+   "isForecast": false
+  },
+  "faceId": 1,
+  "createStatus": 200,
+  "newId": "6abe463163da81f6178fb8b3",
+  "dupCount": 1
+ },
+ {
+  "key": "W-BLR",
+  "type": "weather",
+  "label": "Bengaluru (+Visakhapatnam,Delhi)",
+  "oldId": "69957d78a319087eff36b60b",
+  "name": "QA_CMP_W-BLR",
+  "data": {
+   "city": [
+    "visakhapatnam",
+    "delhi",
+    "bengaluru"
+   ],
+   "fontFamily": "Arial",
+   "bgImage": false,
+   "fontBold": false,
+   "animation": false,
+   "isForecast": false
+  },
+  "faceId": 1,
+  "createStatus": 200,
+  "newId": "6abe463236f9ebeed640c3c1",
+  "dupCount": 1
+ },
+ {
+  "key": "W-MAA",
+  "type": "weather",
+  "label": "Chennai",
+  "oldId": "6a4e27f4ab6cc5e2836a1364",
+  "name": "QA_CMP_W-MAA",
+  "data": {
+   "city": [
+    "Chennai"
+   ],
+   "fontFamily": "Arial",
+   "bgImage": true,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": true
+  },
+  "faceId": 1,
+  "createStatus": 200,
+  "newId": "6abe4632f5746abddbb33d5e",
+  "dupCount": 1
+ },
+ {
+  "key": "W-CCU",
+  "type": "weather",
+  "label": "Kolkata (+Jaipur)",
+  "oldId": "67e3d95ab1595d3173a6b21c",
+  "name": "QA_CMP_W-CCU",
+  "data": {
+   "city": [
+    "kolkata",
+    "jaipur"
+   ],
+   "fontFamily": "Arial",
+   "bgImage": true,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": true
+  },
+  "faceId": 1,
+  "createStatus": 200,
+  "newId": "6abe4632d31a3a150b5fb5bf",
+  "dupCount": 1
+ },
+ {
+  "key": "A-DEL",
+  "type": "aqi",
+  "label": "Delhi (+Gurugram)",
+  "oldId": "66364047c2a9e090b94bec49",
+  "name": "QA_CMP_A-DEL",
+  "data": {
+   "cities": [
+    "delhi",
+    "gurugram"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    }
+   ],
+   "fontFamily": "IndieFlower",
+   "primaryColor": "rgb(0, 0, 0)",
+   "secondaryColor": "rgb(255, 255, 255)",
+   "bgColor": "#000",
+   "textColor": "rgb(0, 255, 0)",
+   "cityIds": [
+    2554,
+    12816
+   ]
+  },
+  "faceId": 1,
+  "createStatus": 200,
+  "newId": "6abe4633f5746abddbb33d63",
+  "dupCount": 1
+ },
+ {
+  "key": "A-BLR",
+  "type": "aqi",
+  "label": "Bengaluru (+Gurugram)",
+  "oldId": "66a76c1b6fc06c70f73f7289",
+  "name": "QA_CMP_A-BLR",
+  "data": {
+   "cities": [
+    "gurugram",
+    "bengaluru"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 12.9715987,
+     "lng": 77.5945627
+    }
+   ],
+   "fontFamily": ""
+  },
+  "faceId": 1,
+  "createStatus": 200,
+  "newId": "6abe463363da81f6178fb8b8",
+  "dupCount": 1
+ },
+ {
+  "key": "A-MUM",
+  "type": "aqi",
+  "label": "Mumbai",
+  "oldId": "65127f1c88ae104c1c6250cd",
+  "name": "QA_CMP_A-MUM",
+  "data": {
+   "fontFamily": "",
+   "primaryColor": "#85e9ec",
+   "secondaryColor": "#2ae4eb",
+   "textColor": "#000",
+   "cityIds": [
+    13713
+   ],
+   "cities": [
+    "mumbai"
+   ],
+   "bgColor": "#000"
+  },
+  "faceId": 1,
+  "createStatus": 200,
+  "newId": "6abe4634d31a3a150b5fb5c4",
+  "dupCount": 1
+ }
+]

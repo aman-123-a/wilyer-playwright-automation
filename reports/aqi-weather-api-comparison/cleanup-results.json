@@ -1,0 +1,96 @@
+{
+ "note": "Pass 1 (automatic, after UI run): DELETE returned HTTP 200 for all 8 QA_CMP_* widgets. Pass 2 (manual re-run) returned 400 Widget not found for all 8 because they were already deleted. Final check: no QA_CMP_* widgets remain.",
+ "pass1": [
+  {
+   "key": "W-DEL",
+   "id": "6abe4630f5746abddbb33d54",
+   "status": 200
+  },
+  {
+   "key": "W-MUM",
+   "id": "6abe463163da81f6178fb8b3",
+   "status": 200
+  },
+  {
+   "key": "W-BLR",
+   "id": "6abe463236f9ebeed640c3c1",
+   "status": 200
+  },
+  {
+   "key": "W-MAA",
+   "id": "6abe4632f5746abddbb33d5e",
+   "status": 200
+  },
+  {
+   "key": "W-CCU",
+   "id": "6abe4632d31a3a150b5fb5bf",
+   "status": 200
+  },
+  {
+   "key": "A-DEL",
+   "id": "6abe4633f5746abddbb33d63",
+   "status": 200
+  },
+  {
+   "key": "A-BLR",
+   "id": "6abe463363da81f6178fb8b8",
+   "status": 200
+  },
+  {
+   "key": "A-MUM",
+   "id": "6abe4634d31a3a150b5fb5c4",
+   "status": 200
+  }
+ ],
+ "pass2": [
+  {
+   "key": "W-DEL",
+   "id": "6abe4630f5746abddbb33d54",
+   "status": 400,
+   "message": "Widget not found."
+  },
+  {
+   "key": "W-MUM",
+   "id": "6abe463163da81f6178fb8b3",
+   "status": 400,
+   "message": "Widget not found."
+  },
+  {
+   "key": "W-BLR",
+   "id": "6abe463236f9ebeed640c3c1",
+   "status": 400,
+   "message": "Widget not found."
+  },
+  {
+   "key": "W-MAA",
+   "id": "6abe4632f5746abddbb33d5e",
+   "status": 400,
+   "message": "Widget not found."
+  },
+  {
+   "key": "W-CCU",
+   "id": "6abe4632d31a3a150b5fb5bf",
+   "status": 400,
+   "message": "Widget not found."
+  },
+  {
+   "key": "A-DEL",
+   "id": "6abe4633f5746abddbb33d63",
+   "status": 400,
+   "message": "Widget not found."
+  },
+  {
+   "key": "A-BLR",
+   "id": "6abe463363da81f6178fb8b8",
+   "status": 400,
+   "message": "Widget not found."
+  },
+  {
+   "key": "A-MUM",
+   "id": "6abe4634d31a3a150b5fb5c4",
+   "status": 400,
+   "message": "Widget not found."
+  }
+ ],
+ "remainingQA_CMP": []
+}

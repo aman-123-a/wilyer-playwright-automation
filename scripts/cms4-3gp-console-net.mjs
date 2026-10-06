@@ -1,0 +1,25 @@
+import { chromium } from '@playwright/test';
+import fs from 'fs';
+// usage: node scripts/cms4-3gp-console-net.mjs <file>   (creds from .env: CMS_ADMIN_EMAIL / CMS_ADMIN_PASSWORD)
+const env = Object.fromEntries(fs.readFileSync('.env', 'utf8').split(/\r?\n/).filter(l => /^[A-Z_0-9]+=/.test(l)).map(l => [l.split('=')[0], l.slice(l.indexOf('=') + 1).trim().replace(/^["']|["']$/g, '')]));
+const base = 'https://cms4.pocsample.in', FILE = process.argv[2];
+const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1440, height: 900 } });
+const con = [], net = [];
+p.on('console', m => { if (['error', 'warning'].includes(m.type())) con.push(`[${m.type()}] ${m.text().slice(0, 300)} @ ${m.location().url?.slice(0, 120)}`); });
+p.on('pageerror', e => con.push(`[pageerror] ${e.message.slice(0, 300)}`));
+p.on('requestfailed', r => net.push(`FAILED ${r.method()} ${r.url().slice(0, 140)} ${r.failure()?.errorText}`));
+p.on('response', async r => { const u = r.url(); if (/pocsample\.in\/v3|amazonaws|s3\./.test(u) && !/lumberjack/.test(u)) { let body = ''; try { if ((r.headers()['content-type'] || '').includes('json')) body = (await r.text()).slice(0, 300); } catch {} net.push(`${r.status()} ${r.request().method()} ${u.replace(/(uploadId|X-Amz-Signature|key)=[^&]+/g, '$1=…').slice(0, 150)} ${body}`); } });
+await p.goto(base + '/', { waitUntil: 'domcontentloaded' });
+await p.locator('input[type=email],input[name*=mail i],input[type=text]').first().fill(env.CMS_ADMIN_EMAIL);
+await p.locator('input[type=password]').first().fill(env.CMS_ADMIN_PASSWORD);
+await p.locator('button[type=submit],button:has-text("Login"),button:has-text("Sign in")').first().click();
+await p.waitForTimeout(8000); console.log('url', p.url());
+await p.goto(base + '/library', { waitUntil: 'domcontentloaded' }); await p.waitForTimeout(6000);
+await p.getByRole('button', { name: /upload media/i }).click();
+net.length = 0; con.length = 0;
+await p.locator('#uploadFileInput').setInputFiles(FILE);
+await p.waitForTimeout(90000);
+console.log('toasts:', await p.locator('[class*=toast],[class*=Toastify],[role=alert]').allInnerTexts());
+console.log('--- CONSOLE ---\n' + (con.join('\n') || '(none)'));
+console.log('--- NETWORK ---\n' + net.join('\n'));
+await b.close();

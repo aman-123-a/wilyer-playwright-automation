@@ -1,0 +1,302 @@
+{
+ "startedAt": "2026-10-01T11:44:31.453Z",
+ "display": [
+  {
+   "key": "W-DEL",
+   "type": "weather",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/6458ede82a3e6572987ac131",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2513,
+   "firstApi": {
+    "status": 200,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "32°C Delhi CLEAR 3.33 30 1010 06:13 18:07"
+  },
+  {
+   "key": "W-DEL",
+   "type": "weather",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe4630f5746abddbb33d54",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2598,
+   "firstApi": {
+    "status": 200,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "delhi 32 ° C Clear 2.2 48 1011.41 06:14 18:07"
+  },
+  {
+   "key": "W-MUM",
+   "type": "weather",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/64b9243fa0d9d61af1b4418d",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2075,
+   "firstApi": {
+    "status": 200,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "29°C Mumbai CLEAR 4.69 73 1011 06:29 18:27 32°C Delhi CLEAR 3.33 30 1010 06:13 18:07 37°C Dubai CLEAR 5.66 54 1009 07:40 19:36"
+  },
+  {
+   "key": "W-MUM",
+   "type": "weather",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe463163da81f6178fb8b3",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 3008,
+   "firstApi": {
+    "status": 200,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "mumbai Clear 33 ° C 3.9 67 1011.44 06:29 delhi Clear 32 ° C 2.2 48 1011.41 06:14 dubai Clear 37 ° C 5.3 41 1008.79 07:40"
+  },
+  {
+   "key": "W-BLR",
+   "type": "weather",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/69957d78a319087eff36b60b",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 3741,
+   "firstApi": {
+    "status": 200,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "29°C Visakhapatnam CLOUDS 2.63 69 1011 05:47 17:46 32°C Delhi CLEAR 3.33 30 1010 06:13 18:07 28°C Bengaluru CLOUDS 1.69 60 1013 06:08 18:09"
+  },
+  {
+   "key": "W-BLR",
+   "type": "weather",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe463236f9ebeed640c3c1",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2318,
+   "firstApi": {
+    "status": 200,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "visakhapatnam Clouds 30 ° C 3.6 74 1011.58 05:47 delhi Clear 32 ° C 2.2 48 1011.41 06:14 bengaluru Clouds 28 ° C 1.7 55 1012.79 06:08"
+  },
+  {
+   "key": "W-MAA",
+   "type": "weather",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/6a4e27f4ab6cc5e2836a1364",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2421,
+   "firstApi": {
+    "status": 200,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "31°C Chennai Clouds 4.79 05:58 05:58 Thu 31 °C Thu 31 °C Thu 30 °C Fri 28 °C Fri 29 °C Fri 30 °C Fri 34 °C Fri 33 °C Fri 30 °C"
+  },
+  {
+   "key": "W-MAA",
+   "type": "weather",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe4632f5746abddbb33d5e",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2558,
+   "firstApi": {
+    "status": 200,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "Chennai Clouds 31 ° C 3.6 76 1010.96 05:58 17:59 Forecast 00:00 33°C 00:00 32°C 00:00 32°C 00:00 32°C 00:00 32°C 00:00 32°C 00:00 32°C"
+  },
+  {
+   "key": "W-CCU",
+   "type": "weather",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/67e3d95ab1595d3173a6b21c",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2620,
+   "firstApi": {
+    "status": 200,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "30°C Kolkata Rain 3.89 05:27 05:27 Thu 30 °C Thu 29 °C Thu 28 °C Fri 26 °C Fri 27 °C Fri 31 °C Fri 35 °C Fri 35 °C Fri 31 °C 32°C Jaipur Clear 3.36 06:18 06:18 Thu 32 °C Thu 31 °C Thu 28 °C Fri 25 °C Fri 24 °C Fri 27 °C Fri 34 °C Fri 35 °C Fri 33 °C"
+  },
+  {
+   "key": "W-CCU",
+   "type": "weather",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe4632d31a3a150b5fb5bf",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2535,
+   "firstApi": {
+    "status": 200,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "kolkata Clouds 29 ° C 1.7 81 1010.98 05:27 Forecast 00:00 33°C 00:00 33°C 00:00 34°C 00:00 34°C jaipur Clear 33 ° C 1.7 33 1012.42 06:19 Forecast 00:00 34°C 00:00 35°C 00:00 36°C 00:00 36°C"
+  },
+  {
+   "key": "A-DEL",
+   "type": "aqi",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/66364047c2a9e090b94bec49",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2736,
+   "firstApi": {
+    "status": 200,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 5,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "Unhealthy 143 DELHI PM2.5 143 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5 Unhealthy 153 GURUGRAM PM2.5 114 PM10 153 SO2 3.5 O3 13.9 NO2 8.4 CO 3"
+  },
+  {
+   "key": "A-DEL",
+   "type": "aqi",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe4633f5746abddbb33d63",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2427,
+   "firstApi": {
+    "status": 200,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 4,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "DELHI 46.2 Air Quality is Unhealthy PM 2.5 46.2µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83ppb GURUGRAM 51.48 Air Quality is Hazardous PM 2.5 51.48µg/m³ PM 10 283.58µg/m³ SO2 5.76ppb O3 12.02ppb NO2 11.93ppb CO 222.65ppb"
+  },
+  {
+   "key": "A-BLR",
+   "type": "aqi",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/66a76c1b6fc06c70f73f7289",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 2112,
+   "firstApi": {
+    "status": 200,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 5,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "Unhealthy 153 GURUGRAM PM2.5 114 PM10 153 SO2 3.5 O3 13.9 NO2 8.4 CO 3 Healthy 117 BENGALURU PM2.5 61 PM10 117 SO2 2.8 O3 17 NO2 7.9 CO 2.8"
+  },
+  {
+   "key": "A-BLR",
+   "type": "aqi",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe463363da81f6178fb8b8",
+   "dataVisible": true,
+   "timeToDataVisibleMs": 3102,
+   "firstApi": {
+    "status": 200,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 4,
+   "failed": [],
+   "console": [],
+   "pageErrors": [],
+   "textSample": "GURUGRAM 51.48 Air Quality is Hazardous PM 2.5 51.48µg/m³ PM 10 283.58µg/m³ SO2 5.76ppb O3 12.02ppb NO2 11.93ppb CO 222.65ppb BENGALURU 50.76 Air Quality is Moderate PM 2.5 50.76µg/m³ PM 10 111.32µg/m³ SO2 3.65ppb O3 10.14ppb NO2 16.96ppb CO 336.49ppb"
+  },
+  {
+   "key": "A-MUM",
+   "type": "aqi",
+   "side": "old",
+   "url": "https://widgets.signagecloud.in/widget/65127f1c88ae104c1c6250cd",
+   "dataVisible": false,
+   "timeToDataVisibleMs": null,
+   "firstApi": {
+    "status": 500,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [
+    "error: Failed to load resource: the server responded with a status of 500 ()",
+    "error: Failed to load resource: the server responded with a status of 500 ()"
+   ],
+   "pageErrors": [],
+   "textSample": ""
+  },
+  {
+   "key": "A-MUM",
+   "type": "aqi",
+   "side": "new",
+   "url": "https://widget-test.signagecloud.in/widget/6abe4634d31a3a150b5fb5c4",
+   "dataVisible": false,
+   "timeToDataVisibleMs": null,
+   "firstApi": {
+    "status": 500,
+    "apiMs": -1
+   },
+   "requestsAtLoad": 2,
+   "requestsAfter30s": 2,
+   "failed": [],
+   "console": [
+    "error: Failed to load resource: the server responded with a status of 500 ()",
+    "error: Failed to load resource: the server responded with a status of 500 ()"
+   ],
+   "pageErrors": [],
+   "textSample": ""
+  }
+ ],
+ "refresh": [],
+ "errors": [],
+ "network": []
+}

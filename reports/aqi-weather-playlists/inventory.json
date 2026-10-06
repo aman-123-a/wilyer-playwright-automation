@@ -1,0 +1,4545 @@
+[
+ {
+  "playlist": "Aqi",
+  "playlistId": "6abe3c2f36f9ebeed640c117",
+  "screens": 1,
+  "layout": 1,
+  "layoutDur": 15,
+  "zone": 1,
+  "widgetId": "6abe3cfa36f9ebeed640c15b",
+  "widgetName": "aqi1",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Hyderabad",
+    "Chennai",
+    "Kolkata",
+    "Telangana"
+   ],
+   "coordinates": [
+    {
+     "lat": 17.406498,
+     "lng": 78.47724389999999
+    },
+    {
+     "lat": 13.0570568,
+     "lng": 80.2098219
+    },
+    {
+     "lat": 22.5743545,
+     "lng": 88.3628734
+    },
+    {
+     "lat": 18.1124372,
+     "lng": 79.01929969999999
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    {
+     "lat": 17.406498,
+     "lng": 78.47724389999999
+    },
+    {
+     "lat": 13.057056800000002,
+     "lng": 80.2098219
+    },
+    {
+     "lat": 22.5743545,
+     "lng": 88.3628734
+    },
+    {
+     "lat": 18.1124372,
+     "lng": 79.01929969999999
+    }
+   ]
+  }
+ },
+ {
+  "playlist": "Aqi",
+  "playlistId": "6abe3c2f36f9ebeed640c117",
+  "screens": 1,
+  "layout": 2,
+  "layoutDur": 15,
+  "zone": 1,
+  "widgetId": "6abe3cac36f9ebeed640c138",
+  "widgetName": "w1",
+  "type": "weather",
+  "data": {
+   "city": [
+    "Mumbai",
+    "New Delhi",
+    "Chennai",
+    "Kolkata"
+   ],
+   "fontFamily": "Arial",
+   "bgImage": true,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": true
+  }
+ },
+ {
+  "playlist": "Aqi",
+  "playlistId": "6abe3c2f36f9ebeed640c117",
+  "screens": 1,
+  "layout": 3,
+  "layoutDur": 23,
+  "zone": 1,
+  "widgetId": "6ac324a9d31a3a150b5fce3b",
+  "widgetName": "sk",
+  "type": "weather",
+  "data": {
+   "city": [
+    "Pune",
+    "Mumbai",
+    "Indore",
+    "Chennai"
+   ],
+   "fontFamily": "Arial",
+   "bgImage": true,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": true
+  }
+ },
+ {
+  "playlist": "AQI",
+  "playlistId": "6a4b8435baafc77bf2737d99",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "6a4b84d7baafc77bf2737de9",
+  "widgetName": "Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Brussels",
+    "Essen",
+    "Hamburg",
+    "Bosnia and Herzegovina"
+   ],
+   "coordinates": [
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    },
+    {
+     "lat": 53.5488282,
+     "lng": 9.987170299999999
+    },
+    {
+     "lat": 43.915886,
+     "lng": 17.679076
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25"
+  }
+ },
+ {
+  "playlist": "AQI",
+  "playlistId": "6a4b8435baafc77bf2737d99",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 2,
+  "widgetId": "6a4b84d7baafc77bf2737de9",
+  "widgetName": "Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Brussels",
+    "Essen",
+    "Hamburg",
+    "Bosnia and Herzegovina"
+   ],
+   "coordinates": [
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    },
+    {
+     "lat": 53.5488282,
+     "lng": 9.987170299999999
+    },
+    {
+     "lat": 43.915886,
+     "lng": 17.679076
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25"
+  }
+ },
+ {
+  "playlist": "AQI",
+  "playlistId": "6a4b8435baafc77bf2737d99",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 3,
+  "widgetId": "6a4b84d7baafc77bf2737de9",
+  "widgetName": "Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Brussels",
+    "Essen",
+    "Hamburg",
+    "Bosnia and Herzegovina"
+   ],
+   "coordinates": [
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    },
+    {
+     "lat": 53.5488282,
+     "lng": 9.987170299999999
+    },
+    {
+     "lat": 43.915886,
+     "lng": 17.679076
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25"
+  }
+ },
+ {
+  "playlist": "AQI",
+  "playlistId": "6a4b8435baafc77bf2737d99",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 4,
+  "widgetId": "6a4b84d7baafc77bf2737de9",
+  "widgetName": "Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Brussels",
+    "Essen",
+    "Hamburg",
+    "Bosnia and Herzegovina"
+   ],
+   "coordinates": [
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    },
+    {
+     "lat": 53.5488282,
+     "lng": 9.987170299999999
+    },
+    {
+     "lat": 43.915886,
+     "lng": 17.679076
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25"
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi_1",
+  "playlistId": "6a4b7d7ab4dd9f6659680d7f",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1731ad2d0b9be6de2f3",
+  "widgetName": "Vansh Nanda Square",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Barcelona"
+   ],
+   "coordinates": [
+    {
+     "lat": 41.3874374,
+     "lng": 2.1686496
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    11762
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi_1",
+  "playlistId": "6a4b7d7ab4dd9f6659680d7f",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi_1",
+  "playlistId": "6a4b7d7ab4dd9f6659680d7f",
+  "screens": 0,
+  "layout": 3,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi_1",
+  "playlistId": "6a4b7d7ab4dd9f6659680d7f",
+  "screens": 0,
+  "layout": 4,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi_1",
+  "playlistId": "6a4b7d7ab4dd9f6659680d7f",
+  "screens": 0,
+  "layout": 5,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi_1",
+  "playlistId": "6a4b7d7ab4dd9f6659680d7f",
+  "screens": 0,
+  "layout": 6,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1731ad2d0b9be6de2f3",
+  "widgetName": "Vansh Nanda Square",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Barcelona"
+   ],
+   "coordinates": [
+    {
+     "lat": 41.3874374,
+     "lng": 2.1686496
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    11762
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi_1",
+  "playlistId": "6a4b7d7ab4dd9f6659680d7f",
+  "screens": 0,
+  "layout": 7,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi_1",
+  "playlistId": "6a4b7d7ab4dd9f6659680d7f",
+  "screens": 0,
+  "layout": 8,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi_1",
+  "playlistId": "6a4b7d7ab4dd9f6659680d7f",
+  "screens": 0,
+  "layout": 9,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dccaa42960b8625aa67182",
+  "widgetName": "Two cities potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Gurugram",
+    "Goa"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    12816,
+    13183
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi_1",
+  "playlistId": "6a4b7d7ab4dd9f6659680d7f",
+  "screens": 0,
+  "layout": 10,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcc5031ad2d0b9be6df312",
+  "widgetName": "Two Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi_1",
+  "playlistId": "6a4b7d7ab4dd9f6659680d7f",
+  "screens": 0,
+  "layout": 11,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi_1",
+  "playlistId": "6a4b7d7ab4dd9f6659680d7f",
+  "screens": 0,
+  "layout": 12,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi_1",
+  "playlistId": "6a4b7d7ab4dd9f6659680d7f",
+  "screens": 0,
+  "layout": 13,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi_1",
+  "playlistId": "6a4b7d7ab4dd9f6659680d7f",
+  "screens": 0,
+  "layout": 14,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi",
+  "playlistId": "69f998160c30b75404e607ab",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1731ad2d0b9be6de2f3",
+  "widgetName": "Vansh Nanda Square",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Barcelona"
+   ],
+   "coordinates": [
+    {
+     "lat": 41.3874374,
+     "lng": 2.1686496
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    11762
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi",
+  "playlistId": "69f998160c30b75404e607ab",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi",
+  "playlistId": "69f998160c30b75404e607ab",
+  "screens": 0,
+  "layout": 3,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi",
+  "playlistId": "69f998160c30b75404e607ab",
+  "screens": 0,
+  "layout": 4,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi",
+  "playlistId": "69f998160c30b75404e607ab",
+  "screens": 0,
+  "layout": 5,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi",
+  "playlistId": "69f998160c30b75404e607ab",
+  "screens": 0,
+  "layout": 6,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1731ad2d0b9be6de2f3",
+  "widgetName": "Vansh Nanda Square",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Barcelona"
+   ],
+   "coordinates": [
+    {
+     "lat": 41.3874374,
+     "lng": 2.1686496
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    11762
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi",
+  "playlistId": "69f998160c30b75404e607ab",
+  "screens": 0,
+  "layout": 7,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi",
+  "playlistId": "69f998160c30b75404e607ab",
+  "screens": 0,
+  "layout": 8,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi",
+  "playlistId": "69f998160c30b75404e607ab",
+  "screens": 0,
+  "layout": 9,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dccaa42960b8625aa67182",
+  "widgetName": "Two cities potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Gurugram",
+    "Goa"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    12816,
+    13183
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi",
+  "playlistId": "69f998160c30b75404e607ab",
+  "screens": 0,
+  "layout": 10,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcc5031ad2d0b9be6df312",
+  "widgetName": "Two Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi",
+  "playlistId": "69f998160c30b75404e607ab",
+  "screens": 0,
+  "layout": 11,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi",
+  "playlistId": "69f998160c30b75404e607ab",
+  "screens": 0,
+  "layout": 12,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi",
+  "playlistId": "69f998160c30b75404e607ab",
+  "screens": 0,
+  "layout": 13,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do not Delete Vansh Aqi",
+  "playlistId": "69f998160c30b75404e607ab",
+  "screens": 0,
+  "layout": 14,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "AQI_AllLayouts_1777960347687",
+  "playlistId": "69f9859dd777947c6244dfc8",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "AQI_AllLayouts_1777960347687",
+  "playlistId": "69f9859dd777947c6244dfc8",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "AQI_AllLayouts_1777960347687",
+  "playlistId": "69f9859dd777947c6244dfc8",
+  "screens": 0,
+  "layout": 3,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "AQI_AllLayouts_1777960347687",
+  "playlistId": "69f9859dd777947c6244dfc8",
+  "screens": 0,
+  "layout": 4,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "AQI_AllLayouts_1777960347687",
+  "playlistId": "69f9859dd777947c6244dfc8",
+  "screens": 0,
+  "layout": 5,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "AQI_AllLayouts_1777960347687",
+  "playlistId": "69f9859dd777947c6244dfc8",
+  "screens": 0,
+  "layout": 6,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "AQI_AllLayouts_1777960347687",
+  "playlistId": "69f9859dd777947c6244dfc8",
+  "screens": 0,
+  "layout": 7,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "AQI_AllLayouts_1777960347687",
+  "playlistId": "69f9859dd777947c6244dfc8",
+  "screens": 0,
+  "layout": 8,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "AQI_AllLayouts_1777960347687",
+  "playlistId": "69f9859dd777947c6244dfc8",
+  "screens": 0,
+  "layout": 9,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "AQI_AllLayouts_1777960347687",
+  "playlistId": "69f9859dd777947c6244dfc8",
+  "screens": 0,
+  "layout": 10,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "AQI_AllLayouts_1777960347687",
+  "playlistId": "69f9859dd777947c6244dfc8",
+  "screens": 0,
+  "layout": 11,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "AQI_AllLayouts_1777960347687",
+  "playlistId": "69f9859dd777947c6244dfc8",
+  "screens": 0,
+  "layout": 12,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "AQI_AllLayouts_1777960347687",
+  "playlistId": "69f9859dd777947c6244dfc8",
+  "screens": 0,
+  "layout": 13,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "AQI_AllLayouts_1777960347687",
+  "playlistId": "69f9859dd777947c6244dfc8",
+  "screens": 0,
+  "layout": 14,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "AQI_AllLayouts_1777960347687",
+  "playlistId": "69f9859dd777947c6244dfc8",
+  "screens": 0,
+  "layout": 15,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change potrait",
+  "playlistId": "69dcdd33625a11b0777b6912",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Potrait",
+  "playlistId": "69dcb4441ad2d0b9be6de3b7",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dccab92960b8625aa671a0",
+  "widgetName": "THree cities potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Gurugram",
+    "Goa",
+    "Kanpur"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 26.449923,
+     "lng": 80.3318736
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    12816,
+    13183,
+    8187
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Potrait",
+  "playlistId": "69dcb4441ad2d0b9be6de3b7",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 2,
+  "widgetId": "69dccab92960b8625aa671a0",
+  "widgetName": "THree cities potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Gurugram",
+    "Goa",
+    "Kanpur"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 26.449923,
+     "lng": 80.3318736
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    12816,
+    13183,
+    8187
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Potrait",
+  "playlistId": "69dcb4441ad2d0b9be6de3b7",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 3,
+  "widgetId": "69dccab92960b8625aa671a0",
+  "widgetName": "THree cities potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Gurugram",
+    "Goa",
+    "Kanpur"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 26.449923,
+     "lng": 80.3318736
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    12816,
+    13183,
+    8187
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Potrait",
+  "playlistId": "69dcb4441ad2d0b9be6de3b7",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Potrait",
+  "playlistId": "69dcb4441ad2d0b9be6de3b7",
+  "screens": 0,
+  "layout": 3,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Potrait",
+  "playlistId": "69dcb4441ad2d0b9be6de3b7",
+  "screens": 0,
+  "layout": 4,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Potrait",
+  "playlistId": "69dcb4441ad2d0b9be6de3b7",
+  "screens": 0,
+  "layout": 5,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Potrait",
+  "playlistId": "69dcb4441ad2d0b9be6de3b7",
+  "screens": 0,
+  "layout": 6,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dccaa42960b8625aa67182",
+  "widgetName": "Two cities potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Gurugram",
+    "Goa"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    12816,
+    13183
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Potrait",
+  "playlistId": "69dcb4441ad2d0b9be6de3b7",
+  "screens": 0,
+  "layout": 7,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dccab92960b8625aa671a0",
+  "widgetName": "THree cities potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Gurugram",
+    "Goa",
+    "Kanpur"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 26.449923,
+     "lng": 80.3318736
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    12816,
+    13183,
+    8187
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Potrait",
+  "playlistId": "69dcb4441ad2d0b9be6de3b7",
+  "screens": 0,
+  "layout": 9,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Potrait",
+  "playlistId": "69dcb4441ad2d0b9be6de3b7",
+  "screens": 0,
+  "layout": 10,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Potrait",
+  "playlistId": "69dcb4441ad2d0b9be6de3b7",
+  "screens": 0,
+  "layout": 10,
+  "layoutDur": 0,
+  "zone": 2,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Potrait",
+  "playlistId": "69dcb4441ad2d0b9be6de3b7",
+  "screens": 0,
+  "layout": 11,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dccab92960b8625aa671a0",
+  "widgetName": "THree cities potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Gurugram",
+    "Goa",
+    "Kanpur"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 26.449923,
+     "lng": 80.3318736
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    12816,
+    13183,
+    8187
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Potrait",
+  "playlistId": "69dcb4441ad2d0b9be6de3b7",
+  "screens": 0,
+  "layout": 12,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcb1661ad2d0b9be6de2ec",
+  "widgetName": "Vansh Nanda Potrait",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Delhi",
+    "Meerut",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.9844618,
+     "lng": 77.7064137
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    13183,
+    10113,
+    12430,
+    13859
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Sqaure",
+  "playlistId": "69dcb43c1ad2d0b9be6de38f",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Sqaure",
+  "playlistId": "69dcb43c1ad2d0b9be6de38f",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 2,
+  "widgetId": "69dcb1731ad2d0b9be6de2f3",
+  "widgetName": "Vansh Nanda Square",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Barcelona"
+   ],
+   "coordinates": [
+    {
+     "lat": 41.3874374,
+     "lng": 2.1686496
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    11762
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Landscape",
+  "playlistId": "69dc93825960746ed2fca587",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Landscape",
+  "playlistId": "69dc93825960746ed2fca587",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Landscape",
+  "playlistId": "69dc93825960746ed2fca587",
+  "screens": 0,
+  "layout": 3,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Landscape",
+  "playlistId": "69dc93825960746ed2fca587",
+  "screens": 0,
+  "layout": 4,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcc5031ad2d0b9be6df312",
+  "widgetName": "Two Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Landscape",
+  "playlistId": "69dc93825960746ed2fca587",
+  "screens": 0,
+  "layout": 5,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcc51c1ad2d0b9be6df329",
+  "widgetName": "Three Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Goa",
+    "Noida",
+    "Pune"
+   ],
+   "coordinates": [
+    {
+     "lat": 15.2993265,
+     "lng": 74.12399599999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 18.5246091,
+     "lng": 73.8786239
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    13183,
+    11865,
+    3760
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Landscape",
+  "playlistId": "69dc93825960746ed2fca587",
+  "screens": 0,
+  "layout": 6,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Landscape",
+  "playlistId": "69dc93825960746ed2fca587",
+  "screens": 0,
+  "layout": 7,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Landscape",
+  "playlistId": "69dc93825960746ed2fca587",
+  "screens": 0,
+  "layout": 8,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Landscape",
+  "playlistId": "69dc93825960746ed2fca587",
+  "screens": 0,
+  "layout": 8,
+  "layoutDur": 0,
+  "zone": 2,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Landscape",
+  "playlistId": "69dc93825960746ed2fca587",
+  "screens": 0,
+  "layout": 8,
+  "layoutDur": 0,
+  "zone": 3,
+  "widgetId": "69dcc5391ad2d0b9be6df358",
+  "widgetName": "Four Cities Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Delhi",
+    "Noida",
+    "Gurugram",
+    "Helsinki"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 60.16985569999999,
+     "lng": 24.938379
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    2554,
+    2553,
+    12816,
+    5717
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Landscape",
+  "playlistId": "69dc93825960746ed2fca587",
+  "screens": 0,
+  "layout": 9,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Do NOT Change Landscape",
+  "playlistId": "69dc93825960746ed2fca587",
+  "screens": 0,
+  "layout": 9,
+  "layoutDur": 0,
+  "zone": 2,
+  "widgetId": "69dcaa541ad2d0b9be6db8ee",
+  "widgetName": "Vansh Nanda Landscape",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "Noida",
+    "Moscow",
+    "Brussels",
+    "Essen"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.5355161,
+     "lng": 77.3910265
+    },
+    {
+     "lat": 55.7568721,
+     "lng": 37.6150527
+    },
+    {
+     "lat": 50.84770289999999,
+     "lng": 4.357200100000001
+    },
+    {
+     "lat": 51.4575573,
+     "lng": 7.0224632
+    }
+   ],
+   "fontFamily": "",
+   "aqiFor": "pm25",
+   "cityIds": [
+    10116,
+    6935,
+    5765,
+    6076
+   ]
+  }
+ },
+ {
+  "playlist": "Diwali Festival Vertical_2",
+  "playlistId": "689dbee927fd97846ce938d9",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 3,
+  "widgetId": "664c4263a60ba17a34af3271",
+  "widgetName": "Mumbai Dubai Toronto",
+  "type": "weather",
+  "data": {
+   "city": [
+    "london",
+    "dubai",
+    "mumbai"
+   ],
+   "fontFamily": "Poppins",
+   "bgImage": false,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Diwali Festival Vertical_1",
+  "playlistId": "689dbec7d554677e749fa5f5",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 3,
+  "widgetId": "664c4263a60ba17a34af3271",
+  "widgetName": "Mumbai Dubai Toronto",
+  "type": "weather",
+  "data": {
+   "city": [
+    "london",
+    "dubai",
+    "mumbai"
+   ],
+   "fontFamily": "Poppins",
+   "bgImage": false,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Hp R",
+  "playlistId": "674d650f11954e6413b24df0",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 4,
+  "widgetId": "664c4263a60ba17a34af3271",
+  "widgetName": "Mumbai Dubai Toronto",
+  "type": "weather",
+  "data": {
+   "city": [
+    "london",
+    "dubai",
+    "mumbai"
+   ],
+   "fontFamily": "Poppins",
+   "bgImage": false,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "demo awes",
+  "playlistId": "6741bd5ecdef0717d1b4f060",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "664c4263a60ba17a34af3271",
+  "widgetName": "Mumbai Dubai Toronto",
+  "type": "weather",
+  "data": {
+   "city": [
+    "london",
+    "dubai",
+    "mumbai"
+   ],
+   "fontFamily": "Poppins",
+   "bgImage": false,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Demo ",
+  "playlistId": "66f7fd35843abbd40e32228a",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 2,
+  "widgetId": "664c4263a60ba17a34af3271",
+  "widgetName": "Mumbai Dubai Toronto",
+  "type": "weather",
+  "data": {
+   "city": [
+    "london",
+    "dubai",
+    "mumbai"
+   ],
+   "fontFamily": "Poppins",
+   "bgImage": false,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "demo ritik roshan",
+  "playlistId": "66ebe9e58e19d1f414dd5d99",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 5,
+  "zone": 1,
+  "widgetId": "6616472035e320d1e7c36150",
+  "widgetName": "weather wilyer",
+  "type": "weather",
+  "data": {
+   "city": [
+    "gurugram",
+    "mumbai",
+    "dubai"
+   ],
+   "fontFamily": "Arial",
+   "bgImage": true,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": true
+  }
+ },
+ {
+  "playlist": "hrms",
+  "playlistId": "66e3ed4fc564def0742ae3e6",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 40,
+  "zone": 3,
+  "widgetId": "664c4263a60ba17a34af3271",
+  "widgetName": "Mumbai Dubai Toronto",
+  "type": "weather",
+  "data": {
+   "city": [
+    "london",
+    "dubai",
+    "mumbai"
+   ],
+   "fontFamily": "Poppins",
+   "bgImage": false,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "new for demo",
+  "playlistId": "66b4743ade67958f48373c8e",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 2,
+  "widgetId": "664c4263a60ba17a34af3271",
+  "widgetName": "Mumbai Dubai Toronto",
+  "type": "weather",
+  "data": {
+   "city": [
+    "london",
+    "dubai",
+    "mumbai"
+   ],
+   "fontFamily": "Poppins",
+   "bgImage": false,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "dgsfsf",
+  "playlistId": "66b460d83076f74b2ad3d4e3",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 5,
+  "widgetId": "664c4263a60ba17a34af3271",
+  "widgetName": "Mumbai Dubai Toronto",
+  "type": "weather",
+  "data": {
+   "city": [
+    "london",
+    "dubai",
+    "mumbai"
+   ],
+   "fontFamily": "Poppins",
+   "bgImage": false,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "UAE Shops",
+  "playlistId": "66b20964495fb00edc8a7ea4",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "664c4263a60ba17a34af3271",
+  "widgetName": "Mumbai Dubai Toronto",
+  "type": "weather",
+  "data": {
+   "city": [
+    "london",
+    "dubai",
+    "mumbai"
+   ],
+   "fontFamily": "Poppins",
+   "bgImage": false,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Hotel TV Sample",
+  "playlistId": "6694f0441e88f512d3bd4a98",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "664c4263a60ba17a34af3271",
+  "widgetName": "Mumbai Dubai Toronto",
+  "type": "weather",
+  "data": {
+   "city": [
+    "london",
+    "dubai",
+    "mumbai"
+   ],
+   "fontFamily": "Poppins",
+   "bgImage": false,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Gobal Contnet",
+  "playlistId": "668fbf9d97a8156b9c762e3c",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 12,
+  "zone": 3,
+  "widgetId": "668fbf8872ae2e550e4b8334",
+  "widgetName": "qwer",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "delhi",
+    "london"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    },
+    {
+     "lat": 51.5072178,
+     "lng": -0.1275862
+    }
+   ],
+   "fontFamily": "BebasNeue"
+  }
+ },
+ {
+  "playlist": "on tv player_1",
+  "playlistId": "664c6375a60ba17a34b53c18",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 3,
+  "widgetId": "664c4263a60ba17a34af3271",
+  "widgetName": "Mumbai Dubai Toronto",
+  "type": "weather",
+  "data": {
+   "city": [
+    "london",
+    "dubai",
+    "mumbai"
+   ],
+   "fontFamily": "Poppins",
+   "bgImage": false,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "on tv player_1",
+  "playlistId": "664c6375a60ba17a34b53c18",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 0,
+  "zone": 4,
+  "widgetId": "65e039935ea4a77d0b6af267",
+  "widgetName": "DPD",
+  "type": "weather",
+  "data": {
+   "city": [
+    "delhi",
+    "perth",
+    "dubai"
+   ],
+   "fontFamily": "FredokaOne",
+   "bgImage": false,
+   "fontBold": false,
+   "animation": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "on tv player",
+  "playlistId": "664c58df855c7b029e25af43",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 3,
+  "widgetId": "664c4263a60ba17a34af3271",
+  "widgetName": "Mumbai Dubai Toronto",
+  "type": "weather",
+  "data": {
+   "city": [
+    "london",
+    "dubai",
+    "mumbai"
+   ],
+   "fontFamily": "Poppins",
+   "bgImage": false,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "on tv player",
+  "playlistId": "664c58df855c7b029e25af43",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 0,
+  "zone": 4,
+  "widgetId": "65e039935ea4a77d0b6af267",
+  "widgetName": "DPD",
+  "type": "weather",
+  "data": {
+   "city": [
+    "delhi",
+    "perth",
+    "dubai"
+   ],
+   "fontFamily": "FredokaOne",
+   "bgImage": false,
+   "fontBold": false,
+   "animation": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "dev",
+  "playlistId": "663b6266725c557cab771ef8",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 2,
+  "widgetId": "6616472035e320d1e7c36150",
+  "widgetName": "weather wilyer",
+  "type": "weather",
+  "data": {
+   "city": [
+    "gurugram",
+    "mumbai",
+    "dubai"
+   ],
+   "fontFamily": "Arial",
+   "bgImage": true,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": true
+  }
+ },
+ {
+  "playlist": "88r unit test",
+  "playlistId": "6639f88df8db51e6636dd7d8",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 2,
+  "widgetId": "6616472035e320d1e7c36150",
+  "widgetName": "weather wilyer",
+  "type": "weather",
+  "data": {
+   "city": [
+    "gurugram",
+    "mumbai",
+    "dubai"
+   ],
+   "fontFamily": "Arial",
+   "bgImage": true,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": true
+  }
+ },
+ {
+  "playlist": "Widget Time Test",
+  "playlistId": "6638a093d2355e0f910c27e2",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": null,
+  "zone": 2,
+  "widgetId": "6572b4686df8a984482ef8ee",
+  "widgetName": "DDX Weather",
+  "type": "weather",
+  "data": {
+   "city1": "toronto",
+   "fontFamily": "FredokaOne",
+   "city": [
+    "mumbai",
+    "dubai",
+    "toronto"
+   ],
+   "bgImage": false,
+   "animation": true,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "yyt",
+  "playlistId": "6635f447b767df2ae41a5171",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": null,
+  "zone": 3,
+  "widgetId": "6572b4686df8a984482ef8ee",
+  "widgetName": "DDX Weather",
+  "type": "weather",
+  "data": {
+   "city1": "toronto",
+   "fontFamily": "FredokaOne",
+   "city": [
+    "mumbai",
+    "dubai",
+    "toronto"
+   ],
+   "bgImage": false,
+   "animation": true,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "yyyy",
+  "playlistId": "6631f88671f81b43f972ad53",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": null,
+  "zone": 1,
+  "widgetId": "65127f1c88ae104c1c6250cd",
+  "widgetName": "NCR",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "mumbai"
+   ],
+   "coordinates": [],
+   "fontFamily": "",
+   "cityIds": [
+    12464
+   ]
+  }
+ },
+ {
+  "playlist": "play count 56",
+  "playlistId": "6631ed9ad1d05656d3d07280",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": null,
+  "zone": 3,
+  "widgetId": "6616472035e320d1e7c36150",
+  "widgetName": "weather wilyer",
+  "type": "weather",
+  "data": {
+   "city": [
+    "gurugram",
+    "mumbai",
+    "dubai"
+   ],
+   "fontFamily": "Arial",
+   "bgImage": true,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": true
+  }
+ },
+ {
+  "playlist": "rohit m",
+  "playlistId": "662b782159275e4912c631c9",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "663de04ac97ba510dce7cdb4",
+  "widgetName": "new",
+  "type": "aqi",
+  "data": {
+   "cities": [
+    "gurugram",
+    "delhi"
+   ],
+   "coordinates": [
+    {
+     "lat": 28.4594965,
+     "lng": 77.0266383
+    },
+    {
+     "lat": 28.7040592,
+     "lng": 77.10249019999999
+    }
+   ],
+   "fontFamily": "",
+   "cityIds": [
+    12816,
+    2553
+   ]
+  }
+ },
+ {
+  "playlist": "rohit m",
+  "playlistId": "662b782159275e4912c631c9",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 0,
+  "zone": 1,
+  "widgetId": "663de19fc97ba510dce800d7",
+  "widgetName": "Rohit",
+  "type": "weather",
+  "data": {
+   "city": [
+    "gurugram",
+    "pauri",
+    "mumbai"
+   ],
+   "fontFamily": "Arial",
+   "bgImage": true,
+   "fontBold": true,
+   "animation": false,
+   "isForecast": true
+  }
+ },
+ {
+  "playlist": "common 2",
+  "playlistId": "662615ffdb4b4db3b9975978",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 3,
+  "widgetId": "6616472035e320d1e7c36150",
+  "widgetName": "weather wilyer",
+  "type": "weather",
+  "data": {
+   "city": [
+    "gurugram",
+    "mumbai",
+    "dubai"
+   ],
+   "fontFamily": "Arial",
+   "bgImage": true,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": true
+  }
+ },
+ {
+  "playlist": "dooh (copy) (copy) (copy)",
+  "playlistId": "65f0139ad49796ad3736c60f",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": null,
+  "zone": 2,
+  "widgetId": "64118b3575540db19bc73aed",
+  "widgetName": "W",
+  "type": "weather",
+  "data": {
+   "city1": "ayodhya",
+   "fontFamily": "Koulen",
+   "city": [
+    "gurugram",
+    "janakpur",
+    "ayodhya"
+   ],
+   "bgImage": false,
+   "animation": true,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "arc ",
+  "playlistId": "65e0346fc463d6e18033b183",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": null,
+  "zone": 3,
+  "widgetId": "65e039935ea4a77d0b6af267",
+  "widgetName": "DPD",
+  "type": "weather",
+  "data": {
+   "city": [
+    "delhi",
+    "perth",
+    "dubai"
+   ],
+   "fontFamily": "FredokaOne",
+   "bgImage": false,
+   "fontBold": false,
+   "animation": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "ram",
+  "playlistId": "65ae14d2f5326ff910a5f885",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": null,
+  "zone": 3,
+  "widgetId": "64118b3575540db19bc73aed",
+  "widgetName": "W",
+  "type": "weather",
+  "data": {
+   "city1": "ayodhya",
+   "fontFamily": "Koulen",
+   "city": [
+    "gurugram",
+    "janakpur",
+    "ayodhya"
+   ],
+   "bgImage": false,
+   "animation": true,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "acts",
+  "playlistId": "6596832d2e102c5805214104",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": null,
+  "zone": 3,
+  "widgetId": "6572b4686df8a984482ef8ee",
+  "widgetName": "DDX Weather",
+  "type": "weather",
+  "data": {
+   "city1": "toronto",
+   "fontFamily": "FredokaOne",
+   "city": [
+    "mumbai",
+    "dubai",
+    "toronto"
+   ],
+   "bgImage": false,
+   "animation": true,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 40,
+  "zone": 1,
+  "widgetId": "630f3837b3f8e660223d3a7d",
+  "widgetName": "2 city",
+  "type": "weather",
+  "data": {
+   "city1": "",
+   "fontFamily": "Arial",
+   "city": [
+    "gurgaon",
+    "goa"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 40,
+  "zone": 2,
+  "widgetId": "63b419950cdb5a5016ddfc54",
+  "widgetName": "3 city",
+  "type": "weather",
+  "data": {
+   "city1": "palwal",
+   "fontFamily": "",
+   "city": [
+    "gurugram",
+    "delhi",
+    "palwal"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 40,
+  "zone": 3,
+  "widgetId": "630f3837b3f8e660223d3a7d",
+  "widgetName": "2 city",
+  "type": "weather",
+  "data": {
+   "city1": "",
+   "fontFamily": "Arial",
+   "city": [
+    "gurgaon",
+    "goa"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 40,
+  "zone": 1,
+  "widgetId": "63b419950cdb5a5016ddfc54",
+  "widgetName": "3 city",
+  "type": "weather",
+  "data": {
+   "city1": "palwal",
+   "fontFamily": "",
+   "city": [
+    "gurugram",
+    "delhi",
+    "palwal"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 40,
+  "zone": 2,
+  "widgetId": "63b419950cdb5a5016ddfc54",
+  "widgetName": "3 city",
+  "type": "weather",
+  "data": {
+   "city1": "palwal",
+   "fontFamily": "",
+   "city": [
+    "gurugram",
+    "delhi",
+    "palwal"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 40,
+  "zone": 3,
+  "widgetId": "63b419950cdb5a5016ddfc54",
+  "widgetName": "3 city",
+  "type": "weather",
+  "data": {
+   "city1": "palwal",
+   "fontFamily": "",
+   "city": [
+    "gurugram",
+    "delhi",
+    "palwal"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 40,
+  "zone": 4,
+  "widgetId": "63b419950cdb5a5016ddfc54",
+  "widgetName": "3 city",
+  "type": "weather",
+  "data": {
+   "city1": "palwal",
+   "fontFamily": "",
+   "city": [
+    "gurugram",
+    "delhi",
+    "palwal"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 40,
+  "zone": 5,
+  "widgetId": "63b419950cdb5a5016ddfc54",
+  "widgetName": "3 city",
+  "type": "weather",
+  "data": {
+   "city1": "palwal",
+   "fontFamily": "",
+   "city": [
+    "gurugram",
+    "delhi",
+    "palwal"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 40,
+  "zone": 6,
+  "widgetId": "63b419950cdb5a5016ddfc54",
+  "widgetName": "3 city",
+  "type": "weather",
+  "data": {
+   "city1": "palwal",
+   "fontFamily": "",
+   "city": [
+    "gurugram",
+    "delhi",
+    "palwal"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 40,
+  "zone": 7,
+  "widgetId": "63b419950cdb5a5016ddfc54",
+  "widgetName": "3 city",
+  "type": "weather",
+  "data": {
+   "city1": "palwal",
+   "fontFamily": "",
+   "city": [
+    "gurugram",
+    "delhi",
+    "palwal"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 40,
+  "zone": 8,
+  "widgetId": "63b419950cdb5a5016ddfc54",
+  "widgetName": "3 city",
+  "type": "weather",
+  "data": {
+   "city1": "palwal",
+   "fontFamily": "",
+   "city": [
+    "gurugram",
+    "delhi",
+    "palwal"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 2,
+  "layoutDur": 40,
+  "zone": 9,
+  "widgetId": "63b419950cdb5a5016ddfc54",
+  "widgetName": "3 city",
+  "type": "weather",
+  "data": {
+   "city1": "palwal",
+   "fontFamily": "",
+   "city": [
+    "gurugram",
+    "delhi",
+    "palwal"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 3,
+  "layoutDur": 40,
+  "zone": 1,
+  "widgetId": "630f3837b3f8e660223d3a7d",
+  "widgetName": "2 city",
+  "type": "weather",
+  "data": {
+   "city1": "",
+   "fontFamily": "Arial",
+   "city": [
+    "gurgaon",
+    "goa"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 3,
+  "layoutDur": 40,
+  "zone": 2,
+  "widgetId": "630f3837b3f8e660223d3a7d",
+  "widgetName": "2 city",
+  "type": "weather",
+  "data": {
+   "city1": "",
+   "fontFamily": "Arial",
+   "city": [
+    "gurgaon",
+    "goa"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 3,
+  "layoutDur": 40,
+  "zone": 3,
+  "widgetId": "630f3837b3f8e660223d3a7d",
+  "widgetName": "2 city",
+  "type": "weather",
+  "data": {
+   "city1": "",
+   "fontFamily": "Arial",
+   "city": [
+    "gurgaon",
+    "goa"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 3,
+  "layoutDur": 40,
+  "zone": 4,
+  "widgetId": "630f3837b3f8e660223d3a7d",
+  "widgetName": "2 city",
+  "type": "weather",
+  "data": {
+   "city1": "",
+   "fontFamily": "Arial",
+   "city": [
+    "gurgaon",
+    "goa"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 3,
+  "layoutDur": 40,
+  "zone": 5,
+  "widgetId": "630f3837b3f8e660223d3a7d",
+  "widgetName": "2 city",
+  "type": "weather",
+  "data": {
+   "city1": "",
+   "fontFamily": "Arial",
+   "city": [
+    "gurgaon",
+    "goa"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 3,
+  "layoutDur": 40,
+  "zone": 6,
+  "widgetId": "630f3837b3f8e660223d3a7d",
+  "widgetName": "2 city",
+  "type": "weather",
+  "data": {
+   "city1": "",
+   "fontFamily": "Arial",
+   "city": [
+    "gurgaon",
+    "goa"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 3,
+  "layoutDur": 40,
+  "zone": 7,
+  "widgetId": "630f3837b3f8e660223d3a7d",
+  "widgetName": "2 city",
+  "type": "weather",
+  "data": {
+   "city1": "",
+   "fontFamily": "Arial",
+   "city": [
+    "gurgaon",
+    "goa"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 3,
+  "layoutDur": 40,
+  "zone": 8,
+  "widgetId": "630f3837b3f8e660223d3a7d",
+  "widgetName": "2 city",
+  "type": "weather",
+  "data": {
+   "city1": "",
+   "fontFamily": "Arial",
+   "city": [
+    "gurgaon",
+    "goa"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Weather Test Playlist",
+  "playlistId": "650c052acfec107699912002",
+  "screens": 0,
+  "layout": 3,
+  "layoutDur": 40,
+  "zone": 9,
+  "widgetId": "630f3837b3f8e660223d3a7d",
+  "widgetName": "2 city",
+  "type": "weather",
+  "data": {
+   "city1": "",
+   "fontFamily": "Arial",
+   "city": [
+    "gurgaon",
+    "goa"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "dooh (copy) (copy)",
+  "playlistId": "64b10961cf4e7d3bc837b107",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 4,
+  "widgetId": "6616472035e320d1e7c36150",
+  "widgetName": "weather wilyer",
+  "type": "weather",
+  "data": {
+   "city": [
+    "gurugram",
+    "mumbai",
+    "dubai"
+   ],
+   "fontFamily": "Arial",
+   "bgImage": true,
+   "fontBold": true,
+   "animation": true,
+   "isForecast": true
+  }
+ },
+ {
+  "playlist": "del play",
+  "playlistId": "641823bddb3ae62d171812bc",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": null,
+  "zone": 3,
+  "widgetId": "64118b3575540db19bc73aed",
+  "widgetName": "W",
+  "type": "weather",
+  "data": {
+   "city1": "ayodhya",
+   "fontFamily": "Koulen",
+   "city": [
+    "gurugram",
+    "janakpur",
+    "ayodhya"
+   ],
+   "bgImage": false,
+   "animation": true,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "Widget Test",
+  "playlistId": "6411b29fdb3ae62d178b86c4",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": null,
+  "zone": 3,
+  "widgetId": "64118b3575540db19bc73aed",
+  "widgetName": "W",
+  "type": "weather",
+  "data": {
+   "city1": "ayodhya",
+   "fontFamily": "Koulen",
+   "city": [
+    "gurugram",
+    "janakpur",
+    "ayodhya"
+   ],
+   "bgImage": false,
+   "animation": true,
+   "fontBold": true,
+   "isForecast": false
+  }
+ },
+ {
+  "playlist": "sample",
+  "playlistId": "62e251100a4eed3e5b6522e0",
+  "screens": 0,
+  "layout": 1,
+  "layoutDur": 0,
+  "zone": 3,
+  "widgetId": "630f3837b3f8e660223d3a7d",
+  "widgetName": "2 city",
+  "type": "weather",
+  "data": {
+   "city1": "",
+   "fontFamily": "Arial",
+   "city": [
+    "gurgaon",
+    "goa"
+   ],
+   "bgImage": true,
+   "animation": false,
+   "fontBold": true,
+   "isForecast": false
+  }
+ }
+]

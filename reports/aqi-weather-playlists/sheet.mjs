@@ -1,0 +1,10 @@
+import { chromium } from '@playwright/test';
+import fs from 'fs'; import path from 'path'; import { pathToFileURL } from 'url';
+const d='reports/aqi-weather-playlists/shots/seq';
+const fr=fs.readdirSync(d).filter(f=>f.endsWith('.png')).sort();
+const html='<body style="margin:0;background:#000;display:grid;grid-template-columns:repeat(8,240px);gap:2px">'+fr.map(f=>`<div style="color:#fff;font:11px sans-serif"><img width=240 src="${pathToFileURL(path.resolve(d,f))}">${f}</div>`).join('');
+const hp=path.resolve('reports/aqi-weather-playlists/sheet.html');fs.writeFileSync(hp,html);
+const b=await chromium.launch();const p=await b.newPage({viewport:{width:1960,height:700}});
+await p.goto(pathToFileURL(hp).href);await p.waitForTimeout(1500);
+await p.screenshot({path:'reports/aqi-weather-playlists/shots/loop-contact-sheet.png',fullPage:true});await b.close();
+console.log(fr.length);

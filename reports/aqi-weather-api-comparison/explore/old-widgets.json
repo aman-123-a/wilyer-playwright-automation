@@ -1,0 +1,876 @@
+[
+ {
+  "id": "69f8e2cb48e0272b5ea20989",
+  "name": "1 city",
+  "type": "aqi",
+  "cities": [
+   "gurugram"
+  ],
+  "coords": [
+   {
+    "lat": 28.4594965,
+    "lng": 77.0266383
+   }
+  ]
+ },
+ {
+  "id": "69f8e2a84a01c184eebaa6da",
+  "name": "2 city",
+  "type": "aqi",
+  "cities": [
+   "gurugram",
+   "dubai"
+  ],
+  "coords": [
+   {
+    "lat": 28.4594965,
+    "lng": 77.0266383
+   },
+   {
+    "lat": 25.2048493,
+    "lng": 55.2707828
+   }
+  ],
+  "aqiFor": "pm25"
+ },
+ {
+  "id": "699d706f14992bca534c06ce",
+  "name": "BenQ",
+  "type": "aqi",
+  "cities": [
+   "rajasthan",
+   "bulandshahr"
+  ],
+  "coords": [
+   {
+    "lat": 27.0238036,
+    "lng": 74.21793260000001
+   },
+   {
+    "lat": 28.406963,
+    "lng": 77.8498292
+   }
+  ]
+ },
+ {
+  "id": "6996e06d0949c7000ff34b95",
+  "name": "vansh nanda",
+  "type": "aqi",
+  "cities": [
+   "gurugram",
+   "punjab"
+  ],
+  "coords": [
+   {
+    "lat": 28.4594965,
+    "lng": 77.0266383
+   },
+   {
+    "lat": 31.1471305,
+    "lng": 75.34121789999999
+   }
+  ]
+ },
+ {
+  "id": "6973a768b05fada5a052bf43",
+  "name": "TEST",
+  "type": "aqi",
+  "cities": [
+   "barcelona",
+   "gurugram"
+  ],
+  "coords": [
+   {
+    "lat": 41.3874374,
+    "lng": 2.1686496
+   },
+   {
+    "lat": 28.4594965,
+    "lng": 77.0266383
+   }
+  ]
+ },
+ {
+  "id": "6939519aaef2fc6848541ef9",
+  "name": "harsh",
+  "type": "aqi",
+  "cities": [
+   "india gate",
+   "kapas hera"
+  ],
+  "coords": [
+   {
+    "lat": 28.6110886,
+    "lng": 77.2345184
+   },
+   {
+    "lat": 28.5261267,
+    "lng": 77.079966
+   }
+  ]
+ },
+ {
+  "id": "69318494f7588f56a797710a",
+  "name": "test data",
+  "type": "aqi",
+  "cities": [
+   "karol bagh",
+   "global space"
+  ],
+  "coords": [
+   {
+    "lat": 28.6550458,
+    "lng": 77.1888201
+   },
+   {
+    "lat": 28.4938677,
+    "lng": 77.1037786
+   }
+  ]
+ },
+ {
+  "id": "68b980a59c8d17c24ff84ce1",
+  "name": "QA",
+  "type": "aqi",
+  "cities": [
+   "noida"
+  ],
+  "coords": [
+   {
+    "lat": 28.5355161,
+    "lng": 77.3910265
+   }
+  ]
+ },
+ {
+  "id": "676be414503c311842e2164d",
+  "name": "GGN UAE",
+  "type": "aqi",
+  "cities": [
+   "gurugram"
+  ],
+  "coords": [
+   {
+    "lat": 28.4594965,
+    "lng": 77.0266383
+   }
+  ]
+ },
+ {
+  "id": "66c478a9523355d871f5f91f",
+  "name": "Mumbai",
+  "type": "aqi",
+  "cities": [
+   "new delhi",
+   "new york"
+  ],
+  "coords": [
+   {
+    "lat": 28.6139298,
+    "lng": 77.2088282
+   },
+   {
+    "lat": 40.7127753,
+    "lng": -74.0059728
+   }
+  ]
+ },
+ {
+  "id": "66a76c1b6fc06c70f73f7289",
+  "name": "we",
+  "type": "aqi",
+  "cities": [
+   "gurugram",
+   "bengaluru"
+  ],
+  "coords": [
+   {
+    "lat": 28.4594965,
+    "lng": 77.0266383
+   },
+   {
+    "lat": 12.9715987,
+    "lng": 77.5945627
+   }
+  ]
+ },
+ {
+  "id": "668fbf8872ae2e550e4b8334",
+  "name": "qwer",
+  "type": "aqi",
+  "cities": [
+   "delhi",
+   "london"
+  ],
+  "coords": [
+   {
+    "lat": 28.7040592,
+    "lng": 77.10249019999999
+   },
+   {
+    "lat": 51.5072178,
+    "lng": -0.1275862
+   }
+  ]
+ },
+ {
+  "id": "663de04ac97ba510dce7cdb4",
+  "name": "new",
+  "type": "aqi",
+  "cities": [
+   "gurugram",
+   "delhi"
+  ],
+  "coords": [
+   {
+    "lat": 28.4594965,
+    "lng": 77.0266383
+   },
+   {
+    "lat": 28.7040592,
+    "lng": 77.10249019999999
+   }
+  ]
+ },
+ {
+  "id": "66364047c2a9e090b94bec49",
+  "name": "NCR 2",
+  "type": "aqi",
+  "cities": [
+   "delhi",
+   "gurugram"
+  ],
+  "coords": [
+   {
+    "lat": 28.7040592,
+    "lng": 77.10249019999999
+   },
+   {
+    "lat": 28.4594965,
+    "lng": 77.0266383
+   }
+  ]
+ },
+ {
+  "id": "65127f1c88ae104c1c6250cd",
+  "name": "NCR",
+  "type": "aqi",
+  "cities": [
+   "mumbai"
+  ]
+ },
+ {
+  "id": "65102c0f451f93b02a2d5a93",
+  "name": "aqi",
+  "type": "aqi",
+  "cities": [
+   "dabolim",
+   "rahaspur"
+  ]
+ },
+ {
+  "id": "64524c883e76a4917d404302",
+  "name": "gn",
+  "type": "weather",
+  "cities": [
+   "greater noida"
+  ],
+  "fc": false
+ },
+ {
+  "id": "64118b3575540db19bc73aed",
+  "name": "W",
+  "type": "weather",
+  "cities": [
+   "gurugram",
+   "janakpur",
+   "ayodhya"
+  ],
+  "fc": false
+ },
+ {
+  "id": "640f2e815c32f5583a65c599",
+  "name": "gsl",
+  "type": "weather",
+  "cities": [
+   "goa",
+   "srinagar",
+   "tokyo"
+  ],
+  "fc": true
+ },
+ {
+  "id": "64099b654c60ea591bf3f57c",
+  "name": "dev",
+  "type": "weather",
+  "cities": [
+   "dubai",
+   "gurugram",
+   "alaska"
+  ],
+  "fc": false
+ },
+ {
+  "id": "63cf84b84be62339bc706a6c",
+  "name": "aa",
+  "type": "weather",
+  "cities": [
+   "gurugram"
+  ]
+ },
+ {
+  "id": "63b419950cdb5a5016ddfc54",
+  "name": "3 city",
+  "type": "weather",
+  "cities": [
+   "gurugram",
+   "delhi",
+   "palwal"
+  ],
+  "fc": false
+ },
+ {
+  "id": "630f3837b3f8e660223d3a7d",
+  "name": "2 city",
+  "type": "weather",
+  "cities": [
+   "gurgaon",
+   "goa"
+  ],
+  "fc": false
+ },
+ {
+  "id": "62f0b0e75cda5772cb70f773",
+  "name": "1 City",
+  "type": "weather",
+  "cities": [
+   "gurugram"
+  ],
+  "fc": true
+ },
+ {
+  "id": "6a4e27f4ab6cc5e2836a1364",
+  "name": "weather 2",
+  "type": "weather",
+  "cities": [
+   "Chennai"
+  ],
+  "fc": true
+ },
+ {
+  "id": "6a2a3fafead8f7e4e207ea2e",
+  "name": "Global Weather",
+  "type": "weather",
+  "cities": [
+   "New Delhi",
+   "Gurugram",
+   "New York"
+  ],
+  "fc": true
+ },
+ {
+  "id": "69f8dfe64a01c184eeba1e75",
+  "name": "3city",
+  "type": "weather",
+  "cities": [
+   "gurugram",
+   "dubai",
+   "new york"
+  ],
+  "fc": false
+ },
+ {
+  "id": "69f8dfb34a01c184eeba150a",
+  "name": "2city",
+  "type": "weather",
+  "cities": [
+   "gurugram",
+   "dubai"
+  ],
+  "fc": false
+ },
+ {
+  "id": "69f8dee74a01c184eeb9ecd2",
+  "name": "GGN 1 city",
+  "type": "weather",
+  "cities": [
+   "gurugram"
+  ],
+  "fc": true
+ },
+ {
+  "id": "69afc274f97e12e94f1c8bbd",
+  "name": "Data",
+  "type": "weather",
+  "cities": [
+   "dubai",
+   "new york"
+  ],
+  "fc": false
+ },
+ {
+  "id": "6996ccd9a319087eff4acdea",
+  "name": "vansh nanda",
+  "type": "weather",
+  "cities": [
+   "visakhapatnam",
+   "gurugram",
+   "kolkata"
+  ],
+  "fc": true
+ },
+ {
+  "id": "69957d78a319087eff36b60b",
+  "name": "Vishawjeet Bindra",
+  "type": "weather",
+  "cities": [
+   "visakhapatnam",
+   "delhi",
+   "bengaluru"
+  ],
+  "fc": false
+ },
+ {
+  "id": "6980aacc91e7b42e4f194fc6",
+  "name": "ISE City",
+  "type": "weather",
+  "cities": [
+   "barcelona",
+   "delhi",
+   "dubai"
+  ],
+  "fc": false
+ },
+ {
+  "id": "695d22aafdef0dbdfb1738e2",
+  "name": "inter",
+  "type": "weather",
+  "cities": [
+   "dubai",
+   "new york",
+   "sydney"
+  ],
+  "fc": false
+ },
+ {
+  "id": "6953592e2548ab89c6b7b193",
+  "name": "Three city",
+  "type": "weather",
+  "cities": [
+   "interlaken",
+   "barcelona",
+   "delhi"
+  ],
+  "fc": true
+ },
+ {
+  "id": "69523ab1146af97e867b50b9",
+  "name": "three",
+  "type": "weather",
+  "cities": [
+   "new delhi",
+   "dubai",
+   "new york"
+  ],
+  "fc": true
+ },
+ {
+  "id": "693f9c9db4fc2df05bcbe2b6",
+  "name": "test n",
+  "type": "weather",
+  "cities": [
+   "noida",
+   "gurugram",
+   "delhi"
+  ],
+  "fc": true
+ },
+ {
+  "id": "693178b081efd491071721d6",
+  "name": "BenQ",
+  "type": "weather",
+  "cities": [
+   "noida",
+   "burari",
+   "rohtak"
+  ],
+  "fc": true
+ },
+ {
+  "id": "68dcf845bdeed1b13529bdc0",
+  "name": "Three City test",
+  "type": "weather",
+  "cities": [
+   "doha",
+   "dubai",
+   "shiraz"
+  ],
+  "fc": true
+ },
+ {
+  "id": "68cc233fc645b4fa9b27632c",
+  "name": "NAMe",
+  "type": "weather",
+  "cities": [
+   "dubai",
+   "mexico city",
+   "mumbai"
+  ],
+  "fc": false
+ },
+ {
+  "id": "688ce19dc7c8ec77bbe147ba",
+  "name": "Non SSL Weather Widget",
+  "type": "weather",
+  "cities": [
+   "london",
+   "new york",
+   "mumbai"
+  ],
+  "fc": false
+ },
+ {
+  "id": "68774c057a8b4b27bcfa06ff",
+  "name": "R1",
+  "type": "weather",
+  "cities": [
+   "gurugram"
+  ],
+  "fc": true
+ },
+ {
+  "id": "6851083d6fe95c4d50807122",
+  "name": "QA",
+  "type": "weather",
+  "cities": [
+   "new delhi",
+   "noida",
+   "gurugram"
+  ],
+  "fc": false
+ },
+ {
+  "id": "682ea5235884056b0593d53e",
+  "name": "MDN",
+  "type": "weather",
+  "cities": [
+   "mumbai",
+   "dubai",
+   "new york"
+  ],
+  "fc": false
+ },
+ {
+  "id": "681c666ea8d7ba94535c393d",
+  "name": "Main Weatgher",
+  "type": "weather",
+  "cities": [
+   "dubai",
+   "abu dhabi",
+   "london"
+  ],
+  "fc": false
+ },
+ {
+  "id": "681b30840242dcd2631389d9",
+  "name": "aqwq",
+  "type": "weather",
+  "cities": [
+   "gurugram"
+  ],
+  "fc": false
+ },
+ {
+  "id": "6818a66dd8d489cc163b2fb7",
+  "name": "City 3",
+  "type": "weather",
+  "cities": [
+   "gurugram",
+   "dubai",
+   "mumbai"
+  ],
+  "fc": false
+ },
+ {
+  "id": "67e3d95ab1595d3173a6b21c",
+  "name": "ferf",
+  "type": "weather",
+  "cities": [
+   "kolkata",
+   "jaipur"
+  ],
+  "fc": true
+ },
+ {
+  "id": "67a0d6949a3c2a82e223d9a6",
+  "name": "tttt",
+  "type": "weather",
+  "cities": [
+   "mapusa",
+   "delhi"
+  ],
+  "fc": true
+ },
+ {
+  "id": "676be1bc503c311842e198a3",
+  "name": "GGN",
+  "type": "weather",
+  "cities": [
+   "mapusa"
+  ],
+  "fc": false
+ },
+ {
+  "id": "67440bb0cdef0717d1df2e5a",
+  "name": "23",
+  "type": "weather",
+  "cities": [
+   "muscat",
+   "dubai",
+   "tokyo"
+  ],
+  "fc": false
+ },
+ {
+  "id": "6730961d08c053e6b277e40e",
+  "name": "23",
+  "type": "weather",
+  "cities": [
+   "riyadh",
+   "dubai",
+   "mumbai"
+  ],
+  "fc": false
+ },
+ {
+  "id": "6718e4ee85a0dc81406100ad",
+  "name": "Shell",
+  "type": "weather",
+  "cities": [
+   "gurugram",
+   "delhi",
+   "mumbai"
+  ],
+  "fc": true
+ },
+ {
+  "id": "6717a9941f60738232fa8892",
+  "name": "KSA",
+  "type": "weather",
+  "cities": [
+   "riyadh",
+   "dubai",
+   "mumbai"
+  ],
+  "fc": false
+ },
+ {
+  "id": "6703a35ca70acd1a1f324730",
+  "name": "Rohit New",
+  "type": "weather",
+  "cities": [
+   "pauri",
+   "mumbai",
+   "kolkata"
+  ],
+  "fc": true
+ },
+ {
+  "id": "66fcf92ca6d0b89ddbb56c12",
+  "name": "Global City",
+  "type": "weather",
+  "cities": [
+   "muscat",
+   "dubai",
+   "mumbai"
+  ],
+  "fc": false
+ },
+ {
+  "id": "66e3dca9a4274bb8ddef24e4",
+  "name": "Himanchal",
+  "type": "weather",
+  "cities": [
+   "jhakri"
+  ],
+  "fc": false
+ },
+ {
+  "id": "664c4263a60ba17a34af3271",
+  "name": "Mumbai Dubai Toronto",
+  "type": "weather",
+  "cities": [
+   "london",
+   "dubai",
+   "mumbai"
+  ],
+  "fc": false
+ },
+ {
+  "id": "663de19fc97ba510dce800d7",
+  "name": "Rohit",
+  "type": "weather",
+  "cities": [
+   "gurugram",
+   "pauri",
+   "mumbai"
+  ],
+  "fc": true
+ },
+ {
+  "id": "6616472035e320d1e7c36150",
+  "name": "weather wilyer",
+  "type": "weather",
+  "cities": [
+   "gurugram",
+   "mumbai",
+   "dubai"
+  ],
+  "fc": true
+ },
+ {
+  "id": "65e039935ea4a77d0b6af267",
+  "name": "DPD",
+  "type": "weather",
+  "cities": [
+   "delhi",
+   "perth",
+   "dubai"
+  ],
+  "fc": false
+ },
+ {
+  "id": "65af782e7a964d48d4f9d6f8",
+  "name": "rweqw",
+  "type": "weather",
+  "cities": [
+   "gurugram",
+   "mumbai",
+   "dubai"
+  ],
+  "fc": true
+ },
+ {
+  "id": "65aa623324ecd8234a1706c8",
+  "name": "web wrw",
+  "type": "weather",
+  "cities": [
+   "dubai",
+   "moscow",
+   "sydney"
+  ],
+  "fc": false
+ },
+ {
+  "id": "6572b4686df8a984482ef8ee",
+  "name": "DDX Weather",
+  "type": "weather",
+  "cities": [
+   "mumbai",
+   "dubai",
+   "toronto"
+  ],
+  "fc": false
+ },
+ {
+  "id": "655c5c2584d117c5202e6131",
+  "name": "ny chennai sydney",
+  "type": "weather",
+  "cities": [
+   "chennai",
+   "new york",
+   "sydney"
+  ],
+  "fc": false
+ },
+ {
+  "id": "64cb602003a099fa33ef86fa",
+  "name": "Test wa",
+  "type": "weather",
+  "cities": [
+   "haridwar",
+   "sirsa",
+   "sydney"
+  ],
+  "fc": true
+ },
+ {
+  "id": "64b9243fa0d9d61af1b4418d",
+  "name": "mumbai",
+  "type": "weather",
+  "cities": [
+   "mumbai",
+   "delhi",
+   "dubai"
+  ],
+  "fc": false
+ },
+ {
+  "id": "64ad694a56547abec36722b4",
+  "name": "Weater",
+  "type": "weather",
+  "cities": [
+   "san juan",
+   "mumbai",
+   "delhi"
+  ],
+  "fc": false
+ },
+ {
+  "id": "64a6910606b71d43986918a9",
+  "name": "ww",
+  "type": "weather",
+  "cities": [
+   "himachal pradesh"
+  ],
+  "fc": false
+ },
+ {
+  "id": "646f42208fc277d51f54a50f",
+  "name": "City",
+  "type": "weather",
+  "cities": [
+   "delhi",
+   "new york",
+   "australia"
+  ],
+  "fc": false
+ },
+ {
+  "id": "646480f550e8f1bd5417cda1",
+  "name": "london",
+  "type": "weather",
+  "cities": [
+   "delhi",
+   "london"
+  ],
+  "fc": false
+ },
+ {
+  "id": "6458ede82a3e6572987ac131",
+  "name": "dw",
+  "type": "weather",
+  "cities": [
+   "delhi"
+  ],
+  "fc": false
+ },
+ {
+  "id": "6458a76698e4ab74a0c6c512",
+  "name": "badrii",
+  "type": "weather",
+  "cities": [
+   "badrinath"
+  ],
+  "fc": false
+ },
+ {
+  "id": "645358e53e76a4917d5c082b",
+  "name": "gajiya",
+  "type": "weather",
+  "cities": [
+   "ghaziabad"
+  ],
+  "fc": false
+ }
+]

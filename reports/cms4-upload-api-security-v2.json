@@ -1,0 +1,119 @@
+[
+  {
+    "id": "UPLOAD-SEC-07",
+    "severity": "INFO",
+    "summary": "tampered-payload JWT correctly rejected (signature verified)",
+    "detail": {
+      "status": 401,
+      "body": "{\"status\":401,\"message\":\"Unauthorized Request\"}"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-08",
+    "severity": "INFO",
+    "summary": "alg:none JWT correctly rejected",
+    "detail": {
+      "status": 401,
+      "body": "{\"status\":401,\"message\":\"Unauthorized Request\"}"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-09:00000000",
+    "severity": "INFO",
+    "summary": "folderId=000000000000000000000000 -> 200, docs=0",
+    "detail": {
+      "status": 200,
+      "body": "{\"docs\":[],\"totalDocs\":0,\"limit\":10,\"totalPages\":1,\"page\":1,\"pagingCounter\":1,\"hasPrevPage\":false,\"hasNextPage\":false,\"prevPage\":null,\"nextPage\":null}"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-09:ffffffff",
+    "severity": "INFO",
+    "summary": "folderId=ffffffffffffffffffffffff -> 200, docs=0",
+    "detail": {
+      "status": 200,
+      "body": "{\"docs\":[],\"totalDocs\":0,\"limit\":10,\"totalPages\":1,\"page\":1,\"pagingCounter\":1,\"hasPrevPage\":false,\"hasNextPage\":false,\"prevPage\":null,\"nextPage\":null}"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-10:pn=0",
+    "severity": "MEDIUM",
+    "summary": "partNumber=0 -> 200",
+    "detail": {
+      "status": 200,
+      "body": "{\"url\":\"https://signage-v3.s3.ap-south-1.amazonaws.com/v3/62263c1e14f5a72ee1bdf395/probe_1791287558191_1791287551639.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Cr"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-10:pn=-1",
+    "severity": "MEDIUM",
+    "summary": "partNumber=-1 -> 200",
+    "detail": {
+      "status": 200,
+      "body": "{\"url\":\"https://signage-v3.s3.ap-south-1.amazonaws.com/v3/62263c1e14f5a72ee1bdf395/probe_1791287558191_1791287551639.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Cr"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-10:pn=10001",
+    "severity": "MEDIUM",
+    "summary": "partNumber=10001 -> 200",
+    "detail": {
+      "status": 200,
+      "body": "{\"url\":\"https://signage-v3.s3.ap-south-1.amazonaws.com/v3/62263c1e14f5a72ee1bdf395/probe_1791287558191_1791287551639.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Cr"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-10:pn=99999999",
+    "severity": "MEDIUM",
+    "summary": "partNumber=99999999 -> 200",
+    "detail": {
+      "status": 200,
+      "body": "{\"url\":\"https://signage-v3.s3.ap-south-1.amazonaws.com/v3/62263c1e14f5a72ee1bdf395/probe_1791287558191_1791287551639.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Cr"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-11",
+    "severity": "MEDIUM",
+    "summary": "HTML/script content with .mp4 name + video/mp4 type was accepted and finalized (no content-type/magic-byte validation)",
+    "detail": {
+      "completeStatus": 200,
+      "completeBody": "{\"location\":\"https://signage-v3.s3.ap-south-1.amazonaws.com/v3%2F62263c1e14f5a72ee1bdf395%2Fxss_1791287560152_1791287553593.mp4\"}",
+      "finalizeStatus": 200,
+      "finalizeBody": "{\"message\":\"File uploaded — transcoding started\",\"transcoding\":true,\"fileName\":\"xss_1791287560152_1791287553593.mp4\",\"fileId\":\"6ac4e103a2b0eaf43e4c8076\"}"
+    }
+  },
+  {
+    "id": "UPLOAD-SEC-12",
+    "severity": "LOW",
+    "summary": "25 concurrent create-multipart-upload calls -> 25 ok, 0 throttled(429), in 1256ms (no rate limiting observed if throttled=0)",
+    "detail": {
+      "statuses": [
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ]
+    }
+  }
+]

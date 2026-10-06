@@ -1,0 +1,74 @@
+[
+ {
+  "type": "aqi",
+  "city": "Hyderabad",
+  "q": "Hyderabad AQI today",
+  "ts": "2026-10-05T10:43:53.032Z",
+  "captcha": true,
+  "txt": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 106.219.156.132\nTime: 2026-10-05T10:43:41Z\nURL: https://www.google.com/search?hl=en&gl=in&q=Hyderabad%20AQI%20today&sei=W3_Daq-8HqGihvcP75z2gA8\n",
+  "file": "reports/aqi-weather-playlists/shots/google-aqi-Hyderabad.png"
+ },
+ {
+  "type": "aqi",
+  "city": "Chennai",
+  "q": "Chennai AQI today",
+  "ts": "2026-10-05T10:43:59.363Z",
+  "captcha": true,
+  "txt": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 106.219.156.132\nTime: 2026-10-05T10:43:48Z\nURL: https://www.google.com/search?hl=en&gl=in&q=Chennai%20AQI%20today&sei=Y3_DapOXBMGvur8Prcu8iAw\n",
+  "file": "reports/aqi-weather-playlists/shots/google-aqi-Chennai.png"
+ },
+ {
+  "type": "aqi",
+  "city": "Kolkata",
+  "q": "Kolkata AQI today",
+  "ts": "2026-10-05T10:44:05.110Z",
+  "captcha": true,
+  "txt": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 106.219.156.132\nTime: 2026-10-05T10:43:53Z\nURL: https://www.google.com/search?hl=en&gl=in&q=Kolkata%20AQI%20today&sei=aH_DauuTCdjCkPIP8qjA6AQ\n",
+  "file": "reports/aqi-weather-playlists/shots/google-aqi-Kolkata.png"
+ },
+ {
+  "type": "aqi",
+  "city": "Telangana",
+  "q": "Telangana AQI today",
+  "ts": "2026-10-05T10:44:10.751Z",
+  "captcha": true,
+  "txt": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 106.219.156.132\nTime: 2026-10-05T10:43:59Z\nURL: https://www.google.com/search?hl=en&gl=in&q=Telangana%20AQI%20today&sei=bX_DauSTN5C7ur8P14mt4QI\n",
+  "file": "reports/aqi-weather-playlists/shots/google-aqi-Telangana.png"
+ },
+ {
+  "type": "weather",
+  "city": "Mumbai",
+  "q": "Mumbai weather today",
+  "ts": "2026-10-05T10:44:16.412Z",
+  "captcha": true,
+  "txt": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 106.219.156.132\nTime: 2026-10-05T10:44:05Z\nURL: https://www.google.com/search?hl=en&gl=in&q=Mumbai%20weather%20today&sei=c3_Dar-MIczLkPIP1ryMyAQ\n",
+  "file": "reports/aqi-weather-playlists/shots/google-weather-Mumbai.png"
+ },
+ {
+  "type": "weather",
+  "city": "New Delhi",
+  "q": "New Delhi weather today",
+  "ts": "2026-10-05T10:44:22.171Z",
+  "captcha": true,
+  "txt": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 106.219.156.132\nTime: 2026-10-05T10:44:10Z\nURL: https://www.google.com/search?hl=en&gl=in&q=New%20Delhi%20weather%20today&sei=eX_DapzCEIjVkPIPopKSqQo\n",
+  "file": "reports/aqi-weather-playlists/shots/google-weather-New_Delhi.png"
+ },
+ {
+  "type": "weather",
+  "city": "Chennai",
+  "q": "Chennai weather today",
+  "ts": "2026-10-05T10:44:28.097Z",
+  "captcha": true,
+  "txt": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 106.219.156.132\nTime: 2026-10-05T10:44:16Z\nURL: https://www.google.com/search?hl=en&gl=in&q=Chennai%20weather%20today&sei=fn_Dao6OPOjDkPIPsruP0Ak\n",
+  "file": "reports/aqi-weather-playlists/shots/google-weather-Chennai.png"
+ },
+ {
+  "type": "weather",
+  "city": "Kolkata",
+  "q": "Kolkata weather today",
+  "ts": "2026-10-05T10:44:33.967Z",
+  "captcha": true,
+  "txt": "\n\nAbout this page\n\nOur systems have detected unusual traffic from your computer network. This page checks to see if it's really you sending the requests, and not a robot. Why did this happen?\n\n\n\nIP address: 106.219.156.132\nTime: 2026-10-05T10:44:22Z\nURL: https://www.google.com/search?hl=en&gl=in&q=Kolkata%20weather%20today&sei=hH_DapizOumxur8Ps6eLMQ\n",
+  "file": "reports/aqi-weather-playlists/shots/google-weather-Kolkata.png"
+ }
+]

@@ -1,0 +1,2815 @@
+{
+ "startedAt": "2026-10-01T11:39:03.797Z",
+ "runs": 10,
+ "pairs": [
+  {
+   "key": "W-DEL",
+   "type": "weather",
+   "label": "Delhi",
+   "oldId": "6458ede82a3e6572987ac131",
+   "newId": "6abe4630f5746abddbb33d54",
+   "data": {
+    "city1": "",
+    "fontFamily": "Arial",
+    "city": [
+     "delhi"
+    ],
+    "bgImage": false,
+    "animation": false,
+    "fontBold": false,
+    "isForecast": false
+   },
+   "single": {
+    "old": {
+     "status": 200,
+     "ms": 1011.7,
+     "bytes": 4484
+    },
+    "new": {
+     "status": 200,
+     "ms": 2767.2,
+     "bytes": 1116
+    }
+   },
+   "old": {
+    "runs": [
+     {
+      "status": 200,
+      "ms": 1011.7,
+      "bytes": 4484
+     },
+     {
+      "status": 200,
+      "ms": 632,
+      "bytes": 4484
+     },
+     {
+      "status": 200,
+      "ms": 283,
+      "bytes": 4484
+     },
+     {
+      "status": 200,
+      "ms": 311.6,
+      "bytes": 4484
+     },
+     {
+      "status": 200,
+      "ms": 285,
+      "bytes": 4484
+     },
+     {
+      "status": 200,
+      "ms": 280.7,
+      "bytes": 4484
+     },
+     {
+      "status": 200,
+      "ms": 273.6,
+      "bytes": 4484
+     },
+     {
+      "status": 200,
+      "ms": 271.6,
+      "bytes": 4484
+     },
+     {
+      "status": 200,
+      "ms": 279.5,
+      "bytes": 4484
+     },
+     {
+      "status": 200,
+      "ms": 283.4,
+      "bytes": 4484
+     }
+    ],
+    "stats": {
+     "n": 10,
+     "min": 271.6,
+     "max": 1011.7,
+     "avg": 391.2,
+     "median": 283.2,
+     "p90": 632,
+     "p95": 1011.7,
+     "p99": 1011.7
+    },
+    "errors": 0,
+    "statuses": [
+     200
+    ]
+   },
+   "new": {
+    "runs": [
+     {
+      "status": 200,
+      "ms": 2767.2,
+      "bytes": 1116
+     },
+     {
+      "status": 200,
+      "ms": 368.6,
+      "bytes": 1116
+     },
+     {
+      "status": 200,
+      "ms": 367.3,
+      "bytes": 1116
+     },
+     {
+      "status": 200,
+      "ms": 376.6,
+      "bytes": 1116
+     },
+     {
+      "status": 200,
+      "ms": 366.1,
+      "bytes": 1116
+     },
+     {
+      "status": 200,
+      "ms": 370.2,
+      "bytes": 1116
+     },
+     {
+      "status": 200,
+      "ms": 386.4,
+      "bytes": 1116
+     },
+     {
+      "status": 200,
+      "ms": 368.1,
+      "bytes": 1116
+     },
+     {
+      "status": 200,
+      "ms": 362.9,
+      "bytes": 1116
+     },
+     {
+      "status": 200,
+      "ms": 363.9,
+      "bytes": 1116
+     }
+    ],
+    "stats": {
+     "n": 10,
+     "min": 362.9,
+     "max": 2767.2,
+     "avg": 609.7,
+     "median": 368.4,
+     "p90": 386.4,
+     "p95": 2767.2,
+     "p99": 2767.2
+    },
+    "errors": 0,
+    "statuses": [
+     200
+    ]
+   },
+   "oldErrorBody": null,
+   "newErrorBody": null,
+   "structure": {
+    "removedFields": [
+     ".weather[].todayData.main.feels_like",
+     ".weather[].todayData.main.temp_min",
+     ".weather[].todayData.main.temp_max",
+     ".weather[].todayData.main.sea_level",
+     ".weather[].todayData.main.grnd_level",
+     ".weather[].todayData.main.temp_kf",
+     ".weather[].todayData.main.dew_point",
+     ".weather[].todayData.weather[].id",
+     ".weather[].todayData.weather[].description",
+     ".weather[].todayData.weather[].icon",
+     ".weather[].todayData.clouds.all",
+     ".weather[].todayData.wind.deg",
+     ".weather[].todayData.wind.gust",
+     ".weather[].todayData.visibility",
+     ".weather[].todayData.pop",
+     ".weather[].todayData.sys.pod",
+     ".weather[].todayData.dt_txt",
+     ".weather[].forecast[].main.feels_like",
+     ".weather[].forecast[].main.temp_min",
+     ".weather[].forecast[].main.temp_max",
+     ".weather[].forecast[].main.pressure",
+     ".weather[].forecast[].main.sea_level",
+     ".weather[].forecast[].main.grnd_level",
+     ".weather[].forecast[].main.humidity",
+     ".weather[].forecast[].main.temp_kf",
+     ".weather[].forecast[].main.dew_point",
+     ".weather[].forecast[].weather[].id",
+     ".weather[].forecast[].weather[].description",
+     ".weather[].forecast[].weather[].icon",
+     ".weather[].forecast[].clouds.all",
+     ".weather[].forecast[].wind.speed",
+     ".weather[].forecast[].wind.deg",
+     ".weather[].forecast[].wind.gust",
+     ".weather[].forecast[].visibility",
+     ".weather[].forecast[].pop",
+     ".weather[].forecast[].sys.pod",
+     ".weather[].forecast[].dt_txt",
+     ".weather[].city.id",
+     ".weather[].city.coord.lat",
+     ".weather[].city.coord.lon",
+     ".weather[].city.country",
+     ".weather[].city.population",
+     ".weather[].city.timezone"
+    ],
+    "addedFields": [],
+    "typeChanges": []
+   },
+   "values": [
+    {
+     "city": "Delhi",
+     "field": "temp",
+     "old": 32.41,
+     "new": 32.3
+    },
+    {
+     "city": "Delhi",
+     "field": "feels_like",
+     "old": 31.29,
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "humidity",
+     "old": 30,
+     "new": 48
+    },
+    {
+     "city": "Delhi",
+     "field": "pressure",
+     "old": 1010,
+     "new": 1011.41
+    },
+    {
+     "city": "Delhi",
+     "field": "wind.speed",
+     "old": 3.33,
+     "new": 2.2
+    },
+    {
+     "city": "Delhi",
+     "field": "wind.deg",
+     "old": 332,
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "condition",
+     "old": "Clear",
+     "new": "Clear"
+    },
+    {
+     "city": "Delhi",
+     "field": "icon",
+     "old": "01d",
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "visibility",
+     "old": 10000,
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "clouds",
+     "old": 0,
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "sunrise",
+     "old": "06:13",
+     "new": "06:14"
+    },
+    {
+     "city": "Delhi",
+     "field": "sunset",
+     "old": "18:07",
+     "new": "18:07"
+    },
+    {
+     "city": "Delhi",
+     "field": "timezone",
+     "old": 19800,
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "timestamp(dt)",
+     "old": 1790856000,
+     "new": 1790854741
+    },
+    {
+     "city": "Delhi",
+     "field": "forecast.length",
+     "old": 9,
+     "new": 9
+    },
+    {
+     "city": "(all)",
+     "field": "cityCount",
+     "old": 1,
+     "new": 1
+    }
+   ]
+  },
+  {
+   "key": "W-MUM",
+   "type": "weather",
+   "label": "Mumbai (+Delhi,Dubai)",
+   "oldId": "64b9243fa0d9d61af1b4418d",
+   "newId": "6abe463163da81f6178fb8b3",
+   "data": {
+    "city1": "Dubai - United Arab Emirates",
+    "fontFamily": "ConcertOne",
+    "city": [
+     "mumbai",
+     "delhi",
+     "dubai"
+    ],
+    "bgImage": false,
+    "animation": true,
+    "fontBold": true,
+    "isForecast": false
+   },
+   "single": {
+    "old": {
+     "status": 200,
+     "ms": 301.1,
+     "bytes": 13013
+    },
+    "new": {
+     "status": 200,
+     "ms": 2506.9,
+     "bytes": 2803
+    }
+   },
+   "old": {
+    "runs": [
+     {
+      "status": 200,
+      "ms": 301.1,
+      "bytes": 13013
+     },
+     {
+      "status": 200,
+      "ms": 775.9,
+      "bytes": 13013
+     },
+     {
+      "status": 200,
+      "ms": 298.9,
+      "bytes": 13013
+     },
+     {
+      "status": 200,
+      "ms": 302.4,
+      "bytes": 13013
+     },
+     {
+      "status": 200,
+      "ms": 330.6,
+      "bytes": 13013
+     },
+     {
+      "status": 200,
+      "ms": 478,
+      "bytes": 13013
+     },
+     {
+      "status": 200,
+      "ms": 300.1,
+      "bytes": 13013
+     },
+     {
+      "status": 200,
+      "ms": 289.7,
+      "bytes": 13013
+     },
+     {
+      "status": 200,
+      "ms": 301.1,
+      "bytes": 13013
+     },
+     {
+      "status": 200,
+      "ms": 305.6,
+      "bytes": 13013
+     }
+    ],
+    "stats": {
+     "n": 10,
+     "min": 289.7,
+     "max": 775.9,
+     "avg": 368.3,
+     "median": 301.8,
+     "p90": 478,
+     "p95": 775.9,
+     "p99": 775.9
+    },
+    "errors": 0,
+    "statuses": [
+     200
+    ]
+   },
+   "new": {
+    "runs": [
+     {
+      "status": 200,
+      "ms": 2506.9,
+      "bytes": 2803
+     },
+     {
+      "status": 200,
+      "ms": 362.9,
+      "bytes": 2803
+     },
+     {
+      "status": 200,
+      "ms": 377.9,
+      "bytes": 2803
+     },
+     {
+      "status": 200,
+      "ms": 365.4,
+      "bytes": 2803
+     },
+     {
+      "status": 200,
+      "ms": 368.1,
+      "bytes": 2803
+     },
+     {
+      "status": 200,
+      "ms": 380.4,
+      "bytes": 2803
+     },
+     {
+      "status": 200,
+      "ms": 363.7,
+      "bytes": 2803
+     },
+     {
+      "status": 200,
+      "ms": 366.8,
+      "bytes": 2803
+     },
+     {
+      "status": 200,
+      "ms": 364.3,
+      "bytes": 2803
+     },
+     {
+      "status": 200,
+      "ms": 365.7,
+      "bytes": 2803
+     }
+    ],
+    "stats": {
+     "n": 10,
+     "min": 362.9,
+     "max": 2506.9,
+     "avg": 582.2,
+     "median": 366.3,
+     "p90": 380.4,
+     "p95": 2506.9,
+     "p99": 2506.9
+    },
+    "errors": 0,
+    "statuses": [
+     200
+    ]
+   },
+   "oldErrorBody": null,
+   "newErrorBody": null,
+   "structure": {
+    "removedFields": [
+     ".weather[].city.id",
+     ".weather[].city.coord.lat",
+     ".weather[].city.coord.lon",
+     ".weather[].city.country",
+     ".weather[].city.population",
+     ".weather[].city.timezone",
+     ".weather[].todayData.main.feels_like",
+     ".weather[].todayData.main.temp_min",
+     ".weather[].todayData.main.temp_max",
+     ".weather[].todayData.main.sea_level",
+     ".weather[].todayData.main.grnd_level",
+     ".weather[].todayData.main.temp_kf",
+     ".weather[].todayData.main.dew_point",
+     ".weather[].todayData.weather[].id",
+     ".weather[].todayData.weather[].description",
+     ".weather[].todayData.weather[].icon",
+     ".weather[].todayData.clouds.all",
+     ".weather[].todayData.wind.deg",
+     ".weather[].todayData.wind.gust",
+     ".weather[].todayData.visibility",
+     ".weather[].todayData.pop",
+     ".weather[].todayData.sys.pod",
+     ".weather[].todayData.dt_txt",
+     ".weather[].forecast[].main.feels_like",
+     ".weather[].forecast[].main.temp_min",
+     ".weather[].forecast[].main.temp_max",
+     ".weather[].forecast[].main.pressure",
+     ".weather[].forecast[].main.sea_level",
+     ".weather[].forecast[].main.grnd_level",
+     ".weather[].forecast[].main.humidity",
+     ".weather[].forecast[].main.temp_kf",
+     ".weather[].forecast[].main.dew_point",
+     ".weather[].forecast[].weather[].id",
+     ".weather[].forecast[].weather[].description",
+     ".weather[].forecast[].weather[].icon",
+     ".weather[].forecast[].clouds.all",
+     ".weather[].forecast[].wind.speed",
+     ".weather[].forecast[].wind.deg",
+     ".weather[].forecast[].wind.gust",
+     ".weather[].forecast[].visibility",
+     ".weather[].forecast[].pop",
+     ".weather[].forecast[].sys.pod",
+     ".weather[].forecast[].dt_txt"
+    ],
+    "addedFields": [],
+    "typeChanges": []
+   },
+   "values": [
+    {
+     "city": "Mumbai",
+     "field": "temp",
+     "old": 29.49,
+     "new": 32.6
+    },
+    {
+     "city": "Mumbai",
+     "field": "feels_like",
+     "old": 34.48,
+     "new": null
+    },
+    {
+     "city": "Mumbai",
+     "field": "humidity",
+     "old": 73,
+     "new": 67
+    },
+    {
+     "city": "Mumbai",
+     "field": "pressure",
+     "old": 1011,
+     "new": 1011.44
+    },
+    {
+     "city": "Mumbai",
+     "field": "wind.speed",
+     "old": 4.69,
+     "new": 3.9
+    },
+    {
+     "city": "Mumbai",
+     "field": "wind.deg",
+     "old": 310,
+     "new": null
+    },
+    {
+     "city": "Mumbai",
+     "field": "condition",
+     "old": "Clear",
+     "new": "Clear"
+    },
+    {
+     "city": "Mumbai",
+     "field": "icon",
+     "old": "01d",
+     "new": null
+    },
+    {
+     "city": "Mumbai",
+     "field": "visibility",
+     "old": 10000,
+     "new": null
+    },
+    {
+     "city": "Mumbai",
+     "field": "clouds",
+     "old": 2,
+     "new": null
+    },
+    {
+     "city": "Mumbai",
+     "field": "sunrise",
+     "old": "06:29",
+     "new": "06:29"
+    },
+    {
+     "city": "Mumbai",
+     "field": "sunset",
+     "old": "18:27",
+     "new": "18:27"
+    },
+    {
+     "city": "Mumbai",
+     "field": "timezone",
+     "old": 19800,
+     "new": null
+    },
+    {
+     "city": "Mumbai",
+     "field": "timestamp(dt)",
+     "old": 1790856000,
+     "new": 1790854766
+    },
+    {
+     "city": "Mumbai",
+     "field": "forecast.length",
+     "old": 9,
+     "new": 9
+    },
+    {
+     "city": "Delhi",
+     "field": "temp",
+     "old": 32.41,
+     "new": 32.3
+    },
+    {
+     "city": "Delhi",
+     "field": "feels_like",
+     "old": 31.29,
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "humidity",
+     "old": 30,
+     "new": 48
+    },
+    {
+     "city": "Delhi",
+     "field": "pressure",
+     "old": 1010,
+     "new": 1011.41
+    },
+    {
+     "city": "Delhi",
+     "field": "wind.speed",
+     "old": 3.33,
+     "new": 2.2
+    },
+    {
+     "city": "Delhi",
+     "field": "wind.deg",
+     "old": 332,
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "condition",
+     "old": "Clear",
+     "new": "Clear"
+    },
+    {
+     "city": "Delhi",
+     "field": "icon",
+     "old": "01d",
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "visibility",
+     "old": 10000,
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "clouds",
+     "old": 0,
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "sunrise",
+     "old": "06:13",
+     "new": "06:14"
+    },
+    {
+     "city": "Delhi",
+     "field": "sunset",
+     "old": "18:07",
+     "new": "18:07"
+    },
+    {
+     "city": "Delhi",
+     "field": "timezone",
+     "old": 19800,
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "timestamp(dt)",
+     "old": 1790856000,
+     "new": 1790854741
+    },
+    {
+     "city": "Delhi",
+     "field": "forecast.length",
+     "old": 9,
+     "new": 9
+    },
+    {
+     "city": "Dubai",
+     "field": "temp",
+     "old": 36.86,
+     "new": 37
+    },
+    {
+     "city": "Dubai",
+     "field": "feels_like",
+     "old": 43.86,
+     "new": null
+    },
+    {
+     "city": "Dubai",
+     "field": "humidity",
+     "old": 54,
+     "new": 41
+    },
+    {
+     "city": "Dubai",
+     "field": "pressure",
+     "old": 1009,
+     "new": 1008.79
+    },
+    {
+     "city": "Dubai",
+     "field": "wind.speed",
+     "old": 5.66,
+     "new": 5.3
+    },
+    {
+     "city": "Dubai",
+     "field": "wind.deg",
+     "old": 5,
+     "new": null
+    },
+    {
+     "city": "Dubai",
+     "field": "condition",
+     "old": "Clear",
+     "new": "Clear"
+    },
+    {
+     "city": "Dubai",
+     "field": "icon",
+     "old": "01d",
+     "new": null
+    },
+    {
+     "city": "Dubai",
+     "field": "visibility",
+     "old": 10000,
+     "new": null
+    },
+    {
+     "city": "Dubai",
+     "field": "clouds",
+     "old": 2,
+     "new": null
+    },
+    {
+     "city": "Dubai",
+     "field": "sunrise",
+     "old": "07:40",
+     "new": "07:40"
+    },
+    {
+     "city": "Dubai",
+     "field": "sunset",
+     "old": "19:36",
+     "new": "19:35"
+    },
+    {
+     "city": "Dubai",
+     "field": "timezone",
+     "old": 14400,
+     "new": null
+    },
+    {
+     "city": "Dubai",
+     "field": "timestamp(dt)",
+     "old": 1790856000,
+     "new": 1790854766
+    },
+    {
+     "city": "Dubai",
+     "field": "forecast.length",
+     "old": 9,
+     "new": 9
+    },
+    {
+     "city": "(all)",
+     "field": "cityCount",
+     "old": 3,
+     "new": 3
+    }
+   ]
+  },
+  {
+   "key": "W-BLR",
+   "type": "weather",
+   "label": "Bengaluru (+Visakhapatnam,Delhi)",
+   "oldId": "69957d78a319087eff36b60b",
+   "newId": "6abe463236f9ebeed640c3c1",
+   "data": {
+    "city": [
+     "visakhapatnam",
+     "delhi",
+     "bengaluru"
+    ],
+    "fontFamily": "Arial",
+    "bgImage": false,
+    "fontBold": false,
+    "animation": false,
+    "isForecast": false
+   },
+   "single": {
+    "old": {
+     "status": 200,
+     "ms": 303.4,
+     "bytes": 13223
+    },
+    "new": {
+     "status": 200,
+     "ms": 2427,
+     "bytes": 2817
+    }
+   },
+   "old": {
+    "runs": [
+     {
+      "status": 200,
+      "ms": 303.4,
+      "bytes": 13223
+     },
+     {
+      "status": 200,
+      "ms": 537.9,
+      "bytes": 13223
+     },
+     {
+      "status": 200,
+      "ms": 251,
+      "bytes": 13223
+     },
+     {
+      "status": 200,
+      "ms": 255.3,
+      "bytes": 13223
+     },
+     {
+      "status": 200,
+      "ms": 253.6,
+      "bytes": 13223
+     },
+     {
+      "status": 200,
+      "ms": 240.3,
+      "bytes": 13223
+     },
+     {
+      "status": 200,
+      "ms": 241.3,
+      "bytes": 13223
+     },
+     {
+      "status": 200,
+      "ms": 250.2,
+      "bytes": 13223
+     },
+     {
+      "status": 200,
+      "ms": 255.4,
+      "bytes": 13223
+     },
+     {
+      "status": 200,
+      "ms": 254.2,
+      "bytes": 13223
+     }
+    ],
+    "stats": {
+     "n": 10,
+     "min": 240.3,
+     "max": 537.9,
+     "avg": 284.3,
+     "median": 253.9,
+     "p90": 303.4,
+     "p95": 537.9,
+     "p99": 537.9
+    },
+    "errors": 0,
+    "statuses": [
+     200
+    ]
+   },
+   "new": {
+    "runs": [
+     {
+      "status": 200,
+      "ms": 2427,
+      "bytes": 2817
+     },
+     {
+      "status": 200,
+      "ms": 416.1,
+      "bytes": 2817
+     },
+     {
+      "status": 200,
+      "ms": 364,
+      "bytes": 2817
+     },
+     {
+      "status": 200,
+      "ms": 400.5,
+      "bytes": 2817
+     },
+     {
+      "status": 200,
+      "ms": 379.2,
+      "bytes": 2817
+     },
+     {
+      "status": 200,
+      "ms": 383.7,
+      "bytes": 2817
+     },
+     {
+      "status": 200,
+      "ms": 363.7,
+      "bytes": 2817
+     },
+     {
+      "status": 200,
+      "ms": 366,
+      "bytes": 2817
+     },
+     {
+      "status": 200,
+      "ms": 385.7,
+      "bytes": 2817
+     },
+     {
+      "status": 200,
+      "ms": 384.4,
+      "bytes": 2817
+     }
+    ],
+    "stats": {
+     "n": 10,
+     "min": 363.7,
+     "max": 2427,
+     "avg": 587,
+     "median": 384,
+     "p90": 416.1,
+     "p95": 2427,
+     "p99": 2427
+    },
+    "errors": 0,
+    "statuses": [
+     200
+    ]
+   },
+   "oldErrorBody": null,
+   "newErrorBody": null,
+   "structure": {
+    "removedFields": [
+     ".weather[].todayData.main.feels_like",
+     ".weather[].todayData.main.temp_min",
+     ".weather[].todayData.main.temp_max",
+     ".weather[].todayData.main.sea_level",
+     ".weather[].todayData.main.grnd_level",
+     ".weather[].todayData.main.temp_kf",
+     ".weather[].todayData.main.dew_point",
+     ".weather[].todayData.weather[].id",
+     ".weather[].todayData.weather[].description",
+     ".weather[].todayData.weather[].icon",
+     ".weather[].todayData.clouds.all",
+     ".weather[].todayData.wind.deg",
+     ".weather[].todayData.wind.gust",
+     ".weather[].todayData.visibility",
+     ".weather[].todayData.pop",
+     ".weather[].todayData.sys.pod",
+     ".weather[].todayData.dt_txt",
+     ".weather[].forecast[].main.feels_like",
+     ".weather[].forecast[].main.temp_min",
+     ".weather[].forecast[].main.temp_max",
+     ".weather[].forecast[].main.pressure",
+     ".weather[].forecast[].main.sea_level",
+     ".weather[].forecast[].main.grnd_level",
+     ".weather[].forecast[].main.humidity",
+     ".weather[].forecast[].main.temp_kf",
+     ".weather[].forecast[].main.dew_point",
+     ".weather[].forecast[].weather[].id",
+     ".weather[].forecast[].weather[].description",
+     ".weather[].forecast[].weather[].icon",
+     ".weather[].forecast[].clouds.all",
+     ".weather[].forecast[].wind.speed",
+     ".weather[].forecast[].wind.deg",
+     ".weather[].forecast[].wind.gust",
+     ".weather[].forecast[].visibility",
+     ".weather[].forecast[].pop",
+     ".weather[].forecast[].sys.pod",
+     ".weather[].forecast[].dt_txt",
+     ".weather[].forecast[].rain.3h",
+     ".weather[].city.id",
+     ".weather[].city.coord.lat",
+     ".weather[].city.coord.lon",
+     ".weather[].city.country",
+     ".weather[].city.population",
+     ".weather[].city.timezone"
+    ],
+    "addedFields": [],
+    "typeChanges": []
+   },
+   "values": [
+    {
+     "city": "Visakhapatnam",
+     "field": "temp",
+     "old": 29.22,
+     "new": 30.1
+    },
+    {
+     "city": "Visakhapatnam",
+     "field": "feels_like",
+     "old": 33.02,
+     "new": null
+    },
+    {
+     "city": "Visakhapatnam",
+     "field": "humidity",
+     "old": 69,
+     "new": 74
+    },
+    {
+     "city": "Visakhapatnam",
+     "field": "pressure",
+     "old": 1011,
+     "new": 1011.58
+    },
+    {
+     "city": "Visakhapatnam",
+     "field": "wind.speed",
+     "old": 2.63,
+     "new": 3.6
+    },
+    {
+     "city": "Visakhapatnam",
+     "field": "wind.deg",
+     "old": 168,
+     "new": null
+    },
+    {
+     "city": "Visakhapatnam",
+     "field": "condition",
+     "old": "Clouds",
+     "new": "Clouds"
+    },
+    {
+     "city": "Visakhapatnam",
+     "field": "icon",
+     "old": "04d",
+     "new": null
+    },
+    {
+     "city": "Visakhapatnam",
+     "field": "visibility",
+     "old": 10000,
+     "new": null
+    },
+    {
+     "city": "Visakhapatnam",
+     "field": "clouds",
+     "old": 67,
+     "new": null
+    },
+    {
+     "city": "Visakhapatnam",
+     "field": "sunrise",
+     "old": "05:47",
+     "new": "05:47"
+    },
+    {
+     "city": "Visakhapatnam",
+     "field": "sunset",
+     "old": "17:46",
+     "new": "17:45"
+    },
+    {
+     "city": "Visakhapatnam",
+     "field": "timezone",
+     "old": 19800,
+     "new": null
+    },
+    {
+     "city": "Visakhapatnam",
+     "field": "timestamp(dt)",
+     "old": 1790856000,
+     "new": 1790854790
+    },
+    {
+     "city": "Visakhapatnam",
+     "field": "forecast.length",
+     "old": 9,
+     "new": 9
+    },
+    {
+     "city": "Delhi",
+     "field": "temp",
+     "old": 32.41,
+     "new": 32.3
+    },
+    {
+     "city": "Delhi",
+     "field": "feels_like",
+     "old": 31.29,
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "humidity",
+     "old": 30,
+     "new": 48
+    },
+    {
+     "city": "Delhi",
+     "field": "pressure",
+     "old": 1010,
+     "new": 1011.41
+    },
+    {
+     "city": "Delhi",
+     "field": "wind.speed",
+     "old": 3.33,
+     "new": 2.2
+    },
+    {
+     "city": "Delhi",
+     "field": "wind.deg",
+     "old": 332,
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "condition",
+     "old": "Clear",
+     "new": "Clear"
+    },
+    {
+     "city": "Delhi",
+     "field": "icon",
+     "old": "01d",
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "visibility",
+     "old": 10000,
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "clouds",
+     "old": 0,
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "sunrise",
+     "old": "06:13",
+     "new": "06:14"
+    },
+    {
+     "city": "Delhi",
+     "field": "sunset",
+     "old": "18:07",
+     "new": "18:07"
+    },
+    {
+     "city": "Delhi",
+     "field": "timezone",
+     "old": 19800,
+     "new": null
+    },
+    {
+     "city": "Delhi",
+     "field": "timestamp(dt)",
+     "old": 1790856000,
+     "new": 1790854741
+    },
+    {
+     "city": "Delhi",
+     "field": "forecast.length",
+     "old": 9,
+     "new": 9
+    },
+    {
+     "city": "Bengaluru",
+     "field": "temp",
+     "old": 27.89,
+     "new": 27.6
+    },
+    {
+     "city": "Bengaluru",
+     "field": "feels_like",
+     "old": 29.29,
+     "new": null
+    },
+    {
+     "city": "Bengaluru",
+     "field": "humidity",
+     "old": 60,
+     "new": 55
+    },
+    {
+     "city": "Bengaluru",
+     "field": "pressure",
+     "old": 1013,
+     "new": 1012.79
+    },
+    {
+     "city": "Bengaluru",
+     "field": "wind.speed",
+     "old": 1.69,
+     "new": 1.7
+    },
+    {
+     "city": "Bengaluru",
+     "field": "wind.deg",
+     "old": 176,
+     "new": null
+    },
+    {
+     "city": "Bengaluru",
+     "field": "condition",
+     "old": "Clouds",
+     "new": "Clouds"
+    },
+    {
+     "city": "Bengaluru",
+     "field": "icon",
+     "old": "04d",
+     "new": null
+    },
+    {
+     "city": "Bengaluru",
+     "field": "visibility",
+     "old": 10000,
+     "new": null
+    },
+    {
+     "city": "Bengaluru",
+     "field": "clouds",
+     "old": 98,
+     "new": null
+    },
+    {
+     "city": "Bengaluru",
+     "field": "sunrise",
+     "old": "06:08",
+     "new": "06:08"
+    },
+    {
+     "city": "Bengaluru",
+     "field": "sunset",
+     "old": "18:09",
+     "new": "18:09"
+    },
+    {
+     "city": "Bengaluru",
+     "field": "timezone",
+     "old": 19800,
+     "new": null
+    },
+    {
+     "city": "Bengaluru",
+     "field": "timestamp(dt)",
+     "old": 1790856000,
+     "new": 1790854790
+    },
+    {
+     "city": "Bengaluru",
+     "field": "forecast.length",
+     "old": 9,
+     "new": 9
+    },
+    {
+     "city": "(all)",
+     "field": "cityCount",
+     "old": 3,
+     "new": 3
+    }
+   ]
+  },
+  {
+   "key": "W-MAA",
+   "type": "weather",
+   "label": "Chennai",
+   "oldId": "6a4e27f4ab6cc5e2836a1364",
+   "newId": "6abe4632f5746abddbb33d5e",
+   "data": {
+    "city": [
+     "Chennai"
+    ],
+    "fontFamily": "Arial",
+    "bgImage": true,
+    "fontBold": true,
+    "animation": true,
+    "isForecast": true
+   },
+   "single": {
+    "old": {
+     "status": 200,
+     "ms": 281.6,
+     "bytes": 4596
+    },
+    "new": {
+     "status": 200,
+     "ms": 2376.2,
+     "bytes": 1106
+    }
+   },
+   "old": {
+    "runs": [
+     {
+      "status": 200,
+      "ms": 281.6,
+      "bytes": 4596
+     },
+     {
+      "status": 200,
+      "ms": 552.9,
+      "bytes": 4596
+     },
+     {
+      "status": 200,
+      "ms": 543,
+      "bytes": 4596
+     },
+     {
+      "status": 200,
+      "ms": 262.3,
+      "bytes": 4596
+     },
+     {
+      "status": 200,
+      "ms": 257,
+      "bytes": 4596
+     },
+     {
+      "status": 200,
+      "ms": 249.5,
+      "bytes": 4596
+     },
+     {
+      "status": 200,
+      "ms": 286.5,
+      "bytes": 4596
+     },
+     {
+      "status": 200,
+      "ms": 321.2,
+      "bytes": 4596
+     },
+     {
+      "status": 200,
+      "ms": 257.1,
+      "bytes": 4596
+     },
+     {
+      "status": 200,
+      "ms": 252.4,
+      "bytes": 4596
+     }
+    ],
+    "stats": {
+     "n": 10,
+     "min": 249.5,
+     "max": 552.9,
+     "avg": 326.4,
+     "median": 272,
+     "p90": 543,
+     "p95": 552.9,
+     "p99": 552.9
+    },
+    "errors": 0,
+    "statuses": [
+     200
+    ]
+   },
+   "new": {
+    "runs": [
+     {
+      "status": 200,
+      "ms": 2376.2,
+      "bytes": 1106
+     },
+     {
+      "status": 200,
+      "ms": 368.3,
+      "bytes": 1106
+     },
+     {
+      "status": 200,
+      "ms": 368.6,
+      "bytes": 1106
+     },
+     {
+      "status": 200,
+      "ms": 367.6,
+      "bytes": 1106
+     },
+     {
+      "status": 200,
+      "ms": 382.2,
+      "bytes": 1106
+     },
+     {
+      "status": 200,
+      "ms": 378,
+      "bytes": 1106
+     },
+     {
+      "status": 200,
+      "ms": 366.8,
+      "bytes": 1106
+     },
+     {
+      "status": 200,
+      "ms": 418.9,
+      "bytes": 1106
+     },
+     {
+      "status": 200,
+      "ms": 381.4,
+      "bytes": 1106
+     },
+     {
+      "status": 200,
+      "ms": 377.8,
+      "bytes": 1106
+     }
+    ],
+    "stats": {
+     "n": 10,
+     "min": 366.8,
+     "max": 2376.2,
+     "avg": 578.6,
+     "median": 377.9,
+     "p90": 418.9,
+     "p95": 2376.2,
+     "p99": 2376.2
+    },
+    "errors": 0,
+    "statuses": [
+     200
+    ]
+   },
+   "oldErrorBody": null,
+   "newErrorBody": null,
+   "structure": {
+    "removedFields": [
+     ".weather[].city.id",
+     ".weather[].city.coord.lat",
+     ".weather[].city.coord.lon",
+     ".weather[].city.country",
+     ".weather[].city.population",
+     ".weather[].city.timezone",
+     ".weather[].todayData.main.feels_like",
+     ".weather[].todayData.main.temp_min",
+     ".weather[].todayData.main.temp_max",
+     ".weather[].todayData.main.sea_level",
+     ".weather[].todayData.main.grnd_level",
+     ".weather[].todayData.main.temp_kf",
+     ".weather[].todayData.main.dew_point",
+     ".weather[].todayData.weather[].id",
+     ".weather[].todayData.weather[].description",
+     ".weather[].todayData.weather[].icon",
+     ".weather[].todayData.clouds.all",
+     ".weather[].todayData.wind.deg",
+     ".weather[].todayData.wind.gust",
+     ".weather[].todayData.visibility",
+     ".weather[].todayData.pop",
+     ".weather[].todayData.sys.pod",
+     ".weather[].todayData.dt_txt",
+     ".weather[].forecast[].main.feels_like",
+     ".weather[].forecast[].main.temp_min",
+     ".weather[].forecast[].main.temp_max",
+     ".weather[].forecast[].main.pressure",
+     ".weather[].forecast[].main.sea_level",
+     ".weather[].forecast[].main.grnd_level",
+     ".weather[].forecast[].main.humidity",
+     ".weather[].forecast[].main.temp_kf",
+     ".weather[].forecast[].main.dew_point",
+     ".weather[].forecast[].weather[].id",
+     ".weather[].forecast[].weather[].description",
+     ".weather[].forecast[].weather[].icon",
+     ".weather[].forecast[].clouds.all",
+     ".weather[].forecast[].wind.speed",
+     ".weather[].forecast[].wind.deg",
+     ".weather[].forecast[].wind.gust",
+     ".weather[].forecast[].visibility",
+     ".weather[].forecast[].pop",
+     ".weather[].forecast[].sys.pod",
+     ".weather[].forecast[].dt_txt"
+    ],
+    "addedFields": [],
+    "typeChanges": []
+   },
+   "values": [
+    {
+     "city": "Chennai",
+     "field": "temp",
+     "old": 30.97,
+     "new": 30.6
+    },
+    {
+     "city": "Chennai",
+     "field": "feels_like",
+     "old": 37.22,
+     "new": null
+    },
+    {
+     "city": "Chennai",
+     "field": "humidity",
+     "old": 69,
+     "new": 76
+    },
+    {
+     "city": "Chennai",
+     "field": "pressure",
+     "old": 1010,
+     "new": 1010.96
+    },
+    {
+     "city": "Chennai",
+     "field": "wind.speed",
+     "old": 4.79,
+     "new": 3.6
+    },
+    {
+     "city": "Chennai",
+     "field": "wind.deg",
+     "old": 101,
+     "new": null
+    },
+    {
+     "city": "Chennai",
+     "field": "condition",
+     "old": "Clouds",
+     "new": "Clouds"
+    },
+    {
+     "city": "Chennai",
+     "field": "icon",
+     "old": "04d",
+     "new": null
+    },
+    {
+     "city": "Chennai",
+     "field": "visibility",
+     "old": 10000,
+     "new": null
+    },
+    {
+     "city": "Chennai",
+     "field": "clouds",
+     "old": 99,
+     "new": null
+    },
+    {
+     "city": "Chennai",
+     "field": "sunrise",
+     "old": "05:58",
+     "new": "05:58"
+    },
+    {
+     "city": "Chennai",
+     "field": "sunset",
+     "old": "17:59",
+     "new": "17:59"
+    },
+    {
+     "city": "Chennai",
+     "field": "timezone",
+     "old": 19800,
+     "new": null
+    },
+    {
+     "city": "Chennai",
+     "field": "timestamp(dt)",
+     "old": 1790856000,
+     "new": 1790854814
+    },
+    {
+     "city": "Chennai",
+     "field": "forecast.length",
+     "old": 9,
+     "new": 9
+    },
+    {
+     "city": "(all)",
+     "field": "cityCount",
+     "old": 1,
+     "new": 1
+    }
+   ]
+  },
+  {
+   "key": "W-CCU",
+   "type": "weather",
+   "label": "Kolkata (+Jaipur)",
+   "oldId": "67e3d95ab1595d3173a6b21c",
+   "newId": "6abe4632d31a3a150b5fb5bf",
+   "data": {
+    "city": [
+     "kolkata",
+     "jaipur"
+    ],
+    "fontFamily": "Arial",
+    "bgImage": true,
+    "fontBold": true,
+    "animation": true,
+    "isForecast": true
+   },
+   "single": {
+    "old": {
+     "status": 200,
+     "ms": 247,
+     "bytes": 8805
+    },
+    "new": {
+     "status": 200,
+     "ms": 2359.4,
+     "bytes": 1933
+    }
+   },
+   "old": {
+    "runs": [
+     {
+      "status": 200,
+      "ms": 247,
+      "bytes": 8805
+     },
+     {
+      "status": 200,
+      "ms": 812,
+      "bytes": 8805
+     },
+     {
+      "status": 200,
+      "ms": 329.3,
+      "bytes": 8805
+     },
+     {
+      "status": 200,
+      "ms": 322.2,
+      "bytes": 8805
+     },
+     {
+      "status": 200,
+      "ms": 336.1,
+      "bytes": 8805
+     },
+     {
+      "status": 200,
+      "ms": 340.5,
+      "bytes": 8805
+     },
+     {
+      "status": 200,
+      "ms": 334.2,
+      "bytes": 8805
+     },
+     {
+      "status": 200,
+      "ms": 332.6,
+      "bytes": 8805
+     },
+     {
+      "status": 200,
+      "ms": 535.2,
+      "bytes": 8805
+     },
+     {
+      "status": 200,
+      "ms": 329.3,
+      "bytes": 8805
+     }
+    ],
+    "stats": {
+     "n": 10,
+     "min": 247,
+     "max": 812,
+     "avg": 391.8,
+     "median": 333.4,
+     "p90": 535.2,
+     "p95": 812,
+     "p99": 812
+    },
+    "errors": 0,
+    "statuses": [
+     200
+    ]
+   },
+   "new": {
+    "runs": [
+     {
+      "status": 200,
+      "ms": 2359.4,
+      "bytes": 1933
+     },
+     {
+      "status": 200,
+      "ms": 363.6,
+      "bytes": 1933
+     },
+     {
+      "status": 200,
+      "ms": 374.6,
+      "bytes": 1933
+     },
+     {
+      "status": 200,
+      "ms": 366.1,
+      "bytes": 1933
+     },
+     {
+      "status": 200,
+      "ms": 377.6,
+      "bytes": 1933
+     },
+     {
+      "status": 200,
+      "ms": 377.6,
+      "bytes": 1933
+     },
+     {
+      "status": 200,
+      "ms": 366.4,
+      "bytes": 1933
+     },
+     {
+      "status": 200,
+      "ms": 366.8,
+      "bytes": 1933
+     },
+     {
+      "status": 200,
+      "ms": 381.5,
+      "bytes": 1933
+     },
+     {
+      "status": 200,
+      "ms": 379.1,
+      "bytes": 1933
+     }
+    ],
+    "stats": {
+     "n": 10,
+     "min": 363.6,
+     "max": 2359.4,
+     "avg": 571.3,
+     "median": 376.1,
+     "p90": 381.5,
+     "p95": 2359.4,
+     "p99": 2359.4
+    },
+    "errors": 0,
+    "statuses": [
+     200
+    ]
+   },
+   "oldErrorBody": null,
+   "newErrorBody": null,
+   "structure": {
+    "removedFields": [
+     ".weather[].todayData.main.feels_like",
+     ".weather[].todayData.main.temp_min",
+     ".weather[].todayData.main.temp_max",
+     ".weather[].todayData.main.sea_level",
+     ".weather[].todayData.main.grnd_level",
+     ".weather[].todayData.main.temp_kf",
+     ".weather[].todayData.main.dew_point",
+     ".weather[].todayData.weather[].id",
+     ".weather[].todayData.weather[].description",
+     ".weather[].todayData.weather[].icon",
+     ".weather[].todayData.clouds.all",
+     ".weather[].todayData.wind.deg",
+     ".weather[].todayData.wind.gust",
+     ".weather[].todayData.visibility",
+     ".weather[].todayData.pop",
+     ".weather[].todayData.rain.3h",
+     ".weather[].todayData.sys.pod",
+     ".weather[].todayData.dt_txt",
+     ".weather[].forecast[].main.feels_like",
+     ".weather[].forecast[].main.temp_min",
+     ".weather[].forecast[].main.temp_max",
+     ".weather[].forecast[].main.pressure",
+     ".weather[].forecast[].main.sea_level",
+     ".weather[].forecast[].main.grnd_level",
+     ".weather[].forecast[].main.humidity",
+     ".weather[].forecast[].main.temp_kf",
+     ".weather[].forecast[].main.dew_point",
+     ".weather[].forecast[].weather[].id",
+     ".weather[].forecast[].weather[].description",
+     ".weather[].forecast[].weather[].icon",
+     ".weather[].forecast[].clouds.all",
+     ".weather[].forecast[].wind.speed",
+     ".weather[].forecast[].wind.deg",
+     ".weather[].forecast[].wind.gust",
+     ".weather[].forecast[].visibility",
+     ".weather[].forecast[].pop",
+     ".weather[].forecast[].rain.3h",
+     ".weather[].forecast[].sys.pod",
+     ".weather[].forecast[].dt_txt",
+     ".weather[].city.id",
+     ".weather[].city.coord.lat",
+     ".weather[].city.coord.lon",
+     ".weather[].city.country",
+     ".weather[].city.population",
+     ".weather[].city.timezone"
+    ],
+    "addedFields": [],
+    "typeChanges": []
+   },
+   "values": [
+    {
+     "city": "Kolkata",
+     "field": "temp",
+     "old": 29.85,
+     "new": 28.7
+    },
+    {
+     "city": "Kolkata",
+     "field": "feels_like",
+     "old": 34.91,
+     "new": null
+    },
+    {
+     "city": "Kolkata",
+     "field": "humidity",
+     "old": 71,
+     "new": 81
+    },
+    {
+     "city": "Kolkata",
+     "field": "pressure",
+     "old": 1010,
+     "new": 1010.98
+    },
+    {
+     "city": "Kolkata",
+     "field": "wind.speed",
+     "old": 3.89,
+     "new": 1.7
+    },
+    {
+     "city": "Kolkata",
+     "field": "wind.deg",
+     "old": 201,
+     "new": null
+    },
+    {
+     "city": "Kolkata",
+     "field": "condition",
+     "old": "Rain",
+     "new": "Clouds"
+    },
+    {
+     "city": "Kolkata",
+     "field": "icon",
+     "old": "10n",
+     "new": null
+    },
+    {
+     "city": "Kolkata",
+     "field": "visibility",
+     "old": 10000,
+     "new": null
+    },
+    {
+     "city": "Kolkata",
+     "field": "clouds",
+     "old": 89,
+     "new": null
+    },
+    {
+     "city": "Kolkata",
+     "field": "sunrise",
+     "old": "05:27",
+     "new": "05:27"
+    },
+    {
+     "city": "Kolkata",
+     "field": "sunset",
+     "old": "17:24",
+     "new": "17:24"
+    },
+    {
+     "city": "Kolkata",
+     "field": "timezone",
+     "old": 19800,
+     "new": null
+    },
+    {
+     "city": "Kolkata",
+     "field": "timestamp(dt)",
+     "old": 1790856000,
+     "new": 1790854838
+    },
+    {
+     "city": "Kolkata",
+     "field": "forecast.length",
+     "old": 9,
+     "new": 9
+    },
+    {
+     "city": "Jaipur",
+     "field": "temp",
+     "old": 32.14,
+     "new": 32.8
+    },
+    {
+     "city": "Jaipur",
+     "field": "feels_like",
+     "old": 30.65,
+     "new": null
+    },
+    {
+     "city": "Jaipur",
+     "field": "humidity",
+     "old": 27,
+     "new": 33
+    },
+    {
+     "city": "Jaipur",
+     "field": "pressure",
+     "old": 1012,
+     "new": 1012.42
+    },
+    {
+     "city": "Jaipur",
+     "field": "wind.speed",
+     "old": 3.36,
+     "new": 1.7
+    },
+    {
+     "city": "Jaipur",
+     "field": "wind.deg",
+     "old": 262,
+     "new": null
+    },
+    {
+     "city": "Jaipur",
+     "field": "condition",
+     "old": "Clear",
+     "new": "Clear"
+    },
+    {
+     "city": "Jaipur",
+     "field": "icon",
+     "old": "01d",
+     "new": null
+    },
+    {
+     "city": "Jaipur",
+     "field": "visibility",
+     "old": 10000,
+     "new": null
+    },
+    {
+     "city": "Jaipur",
+     "field": "clouds",
+     "old": 0,
+     "new": null
+    },
+    {
+     "city": "Jaipur",
+     "field": "sunrise",
+     "old": "06:18",
+     "new": "06:19"
+    },
+    {
+     "city": "Jaipur",
+     "field": "sunset",
+     "old": "18:13",
+     "new": "18:13"
+    },
+    {
+     "city": "Jaipur",
+     "field": "timezone",
+     "old": 19800,
+     "new": null
+    },
+    {
+     "city": "Jaipur",
+     "field": "timestamp(dt)",
+     "old": 1790856000,
+     "new": 1790854838
+    },
+    {
+     "city": "Jaipur",
+     "field": "forecast.length",
+     "old": 9,
+     "new": 9
+    },
+    {
+     "city": "(all)",
+     "field": "cityCount",
+     "old": 2,
+     "new": 2
+    }
+   ]
+  },
+  {
+   "key": "A-DEL",
+   "type": "aqi",
+   "label": "Delhi (+Gurugram)",
+   "oldId": "66364047c2a9e090b94bec49",
+   "newId": "6abe4633f5746abddbb33d63",
+   "data": {
+    "cities": [
+     "delhi",
+     "gurugram"
+    ],
+    "coordinates": [
+     {
+      "lat": 28.7040592,
+      "lng": 77.10249019999999
+     },
+     {
+      "lat": 28.4594965,
+      "lng": 77.0266383
+     }
+    ],
+    "fontFamily": "IndieFlower",
+    "primaryColor": "rgb(0, 0, 0)",
+    "secondaryColor": "rgb(255, 255, 255)",
+    "bgColor": "#000",
+    "textColor": "rgb(0, 255, 0)",
+    "cityIds": [
+     2554,
+     12816
+    ]
+   },
+   "single": {
+    "old": {
+     "status": 200,
+     "ms": 326.3,
+     "bytes": 1006
+    },
+    "new": {
+     "status": 200,
+     "ms": 2043.8,
+     "bytes": 791
+    }
+   },
+   "old": {
+    "runs": [
+     {
+      "status": 200,
+      "ms": 326.3,
+      "bytes": 1006
+     },
+     {
+      "status": 200,
+      "ms": 541.3,
+      "bytes": 1006
+     },
+     {
+      "status": 200,
+      "ms": 257.8,
+      "bytes": 1006
+     },
+     {
+      "status": 200,
+      "ms": 246.7,
+      "bytes": 1006
+     },
+     {
+      "status": 200,
+      "ms": 252.5,
+      "bytes": 1006
+     },
+     {
+      "status": 200,
+      "ms": 253.7,
+      "bytes": 1006
+     },
+     {
+      "status": 200,
+      "ms": 247.7,
+      "bytes": 1006
+     },
+     {
+      "status": 200,
+      "ms": 256.3,
+      "bytes": 1006
+     },
+     {
+      "status": 200,
+      "ms": 249.9,
+      "bytes": 1006
+     },
+     {
+      "status": 200,
+      "ms": 246.9,
+      "bytes": 1006
+     }
+    ],
+    "stats": {
+     "n": 10,
+     "min": 246.7,
+     "max": 541.3,
+     "avg": 287.9,
+     "median": 253.1,
+     "p90": 326.3,
+     "p95": 541.3,
+     "p99": 541.3
+    },
+    "errors": 0,
+    "statuses": [
+     200
+    ]
+   },
+   "new": {
+    "runs": [
+     {
+      "status": 200,
+      "ms": 2043.8,
+      "bytes": 791
+     },
+     {
+      "status": 200,
+      "ms": 364.8,
+      "bytes": 791
+     },
+     {
+      "status": 200,
+      "ms": 367.5,
+      "bytes": 791
+     },
+     {
+      "status": 200,
+      "ms": 380.6,
+      "bytes": 791
+     },
+     {
+      "status": 200,
+      "ms": 383.1,
+      "bytes": 791
+     },
+     {
+      "status": 200,
+      "ms": 365.4,
+      "bytes": 791
+     },
+     {
+      "status": 200,
+      "ms": 365.2,
+      "bytes": 791
+     },
+     {
+      "status": 200,
+      "ms": 365.4,
+      "bytes": 791
+     },
+     {
+      "status": 200,
+      "ms": 382.1,
+      "bytes": 791
+     },
+     {
+      "status": 200,
+      "ms": 377.2,
+      "bytes": 791
+     }
+    ],
+    "stats": {
+     "n": 10,
+     "min": 364.8,
+     "max": 2043.8,
+     "avg": 539.5,
+     "median": 372.4,
+     "p90": 383.1,
+     "p95": 2043.8,
+     "p99": 2043.8
+    },
+    "errors": 0,
+    "statuses": [
+     200
+    ]
+   },
+   "oldErrorBody": null,
+   "newErrorBody": null,
+   "structure": {
+    "removedFields": [
+     ".aqiData[].iaqi.dew.v",
+     ".aqiData[].iaqi.h.v",
+     ".aqiData[].iaqi.p.v",
+     ".aqiData[].iaqi.r.v",
+     ".aqiData[].iaqi.t.v",
+     ".aqiData[].iaqi.w.v",
+     ".aqiData[].iaqi.wd.v",
+     ".aqiData[].iaqi.wg.v"
+    ],
+    "addedFields": [
+     ".aqiData[].iaqi.nh3.v"
+    ],
+    "typeChanges": []
+   },
+   "values": [
+    {
+     "city": "delhi",
+     "field": "aqi",
+     "old": 143,
+     "new": 183
+    },
+    {
+     "city": "delhi",
+     "field": "pm25",
+     "old": 143,
+     "new": 46.2
+    },
+    {
+     "city": "delhi",
+     "field": "pm10",
+     "old": 122,
+     "new": 235.23
+    },
+    {
+     "city": "delhi",
+     "field": "o3",
+     "old": 21.2,
+     "new": 24.45
+    },
+    {
+     "city": "delhi",
+     "field": "no2",
+     "old": 0.4,
+     "new": 27.01
+    },
+    {
+     "city": "delhi",
+     "field": "so2",
+     "old": 8.1,
+     "new": 5.73
+    },
+    {
+     "city": "delhi",
+     "field": "co",
+     "old": 5.5,
+     "new": 492.83
+    },
+    {
+     "city": "delhi",
+     "field": "nh3",
+     "old": null,
+     "new": 27.15
+    },
+    {
+     "city": "delhi",
+     "field": "timestamp",
+     "old": null,
+     "new": null
+    },
+    {
+     "city": "gurugram",
+     "field": "aqi",
+     "old": 153,
+     "new": 303
+    },
+    {
+     "city": "gurugram",
+     "field": "pm25",
+     "old": 114,
+     "new": 51.48
+    },
+    {
+     "city": "gurugram",
+     "field": "pm10",
+     "old": 153,
+     "new": 283.58
+    },
+    {
+     "city": "gurugram",
+     "field": "o3",
+     "old": 13.9,
+     "new": 12.02
+    },
+    {
+     "city": "gurugram",
+     "field": "no2",
+     "old": 8.4,
+     "new": 11.93
+    },
+    {
+     "city": "gurugram",
+     "field": "so2",
+     "old": 3.5,
+     "new": 5.76
+    },
+    {
+     "city": "gurugram",
+     "field": "co",
+     "old": 3,
+     "new": 222.65
+    },
+    {
+     "city": "gurugram",
+     "field": "nh3",
+     "old": null,
+     "new": 80.87
+    },
+    {
+     "city": "gurugram",
+     "field": "timestamp",
+     "old": null,
+     "new": null
+    },
+    {
+     "city": "(all)",
+     "field": "cityCount",
+     "old": 2,
+     "new": 2
+    }
+   ]
+  },
+  {
+   "key": "A-BLR",
+   "type": "aqi",
+   "label": "Bengaluru (+Gurugram)",
+   "oldId": "66a76c1b6fc06c70f73f7289",
+   "newId": "6abe463363da81f6178fb8b8",
+   "data": {
+    "cities": [
+     "gurugram",
+     "bengaluru"
+    ],
+    "coordinates": [
+     {
+      "lat": 28.4594965,
+      "lng": 77.0266383
+     },
+     {
+      "lat": 12.9715987,
+      "lng": 77.5945627
+     }
+    ],
+    "fontFamily": ""
+   },
+   "single": {
+    "old": {
+     "status": 200,
+     "ms": 246,
+     "bytes": 840
+    },
+    "new": {
+     "status": 200,
+     "ms": 2003.5,
+     "bytes": 643
+    }
+   },
+   "old": {
+    "runs": [
+     {
+      "status": 200,
+      "ms": 246,
+      "bytes": 840
+     },
+     {
+      "status": 200,
+      "ms": 682.9,
+      "bytes": 840
+     },
+     {
+      "status": 200,
+      "ms": 281.3,
+      "bytes": 840
+     },
+     {
+      "status": 200,
+      "ms": 291.4,
+      "bytes": 840
+     },
+     {
+      "status": 200,
+      "ms": 291.2,
+      "bytes": 840
+     },
+     {
+      "status": 200,
+      "ms": 284,
+      "bytes": 840
+     },
+     {
+      "status": 200,
+      "ms": 298.8,
+      "bytes": 840
+     },
+     {
+      "status": 200,
+      "ms": 293.6,
+      "bytes": 840
+     },
+     {
+      "status": 200,
+      "ms": 310.6,
+      "bytes": 840
+     },
+     {
+      "status": 200,
+      "ms": 292.5,
+      "bytes": 840
+     }
+    ],
+    "stats": {
+     "n": 10,
+     "min": 246,
+     "max": 682.9,
+     "avg": 327.2,
+     "median": 291.9,
+     "p90": 310.6,
+     "p95": 682.9,
+     "p99": 682.9
+    },
+    "errors": 0,
+    "statuses": [
+     200
+    ]
+   },
+   "new": {
+    "runs": [
+     {
+      "status": 200,
+      "ms": 2003.5,
+      "bytes": 643
+     },
+     {
+      "status": 200,
+      "ms": 362,
+      "bytes": 643
+     },
+     {
+      "status": 200,
+      "ms": 363.4,
+      "bytes": 643
+     },
+     {
+      "status": 200,
+      "ms": 379.7,
+      "bytes": 643
+     },
+     {
+      "status": 200,
+      "ms": 366.2,
+      "bytes": 643
+     },
+     {
+      "status": 200,
+      "ms": 364.4,
+      "bytes": 643
+     },
+     {
+      "status": 200,
+      "ms": 366.3,
+      "bytes": 643
+     },
+     {
+      "status": 200,
+      "ms": 367.8,
+      "bytes": 643
+     },
+     {
+      "status": 200,
+      "ms": 377.2,
+      "bytes": 643
+     },
+     {
+      "status": 200,
+      "ms": 376.4,
+      "bytes": 643
+     }
+    ],
+    "stats": {
+     "n": 10,
+     "min": 362,
+     "max": 2003.5,
+     "avg": 532.7,
+     "median": 367.1,
+     "p90": 379.7,
+     "p95": 2003.5,
+     "p99": 2003.5
+    },
+    "errors": 0,
+    "statuses": [
+     200
+    ]
+   },
+   "oldErrorBody": null,
+   "newErrorBody": null,
+   "structure": {
+    "removedFields": [
+     ".aqiData[].iaqi.dew.v",
+     ".aqiData[].iaqi.h.v",
+     ".aqiData[].iaqi.p.v",
+     ".aqiData[].iaqi.r.v",
+     ".aqiData[].iaqi.t.v",
+     ".aqiData[].iaqi.w.v",
+     ".aqiData[].iaqi.wd.v",
+     ".aqiData[].iaqi.wg.v"
+    ],
+    "addedFields": [
+     ".aqiData[].iaqi.nh3.v"
+    ],
+    "typeChanges": []
+   },
+   "values": [
+    {
+     "city": "gurugram",
+     "field": "aqi",
+     "old": 153,
+     "new": 303
+    },
+    {
+     "city": "gurugram",
+     "field": "pm25",
+     "old": 114,
+     "new": 51.48
+    },
+    {
+     "city": "gurugram",
+     "field": "pm10",
+     "old": 153,
+     "new": 283.58
+    },
+    {
+     "city": "gurugram",
+     "field": "o3",
+     "old": 13.9,
+     "new": 12.02
+    },
+    {
+     "city": "gurugram",
+     "field": "no2",
+     "old": 8.4,
+     "new": 11.93
+    },
+    {
+     "city": "gurugram",
+     "field": "so2",
+     "old": 3.5,
+     "new": 5.76
+    },
+    {
+     "city": "gurugram",
+     "field": "co",
+     "old": 3,
+     "new": 222.65
+    },
+    {
+     "city": "gurugram",
+     "field": "nh3",
+     "old": null,
+     "new": 80.87
+    },
+    {
+     "city": "gurugram",
+     "field": "timestamp",
+     "old": null,
+     "new": null
+    },
+    {
+     "city": "bengaluru",
+     "field": "aqi",
+     "old": 117,
+     "new": 71
+    },
+    {
+     "city": "bengaluru",
+     "field": "pm25",
+     "old": 61,
+     "new": 50.76
+    },
+    {
+     "city": "bengaluru",
+     "field": "pm10",
+     "old": 117,
+     "new": 111.32
+    },
+    {
+     "city": "bengaluru",
+     "field": "o3",
+     "old": 17,
+     "new": 10.14
+    },
+    {
+     "city": "bengaluru",
+     "field": "no2",
+     "old": 7.9,
+     "new": 16.96
+    },
+    {
+     "city": "bengaluru",
+     "field": "so2",
+     "old": 2.8,
+     "new": 3.65
+    },
+    {
+     "city": "bengaluru",
+     "field": "co",
+     "old": 2.8,
+     "new": 336.49
+    },
+    {
+     "city": "bengaluru",
+     "field": "nh3",
+     "old": null,
+     "new": 7.91
+    },
+    {
+     "city": "bengaluru",
+     "field": "timestamp",
+     "old": null,
+     "new": null
+    },
+    {
+     "city": "(all)",
+     "field": "cityCount",
+     "old": 2,
+     "new": 2
+    }
+   ]
+  },
+  {
+   "key": "A-MUM",
+   "type": "aqi",
+   "label": "Mumbai",
+   "oldId": "65127f1c88ae104c1c6250cd",
+   "newId": "6abe4634d31a3a150b5fb5c4",
+   "data": {
+    "fontFamily": "",
+    "primaryColor": "#85e9ec",
+    "secondaryColor": "#2ae4eb",
+    "textColor": "#000",
+    "cityIds": [
+     13713
+    ],
+    "cities": [
+     "mumbai"
+    ],
+    "bgColor": "#000"
+   },
+   "single": {
+    "old": {
+     "status": 500,
+     "ms": 290.4,
+     "bytes": 14
+    },
+    "new": {
+     "status": 500,
+     "ms": 363.9,
+     "bytes": 14
+    }
+   },
+   "old": {
+    "runs": [
+     {
+      "status": 500,
+      "ms": 290.4,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 284.7,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 289.2,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 290.5,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 294.3,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 294.2,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 281.4,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 624,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 291.1,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 291.3,
+      "bytes": 14
+     }
+    ],
+    "stats": null,
+    "errors": 10,
+    "statuses": [
+     500
+    ]
+   },
+   "new": {
+    "runs": [
+     {
+      "status": 500,
+      "ms": 363.9,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 365.4,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 367.4,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 364.4,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 377.7,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 378.5,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 367.8,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 376.1,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 384.2,
+      "bytes": 14
+     },
+     {
+      "status": 500,
+      "ms": 375.8,
+      "bytes": 14
+     }
+    ],
+    "stats": null,
+    "errors": 10,
+    "statuses": [
+     500
+    ]
+   },
+   "oldErrorBody": "{\"status\":500}",
+   "newErrorBody": "{\"status\":500}",
+   "structure": {
+    "removedFields": [],
+    "addedFields": [],
+    "typeChanges": []
+   },
+   "values": []
+  }
+ ],
+ "finishedAt": "2026-10-01T11:42:16.391Z"
+}

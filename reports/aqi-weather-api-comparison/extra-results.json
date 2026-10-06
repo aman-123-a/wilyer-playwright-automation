@@ -1,0 +1,1361 @@
+{
+ "startedAt": "2026-10-01T12:13:39.966Z",
+ "aqiBoundary": [
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 0,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 0 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 1,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 1 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 50,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 51,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 51 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 100,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 100 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 101,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 101 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 150,
+   "label": "Unhealthy",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Unhealthy 150 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 151,
+   "label": "Unhealthy",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Unhealthy 151 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 200,
+   "label": "Unhealthy",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Unhealthy 200 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 201,
+   "label": "Unhealthy",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Unhealthy 201 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 300,
+   "label": "Unhealthy",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Unhealthy 300 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 301,
+   "label": "Hazardous",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Hazardous 301 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 500,
+   "label": "Hazardous",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Hazardous 500 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 501,
+   "label": "Hazardous",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Hazardous 501 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 999.5,
+   "label": "Hazardous",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Hazardous 999.5 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "aqi",
+   "value": 75.5,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 75.5 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 0,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 0 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 1,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 1 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 50,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 50 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 51,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 51 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 100,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 100 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 101,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 101 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 150,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 150 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 151,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 151 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 200,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 200 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 201,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 201 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 300,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 300 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 301,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 301 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 500,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 500 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 501,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 501 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 999.5,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 999.5 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "varied": "pm25",
+   "value": 75.5,
+   "label": "",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "Healthy 50 DELHI PM2.5 75.5 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 0,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Good PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83pp"
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 1,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Good PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83pp"
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 50,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Good PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83pp"
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 51,
+   "label": "Moderate",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Moderate PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492."
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 100,
+   "label": "Moderate",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Moderate PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492."
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 101,
+   "label": "Watch Level",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Watch Level PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 4"
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 150,
+   "label": "Watch Level",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Watch Level PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 4"
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 151,
+   "label": "Unhealthy",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Unhealthy PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492"
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 200,
+   "label": "Unhealthy",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Unhealthy PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492"
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 201,
+   "label": "Very Unhealthy",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Very Unhealthy PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb C"
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 300,
+   "label": "Very Unhealthy",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Very Unhealthy PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb C"
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 301,
+   "label": "Hazardous",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Hazardous PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492"
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 500,
+   "label": "Hazardous",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Hazardous PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492"
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 501,
+   "label": "Hazardous",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Hazardous PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492"
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 999.5,
+   "label": "Hazardous",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Hazardous PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492"
+  },
+  {
+   "side": "new",
+   "varied": "aqi",
+   "value": 75.5,
+   "label": "Moderate",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Moderate PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492."
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 0,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 0 Air Quality is Good PM 2.5 0µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83ppb"
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 1,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 1 Air Quality is Good PM 2.5 1µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83ppb"
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 50,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 50 Air Quality is Good PM 2.5 50µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83pp"
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 51,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 51 Air Quality is Good PM 2.5 51µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83pp"
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 100,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 100 Air Quality is Good PM 2.5 100µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83"
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 101,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 101 Air Quality is Good PM 2.5 101µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83"
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 150,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 150 Air Quality is Good PM 2.5 150µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83"
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 151,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 151 Air Quality is Good PM 2.5 151µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83"
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 200,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 200 Air Quality is Good PM 2.5 200µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83"
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 201,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 201 Air Quality is Good PM 2.5 201µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83"
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 300,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 300 Air Quality is Good PM 2.5 300µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83"
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 301,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 301 Air Quality is Good PM 2.5 301µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83"
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 500,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 500 Air Quality is Good PM 2.5 500µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83"
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 501,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 501 Air Quality is Good PM 2.5 501µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83"
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 999.5,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 999.5 Air Quality is Good PM 2.5 999.5µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 49"
+  },
+  {
+   "side": "new",
+   "varied": "pm25",
+   "value": 75.5,
+   "label": "Good",
+   "blank": false,
+   "jsErrors": 0,
+   "text": "DELHI 75.5 Air Quality is Good PM 2.5 75.5µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492."
+  }
+ ],
+ "missing": [
+  {
+   "side": "old",
+   "widget": "aqi",
+   "case": "aqi=null",
+   "blank": false,
+   "jsErrors": [],
+   "text": "Healthy DELHI PM2.5 143 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "widget": "aqi",
+   "case": "aqi missing",
+   "blank": false,
+   "jsErrors": [],
+   "text": "Hazardous DELHI PM2.5 143 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "widget": "aqi",
+   "case": "aqi=\"abc\"",
+   "blank": false,
+   "jsErrors": [],
+   "text": "Hazardous abc DELHI PM2.5 143 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "widget": "aqi",
+   "case": "aqi=-1",
+   "blank": false,
+   "jsErrors": [],
+   "text": "Healthy -1 DELHI PM2.5 143 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "widget": "aqi",
+   "case": "pm25=null",
+   "blank": false,
+   "jsErrors": [],
+   "text": "Unhealthy 143 DELHI PM2.5 0 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "widget": "aqi",
+   "case": "pm25 object missing",
+   "blank": false,
+   "jsErrors": [],
+   "text": "Unhealthy 143 DELHI PM2.5 0 PM10 122 SO2 8.1 O3 21.2 NO2 0.4 CO 5.5"
+  },
+  {
+   "side": "old",
+   "widget": "aqi",
+   "case": "iaqi={}",
+   "blank": false,
+   "jsErrors": [],
+   "text": "Unhealthy 143 DELHI PM2.5 0 PM10 0 SO2 0 O3 0 NO2 0 CO 0"
+  },
+  {
+   "side": "old",
+   "widget": "aqi",
+   "case": "iaqi missing",
+   "blank": false,
+   "jsErrors": [],
+   "text": "Unhealthy 143 DELHI PM2.5 0 PM10 0 SO2 0 O3 0 NO2 0 CO 0"
+  },
+  {
+   "side": "old",
+   "widget": "aqi",
+   "case": "city missing",
+   "blank": true,
+   "jsErrors": [
+    "TypeError: Cannot read properties of undefined (reading '0')"
+   ],
+   "text": ""
+  },
+  {
+   "side": "old",
+   "widget": "aqi",
+   "case": "all pollutants 0",
+   "blank": false,
+   "jsErrors": [],
+   "text": "Unhealthy 143 DELHI PM2.5 0 PM10 0 SO2 0 O3 0 NO2 0 CO 0"
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "temp=null",
+   "blank": false,
+   "jsErrors": [],
+   "text": "°C Delhi CLEAR 3.33 30 1010 06:13 18:07"
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "temp missing",
+   "blank": false,
+   "jsErrors": [],
+   "text": "°C Delhi CLEAR 3.33 30 1010 06:13 18:07"
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "humidity=null",
+   "blank": false,
+   "jsErrors": [],
+   "text": "32°C Delhi CLEAR 3.33 1010 06:13 18:07"
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "wind missing",
+   "blank": true,
+   "jsErrors": [
+    "TypeError: Cannot read properties of undefined (reading 'speed')"
+   ],
+   "text": ""
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "wind.speed=null",
+   "blank": false,
+   "jsErrors": [],
+   "text": "32°C Delhi CLEAR 30 1010 06:13 18:07"
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "weather[] empty",
+   "blank": true,
+   "jsErrors": [
+    "TypeError: Cannot read properties of undefined (reading 'toUpperCase')"
+   ],
+   "text": ""
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "weather.main missing",
+   "blank": true,
+   "jsErrors": [
+    "TypeError: Cannot read properties of undefined (reading 'toUpperCase')"
+   ],
+   "text": ""
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "condition unknown \"Foo\"",
+   "blank": false,
+   "jsErrors": [],
+   "text": "32°C Delhi FOO 3.33 30 1010 06:13 18:07"
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "icon missing (n/a on new)",
+   "blank": false,
+   "jsErrors": [],
+   "text": "32°C Delhi CLEAR 3.33 30 1010 06:13 18:07"
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "forecast empty",
+   "blank": false,
+   "jsErrors": [],
+   "text": "32°C Delhi CLEAR 3.33 30 1010 06:13 18:07"
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "forecast missing",
+   "blank": false,
+   "jsErrors": [],
+   "text": "32°C Delhi CLEAR 3.33 30 1010 06:13 18:07"
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "temp=-50",
+   "blank": false,
+   "jsErrors": [],
+   "text": "-50°C Delhi CLEAR 3.33 30 1010 06:13 18:07"
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "temp=60",
+   "blank": false,
+   "jsErrors": [],
+   "text": "60°C Delhi CLEAR 3.33 30 1010 06:13 18:07"
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "temp=32.456 decimal",
+   "blank": false,
+   "jsErrors": [],
+   "text": "32°C Delhi CLEAR 3.33 30 1010 06:13 18:07"
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "todayData missing",
+   "blank": true,
+   "jsErrors": [
+    "TypeError: Cannot read properties of undefined (reading 'main')"
+   ],
+   "text": ""
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "case": "city.name missing",
+   "blank": false,
+   "jsErrors": [],
+   "text": "32°C CLEAR 3.33 30 1010 06:13 18:07"
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "case": "aqi=null",
+   "blank": false,
+   "jsErrors": [],
+   "text": "DELHI 46.2 Air Quality is Good PM 2.5 46.2µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83ppb"
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "case": "aqi missing",
+   "blank": false,
+   "jsErrors": [],
+   "text": "DELHI 46.2 Air Quality is Hazardous PM 2.5 46.2µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83ppb"
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "case": "aqi=\"abc\"",
+   "blank": false,
+   "jsErrors": [],
+   "text": "DELHI 46.2 Air Quality is Hazardous PM 2.5 46.2µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83ppb"
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "case": "aqi=-1",
+   "blank": false,
+   "jsErrors": [],
+   "text": "DELHI 46.2 Air Quality is Good PM 2.5 46.2µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83ppb"
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "case": "pm25=null",
+   "blank": false,
+   "jsErrors": [],
+   "text": "DELHI 0 Air Quality is Unhealthy PM 2.5 0µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83ppb"
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "case": "pm25 object missing",
+   "blank": false,
+   "jsErrors": [],
+   "text": "DELHI 0 Air Quality is Unhealthy PM 2.5 0µg/m³ PM 10 235.23µg/m³ SO2 5.73ppb O3 24.45ppb NO2 27.01ppb CO 492.83ppb"
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "case": "iaqi={}",
+   "blank": false,
+   "jsErrors": [],
+   "text": "DELHI 0 Air Quality is Unhealthy PM 2.5 0µg/m³ PM 10 0µg/m³ SO2 0ppb O3 0ppb NO2 0ppb CO 0ppb"
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "case": "iaqi missing",
+   "blank": false,
+   "jsErrors": [],
+   "text": "DELHI 0 Air Quality is Unhealthy PM 2.5 0µg/m³ PM 10 0µg/m³ SO2 0ppb O3 0ppb NO2 0ppb CO 0ppb"
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "case": "city missing",
+   "blank": true,
+   "jsErrors": [
+    "TypeError: Cannot read properties of undefined (reading '0')"
+   ],
+   "text": ""
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "case": "all pollutants 0",
+   "blank": false,
+   "jsErrors": [],
+   "text": "DELHI 0 Air Quality is Unhealthy PM 2.5 0µg/m³ PM 10 0µg/m³ SO2 0ppb O3 0ppb NO2 0ppb CO 0ppb"
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "temp=null",
+   "blank": false,
+   "jsErrors": [],
+   "text": "delhi ° C Clear 2.2 48 1011.41 06:14 18:07"
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "temp missing",
+   "blank": false,
+   "jsErrors": [],
+   "text": "delhi ° C Clear 2.2 48 1011.41 06:14 18:07"
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "humidity=null",
+   "blank": false,
+   "jsErrors": [],
+   "text": "delhi 32 ° C Clear 2.2 1011.41 06:14 18:07"
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "wind missing",
+   "blank": true,
+   "jsErrors": [
+    "TypeError: Cannot read properties of undefined (reading 'speed')"
+   ],
+   "text": ""
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "wind.speed=null",
+   "blank": false,
+   "jsErrors": [],
+   "text": "delhi 32 ° C Clear 48 1011.41 06:14 18:07"
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "weather[] empty",
+   "blank": false,
+   "jsErrors": [],
+   "text": "delhi 32 ° C 2.2 48 1011.41 06:14 18:07"
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "weather.main missing",
+   "blank": false,
+   "jsErrors": [],
+   "text": "delhi 32 ° C 2.2 48 1011.41 06:14 18:07"
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "condition unknown \"Foo\"",
+   "blank": false,
+   "jsErrors": [],
+   "text": "delhi 32 ° C Foo 2.2 48 1011.41 06:14 18:07"
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "icon missing (n/a on new)",
+   "blank": false,
+   "jsErrors": [],
+   "text": "delhi 32 ° C Clear 2.2 48 1011.41 06:14 18:07"
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "forecast empty",
+   "blank": false,
+   "jsErrors": [],
+   "text": "delhi 32 ° C Clear 2.2 48 1011.41 06:14 18:07"
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "forecast missing",
+   "blank": false,
+   "jsErrors": [],
+   "text": "delhi 32 ° C Clear 2.2 48 1011.41 06:14 18:07"
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "temp=-50",
+   "blank": false,
+   "jsErrors": [],
+   "text": "delhi -50 ° C Clear 2.2 48 1011.41 06:14 18:07"
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "temp=60",
+   "blank": false,
+   "jsErrors": [],
+   "text": "delhi 60 ° C Clear 2.2 48 1011.41 06:14 18:07"
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "temp=32.456 decimal",
+   "blank": false,
+   "jsErrors": [],
+   "text": "delhi 32 ° C Clear 2.2 48 1011.41 06:14 18:07"
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "todayData missing",
+   "blank": true,
+   "jsErrors": [
+    "TypeError: Cannot read properties of undefined (reading 'wind')"
+   ],
+   "text": ""
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "case": "city.name missing",
+   "blank": false,
+   "jsErrors": [],
+   "text": "32 ° C Clear 2.2 48 1011.41 06:14 18:07"
+  }
+ ],
+ "xss": [
+  {
+   "side": "old",
+   "widget": "aqi",
+   "payload": "<img src=x onerror=\"window.__xss=1\">",
+   "xssExecuted": false,
+   "blank": false,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": true
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "payload": "<img src=x onerror=\"window.__xss=1\">",
+   "xssExecuted": false,
+   "blank": false,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": true
+  },
+  {
+   "side": "old",
+   "widget": "aqi",
+   "payload": "\"><script>window.__xss=1</script>",
+   "xssExecuted": false,
+   "blank": false,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": true
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "payload": "\"><script>window.__xss=1</script>",
+   "xssExecuted": false,
+   "blank": false,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": true
+  },
+  {
+   "side": "old",
+   "widget": "aqi",
+   "payload": "';window.__xss=1;//",
+   "xssExecuted": false,
+   "blank": false,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": false
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "payload": "';window.__xss=1;//",
+   "xssExecuted": false,
+   "blank": false,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": false
+  },
+  {
+   "side": "old",
+   "widget": "aqi",
+   "payload": "long(5000 chars)",
+   "xssExecuted": false,
+   "blank": false,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": false
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "payload": "long(5000 chars)",
+   "xssExecuted": false,
+   "blank": false,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": false
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "payload": "<img src=x onerror=\"window.__xss=1\">",
+   "xssExecuted": false,
+   "blank": false,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": true
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "payload": "<img src=x onerror=\"window.__xss=1\">",
+   "xssExecuted": false,
+   "blank": false,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": true
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "payload": "\"><script>window.__xss=1</script>",
+   "xssExecuted": false,
+   "blank": false,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": true
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "payload": "\"><script>window.__xss=1</script>",
+   "xssExecuted": false,
+   "blank": false,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": true
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "payload": "';window.__xss=1;//",
+   "xssExecuted": false,
+   "blank": false,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": false
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "payload": "';window.__xss=1;//",
+   "xssExecuted": false,
+   "blank": false,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": false
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "payload": "long(5000 chars)",
+   "xssExecuted": false,
+   "blank": false,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": false
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "payload": "long(5000 chars)",
+   "xssExecuted": false,
+   "blank": true,
+   "jsErrors": 0,
+   "rawTagVisibleAsText": false
+  }
+ ],
+ "secrets": [
+  {
+   "side": "old",
+   "bundle": "/static/js/main.06686ff4.js",
+   "pattern": "appid/apikey param",
+   "hits": 0,
+   "sampleRedacted": []
+  },
+  {
+   "side": "old",
+   "bundle": "/static/js/main.06686ff4.js",
+   "pattern": "long hex (32+)",
+   "hits": 0,
+   "sampleRedacted": []
+  },
+  {
+   "side": "old",
+   "bundle": "/static/js/main.06686ff4.js",
+   "pattern": "Bearer literal",
+   "hits": 0,
+   "sampleRedacted": []
+  },
+  {
+   "side": "old",
+   "bundle": "/static/js/main.06686ff4.js",
+   "pattern": "AIza (Google key)",
+   "hits": 1,
+   "sampleRedacted": [
+    "AIzaSyDP…[39 chars]"
+   ]
+  },
+  {
+   "side": "old",
+   "bundle": "/static/js/main.06686ff4.js",
+   "pattern": "sk-/pk- style",
+   "hits": 0,
+   "sampleRedacted": []
+  },
+  {
+   "side": "new",
+   "bundle": "/static/js/main.6b0c6ac2.js",
+   "pattern": "appid/apikey param",
+   "hits": 0,
+   "sampleRedacted": []
+  },
+  {
+   "side": "new",
+   "bundle": "/static/js/main.6b0c6ac2.js",
+   "pattern": "long hex (32+)",
+   "hits": 0,
+   "sampleRedacted": []
+  },
+  {
+   "side": "new",
+   "bundle": "/static/js/main.6b0c6ac2.js",
+   "pattern": "Bearer literal",
+   "hits": 0,
+   "sampleRedacted": []
+  },
+  {
+   "side": "new",
+   "bundle": "/static/js/main.6b0c6ac2.js",
+   "pattern": "AIza (Google key)",
+   "hits": 0,
+   "sampleRedacted": []
+  },
+  {
+   "side": "new",
+   "bundle": "/static/js/main.6b0c6ac2.js",
+   "pattern": "sk-/pk- style",
+   "hits": 0,
+   "sampleRedacted": []
+  },
+  {
+   "side": "old",
+   "check": "readPublic unauthenticated",
+   "status": 200,
+   "unexpectedParamsStatus": 200,
+   "sameBodyWithUnexpectedParams": true,
+   "corsAllowOrigin": "*",
+   "note": "reachable without login (by design for players); CORS value shown as returned"
+  },
+  {
+   "side": "new",
+   "check": "readPublic unauthenticated",
+   "status": 200,
+   "unexpectedParamsStatus": 200,
+   "sameBodyWithUnexpectedParams": true,
+   "corsAllowOrigin": "*",
+   "note": "reachable without login (by design for players); CORS value shown as returned"
+  }
+ ],
+ "requestCount": [
+  {
+   "side": "old",
+   "widget": "aqi",
+   "windowSeconds": 180,
+   "requests": 19,
+   "atSeconds": [
+    1.5,
+    2.5,
+    12.7,
+    23,
+    33.3,
+    43.6,
+    53.9,
+    64.1,
+    74.4,
+    84.6,
+    94.9,
+    105.2,
+    115.4,
+    125.7,
+    136,
+    146.3,
+    156.6,
+    166.8,
+    177.1
+   ]
+  },
+  {
+   "side": "old",
+   "widget": "weather",
+   "windowSeconds": 180,
+   "requests": 2,
+   "atSeconds": [
+    1.8,
+    2.8
+   ]
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "windowSeconds": 180,
+   "requests": 18,
+   "atSeconds": [
+    2.1,
+    3.8,
+    14.1,
+    24.7,
+    35.1,
+    45.5,
+    57.6,
+    68.2,
+    78.5,
+    88.9,
+    99.3,
+    109.7,
+    120.1,
+    130.4,
+    140.8,
+    151.2,
+    161.6,
+    172
+   ],
+   "statuses": [
+    200
+   ],
+   "widgetId": "6abe3cfa36f9ebeed640c15b",
+   "note": "existing widget, read-only"
+  },
+  {
+   "side": "new",
+   "widget": "weather",
+   "windowSeconds": 180,
+   "requests": 2,
+   "atSeconds": [
+    2.1,
+    4.1
+   ],
+   "statuses": [
+    200
+   ],
+   "widgetId": "6abe3cac36f9ebeed640c138",
+   "note": "existing widget, read-only"
+  }
+ ],
+ "finishedAt": "2026-10-01T12:28:39.453Z",
+ "requestCountInvalidFirstRunNew": [
+  {
+   "side": "new",
+   "widget": "weather",
+   "windowSeconds": 180,
+   "requests": 2,
+   "atSeconds": [
+    1.5,
+    2.8
+   ]
+  },
+  {
+   "side": "new",
+   "widget": "aqi",
+   "windowSeconds": 180,
+   "requests": 2,
+   "atSeconds": [
+    1.6,
+    2.9
+   ]
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+refresh W-DEL old {"n":10,"min":219.1,"max":527.3,"avg":264.6,"median":233.8,"p90":255.5,"p95":527.3,"p99":527.3}
+refresh W-DEL new {"n":10,"min":379.8,"max":726.5,"avg":445.5,"median":394.3,"p90":593.1,"p95":726.5,"p99":726.5}
+refresh A-DEL old {"n":10,"min":282.5,"max":601.6,"avg":333.8,"median":292.8,"p90":407.6,"p95":601.6,"p99":601.6}
+refresh A-DEL new {"n":10,"min":333.9,"max":943,"avg":460.8,"median":337,"p90":755,"p95":943,"p99":943}
+errors done W-DEL old
+errors done W-DEL new
+errors done A-DEL old
+errors done A-DEL new
+net W-DEL old normal true 2537
+net W-DEL old slow true 8552
+net W-DEL old highLatency true 9363
+net W-DEL old offlineBeforeLoad false 5033
+net W-DEL new normal true 2750
+net W-DEL new slow true 6950
+net W-DEL new highLatency true 9029
+net W-DEL new offlineBeforeLoad false 5015
+net A-DEL old normal true 2407
+net A-DEL old slow true 8568
+net A-DEL old highLatency true 9299
+net A-DEL old offlineBeforeLoad false 5012
+net A-DEL new normal true 2391
+net A-DEL new slow true 6914
+net A-DEL new highLatency true 8926
+net A-DEL new offlineBeforeLoad false 5014
+UI DONE

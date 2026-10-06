@@ -1,0 +1,757 @@
+{
+ "startedAt": "2026-10-01T12:15:01.625Z",
+ "tests": [
+  {
+   "id": "UI-01",
+   "name": "Login and dashboard shell loads",
+   "status": "PASS",
+   "detail": "console errors so far: 3"
+  },
+  {
+   "id": "UI-02-aqi",
+   "name": "AQI widget list opens",
+   "status": "PASS",
+   "detail": "97 <p> elements; read calls: 3"
+  },
+  {
+   "id": "UI-03-aqi",
+   "name": "AQI create form opens with expected fields",
+   "status": "PASS",
+   "detail": "name,fontFamily,faceId,aqiFor,city1,city1,city1,city1,checkbox"
+  },
+  {
+   "id": "UI-04-aqi",
+   "name": "AQI: Save with EMPTY name is blocked",
+   "status": "FAIL",
+   "detail": "create calls=1, dialog open=true"
+  },
+  {
+   "id": "UI-05-aqi",
+   "name": "AQI: Save with valid name but EMPTY location",
+   "status": "PASS",
+   "detail": "create HTTP 400; body {\"name\":\"QA_CMP_UI_aqi_nolocation\",\"type\":\"aqi\",\"faceId\":\"1\",\"faceUrl\":\"/media/widgets/aqi.png\",\"data\":{\"cities\":[],\"coordinates\":[],\"fontFamily\":\"\",\"aqiFor\":\"p"
+  },
+  {
+   "id": "UI-06-aqi",
+   "name": "AQI: create with valid location (autocomplete suggestions=5, field=\"Mumbai\")",
+   "status": "PASS",
+   "detail": "HTTP 200, 3573 ms to saved; payload: {\"name\":\"QA_CMP_UI_aqi_mumbai\",\"type\":\"aqi\",\"faceId\":\"1\",\"faceUrl\":\"/media/widgets/aqi.png\",\"data\":{\"cities\":[\"Mumbai\"],\"coordinates\":[{\"lat\":18.9582347,\"lng\":72.8319514}],\"fontFamily\":\"\",\"aqiFor\":\"pm25\"}}"
+  },
+  {
+   "id": "UI-06b-aqi",
+   "name": "AQI: coordinates saved with the location",
+   "status": "PASS",
+   "detail": "{\"name\":\"QA_CMP_UI_aqi_mumbai\",\"type\":\"aqi\",\"faceId\":\"1\",\"faceUrl\":\"/media/widgets/aqi.png\",\"data\":{\"cities\":[\"Mumbai\"],\"coordinates\":[{\"lat\":18.9582347,\"lng\":72.8319514}],\"fontFamily\":\"\",\"aqiFor\":\"pm25\"}}"
+  },
+  {
+   "id": "UI-07-aqi",
+   "name": "AQI: saved widget appears in list / search",
+   "status": "PASS",
+   "detail": "found=true"
+  },
+  {
+   "id": "UI-08-aqi",
+   "name": "AQI: reopen shows saved name and location",
+   "status": "PASS",
+   "detail": "name=\"QA_CMP_UI_aqi_mumbai\", city1=\"Mumbai\""
+  },
+  {
+   "id": "UI-09-aqi",
+   "name": "AQI: Preview renders for saved location",
+   "status": "PASS",
+   "detail": "calls: GET /v3/cms/widget/readPublicWidgetPreview/6abe4efb63da81f6178fb9ae 200 -1ms; 6275 ms to settle"
+  },
+  {
+   "id": "UI-10-aqi",
+   "name": "AQI: invalid free-text location (no suggestion, suggestions=0)",
+   "status": "PASS",
+   "detail": "HTTP 400; {\"name\":\"QA_CMP_UI_aqi_invalidloc\",\"type\":\"aqi\",\"faceId\":\"1\",\"faceUrl\":\"/media/widgets/aqi.png\",\"data\":{\"cities\":[],\"coordinates\":[],\"fontFamily\":\"\",\"aqiFor\":\"pm25\"}}"
+  },
+  {
+   "id": "UI-11-aqi",
+   "name": "AQI: XSS payload in widget name is not executed",
+   "status": "PASS",
+   "detail": "create HTTP 200; script executed=false; page errors=0"
+  },
+  {
+   "id": "UI-12-aqi",
+   "name": "AQI: 600-character name is limited or handled",
+   "status": "PASS (blocked in UI)",
+   "detail": "no create call"
+  },
+  {
+   "id": "UI-02-weather",
+   "name": "Weather widget list opens",
+   "status": "PASS",
+   "detail": "113 <p> elements; read calls: 30"
+  },
+  {
+   "id": "UI-03-weather",
+   "name": "Weather create form opens with expected fields",
+   "status": "PASS",
+   "detail": "name,city1,city1,city1,city1,fontFamily,checkbox,checkbox,checkbox,checkbox,checkbox"
+  },
+  {
+   "id": "UI-04-weather",
+   "name": "Weather: Save with EMPTY name is blocked",
+   "status": "FAIL",
+   "detail": "create calls=1, dialog open=true"
+  },
+  {
+   "id": "UI-05-weather",
+   "name": "Weather: Save with valid name but EMPTY location",
+   "status": "FAIL (candidate bug)",
+   "detail": "create HTTP 200; body {\"name\":\"QA_CMP_UI_weather_nolocation\",\"data\":{\"city\":[],\"fontFamily\":\"Arial\",\"bgImage\":false,\"fontBold\":false,\"animation\":false,\"isForecast\":false},\"type\":\"wea"
+  },
+  {
+   "id": "UI-06-weather",
+   "name": "Weather: create with valid location (autocomplete suggestions=5, field=\"Mumbai\")",
+   "status": "PASS",
+   "detail": "HTTP 200, 3575 ms to saved; payload: {\"name\":\"QA_CMP_UI_weather_mumbai\",\"data\":{\"city\":[\"Mumbai\"],\"fontFamily\":\"Arial\",\"bgImage\":false,\"fontBold\":false,\"animation\":false,\"isForecast\":false},\"type\":\"weather\",\"faceId\":1,\"faceUrl\":\"/media/widgets/weather.png\"}"
+  },
+  {
+   "id": "UI-07-weather",
+   "name": "Weather: saved widget appears in list / search",
+   "status": "PASS",
+   "detail": "found=true"
+  },
+  {
+   "id": "UI-08-weather",
+   "name": "Weather: reopen shows saved name and location",
+   "status": "PASS",
+   "detail": "name=\"QA_CMP_UI_weather_mumbai\", city1=\"Mumbai\""
+  },
+  {
+   "id": "UI-09-weather",
+   "name": "Weather: Preview renders for saved location",
+   "status": "PASS",
+   "detail": "calls: GET /v3/cms/widget/readPublic/6abe4f5163da81f6178fba29 200 -1ms | GET /v3/cms/widget/readPublicWidgetPreview/6abe4f5f63da81f6178fba55 200 -1ms; 6394 ms to settle"
+  },
+  {
+   "id": "UI-10-weather",
+   "name": "Weather: invalid free-text location (no suggestion, suggestions=0)",
+   "status": "PASS",
+   "detail": "HTTP 200; {\"name\":\"QA_CMP_UI_weather_invalidloc\",\"data\":{\"city\":[],\"fontFamily\":\"Arial\",\"bgImage\":false,\"fontBold\":false,\"animation\":false,\"isForecast\":false},\"type\":\"weather\",\"faceId\":1,\"faceUrl\":\"/media/widge"
+  },
+  {
+   "id": "UI-11-weather",
+   "name": "Weather: XSS payload in widget name is not executed",
+   "status": "PASS",
+   "detail": "create HTTP 200; script executed=false; page errors=0"
+  },
+  {
+   "id": "UI-12-weather",
+   "name": "Weather: 600-character name is limited or handled",
+   "status": "REVIEW (accepted 600 chars; no limit)",
+   "detail": "HTTP 200"
+  },
+  {
+   "id": "UI-99",
+   "name": "Console / page errors during CMS widget flows",
+   "status": "REVIEW",
+   "detail": "console errors: 19 [\"Failed to load resource: the server responded with a status of 401 ()\",\"requestStorageAccess: Permission denied.\",\"Refused to display 'https://www.google.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'.\",\"Failed to load resource: the server responded with a status of 400 ()\"]; page errors: 0"
+  }
+ ],
+ "created": [
+  "6abe4eedd31a3a150b5fb675",
+  "6abe4f1cf5746abddbb33e32",
+  "6abe4f4163da81f6178fba00",
+  "6abe4f5163da81f6178fba29",
+  "6abe4f6ff5746abddbb33ea5",
+  "6abe4f7ef5746abddbb33eb8",
+  "6abe4f95f5746abddbb33ed2"
+ ],
+ "cleanup": [
+  {
+   "id": "6abe4eedd31a3a150b5fb675",
+   "status": 200
+  },
+  {
+   "id": "6abe4f1cf5746abddbb33e32",
+   "status": 200
+  },
+  {
+   "id": "6abe4f4163da81f6178fba00",
+   "status": 200
+  },
+  {
+   "id": "6abe4f5163da81f6178fba29",
+   "status": 200
+  },
+  {
+   "id": "6abe4f6ff5746abddbb33ea5",
+   "status": 200
+  },
+  {
+   "id": "6abe4f7ef5746abddbb33eb8",
+   "status": 200
+  },
+  {
+   "id": "6abe4f95f5746abddbb33ed2",
+   "status": 200
+  }
+ ],
+ "network": [
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readTypes",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "POST",
+   "u": "/v3/cms/widget/create",
+   "s": 400,
+   "body": "{\"name\":\"\",\"type\":\"aqi\",\"faceId\":\"1\",\"faceUrl\":\"/media/widgets/aqi.png\",\"data\":{\"cities\":[],\"coordinates\":[],\"fontFamily\":\"\",\"aqiFor\":\"pm25\"}}",
+   "ms": -1
+  },
+  {
+   "m": "POST",
+   "u": "/v3/cms/widget/create",
+   "s": 400,
+   "body": "{\"name\":\"QA_CMP_UI_aqi_nolocation\",\"type\":\"aqi\",\"faceId\":\"1\",\"faceUrl\":\"/media/widgets/aqi.png\",\"data\":{\"cities\":[],\"coordinates\":[],\"fontFamily\":\"\",\"aqiFor\":\"pm25\"}}",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readTypes",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "POST",
+   "u": "/v3/cms/widget/create",
+   "s": 200,
+   "body": "{\"name\":\"QA_CMP_UI_aqi_mumbai\",\"type\":\"aqi\",\"faceId\":\"1\",\"faceUrl\":\"/media/widgets/aqi.png\",\"data\":{\"cities\":[\"Mumbai\"],\"coordinates\":[{\"lat\":18.9582347,\"lng\":72.8319514}],\"fontFamily\":\"\",\"aqiFor\":\"pm25\"}}",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readTypes",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readTypes",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=aqi&search=QA_CMP_UI_aqi_mumbai&sort=createdAt&or",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=aqi&search=QA_CMP_UI_aqi_mumbai&sort=createdAt&or",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read/6abe4eedd31a3a150b5fb675",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read/6abe4eedd31a3a150b5fb675",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readPublicWidgetPreview/6abe4efb63da81f6178fb9ae",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readTypes",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "POST",
+   "u": "/v3/cms/widget/create",
+   "s": 400,
+   "body": "{\"name\":\"QA_CMP_UI_aqi_invalidloc\",\"type\":\"aqi\",\"faceId\":\"1\",\"faceUrl\":\"/media/widgets/aqi.png\",\"data\":{\"cities\":[],\"coordinates\":[],\"fontFamily\":\"\",\"aqiFor\":\"pm25\"}}",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readTypes",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "POST",
+   "u": "/v3/cms/widget/create",
+   "s": 200,
+   "body": "{\"name\":\"QA_CMP_UI_aqi_<img src=x onerror=window.__x=1>\",\"type\":\"aqi\",\"faceId\":\"1\",\"faceUrl\":\"/media/widgets/aqi.png\",\"data\":{\"cities\":[\"Delhi\"],\"coordinates\":[{\"lat\":28.7040592,\"lng\":77.10249019999999}],\"fontFamily\":\"\",\"aqiFor\":\"pm25\"}}",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readTypes",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readTypes",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=aqi&search=QA_CMP_UI_aqi_%3Cimg&sort=createdAt&or",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=aqi&search=QA_CMP_UI_aqi_%3Cimg&sort=createdAt&or",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readTypes",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=aqi&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readTypes",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=weather&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=weather&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "POST",
+   "u": "/v3/cms/widget/create",
+   "s": 400,
+   "body": "{\"name\":\"\",\"data\":{\"city\":[],\"fontFamily\":\"Arial\",\"bgImage\":false,\"fontBold\":false,\"animation\":false,\"isForecast\":false},\"type\":\"weather\",\"faceId\":1,\"faceUrl\":\"/media/widgets/weather.png\"}",
+   "ms": -1
+  },
+  {
+   "m": "POST",
+   "u": "/v3/cms/widget/create",
+   "s": 200,
+   "body": "{\"name\":\"QA_CMP_UI_weather_nolocation\",\"data\":{\"city\":[],\"fontFamily\":\"Arial\",\"bgImage\":false,\"fontBold\":false,\"animation\":false,\"isForecast\":false},\"type\":\"weather\",\"faceId\":1,\"faceUrl\":\"/media/widgets/weather.png\"}",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=24&type=weather&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readTypes",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=weather&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=weather&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "POST",
+   "u": "/v3/cms/widget/create",
+   "s": 200,
+   "body": "{\"name\":\"QA_CMP_UI_weather_mumbai\",\"data\":{\"city\":[\"Mumbai\"],\"fontFamily\":\"Arial\",\"bgImage\":false,\"fontBold\":false,\"animation\":false,\"isForecast\":false},\"type\":\"weather\",\"faceId\":1,\"faceUrl\":\"/media/widgets/weather.png\"}",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=24&type=weather&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readTypes",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=weather&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=weather&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=3&limit=50&type=weather&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=weather&search=QA_CMP_UI_weather_mumbai&sort=crea",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=3&limit=50&type=weather&search=QA_CMP_UI_weather_mumbai&sort=crea",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read/6abe4f5163da81f6178fba29",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read/6abe4f5163da81f6178fba29",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readPublic/6abe4f5163da81f6178fba29",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readPublic/6abe4f5163da81f6178fba29",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readPublicWidgetPreview/6abe4f5f63da81f6178fba55",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readTypes",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=weather&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=weather&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "POST",
+   "u": "/v3/cms/widget/create",
+   "s": 200,
+   "body": "{\"name\":\"QA_CMP_UI_weather_invalidloc\",\"data\":{\"city\":[],\"fontFamily\":\"Arial\",\"bgImage\":false,\"fontBold\":false,\"animation\":false,\"isForecast\":false},\"type\":\"weather\",\"faceId\":1,\"faceUrl\":\"/media/widgets/weather.png\"}",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=24&type=weather&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/readTypes",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=1&limit=50&type=weather&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "GET",
+   "u": "/v3/cms/widget/read?page=2&limit=50&type=weather&search=&sort=createdAt&order=-1&folderId=",
+   "s": 200,
+   "body": "",
+   "ms": -1
+  },
+  {
+   "m": "POST",
+   "u": "/v3/cms/widget/create",
+   "s": 200,
+   "body": "{\"name\":\"QA_CMP_UI_weather_<img src=x onerror=window.__x=1>\",\"data\":{\"city\":[],\"fontFamily\":\"Arial\",\"bgImage\":false,\"fontBold\":false,\"animation\":false,\"isForecast\":false},\"type\":\"weather\",\"faceId\":1,\"faceUrl\":\"/media/widgets/weather.png\"}",
+   "ms": -1
+  }
+ ],
+ "finishedAt": "2026-10-01T12:18:45.266Z"
+}

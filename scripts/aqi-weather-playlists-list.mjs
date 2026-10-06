@@ -1,0 +1,16 @@
+import { chromium } from '@playwright/test';
+import { login } from '../helpers/loginHelper.js';
+const out='reports/aqi-weather-playlists';
+const b=await chromium.launch(); const ctx=await b.newContext({viewport:{width:1440,height:900}});
+const page=await ctx.newPage();
+const api=[];
+page.on('response',async r=>{const u=r.url(); if(/playlist/i.test(u)&&!/\.(js|css|png|svg)/.test(u)&&r.request().method()!=='OPTIONS'){try{api.push({u,s:r.status(),b:(await r.text()).slice(0,200000)})}catch{}}});
+await login(page);
+await page.goto('https://cms.pocsample.in/playlists',{waitUntil:'domcontentloaded'});
+await page.waitForTimeout(8000);
+await page.screenshot({path:`${out}/shots/00-playlists.png`});
+console.log(page.url());
+console.log((await page.locator('body').innerText()).slice(0,2500));
+console.log(api.map(a=>a.s+' '+a.u).join('\n'));
+(await import('fs')).writeFileSync(`${out}/playlist-api.json`,JSON.stringify(api,null,1));
+await b.close();

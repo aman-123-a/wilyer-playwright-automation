@@ -1,0 +1,134 @@
+{
+ "rows": [
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "run": 1,
+   "visibleBeforeOffline": true,
+   "t+1s": true,
+   "t+3s": true,
+   "t+8s": true,
+   "t+15s": true
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "run": 2,
+   "visibleBeforeOffline": true,
+   "t+1s": true,
+   "t+3s": true,
+   "t+8s": true,
+   "t+15s": true
+  },
+  {
+   "key": "W-DEL",
+   "side": "old",
+   "run": 3,
+   "visibleBeforeOffline": true,
+   "t+1s": true,
+   "t+3s": true,
+   "t+8s": true,
+   "t+15s": true
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "run": 1,
+   "visibleBeforeOffline": true,
+   "t+1s": true,
+   "t+3s": true,
+   "t+8s": true,
+   "t+15s": true
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "run": 2,
+   "visibleBeforeOffline": true,
+   "t+1s": true,
+   "t+3s": true,
+   "t+8s": true,
+   "t+15s": true
+  },
+  {
+   "key": "W-DEL",
+   "side": "new",
+   "run": 3,
+   "visibleBeforeOffline": true,
+   "t+1s": true,
+   "t+3s": true,
+   "t+8s": true,
+   "t+15s": true
+  },
+  {
+   "key": "W-MAA",
+   "side": "old",
+   "run": 1,
+   "visibleBeforeOffline": true,
+   "t+1s": true,
+   "t+3s": true,
+   "t+8s": true,
+   "t+15s": true
+  },
+  {
+   "key": "W-MAA",
+   "side": "old",
+   "run": 2,
+   "visibleBeforeOffline": true,
+   "t+1s": true,
+   "t+3s": true,
+   "t+8s": true,
+   "t+15s": true
+  },
+  {
+   "key": "W-MAA",
+   "side": "old",
+   "run": 3,
+   "visibleBeforeOffline": true,
+   "t+1s": true,
+   "t+3s": true,
+   "t+8s": true,
+   "t+15s": true
+  },
+  {
+   "key": "W-MAA",
+   "side": "new",
+   "run": 1,
+   "visibleBeforeOffline": true,
+   "t+1s": true,
+   "t+3s": true,
+   "t+8s": true,
+   "t+15s": true
+  },
+  {
+   "key": "W-MAA",
+   "side": "new",
+   "run": 2,
+   "visibleBeforeOffline": true,
+   "t+1s": true,
+   "t+3s": true,
+   "t+8s": true,
+   "t+15s": true
+  },
+  {
+   "key": "W-MAA",
+   "side": "new",
+   "run": 3,
+   "visibleBeforeOffline": true,
+   "t+1s": false,
+   "t+3s": false,
+   "t+8s": false,
+   "t+15s": false
+  }
+ ],
+ "cleanup": [
+  {
+   "id": "6abe4d8ad31a3a150b5fb644",
+   "status": 200
+  },
+  {
+   "id": "6abe4d8d63da81f6178fb943",
+   "status": 200
+  }
+ ]
+}

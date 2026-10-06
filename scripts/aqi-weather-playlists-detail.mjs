@@ -1,0 +1,18 @@
+import { chromium } from '@playwright/test';
+import { login } from '../helpers/loginHelper.js';
+import fs from 'fs';
+const out='reports/aqi-weather-playlists';
+const b=await chromium.launch(); const ctx=await b.newContext({viewport:{width:1440,height:900}});
+const page=await ctx.newPage();
+const api=[];
+page.on('response',async r=>{const u=r.url(); if(u.includes('v3-5api')&&r.request().resourceType()==='xhr'||u.includes('v3-5api')&&r.request().resourceType()==='fetch'){try{api.push({u,s:r.status(),b:(await r.text()).slice(0,100000)})}catch{}}});
+await login(page);
+await page.goto('https://cms.pocsample.in/playlists',{waitUntil:'domcontentloaded'});
+await page.waitForTimeout(5000);
+await page.getByText('Edit',{exact:true}).first().click();
+await page.waitForTimeout(8000);
+console.log(page.url());
+await page.screenshot({path:`${out}/shots/01-aqi-edit.png`});
+console.log(api.map(a=>a.s+' '+a.u.slice(0,150)).join('\n'));
+fs.writeFileSync(`${out}/aqi-edit-api.json`,JSON.stringify(api,null,1));
+await b.close();
