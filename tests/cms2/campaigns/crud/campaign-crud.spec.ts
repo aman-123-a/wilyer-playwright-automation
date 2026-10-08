@@ -353,7 +353,6 @@ test.describe('Campaigns · CRUD', () => {
     test('API-023 · BUG-CMP-12 · deleting a missing campaign should be 404 @api @p3', async ({
       campaignApi,
     }, testInfo) => {
-      test.fail(true, 'BUG-CMP-12: a second delete returns 400 "Campaign not found."');
       const seeded = await campaignApi.seed(uniqueName('Idem', testInfo.workerIndex), 1);
       expect((await campaignApi.deleteRaw(seeded.id)).status()).toBe(200);
       expect((await campaignApi.deleteRaw(seeded.id)).status()).toBe(404);

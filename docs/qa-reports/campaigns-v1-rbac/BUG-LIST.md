@@ -31,7 +31,7 @@ the *correct* behaviour, so the run turns red the moment one is fixed.
 | BUG-CMP-09 | Low / S3 | Whitespace-only name accepted by the API | No | **OPEN** |
 | BUG-CMP-10 | Low / S3 | Invalid `folderId` silently coerced to null | No | **OPEN** |
 | BUG-CMP-11 | Low / S4 | Search does not trim the query | Yes | **OPEN** |
-| BUG-CMP-12 | Low / S4 | Delete is not idempotent (400, not 404) | No | **OPEN** |
+| BUG-CMP-12 | Low / S4 | Delete is not idempotent (400, not 404) | No | **FIXED** (verified 2026-10-08 on cms2: 2nd delete → 404) |
 | BUG-CMP-14 | Low / S4 | Delete distinguishes "forbidden" from "not found" — existence leak | No | **OPEN** |
 | BUG-CLU-01 | Low / S3 | Cluster batch content page `/batch-settings/<id>` is not addressable — a direct navigation, reload or bookmark redirects to `/clusters`, losing the batch being edited | **Yes** | **OPEN** |
 | BUG-CMP-02 | ~~High / S2~~ | ~~Regex injection in campaign search~~ | — | **✅ FIXED** |

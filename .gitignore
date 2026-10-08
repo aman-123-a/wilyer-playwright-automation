@@ -53,3 +53,7 @@ temp_doc*.docx
 *.tmp
 .DS_Store
 Thumbs.db
+
+# Ad-hoc screenshots and scratch output from manual sessions.
+/scratch/
+/*.png
