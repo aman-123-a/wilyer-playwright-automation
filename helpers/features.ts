@@ -8,7 +8,7 @@
 //  Call `requireFeature` at the top of a describe block:
 //
 //      test.describe('Prayer Schedule', () => {
-//        requireFeature('media-sets');
+//        requireFeature('prayer-schedule');
 //        ...
 //      });
 //
@@ -41,7 +41,7 @@ export function requireFeature(feature: FeatureName): void {
     !available,
     `${config.label} is not deployed on ${ENV.NAME} (${ENV.LABEL}). ` +
       `Available on: ${config.availableOn.join(', ') || 'nowhere yet'}. ` +
-      `Run it with: npm run ${config.owner ?? config.availableOn[0] ?? 'cms2'}.`,
+      `Run it with: npm run ${config.owner ?? config.availableOn[0] ?? 'cms'}.`,
   );
 }
 

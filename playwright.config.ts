@@ -10,7 +10,7 @@
 //   • A headless `api` project for pure REST suites (no browser cost)
 //
 //  Target environment comes from TEST_ENV — see config/environments.ts and the
-//  npm script (npm run cms2). This branch targets cms2 only.
+//  npm scripts (npm run cms | cms2 | cms3 | cms4 | live).
 // =============================================================================
 
 import { defineConfig, devices } from '@playwright/test';
@@ -21,9 +21,11 @@ import { ignoredTestDirsFor, testDirsFor } from './config/features';
 const REPORTS = `reports/${ENV.NAME}`;
 
 /**
- * Specs are filed by owning server (tests/_core, tests/cms2). Only the folders
- * relevant to the active environment run: its own and the core tree. Other
- * servers' specs live on their own branches.
+ * Specs are filed by owning server (tests/_core, tests/cms, tests/cms2, …).
+ * Only the folders relevant to the active environment run: its own, the core
+ * tree, and the home folder of any feature that has been rolled out to it —
+ * Prayer Schedule lives in tests/cms/ but also executes on live, because
+ * config/features.ts records it as released there.
  *
  * Selecting by exclusion (rather than pointing testDir at a subfolder) keeps
  * tests/global.setup.ts in scope on every environment.

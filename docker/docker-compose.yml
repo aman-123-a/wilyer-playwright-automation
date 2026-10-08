@@ -5,7 +5,7 @@
 #  this file, and never baked into the image.
 #
 #    docker compose -f docker/docker-compose.yml run --rm smoke
-#    TEST_ENV=cms2 docker compose -f docker/docker-compose.yml run --rm e2e
+#    TEST_ENV=cms3 docker compose -f docker/docker-compose.yml run --rm e2e
 # =============================================================================
 
 x-common: &common

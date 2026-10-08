@@ -8,7 +8,11 @@
     "node": ">=20"
   },
   "scripts": {
+    "cms": "cross-env TEST_ENV=cms playwright test",
     "cms2": "cross-env TEST_ENV=cms2 playwright test",
+    "cms3": "cross-env TEST_ENV=cms3 playwright test",
+    "cms4": "cross-env TEST_ENV=cms4 playwright test",
+    "live": "cross-env TEST_ENV=live playwright test",
     "test": "playwright test",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",

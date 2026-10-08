@@ -22,7 +22,7 @@ on:
       environment:
         description: 'Target environment'
         type: choice
-        options: [cms2]
+        options: [cms, cms2, cms3, cms4, live]
         default: cms2
 
 concurrency:

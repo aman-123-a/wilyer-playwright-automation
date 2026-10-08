@@ -5,12 +5,12 @@
 //  target is reviewable in a diff. Credentials never live here; they come from
 //  the local .env / CI secrets. See config/env.ts for the resolution order.
 //
-//  This is the cms2 branch: it targets cms2 only. Each server has its own
-//  branch (cms, cms2, cms3, cms4, live). Run with: npm run cms2
+//  Switch environment with TEST_ENV, which the npm scripts set for you:
+//    npm run cms | cms2 | cms3 | cms4 | live
 // =============================================================================
 
 /** Every environment the platform can target. */
-export const ENVIRONMENT_NAMES = ['cms2'] as const;
+export const ENVIRONMENT_NAMES = ['cms', 'cms2', 'cms3', 'cms4', 'live'] as const;
 
 export type EnvironmentName = (typeof ENVIRONMENT_NAMES)[number];
 
@@ -44,10 +44,30 @@ export interface EnvironmentConfig {
 }
 
 /**
- * API host evidence: cms2 → v3-5api2.pocsample.in (verified live 2026-07-28,
- * campaigns suite).
+ * API host mapping evidence:
+ *   cms  → v3-5api.pocsample.in   (legacy/rbac + adaptive-content templates,
+ *                                  and the prayer-schedule API audits)
+ *   cms2 → v3-5api2.pocsample.in  (verified live 2026-07-28, campaigns suite)
+ *   live → v3-5api.wilyersignage.com (verified live 2026-08-04 by capturing CMS
+ *                                  traffic — see the note on the entry below)
+ *   cms3, cms4 → follow the cmsN → v3-5apiN convention. Probed 2026-09-16: both
+ *   hostnames resolve and are served by the real API application (they answer
+ *   POST /v3/cms/auth/login with the app's own JSON errors — Joi validation,
+ *   then recaptcha — not the SPA's HTML shell). That is NOT the same as
+ *   confirming each hostname reaches its own environment's backend: all of
+ *   v3-5api2/3/4 sit on the same Cloudflare IPs, and recaptcha blocks the
+ *   login comparison that would tell the origins apart. They stay 'convention'
+ *   until someone authenticates against one; override with CMS_API_BASE_URL.
  */
 export const ENVIRONMENTS: Readonly<Record<EnvironmentName, EnvironmentConfig>> = {
+  cms: {
+    name: 'cms',
+    label: 'Pre-Production 1',
+    baseUrl: 'https://cms.pocsample.in',
+    apiBaseUrl: 'https://v3-5api.pocsample.in/v3/cms',
+    apiConfidence: 'verified',
+    isProduction: false,
+  },
   cms2: {
     name: 'cms2',
     label: 'Pre-Production 2',
@@ -55,6 +75,32 @@ export const ENVIRONMENTS: Readonly<Record<EnvironmentName, EnvironmentConfig>> 
     apiBaseUrl: 'https://v3-5api2.pocsample.in/v3/cms',
     apiConfidence: 'verified',
     isProduction: false,
+  },
+  cms3: {
+    name: 'cms3',
+    label: 'Pre-Production 3',
+    baseUrl: 'https://cms3.pocsample.in',
+    apiBaseUrl: 'https://v3-5api3.pocsample.in/v3/cms',
+    apiConfidence: 'convention',
+    isProduction: false,
+  },
+  cms4: {
+    name: 'cms4',
+    label: 'Pre-Production 4',
+    baseUrl: 'https://cms4.pocsample.in',
+    apiBaseUrl: 'https://v3-5api4.pocsample.in/v3/cms',
+    apiConfidence: 'convention',
+    isProduction: false,
+  },
+  live: {
+    name: 'live',
+    label: 'Production',
+    baseUrl: 'https://cms.wilyersignage.com',
+    // Verified live 2026-08-04 by capturing CMS traffic: the production API is
+    // v3-5api.wilyersignage.com, not api.wilyersignage.com (which was a guess).
+    apiBaseUrl: 'https://v3-5api.wilyersignage.com/v3/cms',
+    apiConfidence: 'verified',
+    isProduction: true,
   },
 } as const;
 
@@ -68,7 +114,7 @@ export function isEnvironmentName(value: string): value is EnvironmentName {
  * here would point a destructive suite at the wrong server.
  */
 export function resolveEnvironment(value: string | undefined): EnvironmentConfig {
-  const name = (value ?? 'cms2').trim();
+  const name = (value ?? 'cms').trim();
   if (!isEnvironmentName(name)) {
     throw new Error(
       `Unknown TEST_ENV "${name}". Expected one of: ${ENVIRONMENT_NAMES.join(', ')}. ` +
