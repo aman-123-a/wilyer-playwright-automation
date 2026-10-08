@@ -202,6 +202,160 @@ export class MediaSetsPage extends BasePage {
     return raw === null ? -1 : Number(raw);
   }
 
+  // ── Card actions (verified live on cms2 v3.5.25, 2026-10-07) ─────────────────
+  //  Each card: a selection checkbox (top-left), a title `<div title="name">`,
+  //  and four icon buttons identified by their tooltip — File Details, Edit
+  //  media set, Publish, Delete Media Set.
+
+  /** The card whose title is exactly `name`. */
+  cardByName(name: string): Locator {
+    return this.page
+      .locator('.ms-set-card')
+      .filter({ has: this.page.getByTitle(name, { exact: true }) });
+  }
+
+  cardCheckbox(name: string): Locator {
+    return this.cardByName(name).locator('input[type="checkbox"]');
+  }
+
+  /** Tick the selection checkbox of the named card. */
+  async selectCard(name: string): Promise<this> {
+    await this.cardCheckbox(name).check();
+    return this;
+  }
+
+  async deselectCard(name: string): Promise<this> {
+    await this.cardCheckbox(name).uncheck();
+    return this;
+  }
+
+  /** Narrow the list to `term` and wait for the "Total - N" counter to settle. */
+  async searchAndSettle(term: string, expectedTotal: number): Promise<this> {
+    await this.search(term);
+    await this.expectTotal(expectedTotal);
+    return this;
+  }
+
+  // ── Bulk bar — appears once at least one card is ticked ───────────────────────
+
+  /** "Unpublish Media Set" (acts on the selection; carries no count). */
+  get bulkUnpublishBtn(): Locator {
+    return this.page.getByRole('button', { name: /unpublish media set/i });
+  }
+
+  /** "Publish Media Set (N)". The lookbehind keeps it off "Unpublish …". The
+   *  buttons carry an icon, so the accessible name cannot be anchored with ^. */
+  get bulkPublishBtn(): Locator {
+    return this.page.getByRole('button', { name: /(?<!un)publish media set/i });
+  }
+
+  get bulkMoveBtn(): Locator {
+    return this.page.getByRole('button', { name: /move to folder/i });
+  }
+
+  /** "Delete (N)" — the count is the number of ticked cards. */
+  get bulkDeleteBtn(): Locator {
+    // Only the bulk button carries a "(N)"; the per-card Delete buttons do not.
+    return this.page.getByRole('button', { name: /delete\s*\(\d+\)/i });
+  }
+
+  /** The N in "Delete (N)", or null while the bulk bar is hidden. */
+  async bulkDeleteCount(): Promise<number | null> {
+    if (!(await this.bulkDeleteBtn.isVisible().catch(() => false))) return null;
+    const m = (await this.bulkDeleteBtn.innerText()).match(/\((\d+)\)/);
+    return m ? Number(m[1]) : null;
+  }
+
+  // ── Modals ───────────────────────────────────────────────────────────────────
+
+  /** The Bootstrap modal currently open (single delete, bulk delete, move). */
+  get openModal(): Locator {
+    return this.page.locator('.modal.show');
+  }
+
+  /**
+   * Confirm the open delete modal and wait for it to close. A bulk delete is one
+   * DELETE per set, run back to back, so the modal stays open for roughly
+   * 0.8s × N — pass a larger `timeout` for big selections.
+   */
+  async confirmDelete(timeout = 15_000): Promise<this> {
+    await expect(this.openModal).toBeVisible({ timeout: 10_000 });
+    await this.openModal.getByRole('button', { name: /^delete/i }).last().click();
+    await expect(this.openModal).toBeHidden({ timeout });
+    return this;
+  }
+
+  /** Dismiss the open modal via its Cancel button. */
+  async cancelModal(): Promise<this> {
+    await this.openModal.getByRole('button', { name: /^cancel$/i }).click();
+    await expect(this.openModal).toBeHidden({ timeout: 10_000 });
+    return this;
+  }
+
+  /** Click the card's Delete button (opens the confirm modal; does not confirm). */
+  async clickDelete(name: string): Promise<this> {
+    await this.cardByName(name).locator('button.bg-red-500').click();
+    await expect(this.openModal).toBeVisible({ timeout: 10_000 });
+    return this;
+  }
+
+  /** The Move modal's folder picker — a native <select>, options are folder names. */
+  get moveFolderSelect(): Locator {
+    return this.openModal.locator('select');
+  }
+
+  /**
+   * Open the Move modal for the current selection and choose `folderName`.
+   * Returns false (modal left open) when the account has no such folder.
+   */
+  async chooseMoveFolder(folderName: string): Promise<boolean> {
+    await this.bulkMoveBtn.click();
+    await expect(this.moveFolderSelect).toBeVisible({ timeout: 10_000 });
+    // The <select> renders before its folders arrive; wait for more than the
+    // placeholder option before concluding the folder is missing.
+    await expect
+      .poll(async () => this.moveFolderSelect.locator('option').count(), { timeout: 10_000 })
+      .toBeGreaterThan(1)
+      .catch(() => undefined);
+    const option = this.moveFolderSelect.locator('option', { hasText: folderName });
+    if ((await option.count()) === 0) return false;
+    await this.moveFolderSelect.selectOption({ label: (await option.first().innerText()).trim() });
+    return true;
+  }
+
+  /** Press Move in the open modal and wait for it to close. */
+  async confirmMove(): Promise<this> {
+    await this.openModal.getByRole('button', { name: /^move$/i }).click();
+    await expect(this.openModal).toBeHidden({ timeout: 15_000 });
+    return this;
+  }
+
+  // ── Edit view ────────────────────────────────────────────────────────────────
+
+  get saveChangesBtn(): Locator {
+    return this.page.getByRole('button', { name: /save changes/i });
+  }
+
+  get editHeading(): Locator {
+    return this.page.getByText(/^edit media set$/i).first();
+  }
+
+  /** Open the edit view for the named card. */
+  async openEdit(name: string): Promise<this> {
+    await this.cardByName(name).locator('button.bg-orange-500').click();
+    await expect(this.editHeading).toBeVisible({ timeout: 15_000 });
+    await expect(this.nameInput).toHaveValue(name, { timeout: 15_000 });
+    return this;
+  }
+
+  /** Rename in the edit view and save; resolves once the list is back. */
+  async renameInEdit(newName: string): Promise<this> {
+    await this.nameInput.fill(newName);
+    await this.saveChangesBtn.click();
+    await expect(this.searchInput).toBeVisible({ timeout: 20_000 });
+    return this;
+  }
+
   // ── Create builder ───────────────────────────────────────────────────────────
 
   /** Open the inline Create Media Set builder. */
@@ -248,7 +402,9 @@ export class MediaSetsPage extends BasePage {
       return this;
     }
     await btn.click();
-    await this.page.waitForTimeout(1_000);
+    // The "N of total" counter and the tiles lag the click by 1–2 s (observed on
+    // cms2 v3.5.25: a 1 s wait read the previous filter's total). Wait it out.
+    await this.page.waitForTimeout(2_500);
     return this;
   }
 
@@ -278,6 +434,69 @@ export class MediaSetsPage extends BasePage {
       (await this.aspectRatioToggle.isVisible({ timeout: 3_000 }).catch(() => false)) ||
       (await this.chooseAnyToggle.isVisible({ timeout: 1_000 }).catch(() => false))
     );
+  }
+  // ── Display-format zones + aspect-ratio filter (cms2 v3.5.25 builder) ──────────
+
+  /** "Choose Any" / "Aspect Ratio" pills above the file grid (plain spans, not buttons). */
+  aspectPill(): Locator {
+    return this.page.locator('.msce-pill', { hasText: /^\s*Aspect Ratio\s*$/ });
+  }
+
+  chooseAnyPill(): Locator {
+    return this.page.locator('.msce-pill', { hasText: /^\s*Choose Any\s*$/ });
+  }
+
+  /** The "Showing only 16:9 media - matching the active zone." note. */
+  get aspectNote(): Locator {
+    return this.page.getByText(/Showing only .* media/i).first();
+  }
+
+  /** Every display-format card in the builder (Landscape, Portrait, added ones). */
+  zoneCards(): Locator {
+    return this.page.locator('.msce-zone-card');
+  }
+
+  zoneCard(label: RegExp | string): Locator {
+    return this.zoneCards().filter({ hasText: label }).first();
+  }
+
+  /** Click a zone card's header so it becomes the Active drop target. */
+  async activateZone(label: RegExp | string): Promise<this> {
+    await this.zoneCard(label).locator('.msce-zone-badge').click();
+    await this.page.waitForTimeout(500);
+    return this;
+  }
+
+  get clearMediaBtn(): Locator {
+    return this.page.getByRole('button', { name: 'Clear Media' });
+  }
+
+  get addFormatBtn(): Locator {
+    return this.page.getByText('Add Display Format').first();
+  }
+
+  get formatCountText(): Locator {
+    return this.page.getByText(/\d+ formats? in this set/i).first();
+  }
+
+  get createSubmitBtn(): Locator {
+    return this.page.getByRole('button', { name: 'Create', exact: true });
+  }
+
+  /** The Change Aspect Ratio dialog. */
+  get ratioDialog(): Locator {
+    return this.page.getByRole('dialog').filter({ hasText: /Change Aspect Ratio/i });
+  }
+
+  /** Visible file tiles in the grid, each with its "WxH" parsed from the tile text. */
+  async tileDimensions(max = 50): Promise<{ w: number; h: number; text: string }[]> {
+    const texts = await this.builderFiles().evaluateAll((els) =>
+      els.map((e) => (e as HTMLElement).innerText),
+    );
+    return texts.slice(0, max).flatMap((t) => {
+      const m = t.match(/(\d+)\s*[×x]\s*(\d+)/);
+      return m ? [{ w: Number(m[1]), h: Number(m[2]), text: t.split('\n').join(' | ') }] : [];
+    });
   }
 }
 

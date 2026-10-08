@@ -31,7 +31,7 @@ import { ClusterSettingsPage } from '../pages/ClusterSettingsPage';
 import { CLUSTER } from '../config/cluster';
 import { ConsoleMonitor } from '../utils/consoleMonitor';
 import { ApiMonitor } from '../utils/apiMonitor';
-import { CampaignService, PlaylistService } from '../api';
+import { CampaignService, MediaSetService, PlaylistService } from '../api';
 import { EtaWidgetService } from '../api/services/EtaWidgetService';
 
 interface Pages {
@@ -70,6 +70,8 @@ interface Clients {
   campaignApi: CampaignService;
   /** Playlist REST client — where schedules actually live. */
   playlistApi: PlaylistService;
+  /** Media Sets REST client — create/update/delete and teardown sweeps. */
+  mediaSetApi: MediaSetService;
   /** Live ETA widget REST client — settles every persistence claim. */
   etaApi: EtaWidgetService;
 }
@@ -173,6 +175,10 @@ export const test = base.extend<Pages & Monitors & Clients>({
 
   playlistApi: async ({ context }, use) => {
     await use(await PlaylistService.fromContext(context));
+  },
+
+  mediaSetApi: async ({ context }, use) => {
+    await use(await MediaSetService.fromContext(context));
   },
 
   etaApi: async ({ context }, use) => {

@@ -1,0 +1,77 @@
+Execution Status	Actual Result / Evidence
+Pass	created via UI with description; list shows it; API description "valid description"
+Pass	blank name: nothing created (62→62); message "required "
+Pass	name 50 chars via UI: saved (stored length 50)
+Pass	name 51 chars via UI: NOT saved; message "characters or less "
+Pass	desc 50 chars via UI: saved (stored length 50)
+Pass	desc 51 chars via UI: NOT saved; message "characters or less "
+Pass	name + description updated; API and list show new values
+Pass	Cancel in edit: original values kept (unsaved-changes prompt not shown)
+Pass	confirm delete: set removed
+Pass	cancel on delete confirmation: set still exists
+Pass	after reload set persists; description "persist me"
+
+Execution Status	Actual Result / Evidence
+Pass	exact name "sample_1920x1080_1791307803677.mp4" → file shown (1 occurrence(s) in results)
+Pass	partial "sample_1280" → 22 tiles, all match
+Pass	0 tiles; empty-state "No media found "
+Pass	search cleared → 50 tiles back
+Pass	All shows types: VIDEO (50 tiles)
+Pass	Images → only IMAGE
+Pass	Videos → only VIDEO
+Observed	Folders filter clicked; view: oose Any | Aspect Ratio | Gurugram | Delhi | Sameer Vashisth | UP | India | n | lopl | vansh 3 | testway | Wilyer Clone_1 | BenQ | India 1 DND | Maker/Checker Flow | vansh1 | kio | Files | sample_1920x1080_1__1791357870705.mp4 | VIDEO · 33.93MB · 1920×1080 | sample_2560
+Blocked	no "All Files" option exists — filter offers All / Images / Videos / Folders; "All" covered by MS-FILE-05
+Pass	Images + search "sample_1920" -> 0 tiles (those files are videos, so no image matches; no video leaked into Images)
+
+Execution Status	Actual Result / Evidence
+Pass	Landscape format selected; landscape file assigned (zone "Landscape · 16:9")
+Pass	Portrait format selected; portrait file assigned (zone "Portrait · 9:16")
+Pass	Change ratio on the Landscape format → Portrait 9:20: Landscape · 16:9 + Portrait · 9:16 → Portrait · 9:20 + Portrait · 9:16
+Pass	Change ratio on the Portrait format → Landscape 20:9: now Landscape · 16:9 + Landscape · 20:9
+Pass	ratio changed to 20:9 → saved (API zones Landscape 20:9,Portrait 9:16) → refresh + reopen shows Landscape · 20:9 + Portrait · 9:16
+Pass	picked 20:9 from preset list, "Apply (1)" → new 20:9 format added to the builder (formats now 16:9,9:16,20:9)
+Observed	no free-text width/height exists (preset ratios only). Apply with nothing selected: button DISABLED — nothing invalid can be saved
+Pass	no stale ratio carried over: start Landscape · 16:9 + Portrait · 9:16 | +custom 20:9 → Landscape · 16:9 + Portrait · 9:16 + Landscape · 20:9 | Landscape→Portrait 9:20 → Portrait · 9:20 + Portrait · 9:16 + Landscape · 20:9
+
+Execution Status	Actual Result / Evidence
+Fail	2 assigned, Clear Media: "In set" 2→0; confirmation NOT shown; no per-file selection exists — clears the whole set, spec expects only the selected file
+Blocked	Clear Media has no file multi-select; it is all-or-nothing (see MS-CLEAR-01)
+Pass	Clear Media button is disabled while nothing is assigned, so the action is prevented
+Fail	Clear Media acts immediately — no confirmation dialog to cancel
+Observed	edit → Clear Media → Save: stored zones 2 (was 2); editor still open (save blocked)
+
+Execution Status	Actual Result / Evidence
+Pass	saved: Landscape:image,Portrait:image
+Pass	saved: Landscape:image,Portrait:video
+Pass	search + Video filter (kinds VIDEO) → landscape file type video
+Observed	two files added ("In set" 2); Clear Media cannot target one file (see MS-CLEAR-01)
+Pass	added 20:9 → saved (zones: Landscape 16:9,Portrait 9:16,Landscape 20:9) → reopened in Edit: 20:9 format persists
+Observed	create → edit → rename → ratio 20:9 → save → refresh: all changes persist (zones Landscape 20:9,Portrait 9:16). "Clear selected media" part cannot be exercised — Clear Media clears the whole set (MS-CLEAR-01)
+
+Execution Status	Actual Result / Evidence
+Pass	name 49 chars via UI: saved (stored length 49)
+Pass	name 50 chars via UI: saved (stored length 50)
+Pass	name 51 chars via UI: NOT saved; message "characters or less "
+Pass	desc 49 chars via UI: saved (stored length 49)
+Pass	desc 50 chars via UI: saved (stored length 50)
+Pass	desc 51 chars via UI: NOT saved; message "characters or less "
+Pass	blank name rejected; message "required "
+Pass	spaces-only name rejected (76→76); message "required "
+Pass	duplicate rejected; message "already exists in this folder"
+Observed	spaces-only description: saved as ""
+Fail	special-character name "@@@@####" accepted without validation
+Pass	0 tiles; blank grid, no empty-state text
+Pass	spaces-only search → 0 tiles (no results)
+Pass	special chars → 0 tiles, no crash
+Observed	folder isolation of search is an API defect already filed as BUG-MS-SRCH-01 (folderId ignored when search is sent); builder file browser has no per-folder search to drive in the UI
+Pass	Clear Media button is disabled while nothing is assigned, so the action is prevented
+Fail	no confirmation dialog to cancel; media cleared at once
+Observed	Not applicable in this build: Add Display Format is a checklist of preset ratios (Landscape/Portrait/Square). There is no width/height input, so zero/negative/min-boundary values cannot be entered
+Observed	Not applicable in this build: Add Display Format is a checklist of preset ratios (Landscape/Portrait/Square). There is no width/height input, so zero/negative/min-boundary values cannot be entered
+Observed	Not applicable in this build: Add Display Format is a checklist of preset ratios (Landscape/Portrait/Square). There is no width/height input, so zero/negative/min-boundary values cannot be entered
+Observed	Not applicable in this build: Add Display Format is a checklist of preset ratios (Landscape/Portrait/Square). There is no width/height input, so zero/negative/min-boundary values cannot be entered
+Pass	empty set not saved (78→78); message "selection_4__1782102488352.png "
+Pass	delete → cancel: still exists
+Pass	51-char edit blocked; stored length 24
+Pass	blank-name update rejected; message "required "
+Pass	Images filter shows IMAGE only

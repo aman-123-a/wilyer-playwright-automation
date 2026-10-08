@@ -49,3 +49,14 @@ export type {
   ScheduleDays,
   DayName,
 } from './services/PlaylistService';
+
+export { MediaSetService } from './services/MediaSetService';
+export type {
+  MediaSet,
+  MediaSetList,
+  MediaSetListQuery,
+  MediaSetPayload,
+  MediaSetFile,
+  MediaSetZone,
+  ZoneFiles,
+} from './services/MediaSetService';
