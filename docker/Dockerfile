@@ -22,7 +22,7 @@ RUN npm ci --no-audit --no-fund
 # Source layer.
 COPY . .
 
-# Default target; override per run with -e TEST_ENV=cms3.
+# This branch targets cms2 only.
 ENV CI=true \
     TEST_ENV=cms2
 

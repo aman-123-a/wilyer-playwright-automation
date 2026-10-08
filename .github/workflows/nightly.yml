@@ -1,12 +1,8 @@
 # =============================================================================
 #  Nightly — the deep run.
-#  Full cross-browser regression across every pre-production environment, with
+#  Full cross-browser regression against cms2 (this branch's server), with
 #  strict monitors on (console errors and failed API calls fail the test), and
 #  the Allure trend report published.
-#
-#  Production is deliberately NOT in the matrix: a nightly cron against live
-#  customer infrastructure is traffic nobody asked for. Run it by hand from
-#  the Regression workflow if you need it.
 # =============================================================================
 name: Nightly
 
@@ -25,7 +21,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        environment: [cms, cms2, cms3, cms4]
+        environment: [cms2]
     uses: ./.github/workflows/_run-suite.yml
     with:
       environment: ${{ matrix.environment }}

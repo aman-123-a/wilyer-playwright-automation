@@ -17,7 +17,7 @@ on:
   workflow_call:
     inputs:
       environment:
-        description: 'Target environment: cms | cms2 | cms3 | cms4 | live'
+        description: 'Target environment (this branch: cms2)'
         type: string
         required: true
       grep:

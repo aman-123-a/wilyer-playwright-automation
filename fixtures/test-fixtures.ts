@@ -23,7 +23,6 @@ import { PlaylistEditorPage } from '../pages/PlaylistEditorPage';
 import { ReportsPage } from '../pages/ReportsPage';
 import { BillingPage } from '../pages/BillingPage';
 import { TeamPage } from '../pages/TeamPage';
-import { PrayerSchedulePage } from '../pages/PrayerSchedulePage';
 import { CampaignPickerPage } from '../pages/CampaignPickerPage';
 import { LocationSettingsPage } from '../pages/LocationSettingsPage';
 import { EtaWidgetPage } from '../pages/EtaWidgetPage';
@@ -54,7 +53,6 @@ interface Pages {
   reportsPage: ReportsPage;
   billingPage: BillingPage;
   teamPage: TeamPage;
-  prayerSchedulePage: PrayerSchedulePage;
   campaignPicker: CampaignPickerPage;
   locationSettingsPage: LocationSettingsPage;
   etaWidgetPage: EtaWidgetPage;
@@ -150,9 +148,6 @@ export const test = base.extend<Pages & Monitors & Clients>({
     await use(new TeamPage(page));
   },
 
-  prayerSchedulePage: async ({ page }, use) => {
-    await use(new PrayerSchedulePage(page));
-  },
 
   campaignPicker: async ({ page }, use) => {
     await use(new CampaignPickerPage(page));

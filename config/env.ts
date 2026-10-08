@@ -19,8 +19,8 @@ import { config as loadDotenv } from 'dotenv';
 import { resolveEnvironment, type EnvironmentConfig, type EnvironmentName } from './environments';
 
 // Which environment are we pointed at? The npm scripts set this; default to the
-// first pre-production server so a bare `playwright test` never hits production.
-const TEST_ENV = process.env.TEST_ENV ?? 'cms';
+// branch's own server (cms2) so a bare `playwright test` never hits production.
+const TEST_ENV = process.env.TEST_ENV ?? 'cms2';
 
 // dotenv never overwrites an existing process.env value, so loading the
 // environment-specific file first gives it priority over the shared one.

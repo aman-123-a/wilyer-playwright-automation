@@ -24,23 +24,20 @@ Credentials are **never** committed. `.env` is gitignored; CI supplies secrets.
 
 ## Choosing an environment
 
-The target is selected by `TEST_ENV`, which the npm scripts set for you. URLs live in
+This is the **cms2 branch**: it targets cms2 only. Each server has its own branch
+(`cms`, `cms2`, `cms3`, `cms4`, `live`) — see [BRANCHES.md](BRANCHES.md). URLs live in
 version control at `config/environments.ts`, so changing a target shows up in a diff
 rather than hiding in someone's local `.env`.
 
 | Command        | Environment      | Application                     |
 | -------------- | ---------------- | ------------------------------- |
-| `npm run cms`  | Pre-Production 1 | <https://cms.pocsample.in>      |
 | `npm run cms2` | Pre-Production 2 | <https://cms2.pocsample.in>     |
-| `npm run cms3` | Pre-Production 3 | <https://cms3.pocsample.in>     |
-| `npm run cms4` | Pre-Production 4 | <https://cms4.pocsample.in>     |
-| `npm run live` | Production       | <https://cms.wilyersignage.com> |
 
 Pass any Playwright flag through with `--`:
 
 ```bash
-npm run cms3 -- --grep @regression --project=firefox
-npm run cms2 -- tests/campaigns --headed
+npm run cms2 -- --grep @regression --project=firefox
+npm run cms2 -- tests/cms2/campaigns --headed
 ```
 
 ### Two safety properties worth knowing

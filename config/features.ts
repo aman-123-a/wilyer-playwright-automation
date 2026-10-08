@@ -19,8 +19,8 @@
 //  Usage from a spec (see helpers/features.ts):
 //
 //      import { requireFeature } from '../../../helpers';
-//      test.describe('Prayer Schedule', () => {
-//        requireFeature('prayer-schedule');
+//      test.describe('Media Sets', () => {
+//        requireFeature('media-sets');
 //        ...
 //      });
 // =============================================================================
@@ -41,11 +41,9 @@ export const FEATURE_NAMES = [
   'team',
   'rbac',
   // Feature-flagged / in-flight work, one per development server.
-  'prayer-schedule',
   'campaigns',
   'autologin',
   'media-sets',
-  'file-conversion',
 ] as const;
 
 export type FeatureName = (typeof FEATURE_NAMES)[number];
@@ -91,13 +89,8 @@ const core = (name: FeatureName, label: string): FeatureConfig => ({
 });
 
 /**
- * Development-server ownership, as confirmed by the team on 2026-07-28:
- *
- *   cms   → Prayer Schedule   (built here, since released to live)
- *   cms2  → Campaigns, Auto-login
- *   cms3  → Media Sets
- *   cms4  → File conversion
- *   live  → whatever has been released
+ * cms2 branch — every in-flight feature here is owned by cms2:
+ * Campaigns, Auto-login, Media Sets (Media Sets moved from cms3 on 2026-10-08).
  */
 export const FEATURES: Readonly<Record<FeatureName, FeatureConfig>> = {
   auth: core('auth', 'Authentication'),
@@ -110,15 +103,6 @@ export const FEATURES: Readonly<Record<FeatureName, FeatureConfig>> = {
   billing: core('billing', 'Billing'),
   team: core('team', 'Team'),
   rbac: core('rbac', 'Roles and permissions'),
-
-  'prayer-schedule': {
-    name: 'prayer-schedule',
-    label: 'Prayer Schedule',
-    status: 'released',
-    owner: 'cms',
-    availableOn: ['cms', 'live'],
-    note: 'Built on cms and released to production. Not rolled out to cms2/cms3/cms4.',
-  },
 
   campaigns: {
     name: 'campaigns',
@@ -142,21 +126,11 @@ export const FEATURES: Readonly<Record<FeatureName, FeatureConfig>> = {
     name: 'media-sets',
     label: 'Media Sets',
     status: 'development',
-    owner: 'cms3',
-    availableOn: ['cms2', 'cms3'],
+    owner: 'cms2',
+    availableOn: ['cms2'],
     note:
-      'Owned by cms3. Also listed for cms2, where the existing specs were authored against a ' +
-      'live build (see tests/media-sets/). MediaSetsPage.isAvailable() probes the running build ' +
-      'and remains the final word — this entry only prevents a pointless run on cms/cms4/live.',
-  },
-
-  'file-conversion': {
-    name: 'file-conversion',
-    label: 'File conversion',
-    status: 'development',
-    owner: 'cms4',
-    availableOn: ['cms4'],
-    note: 'In development on cms4. No automated suite authored yet.',
+      'Under active test on cms2 — see docs/qa-reports/media-sets/. MediaSetsPage.isAvailable() ' +
+      'probes the running build and remains the final word.',
   },
 } as const;
 
@@ -193,20 +167,12 @@ export function featuresOn(environment: EnvironmentName): readonly FeatureConfig
 
 // ─── Test-tree layout ────────────────────────────────────────────────────────
 //
-//  Specs are filed by the server that owns the feature:
+//  Specs are filed by the server that owns the feature. On this branch:
 //
 //      tests/_core/<module>/…   modules present on every build
-//      tests/cms/<module>/…     features owned by cms   (prayer-schedule)
-//      tests/cms2/<module>/…    features owned by cms2  (campaigns, autologin)
-//      tests/cms3/<module>/…    features owned by cms3  (media-sets)
-//      tests/cms4/<module>/…    features owned by cms4  (file-conversion)
-//      tests/live/<module>/…    production-only checks
+//      tests/cms2/<module>/…    features owned by cms2  (campaigns, autologin, media-sets)
 //
-//  A folder is NOT "only runs on that server", it is "owned by that server".
-//  Prayer Schedule was built on cms and has since shipped to live, so its specs
-//  stay in tests/cms/ and are additionally selected on a live run. Playwright
-//  derives that selection from `availableOn` below, which is why the registry —
-//  not the directory name — decides what executes.
+//  Other servers' specs live on their own branches (cms, cms3, cms4, live).
 
 /** Folder under tests/ holding specs that run on every environment. */
 export const CORE_TEST_DIR = '_core';
