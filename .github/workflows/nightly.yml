@@ -1,0 +1,36 @@
+# =============================================================================
+#  Nightly — the deep run.
+#  Full cross-browser regression against cms4 (this branch's server), with
+#  strict monitors on (console errors and failed API calls fail the test), and
+#  the Allure trend report published.
+# =============================================================================
+name: Nightly
+
+on:
+  schedule:
+    # 02:00 UTC daily.
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: nightly
+  cancel-in-progress: false
+
+jobs:
+  nightly:
+    strategy:
+      fail-fast: false
+      matrix:
+        environment: [cms4]
+    uses: ./.github/workflows/_run-suite.yml
+    with:
+      environment: ${{ matrix.environment }}
+      grep: '@regression'
+      projects: '["chromium","firefox","webkit","Mobile Chrome","Mobile Safari"]'
+      shard-list: '[1,2,3,4]'
+      shard-total: 4
+      # Nightly is the run that should be noisy about latent problems.
+      strict-monitors: true
+      publish-report: true
+      timeout-minutes: 90
+    secrets: inherit

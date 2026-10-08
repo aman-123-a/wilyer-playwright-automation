@@ -1,0 +1,64 @@
+{
+  "name": "playwright-project",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:codegen": "playwright codegen",
+    "playwright:install": "playwright install --with-deps",
+    "mcp-server": "node mcp-server.js",
+    "cms": "playwright test --config=playwright.cms.config.js",
+    "ws": "playwright test --config=wilyer-signage-suite/playwright.config.ts",
+    "ws:smoke": "playwright test --config=wilyer-signage-suite/playwright.config.ts --project=smoke",
+    "ws:regression": "playwright test --config=wilyer-signage-suite/playwright.config.ts --project=regression",
+    "ws:edge": "playwright test --config=wilyer-signage-suite/playwright.config.ts --project=edge",
+    "ws:auth": "playwright test --config=wilyer-signage-suite/playwright.config.ts --project=no-auth",
+    "ws:failures": "playwright test --config=wilyer-signage-suite/playwright.config.ts tests/api-failure",
+    "ws:report": "playwright show-report wilyer-signage-suite/playwright-report",
+    "cms:login": "node scripts/capture-session.cms.js",
+    "cms:headed": "playwright test --config=playwright.cms.config.js --headed",
+    "cms:ui": "playwright test --config=playwright.cms.config.js --ui",
+    "cms:debug": "playwright test --config=playwright.cms.config.js --debug",
+    "cms:report": "playwright show-report playwright-report/cms",
+    "cms:auth": "playwright test --config=playwright.cms.config.js auth.spec.js",
+    "cms:smoke": "playwright test --config=playwright.cms.config.js --grep \"Positive\"",
+    "cms:library": "playwright test --config=playwright.cms.config.js library-crud.spec.js",
+    "cms:playlist": "playwright test --config=playwright.cms.config.js playlist-crud.spec.js",
+    "cms:spaces": "playwright test --config=playwright.cms.config.js spaces-rooms.spec.js",
+    "cms:bugs": "playwright test --config=playwright.cms.config.js known-bugs-regression.spec.js",
+    "cms:freeze": "playwright test --config=playwright.cms.config.js freeze-investigation.spec.js --headed --workers=1",
+    "cms:compare": "playwright test --config=playwright.cms.config.js comparison.spec.js",
+    "cms:trace": "playwright show-trace",
+    "learn": "playwright test --config=learn-playwright/playwright.config.js",
+    "learn:ui": "playwright test --config=learn-playwright/playwright.config.js --ui",
+    "learn:report": "playwright show-report learn-playwright/playwright-report"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@playwright/mcp": "^0.0.70",
+    "exceljs": "^4.4.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  },
+  "description": "test",
+  "main": "cms-test.spec.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aman-123-a/wilyer-playwright-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aman-123-a/wilyer-playwright-automation/issues"
+  },
+  "homepage": "https://github.com/aman-123-a/wilyer-playwright-automation#readme"
+}

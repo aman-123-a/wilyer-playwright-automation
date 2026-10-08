@@ -1,0 +1,60 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+/.auth/
+
+# CMS suite local env + machine reports
+.env.cms
+/reports/cms/
+
+# MCP traces and exploration artifacts
+.playwright-mcp/
+
+# Local Claude settings and runtime files
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+
+# Root-level debug screenshots and page snapshots
+/*.png
+/*.yml
+
+# Run logs
+/reports/*.log
+# Added by code-review-graph
+.code-review-graph/
+
+# Secrets — ClickUp API token lives here; never commit.
+clickup-config.json
+
+# Local Chrome profile used by browser automation (~100MB, machine-specific).
+browser-data/
+
+# Generated HTML/report bundles from the learn-playwright sandbox.
+learn-playwright/playwright-report/
+learn-playwright/test-results/
+learn-playwright/node_modules/
+
+# Generated Playwright output across ALL sub-suites (traces, screenshots,
+# report bundles, run logs). ~1.5GB of artifacts — source is kept, output is not.
+**/test-results/
+**/playwright-report/
+**/allure-results/
+**/allure-report/
+search-suite/report/
+search-suite/*.log
+learn-playwright/regression-shots/
+
+# Temp scratch documents.
+temp_doc*.docx
+*.tmp
+
+# Auth / session storage-state in ANY sub-suite — contains live login cookies.
+**/.auth/
+# Real env files anywhere (only .env.example templates are tracked).
+**/.env
+data/cms4-video-samples/

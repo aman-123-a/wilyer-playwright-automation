@@ -1,6 +1,11 @@
 import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
-import { CallToolRequestSchema, ErrorCode, ListToolsRequestSchema, McpError } from '@modelcontextprotocol/sdk/types.js';
+import {
+  CallToolRequestSchema,
+  ErrorCode,
+  ListToolsRequestSchema,
+  McpError,
+} from '@modelcontextprotocol/sdk/types.js';
 import { chromium } from 'playwright';
 import { exec } from 'child_process';
 import { promisify } from 'util';
@@ -18,7 +23,7 @@ class PlaywrightMCPServer {
         capabilities: {
           tools: {},
         },
-      }
+      },
     );
 
     this.browser = null;
@@ -174,7 +179,8 @@ class PlaywrightMCPServer {
               properties: {
                 selector: {
                   type: 'string',
-                  description: 'CSS selector of element to scroll (optional, scrolls page if not provided)',
+                  description:
+                    'CSS selector of element to scroll (optional, scrolls page if not provided)',
                 },
                 direction: {
                   type: 'string',
@@ -363,10 +369,10 @@ class PlaywrightMCPServer {
 
   async scroll(direction, distance = 100, selector = null) {
     if (!this.page) throw new Error('Browser not launched');
-    const scrollCommand = selector 
+    const scrollCommand = selector
       ? `document.querySelector('${selector}').scrollBy(0, ${direction === 'down' ? distance : -distance})`
       : `window.scrollBy(0, ${direction === 'down' ? distance : -distance})`;
-    
+
     await this.page.evaluate(scrollCommand);
     return { content: [{ type: 'text', text: `Scrolled ${direction} ${distance}px` }] };
   }
@@ -387,16 +393,16 @@ class PlaywrightMCPServer {
     const cmd = `npx playwright test ${testFile} ${grep ? `--grep "${grep}"` : ''}`;
     try {
       const { stdout, stderr } = await execPromise(cmd);
-      return { 
+      return {
         content: [
           { type: 'text', text: `Test Output:\n${stdout}` },
-          { type: 'text', text: stderr ? `Errors:\n${stderr}` : '' }
-        ] 
+          { type: 'text', text: stderr ? `Errors:\n${stderr}` : '' },
+        ],
       };
     } catch (error) {
-      return { 
+      return {
         content: [{ type: 'text', text: `Test Failed:\n${error.stdout || error.message}` }],
-        isError: true 
+        isError: true,
       };
     }
   }

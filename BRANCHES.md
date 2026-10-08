@@ -1,31 +1,38 @@
-# Environment branches
+# Environments and branches
 
-Each environment has its own branch. The **base URL is pinned per branch** in
-`cms-e2e/config/env.ts`, so checking out a branch automatically targets the right
-server. Say the website and I switch to its branch.
+> **Changed 2026-10-08.** Each server has its own branch again, holding only that
+> server's code and tests. This is the **cms4** branch.
 
-| Say this | Branch | Target URL | Writes | Login |
-|----------|--------|------------|--------|-------|
-| **cms**  | `cms`  | https://cms.pocsample.in   | allowed | via local `.env` |
-| **cms2** | `cms2` | https://cms2.pocsample.in  | allowed | via local `.env` |
-| **cms3** | `cms3` | https://cms3.pocsample.in  | allowed | via local `.env` |
-| **live** | `live` | https://cms.wilyersignage.com | **BLOCKED (read-only)** | provided at runtime |
+| Branch | Environment      | Application                     |
+| ------ | ---------------- | ------------------------------- |
+| `cms`  | Pre-Production 1 | <https://cms.pocsample.in>      |
+| `cms2` | Pre-Production 2 | <https://cms2.pocsample.in>     |
+| `cms3` | Pre-Production 3 | <https://cms3.pocsample.in>     |
+| `cms4` | Pre-Production 4 | <https://cms4.pocsample.in>     |
+| `live` | Production       | <https://cms.wilyersignage.com> |
 
-## Rules
+## On this branch
 
-- **Credentials are never committed.** Put them in a local, gitignored
-  `cms-e2e/.env` (copy from `cms-e2e/.env.example`). No emails or passwords live
-  in the repo.
-- **`live` is production.** Destructive/write tests are hard-disabled in
-  `env.ts` on that branch (the `CMS_ALLOW_DESTRUCTIVE` flag is ignored), and it
-  has no default credentials — real logins must be supplied at run time.
-- `main` holds shared code and defaults to the `cms` test server. Feature work
-  merges here; the env branches carry only the per-environment config on top.
+```bash
+npm run cms4    # Pre-Production 4 — runs tests/_core + tests/cms4
+```
 
-## Local `.env` (not committed)
+`config/environments.ts` lists cms4 only, and `tests/` holds `_core/` (modules on
+every build) plus `cms4/` (file-conversion (no suite yet)). Work for another server goes on
+that server's branch. The old pre-2.0 code of this branch is kept in
+`legacy/cms4-branch/`.
+
+Writes need `CMS_ALLOW_DESTRUCTIVE=true`.
+
+## Credentials
+
+Never committed. Put them in a local, gitignored `.env` (copy `.env.example`), or in
+`.env.cms4`, which loads ahead of `.env` and is gitignored too.
 
 ```
-# cms-e2e/.env
+# .env
 CMS_ADMIN_EMAIL=...
 CMS_ADMIN_PASSWORD=...
 ```
+
+See [docs/setup.md](docs/setup.md).

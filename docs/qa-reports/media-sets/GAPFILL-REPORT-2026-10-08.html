@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media Sets Gap-fill Report</title>
+<style>
+  :root{--bg:#f6f8fb;--card:#fff;--ink:#16202e;--mute:#5b677a;--line:#e1e6ee;--pass:#16794c;--passbg:#e3f5ec;--known:#9a6700;--knownbg:#fff3d1;--fail:#b42318;--failbg:#fde7e4;--block:#475467;--blockbg:#eceff4;--crit:#b42318;--high:#c2410c;--med:#9a6700;--low:#2563a8;--accent:#1f5fbf}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10151d;--card:#171e29;--ink:#e6ebf3;--mute:#9aa7ba;--line:#273142;--pass:#5fd39b;--passbg:#12301f;--known:#f0c25a;--knownbg:#3a2e0d;--fail:#ff8b7f;--failbg:#3d1714;--block:#b6c0d0;--blockbg:#222b39;--crit:#ff8b7f;--high:#ffa066;--med:#f0c25a;--low:#7db4ee;--accent:#7db4ee}}
+  :root[data-theme="dark"]{--bg:#10151d;--card:#171e29;--ink:#e6ebf3;--mute:#9aa7ba;--line:#273142;--pass:#5fd39b;--passbg:#12301f;--known:#f0c25a;--knownbg:#3a2e0d;--fail:#ff8b7f;--failbg:#3d1714;--block:#b6c0d0;--blockbg:#222b39;--crit:#ff8b7f;--high:#ffa066;--med:#f0c25a;--low:#7db4ee;--accent:#7db4ee}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:1080px;margin:0 auto;padding:28px 16px 64px}
+  h1{font-size:26px;margin:0 0 4px}
+  h2{font-size:19px;margin:34px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+  h3{font-size:15px;margin:20px 0 8px}
+  .sub{color:var(--mute);margin:0 0 18px}
+  .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+  .stat b{display:block;font-size:28px;line-height:1.1}
+  .stat span{color:var(--mute);font-size:13px}
+  .pass b{color:var(--pass)}.known b{color:var(--known)}.fail b{color:var(--fail)}.block b{color:var(--block)}
+  .bar{display:flex;height:14px;border-radius:7px;overflow:hidden;margin:16px 0 4px;background:var(--line)}
+  .bar i{display:block}
+  .legend{color:var(--mute);font-size:13px}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:14px}
+  th,td{padding:9px 11px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--mute);background:var(--bg)}
+  tr:last-child td{border-bottom:0}
+  .scroll{overflow-x:auto}
+  .tag{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+  .t-pass{background:var(--passbg);color:var(--pass)}.t-known{background:var(--knownbg);color:var(--known)}.t-fail{background:var(--failbg);color:var(--fail)}.t-block{background:var(--blockbg);color:var(--block)}
+  .sev-CRITICAL{background:var(--failbg);color:var(--crit)}.sev-HIGH{background:var(--knownbg);color:var(--high)}.sev-MEDIUM{background:var(--knownbg);color:var(--med)}.sev-LOW{background:var(--blockbg);color:var(--low)}
+  .note{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:12px 14px;margin:12px 0}
+  code{font:13px ui-monospace,Consolas,monospace;background:var(--bg);padding:1px 5px;border-radius:4px}
+  ul{margin:6px 0 0;padding-left:20px}
+  .defect{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+  .defect h3{margin:0 0 6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  dl{display:grid;grid-template-columns:110px 1fr;gap:4px 12px;margin:8px 0 0;font-size:14px}
+  dt{color:var(--mute)}dd{margin:0}
+  button.theme{float:right;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 10px;cursor:pointer}
+  @media (max-width:600px){dl{grid-template-columns:1fr}dt{margin-top:6px}}
+</style>
+</head>
+<body>
+<main>
+  <button class="theme" onclick="var r=document.documentElement;var d=getComputedStyle(r).getPropertyValue('--bg').trim()==='#10151d';r.dataset.theme=d?'light':'dark'">Light / dark</button>
+  <h1>Media Sets — Gap-fill Execution Report</h1>
+  <p class="sub">Wilyer CMS · cms2.pocsample.in (v3.5.25) · run 2026-10-08 · maker <code>unmaker</code> · checker <code>unchecker</code> · credentials from gitignored <code>.env</code>, none in code or logs</p>
+
+  <h2>Summary</h2>
+  <div class="grid">
+    <div class="stat"><b>98</b><span>Executed</span></div>
+    <div class="stat pass"><b>93</b><span>Passed · 94.9%</span></div>
+    <div class="stat known"><b>4</b><span>Known defect (re-confirmed) · 4.1%</span></div>
+    <div class="stat fail"><b>1</b><span>Failed (intermittent) · 1.0%</span></div>
+    <div class="stat block"><b>6</b><span>Blocked areas</span></div>
+    <div class="stat"><b>0</b><span>Skipped</span></div>
+  </div>
+  <div class="bar" role="img" aria-label="93 passed, 4 known defect, 1 failed">
+    <i style="width:94.9%;background:var(--pass)"></i><i style="width:4.1%;background:var(--known)"></i><i style="width:1%;background:var(--fail)"></i>
+  </div>
+  <div class="legend">Pre-existing <code>folders/</code> spec re-run after removing 5 stale markers: <b>28 / 28 pass</b> (not counted above). Housekeeping tests (2 probes, 4 cleanups) excluded.</div>
+
+  <h2>By area</h2>
+  <div class="scroll"><table>
+    <tr><th>Area</th><th>Executed</th><th>Pass</th><th>Known defect</th><th>Fail</th></tr>
+    <tr><td>Auth / session (TC-A01–A14)</td><td>14</td><td>13</td><td>1</td><td>0</td></tr>
+    <tr><td>RBAC / authorization / tamper (TC-B)</td><td>8</td><td>7</td><td>1</td><td>0</td></tr>
+    <tr><td>Validation, BVA, special chars, unicode, XSS, search inputs, duplicates</td><td>45</td><td>45</td><td>0</td><td>0</td></tr>
+    <tr><td>Move, pagination, concurrency, network/status handling</td><td>25</td><td>23</td><td>1</td><td>1</td></tr>
+    <tr><td>Audit log</td><td>6</td><td>5</td><td>1</td><td>0</td></tr>
+  </table></div>
+
+  <h2>Coverage by requested category</h2>
+  <div class="scroll"><table>
+    <tr><th>Category</th><th>Status</th><th>Notes</th></tr>
+    <tr><td>Positive · Negative · Edge</td><td><span class="tag t-pass">Covered</span></td><td>A01–A14, blank/whitespace names (6 variants), unicode/emoji, same-folder move, malformed/deleted move targets</td></tr>
+    <tr><td>BVA</td><td><span class="tag t-pass">Covered</span></td><td><b>No maximum name length is configured</b>, so 50 was not assumed. 1/2/49/50/51/52/100/255/256/1000 chars all accepted, exact round-trip, no truncation or false duplicate; 0 rejected</td></tr>
+    <tr><td>CRUD · Move · Folder/Root</td><td><span class="tag t-pass">Covered</span></td><td>Root→A→Root→B→A, nested A1, orphan, deleted set, deleted destination, parallel moves</td></tr>
+    <tr><td>Search · Pagination</td><td><span class="tag t-pass">Covered</span></td><td>Special/XSS/long/blank terms never 5xx; 0, 1, size−1, size, size+1, last page of 1, delete/move last record, paged search</td></tr>
+    <tr><td>RBAC · Security · API</td><td><span class="tag t-pass">Covered</span></td><td>UI route, API, IDOR, anonymous, forged/expired JWT, spoofed owner/role fields, XSS ×5 stored + reflected (rendered as text, never executed)</td></tr>
+    <tr><td>Concurrency · Persistence · Audit</td><td><span class="tag t-pass">Covered</span></td><td>Parallel create/edit/delete/rename/move; attribution, ordering, exactly-once, no entries for refused/denied actions</td></tr>
+    <tr><td>Media handling</td><td><span class="tag t-known">Partial</span></td><td>Builder/format specs exist from earlier work; image/video mix not re-run in this pass</td></tr>
+    <tr><td>Maker-Checker · Approval · Rejection</td><td><span class="tag t-block">Blocked</span></td><td>No approval state exists for sets on this build — see below</td></tr>
+  </table></div>
+
+  <h2>Defects</h2>
+
+  <div class="defect"><h3><span class="tag sev-CRITICAL">CRITICAL</span> BUG-MS-FENCE-01 <span class="tag t-known">known · P1</span></h3>
+    <dl><dt>Role / feature</dt><dd>Maker (folder-fenced) · RBAC folder fence</dd>
+    <dt>Expected</dt><dd>Fenced user cannot read, change or delete a set outside its scope</dd>
+    <dt>Actual</dt><dd>List hides the admin-owned Root set, but <code>POST /mediaSet/update/{id}</code> on it returns <b>200</b> and changes it</dd>
+    <dt>API result</dt><dd>200 (expected 401/403/404)</dd>
+    <dt>Audit result</dt><dd>Update logged, attributed to the maker</dd>
+    <dt>Evidence</dt><dd><code>rbac/media-sets-rbac.spec.ts</code> (marked <code>test.fail</code>)</dd></dl></div>
+
+  <div class="defect"><h3><span class="tag sev-HIGH">HIGH</span> BUG-MS-LOG-02 <span class="tag t-known">known · P2</span></h3>
+    <dl><dt>Role / feature</dt><dd>Maker · Audit — move</dd>
+    <dt>Expected</dt><dd>Log names source and destination folder</dd>
+    <dt>Actual</dt><dd>Move logged as plain <code>Media set 'X' updated.</code>; entry has only <code>id,type,createdAt,msg,user</code> — no role, folder, status or old/new values</dd>
+    <dt>API result</dt><dd>200</dd>
+    <dt>Evidence</dt><dd><code>audit/media-sets-audit.spec.ts</code> (marked)</dd></dl></div>
+
+  <div class="defect"><h3><span class="tag sev-HIGH">HIGH</span> BUG-AUTH-01 <span class="tag t-known">known · P2</span></h3>
+    <dl><dt>Role / feature</dt><dd>Maker · Session — logout</dd>
+    <dt>Expected</dt><dd>Token revoked on logout</dd>
+    <dt>Actual</dt><dd>A token captured before logout still gets 200 from <code>/mediaSet/read</code>; logout only clears the cookie</dd>
+    <dt>API result</dt><dd>200 after logout</dd>
+    <dt>Evidence</dt><dd><code>auth/media-sets-auth.spec.ts</code> (marked)</dd></dl></div>
+
+  <div class="defect"><h3><span class="tag sev-HIGH">HIGH</span> BUG-MS-RACE-01 <span class="tag t-fail">fail · intermittent 1 in 5 · P2</span></h3>
+    <dl><dt>Role / feature</dt><dd>Admin · concurrency — rename</dd>
+    <dt>Expected</dt><dd>Two parallel renames to one name: one wins, one gets 409</dd>
+    <dt>Actual</dt><dd>Both returned 200 → two sets with the same name (uniqueness check not atomic)</dd>
+    <dt>API result</dt><dd>200 + 200</dd>
+    <dt>Audit result</dt><dd>Two "updated" entries</dd>
+    <dt>Evidence</dt><dd><code>move/…</code> "parallel rename onto the same new name" — left unmarked, flaky by nature</dd></dl></div>
+
+  <div class="defect"><h3><span class="tag sev-MEDIUM">MEDIUM</span> API-D5 <span class="tag t-known">known · P3</span></h3>
+    <dl><dt>Feature</dt><dd>Move to a well-formed but non-existent folder</dd>
+    <dt>Actual</dt><dd>Accepted (200); the set points at a folder that does not exist</dd>
+    <dt>Evidence</dt><dd><code>move/…</code> (marked)</dd></dl></div>
+
+  <h3>Observations (not failures)</h3>
+  <ul>
+    <li><b>No name-length cap</b> (API-D2): a 1000-character name is stored. Medium gap — needs a product decision on the limit.</li>
+    <li>A role with <code>logs.view</code> but no Media Sets grant (unchecker) can read media-set audit lines, including names. Consistent with the grant; flagged to product (Low).</li>
+    <li>Seen once, not reproduced: fenced maker's Root showed "Total - 8" with "No media sets yet". Re-check.</li>
+    <li>Fenced maker has no Create button at Root ("Open a folder to create a media set") — intended.</li>
+    <li><code>unmaker</code>'s <code>mediaSets.publish</code> flipped false→true during the day: role drift on the shared account; recorded, not asserted.</li>
+  </ul>
+
+  <h3>Fixed since the last report</h3>
+  <p>BUG-MS-LOG-01 (no audit entries for create/update/delete) and BUG-MS-SRCH-01 (<code>search</code> ignoring <code>folderId</code>). Still open: BUG-MS-FLD-01 (malformed <code>folderId</code> on read → 500), API-D1…D4, D6…D10.</p>
+
+  <h2>Blocked, and why</h2>
+  <div class="note">Media Set create / edit / delete / move are <b>not approval-gated</b> on this build: a maker's create returns 201 immediately, with no Pending state. Approval applies to uploaded files and publish requests.</div>
+  <div class="scroll"><table>
+    <tr><th>Cases</th><th>Reason</th></tr>
+    <tr><td>Create → Pending → approve/reject, rejection reason, state transitions, two-checker race</td><td>No set-level approval state</td></tr>
+    <tr><td>Maker self-approve (UI + API)</td><td>No set-level approve endpoint; file-approval equivalent needs an upload request via the playlist editor</td></tr>
+    <tr><td>Pending Edit / Delete / Move</td><td>Same</td></tr>
+    <tr><td>Publish-request approval</td><td>Publishes to real screens; needs an approved test screen</td></tr>
+    <tr><td>Checker Folder A = yes / Folder B = no</td><td>unchecker has no Media Sets grant; unmaker is fenced to one folder — needs a second folder-scoped checker</td></tr>
+    <tr><td>Permission removed during a live session</td><td>Alters a shared role; needs approval and a restore step</td></tr>
+  </table></div>
+
+  <h2>Reproduce</h2>
+  <p><code>npx cross-env TEST_ENV=cms2 playwright test tests/cms2/media-sets/&lt;dir&gt; --project=chromium --workers=1</code> for <code>auth</code>, <code>rbac</code>, <code>validation</code>, <code>move</code>, <code>audit</code> — one directory at a time (a single combined run exhausted memory on this machine).</p>
+</main>
+</body>
+</html>

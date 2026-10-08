@@ -1,0 +1,198 @@
+// =============================================================================
+//  Central test fixtures. Every spec imports `test` + `expect` from here.
+//  Provides:
+//   • Page objects (login, dashboard, library) constructed per test.
+//   • console + API monitors auto-attached to the page from the first action.
+//   • Automatic artifact attachment of monitor summaries when a test fails.
+//  Authenticated state comes from the project's storageState (cached session),
+//  so tests start already logged in — except auth.spec.ts which clears it.
+// =============================================================================
+
+import { test as base, expect } from '@playwright/test';
+import { LoginPage } from '../pages/LoginPage';
+import { DashboardPage } from '../pages/DashboardPage';
+import { LibraryPage } from '../pages/LibraryPage';
+import { MediaSetsPage } from '../pages/MediaSetsPage';
+import { ScreensPage } from '../pages/ScreensPage';
+import { ScreenSettingsPage } from '../pages/ScreenSettingsPage';
+import { GroupsPage } from '../pages/GroupsPage';
+import { ClustersPage } from '../pages/ClustersPage';
+import { PlaylistPreviewPage } from '../pages/PlaylistPreviewPage';
+import { PlaylistsPage } from '../pages/PlaylistsPage';
+import { PlaylistEditorPage } from '../pages/PlaylistEditorPage';
+import { ReportsPage } from '../pages/ReportsPage';
+import { BillingPage } from '../pages/BillingPage';
+import { TeamPage } from '../pages/TeamPage';
+import { CampaignPickerPage } from '../pages/CampaignPickerPage';
+import { LocationSettingsPage } from '../pages/LocationSettingsPage';
+import { EtaWidgetPage } from '../pages/EtaWidgetPage';
+import { ClusterSettingsPage } from '../pages/ClusterSettingsPage';
+import { CLUSTER } from '../config/cluster';
+import { ConsoleMonitor } from '../utils/consoleMonitor';
+import { ApiMonitor } from '../utils/apiMonitor';
+import { CampaignService, MediaSetService, PlaylistService } from '../api';
+import { EtaWidgetService } from '../api/services/EtaWidgetService';
+
+interface Pages {
+  loginPage: LoginPage;
+  dashboardPage: DashboardPage;
+  libraryPage: LibraryPage;
+  mediaSetsPage: MediaSetsPage;
+  screensPage: ScreensPage;
+  screenSettingsPage: ScreenSettingsPage;
+  groupsPage: GroupsPage;
+  clustersPage: ClustersPage;
+  /**
+   * One cluster's settings surface, bound to CLUSTER_ID. Constructed lazily, so
+   * a run with no cluster configured never attaches the live-channel monitor.
+   */
+  clusterSettings: ClusterSettingsPage;
+  playlistPreview: PlaylistPreviewPage;
+  playlistsPage: PlaylistsPage;
+  playlistEditorPage: PlaylistEditorPage;
+  reportsPage: ReportsPage;
+  billingPage: BillingPage;
+  teamPage: TeamPage;
+  campaignPicker: CampaignPickerPage;
+  locationSettingsPage: LocationSettingsPage;
+  etaWidgetPage: EtaWidgetPage;
+}
+
+interface Monitors {
+  consoleMonitor: ConsoleMonitor;
+  apiMonitor: ApiMonitor;
+}
+
+interface Clients {
+  /** Campaign REST client bound to the authenticated browser session. */
+  campaignApi: CampaignService;
+  /** Playlist REST client — where schedules actually live. */
+  playlistApi: PlaylistService;
+  /** Media Sets REST client — create/update/delete and teardown sweeps. */
+  mediaSetApi: MediaSetService;
+  /** Live ETA widget REST client — settles every persistence claim. */
+  etaApi: EtaWidgetService;
+}
+
+export const test = base.extend<Pages & Monitors & Clients>({
+  // Monitors attach at page creation so they capture the whole test.
+  consoleMonitor: async ({ page }, use) => {
+    const monitor = new ConsoleMonitor(page);
+    await use(monitor);
+  },
+
+  apiMonitor: async ({ page }, use) => {
+    const monitor = new ApiMonitor(page);
+    await use(monitor);
+  },
+
+  loginPage: async ({ page }, use) => {
+    await use(new LoginPage(page));
+  },
+
+  dashboardPage: async ({ page }, use) => {
+    await use(new DashboardPage(page));
+  },
+
+  libraryPage: async ({ page }, use) => {
+    await use(new LibraryPage(page));
+  },
+
+  mediaSetsPage: async ({ page }, use) => {
+    await use(new MediaSetsPage(page));
+  },
+
+  screensPage: async ({ page }, use) => {
+    await use(new ScreensPage(page));
+  },
+
+  screenSettingsPage: async ({ page }, use) => {
+    await use(new ScreenSettingsPage(page));
+  },
+
+  groupsPage: async ({ page }, use) => {
+    await use(new GroupsPage(page));
+  },
+
+  clustersPage: async ({ page }, use) => {
+    await use(new ClustersPage(page));
+  },
+
+  // Attaches the socket monitor in its constructor, so it must be built before
+  // the suite navigates — which a fixture guarantees.
+  clusterSettings: async ({ page }, use) => {
+    await use(new ClusterSettingsPage(page, CLUSTER.ID));
+  },
+
+  playlistPreview: async ({ page }, use) => {
+    await use(new PlaylistPreviewPage(page));
+  },
+
+  playlistsPage: async ({ page }, use) => {
+    await use(new PlaylistsPage(page));
+  },
+
+  playlistEditorPage: async ({ page }, use) => {
+    await use(new PlaylistEditorPage(page));
+  },
+
+  reportsPage: async ({ page }, use) => {
+    await use(new ReportsPage(page));
+  },
+
+  billingPage: async ({ page }, use) => {
+    await use(new BillingPage(page));
+  },
+
+  teamPage: async ({ page }, use) => {
+    await use(new TeamPage(page));
+  },
+
+
+  campaignPicker: async ({ page }, use) => {
+    await use(new CampaignPickerPage(page));
+  },
+
+  locationSettingsPage: async ({ page }, use) => {
+    await use(new LocationSettingsPage(page));
+  },
+
+  etaWidgetPage: async ({ page }, use) => {
+    await use(new EtaWidgetPage(page));
+  },
+
+  // Reads the session JWT from the context's `footprint` cookie, so it is only
+  // constructible after the storageState is applied — hence a fixture, not a
+  // module-level singleton.
+  campaignApi: async ({ context }, use) => {
+    await use(await CampaignService.fromContext(context));
+  },
+
+  playlistApi: async ({ context }, use) => {
+    await use(await PlaylistService.fromContext(context));
+  },
+
+  mediaSetApi: async ({ context }, use) => {
+    await use(await MediaSetService.fromContext(context));
+  },
+
+  etaApi: async ({ context }, use) => {
+    await use(await EtaWidgetService.fromContext(context));
+  },
+});
+
+// On failure, attach whatever the monitors captured for fast triage.
+test.afterEach(async ({ consoleMonitor, apiMonitor }, testInfo) => {
+  if (testInfo.status !== testInfo.expectedStatus) {
+    await testInfo.attach('console-errors', {
+      body: consoleMonitor.summary(),
+      contentType: 'text/plain',
+    });
+    await testInfo.attach('api-activity', {
+      body: apiMonitor.summary(),
+      contentType: 'text/plain',
+    });
+  }
+});
+
+export { expect };
