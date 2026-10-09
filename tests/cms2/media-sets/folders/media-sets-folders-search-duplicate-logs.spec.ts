@@ -17,9 +17,9 @@
 import type { Page } from '@playwright/test';
 import { test, expect } from '../../../../fixtures/test-fixtures';
 import { MediaSetService, type ZoneFiles } from '../../../../api';
-import { MEDIASET_PREFIX, mediaSetName } from '../../../../test-data/mediasets.data';
+import { MEDIASET_PREFIX, folderPrefix, mediaSetName } from '../../../../test-data/mediasets.data';
 
-const FOLDER_PREFIX = 'ZZ_QA_MS_F_';
+const FOLDER_PREFIX = folderPrefix('ZZ_QA_MS_F_');
 
 interface Folder {
   id: string;

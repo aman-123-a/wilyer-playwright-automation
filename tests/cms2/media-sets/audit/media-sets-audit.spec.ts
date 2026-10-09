@@ -3,11 +3,11 @@
 // Entry shape on this build: { id, type, createdAt, msg, user } — no role, folder, status or old/new values.
 import { test, expect } from '../../../../fixtures/test-fixtures';
 import { HttpClient, MediaSetService, type ZoneFiles } from '../../../../api';
-import { MEDIASET_PREFIX, mediaSetName } from '../../../../test-data/mediasets.data';
+import { MEDIASET_PREFIX, folderPrefix, mediaSetName } from '../../../../test-data/mediasets.data';
 import { loginAs, type Identity } from '../../../../helpers/rbac/identities';
 import { msCredentials, type MsRole } from '../../../../helpers/rbac/mediaSetIdentities';
 
-const FOLDER_PREFIX = 'ZZ_QA_MSX_';
+const FOLDER_PREFIX = folderPrefix('ZZ_QA_MSX_');
 interface LogDoc { id: string; createdAt: string; msg: string; user: string }
 
 let files: ZoneFiles;
