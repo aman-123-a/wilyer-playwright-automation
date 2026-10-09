@@ -8,6 +8,16 @@
 //    POST   /mediaSet/update/{id}   → 200 { message, mediaSet }   (POST, full body)
 //    DELETE /mediaSet/delete/{id}   → 200
 //
+//  Publishing lives under /screen (observed 2026-10-09, cms2 v3.5.25):
+//    POST /screen/publishMediaSet   { screens: [{ id, fileIds }], files, type,
+//                                     fileConflict, publishPosition, mediaSetId,
+//                                     mediaSetIds }   → 200 { message }
+//    POST /screen/unpublishMedia    { files, screens } → 200 { message }
+//    POST /screen/readScreensForUnpublish { files }   → { screens, groups }
+//  A publish copies the set's FILES onto each screen (the UI sends only the file
+//  that matches the screen's orientation). Unpublish takes no set id at all: it
+//  removes those files from the screens, whoever published them.
+//
 //  There is NO bulk endpoint. The list's bulk "Delete (N)" fires one
 //  DELETE per selected set; "Move to Folder" and (Un)Publish likewise act per set.
 //
@@ -80,6 +90,23 @@ export interface ZoneFiles {
   portrait: MediaSetFile;
 }
 
+/** What /screen/publishMediaSet accepts — the body the UI sends. */
+export interface MediaSetPublishPayload {
+  screens: Array<{ id: string; fileIds: string[] }>;
+  files: string[];
+  type: 'append' | 'new';
+  fileConflict: 'overwrite' | 'ignore' | 'duplicate';
+  publishPosition: 'end' | 'start';
+  mediaSetId: string;
+  mediaSetIds: string[];
+}
+
+export interface ScreenRef {
+  id: string;
+  name: string;
+  playlist?: string | null;
+}
+
 export class MediaSetService extends BaseService {
   static async fromContext(context: BrowserContext): Promise<MediaSetService> {
     return new MediaSetService(await BaseService.clientFromContext(context));
@@ -108,6 +135,14 @@ export class MediaSetService extends BaseService {
 
   deleteRaw(id: string): Promise<APIResponse> {
     return this.http.rawDelete(`/mediaSet/delete/${id}`);
+  }
+
+  publishRaw(payload: unknown): Promise<APIResponse> {
+    return this.http.rawPost('/screen/publishMediaSet', { data: payload });
+  }
+
+  unpublishRaw(files: string[], screens: string[]): Promise<APIResponse> {
+    return this.http.rawPost('/screen/unpublishMedia', { data: { files, screens } });
   }
 
   // ── Convenience wrappers — throw on non-2xx ────────────────────────────────
@@ -147,6 +182,27 @@ export class MediaSetService extends BaseService {
     await this.deleteRaw(id).catch(() => undefined);
   }
 
+  /** A screen this account can see, by exact name. */
+  async findScreen(name: string): Promise<ScreenRef | undefined> {
+    const res = await this.http.get<{ docs?: ScreenRef[] }>('/screen/read', {
+      params: { page: 1, limit: 100, search: name, sort: 'createdAt', order: -1 },
+    });
+    return (res.docs ?? []).find((s) => s.name === name);
+  }
+
+  /** Ids of the screens that currently hold `fileId`. */
+  async screensHolding(fileId: string): Promise<string[]> {
+    const res = await this.http.post<{ screens?: ScreenRef[] }>('/screen/readScreensForUnpublish', {
+      data: { files: [fileId] },
+    });
+    return (res.screens ?? []).map((s) => s.id);
+  }
+
+  /** Unpublish that never throws — safe in teardown. */
+  async unpublishQuietly(files: string[], screens: string[]): Promise<void> {
+    await this.unpublishRaw(files, screens).catch(() => undefined);
+  }
+
   /** Remove every set this suite created. Returns how many were deleted. */
   async cleanupByPrefix(prefix: string): Promise<number> {
     const stale = await this.findByPrefix(prefix);
@@ -160,10 +216,7 @@ export class MediaSetService extends BaseService {
    * transcoding. Throws a clear message when the account has no usable pair.
    */
   async pickZoneFiles(): Promise<ZoneFiles> {
-    const res = await this.http.get<{ docs?: MediaSetFile[] }>('/file/read', {
-      params: { limit: 100, page: 1, type: 'image', sort: 'createdAt', order: -1 },
-    });
-    const images = (res.docs ?? []).filter((f) => f.type === 'image');
+    const images = await this.recentImages();
     const landscape = images.find((f) => f.w > f.h);
     const portrait = images.find((f) => f.h > f.w);
     if (!landscape || !portrait) {
@@ -173,6 +226,32 @@ export class MediaSetService extends BaseService {
       );
     }
     return { landscape, portrait };
+  }
+
+  /** The account's 100 most recent library images, newest first. */
+  async recentImages(): Promise<MediaSetFile[]> {
+    const res = await this.http.get<{ docs?: MediaSetFile[] }>('/file/read', {
+      params: { limit: 100, page: 1, type: 'image', sort: 'createdAt', order: -1 },
+    });
+    return (res.docs ?? []).filter((f) => f.type === 'image');
+  }
+
+  // ── Library files a media set is built from ────────────────────────────────
+  //    GET  /file/read/{id}        → one file
+  //    POST /file/deleteFiles      { files: [id] }
+
+  /** The newest image whose stored name starts with `stem` (the server appends a timestamp). */
+  async findRecentImage(stem: string): Promise<MediaSetFile | undefined> {
+    return (await this.recentImages()).find((f) => f.name.startsWith(stem));
+  }
+
+  readFileRaw(id: string): Promise<APIResponse> {
+    return this.http.rawGet(`/file/read/${id}`);
+  }
+
+  /** Delete library files; never throws — safe in teardown. */
+  async deleteFilesQuietly(ids: string[]): Promise<void> {
+    if (ids.length) await this.http.rawPost('/file/deleteFiles', { data: { files: ids } }).catch(() => undefined);
   }
 
   /** A valid two-zone payload (Landscape 16:9 + Portrait 9:16). */
@@ -189,6 +268,19 @@ export class MediaSetService extends BaseService {
       ],
       folderId: '',
       ...extra,
+    };
+  }
+
+  /** The publish body the UI sends for one set onto one screen (Append, overwrite, end). */
+  static publishPayload(setId: string, screenId: string, fileIds: string[]): MediaSetPublishPayload {
+    return {
+      screens: [{ id: screenId, fileIds }],
+      files: fileIds,
+      type: 'append',
+      fileConflict: 'overwrite',
+      publishPosition: 'end',
+      mediaSetId: setId,
+      mediaSetIds: [setId],
     };
   }
 }

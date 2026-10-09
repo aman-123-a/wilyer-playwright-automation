@@ -286,6 +286,12 @@ test.describe('Media Sets — Builder: edge flows @regression', () => {
     expect((await mediaSetApi.findByName(name))?.name).toBe(name);
   });
 
+  test('DESC-1 · the description field stops at 50 characters', async ({ mediaSetsPage: m }) => {
+    await m.descriptionInput.click();
+    await m.descriptionInput.pressSequentially('d'.repeat(60));
+    await expect(m.descriptionInput).toHaveValue('d'.repeat(50));
+  });
+
   // ── Formats (2.3 remainder) ──────────────────────────────────────────────────
 
   test('FMT-3 · adding a ratio the set already has (16:9) does not create a duplicate format', async ({

@@ -15,8 +15,8 @@ import { test, expect } from '../../../../fixtures/test-fixtures';
 import { MEDIASET_PREFIX, mediaSetName } from '../../../../test-data/mediasets.data';
 
 const RATIO_16_9 = 16 / 9;
-/** The app accepts 4096×2160 (1.896) under 16:9 (1.778), so allow ~8 %. */
-const near = (a: number, b: number, tol = 0.08) => Math.abs(a - b) / b < tol;
+/** The changelog's matching rule: a file fits a ratio when it is within 1.2× of it either way. */
+const withinFactor = (a: number, b: number, factor = 1.2) => a <= b * factor && a >= b / factor;
 
 test.describe('Media Sets — Builder: formats & aspect ratio @regression', () => {
   test.beforeEach(async ({ mediaSetsPage }) => {
@@ -89,15 +89,23 @@ test.describe('Media Sets — Builder: formats & aspect ratio @regression', () =
     expect(portrait, `portrait tiles under a landscape filter:\n${portrait.map((t) => t.text).join('\n')}`).toHaveLength(0);
   });
 
-  test('AR-1b · every tile under "Showing only 16:9 media" really is ~16:9', async ({ mediaSetsPage }) => {
-    // BUG-MS-AR-01: the filter is orientation-based, not ratio-based — 960×400 (2.4:1)
-    // and a 99999×99999 (1:1) record are listed under the 16:9 filter.
-    test.fail(true, 'BUG-MS-AR-01 — 16:9 filter lists 2.4:1 and 1:1 files');
+  test('AR-1b · every tile under "Showing only 16:9 media" is within 1.2× of 16:9', async ({ mediaSetsPage }) => {
+    // BUG-MS-AR-01 (2.4:1 and 1:1 files under 16:9) is fixed on cms2 as of 2026-10-09.
     await mediaSetsPage.aspectPill().click();
     await expect.poll(() => mediaSetsPage.builderFileCount(), { timeout: 10_000 }).toBeGreaterThan(0);
     const tiles = await mediaSetsPage.tileDimensions();
-    const wrong = tiles.filter((t) => !near(t.w / t.h, RATIO_16_9));
-    expect(wrong, `non-16:9 tiles shown:\n${wrong.map((t) => t.text).join('\n')}`).toHaveLength(0);
+    const wrong = tiles.filter((t) => !withinFactor(t.w / t.h, RATIO_16_9));
+    expect(wrong, `tiles outside 1.2× of 16:9:\n${wrong.map((t) => t.text).join('\n')}`).toHaveLength(0);
+  });
+
+  test('AR-1c · square files no longer appear under the 16:9 or 9:16 filter', async ({ mediaSetsPage }) => {
+    await mediaSetsPage.aspectPill().click();
+    for (const zone of [/Landscape · 16:9/, /Portrait · 9:16/]) {
+      await mediaSetsPage.activateZone(zone);
+      await expect.poll(() => mediaSetsPage.builderFileCount(), { timeout: 10_000 }).toBeGreaterThan(0);
+      const square = (await mediaSetsPage.tileDimensions()).filter((t) => withinFactor(t.w / t.h, 1));
+      expect(square, `square tiles under ${zone}:\n${square.map((t) => t.text).join('\n')}`).toHaveLength(0);
+    }
   });
 
   test('AR-2 · switching the active zone to Portrait re-filters the grid to 9:16', async ({
@@ -125,10 +133,21 @@ test.describe('Media Sets — Builder: formats & aspect ratio @regression', () =
       .toBe(true);
   });
 
-  test('AR-3b · the "N of total" counter follows the Aspect Ratio filter', async ({ mediaSetsPage }) => {
-    // BUG-MS-AR-02: with "Aspect Ratio" on, the counter still reads "50 of 889"
-    // (the whole library) although only matching files are listed.
-    test.fail(true, 'BUG-MS-AR-02 — file counter ignores the Aspect Ratio filter');
+  test('AR-3b · the counter\'s shown count follows the Aspect Ratio filter', async ({ mediaSetsPage }) => {
+    const any = (await mediaSetsPage.fileCounter())!;
+    await mediaSetsPage.aspectPill().click();
+    await expect(mediaSetsPage.aspectNote).toBeVisible();
+    await expect
+      .poll(async () => (await mediaSetsPage.fileCounter())?.shown, { timeout: 6_000 })
+      .toBe(await mediaSetsPage.builderFileCount());
+    expect((await mediaSetsPage.fileCounter())!.shown).toBeLessThanOrEqual(any.shown);
+  });
+
+  test('AR-3c · the counter\'s total follows the Aspect Ratio filter', async ({ mediaSetsPage }) => {
+    // BUG-MS-AR-02, narrowed 2026-10-09: "X of Y" now filters X (47 of 892 under
+    // 16:9) but Y still counts the whole library. Open question for the developer:
+    // is Y meant to be the matching total?
+    test.fail(true, 'BUG-MS-AR-02 — counter total ignores the Aspect Ratio filter');
     const all = (await mediaSetsPage.fileCounter())!.total;
     await mediaSetsPage.aspectPill().click();
     await expect(mediaSetsPage.aspectNote).toBeVisible();

@@ -239,6 +239,14 @@ test.describe('Media Sets — API @api @regression', () => {
     expect((await create(mediaSetApi, MediaSetService.payload(name, files))).status()).toBe(400);
   });
 
+  test('API-D11 · a description has the 50-character cap the builder enforces — 51 is accepted today', async ({
+    mediaSetApi,
+  }, testInfo) => {
+    test.fail(true, 'API-D11: description cap is UI-only (maxlength=50); the API saves 51+');
+    const payload = MediaSetService.payload(mediaSetName('d11', testInfo.workerIndex), files, { description: 'd'.repeat(51) });
+    expect((await create(mediaSetApi, payload)).status()).toBe(400);
+  });
+
   test('API-D3 · zones are mandatory — omitting them is accepted today', async ({ mediaSetApi }, testInfo) => {
     test.fail(true, 'API-D3: zones missing → 201 (only zones:[] is rejected)');
     const name = mediaSetName('d3', testInfo.workerIndex);

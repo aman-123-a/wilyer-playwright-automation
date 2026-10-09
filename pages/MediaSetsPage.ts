@@ -29,6 +29,7 @@ export class MediaSetsPage extends BasePage {
   readonly createBtn: Locator;
   // Create builder
   readonly nameInput: Locator;
+  readonly descriptionInput: Locator;
   readonly fileSearchInput: Locator;
   readonly filterAll: Locator;
   readonly filterImages: Locator;
@@ -50,6 +51,7 @@ export class MediaSetsPage extends BasePage {
     this.createBtn = page.getByRole('button', { name: /create media set/i }).first();
 
     this.nameInput = page.getByPlaceholder(/media set name/i).first();
+    this.descriptionInput = page.getByPlaceholder(/^description/i).first();
     this.fileSearchInput = page.getByPlaceholder(/search files/i).first();
     this.filterAll = page.getByRole('button', { name: /^all$/i }).first();
     this.filterImages = page.getByRole('button', { name: /^images$/i }).first();
