@@ -59,4 +59,6 @@ export type {
   MediaSetFile,
   MediaSetZone,
   ZoneFiles,
+  MediaSetPublishPayload,
+  ScreenRef,
 } from './services/MediaSetService';

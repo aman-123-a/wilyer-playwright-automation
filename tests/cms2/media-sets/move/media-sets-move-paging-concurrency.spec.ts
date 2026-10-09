@@ -3,10 +3,10 @@
 // Everything created here carries ZZ_QA_MS_ (sets) / ZZ_QA_MSX_ (folders) and is swept afterwards.
 import { test, expect } from '../../../../fixtures/test-fixtures';
 import { MediaSetService, type ZoneFiles } from '../../../../api';
-import { MEDIASET_PREFIX, mediaSetName } from '../../../../test-data/mediasets.data';
+import { MEDIASET_PREFIX, folderPrefix, mediaSetName } from '../../../../test-data/mediasets.data';
 
 
-const FOLDER_PREFIX = 'ZZ_QA_MSX_';
+const FOLDER_PREFIX = folderPrefix('ZZ_QA_MSX_');
 interface Folder { id: string; name: string }
 let files: ZoneFiles;
 
